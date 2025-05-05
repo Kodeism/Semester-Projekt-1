@@ -5,6 +5,7 @@ namespace Semester_Projekt_1
         public Form1()
         {
             InitializeComponent();
+            //Initializer
         }
     }
 }
