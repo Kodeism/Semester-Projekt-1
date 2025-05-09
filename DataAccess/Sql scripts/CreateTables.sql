@@ -25,7 +25,10 @@ create table Ejendomsmægler(
 	Fornavn varchar(100),
 	EfterNavn varchar(100),
 	Email varchar(100),
-	TlfNummer varchar(50)
+	TlfNummer varchar(50),
+	Brugernavn varchar(50),
+	Password varchar(50),
+	Adgangsniveau int -- 1 or 2. Level 2 giver admin privilegier.
 );
 
 create table Bolig(

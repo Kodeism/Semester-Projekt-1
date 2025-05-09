@@ -1,7 +1,7 @@
-INSERT INTO Ejendomsmægler (Fornavn, EfterNavn, Email, TlfNummer) VALUES
-('Anna', 'Jensen', 'anna.jensen@boligmægler.dk', '20101010'),
-('Thomas', 'Nielsen', 'thomas.nielsen@boligsalg.dk', '22223333'),
-('Lise', 'Poulsen', 'lise.p@ejendom.dk', '30304444');
+INSERT INTO Ejendomsmægler (Fornavn, EfterNavn, Email, TlfNummer, Brugernavn, Password, Adgangsniveau) VALUES
+('Anna', 'Jensen', 'anna.jensen@boligmægler.dk', '20101010', 'adm-test', '1234', 2), --admin user
+('Thomas', 'Nielsen', 'thomas.nielsen@boligsalg.dk', '22223333', 'normal-test', '1234', 1),
+('Lise', 'Poulsen', 'lise.p@ejendom.dk', '30304444', 'test', '1234', 1);
 
 INSERT INTO Sælger (Fornavn, EfterNavn, Email, TlfNummer) VALUES
 ('Henrik', 'Andersen', 'henrik.a@email.dk', '50505050'),
