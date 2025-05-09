@@ -8,10 +8,10 @@ INSERT INTO Sælger (Fornavn, EfterNavn, Email, TlfNummer) VALUES
 ('Maria', 'Larsen', 'maria.larsen@email.dk', '60606060'),
 ('Ole', 'Madsen', 'ole.madsen@email.dk', '70707070');
 
-INSERT INTO Bolig (Pris, Adresse, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES
-(3200000, 'Birkevej 12, 8000 Aarhus', 'Villa', 140, 5, '1995-05-12', 750, 'B', 1, 1, 'Til salg'),
-(2650000, 'Rosenvej 3, 9000 Aalborg', 'Rækkehus', 110, 4, '2001-08-23', 400, 'C', 2, 2, 'Solgt'),
-(1800000, 'Linde Allé 9, 6700 Esbjerg', 'Lejlighed', 85, 3, '2010-03-01', 0, 'A', 3, 3, 'Til salg');
+INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES
+(3200000, 'Birkevej 12', 8000, 'Aarhus', 'Villa', 140, 5, '1995-05-12', 750, 'B', 1, 1, 'Til salg'),
+(2650000, 'Rosenvej 3',9000,'Aalborg', 'Rækkehus', 110, 4, '2001-08-23', 400, 'C', 2, 2, 'Solgt'),
+(1800000, 'Linde Allé 9', 6700, 'Esbjerg', 'Lejlighed', 85, 3, '2010-03-01', 0, 'A', 3, 3, 'Til salg');
 
 INSERT INTO Køber (Fornavn, EfterNavn, Email, TlfNummer, PrisKlasse, SøgeOmråde, BoligType, Noter, ØnsketGrundStørrelse, ØnsketBoligStørrelse) VALUES
 ('Sofie', 'Kristensen', 'sofie.k@email.dk', '11112222', 3000000, 'Aarhus, Skåde, Højbjerg', 'Villa', 'Skal have stor have til børnene', 700, 130),

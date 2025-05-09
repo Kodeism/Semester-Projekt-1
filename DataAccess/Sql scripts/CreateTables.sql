@@ -32,6 +32,8 @@ create table Bolig(
 	BoligID int primary key identity,
 	Pris int,
 	Adresse varchar(500),
+	Postnummer int,
+	ByNavn varchar(500),
 	BoligType varchar(100),
 	BoligAreal int,
 	Værelser int,
