@@ -11,11 +11,12 @@ namespace TestData
             // Rubens specielle connection string som han skal bruge fordi hans SSMS er en ælling
             DataRepository testDR = new DataRepository("Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;");
 
+            // Connection string for normale mennesker
             //DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;");
 
 
-
-            //testDR.CreateKøber();
+            Køber testKøber = new Køber("Fløde", "Bolle", 22222222,"test@example.com",70000000,"Danmark","Villa");
+            testDR.CreateKøber(testKøber);
 
 
             //testDR.CreateBolig(new Bolig(
@@ -34,7 +35,7 @@ namespace TestData
             //    "Til salg")
             //    );
 
-            testDR.UpdatePris(6, 999999);
+            //testDR.UpdatePris(3, 999999);
         }
 
 

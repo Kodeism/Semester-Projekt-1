@@ -76,9 +76,8 @@ namespace DataAccess.Repositories
         {
             throw new NotImplementedException();
         }
-        public Køber CreateKøber()
+        public Køber CreateKøber(Køber køber)
         {
-            Køber køber = new Køber("Johannes Cæsar", "Melton", 21956839, "johannescj@gmail.com", 3250000, "Odense", "Villa");
             SqlCommand command = connection.CreateCommand();
             string sql = "INSERT INTO Køber (ForNavn, EfterNavn, TlfNummer, Email, PrisKlasse, SøgeOmråde, BoligType)" +
                 " VALUES (@ForNavn, @EfterNavn, @TlfNummer, @Email, @PrisKlasse, @Søgeområde, @BoligType)";
@@ -91,9 +90,9 @@ namespace DataAccess.Repositories
             command.Parameters.AddWithValue("@PrisKlasse", køber.PrisKlasse);
             command.Parameters.AddWithValue("@SøgeOmråde", køber.SøgeOmråde);
             command.Parameters.AddWithValue("@BoligType", køber.BoligType);
-            //command.Parameters.AddWithValue("@Noter", køber.KøberInfo);
-            //command.Parameters.AddWithValue("@ØnsketGrundStørrelse", køber.GrundStørrelse);
-            //command.Parameters.AddWithValue("@ØnsketBoligStørrelse", køber.Boligstørrelse);
+            command.Parameters.AddWithValue("@Noter", køber.KøberInfo);
+            command.Parameters.AddWithValue("@ØnsketGrundStørrelse", køber.GrundStørrelse);
+            command.Parameters.AddWithValue("@ØnsketBoligStørrelse", køber.Boligstørrelse);
 
             connection.Open();
 
