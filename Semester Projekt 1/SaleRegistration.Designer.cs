@@ -80,9 +80,10 @@
             // SaleFormExit
             // 
             SaleFormExit.BackColor = Color.FromArgb(255, 100, 100);
-            SaleFormExit.Location = new Point(511, -5);
+            SaleFormExit.FlatStyle = FlatStyle.Flat;
+            SaleFormExit.Location = new Point(518, -5);
             SaleFormExit.Name = "SaleFormExit";
-            SaleFormExit.Size = new Size(48, 51);
+            SaleFormExit.Size = new Size(41, 51);
             SaleFormExit.TabIndex = 1;
             SaleFormExit.Text = "X";
             SaleFormExit.UseVisualStyleBackColor = false;
