@@ -5,8 +5,6 @@ namespace Semester_Projekt_1
         public Login()
         {
             InitializeComponent();
-            var saleRegistration = new SaleRegistration(); // laves til test af sale registration
-            saleRegistration.Show();
         }
 
         private void Login_Load(object sender, EventArgs e) // dette er selve formen
