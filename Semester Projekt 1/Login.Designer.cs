@@ -65,6 +65,8 @@
             // 
             // PasswordTextBox
             // 
+            PasswordTextBox.Anchor = AnchorStyles.Left;
+            PasswordTextBox.Font = new Font("Segoe UI", 16F);
             PasswordTextBox.Location = new Point(66, 363);
             PasswordTextBox.MinimumSize = new Size(0, 65);
             PasswordTextBox.Name = "PasswordTextBox";
@@ -75,6 +77,8 @@
             // 
             // UsernameTextBox
             // 
+            UsernameTextBox.Anchor = AnchorStyles.Left;
+            UsernameTextBox.Font = new Font("Segoe UI", 16F);
             UsernameTextBox.Location = new Point(66, 189);
             UsernameTextBox.MinimumSize = new Size(0, 65);
             UsernameTextBox.Name = "UsernameTextBox";
