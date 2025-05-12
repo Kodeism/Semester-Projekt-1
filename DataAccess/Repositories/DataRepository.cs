@@ -102,5 +102,23 @@ namespace DataAccess.Repositories
             connection.Close();
             return køber;
         }
+
+        public void UpdatePris(int boligId, int nyPris)
+        {
+            SqlCommand command = connection.CreateCommand();
+            var sql = """
+                    UPDATE Bolig
+                    SET Pris = @Pris
+                    WHERE BoligID = @BoligID;
+                """;
+
+            command.CommandText = sql;
+            command.Parameters.AddWithValue("@Pris", nyPris);
+            command.Parameters.AddWithValue("@BoligID", boligId);
+
+            connection.Open(); 
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using DataAccess.Repositories;
+using Models;
 
 namespace TestData
 {
@@ -7,8 +8,35 @@ namespace TestData
 
         static void Main(string[] args)
         {
-            DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;");
-            testDR.CreateKøber();
+            // Rubens specielle connection string som han skal bruge fordi hans SSMS er en ælling
+            DataRepository testDR = new DataRepository("Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;");
+
+            //DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;");
+
+
+
+            //testDR.CreateKøber();
+
+
+            //testDR.CreateBolig(new Bolig(
+            //    100000,
+            //    "Example Street 11",
+            //    5000,
+            //    "Odense",
+            //    "Lejlighed",
+            //    72,
+            //    2,
+            //    DateTime.Now,
+            //    187,
+            //    1,
+            //    3,
+            //    "C",
+            //    "Til salg")
+            //    );
+
+            testDR.UpdatePris(6, 999999);
         }
+
+
     }
 }
