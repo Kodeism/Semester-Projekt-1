@@ -2,6 +2,7 @@ namespace Semester_Projekt_1
 {
     internal static class Program
     {
+
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
@@ -12,6 +13,7 @@ namespace Semester_Projekt_1
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
+
         }
     }
 }

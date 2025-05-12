@@ -5,7 +5,7 @@ namespace DataAccess
     public class AccessEndpoints
     {
         private readonly DataRepository repository;
-        string connectionString = "Server = localhost; Database = Semester projekt gruppe 1; User ID = em; Password = 1234; Trusted_Connection = True;";
+        string connectionString = "Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True;";
 
         public AccessEndpoints()
         {
