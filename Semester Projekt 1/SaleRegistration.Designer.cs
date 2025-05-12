@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SaleRegistrationForm = new Panel();
+            SaleFormPanel = new Panel();
+            SaleMenuPanel = new Panel();
+            SaleFormExit = new Button();
+            SaleFormularLabel = new Label();
             SaleDateTextBox = new TextBox();
             SalePriceTextBox = new TextBox();
             SaleBuyerCPRTextBox = new TextBox();
@@ -38,35 +41,65 @@
             SalePriceLabel = new Label();
             SaleBuyerCPRLabel = new Label();
             SaleNameLabel = new Label();
-            SaleFormularLabel = new Label();
-            panel1 = new Panel();
-            SaleFormExit = new Button();
-            SaleRegistrationForm.SuspendLayout();
-            panel1.SuspendLayout();
+            SaleRegistrationForm = new Panel();
+            SaleFormPanel.SuspendLayout();
+            SaleMenuPanel.SuspendLayout();
             SuspendLayout();
             // 
-            // SaleRegistrationForm
+            // SaleFormPanel
             // 
-            SaleRegistrationForm.BackColor = Color.FromArgb(255, 246, 218);
-            SaleRegistrationForm.BorderStyle = BorderStyle.FixedSingle;
-            SaleRegistrationForm.Controls.Add(panel1);
-            SaleRegistrationForm.Controls.Add(SaleDateTextBox);
-            SaleRegistrationForm.Controls.Add(SalePriceTextBox);
-            SaleRegistrationForm.Controls.Add(SaleBuyerCPRTextBox);
-            SaleRegistrationForm.Controls.Add(CreateSaleButton);
-            SaleRegistrationForm.Controls.Add(CancelSaleButton);
-            SaleRegistrationForm.Controls.Add(SaleDateLabel);
-            SaleRegistrationForm.Controls.Add(SalePriceLabel);
-            SaleRegistrationForm.Controls.Add(SaleBuyerCPRLabel);
-            SaleRegistrationForm.Controls.Add(SaleNameLabel);
-            SaleRegistrationForm.Location = new Point(125, 54);
-            SaleRegistrationForm.Name = "SaleRegistrationForm";
-            SaleRegistrationForm.Size = new Size(551, 641);
-            SaleRegistrationForm.TabIndex = 0;
-            SaleRegistrationForm.Paint += SaleRegistrationForm_Paint;
+            SaleFormPanel.BackColor = Color.FromArgb(255, 246, 218);
+            SaleFormPanel.BorderStyle = BorderStyle.FixedSingle;
+            SaleFormPanel.Controls.Add(SaleMenuPanel);
+            SaleFormPanel.Controls.Add(SaleDateTextBox);
+            SaleFormPanel.Controls.Add(SalePriceTextBox);
+            SaleFormPanel.Controls.Add(SaleBuyerCPRTextBox);
+            SaleFormPanel.Controls.Add(CreateSaleButton);
+            SaleFormPanel.Controls.Add(CancelSaleButton);
+            SaleFormPanel.Controls.Add(SaleDateLabel);
+            SaleFormPanel.Controls.Add(SalePriceLabel);
+            SaleFormPanel.Controls.Add(SaleBuyerCPRLabel);
+            SaleFormPanel.Controls.Add(SaleNameLabel);
+            SaleFormPanel.Controls.Add(SaleRegistrationForm);
+            SaleFormPanel.Location = new Point(125, 54);
+            SaleFormPanel.Name = "SaleFormPanel";
+            SaleFormPanel.Size = new Size(551, 641);
+            SaleFormPanel.TabIndex = 0;
+            SaleFormPanel.Paint += SaleRegistrationForm_Paint;
+            // 
+            // SaleMenuPanel
+            // 
+            SaleMenuPanel.BorderStyle = BorderStyle.FixedSingle;
+            SaleMenuPanel.Controls.Add(SaleFormExit);
+            SaleMenuPanel.Controls.Add(SaleFormularLabel);
+            SaleMenuPanel.Location = new Point(-1, -1);
+            SaleMenuPanel.Name = "SaleMenuPanel";
+            SaleMenuPanel.Size = new Size(551, 38);
+            SaleMenuPanel.TabIndex = 10;
+            // 
+            // SaleFormExit
+            // 
+            SaleFormExit.BackColor = Color.FromArgb(255, 100, 100);
+            SaleFormExit.Location = new Point(511, -5);
+            SaleFormExit.Name = "SaleFormExit";
+            SaleFormExit.Size = new Size(48, 51);
+            SaleFormExit.TabIndex = 1;
+            SaleFormExit.Text = "X";
+            SaleFormExit.UseVisualStyleBackColor = false;
+            // 
+            // SaleFormularLabel
+            // 
+            SaleFormularLabel.AutoSize = true;
+            SaleFormularLabel.Font = new Font("Segoe UI", 12F);
+            SaleFormularLabel.Location = new Point(190, 0);
+            SaleFormularLabel.Name = "SaleFormularLabel";
+            SaleFormularLabel.Size = new Size(171, 32);
+            SaleFormularLabel.TabIndex = 0;
+            SaleFormularLabel.Text = "Salgs Formular";
             // 
             // SaleDateTextBox
             // 
+            SaleDateTextBox.Font = new Font("Segoe UI", 18F);
             SaleDateTextBox.Location = new Point(30, 438);
             SaleDateTextBox.MinimumSize = new Size(0, 58);
             SaleDateTextBox.Name = "SaleDateTextBox";
@@ -75,6 +108,7 @@
             // 
             // SalePriceTextBox
             // 
+            SalePriceTextBox.Font = new Font("Segoe UI", 18F);
             SalePriceTextBox.Location = new Point(30, 323);
             SalePriceTextBox.MinimumSize = new Size(0, 58);
             SalePriceTextBox.Name = "SalePriceTextBox";
@@ -83,7 +117,7 @@
             // 
             // SaleBuyerCPRTextBox
             // 
-            SaleBuyerCPRTextBox.Font = new Font("Segoe UI", 16F);
+            SaleBuyerCPRTextBox.Font = new Font("Segoe UI", 18F);
             SaleBuyerCPRTextBox.Location = new Point(30, 208);
             SaleBuyerCPRTextBox.MinimumSize = new Size(0, 58);
             SaleBuyerCPRTextBox.Name = "SaleBuyerCPRTextBox";
@@ -152,34 +186,13 @@
             SaleNameLabel.TabIndex = 1;
             SaleNameLabel.Text = "Salg af \"Bolig navn\"";
             // 
-            // SaleFormularLabel
+            // SaleRegistrationForm
             // 
-            SaleFormularLabel.AutoSize = true;
-            SaleFormularLabel.Font = new Font("Segoe UI", 12F);
-            SaleFormularLabel.Location = new Point(190, 0);
-            SaleFormularLabel.Name = "SaleFormularLabel";
-            SaleFormularLabel.Size = new Size(171, 32);
-            SaleFormularLabel.TabIndex = 0;
-            SaleFormularLabel.Text = "Salgs Formular";
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(SaleFormExit);
-            panel1.Controls.Add(SaleFormularLabel);
-            panel1.Location = new Point(-1, -1);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(551, 38);
-            panel1.TabIndex = 10;
-            // 
-            // SaleFormExit
-            // 
-            SaleFormExit.BackColor = Color.FromArgb(255, 100, 100);
-            SaleFormExit.Location = new Point(511, -5);
-            SaleFormExit.Name = "SaleFormExit";
-            SaleFormExit.Size = new Size(48, 51);
-            SaleFormExit.TabIndex = 1;
-            SaleFormExit.Text = "X";
-            SaleFormExit.UseVisualStyleBackColor = false;
+            SaleRegistrationForm.BorderStyle = BorderStyle.FixedSingle;
+            SaleRegistrationForm.Location = new Point(-1, 144);
+            SaleRegistrationForm.Name = "SaleRegistrationForm";
+            SaleRegistrationForm.Size = new Size(551, 496);
+            SaleRegistrationForm.TabIndex = 11;
             // 
             // SaleRegistration
             // 
@@ -187,19 +200,19 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 246, 182);
             ClientSize = new Size(800, 719);
-            Controls.Add(SaleRegistrationForm);
+            Controls.Add(SaleFormPanel);
             Name = "SaleRegistration";
             Text = "SaleRegistration";
-            SaleRegistrationForm.ResumeLayout(false);
-            SaleRegistrationForm.PerformLayout();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            SaleFormPanel.ResumeLayout(false);
+            SaleFormPanel.PerformLayout();
+            SaleMenuPanel.ResumeLayout(false);
+            SaleMenuPanel.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel SaleRegistrationForm;
+        private Panel SaleFormPanel;
         private TextBox SaleDateTextBox;
         private TextBox SalePriceTextBox;
         private TextBox SaleBuyerCPRTextBox;
@@ -210,7 +223,8 @@
         private Label SaleBuyerCPRLabel;
         private Label SaleNameLabel;
         private Label SaleFormularLabel;
-        private Panel panel1;
+        private Panel SaleMenuPanel;
         private Button SaleFormExit;
+        private Panel SaleRegistrationForm;
     }
 }
