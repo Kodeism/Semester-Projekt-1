@@ -96,7 +96,7 @@
         //boligens areal
         public int Værelser { get; set; }
         //antal af værelser/rum
-        public int ByggeDato { get; set; }
+        public DateTime ByggeDato { get; set; }
         //hvornår var den bygget/renoveret
         public int GrundStørrelse { get; set; }
         //det samlet areal af bolig og land
@@ -108,7 +108,7 @@
         //sælgeren der vil sælge boligen
         public string Status { get; set; }
         //Solgt, eller Usolgt
-        public Bolig(int pris, string adresse, int postNummer, string byNavn, string type, int boligAreal, int værelser, int byggeDato, int grundStørrelse, Ejendomsmægler ejendomsmægler, Sælger sælger)
+        public Bolig(int pris, string adresse, int postNummer, string byNavn, string type, int boligAreal, int værelser, DateTime byggeDato, int grundStørrelse, int mæglerID, int sælgerID, string energimærke = "", string status = "Usolgt")
         {
             Pris = pris;
             Adresse = adresse;
@@ -119,10 +119,10 @@
             Værelser = værelser;
             ByggeDato = byggeDato;
             GrundStørrelse = grundStørrelse;
-            EjendomsmæglerID = ejendomsmægler.EjendomsmæglerID;
-            SælgerID = sælger.SælgerID;
-            EnergiMærke = "";
-            Status = "Usolgt";
+            EjendomsmæglerID = mæglerID;
+            SælgerID = sælgerID;
+            EnergiMærke = energimærke;
+            Status = status;
         }
     }
 

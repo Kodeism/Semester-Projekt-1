@@ -15,7 +15,61 @@ namespace DataAccess.Repositories
         }
         public Bolig CreateBolig(Bolig bolig)
         {
-            throw new NotImplementedException();
+            SqlCommand command = connection.CreateCommand();
+            var sql = """
+                    INSERT INTO Bolig (
+                	    Pris,
+                        Adresse,
+                        Postnummer,
+                        ByNavn,
+                        BoligType,
+                        BoligAreal,
+                        Værelser,
+                        ByggeDato,
+                        GrundStørrelse,
+                        EnergiMærke,
+                        EjendomsmæglerID,
+                        SælgerID,
+                        Status
+                    )
+                    VALUES (
+                	    @Pris,
+                        @Adresse,
+                        @Postnummer,
+                        @ByNavn,
+                        @BoligType,
+                        @BoligAreal,
+                        @Værelser,
+                        @ByggeDato,
+                        @GrundStørrelse,
+                        @EnergiMærke,
+                        @EjendomsmæglerID,
+                        @SælgerID,
+                        @Status
+                    );
+                """;
+
+            command.CommandText = sql;
+            command.Parameters.AddWithValue("@Pris", bolig.Pris);
+            command.Parameters.AddWithValue("@Adresse", bolig.Adresse);
+            command.Parameters.AddWithValue("@Postnummer", bolig.PostNummer);
+            command.Parameters.AddWithValue("@ByNavn", bolig.ByNavn);
+            command.Parameters.AddWithValue("@BoligType", bolig.Type);
+            command.Parameters.AddWithValue("@BoligAreal", bolig.BoligAreal);
+            command.Parameters.AddWithValue("@Værelser", bolig.Værelser);
+            command.Parameters.AddWithValue("@ByggeDato", bolig.ByggeDato);
+            command.Parameters.AddWithValue("@GrundStørrelse", bolig.GrundStørrelse);
+            command.Parameters.AddWithValue("@EnergiMærke", bolig.EnergiMærke);
+            command.Parameters.AddWithValue("@EjendomsmæglerID", bolig.EjendomsmæglerID);
+            command.Parameters.AddWithValue("@SælgerID", bolig.SælgerID);
+            command.Parameters.AddWithValue("@Status", bolig.Status);
+
+
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+            
+            return bolig;
         }
 
         public Ejendomsmægler CreateEjendomsmægler(Ejendomsmægler ejendomsmægler)
