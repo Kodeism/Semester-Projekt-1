@@ -1,0 +1,77 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using BusineesLogic;
+
+namespace Semester_Projekt_1
+{
+    public partial class FormTilføjSælger : Form
+    {
+        public FormTilføjSælger()
+        {
+            InitializeComponent();
+        }
+
+        private void SælgerTelefonNummerTextbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormTilføjSælger_Load(object sender, EventArgs e)
+        {
+            this.BackColor = ColorTranslator.FromHtml("#FFF6B6");
+            panel1.BackColor = ColorTranslator.FromHtml("#FFF6DA");
+            sælgerOpretOpretButton.BackColor = ColorTranslator.FromHtml("#2DC75C");
+            sælgerAnnulerOpretButton.BackColor = ColorTranslator.FromHtml("#FF6464");
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void sælgerOpretOpretButton_Click(object sender, EventArgs e)
+        {
+            string navn = sælgerFornavnTextbox.Text;
+            string efternavn = sælgerEfternavnTextbox.Text;
+            string adresse = sælgerAdresseTextbox.Text;
+            //Giver error message, og highlighter box med rød, hvis der indtastes andet end tal i til tlfnummer.
+            int tlfNummer = 0;
+            try
+            {
+                 tlfNummer = int.Parse(SælgerTelefonNummerTextbox.Text);
+            }
+            catch
+            {
+                SælgerTelefonNummerTextbox.BackColor = Color.Red;
+                MessageBox.Show("Indtast kun tal i telefonnummerboxen");
+                return;
+            }
+            string cprNummer = sælgerCprNummerTextbox.Text;
+
+            string email = sælgerEmailTextbox.Text;
+            if (!email.Contains('@') || !email.Contains('.'))
+            {
+                sælgerEmailTextbox.BackColor = Color.Red;
+                MessageBox.Show("Indtast en gyldig email");
+            }
+            else
+            {
+                SælgerFunktioner sælgerfunktion = new SælgerFunktioner();
+                sælgerfunktion.TilføjSælger(navn, efternavn, tlfNummer, email, cprNummer, adresse);
+            }
+
+        }
+
+        private void sælgerFornavnTextbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
