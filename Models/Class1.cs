@@ -62,6 +62,14 @@
         {
 
         }
+
+        /// <summary>
+        /// Sælger constructor med ID så den kan hente ID fra databasen
+        /// </summary>
+        public Sælger(int id, string navn, string efternavn, int tlfNummer, string email) : base(navn, efternavn, tlfNummer, email)
+        {
+            SælgerID = id;
+        }
     }
 
     public class Ejendomsmægler : Kunde
