@@ -189,5 +189,15 @@ namespace Semester_Projekt_1.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vecteezy_money_icon_png_on_transparent_background_17785212 {
+            get {
+                object obj = ResourceManager.GetObject("vecteezy_money-icon-png-on-transparent-background_17785212", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
