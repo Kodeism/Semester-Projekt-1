@@ -44,7 +44,7 @@
         //Hvis de har en fornemmelse af hvor stor boligen gerne skulle være
         public int Værelser { get; set; } //optional
         //Hvor mange værelser vil de have som minimum.
-        public Køber(string navn, string efternavn, int tlfNummer, string email, int prisKlasse, string søgeOmråde, string boligType, Ejendomsmægler kontaktPerson) : base(navn, efternavn, tlfNummer, email)
+        public Køber(string navn, string efternavn, int tlfNummer, string email, int prisKlasse, string søgeOmråde, string boligType) : base(navn, efternavn, tlfNummer, email)
         {
             SøgeOmråde = søgeOmråde;
             PrisKlasse = prisKlasse;
@@ -86,13 +86,17 @@
         //pris på boligen
         public string Adresse { get; set; }
         //boligens adresse
+        public int PostNummer { get; set; }
+        //boligens postnummer
+        public string ByNavn { get; set; }
+        //boligens bynavn
         public string Type { get; set; }
         //boligtypen
         public int BoligAreal { get; set; }
         //boligens areal
         public int Værelser { get; set; }
         //antal af værelser/rum
-        public int ByggeDato { get; set; }
+        public DateTime ByggeDato { get; set; }
         //hvornår var den bygget/renoveret
         public int GrundStørrelse { get; set; }
         //det samlet areal af bolig og land
@@ -104,19 +108,21 @@
         //sælgeren der vil sælge boligen
         public string Status { get; set; }
         //Solgt, eller Usolgt
-        public Bolig(int pris, string adresse, string type, int boligAreal, int værelser, int byggeDato, int grundStørrelse, Ejendomsmægler ejendomsmægler, Sælger sælger)
+        public Bolig(int pris, string adresse, int postNummer, string byNavn, string type, int boligAreal, int værelser, DateTime byggeDato, int grundStørrelse, int mæglerID, int sælgerID, string energimærke = "", string status = "Usolgt")
         {
             Pris = pris;
             Adresse = adresse;
+            PostNummer = postNummer;
+            ByNavn = byNavn;
             Type = type;
             BoligAreal = boligAreal;
             Værelser = værelser;
             ByggeDato = byggeDato;
             GrundStørrelse = grundStørrelse;
-            EjendomsmæglerID = ejendomsmægler.EjendomsmæglerID;
-            SælgerID = sælger.SælgerID;
-            EnergiMærke = "";
-            Status = "Usolgt";
+            EjendomsmæglerID = mæglerID;
+            SælgerID = sælgerID;
+            EnergiMærke = energimærke;
+            Status = status;
         }
     }
 
