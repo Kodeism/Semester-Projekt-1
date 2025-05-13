@@ -34,7 +34,6 @@
             telefonnummerTextbox = new TextBox();
             søgeområdeTextbox = new TextBox();
             emailTextbox = new TextBox();
-            yderligereinfoTextbox = new TextBox();
             værelserTextbox = new TextBox();
             prisklasseTextbox = new TextBox();
             boligstørrelseTextbox = new TextBox();
@@ -56,92 +55,108 @@
             BoligtypeCombobox = new ComboBox();
             anullerButton = new Button();
             opretButton = new Button();
+            yderligereinfoTextBox = new RichTextBox();
             SuspendLayout();
             // 
             // navnTextbox
             // 
+            navnTextbox.ForeColor = SystemColors.InactiveCaption;
             navnTextbox.Location = new Point(12, 32);
             navnTextbox.Name = "navnTextbox";
             navnTextbox.Size = new Size(191, 23);
             navnTextbox.TabIndex = 0;
+            navnTextbox.Text = "Navn...";
             // 
             // cprnummerTextbox
             // 
+            cprnummerTextbox.ForeColor = SystemColors.InactiveCaption;
             cprnummerTextbox.Location = new Point(246, 138);
             cprnummerTextbox.Name = "cprnummerTextbox";
             cprnummerTextbox.Size = new Size(183, 23);
             cprnummerTextbox.TabIndex = 1;
+            cprnummerTextbox.Text = "CPR-Nummer...";
             // 
             // adresseTextbox
             // 
+            adresseTextbox.ForeColor = SystemColors.InactiveCaption;
             adresseTextbox.Location = new Point(12, 83);
             adresseTextbox.Name = "adresseTextbox";
             adresseTextbox.Size = new Size(417, 23);
             adresseTextbox.TabIndex = 2;
+            adresseTextbox.Text = "Adresse...";
             // 
             // telefonnummerTextbox
             // 
+            telefonnummerTextbox.ForeColor = SystemColors.InactiveCaption;
             telefonnummerTextbox.Location = new Point(12, 138);
             telefonnummerTextbox.Name = "telefonnummerTextbox";
             telefonnummerTextbox.Size = new Size(191, 23);
             telefonnummerTextbox.TabIndex = 3;
+            telefonnummerTextbox.Text = "Telefonnummer";
             // 
             // søgeområdeTextbox
             // 
+            søgeområdeTextbox.ForeColor = SystemColors.InactiveCaption;
             søgeområdeTextbox.Location = new Point(12, 260);
             søgeområdeTextbox.Name = "søgeområdeTextbox";
             søgeområdeTextbox.Size = new Size(417, 23);
             søgeområdeTextbox.TabIndex = 4;
+            søgeområdeTextbox.Text = "Ønsket Søgeområde...";
             // 
             // emailTextbox
             // 
+            emailTextbox.ForeColor = SystemColors.InactiveCaption;
             emailTextbox.Location = new Point(12, 198);
             emailTextbox.Name = "emailTextbox";
             emailTextbox.Size = new Size(417, 23);
             emailTextbox.TabIndex = 5;
-            // 
-            // yderligereinfoTextbox
-            // 
-            yderligereinfoTextbox.Location = new Point(12, 459);
-            yderligereinfoTextbox.Name = "yderligereinfoTextbox";
-            yderligereinfoTextbox.Size = new Size(417, 23);
-            yderligereinfoTextbox.TabIndex = 7;
+            emailTextbox.Text = "E-mail...";
             // 
             // værelserTextbox
             // 
+            værelserTextbox.ForeColor = SystemColors.InactiveCaption;
             værelserTextbox.Location = new Point(166, 387);
             værelserTextbox.Name = "værelserTextbox";
             værelserTextbox.Size = new Size(100, 23);
             værelserTextbox.TabIndex = 8;
+            værelserTextbox.Text = "Antal...";
             // 
             // prisklasseTextbox
             // 
+            prisklasseTextbox.ForeColor = SystemColors.InactiveCaption;
             prisklasseTextbox.Location = new Point(12, 317);
             prisklasseTextbox.Name = "prisklasseTextbox";
             prisklasseTextbox.Size = new Size(191, 23);
             prisklasseTextbox.TabIndex = 9;
+            prisklasseTextbox.Text = "Prisklasse...";
             // 
             // boligstørrelseTextbox
             // 
+            boligstørrelseTextbox.ForeColor = SystemColors.InactiveCaption;
             boligstørrelseTextbox.Location = new Point(281, 387);
             boligstørrelseTextbox.Name = "boligstørrelseTextbox";
             boligstørrelseTextbox.Size = new Size(148, 23);
             boligstørrelseTextbox.TabIndex = 10;
+            boligstørrelseTextbox.Text = "Ønsket Størrelse...";
             boligstørrelseTextbox.TextChanged += textBox11_TextChanged;
             // 
             // grundstørrelseTextbox
             // 
+            grundstørrelseTextbox.ForeColor = SystemColors.InactiveCaption;
             grundstørrelseTextbox.Location = new Point(12, 387);
             grundstørrelseTextbox.Name = "grundstørrelseTextbox";
             grundstørrelseTextbox.Size = new Size(127, 23);
             grundstørrelseTextbox.TabIndex = 11;
+            grundstørrelseTextbox.Text = "Ønsket Størrelse...";
             // 
             // efternavnTextbox
             // 
+            efternavnTextbox.ForeColor = SystemColors.InactiveCaption;
             efternavnTextbox.Location = new Point(246, 32);
             efternavnTextbox.Name = "efternavnTextbox";
             efternavnTextbox.Size = new Size(183, 23);
             efternavnTextbox.TabIndex = 12;
+            efternavnTextbox.Text = "Efternavn...";
             // 
             // NavnLabel
             // 
@@ -262,18 +277,20 @@
             // 
             // BoligtypeCombobox
             // 
+            BoligtypeCombobox.ForeColor = SystemColors.InactiveCaption;
             BoligtypeCombobox.FormattingEnabled = true;
             BoligtypeCombobox.Items.AddRange(new object[] { "Villa", "Lejlighed", "Rækkehus", "Andelsbolig", "Ejerlejlighed", "Parcelhus", "Sommerhus", "Kolonihavehus", "Landejendom", "Flerfamiliehus", "Byhus", "Dobbelthus", "Tolvhus", "Fritidshus", "Penthouse", "Studiolejlighed", "Ungdomsbolig", "Ældrebolig", "Almennyttig bolig", "Bofællesskab" });
             BoligtypeCombobox.Location = new Point(246, 317);
             BoligtypeCombobox.Name = "BoligtypeCombobox";
             BoligtypeCombobox.Size = new Size(183, 23);
             BoligtypeCombobox.TabIndex = 26;
+            BoligtypeCombobox.Text = "Vælg Boligtype...";
             BoligtypeCombobox.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // anullerButton
             // 
             anullerButton.BackColor = Color.IndianRed;
-            anullerButton.Location = new Point(12, 520);
+            anullerButton.Location = new Point(12, 609);
             anullerButton.Name = "anullerButton";
             anullerButton.Size = new Size(93, 39);
             anullerButton.TabIndex = 27;
@@ -283,19 +300,29 @@
             // opretButton
             // 
             opretButton.BackColor = Color.LimeGreen;
-            opretButton.Location = new Point(336, 520);
+            opretButton.Location = new Point(336, 609);
             opretButton.Name = "opretButton";
             opretButton.Size = new Size(93, 39);
             opretButton.TabIndex = 28;
             opretButton.Text = "Opret";
             opretButton.UseVisualStyleBackColor = false;
             // 
+            // yderligereinfoTextBox
+            // 
+            yderligereinfoTextBox.ForeColor = SystemColors.InactiveCaption;
+            yderligereinfoTextBox.Location = new Point(12, 459);
+            yderligereinfoTextBox.Name = "yderligereinfoTextBox";
+            yderligereinfoTextBox.Size = new Size(417, 144);
+            yderligereinfoTextBox.TabIndex = 29;
+            yderligereinfoTextBox.Text = "Relevant info...";
+            // 
             // TilføjKøberDesign
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 246, 182);
-            ClientSize = new Size(449, 571);
+            ClientSize = new Size(449, 662);
+            Controls.Add(yderligereinfoTextBox);
             Controls.Add(opretButton);
             Controls.Add(anullerButton);
             Controls.Add(BoligtypeCombobox);
@@ -317,7 +344,6 @@
             Controls.Add(boligstørrelseTextbox);
             Controls.Add(prisklasseTextbox);
             Controls.Add(værelserTextbox);
-            Controls.Add(yderligereinfoTextbox);
             Controls.Add(emailTextbox);
             Controls.Add(søgeområdeTextbox);
             Controls.Add(telefonnummerTextbox);
@@ -340,7 +366,6 @@
         private TextBox søgeområdeTextbox;
         private TextBox emailTextbox;
         private TextBox boligtypeTextbox;
-        private TextBox yderligereinfoTextbox;
         private TextBox værelserTextbox;
         private TextBox prisklasseTextbox;
         private TextBox boligstørrelseTextbox;
@@ -362,5 +387,6 @@
         private ComboBox BoligtypeCombobox;
         private Button anullerButton;
         private Button opretButton;
+        private RichTextBox yderligereinfoTextBox;
     }
 }
