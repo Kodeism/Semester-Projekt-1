@@ -10,6 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="microsoft.data.sqlclient" Version="6.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BusineesLogic\BusineesLogic.csproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>
