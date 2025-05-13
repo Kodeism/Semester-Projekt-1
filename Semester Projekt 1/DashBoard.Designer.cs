@@ -34,17 +34,17 @@
             pageLabel = new Label();
             logUdDBKnap = new Button();
             SDBPanel = new Panel();
-            tableLayoutPanel1 = new TableLayoutPanel();
+            menuDBLayoutPanel = new TableLayoutPanel();
             personDBPanel = new FlowLayoutPanel();
             personDBKnap = new Button();
             mæglerDBKnap = new Button();
             personLayOutDBPanel = new TableLayoutPanel();
-            sælgerLayoutDBPanel = new FlowLayoutPanel();
+            sælgerDBPanel = new FlowLayoutPanel();
             sælgereDBKnap = new Button();
             mineSælgereDBKnap = new Button();
             alleSælgereDBKnap = new Button();
             registrerDBKnap = new Button();
-            købereDBLayoutPanel = new FlowLayoutPanel();
+            køberDBPanel = new FlowLayoutPanel();
             køberDBKnap = new Button();
             mineKøbereDBKnap = new Button();
             alleKøbereDBKnap = new Button();
@@ -54,22 +54,22 @@
             mineBoligerDBKnap = new Button();
             alleBolgierDBKnap = new Button();
             boligerRegistrerDBKnap = new Button();
-            salgDBFlowLayoutPanel = new FlowLayoutPanel();
+            salgDBPanel = new FlowLayoutPanel();
             salgDBKnap = new Button();
-            alleSalgDBKnap = new Button();
             mineSalgDBKnap = new Button();
+            alleSalgDBKnap = new Button();
             salgRegistrerDBKnap = new Button();
             brugerDBKnap = new Button();
             screenDBPanel = new Panel();
             uDBPanel.SuspendLayout();
             SDBPanel.SuspendLayout();
-            tableLayoutPanel1.SuspendLayout();
+            menuDBLayoutPanel.SuspendLayout();
             personDBPanel.SuspendLayout();
             personLayOutDBPanel.SuspendLayout();
-            sælgerLayoutDBPanel.SuspendLayout();
-            købereDBLayoutPanel.SuspendLayout();
+            sælgerDBPanel.SuspendLayout();
+            køberDBPanel.SuspendLayout();
             boligDBPanel.SuspendLayout();
-            salgDBFlowLayoutPanel.SuspendLayout();
+            salgDBPanel.SuspendLayout();
             SuspendLayout();
             // 
             // uDBPanel
@@ -109,11 +109,11 @@
             pageLabel.AutoSize = true;
             pageLabel.FlatStyle = FlatStyle.Flat;
             pageLabel.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            pageLabel.Location = new Point(400, 3);
+            pageLabel.Location = new Point(399, 4);
             pageLabel.Name = "pageLabel";
-            pageLabel.Size = new Size(171, 41);
+            pageLabel.Size = new Size(184, 41);
             pageLabel.TabIndex = 0;
-            pageLabel.Text = "Dashboard";
+            pageLabel.Text = "Velkommen";
             // 
             // logUdDBKnap
             // 
@@ -124,7 +124,7 @@
             logUdDBKnap.ForeColor = Color.Black;
             logUdDBKnap.Image = Properties.Resources.image__22__mini;
             logUdDBKnap.ImageAlign = ContentAlignment.MiddleLeft;
-            logUdDBKnap.Location = new Point(3, 186);
+            logUdDBKnap.Location = new Point(3, 181);
             logUdDBKnap.Name = "logUdDBKnap";
             logUdDBKnap.RightToLeft = RightToLeft.No;
             logUdDBKnap.Size = new Size(133, 54);
@@ -139,32 +139,33 @@
             SDBPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             SDBPanel.BackColor = Color.FromArgb(255, 246, 218);
             SDBPanel.BorderStyle = BorderStyle.FixedSingle;
-            SDBPanel.Controls.Add(tableLayoutPanel1);
+            SDBPanel.Controls.Add(menuDBLayoutPanel);
             SDBPanel.Controls.Add(brugerDBKnap);
             SDBPanel.Location = new Point(0, 52);
             SDBPanel.Name = "SDBPanel";
             SDBPanel.Size = new Size(144, 665);
             SDBPanel.TabIndex = 1;
             // 
-            // tableLayoutPanel1
+            // menuDBLayoutPanel
             // 
-            tableLayoutPanel1.ColumnCount = 1;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Controls.Add(personDBPanel, 0, 1);
-            tableLayoutPanel1.Controls.Add(logUdDBKnap, 0, 3);
-            tableLayoutPanel1.Controls.Add(boligDBPanel, 0, 0);
-            tableLayoutPanel1.Controls.Add(salgDBFlowLayoutPanel, 0, 2);
-            tableLayoutPanel1.Location = new Point(0, 162);
-            tableLayoutPanel1.Margin = new Padding(0);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 4;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel1.Size = new Size(139, 245);
-            tableLayoutPanel1.TabIndex = 0;
+            menuDBLayoutPanel.AutoSize = true;
+            menuDBLayoutPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            menuDBLayoutPanel.ColumnCount = 1;
+            menuDBLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            menuDBLayoutPanel.Controls.Add(personDBPanel, 0, 1);
+            menuDBLayoutPanel.Controls.Add(logUdDBKnap, 0, 3);
+            menuDBLayoutPanel.Controls.Add(boligDBPanel, 0, 0);
+            menuDBLayoutPanel.Controls.Add(salgDBPanel, 0, 2);
+            menuDBLayoutPanel.Location = new Point(0, 162);
+            menuDBLayoutPanel.Margin = new Padding(0);
+            menuDBLayoutPanel.Name = "menuDBLayoutPanel";
+            menuDBLayoutPanel.RowCount = 4;
+            menuDBLayoutPanel.RowStyles.Add(new RowStyle());
+            menuDBLayoutPanel.RowStyles.Add(new RowStyle());
+            menuDBLayoutPanel.RowStyles.Add(new RowStyle());
+            menuDBLayoutPanel.RowStyles.Add(new RowStyle());
+            menuDBLayoutPanel.Size = new Size(139, 238);
+            menuDBLayoutPanel.TabIndex = 0;
             // 
             // personDBPanel
             // 
@@ -172,11 +173,11 @@
             personDBPanel.Controls.Add(personDBKnap);
             personDBPanel.Controls.Add(mæglerDBKnap);
             personDBPanel.Controls.Add(personLayOutDBPanel);
-            personDBPanel.Location = new Point(3, 64);
+            personDBPanel.Location = new Point(3, 62);
             personDBPanel.MaximumSize = new Size(133, 320);
-            personDBPanel.MinimumSize = new Size(132, 51);
+            personDBPanel.MinimumSize = new Size(132, 53);
             personDBPanel.Name = "personDBPanel";
-            personDBPanel.Size = new Size(132, 55);
+            personDBPanel.Size = new Size(132, 53);
             personDBPanel.TabIndex = 4;
             // 
             // personDBKnap
@@ -196,6 +197,7 @@
             personDBKnap.TabIndex = 3;
             personDBKnap.TextAlign = ContentAlignment.MiddleRight;
             personDBKnap.UseVisualStyleBackColor = false;
+            personDBKnap.Click += personDBKnap_Click;
             // 
             // mæglerDBKnap
             // 
@@ -214,37 +216,39 @@
             mæglerDBKnap.Text = "Mæglere";
             mæglerDBKnap.TextAlign = ContentAlignment.TopLeft;
             mæglerDBKnap.UseVisualStyleBackColor = false;
+            mæglerDBKnap.Click += mæglerDBKnap_Click;
             // 
             // personLayOutDBPanel
             // 
+            personLayOutDBPanel.AutoSize = true;
             personLayOutDBPanel.ColumnCount = 1;
-            personLayOutDBPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            personLayOutDBPanel.Controls.Add(sælgerLayoutDBPanel, 0, 0);
-            personLayOutDBPanel.Controls.Add(købereDBLayoutPanel, 0, 1);
+            personLayOutDBPanel.ColumnStyles.Add(new ColumnStyle());
+            personLayOutDBPanel.Controls.Add(sælgerDBPanel, 0, 0);
+            personLayOutDBPanel.Controls.Add(køberDBPanel, 0, 1);
             personLayOutDBPanel.Location = new Point(0, 81);
             personLayOutDBPanel.Margin = new Padding(0);
             personLayOutDBPanel.MaximumSize = new Size(132, 235);
             personLayOutDBPanel.MinimumSize = new Size(132, 52);
             personLayOutDBPanel.Name = "personLayOutDBPanel";
             personLayOutDBPanel.RowCount = 2;
-            personLayOutDBPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            personLayOutDBPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            personLayOutDBPanel.Size = new Size(132, 52);
+            personLayOutDBPanel.RowStyles.Add(new RowStyle());
+            personLayOutDBPanel.RowStyles.Add(new RowStyle());
+            personLayOutDBPanel.Size = new Size(132, 61);
             personLayOutDBPanel.TabIndex = 7;
             // 
-            // sælgerLayoutDBPanel
+            // sælgerDBPanel
             // 
-            sælgerLayoutDBPanel.Controls.Add(sælgereDBKnap);
-            sælgerLayoutDBPanel.Controls.Add(mineSælgereDBKnap);
-            sælgerLayoutDBPanel.Controls.Add(alleSælgereDBKnap);
-            sælgerLayoutDBPanel.Controls.Add(registrerDBKnap);
-            sælgerLayoutDBPanel.Location = new Point(0, 0);
-            sælgerLayoutDBPanel.Margin = new Padding(0);
-            sælgerLayoutDBPanel.MaximumSize = new Size(132, 120);
-            sælgerLayoutDBPanel.MinimumSize = new Size(132, 31);
-            sælgerLayoutDBPanel.Name = "sælgerLayoutDBPanel";
-            sælgerLayoutDBPanel.Size = new Size(132, 31);
-            sælgerLayoutDBPanel.TabIndex = 6;
+            sælgerDBPanel.Controls.Add(sælgereDBKnap);
+            sælgerDBPanel.Controls.Add(mineSælgereDBKnap);
+            sælgerDBPanel.Controls.Add(alleSælgereDBKnap);
+            sælgerDBPanel.Controls.Add(registrerDBKnap);
+            sælgerDBPanel.Location = new Point(0, 0);
+            sælgerDBPanel.Margin = new Padding(0);
+            sælgerDBPanel.MaximumSize = new Size(132, 120);
+            sælgerDBPanel.MinimumSize = new Size(132, 31);
+            sælgerDBPanel.Name = "sælgerDBPanel";
+            sælgerDBPanel.Size = new Size(132, 31);
+            sælgerDBPanel.TabIndex = 6;
             // 
             // sælgereDBKnap
             // 
@@ -263,6 +267,7 @@
             sælgereDBKnap.Text = "Sælgere";
             sælgereDBKnap.TextAlign = ContentAlignment.TopLeft;
             sælgereDBKnap.UseVisualStyleBackColor = false;
+            sælgereDBKnap.Click += sælgereDBKnap_Click;
             // 
             // mineSælgereDBKnap
             // 
@@ -281,6 +286,7 @@
             mineSælgereDBKnap.Text = "Mine Sælgere";
             mineSælgereDBKnap.TextAlign = ContentAlignment.TopLeft;
             mineSælgereDBKnap.UseVisualStyleBackColor = false;
+            mineSælgereDBKnap.Click += mineSælgereDBKnap_Click;
             // 
             // alleSælgereDBKnap
             // 
@@ -299,6 +305,7 @@
             alleSælgereDBKnap.Text = "Alle Sælgere";
             alleSælgereDBKnap.TextAlign = ContentAlignment.TopLeft;
             alleSælgereDBKnap.UseVisualStyleBackColor = false;
+            alleSælgereDBKnap.Click += alleSælgereDBKnap_Click;
             // 
             // registrerDBKnap
             // 
@@ -317,20 +324,21 @@
             registrerDBKnap.Text = "Registrer";
             registrerDBKnap.TextAlign = ContentAlignment.TopLeft;
             registrerDBKnap.UseVisualStyleBackColor = false;
+            registrerDBKnap.Click += registrerDBKnap_Click;
             // 
-            // købereDBLayoutPanel
+            // køberDBPanel
             // 
-            købereDBLayoutPanel.Controls.Add(køberDBKnap);
-            købereDBLayoutPanel.Controls.Add(mineKøbereDBKnap);
-            købereDBLayoutPanel.Controls.Add(alleKøbereDBKnap);
-            købereDBLayoutPanel.Controls.Add(registrerKøberDBKnap);
-            købereDBLayoutPanel.Location = new Point(0, 26);
-            købereDBLayoutPanel.Margin = new Padding(0);
-            købereDBLayoutPanel.MaximumSize = new Size(132, 122);
-            købereDBLayoutPanel.MinimumSize = new Size(132, 30);
-            købereDBLayoutPanel.Name = "købereDBLayoutPanel";
-            købereDBLayoutPanel.Size = new Size(132, 30);
-            købereDBLayoutPanel.TabIndex = 7;
+            køberDBPanel.Controls.Add(køberDBKnap);
+            køberDBPanel.Controls.Add(mineKøbereDBKnap);
+            køberDBPanel.Controls.Add(alleKøbereDBKnap);
+            køberDBPanel.Controls.Add(registrerKøberDBKnap);
+            køberDBPanel.Location = new Point(0, 31);
+            køberDBPanel.Margin = new Padding(0);
+            køberDBPanel.MaximumSize = new Size(132, 122);
+            køberDBPanel.MinimumSize = new Size(132, 30);
+            køberDBPanel.Name = "køberDBPanel";
+            køberDBPanel.Size = new Size(132, 30);
+            køberDBPanel.TabIndex = 7;
             // 
             // køberDBKnap
             // 
@@ -349,6 +357,7 @@
             køberDBKnap.Text = "Købere";
             køberDBKnap.TextAlign = ContentAlignment.TopLeft;
             køberDBKnap.UseVisualStyleBackColor = false;
+            køberDBKnap.Click += køberDBKnap_Click;
             // 
             // mineKøbereDBKnap
             // 
@@ -367,6 +376,7 @@
             mineKøbereDBKnap.Text = "Mine Købere";
             mineKøbereDBKnap.TextAlign = ContentAlignment.TopLeft;
             mineKøbereDBKnap.UseVisualStyleBackColor = false;
+            mineKøbereDBKnap.Click += mineKøbereDBKnap_Click;
             // 
             // alleKøbereDBKnap
             // 
@@ -385,6 +395,7 @@
             alleKøbereDBKnap.Text = "Alle Købere";
             alleKøbereDBKnap.TextAlign = ContentAlignment.TopLeft;
             alleKøbereDBKnap.UseVisualStyleBackColor = false;
+            alleKøbereDBKnap.Click += alleKøbereDBKnap_Click;
             // 
             // registrerKøberDBKnap
             // 
@@ -403,6 +414,7 @@
             registrerKøberDBKnap.Text = "Registrer";
             registrerKøberDBKnap.TextAlign = ContentAlignment.TopLeft;
             registrerKøberDBKnap.UseVisualStyleBackColor = false;
+            registrerKøberDBKnap.Click += registrerKøberDBKnap_Click;
             // 
             // boligDBPanel
             // 
@@ -415,7 +427,7 @@
             boligDBPanel.MaximumSize = new Size(132, 164);
             boligDBPanel.MinimumSize = new Size(132, 53);
             boligDBPanel.Name = "boligDBPanel";
-            boligDBPanel.Size = new Size(132, 55);
+            boligDBPanel.Size = new Size(132, 53);
             boligDBPanel.TabIndex = 1;
             // 
             // boligDBKnap
@@ -454,6 +466,7 @@
             mineBoligerDBKnap.Text = "Mine Boliger";
             mineBoligerDBKnap.TextAlign = ContentAlignment.TopLeft;
             mineBoligerDBKnap.UseVisualStyleBackColor = false;
+            mineBoligerDBKnap.Click += mineBoligerDBKnap_Click;
             // 
             // alleBolgierDBKnap
             // 
@@ -472,6 +485,7 @@
             alleBolgierDBKnap.Text = "Alle Boliger";
             alleBolgierDBKnap.TextAlign = ContentAlignment.TopLeft;
             alleBolgierDBKnap.UseVisualStyleBackColor = false;
+            alleBolgierDBKnap.Click += alleBolgierDBKnap_Click;
             // 
             // boligerRegistrerDBKnap
             // 
@@ -491,19 +505,19 @@
             boligerRegistrerDBKnap.TextAlign = ContentAlignment.TopLeft;
             boligerRegistrerDBKnap.UseVisualStyleBackColor = false;
             // 
-            // salgDBFlowLayoutPanel
+            // salgDBPanel
             // 
-            salgDBFlowLayoutPanel.BorderStyle = BorderStyle.FixedSingle;
-            salgDBFlowLayoutPanel.Controls.Add(salgDBKnap);
-            salgDBFlowLayoutPanel.Controls.Add(alleSalgDBKnap);
-            salgDBFlowLayoutPanel.Controls.Add(mineSalgDBKnap);
-            salgDBFlowLayoutPanel.Controls.Add(salgRegistrerDBKnap);
-            salgDBFlowLayoutPanel.Location = new Point(3, 125);
-            salgDBFlowLayoutPanel.MaximumSize = new Size(133, 142);
-            salgDBFlowLayoutPanel.MinimumSize = new Size(133, 54);
-            salgDBFlowLayoutPanel.Name = "salgDBFlowLayoutPanel";
-            salgDBFlowLayoutPanel.Size = new Size(133, 54);
-            salgDBFlowLayoutPanel.TabIndex = 5;
+            salgDBPanel.BorderStyle = BorderStyle.FixedSingle;
+            salgDBPanel.Controls.Add(salgDBKnap);
+            salgDBPanel.Controls.Add(mineSalgDBKnap);
+            salgDBPanel.Controls.Add(alleSalgDBKnap);
+            salgDBPanel.Controls.Add(salgRegistrerDBKnap);
+            salgDBPanel.Location = new Point(3, 121);
+            salgDBPanel.MaximumSize = new Size(133, 142);
+            salgDBPanel.MinimumSize = new Size(133, 54);
+            salgDBPanel.Name = "salgDBPanel";
+            salgDBPanel.Size = new Size(133, 54);
+            salgDBPanel.TabIndex = 5;
             // 
             // salgDBKnap
             // 
@@ -522,24 +536,7 @@
             salgDBKnap.TabIndex = 6;
             salgDBKnap.TextAlign = ContentAlignment.MiddleRight;
             salgDBKnap.UseVisualStyleBackColor = false;
-            // 
-            // alleSalgDBKnap
-            // 
-            alleSalgDBKnap.BackColor = Color.FromArgb(200, 194, 194);
-            alleSalgDBKnap.BackgroundImageLayout = ImageLayout.None;
-            alleSalgDBKnap.FlatAppearance.BorderSize = 0;
-            alleSalgDBKnap.FlatStyle = FlatStyle.Flat;
-            alleSalgDBKnap.Font = new Font("Segoe UI", 8F);
-            alleSalgDBKnap.ForeColor = Color.Black;
-            alleSalgDBKnap.Location = new Point(0, 51);
-            alleSalgDBKnap.Margin = new Padding(0);
-            alleSalgDBKnap.Name = "alleSalgDBKnap";
-            alleSalgDBKnap.RightToLeft = RightToLeft.No;
-            alleSalgDBKnap.Size = new Size(132, 30);
-            alleSalgDBKnap.TabIndex = 5;
-            alleSalgDBKnap.Text = "Alle Salg";
-            alleSalgDBKnap.TextAlign = ContentAlignment.TopLeft;
-            alleSalgDBKnap.UseVisualStyleBackColor = false;
+            salgDBKnap.Click += salgDBKnap_Click;
             // 
             // mineSalgDBKnap
             // 
@@ -549,7 +546,7 @@
             mineSalgDBKnap.FlatStyle = FlatStyle.Flat;
             mineSalgDBKnap.Font = new Font("Segoe UI", 8F);
             mineSalgDBKnap.ForeColor = Color.Black;
-            mineSalgDBKnap.Location = new Point(0, 81);
+            mineSalgDBKnap.Location = new Point(0, 51);
             mineSalgDBKnap.Margin = new Padding(0);
             mineSalgDBKnap.Name = "mineSalgDBKnap";
             mineSalgDBKnap.RightToLeft = RightToLeft.No;
@@ -558,6 +555,26 @@
             mineSalgDBKnap.Text = "Mine Salg";
             mineSalgDBKnap.TextAlign = ContentAlignment.TopLeft;
             mineSalgDBKnap.UseVisualStyleBackColor = false;
+            mineSalgDBKnap.Click += mineSalgDBKnap_Click;
+            // 
+            // alleSalgDBKnap
+            // 
+            alleSalgDBKnap.BackColor = Color.FromArgb(200, 194, 194);
+            alleSalgDBKnap.BackgroundImageLayout = ImageLayout.None;
+            alleSalgDBKnap.FlatAppearance.BorderSize = 0;
+            alleSalgDBKnap.FlatStyle = FlatStyle.Flat;
+            alleSalgDBKnap.Font = new Font("Segoe UI", 8F);
+            alleSalgDBKnap.ForeColor = Color.Black;
+            alleSalgDBKnap.Location = new Point(0, 81);
+            alleSalgDBKnap.Margin = new Padding(0);
+            alleSalgDBKnap.Name = "alleSalgDBKnap";
+            alleSalgDBKnap.RightToLeft = RightToLeft.No;
+            alleSalgDBKnap.Size = new Size(132, 30);
+            alleSalgDBKnap.TabIndex = 5;
+            alleSalgDBKnap.Text = "Alle Salg";
+            alleSalgDBKnap.TextAlign = ContentAlignment.TopLeft;
+            alleSalgDBKnap.UseVisualStyleBackColor = false;
+            alleSalgDBKnap.Click += alleSalgDBKnap_Click;
             // 
             // salgRegistrerDBKnap
             // 
@@ -576,6 +593,7 @@
             salgRegistrerDBKnap.Text = "Registrer";
             salgRegistrerDBKnap.TextAlign = ContentAlignment.TopLeft;
             salgRegistrerDBKnap.UseVisualStyleBackColor = false;
+            salgRegistrerDBKnap.Click += salgRegistrerDBKnap_Click;
             // 
             // brugerDBKnap
             // 
@@ -615,13 +633,15 @@
             uDBPanel.ResumeLayout(false);
             uDBPanel.PerformLayout();
             SDBPanel.ResumeLayout(false);
-            tableLayoutPanel1.ResumeLayout(false);
+            SDBPanel.PerformLayout();
+            menuDBLayoutPanel.ResumeLayout(false);
             personDBPanel.ResumeLayout(false);
+            personDBPanel.PerformLayout();
             personLayOutDBPanel.ResumeLayout(false);
-            sælgerLayoutDBPanel.ResumeLayout(false);
-            købereDBLayoutPanel.ResumeLayout(false);
+            sælgerDBPanel.ResumeLayout(false);
+            køberDBPanel.ResumeLayout(false);
             boligDBPanel.ResumeLayout(false);
-            salgDBFlowLayoutPanel.ResumeLayout(false);
+            salgDBPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -636,25 +656,25 @@
         private Button personDBKnap;
         private Button startDBKnap;
         private Panel screenDBPanel;
-        private TableLayoutPanel tableLayoutPanel1;
+        private TableLayoutPanel menuDBLayoutPanel;
         private FlowLayoutPanel boligDBPanel;
         private Button mineBoligerDBKnap;
         private Button alleBolgierDBKnap;
         private Button boligerRegistrerDBKnap;
         private FlowLayoutPanel personDBPanel;
         private Button sælgereDBKnap;
-        private FlowLayoutPanel sælgerLayoutDBPanel;
+        private FlowLayoutPanel sælgerDBPanel;
         private Button mineSælgereDBKnap;
         private TableLayoutPanel personLayOutDBPanel;
         private Button alleSælgereDBKnap;
         private Button registrerDBKnap;
         private Button køberDBKnap;
-        private FlowLayoutPanel købereDBLayoutPanel;
+        private FlowLayoutPanel køberDBPanel;
         private Button mineKøbereDBKnap;
         private Button alleKøbereDBKnap;
         private Button registrerKøberDBKnap;
         private Button mæglerDBKnap;
-        private FlowLayoutPanel salgDBFlowLayoutPanel;
+        private FlowLayoutPanel salgDBPanel;
         private Button alleSalgDBKnap;
         private Button mineSalgDBKnap;
         private Button salgRegistrerDBKnap;
