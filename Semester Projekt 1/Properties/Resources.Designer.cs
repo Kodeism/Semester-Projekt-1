@@ -73,6 +73,16 @@ namespace Semester_Projekt_1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Drop_down_arrow_icon_rounded {
+            get {
+                object obj = ResourceManager.GetObject("Drop-down-arrow-icon-rounded", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap houses_icon {
             get {
                 object obj = ResourceManager.GetObject("houses-icon", resourceCulture);

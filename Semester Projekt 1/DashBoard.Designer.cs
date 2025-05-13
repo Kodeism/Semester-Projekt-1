@@ -258,6 +258,8 @@
             sælgereDBKnap.FlatStyle = FlatStyle.Flat;
             sælgereDBKnap.Font = new Font("Segoe UI", 8F);
             sælgereDBKnap.ForeColor = Color.Black;
+            sælgereDBKnap.Image = Properties.Resources.Drop_down_arrow_icon_rounded;
+            sælgereDBKnap.ImageAlign = ContentAlignment.BottomRight;
             sælgereDBKnap.Location = new Point(0, 0);
             sælgereDBKnap.Margin = new Padding(0);
             sælgereDBKnap.Name = "sælgereDBKnap";
@@ -348,6 +350,8 @@
             køberDBKnap.FlatStyle = FlatStyle.Flat;
             køberDBKnap.Font = new Font("Segoe UI", 8F);
             køberDBKnap.ForeColor = Color.Black;
+            køberDBKnap.Image = Properties.Resources.Drop_down_arrow_icon_rounded;
+            køberDBKnap.ImageAlign = ContentAlignment.BottomRight;
             køberDBKnap.Location = new Point(0, 0);
             køberDBKnap.Margin = new Padding(0);
             køberDBKnap.Name = "køberDBKnap";
