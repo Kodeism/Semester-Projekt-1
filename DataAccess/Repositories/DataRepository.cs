@@ -68,7 +68,7 @@ namespace DataAccess.Repositories
             connection.Open();
             command.ExecuteNonQuery();
             connection.Close();
-            
+
             return bolig;
         }
 
@@ -115,7 +115,7 @@ namespace DataAccess.Repositories
             command.Parameters.AddWithValue("@Pris", nyPris);
             command.Parameters.AddWithValue("@BoligID", boligId);
 
-            connection.Open(); 
+            connection.Open();
             command.ExecuteNonQuery();
             connection.Close();
         }
