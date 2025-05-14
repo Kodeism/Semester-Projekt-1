@@ -5,13 +5,26 @@ namespace Semester_Projekt_1
         public DashBoard()
         {
             InitializeComponent();
+            openForm(new Forside(), screenDBPanel);
         }
         private void closeMenu(FlowLayoutPanel menu)
         {
             menu.Height = menu.MinimumSize.Height;
         }
+        private static void openForm(Form subform, Panel screen)
+        {
+            subform.TopLevel = false;
+            subform.TopMost = true;
+            subform.FormBorderStyle = FormBorderStyle.None;
+            subform.Dock = DockStyle.Fill;
+            screen.Tag = subform;
+            screen.Controls.Add(subform);
+            subform.BringToFront();
+            subform.Show();
+        }
         private void startDBKnap_Click(object sender, EventArgs e)
         {
+            openForm(new Forside(), screenDBPanel);
             pageLabel.Text = "Forside";
             closeMenu(boligDBPanel);
             closeMenu(personDBPanel);
@@ -166,3 +179,6 @@ namespace Semester_Projekt_1
         }
     }
 }
+
+
+

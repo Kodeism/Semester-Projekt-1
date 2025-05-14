@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Semester_Projekt_1;
 
 namespace Semester_Projekt_1
 {
@@ -15,6 +16,11 @@ namespace Semester_Projekt_1
         public Forside()
         {
             InitializeComponent();
+        }
+
+        private void statBoxesLayoutPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

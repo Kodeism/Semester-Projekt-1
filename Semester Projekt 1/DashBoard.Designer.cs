@@ -108,10 +108,10 @@
             pageLabel.Anchor = AnchorStyles.None;
             pageLabel.AutoSize = true;
             pageLabel.FlatStyle = FlatStyle.Flat;
-            pageLabel.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            pageLabel.Location = new Point(399, 4);
+            pageLabel.Font = new Font("Segoe UI", 19F, FontStyle.Bold);
+            pageLabel.Location = new Point(395, -1);
             pageLabel.Name = "pageLabel";
-            pageLabel.Size = new Size(184, 41);
+            pageLabel.Size = new Size(234, 51);
             pageLabel.TabIndex = 0;
             pageLabel.Text = "Velkommen";
             // 
@@ -135,12 +135,12 @@
             // 
             // SDBPanel
             // 
-            SDBPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             SDBPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             SDBPanel.BackColor = Color.FromArgb(255, 246, 218);
             SDBPanel.BorderStyle = BorderStyle.FixedSingle;
             SDBPanel.Controls.Add(menuDBLayoutPanel);
             SDBPanel.Controls.Add(brugerDBKnap);
+            SDBPanel.Dock = DockStyle.Left;
             SDBPanel.Location = new Point(0, 52);
             SDBPanel.Name = "SDBPanel";
             SDBPanel.Size = new Size(144, 665);
@@ -617,9 +617,9 @@
             screenDBPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             screenDBPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             screenDBPanel.BorderStyle = BorderStyle.FixedSingle;
-            screenDBPanel.Location = new Point(143, 52);
+            screenDBPanel.Location = new Point(165, 72);
             screenDBPanel.Name = "screenDBPanel";
-            screenDBPanel.Size = new Size(697, 665);
+            screenDBPanel.Size = new Size(652, 633);
             screenDBPanel.TabIndex = 2;
             // 
             // DashBoard
