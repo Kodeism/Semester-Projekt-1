@@ -2,9 +2,9 @@
 
 namespace Semester_Projekt_1
 {
-    public partial class TilføjKøberDesign : Form
+    public partial class TilføjKøber : Form
     {
-        public TilføjKøberDesign()
+        public TilføjKøber()
         {
             InitializeComponent();
         }
@@ -26,7 +26,7 @@ namespace Semester_Projekt_1
 
         private void anullerButton_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
         private void opretButton_Click(object sender, EventArgs e)

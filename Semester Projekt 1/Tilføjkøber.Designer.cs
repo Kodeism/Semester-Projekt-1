@@ -1,6 +1,6 @@
 ﻿namespace Semester_Projekt_1
 {
-    partial class TilføjKøberDesign
+    partial class TilføjKøber
     {
         /// <summary>
         /// Required designer variable.
@@ -60,7 +60,7 @@
             // 
             // navnTextbox
             // 
-            navnTextbox.ForeColor = SystemColors.InactiveCaption;
+            navnTextbox.ForeColor = SystemColors.ControlText;
             navnTextbox.Location = new Point(12, 32);
             navnTextbox.Name = "navnTextbox";
             navnTextbox.Size = new Size(191, 23);
@@ -69,7 +69,7 @@
             // 
             // cprnummerTextbox
             // 
-            cprnummerTextbox.ForeColor = SystemColors.InactiveCaption;
+            cprnummerTextbox.ForeColor = SystemColors.ControlText;
             cprnummerTextbox.Location = new Point(246, 138);
             cprnummerTextbox.Name = "cprnummerTextbox";
             cprnummerTextbox.Size = new Size(183, 23);
@@ -78,7 +78,7 @@
             // 
             // adresseTextbox
             // 
-            adresseTextbox.ForeColor = SystemColors.InactiveCaption;
+            adresseTextbox.ForeColor = SystemColors.ControlText;
             adresseTextbox.Location = new Point(12, 83);
             adresseTextbox.Name = "adresseTextbox";
             adresseTextbox.Size = new Size(417, 23);
@@ -87,7 +87,7 @@
             // 
             // telefonnummerTextbox
             // 
-            telefonnummerTextbox.ForeColor = SystemColors.InactiveCaption;
+            telefonnummerTextbox.ForeColor = SystemColors.ControlText;
             telefonnummerTextbox.Location = new Point(12, 138);
             telefonnummerTextbox.Name = "telefonnummerTextbox";
             telefonnummerTextbox.Size = new Size(191, 23);
@@ -96,7 +96,7 @@
             // 
             // søgeområdeTextbox
             // 
-            søgeområdeTextbox.ForeColor = SystemColors.InactiveCaption;
+            søgeområdeTextbox.ForeColor = SystemColors.ControlText;
             søgeområdeTextbox.Location = new Point(12, 260);
             søgeområdeTextbox.Name = "søgeområdeTextbox";
             søgeområdeTextbox.Size = new Size(417, 23);
@@ -105,7 +105,7 @@
             // 
             // emailTextbox
             // 
-            emailTextbox.ForeColor = SystemColors.InactiveCaption;
+            emailTextbox.ForeColor = SystemColors.ControlText;
             emailTextbox.Location = new Point(12, 198);
             emailTextbox.Name = "emailTextbox";
             emailTextbox.Size = new Size(417, 23);
@@ -114,7 +114,7 @@
             // 
             // værelserTextbox
             // 
-            værelserTextbox.ForeColor = SystemColors.InactiveCaption;
+            værelserTextbox.ForeColor = SystemColors.ControlText;
             værelserTextbox.Location = new Point(166, 387);
             værelserTextbox.Name = "værelserTextbox";
             værelserTextbox.Size = new Size(100, 23);
@@ -123,7 +123,7 @@
             // 
             // prisklasseTextbox
             // 
-            prisklasseTextbox.ForeColor = SystemColors.InactiveCaption;
+            prisklasseTextbox.ForeColor = SystemColors.ControlText;
             prisklasseTextbox.Location = new Point(12, 317);
             prisklasseTextbox.Name = "prisklasseTextbox";
             prisklasseTextbox.Size = new Size(191, 23);
@@ -132,7 +132,7 @@
             // 
             // boligstørrelseTextbox
             // 
-            boligstørrelseTextbox.ForeColor = SystemColors.InactiveCaption;
+            boligstørrelseTextbox.ForeColor = SystemColors.ControlText;
             boligstørrelseTextbox.Location = new Point(281, 387);
             boligstørrelseTextbox.Name = "boligstørrelseTextbox";
             boligstørrelseTextbox.Size = new Size(148, 23);
@@ -142,7 +142,7 @@
             // 
             // grundstørrelseTextbox
             // 
-            grundstørrelseTextbox.ForeColor = SystemColors.InactiveCaption;
+            grundstørrelseTextbox.ForeColor = SystemColors.ControlText;
             grundstørrelseTextbox.Location = new Point(12, 387);
             grundstørrelseTextbox.Name = "grundstørrelseTextbox";
             grundstørrelseTextbox.Size = new Size(127, 23);
@@ -151,7 +151,7 @@
             // 
             // efternavnTextbox
             // 
-            efternavnTextbox.ForeColor = SystemColors.InactiveCaption;
+            efternavnTextbox.ForeColor = SystemColors.ControlText;
             efternavnTextbox.Location = new Point(246, 32);
             efternavnTextbox.Name = "efternavnTextbox";
             efternavnTextbox.Size = new Size(183, 23);
@@ -277,7 +277,7 @@
             // 
             // boligtypeCombobox
             // 
-            boligtypeCombobox.ForeColor = SystemColors.InactiveCaption;
+            boligtypeCombobox.ForeColor = SystemColors.ControlText;
             boligtypeCombobox.FormattingEnabled = true;
             boligtypeCombobox.Items.AddRange(new object[] { "Villa", "Lejlighed", "Rækkehus", "Andelsbolig", "Ejerlejlighed", "Parcelhus", "Sommerhus", "Kolonihavehus", "Landejendom", "Flerfamiliehus", "Byhus", "Dobbelthus", "Tolvhus", "Fritidshus", "Penthouse", "Studiolejlighed", "Ungdomsbolig", "Ældrebolig", "Almennyttig bolig", "Bofællesskab" });
             boligtypeCombobox.Location = new Point(246, 317);
@@ -311,14 +311,14 @@
             // 
             // yderligereinfoTextBox
             // 
-            yderligereinfoTextBox.ForeColor = SystemColors.InactiveCaption;
+            yderligereinfoTextBox.ForeColor = SystemColors.ControlText;
             yderligereinfoTextBox.Location = new Point(12, 459);
             yderligereinfoTextBox.Name = "yderligereinfoTextBox";
             yderligereinfoTextBox.Size = new Size(417, 144);
             yderligereinfoTextBox.TabIndex = 29;
             yderligereinfoTextBox.Text = "Relevant info...";
             // 
-            // TilføjKøberDesign
+            // TilføjKøber
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -352,7 +352,7 @@
             Controls.Add(adresseTextbox);
             Controls.Add(cprnummerTextbox);
             Controls.Add(navnTextbox);
-            Name = "TilføjKøberDesign";
+            Name = "TilføjKøber";
             Text = "Tilføj Køber";
             Load += Form1_Load;
             ResumeLayout(false);
