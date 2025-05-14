@@ -3,6 +3,8 @@ create table Køber(
 	EfterNavn varchar(100),
 	Email varchar(100),
 	TlfNummer varchar(50),
+	CprNr varchar(50),
+	Adresse varchar(100),
 	KøberID int primary key identity,	
 	PrisKlasse int,
 	SøgeOmråde varchar(200),

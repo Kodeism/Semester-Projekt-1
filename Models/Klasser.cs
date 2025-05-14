@@ -10,13 +10,13 @@
     //Bolig tabellen vil indeholde boligens info og ID samt sælgerens ID og ejendomsmæglerens ID.
     //bolig og køber tabeller kan evt. begge opdeles i 2 tabeller (bolig + boligdetails) (køber + køberdetails)
     //salgs tabellen vil indeholde info på salget (dato, beløb osv.) og ID samt et boligID og køberID. 
-    public abstract class Kunde
+    public abstract class Person
     {
         public string Navn { get; set; }
         public string Efternavn { get; set; }
         public int TlfNummer { get; set; }
         public string Email { get; set; }
-        public Kunde(string navn, string efternavn, int tlfNummer, string email)
+        public Person(string navn, string efternavn, int tlfNummer, string email)
         {
             Navn = navn;
             Efternavn = efternavn;
@@ -25,11 +25,25 @@
         }
     }
 
+
+
+    public abstract class Kunde : Person
+    {
+
+        public string CprNr { get; set; }
+        public Kunde(string navn, string efternavn, int tlfNummer, string email, string cprNr) : base(navn, efternavn, tlfNummer, email)
+        {
+            CprNr = cprNr;
+        }
+    }
+
     public class Køber : Kunde
     {
         //køber vil ha sin egen tabel (en tabel for alle køberer der har købt et hus)
         public int KøberID { get; set; }
         //Køberns ID, (dette skulle gerne gives af sql med identity markatet)
+        public string Adresse { get; set; }
+        //Køberens nuværende adresse
         public int PrisKlasse { get; set; }
         //Prisområdet de ligger i
         public string SøgeOmråde { get; set; }
@@ -44,8 +58,9 @@
         //Hvis de har en fornemmelse af hvor stor boligen gerne skulle være
         public int Værelser { get; set; } //optional
         //Hvor mange værelser vil de have som minimum.
-        public Køber(string navn, string efternavn, int tlfNummer, string email, int prisKlasse, string søgeOmråde, string boligType) : base(navn, efternavn, tlfNummer, email)
+        public Køber(string navn, string efternavn, int tlfNummer, string email, string cprNr, string adresse, int prisKlasse, string søgeOmråde, string boligType) : base(navn, efternavn, tlfNummer, email, cprNr)
         {
+            Adresse = adresse;
             SøgeOmråde = søgeOmråde;
             PrisKlasse = prisKlasse;
             BoligType = boligType;
@@ -58,13 +73,13 @@
         //sælgere vil have sin egen tabel (altså tabel over alle sælgere)
         public int SælgerID { get; set; }
         //Sælgerens ID, (dette skulle gerne gives af sql med identity markatet)
-        public Sælger(string navn, string efternavn, int tlfNummer, string email) : base(navn, efternavn, tlfNummer, email)
+        public Sælger(string navn, string efternavn, int tlfNummer, string email, string cprNr) : base(navn, efternavn, tlfNummer, email, cprNr)
         {
 
         }
     }
 
-    public class Ejendomsmægler : Kunde
+    public class Ejendomsmægler : Person
     {
         //Ejendomsmægler vil have deres egen tabel (altså en tabel for alle ejendoms mæglere)
         //Den arver fra kunde klassen da en ejendomsmægler vel også kan være en kunde

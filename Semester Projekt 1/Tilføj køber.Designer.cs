@@ -52,7 +52,7 @@
             VærelserLabel = new Label();
             BoligstørrelseLabel = new Label();
             YderligereInfoLabel = new Label();
-            BoligtypeCombobox = new ComboBox();
+            boligtypeCombobox = new ComboBox();
             anullerButton = new Button();
             opretButton = new Button();
             yderligereinfoTextBox = new RichTextBox();
@@ -275,17 +275,17 @@
             YderligereInfoLabel.TabIndex = 25;
             YderligereInfoLabel.Text = "Yderligere Information";
             // 
-            // BoligtypeCombobox
+            // boligtypeCombobox
             // 
-            BoligtypeCombobox.ForeColor = SystemColors.InactiveCaption;
-            BoligtypeCombobox.FormattingEnabled = true;
-            BoligtypeCombobox.Items.AddRange(new object[] { "Villa", "Lejlighed", "Rækkehus", "Andelsbolig", "Ejerlejlighed", "Parcelhus", "Sommerhus", "Kolonihavehus", "Landejendom", "Flerfamiliehus", "Byhus", "Dobbelthus", "Tolvhus", "Fritidshus", "Penthouse", "Studiolejlighed", "Ungdomsbolig", "Ældrebolig", "Almennyttig bolig", "Bofællesskab" });
-            BoligtypeCombobox.Location = new Point(246, 317);
-            BoligtypeCombobox.Name = "BoligtypeCombobox";
-            BoligtypeCombobox.Size = new Size(183, 23);
-            BoligtypeCombobox.TabIndex = 26;
-            BoligtypeCombobox.Text = "Vælg Boligtype...";
-            BoligtypeCombobox.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            boligtypeCombobox.ForeColor = SystemColors.InactiveCaption;
+            boligtypeCombobox.FormattingEnabled = true;
+            boligtypeCombobox.Items.AddRange(new object[] { "Villa", "Lejlighed", "Rækkehus", "Andelsbolig", "Ejerlejlighed", "Parcelhus", "Sommerhus", "Kolonihavehus", "Landejendom", "Flerfamiliehus", "Byhus", "Dobbelthus", "Tolvhus", "Fritidshus", "Penthouse", "Studiolejlighed", "Ungdomsbolig", "Ældrebolig", "Almennyttig bolig", "Bofællesskab" });
+            boligtypeCombobox.Location = new Point(246, 317);
+            boligtypeCombobox.Name = "boligtypeCombobox";
+            boligtypeCombobox.Size = new Size(183, 23);
+            boligtypeCombobox.TabIndex = 26;
+            boligtypeCombobox.Text = "Vælg Boligtype...";
+            boligtypeCombobox.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // anullerButton
             // 
@@ -296,6 +296,7 @@
             anullerButton.TabIndex = 27;
             anullerButton.Text = "Annuller";
             anullerButton.UseVisualStyleBackColor = false;
+            anullerButton.Click += anullerButton_Click;
             // 
             // opretButton
             // 
@@ -306,6 +307,7 @@
             opretButton.TabIndex = 28;
             opretButton.Text = "Opret";
             opretButton.UseVisualStyleBackColor = false;
+            opretButton.Click += opretButton_Click;
             // 
             // yderligereinfoTextBox
             // 
@@ -325,7 +327,7 @@
             Controls.Add(yderligereinfoTextBox);
             Controls.Add(opretButton);
             Controls.Add(anullerButton);
-            Controls.Add(BoligtypeCombobox);
+            Controls.Add(boligtypeCombobox);
             Controls.Add(YderligereInfoLabel);
             Controls.Add(BoligstørrelseLabel);
             Controls.Add(VærelserLabel);
@@ -384,7 +386,7 @@
         private Label VærelserLabel;
         private Label BoligstørrelseLabel;
         private Label YderligereInfoLabel;
-        private ComboBox BoligtypeCombobox;
+        private ComboBox boligtypeCombobox;
         private Button anullerButton;
         private Button opretButton;
         private RichTextBox yderligereinfoTextBox;
