@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            byggeDatoDatePicker = new DateTimePicker();
             opretBoligRegionComboBox = new ComboBox();
             opretBoligStatusComboBox = new ComboBox();
             boligOprettelseBoligtypeComboBox = new ComboBox();
@@ -49,7 +50,6 @@
             opretBoligAdresseLabel = new Label();
             opretBoligEnergimærkeTextBox = new TextBox();
             opretBoligAntalVærelserTextBox = new TextBox();
-            opretBoligByggedatoTextBox = new TextBox();
             opretBoligPostnummerTextBox = new TextBox();
             opretBoligByTextbox = new TextBox();
             opretBoligGrundarealTextbox = new TextBox();
@@ -64,6 +64,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(255, 246, 218);
+            panel1.Controls.Add(byggeDatoDatePicker);
             panel1.Controls.Add(opretBoligRegionComboBox);
             panel1.Controls.Add(opretBoligStatusComboBox);
             panel1.Controls.Add(boligOprettelseBoligtypeComboBox);
@@ -84,7 +85,6 @@
             panel1.Controls.Add(opretBoligAdresseLabel);
             panel1.Controls.Add(opretBoligEnergimærkeTextBox);
             panel1.Controls.Add(opretBoligAntalVærelserTextBox);
-            panel1.Controls.Add(opretBoligByggedatoTextBox);
             panel1.Controls.Add(opretBoligPostnummerTextBox);
             panel1.Controls.Add(opretBoligByTextbox);
             panel1.Controls.Add(opretBoligGrundarealTextbox);
@@ -99,8 +99,16 @@
             panel1.Size = new Size(507, 606);
             panel1.TabIndex = 0;
             // 
+            // byggeDatoDatePicker
+            // 
+            byggeDatoDatePicker.Location = new Point(282, 353);
+            byggeDatoDatePicker.Name = "byggeDatoDatePicker";
+            byggeDatoDatePicker.Size = new Size(200, 32);
+            byggeDatoDatePicker.TabIndex = 33;
+            // 
             // opretBoligRegionComboBox
             // 
+            opretBoligRegionComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             opretBoligRegionComboBox.FormattingEnabled = true;
             opretBoligRegionComboBox.Location = new Point(22, 352);
             opretBoligRegionComboBox.Name = "opretBoligRegionComboBox";
@@ -156,6 +164,7 @@
             opretBoligOpretButton.TabIndex = 27;
             opretBoligOpretButton.Text = "Opret";
             opretBoligOpretButton.UseVisualStyleBackColor = false;
+            opretBoligOpretButton.Click += opretBoligOpretButton_Click;
             // 
             // opretBoligCancelButton
             // 
@@ -166,6 +175,7 @@
             opretBoligCancelButton.TabIndex = 26;
             opretBoligCancelButton.Text = "Annuller";
             opretBoligCancelButton.UseVisualStyleBackColor = false;
+            opretBoligCancelButton.Click += opretBoligCancelButton_Click;
             // 
             // opretBoligStatusLabel
             // 
@@ -290,13 +300,7 @@
             opretBoligAntalVærelserTextBox.Name = "opretBoligAntalVærelserTextBox";
             opretBoligAntalVærelserTextBox.Size = new Size(202, 32);
             opretBoligAntalVærelserTextBox.TabIndex = 12;
-            // 
-            // opretBoligByggedatoTextBox
-            // 
-            opretBoligByggedatoTextBox.Location = new Point(282, 352);
-            opretBoligByggedatoTextBox.Name = "opretBoligByggedatoTextBox";
-            opretBoligByggedatoTextBox.Size = new Size(202, 32);
-            opretBoligByggedatoTextBox.TabIndex = 10;
+            opretBoligAntalVærelserTextBox.KeyPress += enforceInputIsNumber__Keypress;
             // 
             // opretBoligPostnummerTextBox
             // 
@@ -304,6 +308,8 @@
             opretBoligPostnummerTextBox.Name = "opretBoligPostnummerTextBox";
             opretBoligPostnummerTextBox.Size = new Size(103, 32);
             opretBoligPostnummerTextBox.TabIndex = 8;
+            opretBoligPostnummerTextBox.TextChanged += requiredField_TextChanged;
+            opretBoligPostnummerTextBox.KeyPress += enforceInputIsNumber__Keypress;
             // 
             // opretBoligByTextbox
             // 
@@ -311,6 +317,7 @@
             opretBoligByTextbox.Name = "opretBoligByTextbox";
             opretBoligByTextbox.Size = new Size(202, 32);
             opretBoligByTextbox.TabIndex = 7;
+            opretBoligByTextbox.TextChanged += requiredField_TextChanged;
             // 
             // opretBoligGrundarealTextbox
             // 
@@ -318,6 +325,7 @@
             opretBoligGrundarealTextbox.Name = "opretBoligGrundarealTextbox";
             opretBoligGrundarealTextbox.Size = new Size(85, 32);
             opretBoligGrundarealTextbox.TabIndex = 6;
+            opretBoligGrundarealTextbox.KeyPress += enforceInputIsNumber__Keypress;
             // 
             // opretBoligBoligarealTextbox
             // 
@@ -325,6 +333,7 @@
             opretBoligBoligarealTextbox.Name = "opretBoligBoligarealTextbox";
             opretBoligBoligarealTextbox.Size = new Size(85, 32);
             opretBoligBoligarealTextbox.TabIndex = 5;
+            opretBoligBoligarealTextbox.KeyPress += enforceInputIsNumber__Keypress;
             // 
             // opretBoligAdresseTextbox
             // 
@@ -332,6 +341,7 @@
             opretBoligAdresseTextbox.Name = "opretBoligAdresseTextbox";
             opretBoligAdresseTextbox.Size = new Size(202, 32);
             opretBoligAdresseTextbox.TabIndex = 4;
+            opretBoligAdresseTextbox.TextChanged += requiredField_TextChanged;
             // 
             // boligOprettelsePrisLabel
             // 
@@ -361,6 +371,8 @@
             boligOprettelseBoligPrisTextbox.Name = "boligOprettelseBoligPrisTextbox";
             boligOprettelseBoligPrisTextbox.Size = new Size(202, 32);
             boligOprettelseBoligPrisTextbox.TabIndex = 1;
+            boligOprettelseBoligPrisTextbox.TextChanged += requiredField_TextChanged;
+            boligOprettelseBoligPrisTextbox.KeyPress += enforceInputIsNumber__Keypress;
             // 
             // BoligRegistration
             // 
@@ -394,7 +406,6 @@
         private Label opretBoligAdresseLabel;
         private TextBox opretBoligEnergimærkeTextBox;
         private TextBox opretBoligAntalVærelserTextBox;
-        private TextBox opretBoligByggedatoTextBox;
         private TextBox opretBoligPostnummerTextBox;
         private TextBox opretBoligByTextbox;
         private TextBox opretBoligGrundarealTextbox;
@@ -410,5 +421,6 @@
         private ComboBox opretBoligRegionComboBox;
         private ComboBox opretBoligStatusComboBox;
         private ComboBox boligOprettelseBoligtypeComboBox;
+        private DateTimePicker byggeDatoDatePicker;
     }
 }
