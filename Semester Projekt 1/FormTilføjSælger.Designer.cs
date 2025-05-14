@@ -104,6 +104,7 @@
             sælgerAnnulerOpretButton.TabIndex = 70;
             sælgerAnnulerOpretButton.Text = "Annuller";
             sælgerAnnulerOpretButton.UseVisualStyleBackColor = false;
+            sælgerAnnulerOpretButton.Click += sælgerAnnulerOpretButton_Click;
             // 
             // sælgerEmailTextbox
             // 

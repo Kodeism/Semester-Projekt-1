@@ -33,7 +33,7 @@ namespace Semester_Projekt_1
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
 
         private void sælgerOpretOpretButton_Click(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace Semester_Projekt_1
             int tlfNummer = 0;
             try
             {
-                 tlfNummer = int.Parse(SælgerTelefonNummerTextbox.Text);
+                tlfNummer = int.Parse(SælgerTelefonNummerTextbox.Text);
             }
             catch
             {
@@ -72,6 +72,11 @@ namespace Semester_Projekt_1
         private void sælgerFornavnTextbox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void sælgerAnnulerOpretButton_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
