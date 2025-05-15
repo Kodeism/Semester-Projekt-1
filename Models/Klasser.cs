@@ -152,62 +152,73 @@
 
         }
     }
-    public class BoligFilter
+    public class BoligFilter // samme som bolig men med min og max på nogle værdier
     {
         //bolig vil være en seperat tabel (altså en tabel for alle boligere)
         //public int BoligID { get; set; }
         ////Bolgiens ID (dette skulle gerne gives af sql med identity markatet)
-        public string PrisMin { get; set; }
+        public int PrisMin { get; set; }
         //pris på boligen
-        public string PrisMax { get; set; }
+        public int PrisMax { get; set; }
         //pris på boligen
-        //public string Adresse { get; set; }
-        ////boligens adresse
-        //public int PostNummer { get; set; }
-        ////boligens postnummer
-        //public string ByNavn { get; set; }
-        ////boligens bynavn
-        //public string Type { get; set; }
-        ////boligtypen
-        //public int BoligArealMin { get; set; }
+        public int BoligArealMin { get; set; }
         ////boligens areal
-        //public int BoligArealMax { get; set; }
+        public int BoligArealMax { get; set; }
         ////boligens areal
-        //public int Værelser { get; set; }
+        public int GrundStørrelseMin { get; set; }
+        ////det samlet areal af bolig og land
+        public int GrundStørrelseMax { get; set; }
+        ////det samlet areal af bolig og land
+        public int VærelserMin { get; set; }
         ////antal af værelser/rum
-        //public DateTime ByggeDato { get; set; }
+        public int VærelserMax { get; set; }
+        ////antal af værelser/rum
+        public string Adresse { get; set; }
+        ////boligens adresse
+        public int Postnummer { get; set; }
+        ////boligens postnummer
+        public string ByNavn { get; set; }
+        ////boligens bynavn
+        public string Type { get; set; }
+        ////boligtypen
+        public DateTime ByggeDato { get; set; } // skal ændres til datetime senere
         ////hvornår var den bygget/renoveret
-        //public int GrundStørrelseMin { get; set; }
-        ////det samlet areal af bolig og land
-        ////hvornår var den bygget/renoveret
-        //public int GrundStørrelseMax { get; set; }
-        ////det samlet areal af bolig og land
-        //public string EnergiMærke { get; set; } //optional
+        public string? EnergiMærke { get; set; } //optional
         ////boligens energimærke
-        //public int EjendomsmæglerID { get; set; }
+        public int EjendomsmæglerID { get; set; }
         ////Ejendomsmægleren der administreret boligen
-        //public int SælgerID { get; set; }
+        public int SælgerID { get; set; }
         ////sælgeren der vil sælge boligen
-        //public string Status { get; set; }
+        public string Status { get; set; }
         ////Solgt, eller Usolgt
-        public BoligFilter(string prisMin, string prisMax /*,string adresse, int postNummer, string byNavn, string type, int boligArealMin, int boligArealMax, int værelser, DateTime byggeDato, int grundStørrelseMin, int grundStørrelseMax , int mæglerID, int sælgerID, string energimærke = "", string status = "Usolgt"*/)
+        public BoligFilter(int prisMin, int prisMax) /*int boligArealMin,*/ 
+                            //int boligArealMax, int grundStørrelseMin, int grundStørrelseMax,
+                            //int værelserMin, int værelserMax, string adresse,
+                            //int postNummer, string byNavn, string type,
+                            /*DateTime byggeDato,*/ /*int ejendomsmæglerID, int sælgerID,*/ // byggedato skal ændres til en datetime senere
+                            /*string energiMærke, string status)*/
         {
             PrisMin = prisMin;
             PrisMax = prisMax;
-            //Adresse = adresse;
-            //PostNummer = postNummer;
-            //ByNavn = byNavn;
-            //Type = type;
             //BoligArealMin = boligArealMin;
             //BoligArealMax = boligArealMax;
-            //Værelser = værelser;
-            //ByggeDato = byggeDato;
             //GrundStørrelseMin = grundStørrelseMin;
             //GrundStørrelseMax = grundStørrelseMax;
-            //EjendomsmæglerID = mæglerID;
+            //VærelserMin = værelserMin;
+            //VærelserMax = værelserMax;
+            //Adresse = adresse;
+            //Postnummer = postNummer;
+            //ByNavn = byNavn;
+            //Type = type;
+            ////ByggeDato = byggeDato;
+            //EjendomsmæglerID = ejendomsmæglerID;
             //SælgerID = sælgerID;
-            //EnergiMærke = energimærke;
+            //EnergiMærke = energiMærke;
             //Status = status;
+        }
+        public BoligFilter()
+        {
+
         }
     }
 

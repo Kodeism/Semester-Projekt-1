@@ -178,17 +178,122 @@ namespace DataAccess.Repositories
                     WHERE 1=1
                 """;
             // insert into sql for each filled data in list, if value is empty then dont add
-            if (!string.IsNullOrWhiteSpace(boligFilter.PrisMin))
+            // Pris
+            //if (boligFilter.PrisMin != null)
+            //{
+            //    sql += " AND Pris >= @minPris";
+            //    command.Parameters.AddWithValue("@minPris", boligFilter.PrisMin);
+            //}
+            //if (boligFilter.PrisMax != null)
+            //{
+            //    sql += " AND Pris <= @maxPris";
+            //    command.Parameters.AddWithValue("@maxPris", boligFilter.PrisMax);
+            //}
+            if (int.TryParse(boligFilter.PrisMin, out int prisMin))
             {
                 sql += " AND Pris >= @minPris";
-                command.Parameters.AddWithValue("@minPris", Convert.ToDecimal(boligFilter.PrisMin));
+                command.Parameters.AddWithValue("@minPris", prisMin);
             }
 
-            if (!string.IsNullOrWhiteSpace(boligFilter.PrisMax))
+            if (int.TryParse(boligFilter.PrisMax, out int prisMax))
             {
                 sql += " AND Pris <= @maxPris";
-                command.Parameters.AddWithValue("@maxPris", Convert.ToDecimal(boligFilter.PrisMax));
+                command.Parameters.AddWithValue("@maxPris", prisMax);
             }
+
+            //// BoligAreal
+            //if (boligFilter.BoligArealMin != null)
+            //{
+            //    sql += " AND BoligAreal >= @minBoligAreal";
+            //    command.Parameters.AddWithValue("@minBoligAreal", boligFilter.BoligArealMin);
+            //}
+            //if (boligFilter.BoligArealMax != null)
+            //{
+            //    sql += " AND BoligAreal <= @maxBoligAreal";
+            //    command.Parameters.AddWithValue("@maxBoligAreal", boligFilter.BoligArealMax);
+            //}
+
+            //// GrundStørrelse
+            //if (boligFilter.GrundStørrelseMin != null)
+            //{
+            //    sql += " AND GrundStørrelse >= @minGrundAreal";
+            //    command.Parameters.AddWithValue("@minGrundAreal", boligFilter.GrundStørrelseMin);
+            //}
+            //if (boligFilter.GrundStørrelseMax != null)
+            //{
+            //    sql += " AND GrundStørrelse <= @maxGrundAreal";
+            //    command.Parameters.AddWithValue("@maxGrundAreal", boligFilter.GrundStørrelseMax);
+            //}
+
+            //// Adresse
+            //if (!string.IsNullOrWhiteSpace(boligFilter.Adresse))
+            //{
+            //    sql += " AND Adresse LIKE @adresse";
+            //    command.Parameters.AddWithValue("@adresse", $"%{boligFilter.Adresse}%");
+            //}
+
+            //// Postnummer
+            //if (boligFilter.Postnummer != null)
+            //{
+            //    sql += " AND Postnummer = @postnr";
+            //    command.Parameters.AddWithValue("@postnr", boligFilter.Postnummer);
+            //}
+
+            //// ByNavn
+            //if (!string.IsNullOrWhiteSpace(boligFilter.ByNavn))
+            //{
+            //    sql += " AND ByNavn LIKE @bynavn";
+            //    command.Parameters.AddWithValue("@bynavn", $"%{boligFilter.ByNavn}%");
+            //}
+
+            //// Type
+            //if (!string.IsNullOrWhiteSpace(boligFilter.Type))
+            //{
+            //    sql += " AND Type = @type";
+            //    command.Parameters.AddWithValue("@type", boligFilter.Type);
+            //}
+
+            //// ByggeDato
+            ////if (boligFilter.ByggeDato != null)
+            ////{
+            ////    sql += " AND ByggeDato = @byggeDato";
+            ////    command.Parameters.AddWithValue("@byggeDato", boligFilter.ByggeDato);
+            ////}
+
+            //// EjendomsmæglerID
+            //if (boligFilter.EjendomsmæglerID != null)
+            //{
+            //    sql += " AND EjendomsmæglerID = @realtorID";
+            //    command.Parameters.AddWithValue("@realtorID", boligFilter.EjendomsmæglerID);
+            //}
+
+            //// SælgerID
+            //if (boligFilter.SælgerID != null)
+            //{
+            //    sql += " AND SælgerID = @sælgerID";
+            //    command.Parameters.AddWithValue("@sælgerID", boligFilter.SælgerID);
+            //}
+
+            //// EnergiMærke
+            //if (!string.IsNullOrWhiteSpace(boligFilter.EnergiMærke))
+            //{
+            //    sql += " AND EnergiMærke = @energimærke";
+            //    command.Parameters.AddWithValue("@energimærke", boligFilter.EnergiMærke);
+            //}
+
+            //// Værelser
+            //if (boligFilter.VærelserMin != null)
+            //{
+            //    sql += " AND Værelser >= @værelserMin";
+            //    command.Parameters.AddWithValue("@værelserMin", boligFilter.VærelserMin);
+            //}
+            //if (boligFilter.VærelserMax != null)
+            //{
+            //    sql += " AND Værelser <= @værelserMax";
+            //    command.Parameters.AddWithValue("@værelserMax", boligFilter.VærelserMax);
+            //}
+
+
             command.CommandText = sql;
 
             connection.Open();
@@ -206,7 +311,7 @@ namespace DataAccess.Repositories
                     Type = reader.GetString(reader.GetOrdinal("BoligType")),
                     BoligAreal = reader.GetInt32(reader.GetOrdinal("BoligAreal")),
                     Værelser = reader.GetInt32(reader.GetOrdinal("Værelser")),
-                    ByggeDato = reader.GetDateTime(reader.GetOrdinal("ByggeDato")),
+                    //ByggeDato = reader.GetDateTime(reader.GetOrdinal("ByggeDato")),
                     GrundStørrelse = reader.GetInt32(reader.GetOrdinal("GrundStørrelse")),
                     EnergiMærke = reader.IsDBNull(reader.GetOrdinal("EnergiMærke"))
                     ? null
