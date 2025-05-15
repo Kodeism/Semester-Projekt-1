@@ -16,12 +16,16 @@
         public string Efternavn { get; set; }
         public int TlfNummer { get; set; }
         public string Email { get; set; }
-        public Kunde(string navn, string efternavn, int tlfNummer, string email)
+        public string CprNr { get; set; }
+        public string Adresse { get; set; }
+        public Kunde(string navn, string efternavn, int tlfNummer, string email, string cprNr, string adresse)
         {
             Navn = navn;
             Efternavn = efternavn;
             TlfNummer = tlfNummer;
             Email = email;
+            CprNr = cprNr;
+            Adresse = adresse;
         }
     }
 
@@ -44,7 +48,7 @@
         //Hvis de har en fornemmelse af hvor stor boligen gerne skulle være
         public int Værelser { get; set; } //optional
         //Hvor mange værelser vil de have som minimum.
-        public Køber(string navn, string efternavn, int tlfNummer, string email, int prisKlasse, string søgeOmråde, string boligType) : base(navn, efternavn, tlfNummer, email)
+        public Køber(string navn, string efternavn, int tlfNummer, string email, int prisKlasse, string søgeOmråde, string boligType, string cprNr, string adresse) : base(navn, efternavn, tlfNummer, email, cprNr, adresse)
         {
             SøgeOmråde = søgeOmråde;
             PrisKlasse = prisKlasse;
@@ -57,10 +61,11 @@
     {
         //sælgere vil have sin egen tabel (altså tabel over alle sælgere)
         public int SælgerID { get; set; }
+        
         //Sælgerens ID, (dette skulle gerne gives af sql med identity markatet)
-        public Sælger(string navn, string efternavn, int tlfNummer, string email) : base(navn, efternavn, tlfNummer, email)
+        public Sælger(string navn, string efternavn, int tlfNummer, string email, string cprNr, string adresse) : base(navn, efternavn, tlfNummer, email, cprNr, adresse)
         {
-
+            
         }
 
         /// <summary>
@@ -80,7 +85,7 @@
         //hvilket vil give data redundancy.
         public int EjendomsmæglerID { get; set; }
         //Ejendomsmæglerns ID, (dette skulle gerne gives af sql med identity markatet)
-        public Ejendomsmægler(string navn, string efternavn, int tlfNummer, string email) : base(navn, efternavn, tlfNummer, email)
+        public Ejendomsmægler(string navn, string efternavn, int tlfNummer, string email, string cprNr, string adresse) : base(navn, efternavn, tlfNummer, email, cprNr, adresse)
         {
 
         }
