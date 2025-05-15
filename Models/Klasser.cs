@@ -10,13 +10,13 @@
     //Bolig tabellen vil indeholde boligens info og ID samt sælgerens ID og ejendomsmæglerens ID.
     //bolig og køber tabeller kan evt. begge opdeles i 2 tabeller (bolig + boligdetails) (køber + køberdetails)
     //salgs tabellen vil indeholde info på salget (dato, beløb osv.) og ID samt et boligID og køberID. 
-    public abstract class Person
+    public abstract class Person //lortet er lort
     {
         public string Navn { get; set; }
         public string Efternavn { get; set; }
         public int TlfNummer { get; set; }
         public string Email { get; set; }
-        public Person(string navn, string efternavn, int tlfnummer, string email)
+        public Person(string navn, string efternavn, int tlfNummer, string email)
         {
             Navn = navn;
             Efternavn = efternavn;
@@ -25,17 +25,19 @@
         }
     }
 
+
+
     public abstract class Kunde : Person
     {
+
         public string CprNr { get; set; }
         public string Adresse { get; set; }
-        public Kunde(string navn, string efternavn, int tlfnummer, string email, string cprNr, string adresse) : base(navn, efternavn, tlfnummer, email)
+        public Kunde(string navn, string efternavn, int tlfNummer, string email, string cprNr, string adresse) : base(navn, efternavn, tlfNummer, email)
         {
             CprNr = cprNr;
             Adresse = adresse;
         }
     }
-
 
     public class Køber : Kunde
     {
@@ -85,7 +87,7 @@
         }
     }
 
-    public class Ejendomsmægler : Kunde
+    public class Ejendomsmægler : Person
     {
         //Ejendomsmægler vil have deres egen tabel (altså en tabel for alle ejendoms mæglere)
         //Den arver fra kunde klassen da en ejendomsmægler vel også kan være en kunde

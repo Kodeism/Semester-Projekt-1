@@ -1,11 +1,5 @@
 ﻿using DataAccess.Repositories;
 using Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusineesLogic
 {
@@ -21,27 +15,27 @@ namespace BusineesLogic
         {
             // Special connection string for Ruben's "special" pc
             repository = new("Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;");
-            
+
             // For normal people 
             //repository = new("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;");
         }
 
         public List<Sælger> GetSælgerList()
         {
-            return new List<Sælger>() 
+            return new List<Sælger>()
             {
-                new Sælger(1, "Lars", "Jensen", 22334455, "lars.jensen@example.com"),
-                new Sælger(2, "Maria", "Andersen", 11223344, "maria.andersen@example.com"),
-                new Sælger(3, "Thomas", "Nielsen", 33445566, "thomas.nielsen@example.com"),
-                new Sælger(4, "Camilla", "Pedersen", 55667788, "camilla.pedersen@example.com"),
-                new Sælger(5, "Jonas", "Christensen", 66778899, "jonas.christensen@example.com"),
-                new Sælger(6, "Sofie", "Larsen", 99887766, "sofie.larsen@example.com"),
-                new Sælger(7, "Emil", "Madsen", 77889900, "emil.madsen@example.com")
+                new Sælger(1, "Lars", "Jensen", 22334455, "lars.jensen@example.com", "12345678-1234", "hejsaalle"),
+                new Sælger(2, "Maria", "Andersen", 11223344, "maria.andersen@example.com", "12345678-1234", "hejsaalle"),
+                new Sælger(3, "Thomas", "Nielsen", 33445566, "thomas.nielsen@example.com", "12345678-1234", "hejsaalle"),
+                new Sælger(4, "Camilla", "Pedersen", 55667788, "camilla.pedersen@example.com", "12345678-1234", "hejsaalle"),
+                new Sælger(5, "Jonas", "Christensen", 66778899, "jonas.christensen@example.com", "12345678-1234", "hejsaalle"),
+                new Sælger(6, "Sofie", "Larsen", 99887766, "sofie.larsen@example.com", "12345678-1234", "hejsaalle"),
+                new Sælger(7, "Emil", "Madsen", 77889900, "emil.madsen@example.com", "12345678-1234", "hejsaalle")
             };
         }
 
         public void CreateBolig(
-            int pris, string adresse, int postnr, string by, string boligType, int boligAreal,  int værelser,
+            int pris, string adresse, int postnr, string by, string boligType, int boligAreal, int værelser,
             DateTime byggeDato, int grundAreal, int mæglerId, int sæglerID, string energiMærke, string status
             )
         {

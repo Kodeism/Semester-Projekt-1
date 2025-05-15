@@ -3,13 +3,15 @@ create table Køber(
 	EfterNavn varchar(100),
 	Email varchar(100),
 	TlfNummer varchar(50),
+	CprNr varchar(50),
+	Adresse varchar(100),
 	KøberID int primary key identity,	
 	PrisKlasse int,
 	SøgeOmråde varchar(200),
 	BoligType varchar(100),
 	Noter varchar(3000),
 	ØnsketGrundStørrelse int,
-	ØnsketBoligStørrelse int
+	ØnsketBoligStørrelse int 
 );
 
 create table Sælger(

@@ -79,14 +79,41 @@ namespace DataAccess.Repositories
         public Køber CreateKøber(Køber køber)
         {
             SqlCommand command = connection.CreateCommand();
-            string sql = "INSERT INTO Køber (ForNavn, EfterNavn, TlfNummer, Email, PrisKlasse, SøgeOmråde, BoligType)" +
-                " VALUES (@ForNavn, @EfterNavn, @TlfNummer, @Email, @PrisKlasse, @Søgeområde, @BoligType)";
+            string sql = """
+                
+                INSERT INTO Køber (
+                ForNavn,
+                EfterNavn,
+                TlfNummer,
+                CprNr,
+                Email,
+                Adresse,
+                PrisKlasse,
+                SøgeOmråde,
+                BoligType
+                )
+                VALUES (
+                @ForNavn,
+                @EfterNavn,
+                @TlfNummer,
+                @CprNr,
+                @Email,
+                @Adresse,
+                @PrisKlasse,
+                @Søgeområde,
+                @BoligType
+                );
+                
+                """;
+
 
             command.CommandText = sql;
             command.Parameters.AddWithValue("@ForNavn", køber.Navn);
             command.Parameters.AddWithValue("@EfterNavn", køber.Efternavn);
             command.Parameters.AddWithValue("@TlfNummer", køber.TlfNummer);
+            command.Parameters.AddWithValue("@CprNr", køber.CprNr);
             command.Parameters.AddWithValue("@Email", køber.Email);
+            command.Parameters.AddWithValue("@Adresse", køber.Adresse);
             command.Parameters.AddWithValue("@PrisKlasse", køber.PrisKlasse);
             command.Parameters.AddWithValue("@SøgeOmråde", køber.SøgeOmråde);
             command.Parameters.AddWithValue("@BoligType", køber.BoligType);
