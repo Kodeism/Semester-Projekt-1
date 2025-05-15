@@ -10,24 +10,32 @@
     //Bolig tabellen vil indeholde boligens info og ID samt sælgerens ID og ejendomsmæglerens ID.
     //bolig og køber tabeller kan evt. begge opdeles i 2 tabeller (bolig + boligdetails) (køber + køberdetails)
     //salgs tabellen vil indeholde info på salget (dato, beløb osv.) og ID samt et boligID og køberID. 
-    public abstract class Kunde
+    public abstract class Person
     {
         public string Navn { get; set; }
         public string Efternavn { get; set; }
         public int TlfNummer { get; set; }
         public string Email { get; set; }
-        public string CprNr { get; set; }
-        public string Adresse { get; set; }
-        public Kunde(string navn, string efternavn, int tlfNummer, string email, string cprNr, string adresse)
+        public Person(string navn, string efternavn, int tlfnummer, string email)
         {
             Navn = navn;
             Efternavn = efternavn;
-            TlfNummer = tlfNummer;
+            TlfNummer = tlfnummer;
             Email = email;
+        }
+    }
+
+    public abstract class Kunde : Person
+    {
+        public string CprNr { get; set; }
+        public string Adresse { get; set; }
+        public Kunde(string navn, string efternavn, int tlfnummer, string email, string cprNr, string adresse) : base(navn, efternavn, tlfnummer, email)
+        {
             CprNr = cprNr;
             Adresse = adresse;
         }
     }
+
 
     public class Køber : Kunde
     {
@@ -61,17 +69,17 @@
     {
         //sælgere vil have sin egen tabel (altså tabel over alle sælgere)
         public int SælgerID { get; set; }
-        
+
         //Sælgerens ID, (dette skulle gerne gives af sql med identity markatet)
         public Sælger(string navn, string efternavn, int tlfNummer, string email, string cprNr, string adresse) : base(navn, efternavn, tlfNummer, email, cprNr, adresse)
         {
-            
+
         }
 
         /// <summary>
         /// Sælger constructor med ID så den kan hente ID fra databasen
         /// </summary>
-        public Sælger(int id, string navn, string efternavn, int tlfNummer, string email) : base(navn, efternavn, tlfNummer, email)
+        public Sælger(int id, string navn, string efternavn, int tlfNummer, string email, string cprNr, string adresse) : base(navn, efternavn, tlfNummer, email, cprNr, adresse)
         {
             SælgerID = id;
         }
