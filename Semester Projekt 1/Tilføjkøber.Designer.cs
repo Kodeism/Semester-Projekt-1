@@ -279,7 +279,7 @@
             // 
             boligtypeCombobox.ForeColor = SystemColors.ControlText;
             boligtypeCombobox.FormattingEnabled = true;
-            boligtypeCombobox.Items.AddRange(new object[] { "Villa", "Lejlighed", "Rækkehus", "Andelsbolig", "Ejerlejlighed", "Parcelhus", "Sommerhus", "Kolonihavehus", "Landejendom", "Flerfamiliehus", "Byhus", "Dobbelthus", "Tolvhus", "Fritidshus", "Penthouse", "Studiolejlighed", "Ungdomsbolig", "Ældrebolig", "Almennyttig bolig", "Bofællesskab" });
+            boligtypeCombobox.Items.AddRange(new object[] { "Villa", "Lejlighed", "Rækkehus", "Andelsbolig", "Ejerlejlighed", "Sommerhus", "Ungdomsbolig", "Ældrebolig", "Kolonihavehus" });
             boligtypeCombobox.Location = new Point(246, 317);
             boligtypeCombobox.Name = "boligtypeCombobox";
             boligtypeCombobox.Size = new Size(183, 23);
