@@ -52,18 +52,21 @@
         //hvad leder de efter? villa? landejendom?
         public string KøberInfo { get; set; } //optional
         //info om købernes omstændigheder (børn? dyr? job? Hvis det kan hjælpe med at finde noget)
-        public int GrundStørrelse { get; set; }//optional 
+        public int? GrundStørrelse { get; set; }//optional 
         //Hvis de har en fornemmelse af hvor stor grunden gerne skulle være
-        public int Boligstørrelse { get; set; } //optional
+        public int? Boligstørrelse { get; set; } //optional
         //Hvis de har en fornemmelse af hvor stor boligen gerne skulle være
-        public int Værelser { get; set; } //optional
+        public int? Værelser { get; set; } //optional
         //Hvor mange værelser vil de have som minimum.
-        public Køber(string navn, string efternavn, int tlfNummer, string email, int prisKlasse, string søgeOmråde, string boligType, string cprNr, string adresse) : base(navn, efternavn, tlfNummer, email, cprNr, adresse)
+        public Køber(string navn, string efternavn, int tlfNummer, string email, int prisKlasse, string søgeOmråde, string boligType, string cprNr, string adresse, string køberinfo = "", int? grundStørrelse = null, int? boligStørrelse = null, int? værelser = null) : base(navn, efternavn, tlfNummer, email, cprNr, adresse)
         {
             SøgeOmråde = søgeOmråde;
             PrisKlasse = prisKlasse;
             BoligType = boligType;
-            KøberInfo = "";
+            KøberInfo = køberinfo;
+            GrundStørrelse = grundStørrelse;
+            Boligstørrelse = boligStørrelse;
+            Værelser = værelser;
         }
     }
 

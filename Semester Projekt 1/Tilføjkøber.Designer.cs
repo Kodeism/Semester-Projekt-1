@@ -367,7 +367,6 @@
         private TextBox telefonnummerTextbox;
         private TextBox søgeområdeTextbox;
         private TextBox emailTextbox;
-        private TextBox boligtypeTextbox;
         private TextBox værelserTextbox;
         private TextBox prisklasseTextbox;
         private TextBox boligstørrelseTextbox;
