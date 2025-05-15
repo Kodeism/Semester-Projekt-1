@@ -20,7 +20,7 @@
         {
             Navn = navn;
             Efternavn = efternavn;
-            TlfNummer = tlfnummer;
+            TlfNummer = tlfNummer;
             Email = email;
         }
     }
@@ -95,7 +95,7 @@
         //hvilket vil give data redundancy.
         public int EjendomsmæglerID { get; set; }
         //Ejendomsmæglerns ID, (dette skulle gerne gives af sql med identity markatet)
-        public Ejendomsmægler(string navn, string efternavn, int tlfNummer, string email, string cprNr, string adresse) : base(navn, efternavn, tlfNummer, email, cprNr, adresse)
+        public Ejendomsmægler(string navn, string efternavn, int tlfNummer, string email) : base(navn, efternavn, tlfNummer, email)
         {
 
         }
