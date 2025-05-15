@@ -1,4 +1,5 @@
-﻿using DataAccess.Repositories;
+using System.Drawing;
+using DataAccess.Repositories;
 using Models;
 
 namespace BusineesLogic
@@ -24,5 +25,15 @@ namespace BusineesLogic
             DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; TrustServerCertificate = True;");
             testDR.CreateKøber(køber);
         }
+    }
+    public class TryLogin
+    {
+        public bool login(string username, string password)
+        {
+            // kode som laver et login query her
+            // returner enten true eller false ved loginforsøg
+            return true; // for nu er det altid true, men der skal tilføjes en aktuel query her
+        }
+        
     }
 }

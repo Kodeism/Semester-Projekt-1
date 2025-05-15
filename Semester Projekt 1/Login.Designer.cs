@@ -35,6 +35,8 @@
             PasswordLabel = new Label();
             UsernameLabel = new Label();
             LoginButton = new Button();
+            LoginErrorLabelUsername = new Label();
+            LoginErrorLabelPassword = new Label();
             LoginForm.SuspendLayout();
             SuspendLayout();
             // 
@@ -42,6 +44,8 @@
             // 
             LoginForm.BackColor = Color.FromArgb(255, 246, 218);
             LoginForm.BorderStyle = BorderStyle.FixedSingle;
+            LoginForm.Controls.Add(LoginErrorLabelPassword);
+            LoginForm.Controls.Add(LoginErrorLabelUsername);
             LoginForm.Controls.Add(LoginLabelStatic);
             LoginForm.Controls.Add(PasswordTextBox);
             LoginForm.Controls.Add(UsernameTextBox);
@@ -95,7 +99,6 @@
             PasswordLabel.Size = new Size(168, 48);
             PasswordLabel.TabIndex = 3;
             PasswordLabel.Text = "Password";
-            PasswordLabel.Click += PasswordLabel_Click;
             // 
             // UsernameLabel
             // 
@@ -106,7 +109,6 @@
             UsernameLabel.Size = new Size(202, 48);
             UsernameLabel.TabIndex = 2;
             UsernameLabel.Text = "Brugernavn";
-            UsernameLabel.Click += UsernameLabel_Click;
             // 
             // LoginButton
             // 
@@ -119,6 +121,22 @@
             LoginButton.Text = "Login";
             LoginButton.UseVisualStyleBackColor = false;
             LoginButton.Click += LoginButton_Click;
+            // 
+            // LoginErrorLabelUsername
+            // 
+            LoginErrorLabelUsername.AutoSize = true;
+            LoginErrorLabelUsername.Location = new Point(265, 157);
+            LoginErrorLabelUsername.Name = "LoginErrorLabelUsername";
+            LoginErrorLabelUsername.Size = new Size(0, 25);
+            LoginErrorLabelUsername.TabIndex = 7;
+            // 
+            // LoginErrorLabelPassword
+            // 
+            LoginErrorLabelPassword.AutoSize = true;
+            LoginErrorLabelPassword.Location = new Point(265, 331);
+            LoginErrorLabelPassword.Name = "LoginErrorLabelPassword";
+            LoginErrorLabelPassword.Size = new Size(0, 25);
+            LoginErrorLabelPassword.TabIndex = 8;
             // 
             // Login
             // 
@@ -144,5 +162,7 @@
         private Label UsernameLabel;
         protected TextBox PasswordTextBox;
         private Label LoginLabelStatic;
+        private Label LoginErrorLabelPassword;
+        private Label LoginErrorLabelUsername;
     }
 }
