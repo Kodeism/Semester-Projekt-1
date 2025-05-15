@@ -146,5 +146,25 @@ namespace DataAccess.Repositories
             command.ExecuteNonQuery();
             connection.Close();
         }
+
+        public void TilføjSælger(Sælger sælger)
+        {
+
+            string query = "INSERT INTO Sælger (Fornavn, Efternavn, Email, TlfNummer, Adresse, CprNummer) VALUES (@Navn, @Efternavn, @Email, @TlfNummer, @Adresse, @CprNummer)";
+
+            
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = query;
+            command.Parameters.AddWithValue("@Navn", sælger.Navn);
+            command.Parameters.AddWithValue("@Efternavn", sælger.Efternavn);
+            command.Parameters.AddWithValue("@Email", sælger.Email);
+            command.Parameters.AddWithValue("@TlfNummer", sælger.TlfNummer);
+            command.Parameters.AddWithValue("@Adresse", sælger.Adresse);
+            command.Parameters.AddWithValue("@CprNummer", sælger.CprNr);
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+
+        }
     }
 }
