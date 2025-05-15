@@ -17,7 +17,9 @@ create table Sælger(
 	Fornavn varchar(100),
 	EfterNavn varchar(100),
 	Email varchar(100),
-	TlfNummer varchar(50)
+	TlfNummer varchar(50),
+	Adresse varchar(100),
+    CprNummer varchar(50)
 );
 
 create table Ejendomsmægler(
