@@ -11,7 +11,7 @@ create table Køber(
 	BoligType varchar(100),
 	Noter varchar(3000),
 	ØnsketGrundStørrelse int,
-	ØnsketBoligStørrelse int
+	ØnsketBoligStørrelse int 
 );
 
 create table Sælger(

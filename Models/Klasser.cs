@@ -10,7 +10,7 @@
     //Bolig tabellen vil indeholde boligens info og ID samt sælgerens ID og ejendomsmæglerens ID.
     //bolig og køber tabeller kan evt. begge opdeles i 2 tabeller (bolig + boligdetails) (køber + køberdetails)
     //salgs tabellen vil indeholde info på salget (dato, beløb osv.) og ID samt et boligID og køberID. 
-    public abstract class Person
+    public abstract class Person //lortet er lort
     {
         public string Navn { get; set; }
         public string Efternavn { get; set; }
