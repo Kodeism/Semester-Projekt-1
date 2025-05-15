@@ -31,9 +31,11 @@
     {
 
         public string CprNr { get; set; }
-        public Kunde(string navn, string efternavn, int tlfNummer, string email, string cprNr) : base(navn, efternavn, tlfNummer, email)
+        public string Adresse { get; set; }
+        public Kunde(string navn, string efternavn, int tlfNummer, string email, string cprNr, string adresse) : base(navn, efternavn, tlfNummer, email)
         {
             CprNr = cprNr;
+            Adresse = adresse;
         }
     }
 
@@ -42,8 +44,6 @@
         //køber vil ha sin egen tabel (en tabel for alle køberer der har købt et hus)
         public int KøberID { get; set; }
         //Køberns ID, (dette skulle gerne gives af sql med identity markatet)
-        public string Adresse { get; set; }
-        //Køberens nuværende adresse
         public int PrisKlasse { get; set; }
         //Prisområdet de ligger i
         public string SøgeOmråde { get; set; }
@@ -58,9 +58,8 @@
         //Hvis de har en fornemmelse af hvor stor boligen gerne skulle være
         public int Værelser { get; set; } //optional
         //Hvor mange værelser vil de have som minimum.
-        public Køber(string navn, string efternavn, int tlfNummer, string email, string cprNr, string adresse, int prisKlasse, string søgeOmråde, string boligType) : base(navn, efternavn, tlfNummer, email, cprNr)
+        public Køber(string navn, string efternavn, int tlfNummer, string email, string cprNr, string adresse, int prisKlasse, string søgeOmråde, string boligType) : base(navn, efternavn, tlfNummer, email, cprNr, adresse)
         {
-            Adresse = adresse;
             SøgeOmråde = søgeOmråde;
             PrisKlasse = prisKlasse;
             BoligType = boligType;
@@ -73,7 +72,7 @@
         //sælgere vil have sin egen tabel (altså tabel over alle sælgere)
         public int SælgerID { get; set; }
         //Sælgerens ID, (dette skulle gerne gives af sql med identity markatet)
-        public Sælger(string navn, string efternavn, int tlfNummer, string email, string cprNr) : base(navn, efternavn, tlfNummer, email, cprNr)
+        public Sælger(string navn, string efternavn, int tlfNummer, string email, string cprNr, string adresse) : base(navn, efternavn, tlfNummer, email, cprNr, adresse)
         {
 
         }
