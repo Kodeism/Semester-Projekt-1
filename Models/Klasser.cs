@@ -147,6 +147,68 @@
             EnergiMærke = energimærke;
             Status = status;
         }
+        public Bolig()
+        {
+
+        }
+    }
+    public class BoligFilter
+    {
+        //bolig vil være en seperat tabel (altså en tabel for alle boligere)
+        //public int BoligID { get; set; }
+        ////Bolgiens ID (dette skulle gerne gives af sql med identity markatet)
+        public string PrisMin { get; set; }
+        //pris på boligen
+        public string PrisMax { get; set; }
+        //pris på boligen
+        //public string Adresse { get; set; }
+        ////boligens adresse
+        //public int PostNummer { get; set; }
+        ////boligens postnummer
+        //public string ByNavn { get; set; }
+        ////boligens bynavn
+        //public string Type { get; set; }
+        ////boligtypen
+        //public int BoligArealMin { get; set; }
+        ////boligens areal
+        //public int BoligArealMax { get; set; }
+        ////boligens areal
+        //public int Værelser { get; set; }
+        ////antal af værelser/rum
+        //public DateTime ByggeDato { get; set; }
+        ////hvornår var den bygget/renoveret
+        //public int GrundStørrelseMin { get; set; }
+        ////det samlet areal af bolig og land
+        ////hvornår var den bygget/renoveret
+        //public int GrundStørrelseMax { get; set; }
+        ////det samlet areal af bolig og land
+        //public string EnergiMærke { get; set; } //optional
+        ////boligens energimærke
+        //public int EjendomsmæglerID { get; set; }
+        ////Ejendomsmægleren der administreret boligen
+        //public int SælgerID { get; set; }
+        ////sælgeren der vil sælge boligen
+        //public string Status { get; set; }
+        ////Solgt, eller Usolgt
+        public BoligFilter(string prisMin, string prisMax /*,string adresse, int postNummer, string byNavn, string type, int boligArealMin, int boligArealMax, int værelser, DateTime byggeDato, int grundStørrelseMin, int grundStørrelseMax , int mæglerID, int sælgerID, string energimærke = "", string status = "Usolgt"*/)
+        {
+            PrisMin = prisMin;
+            PrisMax = prisMax;
+            //Adresse = adresse;
+            //PostNummer = postNummer;
+            //ByNavn = byNavn;
+            //Type = type;
+            //BoligArealMin = boligArealMin;
+            //BoligArealMax = boligArealMax;
+            //Værelser = værelser;
+            //ByggeDato = byggeDato;
+            //GrundStørrelseMin = grundStørrelseMin;
+            //GrundStørrelseMax = grundStørrelseMax;
+            //EjendomsmæglerID = mæglerID;
+            //SælgerID = sælgerID;
+            //EnergiMærke = energimærke;
+            //Status = status;
+        }
     }
 
     public class Salg

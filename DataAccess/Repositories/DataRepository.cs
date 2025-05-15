@@ -1,6 +1,7 @@
 ﻿using DataAccess.Repositories.Contracts;
 using Microsoft.Data.SqlClient;
 using Models;
+using System.Diagnostics;
 
 namespace DataAccess.Repositories
 {
@@ -165,6 +166,76 @@ namespace DataAccess.Repositories
             command.ExecuteNonQuery();
             connection.Close();
 
+        }
+        public static List<Bolig> SøgMedFilter(SqlConnection connection, BoligFilter boligFilter)
+        {
+            List<Bolig> boligList = new List<Bolig>();
+
+            SqlCommand command = connection.CreateCommand();
+            var sql = """
+                    SELECT *
+                    FROM Bolig
+                    WHERE 1=1
+                """;
+            // insert into sql for each filled data in list, if value is empty then dont add
+            if (!string.IsNullOrWhiteSpace(boligFilter.PrisMin))
+            {
+                sql += " AND Pris >= @minPris";
+                command.Parameters.AddWithValue("@minPris", Convert.ToDecimal(boligFilter.PrisMin));
+            }
+
+            if (!string.IsNullOrWhiteSpace(boligFilter.PrisMax))
+            {
+                sql += " AND Pris <= @maxPris";
+                command.Parameters.AddWithValue("@maxPris", Convert.ToDecimal(boligFilter.PrisMax));
+            }
+            command.CommandText = sql;
+
+            connection.Open();
+            var reader = command.ExecuteReader();
+
+
+            while (reader.Read())
+            {
+                var bolig = new Bolig
+                {
+                    Pris = reader.GetInt32(reader.GetOrdinal("Pris")),
+                    Adresse = reader.GetString(reader.GetOrdinal("Adresse")),
+                    PostNummer = reader.GetInt32(reader.GetOrdinal("PostNummer")),
+                    ByNavn = reader.GetString(reader.GetOrdinal("ByNavn")),
+                    Type = reader.GetString(reader.GetOrdinal("BoligType")),
+                    BoligAreal = reader.GetInt32(reader.GetOrdinal("BoligAreal")),
+                    Værelser = reader.GetInt32(reader.GetOrdinal("Værelser")),
+                    ByggeDato = reader.GetDateTime(reader.GetOrdinal("ByggeDato")),
+                    GrundStørrelse = reader.GetInt32(reader.GetOrdinal("GrundStørrelse")),
+                    EnergiMærke = reader.IsDBNull(reader.GetOrdinal("EnergiMærke"))
+                    ? null
+                    : reader.GetString(reader.GetOrdinal("EnergiMærke")),
+                    EjendomsmæglerID = reader.GetInt32(reader.GetOrdinal("EjendomsmæglerID")),
+                    SælgerID = reader.GetInt32(reader.GetOrdinal("SælgerID"))
+                };
+
+                boligList.Add(bolig);
+
+                // Læs alle kolonner dynamisk
+                var rowData = "";
+                for (int i = 0; i < reader.FieldCount; i++)
+                {
+
+                    rowData += $"{reader.GetName(i)}: {reader.GetValue(i)} | ";
+                }
+
+                Debug.WriteLine(rowData);
+
+            }
+            foreach (var item in boligList)
+            {
+                Debug.WriteLine(item.Pris);
+            }
+
+            connection.Close();
+
+            return boligList;
         }
     }
 }
