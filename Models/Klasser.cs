@@ -147,6 +147,24 @@
             EnergiMærke = energimærke;
             Status = status;
         }
+
+        public Bolig(int id, int pris, string adresse, int postNummer, string byNavn, string type, int boligAreal, int værelser, DateTime byggeDato, int grundStørrelse, int mæglerID, int sælgerID, string energimærke = "", string status = "Usolgt")
+        {
+            BoligID = id;
+            Pris = pris;
+            Adresse = adresse;
+            PostNummer = postNummer;
+            ByNavn = byNavn;
+            Type = type;
+            BoligAreal = boligAreal;
+            Værelser = værelser;
+            ByggeDato = byggeDato;
+            GrundStørrelse = grundStørrelse;
+            EjendomsmæglerID = mæglerID;
+            SælgerID = sælgerID;
+            EnergiMærke = energimærke;
+            Status = status;
+        }
     }
 
     public class Salg

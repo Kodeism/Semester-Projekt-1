@@ -45,5 +45,16 @@ namespace BusineesLogic
             );
             repository.CreateBolig(tempBolig);
         }
+
+        public Bolig GetBolig(int boligID)
+        {
+            var bolig = new Bolig(boligID, 700000, "testvej 28", 7000, "testby", "Villa", 700, 17, DateTime.Now, 900000, 2, 1);
+            return bolig;
+        }
+
+        public void UpdateBoligPris(Bolig bolig)
+        {
+            repository.UpdatePris(bolig.BoligID, bolig.Pris);
+        }
     }
 }
