@@ -90,7 +90,11 @@ namespace DataAccess.Repositories
                 Adresse,
                 PrisKlasse,
                 SøgeOmråde,
-                BoligType
+                BoligType,
+                Noter,
+                ØnsketGrundStørrelse,
+                ØnsketBoligStørrelse,
+                ØnsketVærelser
                 )
                 VALUES (
                 @ForNavn,
@@ -101,7 +105,11 @@ namespace DataAccess.Repositories
                 @Adresse,
                 @PrisKlasse,
                 @Søgeområde,
-                @BoligType
+                @BoligType,
+                @Noter,
+                @ØnsketGrundStørrelse,
+                @ØnsketBoligStørrelse,
+                @ØnsketVærelser
                 );
                 
                 """;
@@ -120,6 +128,7 @@ namespace DataAccess.Repositories
             command.Parameters.AddWithValue("@Noter", køber.KøberInfo);
             command.Parameters.AddWithValue("@ØnsketGrundStørrelse", køber.GrundStørrelse);
             command.Parameters.AddWithValue("@ØnsketBoligStørrelse", køber.Boligstørrelse);
+            command.Parameters.AddWithValue("@ØnsketVærelser", køber.Værelser);
 
             connection.Open();
 
@@ -152,7 +161,7 @@ namespace DataAccess.Repositories
 
             string query = "INSERT INTO Sælger (Fornavn, Efternavn, Email, TlfNummer, Adresse, CprNummer) VALUES (@Navn, @Efternavn, @Email, @TlfNummer, @Adresse, @CprNummer)";
 
-            
+
             SqlCommand command = connection.CreateCommand();
             command.CommandText = query;
             command.Parameters.AddWithValue("@Navn", sælger.Navn);
