@@ -86,26 +86,13 @@ namespace Semester_Projekt_1
             boligerBoligTypePlot.Plot.Add.Bars(bars);
             boligerBoligTypePlot.Plot.Axes.Bottom.TickGenerator = new ScottPlot.TickGenerators.NumericManual(ticks);
             boligerBoligTypePlot.Plot.Axes.Bottom.MajorTickStyle.Length = 0;
-            boligerBoligTypePlot.Plot.HideGrid();
             boligerBoligTypePlot.Plot.Axes.Margins(bottom: 0);
             boligerBoligTypePlot.Plot.DataBackground.Color = Colors.Transparent;
             boligerBoligTypePlot.Plot.FigureBackground.Color = Colors.Transparent;
             boligerBoligTypePlot.Plot.Title("Usolgte Boliger Fodelt på BoligTypen");
             boligerBoligTypePlot.Refresh();
         }
-        public void loadLine1()
-        {
-            double[] xs = [2017,2018,2019,2020,2021,2022,2023,2024,2025];
-            double[] ys1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-            double[] ys2 = [2, 3, 4, 5, 6, 7, 8, 9, 1];
-            double[] ys3 = [3, 4, 5, 6, 7, 8, 9, 1, 2];
-            double[] ys4 = [4, 5, 6, 7, 8, 9, 1, 2, 3];
-            double[] ys5 = [5, 6, 7, 8, 9, 1, 2, 3, 4];
-            double[] ys6 = [6, 7, 8, 9, 1, 2, 3, 4, 5];
-            double[] ys7 = [7, 8, 9, 1, 2, 3, 4, 5, 6];
-            double[] ys8 = [8, 9, 1, 2, 3, 4, 5, 6, 7];
-
-        }
+        
         private void Forside_Load(object sender, EventArgs e)
         {
             loadPieKøber();

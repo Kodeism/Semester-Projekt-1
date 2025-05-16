@@ -615,6 +615,7 @@
             // screenDBPanel
             // 
             screenDBPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            screenDBPanel.AutoScroll = true;
             screenDBPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             screenDBPanel.BorderStyle = BorderStyle.FixedSingle;
             screenDBPanel.Location = new Point(165, 72);
@@ -626,6 +627,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             BackColor = Color.FromArgb(255, 246, 182);
             ClientSize = new Size(840, 717);
             Controls.Add(screenDBPanel);
