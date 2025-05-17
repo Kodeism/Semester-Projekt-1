@@ -409,21 +409,25 @@
             // 
             // boligerBoligTypePlot
             // 
-            boligerBoligTypePlot.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            boligerBoligTypePlot.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            boligerBoligTypePlot.AutoScroll = true;
             boligerBoligTypePlot.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            boligerBoligTypePlot.AutoValidate = AutoValidate.EnablePreventFocusChange;
             boligerBoligTypePlot.DisplayScale = 1.5F;
             boligerBoligTypePlot.Location = new Point(354, 4);
+            boligerBoligTypePlot.MaximumSize = new Size(800, 0);
             boligerBoligTypePlot.Name = "boligerBoligTypePlot";
             boligerBoligTypePlot.Size = new Size(519, 567);
             boligerBoligTypePlot.TabIndex = 2;
             // 
             // køberBoligTypePlot
             // 
+            køberBoligTypePlot.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             køberBoligTypePlot.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             køberBoligTypePlot.BackgroundImageLayout = ImageLayout.None;
             køberBoligTypePlot.DisplayScale = 1.5F;
-            køberBoligTypePlot.Dock = DockStyle.Fill;
             køberBoligTypePlot.Location = new Point(4, 4);
+            køberBoligTypePlot.MaximumSize = new Size(500, 0);
             køberBoligTypePlot.Name = "køberBoligTypePlot";
             køberBoligTypePlot.Size = new Size(343, 567);
             køberBoligTypePlot.TabIndex = 0;
