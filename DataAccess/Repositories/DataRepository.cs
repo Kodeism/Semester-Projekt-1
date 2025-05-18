@@ -1,4 +1,5 @@
-﻿using DataAccess.Repositories.Contracts;
+﻿using System.Xml.Serialization;
+using DataAccess.Repositories.Contracts;
 using Microsoft.Data.SqlClient;
 using Models;
 
@@ -152,7 +153,7 @@ namespace DataAccess.Repositories
 
             string query = "INSERT INTO Sælger (Fornavn, Efternavn, Email, TlfNummer, Adresse, CprNummer) VALUES (@Navn, @Efternavn, @Email, @TlfNummer, @Adresse, @CprNummer)";
 
-            
+
             SqlCommand command = connection.CreateCommand();
             command.CommandText = query;
             command.Parameters.AddWithValue("@Navn", sælger.Navn);
@@ -166,5 +167,150 @@ namespace DataAccess.Repositories
             connection.Close();
 
         }
+
+       
+        
+        
+        public void TilføjSalg(Salg salg)
+        {
+            //Oprettelse af salg i Database
+        string query = "INSERT INTO Salg (KøberID, BoligID, SælgerID, Dato, Beløb) VALUES (@KøberID, @BoligID, @SælgerID,@Dato, @Beløb)";
+        
+        SqlCommand command = connection.CreateCommand();
+        command.CommandText = query;
+            command.Parameters.AddWithValue("@KøberID", salg.KøberID);
+            command.Parameters.AddWithValue("@BoligID", salg.BoligID);
+            command.Parameters.AddWithValue("@SælgerID", salg.SælgerID);
+            command.Parameters.AddWithValue("@Dato", salg.Dato);
+            command.Parameters.AddWithValue("@Beløb", salg.Beløb);
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+    
+        public int HentKøberIDDB(string køberCPR)
+        {
+            int køberID = -1;
+            string query = "SELECT KøberID FROM Køber WHERE CprNr = @KøberCPR";
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = query;
+            command.Parameters.AddWithValue("@KøberCPR", køberCPR);
+
+
+            connection.Open();
+            object placeholdKøberID = command.ExecuteScalar();
+
+            try
+            {
+                køberID = Convert.ToInt32(placeholdKøberID);
+            }
+            catch
+            {
+                connection.Close();
+                throw new Exception("Intet matchende CPR-NR for køber fundet");
+            }
+            
+            connection.Close();
+            return køberID;
+        }
+        public int HentSælgerIDDB(string CprNummer)
+        {
+            int sælgerID = -1;
+            string query = "SELECT SælgerID FROM Sælger WHERE CprNummer = @CprNummer";
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = query;
+            command.Parameters.AddWithValue("@CprNummer", CprNummer);
+
+
+            connection.Open();
+            object placeholdSælgerID = command.ExecuteScalar();
+
+            try
+            {
+                sælgerID = Convert.ToInt32(placeholdSælgerID);
+            }
+            catch
+            {
+                connection.Close();
+                throw new Exception("Intet matchende CPR-NR for sælger fundet.");
+            }
+
+            connection.Close();
+            return sælgerID;
+        }
+        public int HentBoligIDDB(string adresse)
+        {
+            int boligID = -1;
+            string query = "SELECT BoligID FROM Bolig WHERE Adresse = @Adresse";
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = query;
+            command.Parameters.AddWithValue("@Adresse", adresse);
+
+
+            connection.Open();
+            object placeholdBoligID = command.ExecuteScalar();
+
+            try
+            {
+                boligID = Convert.ToInt32(placeholdBoligID);
+            }
+            catch
+            {
+                connection.Close();
+                throw new Exception("Ingen adresse fundet");
+            }
+
+            connection.Close();
+            return boligID;
+        }
+
+
+
+        public List <string> HentSælgersBoliger(int sælgerID)
+        {
+
+            List<string> søgeResultater = new List<string>();
+            
+            
+            string query = "SELECT Adresse FROM Bolig WHERE SælgerID = @SælgerId";
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = query;
+            command.Parameters.AddWithValue("@SælgerID", sælgerID);
+
+            
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                søgeResultater.Add(reader["Adresse"].ToString());
+            }
+
+            connection.Close();
+            return søgeResultater;
+        
+
+
+
+        }
+
+
+
     }
 }
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+

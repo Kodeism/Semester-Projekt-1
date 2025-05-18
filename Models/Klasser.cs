@@ -158,12 +158,14 @@
         //hvem købte boligen
         public int BoligID { get; set; }
         //boligen (som indeholder forign keys for sælgeren og Ejendomsmægleren)
-        public string Dato { get; set; }
+        public int SælgerID { get; set; }
+        public DateOnly Dato { get; set; }
         public int Beløb { get; set; }
-        public Salg(Køber køber, Bolig bolig, string dato, int beløb)
+        public Salg(int køberID, int boligID, int sælgerID,DateOnly dato, int beløb)
         {
-            KøberID = køber.KøberID;
-            BoligID = bolig.BoligID;
+            KøberID = køberID;
+            BoligID = boligID;
+            SælgerID = sælgerID;
             Dato = dato;
             Beløb = beløb;
         }

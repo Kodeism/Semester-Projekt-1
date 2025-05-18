@@ -55,7 +55,8 @@ create table Bolig(
 Create table Salg(
 	SalgsID int primary key identity,
 	KøberID int FOREIGN KEY REFERENCES Køber(KøberID),
-	BoligID int,
+	BoligID int FOREIGN KEY REFERENCES Bolig(BoligID),
 	Dato DATE,
-	Beløb int
+	Beløb int,
+	SælgerID int FOREIGN KEY REFERENCES Sælger(SælgerID)
 );
