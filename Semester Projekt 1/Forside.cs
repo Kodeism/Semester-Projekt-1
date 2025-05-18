@@ -17,14 +17,21 @@ using Semester_Projekt_1;
 
 namespace Semester_Projekt_1
 {
-    public partial class Forside : Form
+    public partial class Forside : UserControl
     {
         public Dictionary<string, List<object>> Data { get; set; }
+        private DashBoard main;
         private ForsideLogic logic = new();
         public Forside()
         {
             InitializeComponent();
             Data = logic.Data;
+            main = (DashBoard)this.FindForm();
+            this.DoubleBuffered = true;
+            this.SetStyle(ControlStyles.AllPaintingInWmPaint |
+                          ControlStyles.UserPaint |
+                          ControlStyles.OptimizedDoubleBuffer, true);
+            this.UpdateStyles();
         }
         private void statBoxesLayoutPanel_Paint(object sender, PaintEventArgs e)
         {
@@ -79,7 +86,7 @@ namespace Semester_Projekt_1
             Tick[] ticks = [
                 new(1,"Villa"),
                 new(2,"Lejlighed"),
-                new(3,"Rækkehus"), 
+                new(3,"Rækkehus"),
                 new(4,"Andelsbolig"),
                 new(5,"Ejerlejlighed"),
                 new(6,"Sommerhus"),
@@ -96,7 +103,7 @@ namespace Semester_Projekt_1
             boligerBoligTypePlot.Plot.Title("Usolgte Boliger Fodelt på BoligTypen");
             boligerBoligTypePlot.Refresh();
         }
-        
+
         private void Forside_Load(object sender, EventArgs e)
         {
             loadPieKøber();
@@ -108,15 +115,22 @@ namespace Semester_Projekt_1
             sælgereAntalLabel.Text = Convert.ToInt64(Data["label"][4]).ToString("N0"); ;
             boligtypeUdbudtLabel.Text = Data["label"][5].ToString();
             antalSalgLabel.Text = Convert.ToInt64(Data["label"][6]).ToString("N0");
-            sumPengeSalgLabel.Text = Convert.ToInt64(Data["label"][7]).ToString("N0");
+            sumPengeSalgLabel.Text = Convert.ToInt64(Data["label"][7]).ToString("N0") + " kr.";
             nyeBoliger.DataSource = Data["tabel"][0];
             nyeKøbere.DataSource = Data["tabel"][1];
+            boligerBoligTypePlot.UserInputProcessor.IsEnabled = false;
+            køberBoligTypePlot.UserInputProcessor.IsEnabled = false;
         }
 
         private void Forside_Resize(object sender, EventArgs e)
         {
             køberBoligTypePlot.Plot.Axes.AutoScale();
             boligerBoligTypePlot.Plot.Axes.AutoScale();
+        }
+
+        private void boligerLayoutPanel_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

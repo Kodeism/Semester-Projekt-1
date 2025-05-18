@@ -59,6 +59,8 @@
             boligerRegistrerDBKnap = new Button();
             brugerDBKnap = new Button();
             screenDBPanel = new Panel();
+            brugerLayoutPanel = new TableLayoutPanel();
+            brugerNavnLabel = new Label();
             uDBLayoutPanel = new TableLayoutPanel();
             lDBLayoutPanel = new TableLayoutPanel();
             menuDBLayoutPanel.SuspendLayout();
@@ -68,6 +70,7 @@
             køberDBPanel.SuspendLayout();
             salgDBPanel.SuspendLayout();
             boligDBPanel.SuspendLayout();
+            brugerLayoutPanel.SuspendLayout();
             uDBLayoutPanel.SuspendLayout();
             lDBLayoutPanel.SuspendLayout();
             SuspendLayout();
@@ -75,20 +78,18 @@
             // startDBKnap
             // 
             startDBKnap.BackColor = Color.FromArgb(198, 220, 255);
-            startDBKnap.BackgroundImageLayout = ImageLayout.None;
+            startDBKnap.BackgroundImageLayout = ImageLayout.Zoom;
             startDBKnap.Dock = DockStyle.Fill;
             startDBKnap.FlatStyle = FlatStyle.Flat;
-            startDBKnap.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            startDBKnap.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             startDBKnap.ForeColor = Color.Black;
-            startDBKnap.Image = Properties.Resources.image__24_;
             startDBKnap.ImageAlign = ContentAlignment.BottomLeft;
             startDBKnap.Location = new Point(0, 0);
             startDBKnap.Margin = new Padding(0);
             startDBKnap.Name = "startDBKnap";
-            startDBKnap.Size = new Size(145, 53);
+            startDBKnap.Size = new Size(146, 63);
             startDBKnap.TabIndex = 5;
             startDBKnap.Text = "Start";
-            startDBKnap.TextAlign = ContentAlignment.MiddleRight;
             startDBKnap.UseVisualStyleBackColor = false;
             startDBKnap.Click += startDBKnap_Click;
             // 
@@ -99,10 +100,10 @@
             pageLabel.Dock = DockStyle.Fill;
             pageLabel.FlatStyle = FlatStyle.Flat;
             pageLabel.Font = new Font("Segoe UI", 19F, FontStyle.Bold);
-            pageLabel.Location = new Point(145, 0);
+            pageLabel.Location = new Point(146, 0);
             pageLabel.Margin = new Padding(0);
             pageLabel.Name = "pageLabel";
-            pageLabel.Size = new Size(695, 53);
+            pageLabel.Size = new Size(694, 63);
             pageLabel.TabIndex = 0;
             pageLabel.Text = "Velkommen";
             pageLabel.TextAlign = ContentAlignment.MiddleCenter;
@@ -112,21 +113,20 @@
             logUdDBKnap.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             logUdDBKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             logUdDBKnap.BackColor = Color.FromArgb(255, 100, 100);
-            logUdDBKnap.BackgroundImageLayout = ImageLayout.None;
+            logUdDBKnap.BackgroundImage = Properties.Resources.image__22_;
+            logUdDBKnap.BackgroundImageLayout = ImageLayout.Zoom;
             logUdDBKnap.FlatAppearance.BorderColor = Color.Black;
             logUdDBKnap.FlatStyle = FlatStyle.Flat;
             logUdDBKnap.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             logUdDBKnap.ForeColor = Color.Black;
-            logUdDBKnap.Image = Properties.Resources.image__22__mini;
             logUdDBKnap.ImageAlign = ContentAlignment.MiddleLeft;
-            logUdDBKnap.Location = new Point(4, 179);
-            logUdDBKnap.MaximumSize = new Size(139, 51);
-            logUdDBKnap.MinimumSize = new Size(139, 51);
+            logUdDBKnap.Location = new Point(4, 183);
+            logUdDBKnap.MaximumSize = new Size(139, 52);
+            logUdDBKnap.MinimumSize = new Size(139, 52);
             logUdDBKnap.Name = "logUdDBKnap";
             logUdDBKnap.RightToLeft = RightToLeft.No;
-            logUdDBKnap.Size = new Size(139, 51);
+            logUdDBKnap.Size = new Size(139, 52);
             logUdDBKnap.TabIndex = 1;
-            logUdDBKnap.Text = "Log Ud";
             logUdDBKnap.TextAlign = ContentAlignment.MiddleRight;
             logUdDBKnap.UseVisualStyleBackColor = false;
             // 
@@ -141,17 +141,17 @@
             menuDBLayoutPanel.Controls.Add(salgDBPanel, 0, 2);
             menuDBLayoutPanel.Controls.Add(logUdDBKnap, 0, 3);
             menuDBLayoutPanel.Controls.Add(boligDBPanel, 0, 0);
-            menuDBLayoutPanel.Location = new Point(1, 156);
+            menuDBLayoutPanel.Location = new Point(1, 167);
             menuDBLayoutPanel.Margin = new Padding(0);
             menuDBLayoutPanel.MaximumSize = new Size(144, 0);
-            menuDBLayoutPanel.MinimumSize = new Size(144, 234);
+            menuDBLayoutPanel.MinimumSize = new Size(144, 233);
             menuDBLayoutPanel.Name = "menuDBLayoutPanel";
             menuDBLayoutPanel.RowCount = 4;
             menuDBLayoutPanel.RowStyles.Add(new RowStyle());
             menuDBLayoutPanel.RowStyles.Add(new RowStyle());
             menuDBLayoutPanel.RowStyles.Add(new RowStyle());
             menuDBLayoutPanel.RowStyles.Add(new RowStyle());
-            menuDBLayoutPanel.Size = new Size(144, 234);
+            menuDBLayoutPanel.Size = new Size(144, 239);
             menuDBLayoutPanel.TabIndex = 0;
             // 
             // personDBPanel
@@ -161,10 +161,10 @@
             personDBPanel.Controls.Add(mæglerDBKnap);
             personDBPanel.Controls.Add(personLayOutDBPanel);
             personDBPanel.Location = new Point(4, 63);
-            personDBPanel.MaximumSize = new Size(139, 321);
-            personDBPanel.MinimumSize = new Size(139, 51);
+            personDBPanel.MaximumSize = new Size(139, 322);
+            personDBPanel.MinimumSize = new Size(139, 52);
             personDBPanel.Name = "personDBPanel";
-            personDBPanel.Size = new Size(139, 51);
+            personDBPanel.Size = new Size(139, 52);
             personDBPanel.TabIndex = 4;
             // 
             // personDBKnap
@@ -172,18 +172,18 @@
             personDBKnap.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             personDBKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             personDBKnap.BackColor = Color.FromArgb(164, 236, 142);
-            personDBKnap.BackgroundImageLayout = ImageLayout.None;
+            personDBKnap.BackgroundImage = Properties.Resources._8503b364be6ba9825ae617c947fa5280;
+            personDBKnap.BackgroundImageLayout = ImageLayout.Zoom;
             personDBKnap.FlatStyle = FlatStyle.Flat;
             personDBKnap.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             personDBKnap.ForeColor = Color.Black;
-            personDBKnap.Image = Properties.Resources._8503b364be6ba9825ae617c947fa5280;
             personDBKnap.Location = new Point(0, 0);
             personDBKnap.Margin = new Padding(0);
-            personDBKnap.MaximumSize = new Size(139, 51);
-            personDBKnap.MinimumSize = new Size(139, 51);
+            personDBKnap.MaximumSize = new Size(139, 52);
+            personDBKnap.MinimumSize = new Size(139, 52);
             personDBKnap.Name = "personDBKnap";
             personDBKnap.RightToLeft = RightToLeft.No;
-            personDBKnap.Size = new Size(139, 51);
+            personDBKnap.Size = new Size(139, 52);
             personDBKnap.TabIndex = 3;
             personDBKnap.TextAlign = ContentAlignment.MiddleRight;
             personDBKnap.UseVisualStyleBackColor = false;
@@ -198,7 +198,7 @@
             mæglerDBKnap.FlatStyle = FlatStyle.Flat;
             mæglerDBKnap.Font = new Font("Segoe UI", 8F);
             mæglerDBKnap.ForeColor = Color.Black;
-            mæglerDBKnap.Location = new Point(0, 51);
+            mæglerDBKnap.Location = new Point(0, 52);
             mæglerDBKnap.Margin = new Padding(0);
             mæglerDBKnap.MaximumSize = new Size(139, 30);
             mæglerDBKnap.MinimumSize = new Size(139, 30);
@@ -219,7 +219,7 @@
             personLayOutDBPanel.ColumnStyles.Add(new ColumnStyle());
             personLayOutDBPanel.Controls.Add(sælgerDBPanel, 0, 0);
             personLayOutDBPanel.Controls.Add(køberDBPanel, 0, 1);
-            personLayOutDBPanel.Location = new Point(0, 81);
+            personLayOutDBPanel.Location = new Point(0, 82);
             personLayOutDBPanel.Margin = new Padding(0);
             personLayOutDBPanel.MaximumSize = new Size(139, 300);
             personLayOutDBPanel.MinimumSize = new Size(139, 52);
@@ -227,7 +227,7 @@
             personLayOutDBPanel.RowCount = 2;
             personLayOutDBPanel.RowStyles.Add(new RowStyle());
             personLayOutDBPanel.RowStyles.Add(new RowStyle());
-            personLayOutDBPanel.Size = new Size(139, 61);
+            personLayOutDBPanel.Size = new Size(139, 62);
             personLayOutDBPanel.TabIndex = 7;
             // 
             // sælgerDBPanel
@@ -241,9 +241,9 @@
             sælgerDBPanel.Location = new Point(0, 0);
             sælgerDBPanel.Margin = new Padding(0);
             sælgerDBPanel.MaximumSize = new Size(139, 120);
-            sælgerDBPanel.MinimumSize = new Size(139, 31);
+            sælgerDBPanel.MinimumSize = new Size(139, 32);
             sælgerDBPanel.Name = "sælgerDBPanel";
-            sælgerDBPanel.Size = new Size(139, 31);
+            sælgerDBPanel.Size = new Size(139, 32);
             sælgerDBPanel.TabIndex = 6;
             // 
             // sælgereDBKnap
@@ -346,7 +346,7 @@
             køberDBPanel.Controls.Add(mineKøbereDBKnap);
             køberDBPanel.Controls.Add(alleKøbereDBKnap);
             køberDBPanel.Controls.Add(registrerKøberDBKnap);
-            køberDBPanel.Location = new Point(0, 31);
+            køberDBPanel.Location = new Point(0, 32);
             køberDBPanel.Margin = new Padding(0);
             køberDBPanel.MaximumSize = new Size(139, 120);
             køberDBPanel.MinimumSize = new Size(139, 30);
@@ -414,7 +414,7 @@
             alleKøbereDBKnap.Margin = new Padding(0);
             alleKøbereDBKnap.Name = "alleKøbereDBKnap";
             alleKøbereDBKnap.RightToLeft = RightToLeft.No;
-            alleKøbereDBKnap.Size = new Size(138, 30);
+            alleKøbereDBKnap.Size = new Size(139, 30);
             alleKøbereDBKnap.TabIndex = 11;
             alleKøbereDBKnap.Text = "Alle Købere";
             alleKøbereDBKnap.TextAlign = ContentAlignment.TopLeft;
@@ -434,7 +434,7 @@
             registrerKøberDBKnap.Margin = new Padding(0);
             registrerKøberDBKnap.Name = "registrerKøberDBKnap";
             registrerKøberDBKnap.RightToLeft = RightToLeft.No;
-            registrerKøberDBKnap.Size = new Size(138, 30);
+            registrerKøberDBKnap.Size = new Size(139, 30);
             registrerKøberDBKnap.TabIndex = 12;
             registrerKøberDBKnap.Text = "Registrer";
             registrerKøberDBKnap.TextAlign = ContentAlignment.TopLeft;
@@ -450,29 +450,29 @@
             salgDBPanel.Controls.Add(mineSalgDBKnap);
             salgDBPanel.Controls.Add(alleSalgDBKnap);
             salgDBPanel.Controls.Add(salgRegistrerDBKnap);
-            salgDBPanel.Location = new Point(4, 121);
-            salgDBPanel.MaximumSize = new Size(139, 143);
-            salgDBPanel.MinimumSize = new Size(139, 51);
+            salgDBPanel.Location = new Point(4, 122);
+            salgDBPanel.MaximumSize = new Size(139, 144);
+            salgDBPanel.MinimumSize = new Size(139, 54);
             salgDBPanel.Name = "salgDBPanel";
-            salgDBPanel.Size = new Size(139, 51);
+            salgDBPanel.Size = new Size(139, 54);
             salgDBPanel.TabIndex = 5;
             // 
             // salgDBKnap
             // 
             salgDBKnap.BackColor = Color.FromArgb(176, 176, 176);
-            salgDBKnap.BackgroundImageLayout = ImageLayout.None;
+            salgDBKnap.BackgroundImage = Properties.Resources.vecteezy_money_icon_png_on_transparent_background_17785212;
+            salgDBKnap.BackgroundImageLayout = ImageLayout.Zoom;
             salgDBKnap.FlatAppearance.BorderColor = Color.Black;
             salgDBKnap.FlatStyle = FlatStyle.Flat;
             salgDBKnap.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             salgDBKnap.ForeColor = Color.Black;
-            salgDBKnap.Image = (Image)resources.GetObject("salgDBKnap.Image");
             salgDBKnap.Location = new Point(0, 0);
             salgDBKnap.Margin = new Padding(0);
-            salgDBKnap.MaximumSize = new Size(139, 51);
-            salgDBKnap.MinimumSize = new Size(139, 51);
+            salgDBKnap.MaximumSize = new Size(139, 52);
+            salgDBKnap.MinimumSize = new Size(139, 52);
             salgDBKnap.Name = "salgDBKnap";
             salgDBKnap.RightToLeft = RightToLeft.No;
-            salgDBKnap.Size = new Size(139, 51);
+            salgDBKnap.Size = new Size(139, 52);
             salgDBKnap.TabIndex = 6;
             salgDBKnap.TextAlign = ContentAlignment.MiddleRight;
             salgDBKnap.UseVisualStyleBackColor = false;
@@ -486,7 +486,7 @@
             mineSalgDBKnap.FlatStyle = FlatStyle.Flat;
             mineSalgDBKnap.Font = new Font("Segoe UI", 8F);
             mineSalgDBKnap.ForeColor = Color.Black;
-            mineSalgDBKnap.Location = new Point(0, 51);
+            mineSalgDBKnap.Location = new Point(0, 52);
             mineSalgDBKnap.Margin = new Padding(0);
             mineSalgDBKnap.Name = "mineSalgDBKnap";
             mineSalgDBKnap.RightToLeft = RightToLeft.No;
@@ -505,7 +505,7 @@
             alleSalgDBKnap.FlatStyle = FlatStyle.Flat;
             alleSalgDBKnap.Font = new Font("Segoe UI", 8F);
             alleSalgDBKnap.ForeColor = Color.Black;
-            alleSalgDBKnap.Location = new Point(0, 81);
+            alleSalgDBKnap.Location = new Point(0, 82);
             alleSalgDBKnap.Margin = new Padding(0);
             alleSalgDBKnap.Name = "alleSalgDBKnap";
             alleSalgDBKnap.RightToLeft = RightToLeft.No;
@@ -524,7 +524,7 @@
             salgRegistrerDBKnap.FlatStyle = FlatStyle.Flat;
             salgRegistrerDBKnap.Font = new Font("Segoe UI", 8F);
             salgRegistrerDBKnap.ForeColor = Color.Black;
-            salgRegistrerDBKnap.Location = new Point(0, 111);
+            salgRegistrerDBKnap.Location = new Point(0, 112);
             salgRegistrerDBKnap.Margin = new Padding(0);
             salgRegistrerDBKnap.Name = "salgRegistrerDBKnap";
             salgRegistrerDBKnap.RightToLeft = RightToLeft.No;
@@ -544,8 +544,8 @@
             boligDBPanel.Controls.Add(alleBolgierDBKnap);
             boligDBPanel.Controls.Add(boligerRegistrerDBKnap);
             boligDBPanel.Location = new Point(4, 4);
-            boligDBPanel.MaximumSize = new Size(145, 164);
-            boligDBPanel.MinimumSize = new Size(139, 51);
+            boligDBPanel.MaximumSize = new Size(146, 163);
+            boligDBPanel.MinimumSize = new Size(139, 52);
             boligDBPanel.Name = "boligDBPanel";
             boligDBPanel.Size = new Size(139, 52);
             boligDBPanel.TabIndex = 1;
@@ -554,19 +554,19 @@
             // 
             boligDBKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             boligDBKnap.BackColor = Color.FromArgb(253, 187, 131);
-            boligDBKnap.BackgroundImageLayout = ImageLayout.None;
+            boligDBKnap.BackgroundImage = (Image)resources.GetObject("boligDBKnap.BackgroundImage");
+            boligDBKnap.BackgroundImageLayout = ImageLayout.Zoom;
             boligDBKnap.FlatAppearance.BorderColor = Color.Black;
             boligDBKnap.FlatStyle = FlatStyle.Flat;
             boligDBKnap.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             boligDBKnap.ForeColor = Color.Transparent;
-            boligDBKnap.Image = (Image)resources.GetObject("boligDBKnap.Image");
             boligDBKnap.Location = new Point(0, 0);
             boligDBKnap.Margin = new Padding(0);
-            boligDBKnap.MaximumSize = new Size(139, 51);
-            boligDBKnap.MinimumSize = new Size(139, 51);
+            boligDBKnap.MaximumSize = new Size(139, 52);
+            boligDBKnap.MinimumSize = new Size(139, 52);
             boligDBKnap.Name = "boligDBKnap";
             boligDBKnap.RightToLeft = RightToLeft.No;
-            boligDBKnap.Size = new Size(139, 51);
+            boligDBKnap.Size = new Size(139, 52);
             boligDBKnap.TabIndex = 2;
             boligDBKnap.TextAlign = ContentAlignment.MiddleRight;
             boligDBKnap.UseVisualStyleBackColor = false;
@@ -580,7 +580,7 @@
             mineBoligerDBKnap.FlatStyle = FlatStyle.Flat;
             mineBoligerDBKnap.Font = new Font("Segoe UI", 8F);
             mineBoligerDBKnap.ForeColor = Color.Black;
-            mineBoligerDBKnap.Location = new Point(0, 51);
+            mineBoligerDBKnap.Location = new Point(0, 52);
             mineBoligerDBKnap.Margin = new Padding(0);
             mineBoligerDBKnap.MaximumSize = new Size(139, 37);
             mineBoligerDBKnap.MinimumSize = new Size(139, 37);
@@ -601,7 +601,7 @@
             alleBolgierDBKnap.FlatStyle = FlatStyle.Flat;
             alleBolgierDBKnap.Font = new Font("Segoe UI", 8F);
             alleBolgierDBKnap.ForeColor = Color.Black;
-            alleBolgierDBKnap.Location = new Point(0, 88);
+            alleBolgierDBKnap.Location = new Point(0, 89);
             alleBolgierDBKnap.Margin = new Padding(0);
             alleBolgierDBKnap.MaximumSize = new Size(139, 37);
             alleBolgierDBKnap.MinimumSize = new Size(139, 37);
@@ -622,7 +622,7 @@
             boligerRegistrerDBKnap.FlatStyle = FlatStyle.Flat;
             boligerRegistrerDBKnap.Font = new Font("Segoe UI", 8F);
             boligerRegistrerDBKnap.ForeColor = Color.Black;
-            boligerRegistrerDBKnap.Location = new Point(0, 125);
+            boligerRegistrerDBKnap.Location = new Point(0, 126);
             boligerRegistrerDBKnap.Margin = new Padding(0);
             boligerRegistrerDBKnap.MaximumSize = new Size(139, 37);
             boligerRegistrerDBKnap.MinimumSize = new Size(139, 37);
@@ -636,16 +636,17 @@
             // 
             // brugerDBKnap
             // 
+            brugerDBKnap.BackgroundImage = Properties.Resources.user_profile_icon__4___1_;
+            brugerDBKnap.BackgroundImageLayout = ImageLayout.Zoom;
             brugerDBKnap.Dock = DockStyle.Fill;
+            brugerDBKnap.FlatAppearance.BorderSize = 0;
             brugerDBKnap.FlatStyle = FlatStyle.Flat;
-            brugerDBKnap.Image = Properties.Resources.user_profile_icon__4___1__mini;
             brugerDBKnap.ImageAlign = ContentAlignment.TopCenter;
-            brugerDBKnap.Location = new Point(1, 1);
+            brugerDBKnap.Location = new Point(0, 0);
             brugerDBKnap.Margin = new Padding(0);
             brugerDBKnap.Name = "brugerDBKnap";
-            brugerDBKnap.Size = new Size(143, 154);
+            brugerDBKnap.Size = new Size(144, 137);
             brugerDBKnap.TabIndex = 2;
-            brugerDBKnap.Text = "Brugernavn";
             brugerDBKnap.TextAlign = ContentAlignment.BottomCenter;
             brugerDBKnap.UseVisualStyleBackColor = true;
             // 
@@ -655,10 +656,40 @@
             screenDBPanel.AutoScroll = true;
             screenDBPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             screenDBPanel.BorderStyle = BorderStyle.FixedSingle;
-            screenDBPanel.Location = new Point(165, 72);
+            screenDBPanel.Location = new Point(166, 72);
             screenDBPanel.Name = "screenDBPanel";
-            screenDBPanel.Size = new Size(652, 633);
+            screenDBPanel.Size = new Size(652, 634);
             screenDBPanel.TabIndex = 2;
+            // 
+            // brugerLayoutPanel
+            // 
+            brugerLayoutPanel.AutoScroll = true;
+            brugerLayoutPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            brugerLayoutPanel.ColumnCount = 1;
+            brugerLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            brugerLayoutPanel.Controls.Add(brugerDBKnap, 0, 0);
+            brugerLayoutPanel.Controls.Add(brugerNavnLabel, 0, 1);
+            brugerLayoutPanel.Dock = DockStyle.Fill;
+            brugerLayoutPanel.Location = new Point(1, 1);
+            brugerLayoutPanel.Margin = new Padding(0);
+            brugerLayoutPanel.Name = "brugerLayoutPanel";
+            brugerLayoutPanel.RowCount = 2;
+            brugerLayoutPanel.RowStyles.Add(new RowStyle());
+            brugerLayoutPanel.RowStyles.Add(new RowStyle());
+            brugerLayoutPanel.Size = new Size(144, 165);
+            brugerLayoutPanel.TabIndex = 0;
+            // 
+            // brugerNavnLabel
+            // 
+            brugerNavnLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            brugerNavnLabel.AutoSize = true;
+            brugerNavnLabel.Location = new Point(0, 137);
+            brugerNavnLabel.Margin = new Padding(0);
+            brugerNavnLabel.Name = "brugerNavnLabel";
+            brugerNavnLabel.Size = new Size(144, 28);
+            brugerNavnLabel.TabIndex = 3;
+            brugerNavnLabel.Text = "[Brugernavn]";
+            brugerNavnLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // uDBLayoutPanel
             // 
@@ -666,7 +697,7 @@
             uDBLayoutPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             uDBLayoutPanel.BackColor = Color.FromArgb(255, 246, 218);
             uDBLayoutPanel.ColumnCount = 2;
-            uDBLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 145F));
+            uDBLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 146F));
             uDBLayoutPanel.ColumnStyles.Add(new ColumnStyle());
             uDBLayoutPanel.Controls.Add(startDBKnap, 0, 0);
             uDBLayoutPanel.Controls.Add(pageLabel, 1, 0);
@@ -676,7 +707,7 @@
             uDBLayoutPanel.Name = "uDBLayoutPanel";
             uDBLayoutPanel.RowCount = 1;
             uDBLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            uDBLayoutPanel.Size = new Size(840, 53);
+            uDBLayoutPanel.Size = new Size(840, 63);
             uDBLayoutPanel.TabIndex = 3;
             // 
             // lDBLayoutPanel
@@ -685,17 +716,17 @@
             lDBLayoutPanel.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
             lDBLayoutPanel.ColumnCount = 1;
             lDBLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            lDBLayoutPanel.Controls.Add(brugerLayoutPanel, 0, 0);
             lDBLayoutPanel.Controls.Add(menuDBLayoutPanel, 0, 1);
-            lDBLayoutPanel.Controls.Add(brugerDBKnap, 0, 0);
             lDBLayoutPanel.Dock = DockStyle.Left;
-            lDBLayoutPanel.Location = new Point(0, 53);
+            lDBLayoutPanel.Location = new Point(0, 63);
             lDBLayoutPanel.Margin = new Padding(0);
             lDBLayoutPanel.Name = "lDBLayoutPanel";
             lDBLayoutPanel.RowCount = 3;
             lDBLayoutPanel.RowStyles.Add(new RowStyle());
             lDBLayoutPanel.RowStyles.Add(new RowStyle());
             lDBLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            lDBLayoutPanel.Size = new Size(145, 664);
+            lDBLayoutPanel.Size = new Size(146, 654);
             lDBLayoutPanel.TabIndex = 4;
             // 
             // DashBoard
@@ -719,6 +750,8 @@
             køberDBPanel.ResumeLayout(false);
             salgDBPanel.ResumeLayout(false);
             boligDBPanel.ResumeLayout(false);
+            brugerLayoutPanel.ResumeLayout(false);
+            brugerLayoutPanel.PerformLayout();
             uDBLayoutPanel.ResumeLayout(false);
             uDBLayoutPanel.PerformLayout();
             lDBLayoutPanel.ResumeLayout(false);
@@ -760,5 +793,7 @@
         private TableLayoutPanel uDBLayoutPanel;
         private TableLayoutPanel lDBLayoutPanel;
         private Button mæglerDBKnap;
+        private TableLayoutPanel brugerLayoutPanel;
+        private Label brugerNavnLabel;
     }
 }

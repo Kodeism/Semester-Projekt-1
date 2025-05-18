@@ -261,8 +261,8 @@ namespace DataAccess.Repositories
             };
             List<object> tabeldata = new List<object>()
             {
-                {GetTable("select top 20 * from Bolig order by BoligID desc")},
-                {GetTable("select top 20 * from Køber order by KøberID desc")}
+                {GetTable("select top 20 ByNavn, BoligType, Værelser, ByggeDato, Pris from Bolig where Status = 'Til Salg' order by BoligID desc")},
+                {GetTable("select top 20 (Fornavn+' '+EfterNavn) as Navn, SøgeOmråde, BoligType, PrisKlasse from Køber order by KøberID desc")}
             };
             Dictionary<string, List<object>> data = new(){
                 {"pie",piedata},
