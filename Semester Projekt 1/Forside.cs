@@ -100,7 +100,7 @@ namespace Semester_Projekt_1
             boligerBoligTypePlot.Plot.Axes.Margins(bottom: 0);
             boligerBoligTypePlot.Plot.DataBackground.Color = Colors.Transparent;
             boligerBoligTypePlot.Plot.FigureBackground.Color = Colors.Transparent;
-            boligerBoligTypePlot.Plot.Title("Usolgte Boliger Fodelt på BoligTypen");
+            boligerBoligTypePlot.Plot.Title("Usolgte Boliger Fordelt på BoligTypen");
             boligerBoligTypePlot.Refresh();
         }
 
