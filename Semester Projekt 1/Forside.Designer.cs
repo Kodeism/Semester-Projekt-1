@@ -31,20 +31,20 @@
             statsBackgroundPanel = new Panel();
             statBoxesLayoutPanel = new TableLayoutPanel();
             salgLayoutPanel = new TableLayoutPanel();
-            antalArealSalgLabel = new Label();
+            sumPengeSalgLabel = new Label();
             salgLabel = new Label();
-            arealSalgLabel = new Label();
+            sumSalgLabel = new Label();
             antalSalgLabel = new Label();
             sælgereLayoutPanel = new TableLayoutPanel();
-            antalSalgsklarLabel = new Label();
+            boligtypeUdbudtLabel = new Label();
             sælgereLabel = new Label();
-            salgsklarLabel = new Label();
+            udbudtBoligtypeLabel = new Label();
             sælgereAntalLabel = new Label();
             købereLayoutPanel = new TableLayoutPanel();
-            søgereAntalLabel = new Label();
+            boligtypeEftersøgtLabel = new Label();
             købereLabel = new Label();
             købereAntalLabel = new Label();
-            købereSøgereLabel = new Label();
+            eftersøgtBoligTypeLabel = new Label();
             boligerLayoutPanel = new TableLayoutPanel();
             usolgteBoligerLabel = new Label();
             boligLabel = new Label();
@@ -108,9 +108,9 @@
             salgLayoutPanel.ColumnCount = 2;
             salgLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 56.3535919F));
             salgLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 43.6464081F));
-            salgLayoutPanel.Controls.Add(antalArealSalgLabel, 1, 1);
+            salgLayoutPanel.Controls.Add(sumPengeSalgLabel, 1, 1);
             salgLayoutPanel.Controls.Add(salgLabel, 0, 0);
-            salgLayoutPanel.Controls.Add(arealSalgLabel, 0, 1);
+            salgLayoutPanel.Controls.Add(sumSalgLabel, 0, 1);
             salgLayoutPanel.Controls.Add(antalSalgLabel, 1, 0);
             salgLayoutPanel.Location = new Point(567, 3);
             salgLayoutPanel.Name = "salgLayoutPanel";
@@ -120,17 +120,17 @@
             salgLayoutPanel.Size = new Size(182, 103);
             salgLayoutPanel.TabIndex = 7;
             // 
-            // antalArealSalgLabel
+            // sumPengeSalgLabel
             // 
-            antalArealSalgLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            antalArealSalgLabel.AutoSize = true;
-            antalArealSalgLabel.Font = new Font("Segoe UI", 9F);
-            antalArealSalgLabel.Location = new Point(116, 78);
-            antalArealSalgLabel.Name = "antalArealSalgLabel";
-            antalArealSalgLabel.Size = new Size(63, 25);
-            antalArealSalgLabel.TabIndex = 6;
-            antalArealSalgLabel.Text = "[Antal]";
-            antalArealSalgLabel.TextAlign = ContentAlignment.BottomRight;
+            sumPengeSalgLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            sumPengeSalgLabel.AutoSize = true;
+            sumPengeSalgLabel.Font = new Font("Segoe UI", 9F);
+            sumPengeSalgLabel.Location = new Point(116, 78);
+            sumPengeSalgLabel.Name = "sumPengeSalgLabel";
+            sumPengeSalgLabel.Size = new Size(63, 25);
+            sumPengeSalgLabel.TabIndex = 6;
+            sumPengeSalgLabel.Text = "[Antal]";
+            sumPengeSalgLabel.TextAlign = ContentAlignment.BottomRight;
             // 
             // salgLabel
             // 
@@ -142,17 +142,17 @@
             salgLabel.TabIndex = 6;
             salgLabel.Text = "Salg";
             // 
-            // arealSalgLabel
+            // sumSalgLabel
             // 
-            arealSalgLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            arealSalgLabel.AutoSize = true;
-            arealSalgLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            arealSalgLabel.Location = new Point(3, 73);
-            arealSalgLabel.Name = "arealSalgLabel";
-            arealSalgLabel.Size = new Size(67, 30);
-            arealSalgLabel.TabIndex = 5;
-            arealSalgLabel.Text = "Areal";
-            arealSalgLabel.TextAlign = ContentAlignment.BottomLeft;
+            sumSalgLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            sumSalgLabel.AutoSize = true;
+            sumSalgLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            sumSalgLabel.Location = new Point(3, 73);
+            sumSalgLabel.Name = "sumSalgLabel";
+            sumSalgLabel.Size = new Size(58, 30);
+            sumSalgLabel.TabIndex = 5;
+            sumSalgLabel.Text = "Sum";
+            sumSalgLabel.TextAlign = ContentAlignment.BottomLeft;
             // 
             // antalSalgLabel
             // 
@@ -173,9 +173,9 @@
             sælgereLayoutPanel.ColumnCount = 2;
             sælgereLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 56.3535919F));
             sælgereLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 43.6464081F));
-            sælgereLayoutPanel.Controls.Add(antalSalgsklarLabel, 1, 1);
+            sælgereLayoutPanel.Controls.Add(boligtypeUdbudtLabel, 1, 1);
             sælgereLayoutPanel.Controls.Add(sælgereLabel, 0, 0);
-            sælgereLayoutPanel.Controls.Add(salgsklarLabel, 0, 1);
+            sælgereLayoutPanel.Controls.Add(udbudtBoligtypeLabel, 0, 1);
             sælgereLayoutPanel.Controls.Add(sælgereAntalLabel, 1, 0);
             sælgereLayoutPanel.Location = new Point(379, 3);
             sælgereLayoutPanel.Name = "sælgereLayoutPanel";
@@ -186,17 +186,17 @@
             sælgereLayoutPanel.Size = new Size(182, 103);
             sælgereLayoutPanel.TabIndex = 6;
             // 
-            // antalSalgsklarLabel
+            // boligtypeUdbudtLabel
             // 
-            antalSalgsklarLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            antalSalgsklarLabel.AutoSize = true;
-            antalSalgsklarLabel.Font = new Font("Segoe UI", 9F);
-            antalSalgsklarLabel.Location = new Point(116, 78);
-            antalSalgsklarLabel.Name = "antalSalgsklarLabel";
-            antalSalgsklarLabel.Size = new Size(63, 25);
-            antalSalgsklarLabel.TabIndex = 5;
-            antalSalgsklarLabel.Text = "[Antal]";
-            antalSalgsklarLabel.TextAlign = ContentAlignment.BottomRight;
+            boligtypeUdbudtLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            boligtypeUdbudtLabel.AutoSize = true;
+            boligtypeUdbudtLabel.Font = new Font("Segoe UI", 9F);
+            boligtypeUdbudtLabel.Location = new Point(107, 53);
+            boligtypeUdbudtLabel.Name = "boligtypeUdbudtLabel";
+            boligtypeUdbudtLabel.Size = new Size(72, 50);
+            boligtypeUdbudtLabel.TabIndex = 5;
+            boligtypeUdbudtLabel.Text = "[Boligtype]";
+            boligtypeUdbudtLabel.TextAlign = ContentAlignment.BottomRight;
             // 
             // sælgereLabel
             // 
@@ -208,17 +208,17 @@
             sælgereLabel.TabIndex = 5;
             sælgereLabel.Text = "Sælgere";
             // 
-            // salgsklarLabel
+            // udbudtBoligtypeLabel
             // 
-            salgsklarLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            salgsklarLabel.AutoSize = true;
-            salgsklarLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            salgsklarLabel.Location = new Point(3, 51);
-            salgsklarLabel.Name = "salgsklarLabel";
-            salgsklarLabel.Size = new Size(85, 52);
-            salgsklarLabel.TabIndex = 4;
-            salgsklarLabel.Text = "Salgsklar";
-            salgsklarLabel.TextAlign = ContentAlignment.BottomLeft;
+            udbudtBoligtypeLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            udbudtBoligtypeLabel.AutoSize = true;
+            udbudtBoligtypeLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            udbudtBoligtypeLabel.Location = new Point(3, 51);
+            udbudtBoligtypeLabel.Name = "udbudtBoligtypeLabel";
+            udbudtBoligtypeLabel.Size = new Size(93, 52);
+            udbudtBoligtypeLabel.TabIndex = 4;
+            udbudtBoligtypeLabel.Text = "Udbudt Type ";
+            udbudtBoligtypeLabel.TextAlign = ContentAlignment.BottomLeft;
             // 
             // sælgereAntalLabel
             // 
@@ -239,10 +239,10 @@
             købereLayoutPanel.ColumnCount = 2;
             købereLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 56.3535919F));
             købereLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 43.6464081F));
-            købereLayoutPanel.Controls.Add(søgereAntalLabel, 1, 1);
+            købereLayoutPanel.Controls.Add(boligtypeEftersøgtLabel, 1, 1);
             købereLayoutPanel.Controls.Add(købereLabel, 0, 0);
             købereLayoutPanel.Controls.Add(købereAntalLabel, 1, 0);
-            købereLayoutPanel.Controls.Add(købereSøgereLabel, 0, 1);
+            købereLayoutPanel.Controls.Add(eftersøgtBoligTypeLabel, 0, 1);
             købereLayoutPanel.Location = new Point(191, 3);
             købereLayoutPanel.Name = "købereLayoutPanel";
             købereLayoutPanel.RowCount = 2;
@@ -251,18 +251,18 @@
             købereLayoutPanel.Size = new Size(182, 103);
             købereLayoutPanel.TabIndex = 5;
             // 
-            // søgereAntalLabel
+            // boligtypeEftersøgtLabel
             // 
-            søgereAntalLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            søgereAntalLabel.AutoSize = true;
-            søgereAntalLabel.BackColor = Color.FromArgb(164, 236, 142);
-            søgereAntalLabel.Font = new Font("Segoe UI", 9F);
-            søgereAntalLabel.Location = new Point(116, 78);
-            søgereAntalLabel.Name = "søgereAntalLabel";
-            søgereAntalLabel.Size = new Size(63, 25);
-            søgereAntalLabel.TabIndex = 4;
-            søgereAntalLabel.Text = "[Antal]";
-            søgereAntalLabel.TextAlign = ContentAlignment.BottomRight;
+            boligtypeEftersøgtLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            boligtypeEftersøgtLabel.AutoSize = true;
+            boligtypeEftersøgtLabel.BackColor = Color.FromArgb(164, 236, 142);
+            boligtypeEftersøgtLabel.Font = new Font("Segoe UI", 9F);
+            boligtypeEftersøgtLabel.Location = new Point(107, 53);
+            boligtypeEftersøgtLabel.Name = "boligtypeEftersøgtLabel";
+            boligtypeEftersøgtLabel.Size = new Size(72, 50);
+            boligtypeEftersøgtLabel.TabIndex = 4;
+            boligtypeEftersøgtLabel.Text = "[Boligtype]";
+            boligtypeEftersøgtLabel.TextAlign = ContentAlignment.BottomRight;
             // 
             // købereLabel
             // 
@@ -286,17 +286,17 @@
             købereAntalLabel.Text = "[Antal]";
             købereAntalLabel.TextAlign = ContentAlignment.BottomRight;
             // 
-            // købereSøgereLabel
+            // eftersøgtBoligTypeLabel
             // 
-            købereSøgereLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            købereSøgereLabel.AutoSize = true;
-            købereSøgereLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            købereSøgereLabel.Location = new Point(3, 51);
-            købereSøgereLabel.Name = "købereSøgereLabel";
-            købereSøgereLabel.Size = new Size(94, 52);
-            købereSøgereLabel.TabIndex = 4;
-            købereSøgereLabel.Text = "Købsklar";
-            købereSøgereLabel.TextAlign = ContentAlignment.BottomLeft;
+            eftersøgtBoligTypeLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            eftersøgtBoligTypeLabel.AutoSize = true;
+            eftersøgtBoligTypeLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            eftersøgtBoligTypeLabel.Location = new Point(3, 51);
+            eftersøgtBoligTypeLabel.Name = "eftersøgtBoligTypeLabel";
+            eftersøgtBoligTypeLabel.Size = new Size(92, 52);
+            eftersøgtBoligTypeLabel.TabIndex = 4;
+            eftersøgtBoligTypeLabel.Text = "Eftersøgt Type";
+            eftersøgtBoligTypeLabel.TextAlign = ContentAlignment.BottomLeft;
             // 
             // boligerLayoutPanel
             // 
@@ -508,17 +508,17 @@
         private Panel statsBackgroundPanel;
         private TableLayoutPanel statBoxesLayoutPanel;
         private Label købereLabel;
-        private Label købereSøgereLabel;
+        private Label eftersøgtBoligTypeLabel;
         private Label købereAntalLabel;
         private Label sælgereLabel;
-        private Label søgereAntalLabel;
-        private Label salgsklarLabel;
+        private Label boligtypeEftersøgtLabel;
+        private Label udbudtBoligtypeLabel;
         private Label sælgereAntalLabel;
-        private Label antalSalgsklarLabel;
+        private Label boligtypeUdbudtLabel;
         private Label salgLabel;
-        private Label arealSalgLabel;
+        private Label sumSalgLabel;
         private Label antalSalgLabel;
-        private Label antalArealSalgLabel;
+        private Label sumPengeSalgLabel;
         private TableLayoutPanel boligerLayoutPanel;
         private Label usolgteBoligerLabel;
         private Label boligLabel;
