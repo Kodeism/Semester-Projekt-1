@@ -6,6 +6,7 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
             openPage(new Forside());
+            screenDBPanel.AutoScrollPosition = new Point(0, 0);
         }
         private void closeMenu(FlowLayoutPanel menu)
         {

@@ -25,6 +25,7 @@ namespace Semester_Projekt_1
         public Forside()
         {
             InitializeComponent();
+            this.AutoScrollPosition = new Point(0, 0);
             Data = logic.Data;
             main = (DashBoard)this.FindForm();
             this.DoubleBuffered = true;
@@ -32,6 +33,7 @@ namespace Semester_Projekt_1
                           ControlStyles.UserPaint |
                           ControlStyles.OptimizedDoubleBuffer, true);
             this.UpdateStyles();
+
         }
         private void statBoxesLayoutPanel_Paint(object sender, PaintEventArgs e)
         {
