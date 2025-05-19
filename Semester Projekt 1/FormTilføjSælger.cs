@@ -95,12 +95,21 @@ namespace Semester_Projekt_1
                 sælgerEmailTextbox.BackColor = Color.Red;
                 MessageBox.Show("Indtast en gyldig email");
             }
-            else
-            {
-                SælgerFunktioner sælgerfunktion = new SælgerFunktioner();
-                sælgerfunktion.TilføjSælger(navn, efternavn, tlfNummer, email, cprNummer, adresse);
-            }
+            
 
+            
+                SælgerFunktioner sælgerfunktion = new SælgerFunktioner();
+            try
+            {
+                sælgerfunktion.TilføjSælger(navn, efternavn, tlfNummer, email, cprNummer, adresse);
+                MessageBox.Show("Sælger er oprettet.");
+                this.Close();
+            }
+            catch 
+            {
+                MessageBox.Show("Noget gik galt!");
+            }
+            
         }
 
         private void sælgerFornavnTextbox_TextChanged(object sender, EventArgs e)
@@ -110,7 +119,7 @@ namespace Semester_Projekt_1
 
         private void sælgerAnnulerOpretButton_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
     }
 }

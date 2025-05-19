@@ -82,8 +82,20 @@ namespace Semester_Projekt_1
             
             
             SolgtFunktion solgtFunktion = new SolgtFunktion();
-            solgtFunktion.ErklærSolgt(CprNr, adresse, dato, salgspris, SælgerCprNr);
-        }
+            try
+            {
+                solgtFunktion.ErklærSolgt(CprNr, adresse, dato, salgspris, SælgerCprNr);
+                MessageBox.Show("Salget er oprettet.");
+                this.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Indtastede oplysninger stemmer ikke overens med lagrede oplysninger.");
+            }
+
+
+
+            }
 
         private void OpretSolgtBoligDateTImePicker(object sender, EventArgs e)
         {
@@ -93,7 +105,7 @@ namespace Semester_Projekt_1
 
         private void CancelSaleButton_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
 
         private void SaleFormExit_Click(object sender, EventArgs e)
