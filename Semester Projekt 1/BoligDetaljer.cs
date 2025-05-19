@@ -19,12 +19,12 @@ namespace Semester_Projekt_1
         private BoligLogic boligLogic;
         private Bolig boligDetaljer;
 
-        public BoligDetaljer()
+        public BoligDetaljer(int boligID)
         {
             InitializeComponent();
 
             boligLogic = new BoligLogic();
-            boligDetaljer = boligLogic.GetBolig(1);
+            boligDetaljer = boligLogic.GetBolig(boligID);
             editableTextBoxes = new List<TextBox>() { prisTextBox };
             editableComboBoxes = new List<ComboBox>() { };
         }
@@ -57,7 +57,7 @@ namespace Semester_Projekt_1
             adresseTextBox.Text = boligDetaljer.Adresse;
             byTextBox.Text = boligDetaljer.ByNavn;
             typeComboBox.Text = boligDetaljer.Type;
-            regionComboBox.Text = "missing in class and db";
+            regionComboBox.Text = "";
             postnrTextBox.Text = boligDetaljer.PostNummer.ToString();
             grundArealTextBox.Text = boligDetaljer.GrundStørrelse.ToString();
             boligarealTextBox.Text = boligDetaljer.BoligAreal.ToString();

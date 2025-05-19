@@ -1,6 +1,7 @@
 ﻿using DataAccess.Repositories.Contracts;
 using Microsoft.Data.SqlClient;
 using Models;
+using System.Diagnostics;
 
 namespace DataAccess.Repositories
 {
@@ -70,6 +71,66 @@ namespace DataAccess.Repositories
             connection.Close();
 
             return bolig;
+        }
+
+        public Bolig getSingleBolig(int boligID)
+        {
+            SqlCommand sqlCommand = connection.CreateCommand();
+            var sql = """
+                SELECT *
+                FROM Bolig
+                WHERE BoligID = @BoligID;
+                """;
+
+            sqlCommand.CommandText = sql;
+            sqlCommand.Parameters.AddWithValue("@BoligID", boligID);
+
+            connection.Open();
+            Bolig bolig;
+            using (var reader = sqlCommand.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    try
+                    {
+
+                        // NOTE: Order of columns in DB and object constructor does not match perfectly.
+                        //
+                        // DO NOT REARRANGE
+                        bolig = new Bolig(
+                            reader.GetInt32(0), //ID
+                            reader.GetInt32(1), //Pris
+                            reader.GetString(2), //Adresse
+                            reader.GetInt32(3), ///["@Postnummer"]
+                            reader.GetString(4), //["@ByNavn"]
+                            reader.GetString(5), //["@BoligType"]
+                            reader.GetInt32(6), //["@BoligAreal"]
+                            reader.GetInt32(7), //["@Værelser"]
+                            reader.GetDateTime(8), //["@ByggeDato"]
+                            reader.GetInt32(9), //["@GrundStørrelse"]
+                            reader.GetInt32(11), //["@EjendomsmæglerID"]
+                            reader.GetInt32(12), //["@SælgerID"]
+                            reader.GetString(10), //["@EnergiMærke"]
+                            reader.GetString(13) //["@Status"]
+                        );
+
+                        connection.Close();
+                        return bolig;
+                    }
+                    catch (Exception)
+                    {
+                        Debug.WriteLine("Big fail in making bolig");
+                        connection.Close();
+                        throw;
+                    }
+
+                }
+                else
+                {
+                    connection.Close();
+                    throw new Exception("Sql reader unable to read");
+                }
+            }
         }
 
         public Ejendomsmægler CreateEjendomsmægler(Ejendomsmægler ejendomsmægler)

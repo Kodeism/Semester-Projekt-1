@@ -48,7 +48,9 @@ namespace BusineesLogic
 
         public Bolig GetBolig(int boligID)
         {
-            var bolig = new Bolig(boligID, 700000, "testvej 28", 7000, "testby", "Villa", 700, 17, DateTime.Now, 900000, 2, 1);
+            //repository.getSingleBolig(boligID);
+            var bolig = repository.getSingleBolig(boligID);
+            //var bolig = new Bolig(boligID, 700000, "testvej 28", 7000, "testby", "Villa", 700, 17, DateTime.Now, 900000, 2, 1);
             return bolig;
         }
 
