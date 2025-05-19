@@ -5,26 +5,22 @@ namespace Semester_Projekt_1
         public DashBoard()
         {
             InitializeComponent();
-            openForm(new Forside(), screenDBPanel);
+            openPage(new Forside());
+            screenDBPanel.AutoScrollPosition = new Point(0, 0);
         }
         private void closeMenu(FlowLayoutPanel menu)
         {
             menu.Height = menu.MinimumSize.Height;
         }
-        private static void openForm(Form subform, Panel screen)
+        internal void openPage(UserControl page)
         {
-            subform.TopLevel = false;
-            subform.TopMost = true;
-            subform.FormBorderStyle = FormBorderStyle.None;
-            subform.Dock = DockStyle.Fill;
-            screen.Tag = subform;
-            screen.Controls.Add(subform);
-            subform.BringToFront();
-            subform.Show();
+            screenDBPanel.Controls.Clear();
+            screenDBPanel.Controls.Add(page);
+            page.Dock = DockStyle.Fill;
         }
         private void startDBKnap_Click(object sender, EventArgs e)
         {
-            openForm(new Forside(), screenDBPanel);
+            openPage(new Forside());
             pageLabel.Text = "Forside";
             closeMenu(boligDBPanel);
             closeMenu(personDBPanel);
@@ -33,7 +29,7 @@ namespace Semester_Projekt_1
             closeMenu(salgDBPanel);
         }
 
-        private void boligDBKnap_Click(object sender, EventArgs e)
+        internal void boligDBKnap_Click(object sender, EventArgs e)
         {
             pageLabel.Text = "Boliger";
             var max = boligDBPanel.MaximumSize.Height;

@@ -31,20 +31,20 @@
             statsBackgroundPanel = new Panel();
             statBoxesLayoutPanel = new TableLayoutPanel();
             salgLayoutPanel = new TableLayoutPanel();
-            antalArealSalgLabel = new Label();
+            sumPengeSalgLabel = new Label();
             salgLabel = new Label();
-            arealSalgLabel = new Label();
+            sumSalgLabel = new Label();
             antalSalgLabel = new Label();
             sælgereLayoutPanel = new TableLayoutPanel();
-            antalSalgsklarLabel = new Label();
+            boligtypeUdbudtLabel = new Label();
             sælgereLabel = new Label();
-            salgsklarLabel = new Label();
+            udbudtBoligtypeLabel = new Label();
             sælgereAntalLabel = new Label();
             købereLayoutPanel = new TableLayoutPanel();
-            søgereAntalLabel = new Label();
+            boligtypeEftersøgtLabel = new Label();
             købereLabel = new Label();
             købereAntalLabel = new Label();
-            købereSøgereLabel = new Label();
+            eftersøgtBoligTypeLabel = new Label();
             boligerLayoutPanel = new TableLayoutPanel();
             usolgteBoligerLabel = new Label();
             boligLabel = new Label();
@@ -72,13 +72,14 @@
             // 
             // statsBackgroundPanel
             // 
+            statsBackgroundPanel.AutoScroll = true;
             statsBackgroundPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             statsBackgroundPanel.BackColor = Color.FromArgb(255, 246, 218);
             statsBackgroundPanel.Controls.Add(statBoxesLayoutPanel);
-            statsBackgroundPanel.Dock = DockStyle.Top;
-            statsBackgroundPanel.Location = new Point(0, 0);
+            statsBackgroundPanel.Dock = DockStyle.Fill;
+            statsBackgroundPanel.Location = new Point(4, 4);
             statsBackgroundPanel.Name = "statsBackgroundPanel";
-            statsBackgroundPanel.Size = new Size(883, 147);
+            statsBackgroundPanel.Size = new Size(884, 147);
             statsBackgroundPanel.TabIndex = 0;
             // 
             // statBoxesLayoutPanel
@@ -94,11 +95,11 @@
             statBoxesLayoutPanel.Controls.Add(sælgereLayoutPanel, 2, 0);
             statBoxesLayoutPanel.Controls.Add(købereLayoutPanel, 1, 0);
             statBoxesLayoutPanel.Controls.Add(boligerLayoutPanel, 0, 0);
-            statBoxesLayoutPanel.Location = new Point(65, 19);
+            statBoxesLayoutPanel.Location = new Point(66, 18);
             statBoxesLayoutPanel.Name = "statBoxesLayoutPanel";
             statBoxesLayoutPanel.RowCount = 1;
             statBoxesLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            statBoxesLayoutPanel.Size = new Size(752, 109);
+            statBoxesLayoutPanel.Size = new Size(753, 108);
             statBoxesLayoutPanel.TabIndex = 0;
             // 
             // salgLayoutPanel
@@ -108,29 +109,29 @@
             salgLayoutPanel.ColumnCount = 2;
             salgLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 56.3535919F));
             salgLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 43.6464081F));
-            salgLayoutPanel.Controls.Add(antalArealSalgLabel, 1, 1);
+            salgLayoutPanel.Controls.Add(sumPengeSalgLabel, 1, 1);
             salgLayoutPanel.Controls.Add(salgLabel, 0, 0);
-            salgLayoutPanel.Controls.Add(arealSalgLabel, 0, 1);
+            salgLayoutPanel.Controls.Add(sumSalgLabel, 0, 1);
             salgLayoutPanel.Controls.Add(antalSalgLabel, 1, 0);
             salgLayoutPanel.Location = new Point(567, 3);
             salgLayoutPanel.Name = "salgLayoutPanel";
             salgLayoutPanel.RowCount = 2;
             salgLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             salgLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            salgLayoutPanel.Size = new Size(182, 103);
+            salgLayoutPanel.Size = new Size(183, 102);
             salgLayoutPanel.TabIndex = 7;
             // 
-            // antalArealSalgLabel
+            // sumPengeSalgLabel
             // 
-            antalArealSalgLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            antalArealSalgLabel.AutoSize = true;
-            antalArealSalgLabel.Font = new Font("Segoe UI", 9F);
-            antalArealSalgLabel.Location = new Point(116, 78);
-            antalArealSalgLabel.Name = "antalArealSalgLabel";
-            antalArealSalgLabel.Size = new Size(63, 25);
-            antalArealSalgLabel.TabIndex = 6;
-            antalArealSalgLabel.Text = "[Antal]";
-            antalArealSalgLabel.TextAlign = ContentAlignment.BottomRight;
+            sumPengeSalgLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            sumPengeSalgLabel.AutoSize = true;
+            sumPengeSalgLabel.Font = new Font("Segoe UI", 9F, FontStyle.Italic | FontStyle.Underline);
+            sumPengeSalgLabel.Location = new Point(116, 77);
+            sumPengeSalgLabel.Name = "sumPengeSalgLabel";
+            sumPengeSalgLabel.Size = new Size(64, 25);
+            sumPengeSalgLabel.TabIndex = 6;
+            sumPengeSalgLabel.Text = "[Antal]";
+            sumPengeSalgLabel.TextAlign = ContentAlignment.BottomRight;
             // 
             // salgLabel
             // 
@@ -142,26 +143,26 @@
             salgLabel.TabIndex = 6;
             salgLabel.Text = "Salg";
             // 
-            // arealSalgLabel
+            // sumSalgLabel
             // 
-            arealSalgLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            arealSalgLabel.AutoSize = true;
-            arealSalgLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            arealSalgLabel.Location = new Point(3, 73);
-            arealSalgLabel.Name = "arealSalgLabel";
-            arealSalgLabel.Size = new Size(67, 30);
-            arealSalgLabel.TabIndex = 5;
-            arealSalgLabel.Text = "Areal";
-            arealSalgLabel.TextAlign = ContentAlignment.BottomLeft;
+            sumSalgLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            sumSalgLabel.AutoSize = true;
+            sumSalgLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            sumSalgLabel.Location = new Point(3, 72);
+            sumSalgLabel.Name = "sumSalgLabel";
+            sumSalgLabel.Size = new Size(58, 30);
+            sumSalgLabel.TabIndex = 5;
+            sumSalgLabel.Text = "Sum";
+            sumSalgLabel.TextAlign = ContentAlignment.BottomLeft;
             // 
             // antalSalgLabel
             // 
             antalSalgLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             antalSalgLabel.AutoSize = true;
-            antalSalgLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold | FontStyle.Underline);
+            antalSalgLabel.Font = new Font("Segoe UI", 11F, FontStyle.Italic | FontStyle.Underline);
             antalSalgLabel.Location = new Point(109, 0);
             antalSalgLabel.Name = "antalSalgLabel";
-            antalSalgLabel.Size = new Size(70, 51);
+            antalSalgLabel.Size = new Size(71, 51);
             antalSalgLabel.TabIndex = 6;
             antalSalgLabel.Text = "[Antal]";
             antalSalgLabel.TextAlign = ContentAlignment.BottomRight;
@@ -173,9 +174,9 @@
             sælgereLayoutPanel.ColumnCount = 2;
             sælgereLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 56.3535919F));
             sælgereLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 43.6464081F));
-            sælgereLayoutPanel.Controls.Add(antalSalgsklarLabel, 1, 1);
+            sælgereLayoutPanel.Controls.Add(boligtypeUdbudtLabel, 1, 1);
             sælgereLayoutPanel.Controls.Add(sælgereLabel, 0, 0);
-            sælgereLayoutPanel.Controls.Add(salgsklarLabel, 0, 1);
+            sælgereLayoutPanel.Controls.Add(udbudtBoligtypeLabel, 0, 1);
             sælgereLayoutPanel.Controls.Add(sælgereAntalLabel, 1, 0);
             sælgereLayoutPanel.Location = new Point(379, 3);
             sælgereLayoutPanel.Name = "sælgereLayoutPanel";
@@ -183,20 +184,20 @@
             sælgereLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             sælgereLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             sælgereLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            sælgereLayoutPanel.Size = new Size(182, 103);
+            sælgereLayoutPanel.Size = new Size(182, 102);
             sælgereLayoutPanel.TabIndex = 6;
             // 
-            // antalSalgsklarLabel
+            // boligtypeUdbudtLabel
             // 
-            antalSalgsklarLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            antalSalgsklarLabel.AutoSize = true;
-            antalSalgsklarLabel.Font = new Font("Segoe UI", 9F);
-            antalSalgsklarLabel.Location = new Point(116, 78);
-            antalSalgsklarLabel.Name = "antalSalgsklarLabel";
-            antalSalgsklarLabel.Size = new Size(63, 25);
-            antalSalgsklarLabel.TabIndex = 5;
-            antalSalgsklarLabel.Text = "[Antal]";
-            antalSalgsklarLabel.TextAlign = ContentAlignment.BottomRight;
+            boligtypeUdbudtLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            boligtypeUdbudtLabel.AutoSize = true;
+            boligtypeUdbudtLabel.Font = new Font("Segoe UI", 9F, FontStyle.Italic | FontStyle.Underline);
+            boligtypeUdbudtLabel.Location = new Point(107, 52);
+            boligtypeUdbudtLabel.Name = "boligtypeUdbudtLabel";
+            boligtypeUdbudtLabel.Size = new Size(72, 50);
+            boligtypeUdbudtLabel.TabIndex = 5;
+            boligtypeUdbudtLabel.Text = "[Boligtype]";
+            boligtypeUdbudtLabel.TextAlign = ContentAlignment.BottomRight;
             // 
             // sælgereLabel
             // 
@@ -208,26 +209,26 @@
             sælgereLabel.TabIndex = 5;
             sælgereLabel.Text = "Sælgere";
             // 
-            // salgsklarLabel
+            // udbudtBoligtypeLabel
             // 
-            salgsklarLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            salgsklarLabel.AutoSize = true;
-            salgsklarLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            salgsklarLabel.Location = new Point(3, 51);
-            salgsklarLabel.Name = "salgsklarLabel";
-            salgsklarLabel.Size = new Size(85, 52);
-            salgsklarLabel.TabIndex = 4;
-            salgsklarLabel.Text = "Salgsklar";
-            salgsklarLabel.TextAlign = ContentAlignment.BottomLeft;
+            udbudtBoligtypeLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            udbudtBoligtypeLabel.AutoSize = true;
+            udbudtBoligtypeLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            udbudtBoligtypeLabel.Location = new Point(3, 51);
+            udbudtBoligtypeLabel.Name = "udbudtBoligtypeLabel";
+            udbudtBoligtypeLabel.Size = new Size(93, 51);
+            udbudtBoligtypeLabel.TabIndex = 4;
+            udbudtBoligtypeLabel.Text = "Udbudt Type ";
+            udbudtBoligtypeLabel.TextAlign = ContentAlignment.BottomLeft;
             // 
             // sælgereAntalLabel
             // 
             sælgereAntalLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             sælgereAntalLabel.AutoSize = true;
-            sælgereAntalLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold | FontStyle.Underline);
-            sælgereAntalLabel.Location = new Point(109, 0);
+            sælgereAntalLabel.Font = new Font("Segoe UI", 11F, FontStyle.Italic | FontStyle.Underline);
+            sælgereAntalLabel.Location = new Point(108, 0);
             sælgereAntalLabel.Name = "sælgereAntalLabel";
-            sælgereAntalLabel.Size = new Size(70, 51);
+            sælgereAntalLabel.Size = new Size(71, 51);
             sælgereAntalLabel.TabIndex = 5;
             sælgereAntalLabel.Text = "[Antal]";
             sælgereAntalLabel.TextAlign = ContentAlignment.BottomRight;
@@ -239,30 +240,30 @@
             købereLayoutPanel.ColumnCount = 2;
             købereLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 56.3535919F));
             købereLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 43.6464081F));
-            købereLayoutPanel.Controls.Add(søgereAntalLabel, 1, 1);
+            købereLayoutPanel.Controls.Add(boligtypeEftersøgtLabel, 1, 1);
             købereLayoutPanel.Controls.Add(købereLabel, 0, 0);
             købereLayoutPanel.Controls.Add(købereAntalLabel, 1, 0);
-            købereLayoutPanel.Controls.Add(købereSøgereLabel, 0, 1);
+            købereLayoutPanel.Controls.Add(eftersøgtBoligTypeLabel, 0, 1);
             købereLayoutPanel.Location = new Point(191, 3);
             købereLayoutPanel.Name = "købereLayoutPanel";
             købereLayoutPanel.RowCount = 2;
             købereLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             købereLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            købereLayoutPanel.Size = new Size(182, 103);
+            købereLayoutPanel.Size = new Size(182, 102);
             købereLayoutPanel.TabIndex = 5;
             // 
-            // søgereAntalLabel
+            // boligtypeEftersøgtLabel
             // 
-            søgereAntalLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            søgereAntalLabel.AutoSize = true;
-            søgereAntalLabel.BackColor = Color.FromArgb(164, 236, 142);
-            søgereAntalLabel.Font = new Font("Segoe UI", 9F);
-            søgereAntalLabel.Location = new Point(116, 78);
-            søgereAntalLabel.Name = "søgereAntalLabel";
-            søgereAntalLabel.Size = new Size(63, 25);
-            søgereAntalLabel.TabIndex = 4;
-            søgereAntalLabel.Text = "[Antal]";
-            søgereAntalLabel.TextAlign = ContentAlignment.BottomRight;
+            boligtypeEftersøgtLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            boligtypeEftersøgtLabel.AutoSize = true;
+            boligtypeEftersøgtLabel.BackColor = Color.FromArgb(164, 236, 142);
+            boligtypeEftersøgtLabel.Font = new Font("Segoe UI", 9F, FontStyle.Italic | FontStyle.Underline);
+            boligtypeEftersøgtLabel.Location = new Point(107, 52);
+            boligtypeEftersøgtLabel.Name = "boligtypeEftersøgtLabel";
+            boligtypeEftersøgtLabel.Size = new Size(72, 50);
+            boligtypeEftersøgtLabel.TabIndex = 4;
+            boligtypeEftersøgtLabel.Text = "[Boligtype]";
+            boligtypeEftersøgtLabel.TextAlign = ContentAlignment.BottomRight;
             // 
             // købereLabel
             // 
@@ -278,25 +279,25 @@
             // 
             købereAntalLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             købereAntalLabel.AutoSize = true;
-            købereAntalLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold | FontStyle.Underline);
-            købereAntalLabel.Location = new Point(109, 0);
+            købereAntalLabel.Font = new Font("Segoe UI", 11F, FontStyle.Italic | FontStyle.Underline);
+            købereAntalLabel.Location = new Point(108, 0);
             købereAntalLabel.Name = "købereAntalLabel";
-            købereAntalLabel.Size = new Size(70, 51);
+            købereAntalLabel.Size = new Size(71, 51);
             købereAntalLabel.TabIndex = 4;
             købereAntalLabel.Text = "[Antal]";
             købereAntalLabel.TextAlign = ContentAlignment.BottomRight;
             // 
-            // købereSøgereLabel
+            // eftersøgtBoligTypeLabel
             // 
-            købereSøgereLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            købereSøgereLabel.AutoSize = true;
-            købereSøgereLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            købereSøgereLabel.Location = new Point(3, 51);
-            købereSøgereLabel.Name = "købereSøgereLabel";
-            købereSøgereLabel.Size = new Size(94, 52);
-            købereSøgereLabel.TabIndex = 4;
-            købereSøgereLabel.Text = "Købsklar";
-            købereSøgereLabel.TextAlign = ContentAlignment.BottomLeft;
+            eftersøgtBoligTypeLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            eftersøgtBoligTypeLabel.AutoSize = true;
+            eftersøgtBoligTypeLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            eftersøgtBoligTypeLabel.Location = new Point(3, 51);
+            eftersøgtBoligTypeLabel.Name = "eftersøgtBoligTypeLabel";
+            eftersøgtBoligTypeLabel.Size = new Size(92, 51);
+            eftersøgtBoligTypeLabel.TabIndex = 4;
+            eftersøgtBoligTypeLabel.Text = "Eftersøgt Type";
+            eftersøgtBoligTypeLabel.TextAlign = ContentAlignment.BottomLeft;
             // 
             // boligerLayoutPanel
             // 
@@ -315,15 +316,16 @@
             boligerLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             boligerLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             boligerLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            boligerLayoutPanel.Size = new Size(182, 103);
+            boligerLayoutPanel.Size = new Size(182, 102);
             boligerLayoutPanel.TabIndex = 1;
+            boligerLayoutPanel.Click += boligerLayoutPanel_Click;
             // 
             // usolgteBoligerLabel
             // 
             usolgteBoligerLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             usolgteBoligerLabel.AutoSize = true;
             usolgteBoligerLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            usolgteBoligerLabel.Location = new Point(3, 73);
+            usolgteBoligerLabel.Location = new Point(3, 72);
             usolgteBoligerLabel.Name = "usolgteBoligerLabel";
             usolgteBoligerLabel.Size = new Size(93, 30);
             usolgteBoligerLabel.TabIndex = 2;
@@ -344,10 +346,10 @@
             // 
             antalUsolgteBoligerLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             antalUsolgteBoligerLabel.AutoSize = true;
-            antalUsolgteBoligerLabel.Font = new Font("Segoe UI", 9F);
-            antalUsolgteBoligerLabel.Location = new Point(116, 78);
+            antalUsolgteBoligerLabel.Font = new Font("Segoe UI", 9F, FontStyle.Italic | FontStyle.Underline);
+            antalUsolgteBoligerLabel.Location = new Point(115, 77);
             antalUsolgteBoligerLabel.Name = "antalUsolgteBoligerLabel";
-            antalUsolgteBoligerLabel.Size = new Size(63, 25);
+            antalUsolgteBoligerLabel.Size = new Size(64, 25);
             antalUsolgteBoligerLabel.TabIndex = 3;
             antalUsolgteBoligerLabel.Text = "[Antal]";
             antalUsolgteBoligerLabel.TextAlign = ContentAlignment.BottomRight;
@@ -356,37 +358,40 @@
             // 
             boligAntalLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             boligAntalLabel.AutoSize = true;
-            boligAntalLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold | FontStyle.Underline);
-            boligAntalLabel.Location = new Point(109, 0);
+            boligAntalLabel.Font = new Font("Segoe UI", 11F, FontStyle.Italic | FontStyle.Underline);
+            boligAntalLabel.Location = new Point(108, 0);
             boligAntalLabel.Name = "boligAntalLabel";
-            boligAntalLabel.Size = new Size(70, 51);
+            boligAntalLabel.Size = new Size(71, 51);
             boligAntalLabel.TabIndex = 1;
             boligAntalLabel.Text = "[Antal]";
             boligAntalLabel.TextAlign = ContentAlignment.BottomRight;
             // 
             // nyeLayoutPanel
             // 
+            nyeLayoutPanel.AutoScroll = true;
             nyeLayoutPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             nyeLayoutPanel.BackColor = Color.FromArgb(255, 246, 218);
             nyeLayoutPanel.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
             nyeLayoutPanel.ColumnCount = 1;
             nyeLayoutPanel.ColumnStyles.Add(new ColumnStyle());
-            nyeLayoutPanel.Controls.Add(graphsLayoutPanel, 0, 4);
-            nyeLayoutPanel.Controls.Add(nyeKøbere, 0, 3);
-            nyeLayoutPanel.Controls.Add(nyeBoligerLabel, 0, 0);
-            nyeLayoutPanel.Controls.Add(nyeKøberLabel, 0, 2);
-            nyeLayoutPanel.Controls.Add(nyeBoliger, 0, 1);
-            nyeLayoutPanel.Dock = DockStyle.Bottom;
+            nyeLayoutPanel.Controls.Add(statsBackgroundPanel, 0, 0);
+            nyeLayoutPanel.Controls.Add(graphsLayoutPanel, 0, 5);
+            nyeLayoutPanel.Controls.Add(nyeKøbere, 0, 4);
+            nyeLayoutPanel.Controls.Add(nyeBoligerLabel, 0, 1);
+            nyeLayoutPanel.Controls.Add(nyeKøberLabel, 0, 3);
+            nyeLayoutPanel.Controls.Add(nyeBoliger, 0, 2);
+            nyeLayoutPanel.Dock = DockStyle.Fill;
             nyeLayoutPanel.GrowStyle = TableLayoutPanelGrowStyle.FixedSize;
-            nyeLayoutPanel.Location = new Point(0, 147);
+            nyeLayoutPanel.Location = new Point(0, 0);
             nyeLayoutPanel.Name = "nyeLayoutPanel";
-            nyeLayoutPanel.RowCount = 5;
+            nyeLayoutPanel.RowCount = 6;
             nyeLayoutPanel.RowStyles.Add(new RowStyle());
             nyeLayoutPanel.RowStyles.Add(new RowStyle());
             nyeLayoutPanel.RowStyles.Add(new RowStyle());
             nyeLayoutPanel.RowStyles.Add(new RowStyle());
             nyeLayoutPanel.RowStyles.Add(new RowStyle());
-            nyeLayoutPanel.Size = new Size(883, 1069);
+            nyeLayoutPanel.RowStyles.Add(new RowStyle());
+            nyeLayoutPanel.Size = new Size(680, 1050);
             nyeLayoutPanel.TabIndex = 1;
             // 
             // graphsLayoutPanel
@@ -396,53 +401,58 @@
             graphsLayoutPanel.BackColor = Color.FromArgb(255, 246, 218);
             graphsLayoutPanel.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
             graphsLayoutPanel.ColumnCount = 2;
-            graphsLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
-            graphsLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
+            graphsLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 45.3196335F));
+            graphsLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 54.6803665F));
             graphsLayoutPanel.Controls.Add(boligerBoligTypePlot, 1, 0);
             graphsLayoutPanel.Controls.Add(køberBoligTypePlot, 0, 0);
-            graphsLayoutPanel.Location = new Point(4, 496);
+            graphsLayoutPanel.Location = new Point(4, 650);
             graphsLayoutPanel.Name = "graphsLayoutPanel";
             graphsLayoutPanel.RowCount = 1;
             graphsLayoutPanel.RowStyles.Add(new RowStyle());
-            graphsLayoutPanel.Size = new Size(877, 575);
+            graphsLayoutPanel.Size = new Size(884, 657);
             graphsLayoutPanel.TabIndex = 0;
             // 
             // boligerBoligTypePlot
             // 
             boligerBoligTypePlot.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            boligerBoligTypePlot.AutoScroll = true;
+            boligerBoligTypePlot.AutoSize = true;
             boligerBoligTypePlot.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            boligerBoligTypePlot.AutoValidate = AutoValidate.EnablePreventFocusChange;
             boligerBoligTypePlot.DisplayScale = 1.5F;
-            boligerBoligTypePlot.Location = new Point(354, 4);
+            boligerBoligTypePlot.Location = new Point(404, 4);
             boligerBoligTypePlot.Name = "boligerBoligTypePlot";
-            boligerBoligTypePlot.Size = new Size(519, 567);
+            boligerBoligTypePlot.Size = new Size(476, 649);
             boligerBoligTypePlot.TabIndex = 2;
             // 
             // køberBoligTypePlot
             // 
+            køberBoligTypePlot.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            køberBoligTypePlot.AutoSize = true;
             køberBoligTypePlot.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             køberBoligTypePlot.BackgroundImageLayout = ImageLayout.None;
             køberBoligTypePlot.DisplayScale = 1.5F;
-            køberBoligTypePlot.Dock = DockStyle.Fill;
             køberBoligTypePlot.Location = new Point(4, 4);
             køberBoligTypePlot.Name = "køberBoligTypePlot";
-            køberBoligTypePlot.Size = new Size(343, 567);
+            køberBoligTypePlot.Size = new Size(393, 649);
             køberBoligTypePlot.TabIndex = 0;
             // 
             // nyeKøbere
             // 
             nyeKøbere.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            nyeKøbere.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             nyeKøbere.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            nyeKøbere.Location = new Point(4, 287);
+            nyeKøbere.Location = new Point(4, 441);
             nyeKøbere.Name = "nyeKøbere";
             nyeKøbere.RowHeadersWidth = 62;
-            nyeKøbere.Size = new Size(877, 202);
+            nyeKøbere.Size = new Size(884, 202);
             nyeKøbere.TabIndex = 3;
             // 
             // nyeBoligerLabel
             // 
             nyeBoligerLabel.AutoSize = true;
             nyeBoligerLabel.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            nyeBoligerLabel.Location = new Point(4, 1);
+            nyeBoligerLabel.Location = new Point(4, 155);
             nyeBoligerLabel.Name = "nyeBoligerLabel";
             nyeBoligerLabel.Size = new Size(171, 38);
             nyeBoligerLabel.TabIndex = 0;
@@ -452,7 +462,7 @@
             // 
             nyeKøberLabel.AutoSize = true;
             nyeKøberLabel.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            nyeKøberLabel.Location = new Point(4, 245);
+            nyeKøberLabel.Location = new Point(4, 399);
             nyeKøberLabel.Name = "nyeKøberLabel";
             nyeKøberLabel.Size = new Size(170, 38);
             nyeKøberLabel.TabIndex = 1;
@@ -461,11 +471,12 @@
             // nyeBoliger
             // 
             nyeBoliger.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            nyeBoliger.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             nyeBoliger.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            nyeBoliger.Location = new Point(4, 43);
+            nyeBoliger.Location = new Point(4, 197);
             nyeBoliger.Name = "nyeBoliger";
             nyeBoliger.RowHeadersWidth = 62;
-            nyeBoliger.Size = new Size(877, 198);
+            nyeBoliger.Size = new Size(884, 198);
             nyeBoliger.TabIndex = 2;
             // 
             // Forside
@@ -475,10 +486,9 @@
             AutoScroll = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(255, 246, 182);
-            ClientSize = new Size(909, 1050);
             Controls.Add(nyeLayoutPanel);
-            Controls.Add(statsBackgroundPanel);
             Name = "Forside";
+            Size = new Size(680, 1050);
             Load += Forside_Load;
             Resize += Forside_Resize;
             statsBackgroundPanel.ResumeLayout(false);
@@ -494,6 +504,7 @@
             nyeLayoutPanel.ResumeLayout(false);
             nyeLayoutPanel.PerformLayout();
             graphsLayoutPanel.ResumeLayout(false);
+            graphsLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)nyeKøbere).EndInit();
             ((System.ComponentModel.ISupportInitialize)nyeBoliger).EndInit();
             ResumeLayout(false);
@@ -504,17 +515,17 @@
         private Panel statsBackgroundPanel;
         private TableLayoutPanel statBoxesLayoutPanel;
         private Label købereLabel;
-        private Label købereSøgereLabel;
+        private Label eftersøgtBoligTypeLabel;
         private Label købereAntalLabel;
         private Label sælgereLabel;
-        private Label søgereAntalLabel;
-        private Label salgsklarLabel;
+        private Label boligtypeEftersøgtLabel;
+        private Label udbudtBoligtypeLabel;
         private Label sælgereAntalLabel;
-        private Label antalSalgsklarLabel;
+        private Label boligtypeUdbudtLabel;
         private Label salgLabel;
-        private Label arealSalgLabel;
+        private Label sumSalgLabel;
         private Label antalSalgLabel;
-        private Label antalArealSalgLabel;
+        private Label sumPengeSalgLabel;
         private TableLayoutPanel boligerLayoutPanel;
         private Label usolgteBoligerLabel;
         private Label boligLabel;

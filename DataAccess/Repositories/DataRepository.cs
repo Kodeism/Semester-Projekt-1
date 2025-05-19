@@ -1,4 +1,7 @@
-﻿using DataAccess.Repositories.Contracts;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.Data;
+using DataAccess.Repositories.Contracts;
 using Microsoft.Data.SqlClient;
 using Models;
 
@@ -174,6 +177,100 @@ namespace DataAccess.Repositories
             command.ExecuteNonQuery();
             connection.Close();
 
+        }
+
+        public int CountRows(string tabelname, string condition="")
+        {
+            string query = $"Select Count(*) From [{tabelname}]";
+            if (condition != "")
+                query += " "+condition;
+            using(SqlCommand cmd = new SqlCommand(query, connection))
+            {
+                connection.Open();
+                int count = (int)cmd.ExecuteScalar();
+                connection.Close();
+                return count;
+            }
+        }
+        public string GetString(string query)
+        {
+            using (SqlCommand cmd = new SqlCommand(query,connection))
+            {
+                connection.Open();
+                object str = cmd.ExecuteScalar();
+                connection.Close();
+                return str?.ToString() ?? "N/A";
+            }
+        }
+        public Int64 SendQuery(string query)
+        {
+            using (SqlCommand cmd = new SqlCommand(query, connection))
+            {
+                connection.Open();
+                object num = cmd.ExecuteScalar();
+                connection.Close();
+                return num != DBNull.Value ? Convert.ToInt64(num) : 0L;
+            }
+        }
+        public DataTable GetTable(string query)
+        {
+            DataTable dataTable = new DataTable();
+            using (SqlCommand cmd = new SqlCommand(query, connection))
+            using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+            {
+                adapter.Fill(dataTable);
+            }
+            return dataTable;
+        }
+        public Dictionary<string,List<object>> GetForsideData()
+        {
+            List<object> piedata = new List<object>()
+            {
+                CountRows("Køber","where BoligType = 'Villa'"),
+                CountRows("Køber","WHERE BoligType = 'Lejlighed'"),
+                CountRows("Køber","WHERE BoligType = 'Rækkehus'"),
+                CountRows("Køber","WHERE BoligType = 'Andelsbolig'"),
+                CountRows("Køber","WHERE BoligType = 'Ejerlejlighed'"),
+                CountRows("Køber","WHERE BoligType = 'Sommerhus'"),
+                CountRows("Køber","WHERE BoligType = 'Ungdomsbolig'"),
+                CountRows("Køber","WHERE BoligType = 'Ældrebolig'"),
+                CountRows("Køber","WHERE BoligType = 'Kolonihavehus'")
+            };
+            List<object> bardata = new List<object>()
+            {
+                CountRows("Bolig","where BoligType = 'Villa'"),
+                CountRows("Bolig","WHERE BoligType = 'Lejlighed'"),
+                CountRows("Bolig","WHERE BoligType = 'Rækkehus'"),
+                CountRows("Bolig","WHERE BoligType = 'Andelsbolig'"),
+                CountRows("Bolig","WHERE BoligType = 'Ejerlejlighed'"),
+                CountRows("Bolig","WHERE BoligType = 'Sommerhus'"),
+                CountRows("Bolig","WHERE BoligType = 'Ungdomsbolig'"),
+                CountRows("Bolig","WHERE BoligType = 'Ældrebolig'"),
+                CountRows("Bolig","WHERE BoligType = 'Kolonihavehus'")
+            };
+            List<object> labeldata = new List<object>()
+            {
+                CountRows("Bolig"),
+                CountRows("Bolig","WHERE Status = 'Til Salg'"),
+                CountRows("Køber"),
+                GetString("select TOP 1 BoligType from Køber group by BoligType order by count(*) desc;"),
+                CountRows("Sælger"),
+                GetString("select TOP 1 BoligType from Bolig where Status = 'Til Salg' group by BoligType order by count(*) desc"),
+                CountRows("Salg"),
+                SendQuery("select sum(cast(Beløb as bigint)) from Salg")
+            };
+            List<object> tabeldata = new List<object>()
+            {
+                {GetTable("select top 20 ByNavn, BoligType, Værelser, ByggeDato, Pris from Bolig where Status = 'Til Salg' order by BoligID desc")},
+                {GetTable("select top 20 (Fornavn+' '+EfterNavn) as Navn, SøgeOmråde, BoligType, PrisKlasse from Køber order by KøberID desc")}
+            };
+            Dictionary<string, List<object>> data = new(){
+                {"pie",piedata},
+                {"bar",bardata},
+                {"label",labeldata},
+                {"tabel",tabeldata}
+            };
+            return data;
         }
     }
 }

@@ -35,4 +35,13 @@ namespace BusineesLogic
         }
 
     }
+    public class ForsideLogic
+    {
+        private readonly DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; TrustServerCertificate = True;");
+        public Dictionary<string, List<object>> Data { get; set; }
+        public ForsideLogic()
+        {
+            Data = testDR.GetForsideData();
+        }
+    }
 }
