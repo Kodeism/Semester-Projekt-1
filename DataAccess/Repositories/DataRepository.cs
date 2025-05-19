@@ -187,10 +187,10 @@ namespace DataAccess.Repositories
             // tager ejendomsmægler og sælgers navn i stedet for ID eftersom id nok ikke er det vigtigste for ejendomsmægler at vide
             // WHERE 1=1 var bare måden jeg kunne sikrer mig at queryen virkede selv hvis ingen andre ting var tilføjet
             var sql = """
-                SELECT BoligID, Pris, Adresse, 
-                Postnummer, ByNavn, BoligType, 
-                BoligAreal, Værelser, ByggeDato, 
-                GrundStørrelse, EnergiMærke, 
+                SELECT Bolig.BoligID, Bolig.Pris, Bolig.Adresse, 
+                Bolig.Postnummer, Bolig.ByNavn, Bolig.BoligType, 
+                Bolig.BoligAreal, Bolig.Værelser, Bolig.ByggeDato, 
+                Bolig.GrundStørrelse, Bolig.EnergiMærke, 
                 (dbo.Ejendomsmægler.Fornavn + ' ' + dbo.Ejendomsmægler.EfterNavn) AS Ejendomsmægler, 
                 (dbo.Sælger.Fornavn + ' ' + dbo.Sælger.EfterNavn) AS Sælger, Status
                 FROM dbo.Bolig
