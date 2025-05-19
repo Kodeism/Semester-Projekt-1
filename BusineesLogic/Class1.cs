@@ -44,4 +44,18 @@ namespace BusineesLogic
             Data = testDR.GetForsideData();
         }
     }
+    public class HousingFilter
+    {
+        public string? MinPrice { get; set; }
+        public string? MaxPrice { get; set; }
+
+        public static void ApplyFilter(List<string> itemList)
+        {
+            foreach (var item in itemList)
+            {
+                // Debug.WriteLine(item);
+                // Tilføj til en where statement i query om søgning i boligliste
+            }
+        }
+    }
 }

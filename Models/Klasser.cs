@@ -134,6 +134,11 @@
         //sælgeren der vil sælge boligen
         public string Status { get; set; }
         //Solgt, eller Usolgt
+        public string EjendomsmæglerNavn { get; set; } // tilføjet eftersom filter viser navne, ved ikke om ejendomsmæglerID og sælgerID
+                                                       // blev brugt til andre ting så de bliver som de er
+        //Navn på ejendomsmægleren der administreret boligen
+        public string SælgerNavn { get; set; }
+        //Navn på sælgeren der vil sælge boligen
         public Bolig(int pris, string adresse, int postNummer, string byNavn, string type, int boligAreal, int værelser, DateTime byggeDato, int grundStørrelse, int mæglerID, int sælgerID, string energimærke = "", string status = "Usolgt")
         {
             Pris = pris;
@@ -149,6 +154,107 @@
             SælgerID = sælgerID;
             EnergiMærke = energimærke;
             Status = status;
+        }
+        public Bolig(int boligID, int pris, string adresse, int postNummer, string byNavn, string type, int boligAreal, int værelser, DateTime byggeDato, int grundStørrelse, string mæglerNavn, string sælgerNavn, string energimærke = "", string status = "Usolgt")
+        { // ny bolig constructor til filter
+            BoligID = boligID;
+            Pris = pris;
+            Adresse = adresse;
+            PostNummer = postNummer;
+            ByNavn = byNavn;
+            Type = type;
+            BoligAreal = boligAreal;
+            Værelser = værelser;
+            ByggeDato = byggeDato;
+            GrundStørrelse = grundStørrelse;
+            EjendomsmæglerNavn = mæglerNavn;
+            SælgerNavn = sælgerNavn;
+            EnergiMærke = energimærke;
+            Status = status;
+        }
+        public Bolig() // tom bolig constructor som bliver brugt til at lave en tom query til første load af tabel
+        {
+
+        }
+    }
+    public class BoligFilter // samme som bolig men med min og max på nogle værdier
+    {
+        //bolig vil være en seperat tabel (altså en tabel for alle boligere)
+        public int BoligID { get; set; }
+        ////Bolgiens ID (dette skulle gerne gives af sql med identity markatet)
+        public int PrisMin { get; set; }
+        //pris på boligen
+        public int PrisMax { get; set; }
+        //pris på boligen
+        public int BoligArealMin { get; set; }
+        ////boligens areal
+        public int BoligArealMax { get; set; }
+        ////boligens areal
+        public int GrundStørrelseMin { get; set; }
+        ////det samlet areal af bolig og land
+        public int GrundStørrelseMax { get; set; }
+        ////det samlet areal af bolig og land
+        public int VærelserMin { get; set; }
+        ////antal af værelser/rum
+        public int VærelserMax { get; set; }
+        ////antal af værelser/rum
+        public string Adresse { get; set; }
+        ////boligens adresse
+        public int Postnummer { get; set; }
+        ////boligens postnummer
+        public string ByNavn { get; set; }
+        ////boligens bynavn
+        public string Type { get; set; }
+        ////boligtypen
+        public DateTime ByggeDato { get; set; } // skal ændres til datetime senere
+        ////hvornår var den bygget/renoveret
+        public string? EnergiMærke { get; set; } //optional
+        ////boligens energimærke
+        public string EjendomsmæglerNavn { get; set; }
+        ////Ejendomsmægleren der administreret boligen
+        public string SælgerNavn { get; set; }
+        ////sælgeren der vil sælge boligen
+        public string Status { get; set; }
+        ////Solgt, eller Usolgt
+        public BoligFilter(int prisMin, int prisMax, int boligArealMin,
+                            int boligArealMax, int grundStørrelseMin, int grundStørrelseMax,
+                            int værelserMin, int værelserMax, string adresse,
+                            int postnummer, string byNavn, string type,
+                            string energiMærke, string status, string ejendomsmæglerNavn, 
+                            string sælgerNavn)
+                            /*DateTime byggeDato,*/// byggedato skal ændres til en datetime senere
+                            /*string energiMærke, string status)*/
+        {
+            PrisMin = prisMin;
+            PrisMax = prisMax;
+            BoligArealMin = boligArealMin;
+            BoligArealMax = boligArealMax;
+            GrundStørrelseMin = grundStørrelseMin;
+            GrundStørrelseMax = grundStørrelseMax;
+            VærelserMin = værelserMin;
+            VærelserMax = værelserMax;
+            Adresse = adresse;
+            Postnummer = postnummer;
+            ByNavn = byNavn;
+            EnergiMærke = energiMærke;
+            Type = type;
+            Status = status;
+            EjendomsmæglerNavn = ejendomsmæglerNavn;
+            SælgerNavn = sælgerNavn;
+
+            //Adresse = adresse;
+            //Postnummer = postNummer;
+            //ByNavn = byNavn;
+            //Type = type;
+            ////ByggeDato = byggeDato;
+            //EjendomsmæglerID = ejendomsmæglerID;
+            //SælgerID = sælgerID;
+            //EnergiMærke = energiMærke;
+            //Status = status;
+        }
+        public BoligFilter()
+        {
+
         }
     }
 
