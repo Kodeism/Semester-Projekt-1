@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             FilterFormPanel = new Panel();
-            FilterStatusCheckBox = new CheckBox();
+            FilterStatusComboBox = new ComboBox();
+            label1 = new Label();
             FilterPostNummerLabel = new Label();
             FilterHousingTypeComboBox = new ComboBox();
             FilterHousingTypeLabel = new Label();
@@ -67,7 +68,8 @@
             // 
             FilterFormPanel.BackColor = Color.FromArgb(255, 246, 218);
             FilterFormPanel.BorderStyle = BorderStyle.FixedSingle;
-            FilterFormPanel.Controls.Add(FilterStatusCheckBox);
+            FilterFormPanel.Controls.Add(FilterStatusComboBox);
+            FilterFormPanel.Controls.Add(label1);
             FilterFormPanel.Controls.Add(FilterPostNummerLabel);
             FilterFormPanel.Controls.Add(FilterHousingTypeComboBox);
             FilterFormPanel.Controls.Add(FilterHousingTypeLabel);
@@ -103,16 +105,25 @@
             FilterFormPanel.Size = new Size(734, 730);
             FilterFormPanel.TabIndex = 0;
             // 
-            // FilterStatusCheckBox
+            // FilterStatusComboBox
             // 
-            FilterStatusCheckBox.AutoSize = true;
-            FilterStatusCheckBox.Font = new Font("Segoe UI", 13F);
-            FilterStatusCheckBox.Location = new Point(536, 562);
-            FilterStatusCheckBox.Name = "FilterStatusCheckBox";
-            FilterStatusCheckBox.Size = new Size(119, 40);
-            FilterStatusCheckBox.TabIndex = 47;
-            FilterStatusCheckBox.Text = "Til salg";
-            FilterStatusCheckBox.UseVisualStyleBackColor = true;
+            FilterStatusComboBox.Font = new Font("Segoe UI", 13F);
+            FilterStatusComboBox.FormattingEnabled = true;
+            FilterStatusComboBox.Items.AddRange(new object[] { "Til Salg", "Solgt" });
+            FilterStatusComboBox.Location = new Point(381, 562);
+            FilterStatusComboBox.Name = "FilterStatusComboBox";
+            FilterStatusComboBox.Size = new Size(274, 44);
+            FilterStatusComboBox.TabIndex = 49;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10F);
+            label1.Location = new Point(379, 531);
+            label1.Name = "label1";
+            label1.Size = new Size(65, 28);
+            label1.TabIndex = 48;
+            label1.Text = "Status";
             // 
             // FilterPostNummerLabel
             // 
@@ -439,6 +450,7 @@
         private Label FilterFormLabel;
         private Label FilterPostNummerLabel;
         private TextBox FilterPostnummerTextBox;
-        private CheckBox FilterStatusCheckBox;
+        private Label label1;
+        private ComboBox FilterStatusComboBox;
     }
 }

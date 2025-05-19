@@ -36,15 +36,15 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(37, 24);
+            dataGridView1.Location = new Point(30, 24);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(1775, 678);
+            dataGridView1.Size = new Size(1869, 653);
             dataGridView1.TabIndex = 0;
             // 
             // button1
             // 
-            button1.Location = new Point(791, 729);
+            button1.Location = new Point(876, 729);
             button1.Name = "button1";
             button1.Size = new Size(177, 60);
             button1.TabIndex = 1;
@@ -56,7 +56,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1849, 813);
+            ClientSize = new Size(1929, 813);
             Controls.Add(button1);
             Controls.Add(dataGridView1);
             Name = "BoligFilterTest";

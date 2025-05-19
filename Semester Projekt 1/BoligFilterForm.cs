@@ -28,78 +28,110 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
             boligFilterTest = boligForm;
+
         }
 
 
-        private void FilterFormButton_Click(object sender, EventArgs e)
+        private void FilterFormButton_Click(object sender, EventArgs e) // for hver udfyldt værdi så sendes det til BoligFilter
+                                                                        // BoligFilter vil hermed tjekkes igennem for data i DataRepository.cs Med SøgMedFilter() metoden
+                                                                        // Hermed sendes en sql query som så bruges til at filtrer data
         {
             // Pris
-            int? prisMin = int.TryParse(FilterPriceMinTextbox.Text, out int prisMinVal) ? prisMinVal : (int?)null;
-            int? prisMax = int.TryParse(FilterPriceMaxTextBox.Text, out int prisMaxVal) ? prisMaxVal : (int?)null;
+            int prisMin = 0;
+            if (!string.IsNullOrWhiteSpace(FilterPriceMinTextbox.Text))
+            {
+                int.TryParse(FilterPriceMinTextbox.Text, out prisMin);
+            }
+            int prisMax = 0;
+            if (!string.IsNullOrWhiteSpace(FilterPriceMaxTextBox.Text))
+            {
+                int.TryParse(FilterPriceMaxTextBox.Text, out prisMax);
+            }
 
+            int boligArealMin = 0;
+            if (!string.IsNullOrWhiteSpace(FilterHousingAreaMinTextBox.Text))
+            {
+                int.TryParse(FilterHousingAreaMinTextBox.Text, out boligArealMin);
+            }
+            int boligArealMax = 0;
+            if (!string.IsNullOrWhiteSpace(FilterHousingAreaMaxTextBox.Text))
+            {
+                int.TryParse(FilterHousingAreaMaxTextBox.Text, out boligArealMax);
+            }
+            int grundStørrelseMin = 0;
+            if (!string.IsNullOrWhiteSpace(FilterPlotAreaMinTextBox.Text))
+            {
+                int.TryParse(FilterPlotAreaMinTextBox.Text, out grundStørrelseMin);
+            }
+            int grundStørrelseMax = 0;
+            if (!string.IsNullOrWhiteSpace(FilterPlotAreaMaxTextBox.Text))
+            {
+                int.TryParse(FilterPlotAreaMaxTextBox.Text, out grundStørrelseMax);
+            }
+            int værelserMin = 0;
+            if (FilterRoomCountMinComboBox.SelectedItem != null)
+            {
+                string selectedValue = FilterRoomCountMinComboBox.SelectedItem.ToString();
+                int.TryParse(selectedValue, out værelserMin);
+            }
+            int værelserMax = 0;
+            if (FilterRoomCountMaxComboBox.SelectedItem != null)
+            {
+                string selectedValue = FilterRoomCountMaxComboBox.SelectedItem.ToString();
+                int.TryParse(selectedValue, out værelserMax);
+            }
 
-            // string prisMin = string.IsNullOrWhiteSpace(FilterPriceMinTextbox.Text) ? null : FilterPriceMinTextbox.Text;
-            // string prisMax = string.IsNullOrWhiteSpace(FilterPriceMaxTextBox.Text) ? null : FilterPriceMaxTextBox.Text;
+            // Adresse
+            string adresse = string.IsNullOrWhiteSpace(FilterAddressTextBox.Text) ? null : FilterAddressTextBox.Text;
 
+            // By + Postnummer
+            string byNavn = string.IsNullOrWhiteSpace(FilterCityTextBox.Text) ? null : FilterCityTextBox.Text;
 
-            //// Boligareal
-            //int? boligArealMin = int.TryParse(FilterHousingAreaMinTextBox.Text, out int baMin) ? baMin : (int?)null;
-            //int? boligArealMax = int.TryParse(FilterHousingAreaMaxTextBox.Text, out int baMax) ? baMax : (int?)null;
+            int postnummer = 0;
+            if (!string.IsNullOrWhiteSpace(FilterPostnummerTextBox.Text))
+            {
+                int.TryParse(FilterPostnummerTextBox.Text, out postnummer);
+            }
 
-            //// Grundstørrelse
-            //int? grundStørrelseMin = int.TryParse(FilterPlotAreaMinTextBox.Text, out int gsMin) ? gsMin : (int?)null;
-            //int? grundStørrelseMax = int.TryParse(FilterPlotAreaMaxTextBox.Text, out int gsMax) ? gsMax : (int?)null;
+            // Type
+            string boligType = FilterHousingTypeComboBox.SelectedItem?.ToString();
 
-            //// Værelser
-            //int? værelserMin = int.TryParse(FilterRoomCountMinComboBox.SelectedItem?.ToString(), out int vMin) ? vMin : (int?)null;
-            //int? værelserMax = int.TryParse(FilterRoomCountMaxComboBox.SelectedItem?.ToString(), out int vMax) ? vMax : (int?)null;
+            // Byggeår // mangler at blive lavet
+            //DateTime? byggeDato = DateTime.TryParse(FilterBuiltDateTextBox.Text, out DateTime bd) ? bd : (DateTime?)null;
 
-            //// Adresse
-            //string adresse = string.IsNullOrWhiteSpace(FilterAddressTextBox.Text) ? null : FilterAddressTextBox.Text;
-
-            //// By + Postnummer
-            //string byNavn = string.IsNullOrWhiteSpace(FilterCityTextBox.Text) ? null : FilterCityTextBox.Text;
-            //int? postnummer = int.TryParse(FilterPostnummerTextBox.Text, out int pn) ? pn : (int?)null;
-
-            //// Type
-            //string boligType = FilterHousingTypeComboBox.SelectedItem?.ToString();
-
-            //// Byggeår
-            ////DateTime? byggeDato = DateTime.TryParse(FilterBuiltDateTextBox.Text, out DateTime bd) ? bd : (DateTime?)null;
+            // Energimærke
+            string energiMærke = FilterEnergyLabelComboBox.SelectedItem?.ToString();
 
             //// Mægler ID
             //int? ejendomsmæglerID = int.TryParse(FilterRealtorTextBox.Text, out int emId) ? emId : (int?)null;
+            string ejendomsmæglerNavn = string.IsNullOrWhiteSpace(FilterRealtorTextBox.Text) ? null : FilterRealtorTextBox.Text;
 
             //// Sælger ID
             //int? sælgerID = int.TryParse(FilterSellerTextBox.Text, out int sælger) ? sælger : (int?)null;
+            string sælgerNavn = string.IsNullOrWhiteSpace(FilterSellerTextBox.Text) ? null : FilterSellerTextBox.Text;
 
-            //// Energimærke
-            //string energiMærke = FilterEnergyLabelComboBox.SelectedItem?.ToString();
-
-            //// Status
-            //string status = FilterStatusCheckBox.Checked ? "Til Salg" : null;
-
-
-
+            // Status
+            string status = FilterStatusComboBox.SelectedItem?.ToString();
 
             var boligFilter = new BoligFilter(
-                prisMin ?? 0, prisMax ?? 0//,
-                //boligArealMin ?? 0, boligArealMax ?? 0,
-                //grundStørrelseMin ?? 0, grundStørrelseMax ?? 0,
-                //værelserMin ?? 0, værelserMax ?? 0,
-                //adresse, postnummer ?? 0, byNavn,
-                //boligType, /*byggeDato ?? DateTime.MinValue,*/
-                //ejendomsmæglerID ?? 0, sælgerID ?? 0,
-                //energiMærke, status
+                prisMin, prisMax, 
+                boligArealMin, boligArealMax,
+                grundStørrelseMin, grundStørrelseMax,
+                værelserMin, værelserMax,
+                adresse, postnummer,
+                byNavn, boligType, 
+                energiMærke, status,
+                ejendomsmæglerNavn, sælgerNavn
+                //byggeDato ?? DateTime.MinValue // mangler at blive lavet
             );
 
             using (SqlConnection conn = new SqlConnection(BoligLogic.GetConnectionString()))
             {
                 var result = DataRepository.SøgMedFilter(conn, boligFilter);
                 boligFilterTest.OpdaterBoligerDataGrid(result);
+
             }
         }
-
 
     }
 }

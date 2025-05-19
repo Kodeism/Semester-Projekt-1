@@ -172,127 +172,132 @@ namespace DataAccess.Repositories
             List<Bolig> boligList = new List<Bolig>();
 
             SqlCommand command = connection.CreateCommand();
+            // tager ejendomsmægler og sælgers navn i stedet for ID eftersom id nok ikke er det vigtigste for ejendomsmægler at vide
+            // WHERE 1=1 var bare måden jeg kunne sikrer mig at queryen virkede selv hvis ingen andre ting var tilføjet
             var sql = """
-                    SELECT *
-                    FROM Bolig
-                    WHERE 1=1
+                SELECT BoligID, Pris, Adresse, 
+                Postnummer, ByNavn, BoligType, 
+                BoligAreal, Værelser, ByggeDato, 
+                GrundStørrelse, EnergiMærke, 
+                (dbo.Ejendomsmægler.Fornavn + ' ' + dbo.Ejendomsmægler.EfterNavn) AS Ejendomsmægler, 
+                (dbo.Sælger.Fornavn + ' ' + dbo.Sælger.EfterNavn) AS Sælger, Status
+                FROM dbo.Bolig
+                INNER JOIN Ejendomsmægler ON Bolig.EjendomsmæglerID = Ejendomsmægler.EjendomsmæglerID
+                INNER JOIN Sælger ON Bolig.SælgerID = Sælger.SælgerID
+                WHERE 1=1
                 """;
-            // insert into sql for each filled data in list, if value is empty then dont add
+
+
             // Pris
-            //if (boligFilter.PrisMin != null)
-            //{
-            //    sql += " AND Pris >= @minPris";
-            //    command.Parameters.AddWithValue("@minPris", boligFilter.PrisMin);
-            //}
-            //if (boligFilter.PrisMax != null)
-            //{
-            //    sql += " AND Pris <= @maxPris";
-            //    command.Parameters.AddWithValue("@maxPris", boligFilter.PrisMax);
-            //}
-            if (int.TryParse(boligFilter.PrisMin, out int prisMin))
+            if (boligFilter.PrisMin > 0)
             {
                 sql += " AND Pris >= @minPris";
-                command.Parameters.AddWithValue("@minPris", prisMin);
+                command.Parameters.AddWithValue("@minPris", boligFilter.PrisMin);
             }
-
-            if (int.TryParse(boligFilter.PrisMax, out int prisMax))
+            if (boligFilter.PrisMax > 0)
             {
                 sql += " AND Pris <= @maxPris";
-                command.Parameters.AddWithValue("@maxPris", prisMax);
+                command.Parameters.AddWithValue("@maxPris", boligFilter.PrisMax);
             }
 
-            //// BoligAreal
-            //if (boligFilter.BoligArealMin != null)
-            //{
-            //    sql += " AND BoligAreal >= @minBoligAreal";
-            //    command.Parameters.AddWithValue("@minBoligAreal", boligFilter.BoligArealMin);
-            //}
-            //if (boligFilter.BoligArealMax != null)
-            //{
-            //    sql += " AND BoligAreal <= @maxBoligAreal";
-            //    command.Parameters.AddWithValue("@maxBoligAreal", boligFilter.BoligArealMax);
-            //}
+            // BoligAreal
+            if (boligFilter.BoligArealMin > 0)
+            {
+                sql += " AND BoligAreal >= @minBoligAreal";
+                command.Parameters.AddWithValue("@minBoligAreal", boligFilter.BoligArealMin);
+            }
+            if (boligFilter.BoligArealMax > 0)
+            {
+                sql += " AND BoligAreal <= @maxBoligAreal";
+                command.Parameters.AddWithValue("@maxBoligAreal", boligFilter.BoligArealMax);
+            }
 
-            //// GrundStørrelse
-            //if (boligFilter.GrundStørrelseMin != null)
-            //{
-            //    sql += " AND GrundStørrelse >= @minGrundAreal";
-            //    command.Parameters.AddWithValue("@minGrundAreal", boligFilter.GrundStørrelseMin);
-            //}
-            //if (boligFilter.GrundStørrelseMax != null)
-            //{
-            //    sql += " AND GrundStørrelse <= @maxGrundAreal";
-            //    command.Parameters.AddWithValue("@maxGrundAreal", boligFilter.GrundStørrelseMax);
-            //}
+            // GrundStørrelse
+            if (boligFilter.GrundStørrelseMin > 0)
+            {
+                sql += " AND GrundStørrelse >= @minGrundAreal";
+                command.Parameters.AddWithValue("@minGrundAreal", boligFilter.GrundStørrelseMin);
+            }
+            if (boligFilter.GrundStørrelseMax > 0)
+            {
+                sql += " AND GrundStørrelse <= @maxGrundAreal";
+                command.Parameters.AddWithValue("@maxGrundAreal", boligFilter.GrundStørrelseMax);
+            }
 
-            //// Adresse
-            //if (!string.IsNullOrWhiteSpace(boligFilter.Adresse))
-            //{
-            //    sql += " AND Adresse LIKE @adresse";
-            //    command.Parameters.AddWithValue("@adresse", $"%{boligFilter.Adresse}%");
-            //}
+            // Værelser
+            if (boligFilter.VærelserMin > 0)
+            {
+                sql += " AND Værelser >= @værelserMin";
+                command.Parameters.AddWithValue("@værelserMin", boligFilter.VærelserMin);
+            }
+            if (boligFilter.VærelserMax > 0)
+            {
+                sql += " AND Værelser <= @værelserMax";
+                command.Parameters.AddWithValue("@værelserMax", boligFilter.VærelserMax);
+            }
 
-            //// Postnummer
-            //if (boligFilter.Postnummer != null)
-            //{
-            //    sql += " AND Postnummer = @postnr";
-            //    command.Parameters.AddWithValue("@postnr", boligFilter.Postnummer);
-            //}
+            // Adresse
+            if (!string.IsNullOrWhiteSpace(boligFilter.Adresse))
+            {
+                sql += " AND Adresse LIKE @adresse";
+                command.Parameters.AddWithValue("@adresse", $"%{boligFilter.Adresse}%");
+            }
 
-            //// ByNavn
-            //if (!string.IsNullOrWhiteSpace(boligFilter.ByNavn))
-            //{
-            //    sql += " AND ByNavn LIKE @bynavn";
-            //    command.Parameters.AddWithValue("@bynavn", $"%{boligFilter.ByNavn}%");
-            //}
+            // Postnummer
+            if (boligFilter.Postnummer > 0)
+            {
+                sql += " AND Postnummer = @postnr";
+                command.Parameters.AddWithValue("@postnr", boligFilter.Postnummer);
+            }
 
-            //// Type
-            //if (!string.IsNullOrWhiteSpace(boligFilter.Type))
-            //{
-            //    sql += " AND Type = @type";
-            //    command.Parameters.AddWithValue("@type", boligFilter.Type);
-            //}
+            // ByNavn
+            if (!string.IsNullOrWhiteSpace(boligFilter.ByNavn))
+            {
+                sql += " AND ByNavn LIKE @bynavn";
+                command.Parameters.AddWithValue("@bynavn", $"%{boligFilter.ByNavn}%");
+            }
 
-            //// ByggeDato
+            // Type
+            if (!string.IsNullOrWhiteSpace(boligFilter.Type))
+            {
+                sql += " AND BoligType = @type";
+                command.Parameters.AddWithValue("@type", boligFilter.Type);
+            }
+
+            //// ByggeDato // Mangler at blive tilføjet
             ////if (boligFilter.ByggeDato != null)
             ////{
             ////    sql += " AND ByggeDato = @byggeDato";
             ////    command.Parameters.AddWithValue("@byggeDato", boligFilter.ByggeDato);
             ////}
 
-            //// EjendomsmæglerID
-            //if (boligFilter.EjendomsmæglerID != null)
-            //{
-            //    sql += " AND EjendomsmæglerID = @realtorID";
-            //    command.Parameters.AddWithValue("@realtorID", boligFilter.EjendomsmæglerID);
-            //}
+            // Filtrer på ejendomsmæglerens fulde navn
+            if (boligFilter.EjendomsmæglerNavn != null)
+            {
+                sql += " AND LOWER(Ejendomsmægler.Fornavn + ' ' + Ejendomsmægler.EfterNavn) LIKE LOWER(@ejendomsmægler)";
+                command.Parameters.AddWithValue("@ejendomsmægler", "%" + boligFilter.EjendomsmæglerNavn + "%");
+            }
 
-            //// SælgerID
-            //if (boligFilter.SælgerID != null)
-            //{
-            //    sql += " AND SælgerID = @sælgerID";
-            //    command.Parameters.AddWithValue("@sælgerID", boligFilter.SælgerID);
-            //}
+            // SælgerID
+            if (boligFilter.SælgerNavn != null)
+            {
+                sql += " AND LOWER(Sælger.Fornavn + ' ' + Sælger.EfterNavn) LIKE LOWER(@sælger)";
+                command.Parameters.AddWithValue("@sælger", "%" + boligFilter.SælgerNavn + "%");
+            }
 
-            //// EnergiMærke
-            //if (!string.IsNullOrWhiteSpace(boligFilter.EnergiMærke))
-            //{
-            //    sql += " AND EnergiMærke = @energimærke";
-            //    command.Parameters.AddWithValue("@energimærke", boligFilter.EnergiMærke);
-            //}
+            // EnergiMærke
+            if (!string.IsNullOrWhiteSpace(boligFilter.EnergiMærke))
+            {
+                sql += " AND EnergiMærke = @energimærke";
+                command.Parameters.AddWithValue("@energimærke", boligFilter.EnergiMærke);
+            }
 
-            //// Værelser
-            //if (boligFilter.VærelserMin != null)
-            //{
-            //    sql += " AND Værelser >= @værelserMin";
-            //    command.Parameters.AddWithValue("@værelserMin", boligFilter.VærelserMin);
-            //}
-            //if (boligFilter.VærelserMax != null)
-            //{
-            //    sql += " AND Værelser <= @værelserMax";
-            //    command.Parameters.AddWithValue("@værelserMax", boligFilter.VærelserMax);
-            //}
-
+            // Status
+            if (!string.IsNullOrWhiteSpace(boligFilter.Status))
+            {
+                sql += " AND Status = @status";
+                command.Parameters.AddWithValue("@status", boligFilter.Status);
+            }
 
             command.CommandText = sql;
 
@@ -304,6 +309,7 @@ namespace DataAccess.Repositories
             {
                 var bolig = new Bolig
                 {
+                    BoligID = reader.GetInt32(reader.GetOrdinal("BoligID")),
                     Pris = reader.GetInt32(reader.GetOrdinal("Pris")),
                     Adresse = reader.GetString(reader.GetOrdinal("Adresse")),
                     PostNummer = reader.GetInt32(reader.GetOrdinal("PostNummer")),
@@ -311,36 +317,25 @@ namespace DataAccess.Repositories
                     Type = reader.GetString(reader.GetOrdinal("BoligType")),
                     BoligAreal = reader.GetInt32(reader.GetOrdinal("BoligAreal")),
                     Værelser = reader.GetInt32(reader.GetOrdinal("Værelser")),
-                    //ByggeDato = reader.GetDateTime(reader.GetOrdinal("ByggeDato")),
+                    ByggeDato = reader.GetDateTime(reader.GetOrdinal("ByggeDato")),
                     GrundStørrelse = reader.GetInt32(reader.GetOrdinal("GrundStørrelse")),
                     EnergiMærke = reader.IsDBNull(reader.GetOrdinal("EnergiMærke"))
                     ? null
                     : reader.GetString(reader.GetOrdinal("EnergiMærke")),
-                    EjendomsmæglerID = reader.GetInt32(reader.GetOrdinal("EjendomsmæglerID")),
-                    SælgerID = reader.GetInt32(reader.GetOrdinal("SælgerID"))
+                    EjendomsmæglerNavn = reader.GetString(reader.GetOrdinal("Ejendomsmægler")),
+                    SælgerNavn = reader.GetString(reader.GetOrdinal("Sælger")),
+                    Status = reader.GetString(reader.GetOrdinal("Status"))
                 };
 
                 boligList.Add(bolig);
 
-                // Læs alle kolonner dynamisk
-                var rowData = "";
-                for (int i = 0; i < reader.FieldCount; i++)
-                {
-
-                    rowData += $"{reader.GetName(i)}: {reader.GetValue(i)} | ";
-                }
-
-                Debug.WriteLine(rowData);
-
-            }
-            foreach (var item in boligList)
-            {
-                Debug.WriteLine(item.Pris);
             }
 
             connection.Close();
 
-            return boligList;
+            return boligList; // Tager data fra query og giver den tilbage,
+                              // Hermed kan det bruges til at udfylde en datagridview eksempelvis
+                              // Dette kan ses i test siden BoligFilterTest
         }
     }
 }

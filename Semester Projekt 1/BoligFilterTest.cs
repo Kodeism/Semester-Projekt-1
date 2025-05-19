@@ -26,6 +26,14 @@ namespace Semester_Projekt_1
         {
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = boliger;
+            // Skjul id som ikke burde blive vist men de bliver vist aligevel
+            if (dataGridView1.Columns.Contains("EjendomsmæglerID"))
+                dataGridView1.Columns["EjendomsmæglerID"].Visible = false;
+
+            if (dataGridView1.Columns.Contains("SælgerID"))
+                dataGridView1.Columns["SælgerID"].Visible = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
