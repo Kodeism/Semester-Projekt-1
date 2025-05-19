@@ -98,20 +98,20 @@ namespace DataAccess.Repositories
                         //
                         // DO NOT REARRANGE
                         bolig = new Bolig(
-                            reader.GetInt32(0), //ID
-                            reader.GetInt32(1), //Pris
-                            reader.GetString(2), //Adresse
-                            reader.GetInt32(3), ///["@Postnummer"]
-                            reader.GetString(4), //["@ByNavn"]
-                            reader.GetString(5), //["@BoligType"]
-                            reader.GetInt32(6), //["@BoligAreal"]
-                            reader.GetInt32(7), //["@Værelser"]
-                            reader.GetDateTime(8), //["@ByggeDato"]
-                            reader.GetInt32(9), //["@GrundStørrelse"]
-                            reader.GetInt32(11), //["@EjendomsmæglerID"]
-                            reader.GetInt32(12), //["@SælgerID"]
-                            reader.GetString(10), //["@EnergiMærke"]
-                            reader.GetString(13) //["@Status"]
+                            reader.GetInt32(reader.GetOrdinal("BoligID")), //ID
+                            reader.GetInt32(reader.GetOrdinal("Pris")), //Pris
+                            reader.GetString(reader.GetOrdinal("Adresse")), //Adresse
+                            reader.GetInt32(reader.GetOrdinal("Postnummer")), //["@Postnummer"]
+                            reader.GetString(reader.GetOrdinal("ByNavn")), //["@ByNavn"]
+                            reader.GetString(reader.GetOrdinal("BoligType")), //["@BoligType"]
+                            reader.GetInt32(reader.GetOrdinal("BoligAreal")), //["@BoligAreal"]
+                            reader.GetInt32(reader.GetOrdinal("Værelser")), //["@Værelser"]
+                            reader.GetDateTime(reader.GetOrdinal("ByggeDato")), //["@ByggeDato"]
+                            reader.GetInt32(reader.GetOrdinal("GrundStørrelse")), //["@GrundStørrelse"]
+                            reader.GetInt32(reader.GetOrdinal("EjendomsmæglerID")), //["@EjendomsmæglerID"]
+                            reader.GetInt32(reader.GetOrdinal("SælgerID")), //["@SælgerID"]
+                            reader.GetString(reader.GetOrdinal("EnergiMærke")), //["@EnergiMærke"]
+                            reader.GetString(reader.GetOrdinal("Status")) //["@Status"]
                         );
 
                         connection.Close();
