@@ -121,6 +121,7 @@ namespace Semester_Projekt_1
         private void mæglerDBKnap_Click(object sender, EventArgs e)
         {
             pageLabel.Text = "Mæglere";
+            openPage(new MæglerSide());
         }
 
         private void mineSælgereDBKnap_Click(object sender, EventArgs e)
