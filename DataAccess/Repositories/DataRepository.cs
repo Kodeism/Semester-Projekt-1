@@ -73,7 +73,7 @@ namespace DataAccess.Repositories
             return bolig;
         }
 
-        public Bolig getSingleBolig(int boligID)
+        public Bolig GetSingleBolig(int boligID)
         {
             SqlCommand sqlCommand = connection.CreateCommand();
             var sql = """
@@ -94,9 +94,6 @@ namespace DataAccess.Repositories
                     try
                     {
 
-                        // NOTE: Order of columns in DB and object constructor does not match perfectly.
-                        //
-                        // DO NOT REARRANGE
                         bolig = new Bolig(
                             reader.GetInt32(reader.GetOrdinal("BoligID")), //ID
                             reader.GetInt32(reader.GetOrdinal("Pris")), //Pris
