@@ -43,8 +43,13 @@ namespace BusineesLogic
         public void ErklærSolgt(string køberCPR, string adresse, DateOnly dato, int beløb,string sælgerCPR)
         {
             DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; TrustServerCertificate = True;");
+            //Opretter ny solgt bolig i Solgt tabellen i databasen:
             Salg salg = new Salg(testDR.HentKøberIDDB(køberCPR), testDR.HentBoligIDDB(adresse),testDR.HentSælgerIDDB(sælgerCPR), dato, beløb);
             testDR.TilføjSalg(salg);
+            //Opdaterer boligens status i bolig tabellen i databasen:
+            testDR.MarkerBoligSolgt(testDR.HentBoligIDDB(adresse));
+
+
         }
 
         public List <string> SælgerCprTilAdresse(string sælgerCPR)

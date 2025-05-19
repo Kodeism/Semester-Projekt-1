@@ -211,6 +211,7 @@
             ClientSize = new Size(1431, 1171);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "FormTilføjSælger";
             Text = "FormTilføjSælger";
             Load += FormTilføjSælger_Load;

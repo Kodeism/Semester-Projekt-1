@@ -242,7 +242,9 @@
             BackColor = Color.FromArgb(255, 246, 182);
             ClientSize = new Size(1360, 1293);
             Controls.Add(SaleFormPanel);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(5);
+            MaximizeBox = false;
             Name = "SaleRegistration";
             Text = "SaleRegistration";
             SaleFormPanel.ResumeLayout(false);

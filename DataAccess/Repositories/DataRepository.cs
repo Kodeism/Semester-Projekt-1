@@ -298,10 +298,26 @@ namespace DataAccess.Repositories
 
         }
 
+        public void MarkerBoligSolgt (int boligID)
+        { //Opdatering af status på bolig i boligdatabase
+            string query = "UPDATE Bolig SET Status = 'Solgt' WHERE BoligID = @BoligID";
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = query;
+            
+            command.Parameters.AddWithValue("@BoligID", boligID);
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+
+
 
 
     }
-}
+
+    }
+
         
     
     
