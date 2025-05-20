@@ -3,7 +3,7 @@ create table Køber(
 	EfterNavn varchar(100),
 	Email varchar(100),
 	TlfNummer varchar(50),
-	CprNr varchar(50),
+	CprNr varchar(50) UNIQUE,
 	Adresse varchar(100),
 	KøberID int primary key identity,	
 	PrisKlasse int,
@@ -21,7 +21,7 @@ create table Sælger(
 	Email varchar(100),
 	TlfNummer varchar(50),
 	Adresse varchar(100),
-    CprNummer varchar(50)
+    CprNummer varchar(50) UNIQUE
 );
 
 create table Ejendomsmægler(
@@ -58,5 +58,6 @@ Create table Salg(
 	BoligID int FOREIGN KEY REFERENCES Bolig(BoligID),
 	Dato DATE,
 	Beløb int,
-	SælgerID int FOREIGN KEY REFERENCES Sælger(SælgerID)
+	SælgerID int FOREIGN KEY REFERENCES Sælger(SælgerID),
+	UNIQUE (BoligID)
 );
