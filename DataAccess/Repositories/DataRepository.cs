@@ -443,5 +443,58 @@ namespace DataAccess.Repositories
             };
             return data;
         }
+        public static void EjendomsmæglerLogin(SqlConnection connection, string username, string password)
+        {
+
+            SqlCommand command = connection.CreateCommand();
+            var sql = """
+            SELECT Ejendomsmægler.EjendomsmæglerID, 
+            Ejendomsmægler.Fornavn, Ejendomsmægler.EfterNavn, 
+            Ejendomsmægler.Email, Ejendomsmægler.TlfNummer, 
+            Ejendomsmægler.Brugernavn, Ejendomsmægler.Adgangsniveau
+            FROM dbo.Ejendomsmægler
+            WHERE Ejendomsmægler.Brugernavn = @brugernavn
+            AND Ejendomsmægler.Password = @password
+            """;
+            command.CommandText = sql;
+            command.Parameters.AddWithValue("@brugernavn", username);
+            command.Parameters.AddWithValue("@password", password);
+
+
+
+            connection.Open();
+            var reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                SessionManager.EjendomsmæglerId = reader.GetInt32(reader.GetOrdinal("EjendomsmæglerID"));
+                SessionManager.Brugernavn = reader.GetString(reader.GetOrdinal("Brugernavn"));
+                SessionManager.AdgangsNiveau = reader.GetInt32(reader.GetOrdinal("Adgangsniveau"));
+                SessionManager.Fornavn = reader.GetString(reader.GetOrdinal("Fornavn"));
+                SessionManager.Efternavn = reader.GetString(reader.GetOrdinal("Efternavn"));
+                SessionManager.FuldeNavn = SessionManager.Fornavn + " " + SessionManager.Efternavn;
+                for (int i = 0; i < reader.FieldCount; i++)
+                {
+                    string columnName = reader.GetName(i);
+                    object value = reader.GetValue(i);
+                    Debug.WriteLine($"{columnName}: {value}");
+                }
+            }
+
+            connection.Close();
+        }
     }
 }
+//// ByNavn
+//if (!string.IsNullOrWhiteSpace(boligFilter.ByNavn))
+//{
+//    sql += " AND ByNavn LIKE @bynavn";
+//    command.Parameters.AddWithValue("@bynavn", $"%{boligFilter.ByNavn}%");
+//}
+
+//// Type
+//if (!string.IsNullOrWhiteSpace(boligFilter.Type))
+//{
+//    sql += " AND BoligType = @type";
+//    command.Parameters.AddWithValue("@type", boligFilter.Type);
+//}

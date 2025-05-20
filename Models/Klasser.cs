@@ -24,6 +24,27 @@
             Email = email;
         }
     }
+    public static class SessionManager
+    {
+        public static int EjendomsmæglerId { get; set; }
+        public static string Brugernavn { get; set; }
+        public static string Fornavn { get; set; }
+        public static string Efternavn { get; set; }
+        public static string FuldeNavn { get; set; }
+        public static int AdgangsNiveau { get; set; }
+
+        public static bool IsLoggedIn => EjendomsmæglerId != 0;
+
+        public static void Clear()
+        {
+            EjendomsmæglerId = 0;
+            Brugernavn = string.Empty;
+            Fornavn = string.Empty;
+            Efternavn= string.Empty;
+            FuldeNavn = string.Empty;
+            AdgangsNiveau = 0;
+        }
+    }
 
 
 

@@ -1,3 +1,5 @@
+using Models;
+
 namespace Semester_Projekt_1
 {
     public partial class DashBoard : Form
@@ -7,6 +9,7 @@ namespace Semester_Projekt_1
             InitializeComponent();
             openPage(new Forside());
             screenDBPanel.AutoScrollPosition = new Point(0, 0);
+            brugerNavnLabel.Text = SessionManager.FuldeNavn;
         }
         private void closeMenu(FlowLayoutPanel menu)
         {
@@ -172,6 +175,14 @@ namespace Semester_Projekt_1
         private void alleBolgierDBKnap_Click(object sender, EventArgs e)
         {
             pageLabel.Text = "Alle Boliger";
+        }
+
+        private void logUdDBKnap_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+            SessionManager.Clear();
         }
     }
 }

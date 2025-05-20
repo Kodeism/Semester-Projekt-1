@@ -29,19 +29,21 @@
         private void InitializeComponent()
         {
             LoginForm = new Panel();
+            LoginErrorLabelPassword = new Label();
+            LoginErrorLabelUsername = new Label();
             LoginLabelStatic = new Label();
             PasswordTextBox = new TextBox();
             UsernameTextBox = new TextBox();
             PasswordLabel = new Label();
             UsernameLabel = new Label();
             LoginButton = new Button();
-            LoginErrorLabelUsername = new Label();
-            LoginErrorLabelPassword = new Label();
             LoginForm.SuspendLayout();
             SuspendLayout();
             // 
             // LoginForm
             // 
+            LoginForm.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            LoginForm.AutoSize = true;
             LoginForm.BackColor = Color.FromArgb(255, 246, 218);
             LoginForm.BorderStyle = BorderStyle.FixedSingle;
             LoginForm.Controls.Add(LoginErrorLabelPassword);
@@ -52,10 +54,26 @@
             LoginForm.Controls.Add(PasswordLabel);
             LoginForm.Controls.Add(UsernameLabel);
             LoginForm.Controls.Add(LoginButton);
-            LoginForm.Location = new Point(106, 63);
+            LoginForm.Location = new Point(104, 82);
             LoginForm.Name = "LoginForm";
-            LoginForm.Size = new Size(623, 641);
+            LoginForm.Size = new Size(627, 608);
             LoginForm.TabIndex = 0;
+            // 
+            // LoginErrorLabelPassword
+            // 
+            LoginErrorLabelPassword.AutoSize = true;
+            LoginErrorLabelPassword.Location = new Point(265, 331);
+            LoginErrorLabelPassword.Name = "LoginErrorLabelPassword";
+            LoginErrorLabelPassword.Size = new Size(0, 25);
+            LoginErrorLabelPassword.TabIndex = 8;
+            // 
+            // LoginErrorLabelUsername
+            // 
+            LoginErrorLabelUsername.AutoSize = true;
+            LoginErrorLabelUsername.Location = new Point(265, 157);
+            LoginErrorLabelUsername.Name = "LoginErrorLabelUsername";
+            LoginErrorLabelUsername.Size = new Size(0, 25);
+            LoginErrorLabelUsername.TabIndex = 7;
             // 
             // LoginLabelStatic
             // 
@@ -69,9 +87,8 @@
             // 
             // PasswordTextBox
             // 
-            PasswordTextBox.Anchor = AnchorStyles.Left;
             PasswordTextBox.Font = new Font("Segoe UI", 16F);
-            PasswordTextBox.Location = new Point(66, 363);
+            PasswordTextBox.Location = new Point(66, 359);
             PasswordTextBox.MinimumSize = new Size(0, 65);
             PasswordTextBox.Name = "PasswordTextBox";
             PasswordTextBox.PasswordChar = '*';
@@ -81,7 +98,6 @@
             // 
             // UsernameTextBox
             // 
-            UsernameTextBox.Anchor = AnchorStyles.Left;
             UsernameTextBox.Font = new Font("Segoe UI", 16F);
             UsernameTextBox.Location = new Point(66, 189);
             UsernameTextBox.MinimumSize = new Size(0, 65);
@@ -114,29 +130,13 @@
             // 
             LoginButton.BackColor = Color.FromArgb(45, 199, 92);
             LoginButton.Font = new Font("Segoe UI", 24F);
-            LoginButton.Location = new Point(216, 497);
+            LoginButton.Location = new Point(207, 467);
             LoginButton.Name = "LoginButton";
             LoginButton.Size = new Size(211, 106);
             LoginButton.TabIndex = 1;
             LoginButton.Text = "Login";
             LoginButton.UseVisualStyleBackColor = false;
             LoginButton.Click += LoginButton_Click;
-            // 
-            // LoginErrorLabelUsername
-            // 
-            LoginErrorLabelUsername.AutoSize = true;
-            LoginErrorLabelUsername.Location = new Point(265, 157);
-            LoginErrorLabelUsername.Name = "LoginErrorLabelUsername";
-            LoginErrorLabelUsername.Size = new Size(0, 25);
-            LoginErrorLabelUsername.TabIndex = 7;
-            // 
-            // LoginErrorLabelPassword
-            // 
-            LoginErrorLabelPassword.AutoSize = true;
-            LoginErrorLabelPassword.Location = new Point(265, 331);
-            LoginErrorLabelPassword.Name = "LoginErrorLabelPassword";
-            LoginErrorLabelPassword.Size = new Size(0, 25);
-            LoginErrorLabelPassword.TabIndex = 8;
             // 
             // Login
             // 
@@ -145,12 +145,17 @@
             BackColor = Color.FromArgb(255, 246, 182);
             ClientSize = new Size(834, 772);
             Controls.Add(LoginForm);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Login";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             Load += Login_Load;
             LoginForm.ResumeLayout(false);
             LoginForm.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
