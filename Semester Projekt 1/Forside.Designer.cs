@@ -317,7 +317,7 @@
             boligerLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             boligerLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             boligerLayoutPanel.Size = new Size(182, 102);
-            boligerLayoutPanel.TabIndex = 1;
+            boligerLayoutPanel.TabIndex = 8;
             boligerLayoutPanel.Click += boligerLayoutPanel_Click;
             // 
             // usolgteBoligerLabel
@@ -410,7 +410,7 @@
             graphsLayoutPanel.RowCount = 1;
             graphsLayoutPanel.RowStyles.Add(new RowStyle());
             graphsLayoutPanel.Size = new Size(884, 657);
-            graphsLayoutPanel.TabIndex = 0;
+            graphsLayoutPanel.TabIndex = 9;
             // 
             // boligerBoligTypePlot
             // 
@@ -423,7 +423,7 @@
             boligerBoligTypePlot.Location = new Point(404, 4);
             boligerBoligTypePlot.Name = "boligerBoligTypePlot";
             boligerBoligTypePlot.Size = new Size(476, 649);
-            boligerBoligTypePlot.TabIndex = 2;
+            boligerBoligTypePlot.TabIndex = 20;
             // 
             // køberBoligTypePlot
             // 
@@ -435,7 +435,7 @@
             køberBoligTypePlot.Location = new Point(4, 4);
             køberBoligTypePlot.Name = "køberBoligTypePlot";
             køberBoligTypePlot.Size = new Size(393, 649);
-            køberBoligTypePlot.TabIndex = 0;
+            køberBoligTypePlot.TabIndex = 10;
             // 
             // nyeKøbere
             // 
