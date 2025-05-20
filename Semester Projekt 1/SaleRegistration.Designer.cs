@@ -61,9 +61,10 @@
             SaleFormPanel.Controls.Add(SaleBuyerCPRLabel);
             SaleFormPanel.Controls.Add(SaleNameLabel);
             SaleFormPanel.Controls.Add(SaleRegistrationForm);
-            SaleFormPanel.Location = new Point(125, 54);
+            SaleFormPanel.Location = new Point(88, 32);
+            SaleFormPanel.Margin = new Padding(2, 2, 2, 2);
             SaleFormPanel.Name = "SaleFormPanel";
-            SaleFormPanel.Size = new Size(551, 641);
+            SaleFormPanel.Size = new Size(386, 385);
             SaleFormPanel.TabIndex = 0;
             SaleFormPanel.Paint += SaleRegistrationForm_Paint;
             // 
@@ -73,17 +74,19 @@
             SaleMenuPanel.Controls.Add(SaleFormExit);
             SaleMenuPanel.Controls.Add(SaleFormularLabel);
             SaleMenuPanel.Location = new Point(-1, -1);
+            SaleMenuPanel.Margin = new Padding(2, 2, 2, 2);
             SaleMenuPanel.Name = "SaleMenuPanel";
-            SaleMenuPanel.Size = new Size(551, 38);
+            SaleMenuPanel.Size = new Size(386, 24);
             SaleMenuPanel.TabIndex = 10;
             // 
             // SaleFormExit
             // 
             SaleFormExit.BackColor = Color.FromArgb(255, 100, 100);
             SaleFormExit.FlatStyle = FlatStyle.Flat;
-            SaleFormExit.Location = new Point(518, -5);
+            SaleFormExit.Location = new Point(363, -3);
+            SaleFormExit.Margin = new Padding(2, 2, 2, 2);
             SaleFormExit.Name = "SaleFormExit";
-            SaleFormExit.Size = new Size(41, 51);
+            SaleFormExit.Size = new Size(29, 31);
             SaleFormExit.TabIndex = 1;
             SaleFormExit.Text = "X";
             SaleFormExit.UseVisualStyleBackColor = false;
@@ -92,46 +95,51 @@
             // 
             SaleFormularLabel.AutoSize = true;
             SaleFormularLabel.Font = new Font("Segoe UI", 12F);
-            SaleFormularLabel.Location = new Point(190, 0);
+            SaleFormularLabel.Location = new Point(133, 0);
+            SaleFormularLabel.Margin = new Padding(2, 0, 2, 0);
             SaleFormularLabel.Name = "SaleFormularLabel";
-            SaleFormularLabel.Size = new Size(171, 32);
+            SaleFormularLabel.Size = new Size(115, 21);
             SaleFormularLabel.TabIndex = 0;
             SaleFormularLabel.Text = "Salgs Formular";
             // 
             // SaleDateTextBox
             // 
             SaleDateTextBox.Font = new Font("Segoe UI", 18F);
-            SaleDateTextBox.Location = new Point(30, 438);
-            SaleDateTextBox.MinimumSize = new Size(0, 58);
+            SaleDateTextBox.Location = new Point(21, 263);
+            SaleDateTextBox.Margin = new Padding(2, 2, 2, 2);
+            SaleDateTextBox.MinimumSize = new Size(4, 58);
             SaleDateTextBox.Name = "SaleDateTextBox";
-            SaleDateTextBox.Size = new Size(495, 58);
+            SaleDateTextBox.Size = new Size(348, 39);
             SaleDateTextBox.TabIndex = 9;
             // 
             // SalePriceTextBox
             // 
             SalePriceTextBox.Font = new Font("Segoe UI", 18F);
-            SalePriceTextBox.Location = new Point(30, 323);
-            SalePriceTextBox.MinimumSize = new Size(0, 58);
+            SalePriceTextBox.Location = new Point(21, 194);
+            SalePriceTextBox.Margin = new Padding(2, 2, 2, 2);
+            SalePriceTextBox.MinimumSize = new Size(4, 58);
             SalePriceTextBox.Name = "SalePriceTextBox";
-            SalePriceTextBox.Size = new Size(495, 58);
+            SalePriceTextBox.Size = new Size(348, 39);
             SalePriceTextBox.TabIndex = 8;
             // 
             // SaleBuyerCPRTextBox
             // 
             SaleBuyerCPRTextBox.Font = new Font("Segoe UI", 18F);
-            SaleBuyerCPRTextBox.Location = new Point(30, 208);
-            SaleBuyerCPRTextBox.MinimumSize = new Size(0, 58);
+            SaleBuyerCPRTextBox.Location = new Point(21, 125);
+            SaleBuyerCPRTextBox.Margin = new Padding(2, 2, 2, 2);
+            SaleBuyerCPRTextBox.MinimumSize = new Size(4, 58);
             SaleBuyerCPRTextBox.Name = "SaleBuyerCPRTextBox";
-            SaleBuyerCPRTextBox.Size = new Size(495, 58);
+            SaleBuyerCPRTextBox.Size = new Size(348, 39);
             SaleBuyerCPRTextBox.TabIndex = 7;
             // 
             // CreateSaleButton
             // 
             CreateSaleButton.BackColor = Color.FromArgb(45, 199, 92);
             CreateSaleButton.Font = new Font("Segoe UI", 16F);
-            CreateSaleButton.Location = new Point(329, 519);
+            CreateSaleButton.Location = new Point(230, 311);
+            CreateSaleButton.Margin = new Padding(2, 2, 2, 2);
             CreateSaleButton.Name = "CreateSaleButton";
-            CreateSaleButton.Size = new Size(155, 89);
+            CreateSaleButton.Size = new Size(108, 53);
             CreateSaleButton.TabIndex = 6;
             CreateSaleButton.Text = "Opret";
             CreateSaleButton.UseVisualStyleBackColor = false;
@@ -140,9 +148,10 @@
             // 
             CancelSaleButton.BackColor = Color.FromArgb(255, 100, 100);
             CancelSaleButton.Font = new Font("Segoe UI", 16F);
-            CancelSaleButton.Location = new Point(64, 518);
+            CancelSaleButton.Location = new Point(45, 311);
+            CancelSaleButton.Margin = new Padding(2, 2, 2, 2);
             CancelSaleButton.Name = "CancelSaleButton";
-            CancelSaleButton.Size = new Size(156, 90);
+            CancelSaleButton.Size = new Size(109, 54);
             CancelSaleButton.TabIndex = 5;
             CancelSaleButton.Text = "Annuller";
             CancelSaleButton.UseVisualStyleBackColor = false;
@@ -151,9 +160,10 @@
             // 
             SaleDateLabel.AutoSize = true;
             SaleDateLabel.Font = new Font("Segoe UI", 16F);
-            SaleDateLabel.Location = new Point(25, 390);
+            SaleDateLabel.Location = new Point(18, 234);
+            SaleDateLabel.Margin = new Padding(2, 0, 2, 0);
             SaleDateLabel.Name = "SaleDateLabel";
-            SaleDateLabel.Size = new Size(159, 45);
+            SaleDateLabel.Size = new Size(107, 30);
             SaleDateLabel.TabIndex = 4;
             SaleDateLabel.Text = "Salgsdato";
             // 
@@ -161,9 +171,10 @@
             // 
             SalePriceLabel.AutoSize = true;
             SalePriceLabel.Font = new Font("Segoe UI", 16F);
-            SalePriceLabel.Location = new Point(25, 275);
+            SalePriceLabel.Location = new Point(18, 165);
+            SalePriceLabel.Margin = new Padding(2, 0, 2, 0);
             SalePriceLabel.Name = "SalePriceLabel";
-            SalePriceLabel.Size = new Size(274, 45);
+            SalePriceLabel.Size = new Size(184, 30);
             SalePriceLabel.TabIndex = 3;
             SalePriceLabel.Text = "Endelige salgspris";
             // 
@@ -171,9 +182,10 @@
             // 
             SaleBuyerCPRLabel.AutoSize = true;
             SaleBuyerCPRLabel.Font = new Font("Segoe UI", 16F);
-            SaleBuyerCPRLabel.Location = new Point(25, 160);
+            SaleBuyerCPRLabel.Location = new Point(18, 96);
+            SaleBuyerCPRLabel.Margin = new Padding(2, 0, 2, 0);
             SaleBuyerCPRLabel.Name = "SaleBuyerCPRLabel";
-            SaleBuyerCPRLabel.Size = new Size(324, 45);
+            SaleBuyerCPRLabel.Size = new Size(221, 30);
             SaleBuyerCPRLabel.TabIndex = 2;
             SaleBuyerCPRLabel.Text = "Købers CPR-Nummer";
             // 
@@ -181,27 +193,31 @@
             // 
             SaleNameLabel.AutoSize = true;
             SaleNameLabel.Font = new Font("Segoe UI", 22F);
-            SaleNameLabel.Location = new Point(25, 56);
+            SaleNameLabel.Location = new Point(18, 34);
+            SaleNameLabel.Margin = new Padding(2, 0, 2, 0);
             SaleNameLabel.Name = "SaleNameLabel";
-            SaleNameLabel.Size = new Size(405, 60);
+            SaleNameLabel.Size = new Size(276, 41);
             SaleNameLabel.TabIndex = 1;
             SaleNameLabel.Text = "Salg af \"Bolig navn\"";
             // 
             // SaleRegistrationForm
             // 
             SaleRegistrationForm.BorderStyle = BorderStyle.FixedSingle;
-            SaleRegistrationForm.Location = new Point(-1, 144);
+            SaleRegistrationForm.Location = new Point(-1, 86);
+            SaleRegistrationForm.Margin = new Padding(2, 2, 2, 2);
             SaleRegistrationForm.Name = "SaleRegistrationForm";
-            SaleRegistrationForm.Size = new Size(551, 496);
+            SaleRegistrationForm.Size = new Size(386, 298);
             SaleRegistrationForm.TabIndex = 11;
             // 
             // SaleRegistration
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 246, 182);
-            ClientSize = new Size(800, 719);
+            ClientSize = new Size(560, 431);
             Controls.Add(SaleFormPanel);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(2, 2, 2, 2);
             Name = "SaleRegistration";
             Text = "SaleRegistration";
             SaleFormPanel.ResumeLayout(false);

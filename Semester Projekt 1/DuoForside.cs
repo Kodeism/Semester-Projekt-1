@@ -18,11 +18,11 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
             SetMode(mode);
+            _mode = mode;
         }
         public void SetMode(Mode mode)
         {
-            _mode = mode;
-            switch(_mode)
+            switch (mode)
             {
                 case Mode.Salg:
                     mineLabel.Text = "Mine Salg";
@@ -48,6 +48,54 @@ namespace Semester_Projekt_1
                     mineSøgeFelt.Text = "Søg Adresse...";
                     alleSøgeFelt.Text = "Søg Adresse...";
                     break;
+            }
+        }
+
+        private void mineRegistrerKnap_Click(object sender, EventArgs e)
+        {
+            if (_mode == Mode.Salg)
+            {
+                SaleRegistration salg = new SaleRegistration();
+                salg.Show();
+            }
+            if (_mode == Mode.Sælgere)
+            {
+                FormTilføjSælger formTilføjSælger = new FormTilføjSælger();
+                formTilføjSælger.Show();
+            }
+            if (_mode == Mode.Købere)
+            {
+                TilføjKøber tilKøber = new TilføjKøber();
+                tilKøber.Show();
+            }
+            if (_mode == Mode.Boliger)
+            {
+                BoligRegistration formTilføjBolig = new BoligRegistration();
+                formTilføjBolig.Show();
+            }
+        }
+
+        private void alleRegistrerKnap_Click(object sender, EventArgs e)
+        {
+            if (_mode == Mode.Salg)
+            {
+                SaleRegistration salg = new SaleRegistration();
+                salg.Show();
+            }
+            if (_mode == Mode.Sælgere)
+            {
+                FormTilføjSælger formTilføjSælger = new FormTilføjSælger();
+                formTilføjSælger.Show();
+            }
+            if (_mode == Mode.Købere)
+            {
+                TilføjKøber tilKøber = new TilføjKøber();
+                tilKøber.Show();
+            }
+            if (_mode == Mode.Boliger)
+            {
+                BoligRegistration formTilføjBolig = new BoligRegistration();
+                formTilføjBolig.Show();
             }
         }
     }

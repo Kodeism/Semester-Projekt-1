@@ -30,5 +30,11 @@ namespace Semester_Projekt_1
                     break;
             }
         }
+
+        private void salgRegistrerKnap_Click(object sender, EventArgs e)
+        {
+            SaleRegistration saleRegistration = new SaleRegistration();
+            saleRegistration.Show();
+        }
     }
 }

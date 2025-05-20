@@ -190,7 +190,7 @@
             TelefonnummerLabel.AutoSize = true;
             TelefonnummerLabel.Location = new Point(12, 120);
             TelefonnummerLabel.Name = "TelefonnummerLabel";
-            TelefonnummerLabel.Size = new Size(92, 15);
+            TelefonnummerLabel.Size = new Size(91, 15);
             TelefonnummerLabel.TabIndex = 16;
             TelefonnummerLabel.Text = "Telefonnummer";
             // 
@@ -352,6 +352,7 @@
             Controls.Add(adresseTextbox);
             Controls.Add(cprnummerTextbox);
             Controls.Add(navnTextbox);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "TilføjKøber";
             Text = "Tilføj Køber";
             Load += Form1_Load;

@@ -12,15 +12,17 @@ namespace Semester_Projekt_1
 {
     public partial class UniForside : UserControl
     {
+        private Mode mode_;
         public enum Mode { AlleS, MineS, AlleK, MineK, AlleB, MineB }
         public UniForside(Mode mode)
         {
             InitializeComponent();
             SetMode(mode);
+            mode_ = mode;
         }
         public void SetMode(Mode mode)
         {
-            switch(mode)
+            switch (mode)
             {
                 case Mode.AlleS:
                     uniLabel.Text = "Alle Sælgere";
@@ -46,6 +48,25 @@ namespace Semester_Projekt_1
                     uniLabel.Text = "Mine Boliger";
                     uniSøgeFelt.Text = "Søg Adresse...";
                     break;
+            }
+        }
+
+        private void uniRegistrerKnap_Click(object sender, EventArgs e)
+        {
+            if(mode_==Mode.AlleS||mode_==Mode.MineS)
+            {
+                SaleRegistration saleRegistration = new SaleRegistration();
+                saleRegistration.Show();
+            }
+            else if (mode_ == Mode.AlleK || mode_ == Mode.MineK)
+            {
+                TilføjKøber tilKøber = new TilføjKøber();
+                tilKøber.Show();
+            }
+            else if (mode_ == Mode.AlleB || mode_ == Mode.MineB)
+            {
+                BoligRegistration tilBolig = new BoligRegistration();
+                tilBolig.Show();
             }
         }
     }

@@ -49,6 +49,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.FromArgb(255, 246, 218);
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(sælgerOpretOverskriftLabel);
             panel1.Controls.Add(sælgerOpretOpretButton);
@@ -65,9 +66,10 @@
             panel1.Controls.Add(sælgerAdresseLabel);
             panel1.Controls.Add(sælgerFornavnLabel);
             panel1.Controls.Add(sælgerEfternavnLabel);
-            panel1.Location = new Point(133, 81);
+            panel1.Location = new Point(55, 30);
+            panel1.Margin = new Padding(1, 1, 1, 1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1142, 931);
+            panel1.Size = new Size(471, 342);
             panel1.TabIndex = 14;
             panel1.Paint += panel1_Paint;
             // 
@@ -76,10 +78,11 @@
             sælgerOpretOverskriftLabel.AutoSize = true;
             sælgerOpretOverskriftLabel.BorderStyle = BorderStyle.FixedSingle;
             sælgerOpretOverskriftLabel.Font = new Font("Segoe UI", 16F);
-            sælgerOpretOverskriftLabel.Location = new Point(-1, 0);
-            sælgerOpretOverskriftLabel.MinimumSize = new Size(1142, 60);
+            sælgerOpretOverskriftLabel.Location = new Point(0, 0);
+            sælgerOpretOverskriftLabel.Margin = new Padding(1, 0, 1, 0);
+            sælgerOpretOverskriftLabel.MinimumSize = new Size(471, 23);
             sælgerOpretOverskriftLabel.Name = "sælgerOpretOverskriftLabel";
-            sælgerOpretOverskriftLabel.Size = new Size(1142, 74);
+            sælgerOpretOverskriftLabel.Size = new Size(471, 32);
             sælgerOpretOverskriftLabel.TabIndex = 81;
             sælgerOpretOverskriftLabel.Text = "Sælger Oprettelsesformular";
             sælgerOpretOverskriftLabel.TextAlign = ContentAlignment.TopCenter;
@@ -87,9 +90,10 @@
             // sælgerOpretOpretButton
             // 
             sælgerOpretOpretButton.BackColor = Color.DarkOliveGreen;
-            sælgerOpretOpretButton.Location = new Point(743, 757);
+            sælgerOpretOpretButton.Location = new Point(306, 277);
+            sælgerOpretOpretButton.Margin = new Padding(1, 1, 1, 1);
             sælgerOpretOpretButton.Name = "sælgerOpretOpretButton";
-            sælgerOpretOpretButton.Size = new Size(250, 58);
+            sælgerOpretOpretButton.Size = new Size(103, 21);
             sælgerOpretOpretButton.TabIndex = 80;
             sælgerOpretOpretButton.Text = "Tilføj sælger";
             sælgerOpretOpretButton.UseVisualStyleBackColor = false;
@@ -98,9 +102,10 @@
             // sælgerAnnulerOpretButton
             // 
             sælgerAnnulerOpretButton.BackColor = Color.IndianRed;
-            sælgerAnnulerOpretButton.Location = new Point(149, 757);
+            sælgerAnnulerOpretButton.Location = new Point(61, 277);
+            sælgerAnnulerOpretButton.Margin = new Padding(1, 1, 1, 1);
             sælgerAnnulerOpretButton.Name = "sælgerAnnulerOpretButton";
-            sælgerAnnulerOpretButton.Size = new Size(250, 60);
+            sælgerAnnulerOpretButton.Size = new Size(103, 22);
             sælgerAnnulerOpretButton.TabIndex = 70;
             sælgerAnnulerOpretButton.Text = "Annuller";
             sælgerAnnulerOpretButton.UseVisualStyleBackColor = false;
@@ -108,109 +113,122 @@
             // 
             // sælgerEmailTextbox
             // 
-            sælgerEmailTextbox.Location = new Point(150, 625);
+            sælgerEmailTextbox.Location = new Point(62, 229);
+            sælgerEmailTextbox.Margin = new Padding(1, 1, 1, 1);
             sælgerEmailTextbox.Name = "sælgerEmailTextbox";
-            sælgerEmailTextbox.Size = new Size(843, 47);
+            sælgerEmailTextbox.Size = new Size(349, 23);
             sælgerEmailTextbox.TabIndex = 60;
             // 
             // sælgerCprNummerTextbox
             // 
-            sælgerCprNummerTextbox.Location = new Point(743, 495);
+            sælgerCprNummerTextbox.Location = new Point(306, 181);
+            sælgerCprNummerTextbox.Margin = new Padding(1, 1, 1, 1);
             sælgerCprNummerTextbox.Name = "sælgerCprNummerTextbox";
-            sælgerCprNummerTextbox.Size = new Size(250, 47);
+            sælgerCprNummerTextbox.Size = new Size(105, 23);
             sælgerCprNummerTextbox.TabIndex = 50;
             // 
             // SælgerTelefonNummerTextbox
             // 
-            SælgerTelefonNummerTextbox.Location = new Point(149, 495);
+            SælgerTelefonNummerTextbox.Location = new Point(61, 181);
+            SælgerTelefonNummerTextbox.Margin = new Padding(1, 1, 1, 1);
             SælgerTelefonNummerTextbox.Name = "SælgerTelefonNummerTextbox";
-            SælgerTelefonNummerTextbox.Size = new Size(250, 47);
+            SælgerTelefonNummerTextbox.Size = new Size(105, 23);
             SælgerTelefonNummerTextbox.TabIndex = 30;
             // 
             // sælgerAdresseTextbox
             // 
-            sælgerAdresseTextbox.Location = new Point(150, 340);
+            sælgerAdresseTextbox.Location = new Point(62, 124);
+            sælgerAdresseTextbox.Margin = new Padding(1, 1, 1, 1);
             sælgerAdresseTextbox.Name = "sælgerAdresseTextbox";
-            sælgerAdresseTextbox.Size = new Size(843, 47);
+            sælgerAdresseTextbox.Size = new Size(349, 23);
             sælgerAdresseTextbox.TabIndex = 20;
             // 
             // sælgerEfternavnTextbox
             // 
-            sælgerEfternavnTextbox.Location = new Point(736, 192);
+            sælgerEfternavnTextbox.Location = new Point(303, 70);
+            sælgerEfternavnTextbox.Margin = new Padding(1, 1, 1, 1);
             sælgerEfternavnTextbox.Name = "sælgerEfternavnTextbox";
-            sælgerEfternavnTextbox.Size = new Size(250, 47);
+            sælgerEfternavnTextbox.Size = new Size(105, 23);
             sælgerEfternavnTextbox.TabIndex = 10;
             // 
             // sælgerFornavnTextbox
             // 
-            sælgerFornavnTextbox.Location = new Point(149, 192);
+            sælgerFornavnTextbox.Location = new Point(61, 70);
+            sælgerFornavnTextbox.Margin = new Padding(1, 1, 1, 1);
             sælgerFornavnTextbox.Name = "sælgerFornavnTextbox";
-            sælgerFornavnTextbox.Size = new Size(250, 47);
+            sælgerFornavnTextbox.Size = new Size(105, 23);
             sælgerFornavnTextbox.TabIndex = 1;
             sælgerFornavnTextbox.TextChanged += sælgerFornavnTextbox_TextChanged;
             // 
             // sælgerEmailLabel
             // 
             sælgerEmailLabel.AutoSize = true;
-            sælgerEmailLabel.Location = new Point(143, 588);
+            sælgerEmailLabel.Location = new Point(59, 215);
+            sælgerEmailLabel.Margin = new Padding(1, 0, 1, 0);
             sælgerEmailLabel.Name = "sælgerEmailLabel";
-            sælgerEmailLabel.Size = new Size(88, 41);
+            sælgerEmailLabel.Size = new Size(36, 15);
             sælgerEmailLabel.TabIndex = 19;
             sælgerEmailLabel.Text = "Email";
             // 
             // sælgerCprNummerLabel
             // 
             sælgerCprNummerLabel.AutoSize = true;
-            sælgerCprNummerLabel.Location = new Point(736, 451);
+            sælgerCprNummerLabel.Location = new Point(303, 165);
+            sælgerCprNummerLabel.Margin = new Padding(1, 0, 1, 0);
             sælgerCprNummerLabel.Name = "sælgerCprNummerLabel";
-            sælgerCprNummerLabel.Size = new Size(201, 41);
+            sælgerCprNummerLabel.Size = new Size(82, 15);
             sælgerCprNummerLabel.TabIndex = 18;
             sælgerCprNummerLabel.Text = "CPR-Nummer";
             // 
             // sælgerTlfNummerLabel
             // 
             sælgerTlfNummerLabel.AutoSize = true;
-            sælgerTlfNummerLabel.Location = new Point(144, 448);
+            sælgerTlfNummerLabel.Location = new Point(59, 164);
+            sælgerTlfNummerLabel.Margin = new Padding(1, 0, 1, 0);
             sælgerTlfNummerLabel.Name = "sælgerTlfNummerLabel";
-            sælgerTlfNummerLabel.Size = new Size(226, 41);
+            sælgerTlfNummerLabel.Size = new Size(91, 15);
             sælgerTlfNummerLabel.TabIndex = 17;
             sælgerTlfNummerLabel.Text = "Telefonnummer";
             // 
             // sælgerAdresseLabel
             // 
             sælgerAdresseLabel.AutoSize = true;
-            sælgerAdresseLabel.Location = new Point(146, 298);
+            sælgerAdresseLabel.Location = new Point(60, 109);
+            sælgerAdresseLabel.Margin = new Padding(1, 0, 1, 0);
             sælgerAdresseLabel.Name = "sælgerAdresseLabel";
-            sælgerAdresseLabel.Size = new Size(123, 41);
+            sælgerAdresseLabel.Size = new Size(48, 15);
             sælgerAdresseLabel.TabIndex = 16;
             sælgerAdresseLabel.Text = "Adresse";
             // 
             // sælgerFornavnLabel
             // 
             sælgerFornavnLabel.AutoSize = true;
-            sælgerFornavnLabel.Location = new Point(141, 153);
+            sælgerFornavnLabel.Location = new Point(58, 56);
+            sælgerFornavnLabel.Margin = new Padding(1, 0, 1, 0);
             sælgerFornavnLabel.Name = "sælgerFornavnLabel";
-            sælgerFornavnLabel.Size = new Size(124, 41);
+            sælgerFornavnLabel.Size = new Size(50, 15);
             sælgerFornavnLabel.TabIndex = 15;
             sælgerFornavnLabel.Text = "Fornavn";
             // 
             // sælgerEfternavnLabel
             // 
             sælgerEfternavnLabel.AutoSize = true;
-            sælgerEfternavnLabel.Location = new Point(730, 149);
+            sælgerEfternavnLabel.Location = new Point(301, 55);
+            sælgerEfternavnLabel.Margin = new Padding(1, 0, 1, 0);
             sælgerEfternavnLabel.Name = "sælgerEfternavnLabel";
-            sælgerEfternavnLabel.Size = new Size(141, 41);
+            sælgerEfternavnLabel.Size = new Size(57, 15);
             sælgerEfternavnLabel.TabIndex = 14;
             sælgerEfternavnLabel.Text = "Efternavn";
             // 
             // FormTilføjSælger
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(1431, 1171);
+            BackColor = Color.FromArgb(255, 246, 182);
+            ClientSize = new Size(589, 388);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(1, 1, 1, 1);
             Name = "FormTilføjSælger";
             Text = "FormTilføjSælger";
             Load += FormTilføjSælger_Load;
