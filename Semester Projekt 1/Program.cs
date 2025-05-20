@@ -13,7 +13,7 @@ namespace Semester_Projekt_1
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
 
-            Application.Run(new FormTilføjSælger());
+            Application.Run(new SaleRegistration());
 
         }
     }

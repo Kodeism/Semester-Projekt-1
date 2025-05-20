@@ -32,8 +32,28 @@ namespace Semester_Projekt_1
         private void opretButton_Click(object sender, EventArgs e)
         {
             string navn = navnTextbox.Text;
+            navn = navn.Trim();
+            if (string.IsNullOrEmpty(navn))
+            {
+                navnTextbox.BackColor = Color.Red;
+                MessageBox.Show("Indtast venligst fornavn");
+            }
+            
             string efternavn = efternavnTextbox.Text;
+            efternavn = efternavn.Trim();
+            if (string.IsNullOrEmpty(efternavn))
+            {
+                efternavnTextbox.BackColor = Color.Red;
+                MessageBox.Show("Indtast venligst efternavn");
+            }
+
             string adresse = adresseTextbox.Text;
+            adresse = adresse.Trim();
+            if (string.IsNullOrEmpty(adresse))
+            {
+                adresseTextbox.BackColor= Color.Red;
+                MessageBox.Show("Indtast venligst adresse");
+            }
             //Giver error message, og highlighter box med rød, hvis der indtastes andet end tal i til tlfnummer.
             int tlfNummer = 0;
             try
@@ -57,20 +77,43 @@ namespace Semester_Projekt_1
                 MessageBox.Show("Indtast kun tal i Prisklasseboksen");
             }
             string boligtype = boligtypeCombobox.Text;
+            boligtype.Trim();
             string søgeområde = søgeområdeTextbox.Text;
+            søgeområde.Trim();
             string cprNummer = cprnummerTextbox.Text;
+            cprNummer.Trim();
+            if (string.IsNullOrEmpty(cprNummer))
+            {
+                cprnummerTextbox.BackColor = Color.Red;
+                MessageBox.Show("Indtast venligst sælgers CPR-NR");
+            }
+            else if (cprNummer.Length > 11 || cprNummer.Length < 11)
+            {
+                cprnummerTextbox.BackColor = Color.Red;
+                MessageBox.Show("Indtast CPR med format DDMMÅÅ-****");
+            }
+
+
 
             string email = emailTextbox.Text;
+            email.Trim();
             if (!email.Contains('@') || !email.Contains('.'))
             {
                 emailTextbox.BackColor = Color.Red;
                 MessageBox.Show("Indtast en gyldig email");
             }
-            else
+            
+            KøberFunktioner køberFunktion = new KøberFunktioner();
+            try
             {
-                KøberFunktioner køberFunktion = new KøberFunktioner();
                 køberFunktion.TilføjKøber(navn, efternavn, adresse, tlfNummer, cprNummer, email, søgeområde, prisklasse, boligtype);
+                MessageBox.Show("Køber er oprettet.");
             }
+            catch
+            {
+                MessageBox.Show("Noget gik galt!");
+            }
+
         }
     }
 }
