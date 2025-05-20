@@ -25,16 +25,6 @@ namespace BusineesLogic
             testDR.CreateKøber(køber);
         }
     }
-    public class TryLogin
-    {
-        public bool login(string username, string password)
-        {
-            // kode som laver et login query her
-            // returner enten true eller false ved loginforsøg
-            return true; // for nu er det altid true, men der skal tilføjes en aktuel query her
-        }
-
-    }
     public class ForsideLogic
     {
         private readonly DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; TrustServerCertificate = True;");
@@ -44,18 +34,5 @@ namespace BusineesLogic
             Data = testDR.GetForsideData();
         }
     }
-    public class HousingFilter
-    {
-        public string? MinPrice { get; set; }
-        public string? MaxPrice { get; set; }
 
-        public static void ApplyFilter(List<string> itemList)
-        {
-            foreach (var item in itemList)
-            {
-                // Debug.WriteLine(item);
-                // Tilføj til en where statement i query om søgning i boligliste
-            }
-        }
-    }
 }

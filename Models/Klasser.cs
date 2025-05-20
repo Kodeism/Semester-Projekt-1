@@ -244,7 +244,6 @@
                             string energiMærke, string status, string ejendomsmæglerNavn, 
                             string sælgerNavn)
                             /*DateTime byggeDato,*/// byggedato skal ændres til en datetime senere
-                            /*string energiMærke, string status)*/
         {
             PrisMin = prisMin;
             PrisMax = prisMax;
@@ -262,16 +261,7 @@
             Status = status;
             EjendomsmæglerNavn = ejendomsmæglerNavn;
             SælgerNavn = sælgerNavn;
-
-            //Adresse = adresse;
-            //Postnummer = postNummer;
-            //ByNavn = byNavn;
-            //Type = type;
-            ////ByggeDato = byggeDato;
-            //EjendomsmæglerID = ejendomsmæglerID;
-            //SælgerID = sælgerID;
-            //EnergiMærke = energiMærke;
-            //Status = status;
+            //ByggeDato = byggeDato;
         }
         public BoligFilter()
         {
