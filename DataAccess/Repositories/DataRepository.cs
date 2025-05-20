@@ -20,7 +20,6 @@ namespace DataAccess.Repositories
             /// normal connection string
             //connectionString = "Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;";
             
-            this.connectionString = connectionString;
             connection = new SqlConnection(connectionString);
         }
         public Bolig CreateBolig(Bolig bolig)
@@ -86,10 +85,10 @@ namespace DataAccess.Repositories
         {
             SqlCommand sqlCommand = connection.CreateCommand();
             var sql = """
-                SELECT BoligID, Pris, Adresse, 
-                Postnummer, ByNavn, BoligType, 
-                BoligAreal, Værelser, ByggeDato, 
-                GrundStørrelse, EnergiMærke, 
+                SELECT Bolig.BoligID, Bolig.Pris, Bolig.Adresse, 
+                Bolig.Postnummer, Bolig.ByNavn, Bolig.BoligType, 
+                Bolig.BoligAreal, Bolig.Værelser, Bolig.ByggeDato, 
+                Bolig.GrundStørrelse, Bolig.EnergiMærke,
                 (dbo.Ejendomsmægler.Fornavn + ' ' + dbo.Ejendomsmægler.EfterNavn) AS Ejendomsmægler, 
                 (dbo.Sælger.Fornavn + ' ' + dbo.Sælger.EfterNavn) AS Sælger, Status
                 FROM Bolig

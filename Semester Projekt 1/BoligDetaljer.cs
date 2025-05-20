@@ -64,7 +64,8 @@ namespace Semester_Projekt_1
             statusComboBox.Text = boligDetaljer.Status;
             energimærkeTextBox.Text = boligDetaljer.EnergiMærke;
             værelserTextBox.Text = boligDetaljer.Værelser.ToString();
-
+            mæglerComboBox.Text = boligDetaljer.EjendomsmæglerNavn;
+            sælgerTextBox.Text = boligDetaljer.SælgerNavn;
 
         }
 
