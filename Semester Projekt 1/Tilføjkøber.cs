@@ -59,7 +59,37 @@ namespace Semester_Projekt_1
             string boligtype = boligtypeCombobox.Text;
             string søgeområde = søgeområdeTextbox.Text;
             string cprNummer = cprnummerTextbox.Text;
-
+            string yderligereInfo = yderligereinfoTextBox.Text;
+            int boligStørrelse = 0;
+            try
+            {
+                boligStørrelse = int.Parse(boligstørrelseTextbox.Text);
+            }
+            catch
+            {
+                boligstørrelseTextbox.BackColor = Color.Red;
+                MessageBox.Show("Indtast kun tal i Boligstørrelseboksen");
+            }
+            int grundStørrelse = 0;
+            try
+            {
+                grundStørrelse = int.Parse(grundstørrelseTextbox.Text);
+            }
+            catch
+            {
+                grundstørrelseTextbox.BackColor = Color.Red;
+                MessageBox.Show("Indtast kun tal i Grundstørrelseboksen");
+            }
+            int værelser = 0;
+            try
+            {
+                værelser = int.Parse(værelserTextbox.Text);
+            }
+            catch
+            {
+                værelserTextbox.BackColor = Color.Red;
+                MessageBox.Show("Indtast kun tal i Værelserboksen");
+            }
             string email = emailTextbox.Text;
             if (!email.Contains('@') || !email.Contains('.'))
             {
@@ -69,7 +99,7 @@ namespace Semester_Projekt_1
             else
             {
                 KøberFunktioner køberFunktion = new KøberFunktioner();
-                køberFunktion.TilføjKøber(navn, efternavn, adresse, tlfNummer, cprNummer, email, søgeområde, prisklasse, boligtype);
+                køberFunktion.TilføjKøber(navn, efternavn, adresse, tlfNummer, cprNummer, email, søgeområde, prisklasse, boligtype, boligStørrelse, grundStørrelse, værelser, yderligereInfo);
             }
         }
     }

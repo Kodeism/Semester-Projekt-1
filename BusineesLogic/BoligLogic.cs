@@ -14,10 +14,17 @@ namespace BusineesLogic
         public BoligLogic()
         {
             // Special connection string for Ruben's "special" pc
-            repository = new("Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;");
+            //repository = new("Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;");
 
             // For normal people 
-            //repository = new("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;");
+            repository = new("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;");
+        }
+        public static string GetConnectionString() // bruges til kald af metode i BoligFilter
+        {
+            // Special connection string for Ruben's "special" pc
+            //return "Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;";
+            // For normal people 
+            return "Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate=True;";
         }
 
         public List<Sælger> GetSælgerList()

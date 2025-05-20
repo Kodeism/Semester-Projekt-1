@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ScottPlot.WinForms" Version="5.0.55" />
     <PackageReference Include="microsoft.data.sqlclient" Version="6.0.2" />
   </ItemGroup>
 

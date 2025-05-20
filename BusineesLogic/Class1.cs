@@ -1,4 +1,3 @@
-using System.Drawing;
 using DataAccess.Repositories;
 using Models;
 
@@ -18,9 +17,9 @@ namespace BusineesLogic
     }
     public class KøberFunktioner
     {
-        public void TilføjKøber(string navn, string efternavn, string adresse, int tlfNummer, string cprNr, string email, string søgeområde, int prisklasse, string boligtype)
+        public void TilføjKøber(string navn, string efternavn, string adresse, int tlfNummer, string cprNr, string email, string søgeområde, int prisklasse, string boligtype, int? boligStørrelse, int? grundStørrelse, int? værelser, string køberinfo)
         {
-            Køber køber = new Køber(navn, efternavn, tlfNummer, email, prisklasse, boligtype, søgeområde, cprNr, adresse);
+            Køber køber = new Køber(navn, efternavn, tlfNummer, email, prisklasse, boligtype, søgeområde, cprNr, adresse, køberinfo, grundStørrelse, boligStørrelse, værelser);
 
             DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; TrustServerCertificate = True;");
             testDR.CreateKøber(køber);
@@ -34,6 +33,29 @@ namespace BusineesLogic
             // returner enten true eller false ved loginforsøg
             return true; // for nu er det altid true, men der skal tilføjes en aktuel query her
         }
-        
+
+    }
+    public class ForsideLogic
+    {
+        private readonly DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; TrustServerCertificate = True;");
+        public Dictionary<string, List<object>> Data { get; set; }
+        public ForsideLogic()
+        {
+            Data = testDR.GetForsideData();
+        }
+    }
+    public class HousingFilter
+    {
+        public string? MinPrice { get; set; }
+        public string? MaxPrice { get; set; }
+
+        public static void ApplyFilter(List<string> itemList)
+        {
+            foreach (var item in itemList)
+            {
+                // Debug.WriteLine(item);
+                // Tilføj til en where statement i query om søgning i boligliste
+            }
+        }
     }
 }
