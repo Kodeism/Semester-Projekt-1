@@ -17,7 +17,7 @@ namespace BusineesLogic
             //repository = new("Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;");
 
             // For normal people 
-            repository = new("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;");
+            repository = new();
         }
         public static string GetConnectionString() // bruges til kald af metode i BoligFilter
         {

@@ -12,8 +12,14 @@ namespace DataAccess.Repositories
     {
         private readonly string connectionString;
         private readonly SqlConnection connection;
-        public DataRepository(string connectionString)
+        public DataRepository()
         {
+            ///special case for Ruben
+            connectionString = "Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;";
+            
+            /// normal connection string
+            //connectionString = "Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;";
+            
             this.connectionString = connectionString;
             connection = new SqlConnection(connectionString);
         }
@@ -80,9 +86,16 @@ namespace DataAccess.Repositories
         {
             SqlCommand sqlCommand = connection.CreateCommand();
             var sql = """
-                SELECT *
+                SELECT BoligID, Pris, Adresse, 
+                Postnummer, ByNavn, BoligType, 
+                BoligAreal, Værelser, ByggeDato, 
+                GrundStørrelse, EnergiMærke, 
+                (dbo.Ejendomsmægler.Fornavn + ' ' + dbo.Ejendomsmægler.EfterNavn) AS Ejendomsmægler, 
+                (dbo.Sælger.Fornavn + ' ' + dbo.Sælger.EfterNavn) AS Sælger, Status
                 FROM Bolig
-                WHERE BoligID = @BoligID;
+                INNER JOIN Ejendomsmægler ON Bolig.EjendomsmæglerID = Ejendomsmægler.EjendomsmæglerID
+                INNER JOIN Sælger ON Bolig.SælgerID = Sælger.SælgerID
+                WHERE BoligID = @BoligID
                 """;
 
             sqlCommand.CommandText = sql;
@@ -108,8 +121,8 @@ namespace DataAccess.Repositories
                             reader.GetInt32(reader.GetOrdinal("Værelser")), //["@Værelser"]
                             reader.GetDateTime(reader.GetOrdinal("ByggeDato")), //["@ByggeDato"]
                             reader.GetInt32(reader.GetOrdinal("GrundStørrelse")), //["@GrundStørrelse"]
-                            reader.GetInt32(reader.GetOrdinal("EjendomsmæglerID")), //["@EjendomsmæglerID"]
-                            reader.GetInt32(reader.GetOrdinal("SælgerID")), //["@SælgerID"]
+                            reader.GetString(reader.GetOrdinal("Ejendomsmægler")), //Ejendomsmægler
+                            reader.GetString(reader.GetOrdinal("Sælger")), //["@SælgerID"]
                             reader.GetString(reader.GetOrdinal("EnergiMærke")), //["@EnergiMærke"]
                             reader.GetString(reader.GetOrdinal("Status")) //["@Status"]
                         );

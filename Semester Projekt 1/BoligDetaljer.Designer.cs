@@ -409,7 +409,7 @@
             // 
             // pictureBox
             // 
-            pictureBox.BackgroundImage = Properties.Resources.house_icon;
+            pictureBox.BackgroundImage = Properties.Resources.houses_icon;
             pictureBox.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox.Location = new Point(45, 0);
             pictureBox.Margin = new Padding(5);
