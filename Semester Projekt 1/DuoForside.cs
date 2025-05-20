@@ -56,22 +56,22 @@ namespace Semester_Projekt_1
             if (_mode == Mode.Salg)
             {
                 SaleRegistration salg = new SaleRegistration();
-                salg.Show();
+                salg.ShowDialog();
             }
             if (_mode == Mode.Sælgere)
             {
                 FormTilføjSælger formTilføjSælger = new FormTilføjSælger();
-                formTilføjSælger.Show();
+                formTilføjSælger.ShowDialog();
             }
             if (_mode == Mode.Købere)
             {
                 TilføjKøber tilKøber = new TilføjKøber();
-                tilKøber.Show();
+                tilKøber.ShowDialog();
             }
             if (_mode == Mode.Boliger)
             {
                 BoligRegistration formTilføjBolig = new BoligRegistration();
-                formTilføjBolig.Show();
+                formTilføjBolig.ShowDialog();
             }
         }
 
@@ -80,22 +80,22 @@ namespace Semester_Projekt_1
             if (_mode == Mode.Salg)
             {
                 SaleRegistration salg = new SaleRegistration();
-                salg.Show();
+                salg.ShowDialog();
             }
             if (_mode == Mode.Sælgere)
             {
                 FormTilføjSælger formTilføjSælger = new FormTilføjSælger();
-                formTilføjSælger.Show();
+                formTilføjSælger.ShowDialog();
             }
             if (_mode == Mode.Købere)
             {
                 TilføjKøber tilKøber = new TilføjKøber();
-                tilKøber.Show();
+                tilKøber.ShowDialog();
             }
             if (_mode == Mode.Boliger)
             {
                 BoligRegistration formTilføjBolig = new BoligRegistration();
-                formTilføjBolig.Show();
+                formTilføjBolig.ShowDialog();
             }
         }
     }

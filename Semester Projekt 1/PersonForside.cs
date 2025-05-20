@@ -20,13 +20,13 @@ namespace Semester_Projekt_1
         private void sælgereRegistrerKnap_Click(object sender, EventArgs e)
         {
             FormTilføjSælger formTilføjSælger = new FormTilføjSælger();
-            formTilføjSælger.Show();
+            formTilføjSælger.ShowDialog();
         }
 
         private void købereRegistrerKnap_Click(object sender, EventArgs e)
         {
             TilføjKøber tilKøber = new TilføjKøber();
-            tilKøber.Show();
+            tilKøber.ShowDialog();
         }
     }
 }

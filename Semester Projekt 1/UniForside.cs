@@ -56,17 +56,17 @@ namespace Semester_Projekt_1
             if(mode_==Mode.AlleS||mode_==Mode.MineS)
             {
                 SaleRegistration saleRegistration = new SaleRegistration();
-                saleRegistration.Show();
+                saleRegistration.ShowDialog();
             }
             else if (mode_ == Mode.AlleK || mode_ == Mode.MineK)
             {
                 TilføjKøber tilKøber = new TilføjKøber();
-                tilKøber.Show();
+                tilKøber.ShowDialog();
             }
             else if (mode_ == Mode.AlleB || mode_ == Mode.MineB)
             {
                 BoligRegistration tilBolig = new BoligRegistration();
-                tilBolig.Show();
+                tilBolig.ShowDialog();
             }
         }
     }

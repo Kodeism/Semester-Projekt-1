@@ -132,7 +132,7 @@ namespace Semester_Projekt_1
         private void registrerDBKnap_Click(object sender, EventArgs e)
         {
             FormTilføjSælger formTilføjSælger = new FormTilføjSælger();
-            formTilføjSælger.Show();
+            formTilføjSælger.ShowDialog();
         }
 
         private void mineKøbereDBKnap_Click(object sender, EventArgs e)
@@ -150,7 +150,7 @@ namespace Semester_Projekt_1
         private void registrerKøberDBKnap_Click(object sender, EventArgs e)
         {
             TilføjKøber tilKøber = new TilføjKøber();
-            tilKøber.Show();
+            tilKøber.ShowDialog();
         }
 
         private void mineSalgDBKnap_Click(object sender, EventArgs e)
@@ -168,7 +168,7 @@ namespace Semester_Projekt_1
         private void salgRegistrerDBKnap_Click(object sender, EventArgs e)
         {
             SaleRegistration saleRegistration = new SaleRegistration();
-            saleRegistration.Show();
+            saleRegistration.ShowDialog();
         }
 
         private void mineBoligerDBKnap_Click(object sender, EventArgs e)
@@ -186,7 +186,7 @@ namespace Semester_Projekt_1
         private void boligerRegistrerDBKnap_Click(object sender, EventArgs e)
         {
             BoligRegistration boligRegistration = new BoligRegistration();
-            boligRegistration.Show();
+            boligRegistration.ShowDialog();
         }
     }
 }
