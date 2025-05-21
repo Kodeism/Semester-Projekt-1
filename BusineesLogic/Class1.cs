@@ -9,7 +9,7 @@ namespace BusineesLogic
         {
             Sælger sælger = new Sælger(navn, efternavn, tlfNummer, email, cprNr, adresse);
 
-            DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; TrustServerCertificate = True;");
+            DataRepository testDR = new DataRepository();
             testDR.TilføjSælger(sælger);
         }
 
@@ -21,13 +21,13 @@ namespace BusineesLogic
         {
             Køber køber = new Køber(navn, efternavn, tlfNummer, email, prisklasse, boligtype, søgeområde, cprNr, adresse, køberinfo, grundStørrelse, boligStørrelse, værelser);
 
-            DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; TrustServerCertificate = True;");
+            DataRepository testDR = new DataRepository();
             testDR.CreateKøber(køber);
         }
     }
     public class ForsideLogic
     {
-        private readonly DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; TrustServerCertificate = True;");
+        private readonly DataRepository testDR = new DataRepository();
         public Dictionary<string, List<object>> Data { get; set; }
         public ForsideLogic()
         {
