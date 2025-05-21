@@ -36,7 +36,7 @@
             // 
             // idTextbox
             // 
-            idTextbox.Location = new Point(27, 43);
+            idTextbox.Location = new Point(12, 34);
             idTextbox.Name = "idTextbox";
             idTextbox.Size = new Size(100, 23);
             idTextbox.TabIndex = 0;
@@ -44,7 +44,7 @@
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new Point(28, 16);
+            idLabel.Location = new Point(12, 16);
             idLabel.Name = "idLabel";
             idLabel.Size = new Size(84, 15);
             idLabel.TabIndex = 1;
@@ -52,7 +52,7 @@
             // 
             // annullerButton
             // 
-            annullerButton.Location = new Point(51, 183);
+            annullerButton.Location = new Point(12, 115);
             annullerButton.Name = "annullerButton";
             annullerButton.Size = new Size(75, 23);
             annullerButton.TabIndex = 2;
@@ -62,7 +62,7 @@
             // 
             // sletButton
             // 
-            sletButton.Location = new Point(268, 189);
+            sletButton.Location = new Point(157, 115);
             sletButton.Name = "sletButton";
             sletButton.Size = new Size(75, 23);
             sletButton.TabIndex = 3;
@@ -75,7 +75,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 246, 182);
-            ClientSize = new Size(372, 230);
+            ClientSize = new Size(244, 150);
             Controls.Add(sletButton);
             Controls.Add(annullerButton);
             Controls.Add(idLabel);
