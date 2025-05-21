@@ -382,6 +382,7 @@
             ClientSize = new Size(534, 628);
             Controls.Add(panel1);
             Font = new Font("Segoe UI", 14F);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(5);
             Name = "BoligRegistration";
             Text = "BoligRegistration";

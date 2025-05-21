@@ -16,5 +16,17 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
         }
+
+        private void sælgereRegistrerKnap_Click(object sender, EventArgs e)
+        {
+            FormTilføjSælger formTilføjSælger = new FormTilføjSælger();
+            formTilføjSælger.ShowDialog();
+        }
+
+        private void købereRegistrerKnap_Click(object sender, EventArgs e)
+        {
+            TilføjKøber tilKøber = new TilføjKøber();
+            tilKøber.ShowDialog();
+        }
     }
 }
