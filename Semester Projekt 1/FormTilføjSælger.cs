@@ -16,6 +16,7 @@ namespace Semester_Projekt_1
         public FormTilføjSælger()
         {
             InitializeComponent();
+            sælgerCprNummerTextbox.PlaceholderText = "DDMMÅÅ-****";
         }
 
         private void SælgerTelefonNummerTextbox_TextChanged(object sender, EventArgs e)
@@ -39,8 +40,27 @@ namespace Semester_Projekt_1
         private void sælgerOpretOpretButton_Click(object sender, EventArgs e)
         {
             string navn = sælgerFornavnTextbox.Text;
+            navn = navn.Trim();
+            if (string.IsNullOrEmpty(navn))
+            {
+                sælgerFornavnTextbox.BackColor = Color.Red;
+                MessageBox.Show("Indtast venligst fornavn");
+            }
             string efternavn = sælgerEfternavnTextbox.Text;
+            efternavn = efternavn.Trim();
+            if (string.IsNullOrEmpty(efternavn))
+            {
+                sælgerEfternavnTextbox.BackColor = Color.Red;
+                MessageBox.Show("Indtast venligst efternavn");
+            }
             string adresse = sælgerAdresseTextbox.Text;
+            adresse = adresse.Trim();
+            if (string.IsNullOrEmpty(adresse))
+            {
+                sælgerAdresseTextbox.BackColor = Color.Red;
+                MessageBox.Show("Indtast venligst adresse");
+            }
+
             //Giver error message, og highlighter box med rød, hvis der indtastes andet end tal i til tlfnummer.
             int tlfNummer = 0;
             try
@@ -54,19 +74,42 @@ namespace Semester_Projekt_1
                 return;
             }
             string cprNummer = sælgerCprNummerTextbox.Text;
+            cprNummer = cprNummer.Trim();
+            if (string.IsNullOrEmpty(cprNummer))
+            {
+                sælgerCprNummerTextbox.BackColor = Color.Red;
+                MessageBox.Show("Indtast venligst sælgers CPR-NR");
+            }
+            else if (cprNummer.Length > 11 || cprNummer.Length < 11)
+            {
+                sælgerCprNummerTextbox.BackColor = Color.Red;
+                MessageBox.Show("Indtast CPR med format DDMMÅÅ-****");
+            }
+
+
 
             string email = sælgerEmailTextbox.Text;
+            email = email.Trim();
             if (!email.Contains('@') || !email.Contains('.'))
             {
                 sælgerEmailTextbox.BackColor = Color.Red;
                 MessageBox.Show("Indtast en gyldig email");
             }
-            else
-            {
-                SælgerFunktioner sælgerfunktion = new SælgerFunktioner();
-                sælgerfunktion.TilføjSælger(navn, efternavn, tlfNummer, email, cprNummer, adresse);
-            }
+            
 
+            
+                SælgerFunktioner sælgerfunktion = new SælgerFunktioner();
+            try
+            {
+                sælgerfunktion.TilføjSælger(navn, efternavn, tlfNummer, email, cprNummer, adresse);
+                MessageBox.Show("Sælger er oprettet.");
+                this.Close();
+            }
+            catch 
+            {
+                MessageBox.Show("Noget gik galt!");
+            }
+            
         }
 
         private void sælgerFornavnTextbox_TextChanged(object sender, EventArgs e)
@@ -76,7 +119,7 @@ namespace Semester_Projekt_1
 
         private void sælgerAnnulerOpretButton_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
     }
 }
