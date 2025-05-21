@@ -389,11 +389,6 @@ namespace DataAccess.Repositories
             connection.Close();
         }
 
-    }
-
-    }
-
-
         public static List<Bolig> SøgMedFilter(SqlConnection connection, BoligFilter boligFilter)
         {
             List<Bolig> boligList = new List<Bolig>();

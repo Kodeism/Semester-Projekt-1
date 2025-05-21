@@ -199,6 +199,12 @@ namespace Semester_Projekt_1
             this.Hide();
             SessionManager.Clear();
         }
+
+        private void boligerRegistrerDBKnap_Click(object sender, EventArgs e)
+        {
+            BoligRegistration boligRegistration = new BoligRegistration();
+            boligRegistration.ShowDialog();
+        }
     }
 }
 

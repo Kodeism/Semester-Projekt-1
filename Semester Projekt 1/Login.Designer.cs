@@ -58,7 +58,6 @@
             LoginForm.Margin = new Padding(2, 2, 2, 2);
             LoginForm.Name = "LoginForm";
             LoginForm.Size = new Size(437, 385);
-
             LoginForm.TabIndex = 0;
             // 
             // LoginErrorLabelPassword
@@ -68,7 +67,6 @@
             LoginErrorLabelPassword.Margin = new Padding(2, 0, 2, 0);
             LoginErrorLabelPassword.Name = "LoginErrorLabelPassword";
             LoginErrorLabelPassword.Size = new Size(0, 15);
-
             LoginErrorLabelPassword.TabIndex = 8;
             // 
             // LoginErrorLabelUsername
