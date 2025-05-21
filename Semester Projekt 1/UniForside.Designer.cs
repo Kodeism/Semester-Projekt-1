@@ -151,6 +151,7 @@
             uniDataGridView.RowHeadersWidth = 62;
             uniDataGridView.Size = new Size(669, 571);
             uniDataGridView.TabIndex = 2;
+            uniDataGridView.CellDoubleClick += uniDataGridView_CellDoubleClick;
             // 
             // UniForside
             // 

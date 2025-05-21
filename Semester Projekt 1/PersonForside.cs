@@ -22,6 +22,9 @@ namespace Semester_Projekt_1
             HentEjendomsmægler();
             HentKøberLoad();
             HentSælgerLoad();
+            mæglerDataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            købereDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            sælgereDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
         public void OpdaterKøberDataGrid(List<Køber> køber)
         {

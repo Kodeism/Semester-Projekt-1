@@ -362,14 +362,37 @@
         //hvem købte boligen
         public int BoligID { get; set; }
         //boligen (som indeholder forign keys for sælgeren og Ejendomsmægleren)
-        public string Dato { get; set; }
+        public DateTime Dato { get; set; }
         public int Beløb { get; set; }
-        public Salg(Køber køber, Bolig bolig, string dato, int beløb)
+        public string Adresse { get; set; } // bruges til join i query
+        public string ByNavn { get; set; }
+        public string MæglerNavn { get; set; }
+        public string SælgerNavn { get; set; }
+        public string KøberNavn { get; set; }
+        
+        public Salg()
+        {
+
+        }
+        public Salg(Køber køber, Bolig bolig, DateTime dato, int beløb)
         {
             KøberID = køber.KøberID;
             BoligID = bolig.BoligID;
             Dato = dato;
             Beløb = beløb;
+        }
+        public Salg(int salgID, int køberID, int boligID, DateTime dato, int beløb, string adresse, string byNavn, string mæglerNavn, string sælgerNavn, string køberNavn)
+        {
+            SalgsID = salgID;
+            KøberID = køberID;
+            BoligID = boligID;
+            Dato = dato;
+            Beløb = beløb;
+            Adresse = adresse;
+            ByNavn = byNavn;
+            MæglerNavn = mæglerNavn;
+            SælgerNavn = sælgerNavn;
+            KøberNavn = køberNavn;
         }
     }
 }

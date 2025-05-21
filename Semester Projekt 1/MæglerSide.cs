@@ -20,6 +20,7 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
             HentEjendomsmægler();
+            mæglerDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void HentEjendomsmægler(int? mæglerID = 0)

@@ -470,6 +470,57 @@ namespace DataAccess.Repositories
             return køberList;
         }
 
+        public static List<Salg> HentSalg(SqlConnection connection, int? mæglerID = 0)
+        {
+            List<Salg> salgsListe = new List<Salg>();
+            SqlCommand command = connection.CreateCommand();
+
+            string sql = """
+                SELECT 
+                    Salg.SalgsID, Salg.BoligID, Salg.KøberID,
+        			Salg.Dato, Salg.Beløb, Bolig.Adresse, 
+        			Bolig.ByNavn,
+                    (Ejendomsmægler.Fornavn + ' ' + Ejendomsmægler.EfterNavn) AS MæglerNavn,
+                    (Sælger.Fornavn + ' ' + Sælger.EfterNavn) AS SælgerNavn,
+        			(Køber.Fornavn + ' ' + Køber.EfterNavn) AS KøberNavn
+                FROM Salg
+                INNER JOIN Bolig ON Salg.BoligID = Bolig.BoligID
+                INNER JOIN Ejendomsmægler ON Bolig.EjendomsmæglerID = Ejendomsmægler.EjendomsmæglerID
+                INNER JOIN Sælger ON Bolig.SælgerID = Sælger.SælgerID
+        		INNER JOIN Køber ON Salg.KøberID = Køber.KøberID
+        """;
+
+            Debug.WriteLine(mæglerID);
+            if (mæglerID > 0)
+            {
+                sql += " AND Ejendomsmægler.EjendomsmæglerID = @mæglerID";
+                command.Parameters.AddWithValue("@mæglerID", mæglerID);
+            }
+            command.CommandText = sql;
+            connection.Open();
+            var reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                var salg = new Salg
+                {
+                    SalgsID = reader.GetInt32(reader.GetOrdinal("SalgsID")),
+                    KøberID = reader.GetInt32(reader.GetOrdinal("KøberID")),
+                    BoligID = reader.GetInt32(reader.GetOrdinal("BoligID")),
+                    Dato = reader.GetDateTime(reader.GetOrdinal("Dato")),
+                    Beløb = reader.GetInt32(reader.GetOrdinal("Beløb")),
+                    Adresse = reader.GetString(reader.GetOrdinal("Adresse")),
+                    ByNavn = reader.GetString(reader.GetOrdinal("ByNavn")),
+                    MæglerNavn = reader.GetString(reader.GetOrdinal("MæglerNavn")),
+                    SælgerNavn = reader.GetString(reader.GetOrdinal("SælgerNavn")),
+                    KøberNavn = reader.GetString(reader.GetOrdinal("KøberNavn"))
+                };
+                salgsListe.Add(salg);
+            }
+
+            connection.Close();
+            return salgsListe;
+        }
         public static List<Ejendomsmægler> HentEjendomsmæglere(SqlConnection connection)
         {
             List<Ejendomsmægler> mæglere = new List<Ejendomsmægler>();
@@ -689,8 +740,8 @@ namespace DataAccess.Repositories
             Ejendomsmægler.Email, Ejendomsmægler.TlfNummer, 
             Ejendomsmægler.Brugernavn, Ejendomsmægler.Adgangsniveau
             FROM dbo.Ejendomsmægler
-            WHERE Ejendomsmægler.Brugernavn = 'tsosa'
-            AND Ejendomsmægler.Password = 'Tho4780'
+            WHERE Ejendomsmægler.Brugernavn = @brugernavn
+            AND Ejendomsmægler.Password = @password
             """;
             command.CommandText = sql;
             command.Parameters.AddWithValue("@brugernavn", username);

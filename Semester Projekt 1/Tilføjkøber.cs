@@ -4,6 +4,14 @@ namespace Semester_Projekt_1
 {
     public partial class TilføjKøber : Form
     {
+        private int boligID;
+
+        public TilføjKøber(int boligID)
+        {
+            InitializeComponent();
+            this.boligID = boligID;
+            Console.Write(boligID);
+        }
         public TilføjKøber()
         {
             InitializeComponent();

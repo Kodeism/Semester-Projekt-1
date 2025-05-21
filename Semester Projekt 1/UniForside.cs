@@ -23,6 +23,8 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
             SetMode(mode);
+            uniDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
         }
         public void SetMode(Mode mode)
         {
@@ -135,6 +137,28 @@ namespace Semester_Projekt_1
         {
             BoligFilterForm boligFilterForm = new BoligFilterForm(this, currentMode);
             boligFilterForm.Show();
+        }
+
+        private void uniDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (currentMode != Mode.MineK)
+            {
+                return;
+            }
+            if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
+            {
+                DataGridView uniDataGridView = (DataGridView)sender;
+
+                // Hent værdien af BoligID i den valgte række
+                var køberIDValue = uniDataGridView.Rows[e.RowIndex].Cells["KøberID"].Value;
+
+                // Konverter evt. til int hvis nødvendigt
+                int køberID = Convert.ToInt32(køberIDValue);
+
+                // Brug boligId som du vil
+                TilføjKøber tilføjKøber = new TilføjKøber(køberID);
+                tilføjKøber.Show();
+            }
         }
     }
 }

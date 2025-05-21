@@ -23,6 +23,9 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
             SetMode(mode);
+            mineDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            alleDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
         }
         public void SetMode(Mode mode)
         {
@@ -35,6 +38,7 @@ namespace Semester_Projekt_1
                     alleLabel.Text = "Alle Salg";
                     mineSøgeFelt.Text = "Søg Adresse...";
                     alleSøgeFelt.Text = "Søg Adresse...";
+                    HentSalgLoad(SessionManager.EjendomsmæglerId);
                     break;
                 case Mode.Sælgere:
                     mineLabel.Text = "Mine Sælgere";
@@ -86,6 +90,40 @@ namespace Semester_Projekt_1
             mineDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
 
+        public void OpdaterMineSalgDataGrid(List<Salg> salg)
+        {
+            mineDataGridView.DataSource = null;
+            mineDataGridView.DataSource = salg;
+            // Skjul id som ikke burde blive vist men de bliver vist aligevel
+            if (mineDataGridView.Columns.Contains("EjendomsmæglerID"))
+                mineDataGridView.Columns["EjendomsmæglerID"].Visible = false;
+
+            if (mineDataGridView.Columns.Contains("SælgerID"))
+                mineDataGridView.Columns["SælgerID"].Visible = false;
+            mineDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+        }
+        public void OpdaterAlleSalgDataGrid(List<Salg> salg)
+        {
+            alleDataGridView.DataSource = null;
+            alleDataGridView.DataSource = salg;
+            // Skjul id som ikke burde blive vist men de bliver vist aligevel
+            if (alleDataGridView.Columns.Contains("EjendomsmæglerID"))
+                alleDataGridView.Columns["EjendomsmæglerID"].Visible = false;
+
+            if (alleDataGridView.Columns.Contains("SælgerID"))
+                alleDataGridView.Columns["SælgerID"].Visible = false;
+            alleDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+        }
+        private void HentSalgLoad(int? mæglerID = 0)
+        {
+            using (SqlConnection conn = new SqlConnection(BoligLogic.GetConnectionString()))
+            {
+                var result = DataRepository.HentSalg(conn);
+                OpdaterMineSalgDataGrid(result);
+                result = DataRepository.HentSalg(conn, mæglerID);
+                OpdaterAlleSalgDataGrid(result);
+            }
+        }
         private void HentSælgerLoad(int? mæglerID = 0)
         {
             var sælgerFilter = new Models.SælgerFilter();
