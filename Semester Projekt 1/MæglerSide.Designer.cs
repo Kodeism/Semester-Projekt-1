@@ -87,7 +87,6 @@
             mæglerSøgeFelt.Name = "mæglerSøgeFelt";
             mæglerSøgeFelt.Size = new Size(351, 25);
             mæglerSøgeFelt.TabIndex = 0;
-            mæglerSøgeFelt.Text = "Søg Navn...";
             // 
             // mæglerFilterKnap
             // 
@@ -110,7 +109,7 @@
             mæglerLabel.AutoSize = true;
             mæglerLabel.Font = new Font("Segoe UI", 20F);
             mæglerLabel.Location = new Point(0, 0);
-            mæglerLabel.Margin = new Padding(0, 0, 0, 0);
+            mæglerLabel.Margin = new Padding(0);
             mæglerLabel.Name = "mæglerLabel";
             mæglerLabel.Size = new Size(482, 37);
             mæglerLabel.TabIndex = 1;

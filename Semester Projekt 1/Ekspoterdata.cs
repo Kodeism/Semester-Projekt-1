@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Semester_Projekt_1
 {
-    public partial class MæglerSide : UserControl
+    public partial class Ekspoterdata : Form
     {
-        public MæglerSide()
+        public Ekspoterdata()
         {
             InitializeComponent();
-            mæglerSøgeFelt.PlaceholderText = "Søg Navn...";
         }
     }
 }

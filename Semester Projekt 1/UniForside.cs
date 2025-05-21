@@ -26,27 +26,27 @@ namespace Semester_Projekt_1
             {
                 case Mode.AlleS:
                     uniLabel.Text = "Alle Sælgere";
-                    uniSøgeFelt.Text = "Søg Navn...";
+                    uniSøgeFelt.PlaceholderText = "Søg Navn...";
                     break;
                 case Mode.MineS:
                     uniLabel.Text = "Mine Sælgere";
-                    uniSøgeFelt.Text = "Søg Navn...";
+                    uniSøgeFelt.PlaceholderText = "Søg Navn...";
                     break;
                 case Mode.AlleK:
                     uniLabel.Text = "Alle Købere";
-                    uniSøgeFelt.Text = "Søg Navn...";
+                    uniSøgeFelt.PlaceholderText = "Søg Navn...";
                     break;
                 case Mode.MineK:
                     uniLabel.Text = "Mine Købere";
-                    uniSøgeFelt.Text = "Søg Navn...";
+                    uniSøgeFelt.PlaceholderText = "Søg Navn...";
                     break;
                 case Mode.AlleB:
                     uniLabel.Text = "Alle Boliger";
-                    uniSøgeFelt.Text = "Søg Adresse...";
+                    uniSøgeFelt.PlaceholderText = "Søg Adresse...";
                     break;
                 case Mode.MineB:
                     uniLabel.Text = "Mine Boliger";
-                    uniSøgeFelt.Text = "Søg Adresse...";
+                    uniSøgeFelt.PlaceholderText = "Søg Adresse...";
                     break;
             }
         }

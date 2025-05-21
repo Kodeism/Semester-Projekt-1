@@ -78,7 +78,7 @@
             statsBackgroundPanel.Controls.Add(statBoxesLayoutPanel);
             statsBackgroundPanel.Dock = DockStyle.Fill;
             statsBackgroundPanel.Location = new Point(3, 3);
-            statsBackgroundPanel.Margin = new Padding(2, 2, 2, 2);
+            statsBackgroundPanel.Margin = new Padding(2);
             statsBackgroundPanel.Name = "statsBackgroundPanel";
             statsBackgroundPanel.Size = new Size(872, 88);
             statsBackgroundPanel.TabIndex = 0;
@@ -97,7 +97,7 @@
             statBoxesLayoutPanel.Controls.Add(købereLayoutPanel, 1, 0);
             statBoxesLayoutPanel.Controls.Add(boligerLayoutPanel, 0, 0);
             statBoxesLayoutPanel.Location = new Point(46, 11);
-            statBoxesLayoutPanel.Margin = new Padding(2, 2, 2, 2);
+            statBoxesLayoutPanel.Margin = new Padding(2);
             statBoxesLayoutPanel.Name = "statBoxesLayoutPanel";
             statBoxesLayoutPanel.RowCount = 1;
             statBoxesLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
@@ -116,7 +116,7 @@
             salgLayoutPanel.Controls.Add(sumSalgLabel, 0, 1);
             salgLayoutPanel.Controls.Add(antalSalgLabel, 1, 0);
             salgLayoutPanel.Location = new Point(587, 2);
-            salgLayoutPanel.Margin = new Padding(2, 2, 2, 2);
+            salgLayoutPanel.Margin = new Padding(2);
             salgLayoutPanel.Name = "salgLayoutPanel";
             salgLayoutPanel.RowCount = 2;
             salgLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -186,7 +186,7 @@
             sælgereLayoutPanel.Controls.Add(udbudtBoligtypeLabel, 0, 1);
             sælgereLayoutPanel.Controls.Add(sælgereAntalLabel, 1, 0);
             sælgereLayoutPanel.Location = new Point(392, 2);
-            sælgereLayoutPanel.Margin = new Padding(2, 2, 2, 2);
+            sælgereLayoutPanel.Margin = new Padding(2);
             sælgereLayoutPanel.Name = "sælgereLayoutPanel";
             sælgereLayoutPanel.RowCount = 2;
             sælgereLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -257,7 +257,7 @@
             købereLayoutPanel.Controls.Add(købereAntalLabel, 1, 0);
             købereLayoutPanel.Controls.Add(eftersøgtBoligTypeLabel, 0, 1);
             købereLayoutPanel.Location = new Point(197, 2);
-            købereLayoutPanel.Margin = new Padding(2, 2, 2, 2);
+            købereLayoutPanel.Margin = new Padding(2);
             købereLayoutPanel.Name = "købereLayoutPanel";
             købereLayoutPanel.RowCount = 2;
             købereLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -328,7 +328,7 @@
             boligerLayoutPanel.Controls.Add(antalUsolgteBoligerLabel, 1, 1);
             boligerLayoutPanel.Controls.Add(boligAntalLabel, 1, 0);
             boligerLayoutPanel.Location = new Point(2, 2);
-            boligerLayoutPanel.Margin = new Padding(2, 2, 2, 2);
+            boligerLayoutPanel.Margin = new Padding(2);
             boligerLayoutPanel.Name = "boligerLayoutPanel";
             boligerLayoutPanel.RowCount = 2;
             boligerLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -405,7 +405,7 @@
             nyeLayoutPanel.Dock = DockStyle.Fill;
             nyeLayoutPanel.GrowStyle = TableLayoutPanelGrowStyle.FixedSize;
             nyeLayoutPanel.Location = new Point(0, 0);
-            nyeLayoutPanel.Margin = new Padding(2, 2, 2, 2);
+            nyeLayoutPanel.Margin = new Padding(2);
             nyeLayoutPanel.Name = "nyeLayoutPanel";
             nyeLayoutPanel.RowCount = 6;
             nyeLayoutPanel.RowStyles.Add(new RowStyle());
@@ -415,7 +415,7 @@
             nyeLayoutPanel.RowStyles.Add(new RowStyle());
             nyeLayoutPanel.RowStyles.Add(new RowStyle());
             nyeLayoutPanel.Size = new Size(802, 636);
-            nyeLayoutPanel.TabIndex = 1;
+            nyeLayoutPanel.TabIndex = 0;
             // 
             // graphsLayoutPanel
             // 
@@ -429,12 +429,12 @@
             graphsLayoutPanel.Controls.Add(boligerBoligTypePlot, 1, 0);
             graphsLayoutPanel.Controls.Add(køberBoligTypePlot, 0, 0);
             graphsLayoutPanel.Location = new Point(3, 398);
-            graphsLayoutPanel.Margin = new Padding(2, 2, 2, 2);
+            graphsLayoutPanel.Margin = new Padding(2);
             graphsLayoutPanel.Name = "graphsLayoutPanel";
             graphsLayoutPanel.RowCount = 1;
             graphsLayoutPanel.RowStyles.Add(new RowStyle());
             graphsLayoutPanel.Size = new Size(872, 870);
-            graphsLayoutPanel.TabIndex = 0;
+            graphsLayoutPanel.TabIndex = 55;
             // 
             // boligerBoligTypePlot
             // 
@@ -445,10 +445,10 @@
             boligerBoligTypePlot.AutoValidate = AutoValidate.EnablePreventFocusChange;
             boligerBoligTypePlot.DisplayScale = 1.5F;
             boligerBoligTypePlot.Location = new Point(397, 3);
-            boligerBoligTypePlot.Margin = new Padding(2, 2, 2, 2);
+            boligerBoligTypePlot.Margin = new Padding(2);
             boligerBoligTypePlot.Name = "boligerBoligTypePlot";
             boligerBoligTypePlot.Size = new Size(472, 864);
-            boligerBoligTypePlot.TabIndex = 2;
+            boligerBoligTypePlot.TabIndex = 154;
             // 
             // køberBoligTypePlot
             // 
@@ -458,10 +458,10 @@
             køberBoligTypePlot.BackgroundImageLayout = ImageLayout.None;
             køberBoligTypePlot.DisplayScale = 1.5F;
             køberBoligTypePlot.Location = new Point(3, 3);
-            køberBoligTypePlot.Margin = new Padding(2, 2, 2, 2);
+            køberBoligTypePlot.Margin = new Padding(2);
             køberBoligTypePlot.Name = "køberBoligTypePlot";
             køberBoligTypePlot.Size = new Size(389, 864);
-            køberBoligTypePlot.TabIndex = 0;
+            køberBoligTypePlot.TabIndex = 345;
             // 
             // nyeKøbere
             // 
@@ -469,11 +469,11 @@
             nyeKøbere.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             nyeKøbere.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             nyeKøbere.Location = new Point(3, 272);
-            nyeKøbere.Margin = new Padding(2, 2, 2, 2);
+            nyeKøbere.Margin = new Padding(2);
             nyeKøbere.Name = "nyeKøbere";
             nyeKøbere.RowHeadersWidth = 62;
             nyeKøbere.Size = new Size(872, 121);
-            nyeKøbere.TabIndex = 3;
+            nyeKøbere.TabIndex = 546;
             // 
             // nyeBoligerLabel
             // 
@@ -494,7 +494,7 @@
             nyeKøberLabel.Margin = new Padding(2, 0, 2, 0);
             nyeKøberLabel.Name = "nyeKøberLabel";
             nyeKøberLabel.Size = new Size(116, 25);
-            nyeKøberLabel.TabIndex = 1;
+            nyeKøberLabel.TabIndex = 3;
             nyeKøberLabel.Text = "Nye Købere";
             // 
             // nyeBoliger
@@ -503,11 +503,11 @@
             nyeBoliger.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             nyeBoliger.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             nyeBoliger.Location = new Point(3, 122);
-            nyeBoliger.Margin = new Padding(2, 2, 2, 2);
+            nyeBoliger.Margin = new Padding(2);
             nyeBoliger.Name = "nyeBoliger";
             nyeBoliger.RowHeadersWidth = 62;
             nyeBoliger.Size = new Size(872, 119);
-            nyeBoliger.TabIndex = 2;
+            nyeBoliger.TabIndex = 1;
             // 
             // Forside
             // 
@@ -517,7 +517,7 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(255, 246, 182);
             Controls.Add(nyeLayoutPanel);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Forside";
             Size = new Size(802, 636);
             Load += Forside_Load;

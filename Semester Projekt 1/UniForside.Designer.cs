@@ -107,7 +107,6 @@
             uniSøgeFelt.Name = "uniSøgeFelt";
             uniSøgeFelt.Size = new Size(285, 25);
             uniSøgeFelt.TabIndex = 0;
-            uniSøgeFelt.Text = "Søg Adresse...";
             // 
             // uniFilterKnap
             // 

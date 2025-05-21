@@ -9,7 +9,7 @@ namespace BusineesLogic
         private DataRepository repository;
         public List<string> Regions = new List<string>() { "Nordjylland", "Syddanmark", "Sjælland", "Hovedstaden", "Midtjylland" };
         public List<string> SaleStatusList = new List<string>() { "Til Salg", "Solgt", "Under behandling" };
-        public List<string> BoligTypes = new List<string>() { "Hus", "Rækkehus", "Lejlighed" };
+        public List<string> BoligTypes = new List<string>() { "Ældrebolig", "Rækkehus", "Kolonihavehus", "Villa", "Ungdomsbolig", "Lejlighed", "Sommerhus", "Ejerlejlighed", "Andelsbolig" };
 
 
         public BoligLogic()
@@ -67,16 +67,15 @@ namespace BusineesLogic
             repository.UpdatePris(bolig.BoligID, bolig.Pris);
         }
 
-        public int PrisEsmator(int boligAreal, int grundAreal, int værelser, string boligType)
+        public int PrisEsmator(int boligAreal, int grundAreal, string boligType, int byggedato)
         {
-            int estimation = 0;
-            //find gennemsnits kvadrat meter pris for boligtyperne i danmark
-            //jord koster cirka 20 kr. pr. m2 i danmark
-            //vi kunne også inkludere mængden af badeværelser og soveværelser i vores data.
-            //den endelige formuar ville være noget ligende:
-            //pris = boligAreal * kvadratmeterpris + grundAreal * 20 + værelser * 1000000 + boligType * 1000000
-            //eller noget i den stil
-            return estimation;
+            //man kunne evt finetune det men jeg tror personligt at dette ville være en god opgave for kunstig intelligens
+            //hvis man havde nok data så kunne man evt. træne en model til at inkludere husets lokation via google maps
+            //man kunne evt. også lave programmet så det selv checker afstanden til forskellige faciliteter
+            //så som skole, supermarked, togstation osv.
+            //det ville dog kræve en del data og det ville tage lang tid at implementere.
+            //tilstand; Fremragende, God, Acceptabel, Dårlig, Meget dårlig
+            return repository.GetGroundPrice(boligType, grundAreal, boligAreal, byggedato)*grundAreal;
         }
     }
 }

@@ -145,7 +145,6 @@
             mæglerSøgeFelt.Name = "mæglerSøgeFelt";
             mæglerSøgeFelt.Size = new Size(206, 25);
             mæglerSøgeFelt.TabIndex = 0;
-            mæglerSøgeFelt.Text = "Søg Navn...";
             // 
             // mæglerFilterKnap
             // 
@@ -257,7 +256,6 @@
             købereSøgeFelt.Name = "købereSøgeFelt";
             købereSøgeFelt.Size = new Size(206, 25);
             købereSøgeFelt.TabIndex = 0;
-            købereSøgeFelt.Text = "Søg Navn...";
             // 
             // købereFilterKnap
             // 
@@ -381,7 +379,6 @@
             sælgereSøgeFelt.Name = "sælgereSøgeFelt";
             sælgereSøgeFelt.Size = new Size(206, 25);
             sælgereSøgeFelt.TabIndex = 0;
-            sælgereSøgeFelt.Text = "Søg Navn...";
             // 
             // sælgereFilterKnap
             // 

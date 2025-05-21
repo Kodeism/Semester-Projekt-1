@@ -15,8 +15,10 @@ namespace Semester_Projekt_1
         public PersonForside()
         {
             InitializeComponent();
+            sælgereSøgeFelt.PlaceholderText = "Søg Navn...";
+            købereSøgeFelt.PlaceholderText = "Søg Navn...";
+            mæglerSøgeFelt.PlaceholderText = "Søg Navn...";
         }
-
         private void sælgereRegistrerKnap_Click(object sender, EventArgs e)
         {
             FormTilføjSælger formTilføjSælger = new FormTilføjSælger();

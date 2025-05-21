@@ -29,14 +29,16 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            estimatePriceKnap = new Button();
+            opretBoligCancelButton = new Button();
+            opretBoligOpretButton = new Button();
             byggeDatoDatePicker = new DateTimePicker();
             opretBoligRegionComboBox = new ComboBox();
             opretBoligStatusComboBox = new ComboBox();
             boligOprettelseBoligtypeComboBox = new ComboBox();
             boligOprettelseSælgerComboBox = new ComboBox();
             label1 = new Label();
-            opretBoligOpretButton = new Button();
-            opretBoligCancelButton = new Button();
             opretBoligStatusLabel = new Label();
             opretBoligEnergimærkeLabel = new Label();
             opretBoligByggedatoLabel = new Label();
@@ -59,19 +61,19 @@
             boligOprettelseSælgerLabel = new Label();
             boligOprettelseBoligPrisTextbox = new TextBox();
             panel1.SuspendLayout();
+            tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(255, 246, 218);
+            panel1.Controls.Add(tableLayoutPanel1);
             panel1.Controls.Add(byggeDatoDatePicker);
             panel1.Controls.Add(opretBoligRegionComboBox);
             panel1.Controls.Add(opretBoligStatusComboBox);
             panel1.Controls.Add(boligOprettelseBoligtypeComboBox);
             panel1.Controls.Add(boligOprettelseSælgerComboBox);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(opretBoligOpretButton);
-            panel1.Controls.Add(opretBoligCancelButton);
             panel1.Controls.Add(opretBoligStatusLabel);
             panel1.Controls.Add(opretBoligEnergimærkeLabel);
             panel1.Controls.Add(opretBoligByggedatoLabel);
@@ -99,8 +101,61 @@
             panel1.Size = new Size(507, 606);
             panel1.TabIndex = 0;
             // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.ColumnCount = 3;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.54978F));
+            tableLayoutPanel1.Controls.Add(estimatePriceKnap, 1, 0);
+            tableLayoutPanel1.Controls.Add(opretBoligCancelButton, 0, 0);
+            tableLayoutPanel1.Controls.Add(opretBoligOpretButton, 2, 0);
+            tableLayoutPanel1.Location = new Point(22, 522);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Size = new Size(462, 62);
+            tableLayoutPanel1.TabIndex = 34;
+            // 
+            // estimatePriceKnap
+            // 
+            estimatePriceKnap.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            estimatePriceKnap.BackColor = Color.Gold;
+            estimatePriceKnap.Location = new Point(156, 3);
+            estimatePriceKnap.Name = "estimatePriceKnap";
+            estimatePriceKnap.Size = new Size(147, 54);
+            estimatePriceKnap.TabIndex = 28;
+            estimatePriceKnap.Text = "Estimer pris";
+            estimatePriceKnap.UseVisualStyleBackColor = false;
+            estimatePriceKnap.Click += estimatePriceKnap_Click;
+            // 
+            // opretBoligCancelButton
+            // 
+            opretBoligCancelButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            opretBoligCancelButton.BackColor = Color.FromArgb(255, 100, 100);
+            opretBoligCancelButton.Location = new Point(3, 3);
+            opretBoligCancelButton.Name = "opretBoligCancelButton";
+            opretBoligCancelButton.Size = new Size(147, 54);
+            opretBoligCancelButton.TabIndex = 26;
+            opretBoligCancelButton.Text = "Annuller";
+            opretBoligCancelButton.UseVisualStyleBackColor = false;
+            opretBoligCancelButton.Click += opretBoligCancelButton_Click;
+            // 
+            // opretBoligOpretButton
+            // 
+            opretBoligOpretButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            opretBoligOpretButton.BackColor = Color.FromArgb(45, 199, 92);
+            opretBoligOpretButton.Location = new Point(309, 3);
+            opretBoligOpretButton.Name = "opretBoligOpretButton";
+            opretBoligOpretButton.Size = new Size(150, 54);
+            opretBoligOpretButton.TabIndex = 27;
+            opretBoligOpretButton.Text = "Opret";
+            opretBoligOpretButton.UseVisualStyleBackColor = false;
+            opretBoligOpretButton.Click += opretBoligOpretButton_Click;
+            // 
             // byggeDatoDatePicker
             // 
+            byggeDatoDatePicker.Format = DateTimePickerFormat.Short;
             byggeDatoDatePicker.Location = new Point(282, 353);
             byggeDatoDatePicker.Name = "byggeDatoDatePicker";
             byggeDatoDatePicker.Size = new Size(200, 32);
@@ -126,6 +181,7 @@
             // 
             // boligOprettelseBoligtypeComboBox
             // 
+            boligOprettelseBoligtypeComboBox.BackColor = SystemColors.Window;
             boligOprettelseBoligtypeComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             boligOprettelseBoligtypeComboBox.FormattingEnabled = true;
             boligOprettelseBoligtypeComboBox.Location = new Point(282, 288);
@@ -154,28 +210,6 @@
             label1.Size = new Size(257, 30);
             label1.TabIndex = 28;
             label1.Text = "Boligoprettelsesformular";
-            // 
-            // opretBoligOpretButton
-            // 
-            opretBoligOpretButton.BackColor = Color.FromArgb(45, 199, 92);
-            opretBoligOpretButton.Location = new Point(317, 522);
-            opretBoligOpretButton.Name = "opretBoligOpretButton";
-            opretBoligOpretButton.Size = new Size(109, 54);
-            opretBoligOpretButton.TabIndex = 27;
-            opretBoligOpretButton.Text = "Opret";
-            opretBoligOpretButton.UseVisualStyleBackColor = false;
-            opretBoligOpretButton.Click += opretBoligOpretButton_Click;
-            // 
-            // opretBoligCancelButton
-            // 
-            opretBoligCancelButton.BackColor = Color.FromArgb(255, 100, 100);
-            opretBoligCancelButton.Location = new Point(72, 522);
-            opretBoligCancelButton.Name = "opretBoligCancelButton";
-            opretBoligCancelButton.Size = new Size(109, 54);
-            opretBoligCancelButton.TabIndex = 26;
-            opretBoligCancelButton.Text = "Annuller";
-            opretBoligCancelButton.UseVisualStyleBackColor = false;
-            opretBoligCancelButton.Click += opretBoligCancelButton_Click;
             // 
             // opretBoligStatusLabel
             // 
@@ -325,6 +359,7 @@
             opretBoligGrundarealTextbox.Name = "opretBoligGrundarealTextbox";
             opretBoligGrundarealTextbox.Size = new Size(85, 32);
             opretBoligGrundarealTextbox.TabIndex = 6;
+            opretBoligGrundarealTextbox.TextChanged += requiredField_TextChanged;
             opretBoligGrundarealTextbox.KeyPress += enforceInputIsNumber__Keypress;
             // 
             // opretBoligBoligarealTextbox
@@ -333,6 +368,7 @@
             opretBoligBoligarealTextbox.Name = "opretBoligBoligarealTextbox";
             opretBoligBoligarealTextbox.Size = new Size(85, 32);
             opretBoligBoligarealTextbox.TabIndex = 5;
+            opretBoligBoligarealTextbox.TextChanged += requiredField_TextChanged;
             opretBoligBoligarealTextbox.KeyPress += enforceInputIsNumber__Keypress;
             // 
             // opretBoligAdresseTextbox
@@ -388,6 +424,7 @@
             Text = "BoligRegistration";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            tableLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -423,5 +460,7 @@
         private ComboBox opretBoligStatusComboBox;
         private ComboBox boligOprettelseBoligtypeComboBox;
         private DateTimePicker byggeDatoDatePicker;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Button estimatePriceKnap;
     }
 }

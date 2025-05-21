@@ -11,8 +11,12 @@ namespace Semester_Projekt_1
         public Login()
         {
             InitializeComponent();
+            this.FormClosed += Close_Program;
         }
-
+        private void Close_Program(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
         private void Login_Load(object sender, EventArgs e) // dette er selve formen
         {
 

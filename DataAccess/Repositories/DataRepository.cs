@@ -15,11 +15,11 @@ namespace DataAccess.Repositories
         public DataRepository()
         {
             ///special case for Ruben
-            connectionString = "Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;";
-            
+            //connectionString = "Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;";
+
             /// normal connection string
-            //connectionString = "Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;";
-            
+            connectionString = "Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;";
+
             connection = new SqlConnection(connectionString);
         }
         public Bolig CreateBolig(Bolig bolig)
@@ -248,16 +248,16 @@ namespace DataAccess.Repositories
             connection.Close();
 
         }
-       
-        
-        
+
+
+
         public void TilføjSalg(Salg salg)
         {
             //Oprettelse af salg i Database
-        string query = "INSERT INTO Salg (KøberID, BoligID, SælgerID, Dato, Beløb) VALUES (@KøberID, @BoligID, @SælgerID,@Dato, @Beløb)";
-        
-        SqlCommand command = connection.CreateCommand();
-        command.CommandText = query;
+            string query = "INSERT INTO Salg (KøberID, BoligID, SælgerID, Dato, Beløb) VALUES (@KøberID, @BoligID, @SælgerID,@Dato, @Beløb)";
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = query;
             command.Parameters.AddWithValue("@KøberID", salg.KøberID);
             command.Parameters.AddWithValue("@BoligID", salg.BoligID);
             command.Parameters.AddWithValue("@SælgerID", salg.SælgerID);
@@ -267,7 +267,7 @@ namespace DataAccess.Repositories
             command.ExecuteNonQuery();
             connection.Close();
         }
-    
+
         public int HentKøberIDDB(string køberCPR)
         {
             int køberID = -1;
@@ -290,7 +290,7 @@ namespace DataAccess.Repositories
                 connection.Close();
                 throw new Exception("Intet matchende CPR-NR for køber fundet");
             }
-            
+
             connection.Close();
             return køberID;
         }
@@ -349,19 +349,19 @@ namespace DataAccess.Repositories
 
 
 
-        public List <string> HentSælgersBoliger(int sælgerID)
+        public List<string> HentSælgersBoliger(int sælgerID)
         {
 
             List<string> søgeResultater = new List<string>();
-            
-            
+
+
             string query = "SELECT Adresse FROM Bolig WHERE SælgerID = @SælgerId";
 
             SqlCommand command = connection.CreateCommand();
             command.CommandText = query;
             command.Parameters.AddWithValue("@SælgerID", sælgerID);
 
-            
+
             connection.Open();
             SqlDataReader reader = command.ExecuteReader();
 
@@ -372,17 +372,17 @@ namespace DataAccess.Repositories
 
             connection.Close();
             return søgeResultater;
-        
+
 
         }
 
-        public void MarkerBoligSolgt (int boligID)
+        public void MarkerBoligSolgt(int boligID)
         { //Opdatering af status på bolig i boligdatabase
             string query = "UPDATE Bolig SET Status = 'Solgt' WHERE BoligID = @BoligID";
 
             SqlCommand command = connection.CreateCommand();
             command.CommandText = query;
-            
+
             command.Parameters.AddWithValue("@BoligID", boligID);
             connection.Open();
             command.ExecuteNonQuery();
@@ -560,12 +560,12 @@ namespace DataAccess.Repositories
                               // Dette kan ses i test siden BoligFilterTest
         }
 
-        public int CountRows(string tabelname, string condition="")
+        public int CountRows(string tabelname, string condition = "")
         {
             string query = $"Select Count(*) From [{tabelname}]";
             if (condition != "")
-                query += " "+condition;
-            using(SqlCommand cmd = new SqlCommand(query, connection))
+                query += " " + condition;
+            using (SqlCommand cmd = new SqlCommand(query, connection))
             {
                 connection.Open();
                 int count = (int)cmd.ExecuteScalar();
@@ -575,7 +575,7 @@ namespace DataAccess.Repositories
         }
         public string GetString(string query)
         {
-            using (SqlCommand cmd = new SqlCommand(query,connection))
+            using (SqlCommand cmd = new SqlCommand(query, connection))
             {
                 connection.Open();
                 object str = cmd.ExecuteScalar();
@@ -603,7 +603,7 @@ namespace DataAccess.Repositories
             }
             return dataTable;
         }
-        public Dictionary<string,List<object>> GetForsideData()
+        public Dictionary<string, List<object>> GetForsideData()
         {
             List<object> piedata = new List<object>()
             {
@@ -692,6 +692,55 @@ namespace DataAccess.Repositories
             }
 
             connection.Close();
+        }
+        public int GetGroundPrice(string boligtype, int grundStørrelse, int boligAreal, int byggeDato)
+        {
+            //string query = "Select Top(100) sum(S.Beløb/B.GrundStørrelse)/count(*) " +
+            //    "from Bolig B left join Salg S on B.BoligID = S.BoligID where B.GrundStørrelse between" +
+            //    $" {grundStørrelse} - 200 and {grundStørrelse} + 200 " +
+            //    $"and B.BoligType = '{boligtype}'" +
+            //    $" AND YEAR(B.ByggeDato) between {byggeDato} - 20 and {byggeDato} + 20" +
+            //    $" and B.BoligAreal between {boligAreal} - 60 and {boligAreal} + 60";
+            string query = @"select sum(S.Beløb/B.GrundStørrelse)/count(*)
+                           from Bolig B
+                           left join Salg S ON B.BoligID = S.BoligID
+                           where B.GrundStørrelse between @grundStørrelseMin AND @grundStørrelseMax
+                           and B.BoligType = @boligType
+                           and YEAR(B.ByggeDato) between @byggeDatoMin and @byggeDatoMax
+                           and B.BoligAreal between @boligArealMin and @boligArealMax;";
+            using (SqlCommand cmd = new SqlCommand(query, connection))
+            {
+                cmd.Parameters.AddWithValue("@grundStørrelseMin", grundStørrelse - 200);
+                cmd.Parameters.AddWithValue("@grundStørrelseMax", grundStørrelse + 200);
+                cmd.Parameters.AddWithValue("@boligType", boligtype);
+                cmd.Parameters.AddWithValue("@byggeDatoMin", byggeDato - 10);
+                cmd.Parameters.AddWithValue("@byggeDatoMax", byggeDato + 10);
+                cmd.Parameters.AddWithValue("@boligArealMin", boligAreal - 60);
+                cmd.Parameters.AddWithValue("@boligArealMax", boligAreal + 60);
+                connection.Open();
+                object result = cmd.ExecuteScalar();
+                connection.Close();
+
+                if (result == DBNull.Value || result == null)
+                {
+                    query = @"select sum(S.Beløb/B.GrundStørrelse)/count(*)
+                           from Bolig B
+                           left join Salg S ON B.BoligID = S.BoligID
+                           and B.BoligType = @boligType1
+                           where B.GrundStørrelse between @grundStørrelseMin1 AND @grundStørrelseMax1;";
+                    cmd.Parameters.AddWithValue("@boligType1", boligtype);
+                    cmd.Parameters.AddWithValue("@grundStørrelseMin1", grundStørrelse - 300);
+                    cmd.Parameters.AddWithValue("@grundStørrelseMax1", grundStørrelse + 300);
+                    connection.Open();
+                    result = cmd.ExecuteScalar();
+                    connection.Close();
+                    if(result == DBNull.Value || result == null)
+                    {
+                        return 0;
+                    }
+                }
+                return Convert.ToInt32(result);
+            }
         }
     }
 }
