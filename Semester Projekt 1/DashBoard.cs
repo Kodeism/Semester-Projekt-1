@@ -204,6 +204,11 @@ namespace Semester_Projekt_1
             BoligRegistration boligRegistration = new BoligRegistration();
             boligRegistration.ShowDialog();
         }
+
+        private void exportData_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

@@ -63,6 +63,16 @@ namespace Semester_Projekt_1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _154838 {
+            get {
+                object obj = ResourceManager.GetObject("154838", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _8503b364be6ba9825ae617c947fa5280 {
             get {
                 object obj = ResourceManager.GetObject("8503b364be6ba9825ae617c947fa5280", resourceCulture);
