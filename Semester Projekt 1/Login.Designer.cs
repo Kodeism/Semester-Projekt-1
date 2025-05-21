@@ -42,6 +42,8 @@
             // 
             // LoginForm
             // 
+            LoginForm.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            LoginForm.AutoSize = true;
             LoginForm.BackColor = Color.FromArgb(255, 246, 218);
             LoginForm.BorderStyle = BorderStyle.FixedSingle;
             LoginForm.Controls.Add(LoginErrorLabelPassword);
@@ -56,6 +58,7 @@
             LoginForm.Margin = new Padding(2, 2, 2, 2);
             LoginForm.Name = "LoginForm";
             LoginForm.Size = new Size(437, 385);
+
             LoginForm.TabIndex = 0;
             // 
             // LoginErrorLabelPassword
@@ -65,6 +68,7 @@
             LoginErrorLabelPassword.Margin = new Padding(2, 0, 2, 0);
             LoginErrorLabelPassword.Name = "LoginErrorLabelPassword";
             LoginErrorLabelPassword.Size = new Size(0, 15);
+
             LoginErrorLabelPassword.TabIndex = 8;
             // 
             // LoginErrorLabelUsername
@@ -89,7 +93,6 @@
             // 
             // PasswordTextBox
             // 
-            PasswordTextBox.Anchor = AnchorStyles.Left;
             PasswordTextBox.Font = new Font("Segoe UI", 16F);
             PasswordTextBox.Location = new Point(46, 218);
             PasswordTextBox.Margin = new Padding(2, 2, 2, 2);
@@ -102,7 +105,6 @@
             // 
             // UsernameTextBox
             // 
-            UsernameTextBox.Anchor = AnchorStyles.Left;
             UsernameTextBox.Font = new Font("Segoe UI", 16F);
             UsernameTextBox.Location = new Point(46, 113);
             UsernameTextBox.Margin = new Padding(2, 2, 2, 2);
@@ -157,11 +159,13 @@
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(2, 2, 2, 2);
             Name = "Login";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             Load += Login_Load;
             LoginForm.ResumeLayout(false);
             LoginForm.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -1,4 +1,4 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
 using DataAccess.Repositories.Contracts;
@@ -12,9 +12,14 @@ namespace DataAccess.Repositories
     {
         private readonly string connectionString;
         private readonly SqlConnection connection;
-        public DataRepository(string connectionString)
+        public DataRepository()
         {
-            this.connectionString = connectionString;
+            ///special case for Ruben
+            connectionString = "Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;";
+            
+            /// normal connection string
+            //connectionString = "Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;";
+            
             connection = new SqlConnection(connectionString);
         }
         public Bolig CreateBolig(Bolig bolig)
@@ -74,6 +79,70 @@ namespace DataAccess.Repositories
             connection.Close();
 
             return bolig;
+        }
+
+        public Bolig GetSingleBolig(int boligID)
+        {
+            SqlCommand sqlCommand = connection.CreateCommand();
+            var sql = """
+                SELECT Bolig.BoligID, Bolig.Pris, Bolig.Adresse, 
+                Bolig.Postnummer, Bolig.ByNavn, Bolig.BoligType, 
+                Bolig.BoligAreal, Bolig.Værelser, Bolig.ByggeDato, 
+                Bolig.GrundStørrelse, Bolig.EnergiMærke,
+                (dbo.Ejendomsmægler.Fornavn + ' ' + dbo.Ejendomsmægler.EfterNavn) AS Ejendomsmægler, 
+                (dbo.Sælger.Fornavn + ' ' + dbo.Sælger.EfterNavn) AS Sælger, Status
+                FROM Bolig
+                INNER JOIN Ejendomsmægler ON Bolig.EjendomsmæglerID = Ejendomsmægler.EjendomsmæglerID
+                INNER JOIN Sælger ON Bolig.SælgerID = Sælger.SælgerID
+                WHERE BoligID = @BoligID
+                """;
+
+            sqlCommand.CommandText = sql;
+            sqlCommand.Parameters.AddWithValue("@BoligID", boligID);
+
+            connection.Open();
+            Bolig bolig;
+            using (var reader = sqlCommand.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    try
+                    {
+
+                        bolig = new Bolig(
+                            reader.GetInt32(reader.GetOrdinal("BoligID")), //ID
+                            reader.GetInt32(reader.GetOrdinal("Pris")), //Pris
+                            reader.GetString(reader.GetOrdinal("Adresse")), //Adresse
+                            reader.GetInt32(reader.GetOrdinal("Postnummer")), //["@Postnummer"]
+                            reader.GetString(reader.GetOrdinal("ByNavn")), //["@ByNavn"]
+                            reader.GetString(reader.GetOrdinal("BoligType")), //["@BoligType"]
+                            reader.GetInt32(reader.GetOrdinal("BoligAreal")), //["@BoligAreal"]
+                            reader.GetInt32(reader.GetOrdinal("Værelser")), //["@Værelser"]
+                            reader.GetDateTime(reader.GetOrdinal("ByggeDato")), //["@ByggeDato"]
+                            reader.GetInt32(reader.GetOrdinal("GrundStørrelse")), //["@GrundStørrelse"]
+                            reader.GetString(reader.GetOrdinal("Ejendomsmægler")), //Ejendomsmægler
+                            reader.GetString(reader.GetOrdinal("Sælger")), //["@SælgerID"]
+                            reader.GetString(reader.GetOrdinal("EnergiMærke")), //["@EnergiMærke"]
+                            reader.GetString(reader.GetOrdinal("Status")) //["@Status"]
+                        );
+
+                        connection.Close();
+                        return bolig;
+                    }
+                    catch (Exception)
+                    {
+                        Debug.WriteLine("Big fail in making bolig");
+                        connection.Close();
+                        throw;
+                    }
+
+                }
+                else
+                {
+                    connection.Close();
+                    throw new Exception("Sql reader unable to read");
+                }
+            }
         }
 
         public Ejendomsmægler CreateEjendomsmægler(Ejendomsmægler ejendomsmægler)
@@ -179,6 +248,152 @@ namespace DataAccess.Repositories
             connection.Close();
 
         }
+       
+        
+        
+        public void TilføjSalg(Salg salg)
+        {
+            //Oprettelse af salg i Database
+        string query = "INSERT INTO Salg (KøberID, BoligID, SælgerID, Dato, Beløb) VALUES (@KøberID, @BoligID, @SælgerID,@Dato, @Beløb)";
+        
+        SqlCommand command = connection.CreateCommand();
+        command.CommandText = query;
+            command.Parameters.AddWithValue("@KøberID", salg.KøberID);
+            command.Parameters.AddWithValue("@BoligID", salg.BoligID);
+            command.Parameters.AddWithValue("@SælgerID", salg.SælgerID);
+            command.Parameters.AddWithValue("@Dato", salg.Dato);
+            command.Parameters.AddWithValue("@Beløb", salg.Beløb);
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+    
+        public int HentKøberIDDB(string køberCPR)
+        {
+            int køberID = -1;
+            string query = "SELECT KøberID FROM Køber WHERE CprNr = @KøberCPR";
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = query;
+            command.Parameters.AddWithValue("@KøberCPR", køberCPR);
+
+
+            connection.Open();
+            object placeholdKøberID = command.ExecuteScalar();
+
+            try
+            {
+                køberID = Convert.ToInt32(placeholdKøberID);
+            }
+            catch
+            {
+                connection.Close();
+                throw new Exception("Intet matchende CPR-NR for køber fundet");
+            }
+            
+            connection.Close();
+            return køberID;
+        }
+        public int HentSælgerIDDB(string CprNummer)
+        {
+            int sælgerID = -1;
+            string query = "SELECT SælgerID FROM Sælger WHERE CprNummer = @CprNummer";
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = query;
+            command.Parameters.AddWithValue("@CprNummer", CprNummer);
+
+
+            connection.Open();
+            object placeholdSælgerID = command.ExecuteScalar();
+
+            try
+            {
+                sælgerID = Convert.ToInt32(placeholdSælgerID);
+            }
+            catch
+            {
+                connection.Close();
+                throw new Exception("Intet matchende CPR-NR for sælger fundet.");
+            }
+
+            connection.Close();
+            return sælgerID;
+        }
+        public int HentBoligIDDB(string adresse)
+        {
+            int boligID = -1;
+            string query = "SELECT BoligID FROM Bolig WHERE Adresse = @Adresse";
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = query;
+            command.Parameters.AddWithValue("@Adresse", adresse);
+
+
+            connection.Open();
+            object placeholdBoligID = command.ExecuteScalar();
+
+            try
+            {
+                boligID = Convert.ToInt32(placeholdBoligID);
+            }
+            catch
+            {
+                connection.Close();
+                throw new Exception("Ingen adresse fundet");
+            }
+
+            connection.Close();
+            return boligID;
+        }
+
+
+
+        public List <string> HentSælgersBoliger(int sælgerID)
+        {
+
+            List<string> søgeResultater = new List<string>();
+            
+            
+            string query = "SELECT Adresse FROM Bolig WHERE SælgerID = @SælgerId";
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = query;
+            command.Parameters.AddWithValue("@SælgerID", sælgerID);
+
+            
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                søgeResultater.Add(reader["Adresse"].ToString());
+            }
+
+            connection.Close();
+            return søgeResultater;
+        
+
+        }
+
+        public void MarkerBoligSolgt (int boligID)
+        { //Opdatering af status på bolig i boligdatabase
+            string query = "UPDATE Bolig SET Status = 'Solgt' WHERE BoligID = @BoligID";
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = query;
+            
+            command.Parameters.AddWithValue("@BoligID", boligID);
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+
+    }
+
+    }
+
+
         public static List<Bolig> SøgMedFilter(SqlConnection connection, BoligFilter boligFilter)
         {
             List<Bolig> boligList = new List<Bolig>();
@@ -203,76 +418,76 @@ namespace DataAccess.Repositories
             // Pris
             if (boligFilter.PrisMin > 0)
             {
-                sql += " AND Pris >= @minPris";
+                sql += " AND Bolig.Pris >= @minPris";
                 command.Parameters.AddWithValue("@minPris", boligFilter.PrisMin);
             }
             if (boligFilter.PrisMax > 0)
             {
-                sql += " AND Pris <= @maxPris";
+                sql += " AND Bolig.Pris <= @maxPris";
                 command.Parameters.AddWithValue("@maxPris", boligFilter.PrisMax);
             }
 
             // BoligAreal
             if (boligFilter.BoligArealMin > 0)
             {
-                sql += " AND BoligAreal >= @minBoligAreal";
+                sql += " AND Bolig.BoligAreal >= @minBoligAreal";
                 command.Parameters.AddWithValue("@minBoligAreal", boligFilter.BoligArealMin);
             }
             if (boligFilter.BoligArealMax > 0)
             {
-                sql += " AND BoligAreal <= @maxBoligAreal";
+                sql += " AND Bolig.BoligAreal <= @maxBoligAreal";
                 command.Parameters.AddWithValue("@maxBoligAreal", boligFilter.BoligArealMax);
             }
 
             // GrundStørrelse
             if (boligFilter.GrundStørrelseMin > 0)
             {
-                sql += " AND GrundStørrelse >= @minGrundAreal";
+                sql += " AND Bolig.GrundStørrelse >= @minGrundAreal";
                 command.Parameters.AddWithValue("@minGrundAreal", boligFilter.GrundStørrelseMin);
             }
             if (boligFilter.GrundStørrelseMax > 0)
             {
-                sql += " AND GrundStørrelse <= @maxGrundAreal";
+                sql += " AND Bolig.GrundStørrelse <= @maxGrundAreal";
                 command.Parameters.AddWithValue("@maxGrundAreal", boligFilter.GrundStørrelseMax);
             }
 
             // Værelser
             if (boligFilter.VærelserMin > 0)
             {
-                sql += " AND Værelser >= @værelserMin";
+                sql += " AND Bolig.Værelser >= @værelserMin";
                 command.Parameters.AddWithValue("@værelserMin", boligFilter.VærelserMin);
             }
             if (boligFilter.VærelserMax > 0)
             {
-                sql += " AND Værelser <= @værelserMax";
+                sql += " AND Bolig.Værelser <= @værelserMax";
                 command.Parameters.AddWithValue("@værelserMax", boligFilter.VærelserMax);
             }
 
             // Adresse
             if (!string.IsNullOrWhiteSpace(boligFilter.Adresse))
             {
-                sql += " AND Adresse LIKE @adresse";
+                sql += " AND Bolig.Adresse LIKE @adresse";
                 command.Parameters.AddWithValue("@adresse", $"%{boligFilter.Adresse}%");
             }
 
             // Postnummer
             if (boligFilter.Postnummer > 0)
             {
-                sql += " AND Postnummer = @postnr";
+                sql += " AND Bolig.Postnummer = @postnr";
                 command.Parameters.AddWithValue("@postnr", boligFilter.Postnummer);
             }
 
             // ByNavn
             if (!string.IsNullOrWhiteSpace(boligFilter.ByNavn))
             {
-                sql += " AND ByNavn LIKE @bynavn";
+                sql += " AND Bolig.ByNavn LIKE @bynavn";
                 command.Parameters.AddWithValue("@bynavn", $"%{boligFilter.ByNavn}%");
             }
 
             // Type
             if (!string.IsNullOrWhiteSpace(boligFilter.Type))
             {
-                sql += " AND BoligType = @type";
+                sql += " AND Bolig.BoligType = @type";
                 command.Parameters.AddWithValue("@type", boligFilter.Type);
             }
 
@@ -300,14 +515,14 @@ namespace DataAccess.Repositories
             // EnergiMærke
             if (!string.IsNullOrWhiteSpace(boligFilter.EnergiMærke))
             {
-                sql += " AND EnergiMærke = @energimærke";
+                sql += " AND Bolig.EnergiMærke = @energimærke";
                 command.Parameters.AddWithValue("@energimærke", boligFilter.EnergiMærke);
             }
 
             // Status
             if (!string.IsNullOrWhiteSpace(boligFilter.Status))
             {
-                sql += " AND Status = @status";
+                sql += " AND Bolig.Status = @status";
                 command.Parameters.AddWithValue("@status", boligFilter.Status);
             }
 
@@ -443,5 +658,59 @@ namespace DataAccess.Repositories
             };
             return data;
         }
+        public static void EjendomsmæglerLogin(SqlConnection connection, string username, string password)
+        {
+
+            SqlCommand command = connection.CreateCommand();
+            var sql = """
+            SELECT Ejendomsmægler.EjendomsmæglerID, 
+            Ejendomsmægler.Fornavn, Ejendomsmægler.EfterNavn, 
+            Ejendomsmægler.Email, Ejendomsmægler.TlfNummer, 
+            Ejendomsmægler.Brugernavn, Ejendomsmægler.Adgangsniveau
+            FROM dbo.Ejendomsmægler
+            WHERE Ejendomsmægler.Brugernavn = @brugernavn
+            AND Ejendomsmægler.Password = @password
+            """;
+            command.CommandText = sql;
+            command.Parameters.AddWithValue("@brugernavn", username);
+            command.Parameters.AddWithValue("@password", password);
+
+
+
+            connection.Open();
+            var reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                SessionManager.EjendomsmæglerId = reader.GetInt32(reader.GetOrdinal("EjendomsmæglerID"));
+                SessionManager.Brugernavn = reader.GetString(reader.GetOrdinal("Brugernavn"));
+                SessionManager.AdgangsNiveau = reader.GetInt32(reader.GetOrdinal("Adgangsniveau"));
+                SessionManager.Fornavn = reader.GetString(reader.GetOrdinal("Fornavn"));
+                SessionManager.Efternavn = reader.GetString(reader.GetOrdinal("Efternavn"));
+                SessionManager.FuldeNavn = SessionManager.Fornavn + " " + SessionManager.Efternavn;
+                for (int i = 0; i < reader.FieldCount; i++)
+                {
+                    string columnName = reader.GetName(i);
+                    object value = reader.GetValue(i);
+                    Debug.WriteLine($"{columnName}: {value}");
+                }
+            }
+
+            connection.Close();
+        }
     }
 }
+//// ByNavn
+//if (!string.IsNullOrWhiteSpace(boligFilter.ByNavn))
+//{
+//    sql += " AND ByNavn LIKE @bynavn";
+//    command.Parameters.AddWithValue("@bynavn", $"%{boligFilter.ByNavn}%");
+//}
+
+//// Type
+//if (!string.IsNullOrWhiteSpace(boligFilter.Type))
+//{
+//    sql += " AND BoligType = @type";
+//    command.Parameters.AddWithValue("@type", boligFilter.Type);
+//}
+

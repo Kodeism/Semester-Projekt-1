@@ -1,4 +1,5 @@
 using DataAccess.Repositories;
+using Microsoft.VisualBasic;
 using Models;
 
 namespace BusineesLogic
@@ -9,10 +10,9 @@ namespace BusineesLogic
         {
             Sælger sælger = new Sælger(navn, efternavn, tlfNummer, email, cprNr, adresse);
 
-            DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; TrustServerCertificate = True;");
+            DataRepository testDR = new DataRepository();
             testDR.TilføjSælger(sælger);
         }
-
 
     }
     public class KøberFunktioner
@@ -21,41 +21,41 @@ namespace BusineesLogic
         {
             Køber køber = new Køber(navn, efternavn, tlfNummer, email, prisklasse, boligtype, søgeområde, cprNr, adresse, køberinfo, grundStørrelse, boligStørrelse, værelser);
 
-            DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; TrustServerCertificate = True;");
+            DataRepository testDR = new DataRepository();
             testDR.CreateKøber(køber);
         }
     }
-    public class TryLogin
-    {
-        public bool login(string username, string password)
-        {
-            // kode som laver et login query her
-            // returner enten true eller false ved loginforsøg
-            return true; // for nu er det altid true, men der skal tilføjes en aktuel query her
-        }
-
-    }
     public class ForsideLogic
     {
-        private readonly DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; TrustServerCertificate = True;");
+        private readonly DataRepository testDR = new DataRepository();
         public Dictionary<string, List<object>> Data { get; set; }
         public ForsideLogic()
         {
             Data = testDR.GetForsideData();
         }
     }
-    public class HousingFilter
-    {
-        public string? MinPrice { get; set; }
-        public string? MaxPrice { get; set; }
 
-        public static void ApplyFilter(List<string> itemList)
+    public class SolgtFunktion
+    {
+        public void ErklærSolgt(string køberCPR, string adresse, DateOnly dato, int beløb,string sælgerCPR)
         {
-            foreach (var item in itemList)
-            {
-                // Debug.WriteLine(item);
-                // Tilføj til en where statement i query om søgning i boligliste
-            }
+            DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; TrustServerCertificate = True;");
+            //Opretter ny solgt bolig i Solgt tabellen i databasen:
+            Salg salg = new Salg(testDR.HentKøberIDDB(køberCPR), testDR.HentBoligIDDB(adresse),testDR.HentSælgerIDDB(sælgerCPR), dato, beløb);
+            testDR.TilføjSalg(salg);
+            //Opdaterer boligens status i bolig tabellen i databasen:
+            testDR.MarkerBoligSolgt(testDR.HentBoligIDDB(adresse));
         }
+
+        public List <string> SælgerCprTilAdresse(string sælgerCPR)
+        {
+            DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; TrustServerCertificate = True;");
+            //Skal bruge hentsælgeriddb
+            
+            return testDR.HentSælgersBoliger(testDR.HentSælgerIDDB(sælgerCPR));
+        }
+
     }
+
 }
+

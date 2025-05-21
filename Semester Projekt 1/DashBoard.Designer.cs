@@ -130,6 +130,7 @@
             logUdDBKnap.TabIndex = 1;
             logUdDBKnap.TextAlign = ContentAlignment.MiddleRight;
             logUdDBKnap.UseVisualStyleBackColor = false;
+            logUdDBKnap.Click += logUdDBKnap_Click;
             // 
             // menuDBLayoutPanel
             // 

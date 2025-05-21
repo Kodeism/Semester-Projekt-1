@@ -24,6 +24,27 @@
             Email = email;
         }
     }
+    public static class SessionManager
+    {
+        public static int EjendomsmæglerId { get; set; }
+        public static string Brugernavn { get; set; }
+        public static string Fornavn { get; set; }
+        public static string Efternavn { get; set; }
+        public static string FuldeNavn { get; set; }
+        public static int AdgangsNiveau { get; set; }
+
+        public static bool IsLoggedIn => EjendomsmæglerId != 0;
+
+        public static void Clear()
+        {
+            EjendomsmæglerId = 0;
+            Brugernavn = string.Empty;
+            Fornavn = string.Empty;
+            Efternavn= string.Empty;
+            FuldeNavn = string.Empty;
+            AdgangsNiveau = 0;
+        }
+    }
 
 
 
@@ -223,7 +244,6 @@
                             string energiMærke, string status, string ejendomsmæglerNavn, 
                             string sælgerNavn)
                             /*DateTime byggeDato,*/// byggedato skal ændres til en datetime senere
-                            /*string energiMærke, string status)*/
         {
             PrisMin = prisMin;
             PrisMax = prisMax;
@@ -241,16 +261,7 @@
             Status = status;
             EjendomsmæglerNavn = ejendomsmæglerNavn;
             SælgerNavn = sælgerNavn;
-
-            //Adresse = adresse;
-            //Postnummer = postNummer;
-            //ByNavn = byNavn;
-            //Type = type;
-            ////ByggeDato = byggeDato;
-            //EjendomsmæglerID = ejendomsmæglerID;
-            //SælgerID = sælgerID;
-            //EnergiMærke = energiMærke;
-            //Status = status;
+            //ByggeDato = byggeDato;
         }
         public BoligFilter()
         {
@@ -267,12 +278,14 @@
         //hvem købte boligen
         public int BoligID { get; set; }
         //boligen (som indeholder forign keys for sælgeren og Ejendomsmægleren)
-        public string Dato { get; set; }
+        public int SælgerID { get; set; }
+        public DateOnly Dato { get; set; }
         public int Beløb { get; set; }
-        public Salg(Køber køber, Bolig bolig, string dato, int beløb)
+        public Salg(int køberID, int boligID, int sælgerID,DateOnly dato, int beløb)
         {
-            KøberID = køber.KøberID;
-            BoligID = bolig.BoligID;
+            KøberID = køberID;
+            BoligID = boligID;
+            SælgerID = sælgerID;
             Dato = dato;
             Beløb = beløb;
         }
