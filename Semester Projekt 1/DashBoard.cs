@@ -10,10 +10,6 @@ namespace Semester_Projekt_1
             openPage(new Forside());
             brugerNavnLabel.Text = SessionManager.FuldeNavn;
         }
-        private void closeMenu(FlowLayoutPanel menu)
-        {
-            menu.Height = menu.MinimumSize.Height;
-        }
         internal void openPage(UserControl page)
         {
             screenDBPanel.Controls.Clear();
@@ -24,19 +20,14 @@ namespace Semester_Projekt_1
         {
             openPage(new Forside());
             pageLabel.Text = "Forside";
-            closeMenu(boligDBPanel);
-            closeMenu(personDBPanel);
-            closeMenu(sælgerDBPanel);
-            closeMenu(køberDBPanel);
-            closeMenu(salgDBPanel);
         }
 
         internal void boligDBKnap_Click(object sender, EventArgs e)
         {
             pageLabel.Text = "Boliger";
             openPage(new duoForside(duoForside.Mode.Boliger));
-            var max = boligDBPanel.MaximumSize.Height;
-            var min = boligDBPanel.MinimumSize.Height;
+            var max = boligDBKnap.Height + mineBoligerDBKnap.Height + alleBolgierDBKnap.Height + boligerRegistrerDBKnap.Height;
+            var min = boligDBKnap.Height;
             if (boligDBPanel.Height != max)
             {
                 boligDBPanel.Height = max;
@@ -50,19 +41,21 @@ namespace Semester_Projekt_1
         private void personDBKnap_Click(object sender, EventArgs e)
         {
             pageLabel.Text = "Personer";
-            if (personDBPanel.Height == personDBPanel.MinimumSize.Height)
+            var min = personDBKnap.Height;
+            var maxunder = min + mæglerDBKnap.Height + sælgereDBKnap.Height + køberDBKnap.Height;
+            if (personDBPanel.Height == min)
             {
-                personDBPanel.Height = 141;
+                personDBPanel.Height = maxunder;
             }
-            else if (personDBPanel.Height <= 141)
+            else if (personDBPanel.Height <= maxunder)
             {
-                personDBPanel.Height = personDBPanel.MinimumSize.Height;
+                personDBPanel.Height = min;
             }
-            else if (personDBPanel.Height > 141)
+            else if (personDBPanel.Height > maxunder)
             {
-                personDBPanel.Height = personDBPanel.MinimumSize.Height;
-                sælgerDBPanel.Height = sælgerDBPanel.MinimumSize.Height;
-                køberDBPanel.Height = køberDBPanel.MinimumSize.Height;
+                personDBPanel.Height = min;
+                sælgerDBPanel.Height = sælgereDBKnap.Height;
+                køberDBPanel.Height = køberDBKnap.Height;
             }
             openPage(new PersonForside());
         }
@@ -70,18 +63,18 @@ namespace Semester_Projekt_1
         private void sælgereDBKnap_Click(object sender, EventArgs e)
         {
             pageLabel.Text = "Sælgere";
-            var max = sælgerDBPanel.MaximumSize.Height;
-            var min = sælgerDBPanel.MinimumSize.Height;
+            var max = sælgereDBKnap.Height + mineSælgereDBKnap.Height + alleSælgereDBKnap.Height + registrerDBKnap.Height;
+            var min = sælgereDBKnap.Height;
             var dif = max - min;
             if (sælgerDBPanel.Height == max)
             {
-                personDBPanel.Height -= dif;
                 sælgerDBPanel.Height = min;
+                personDBPanel.Height -= dif;
             }
             else if (sælgerDBPanel.Height == min)
             {
-                personDBPanel.Height += dif;
                 sælgerDBPanel.Height = max;
+                personDBPanel.Height += dif;
             }
             openPage(new duoForside(duoForside.Mode.Sælgere));
         }
@@ -89,18 +82,18 @@ namespace Semester_Projekt_1
         private void køberDBKnap_Click(object sender, EventArgs e)
         {
             pageLabel.Text = "Købere";
-            var max = køberDBPanel.MaximumSize.Height;
-            var min = køberDBPanel.MinimumSize.Height;
+            var max = køberDBKnap.Height + mineKøbereDBKnap.Height + alleKøbereDBKnap.Height + registrerKøberDBKnap.Height;
+            var min = køberDBKnap.Height;
             var dif = max - min;
             if (køberDBPanel.Height == max)
             {
-                personDBPanel.Height -= dif;
                 køberDBPanel.Height = min;
+                personDBPanel.Height -= dif;
             }
             else if (køberDBPanel.Height == min)
             {
-                personDBPanel.Height += dif;
                 køberDBPanel.Height = max;
+                personDBPanel.Height += dif;
             }
             openPage(new duoForside(duoForside.Mode.Købere));
         }
@@ -108,8 +101,8 @@ namespace Semester_Projekt_1
         private void salgDBKnap_Click(object sender, EventArgs e)
         {
             pageLabel.Text = "Salg";
-            var max = salgDBPanel.MaximumSize.Height;
-            var min = salgDBPanel.MinimumSize.Height;
+            var max = salgDBKnap.Height + mineSalgDBKnap.Height + alleSalgDBKnap.Height + salgRegistrerDBKnap.Height;
+            var min = salgDBKnap.Height;
             if (salgDBPanel.Height != max)
             {
                 salgDBPanel.Height = max;
@@ -141,7 +134,8 @@ namespace Semester_Projekt_1
 
         private void registrerDBKnap_Click(object sender, EventArgs e)
         {
-
+            FormTilføjSælger formTilføjSælger = new FormTilføjSælger();
+            formTilføjSælger.ShowDialog();
         }
 
         private void mineKøbereDBKnap_Click(object sender, EventArgs e)
@@ -158,7 +152,8 @@ namespace Semester_Projekt_1
 
         private void registrerKøberDBKnap_Click(object sender, EventArgs e)
         {
-
+            TilføjKøber tilKøber = new TilføjKøber();
+            tilKøber.ShowDialog();
         }
 
         private void mineSalgDBKnap_Click(object sender, EventArgs e)
@@ -175,7 +170,8 @@ namespace Semester_Projekt_1
 
         private void salgRegistrerDBKnap_Click(object sender, EventArgs e)
         {
-
+            SaleRegistration saleRegistration = new SaleRegistration();
+            saleRegistration.ShowDialog();
         }
 
         private void mineBoligerDBKnap_Click(object sender, EventArgs e)
@@ -196,6 +192,12 @@ namespace Semester_Projekt_1
             login.Show();
             this.Hide();
             SessionManager.Clear();
+        }
+
+        private void boligerRegistrerDBKnap_Click(object sender, EventArgs e)
+        {
+            BoligRegistration boligRegistration = new BoligRegistration();
+            boligRegistration.ShowDialog();
         }
     }
 }

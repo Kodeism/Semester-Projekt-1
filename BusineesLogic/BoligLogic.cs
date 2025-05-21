@@ -1,5 +1,6 @@
 ﻿using DataAccess.Repositories;
 using Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace BusineesLogic
 {
@@ -64,6 +65,18 @@ namespace BusineesLogic
         public void UpdateBoligPris(Bolig bolig)
         {
             repository.UpdatePris(bolig.BoligID, bolig.Pris);
+        }
+
+        public int PrisEsmator(int boligAreal, int grundAreal, int værelser, string boligType)
+        {
+            int estimation = 0;
+            //find gennemsnits kvadrat meter pris for boligtyperne i danmark
+            //jord koster cirka 20 kr. pr. m2 i danmark
+            //vi kunne også inkludere mængden af badeværelser og soveværelser i vores data.
+            //den endelige formuar ville være noget ligende:
+            //pris = boligAreal * kvadratmeterpris + grundAreal * 20 + værelser * 1000000 + boligType * 1000000
+            //eller noget i den stil
+            return estimation;
         }
     }
 }
