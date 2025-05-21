@@ -191,19 +191,13 @@ namespace Semester_Projekt_1
             BoligRegistration boligRegistration = new BoligRegistration();
             boligRegistration.ShowDialog();
         }
-        
+
         private void logUdDBKnap_Click(object sender, EventArgs e)
         {
             Login login = new Login();
             login.Show();
             this.Hide();
             SessionManager.Clear();
-        }
-
-        private void boligerRegistrerDBKnap_Click(object sender, EventArgs e)
-        {
-            BoligRegistration boligRegistration = new BoligRegistration();
-            boligRegistration.ShowDialog();
         }
     }
 }

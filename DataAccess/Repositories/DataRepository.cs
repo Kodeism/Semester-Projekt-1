@@ -1,9 +1,7 @@
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using System.Data;
 using DataAccess.Repositories.Contracts;
 using Microsoft.Data.SqlClient;
 using Models;
+using System.Data;
 using System.Diagnostics;
 
 namespace DataAccess.Repositories
@@ -15,11 +13,11 @@ namespace DataAccess.Repositories
         public DataRepository()
         {
             ///special case for Ruben
-            connectionString = "Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;";
-            
+            //connectionString = "Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;";
+
             /// normal connection string
-            //connectionString = "Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;";
-            
+            connectionString = "Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;";
+
             connection = new SqlConnection(connectionString);
         }
         public Bolig CreateBolig(Bolig bolig)
@@ -248,16 +246,16 @@ namespace DataAccess.Repositories
             connection.Close();
 
         }
-       
-        
-        
+
+
+
         public void TilføjSalg(Salg salg)
         {
             //Oprettelse af salg i Database
-        string query = "INSERT INTO Salg (KøberID, BoligID, SælgerID, Dato, Beløb) VALUES (@KøberID, @BoligID, @SælgerID,@Dato, @Beløb)";
-        
-        SqlCommand command = connection.CreateCommand();
-        command.CommandText = query;
+            string query = "INSERT INTO Salg (KøberID, BoligID, SælgerID, Dato, Beløb) VALUES (@KøberID, @BoligID, @SælgerID,@Dato, @Beløb)";
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = query;
             command.Parameters.AddWithValue("@KøberID", salg.KøberID);
             command.Parameters.AddWithValue("@BoligID", salg.BoligID);
             command.Parameters.AddWithValue("@SælgerID", salg.SælgerID);
@@ -267,7 +265,7 @@ namespace DataAccess.Repositories
             command.ExecuteNonQuery();
             connection.Close();
         }
-    
+
         public int HentKøberIDDB(string køberCPR)
         {
             int køberID = -1;
@@ -290,7 +288,7 @@ namespace DataAccess.Repositories
                 connection.Close();
                 throw new Exception("Intet matchende CPR-NR for køber fundet");
             }
-            
+
             connection.Close();
             return køberID;
         }
@@ -349,19 +347,19 @@ namespace DataAccess.Repositories
 
 
 
-        public List <string> HentSælgersBoliger(int sælgerID)
+        public List<string> HentSælgersBoliger(int sælgerID)
         {
 
             List<string> søgeResultater = new List<string>();
-            
-            
+
+
             string query = "SELECT Adresse FROM Bolig WHERE SælgerID = @SælgerId";
 
             SqlCommand command = connection.CreateCommand();
             command.CommandText = query;
             command.Parameters.AddWithValue("@SælgerID", sælgerID);
 
-            
+
             connection.Open();
             SqlDataReader reader = command.ExecuteReader();
 
@@ -372,17 +370,17 @@ namespace DataAccess.Repositories
 
             connection.Close();
             return søgeResultater;
-        
+
 
         }
 
-        public void MarkerBoligSolgt (int boligID)
+        public void MarkerBoligSolgt(int boligID)
         { //Opdatering af status på bolig i boligdatabase
             string query = "UPDATE Bolig SET Status = 'Solgt' WHERE BoligID = @BoligID";
 
             SqlCommand command = connection.CreateCommand();
             command.CommandText = query;
-            
+
             command.Parameters.AddWithValue("@BoligID", boligID);
             connection.Open();
             command.ExecuteNonQuery();
@@ -560,12 +558,12 @@ namespace DataAccess.Repositories
                               // Dette kan ses i test siden BoligFilterTest
         }
 
-        public int CountRows(string tabelname, string condition="")
+        public int CountRows(string tabelname, string condition = "")
         {
             string query = $"Select Count(*) From [{tabelname}]";
             if (condition != "")
-                query += " "+condition;
-            using(SqlCommand cmd = new SqlCommand(query, connection))
+                query += " " + condition;
+            using (SqlCommand cmd = new SqlCommand(query, connection))
             {
                 connection.Open();
                 int count = (int)cmd.ExecuteScalar();
@@ -575,7 +573,7 @@ namespace DataAccess.Repositories
         }
         public string GetString(string query)
         {
-            using (SqlCommand cmd = new SqlCommand(query,connection))
+            using (SqlCommand cmd = new SqlCommand(query, connection))
             {
                 connection.Open();
                 object str = cmd.ExecuteScalar();
@@ -603,7 +601,7 @@ namespace DataAccess.Repositories
             }
             return dataTable;
         }
-        public Dictionary<string,List<object>> GetForsideData()
+        public Dictionary<string, List<object>> GetForsideData()
         {
             List<object> piedata = new List<object>()
             {
