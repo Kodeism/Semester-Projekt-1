@@ -389,10 +389,6 @@ namespace DataAccess.Repositories
             connection.Close();
         }
 
-    }
-
-    }
-
 
         public static List<Bolig> SøgMedFilter(SqlConnection connection, BoligFilter boligFilter)
         {
@@ -700,6 +696,7 @@ namespace DataAccess.Repositories
         }
     }
 }
+
 //// ByNavn
 //if (!string.IsNullOrWhiteSpace(boligFilter.ByNavn))
 //{
