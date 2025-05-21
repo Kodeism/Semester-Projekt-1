@@ -2,29 +2,29 @@
 
 namespace Semester_Projekt_1
 {
-    public partial class SletSælger : Form
+    public partial class SletBolig : Form
     {
-        public SletSælger()
+        public SletBolig()
         {
             InitializeComponent();
         }
 
-        private void anullerButton_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void sletButton_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             string connectionString = "Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; TrustServerCertificate = True;";
 
-            if (int.TryParse(idTextbox.Text.Trim(), out int userIdToDelete))
+            if (int.TryParse(idTextbox.Text.Trim(), out int boligIdToDelete))
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    string query = "DELETE FROM Sælger WHERE SælgerID = @SælgerID";
+                    string query = "DELETE FROM Bolig WHERE BoligID = @BoligID";
                     SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@SælgerID", userIdToDelete);
+                    command.Parameters.AddWithValue("@BoligID", boligIdToDelete);
 
                     try
                     {
@@ -33,11 +33,11 @@ namespace Semester_Projekt_1
 
                         if (rowsAffected > 0)
                         {
-                            MessageBox.Show("Sælger slettet succesfuldt.");
+                            MessageBox.Show("Bolig slettet succesfuldt.");
                         }
                         else
                         {
-                            MessageBox.Show("Ingen sælgere fundet med det ID.");
+                            MessageBox.Show("Ingen bolig fundet med det ID.");
                         }
                     }
                     catch (Exception ex)
@@ -48,7 +48,7 @@ namespace Semester_Projekt_1
             }
             else
             {
-                MessageBox.Show("Venligst indtast gyldigt sælger ID.");
+                MessageBox.Show("Venligst indtast gyldigt BoligID.");
             }
         }
     }
