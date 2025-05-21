@@ -11,11 +11,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Models\Models.csproj" />
+    <Folder Include="Sql scripts\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Sql scripts\" />
+    <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>
 
 </Project>
