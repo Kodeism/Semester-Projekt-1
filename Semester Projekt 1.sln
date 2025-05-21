@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusineesLogic", "BusineesLogic\BusineesLogic.csproj", "{6DF028C7-E26B-44E5-BFB9-E2680EF8BFBA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{C3C609D9-22C1-44BB-8808-D6FD3C831EC2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4762AE07-BC5C-431B-93B8-FF6491F7C6D0} = {4762AE07-BC5C-431B-93B8-FF6491F7C6D0}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{4762AE07-BC5C-431B-93B8-FF6491F7C6D0}"
 EndProject

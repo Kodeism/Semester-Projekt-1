@@ -1,4 +1,3 @@
-using System.Drawing;
 using DataAccess.Repositories;
 using Microsoft.VisualBasic;
 using Models;
@@ -15,27 +14,25 @@ namespace BusineesLogic
             testDR.TilføjSælger(sælger);
         }
 
-
     }
     public class KøberFunktioner
     {
-        public void TilføjKøber(string navn, string efternavn, string adresse, int tlfNummer, string cprNr, string email, string søgeområde, int prisklasse, string boligtype)
+        public void TilføjKøber(string navn, string efternavn, string adresse, int tlfNummer, string cprNr, string email, string søgeområde, int prisklasse, string boligtype, int? boligStørrelse, int? grundStørrelse, int? værelser, string køberinfo)
         {
-            Køber køber = new Køber(navn, efternavn, tlfNummer, email, prisklasse, boligtype, søgeområde, cprNr, adresse);
+            Køber køber = new Køber(navn, efternavn, tlfNummer, email, prisklasse, boligtype, søgeområde, cprNr, adresse, køberinfo, grundStørrelse, boligStørrelse, værelser);
 
             DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; TrustServerCertificate = True;");
             testDR.CreateKøber(køber);
         }
     }
-    public class TryLogin
+    public class ForsideLogic
     {
-        public bool login(string username, string password)
+        private readonly DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; TrustServerCertificate = True;");
+        public Dictionary<string, List<object>> Data { get; set; }
+        public ForsideLogic()
         {
-            // kode som laver et login query her
-            // returner enten true eller false ved loginforsøg
-            return true; // for nu er det altid true, men der skal tilføjes en aktuel query her
+            Data = testDR.GetForsideData();
         }
-
     }
 
     public class SolgtFunktion
@@ -48,8 +45,6 @@ namespace BusineesLogic
             testDR.TilføjSalg(salg);
             //Opdaterer boligens status i bolig tabellen i databasen:
             testDR.MarkerBoligSolgt(testDR.HentBoligIDDB(adresse));
-
-
         }
 
         public List <string> SælgerCprTilAdresse(string sælgerCPR)
@@ -58,16 +53,9 @@ namespace BusineesLogic
             //Skal bruge hentsælgeriddb
             
             return testDR.HentSælgersBoliger(testDR.HentSælgerIDDB(sælgerCPR));
-           
-
         }
-
-
-
-
 
     }
 
-
-
 }
+

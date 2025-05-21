@@ -1,4 +1,8 @@
 using BusineesLogic;
+using DataAccess.Repositories;
+using Microsoft.Data.SqlClient;
+using Models;
+using System.Diagnostics;
 
 namespace Semester_Projekt_1
 {
@@ -11,6 +15,7 @@ namespace Semester_Projekt_1
 
         private void Login_Load(object sender, EventArgs e) // dette er selve formen
         {
+
             // if user allerede er loggede ind så send automatisk brugeren hen til forsiden
             // if (user == loggedin) { frontPage.Show();
         }
@@ -59,15 +64,24 @@ namespace Semester_Projekt_1
 
             if (validInput)
             {
-                var loginHandler = new TryLogin();
-                bool loginSuccess = loginHandler.login(UsernameTextBox.Text, PasswordTextBox.Text);
-
-                if (loginSuccess)
+                using (SqlConnection conn = new SqlConnection(BoligLogic.GetConnectionString()))
                 {
-                    SaleRegistration saleRegistration = new SaleRegistration();
-                    saleRegistration.Show(); // Dette skal skiftes om til forsiden når den bliver lavet
-                    this.Hide();
+                    DataRepository.EjendomsmæglerLogin(conn, UsernameTextBox.Text, PasswordTextBox.Text);
+                    Debug.WriteLine(UsernameTextBox.Text);
+                    Debug.WriteLine(PasswordTextBox.Text);
+                    if (SessionManager.IsLoggedIn)
+                    {
+                        DashBoard dashBoard = new DashBoard();
+                        dashBoard.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        // show login error
+                    }
+
                 }
+
             }
 
         }

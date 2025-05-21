@@ -81,6 +81,7 @@ namespace Semester_Projekt_1
             string søgeområde = søgeområdeTextbox.Text;
             søgeområde.Trim();
             string cprNummer = cprnummerTextbox.Text;
+
             cprNummer.Trim();
             if (string.IsNullOrEmpty(cprNummer))
             {
@@ -94,6 +95,37 @@ namespace Semester_Projekt_1
             }
 
 
+            string yderligereInfo = yderligereinfoTextBox.Text;
+            int boligStørrelse = 0;
+            try
+            {
+                boligStørrelse = int.Parse(boligstørrelseTextbox.Text);
+            }
+            catch
+            {
+                boligstørrelseTextbox.BackColor = Color.Red;
+                MessageBox.Show("Indtast kun tal i Boligstørrelseboksen");
+            }
+            int grundStørrelse = 0;
+            try
+            {
+                grundStørrelse = int.Parse(grundstørrelseTextbox.Text);
+            }
+            catch
+            {
+                grundstørrelseTextbox.BackColor = Color.Red;
+                MessageBox.Show("Indtast kun tal i Grundstørrelseboksen");
+            }
+            int værelser = 0;
+            try
+            {
+                værelser = int.Parse(værelserTextbox.Text);
+            }
+            catch
+            {
+                værelserTextbox.BackColor = Color.Red;
+                MessageBox.Show("Indtast kun tal i Værelserboksen");
+            }
 
             string email = emailTextbox.Text;
             email.Trim();
@@ -106,8 +138,9 @@ namespace Semester_Projekt_1
             KøberFunktioner køberFunktion = new KøberFunktioner();
             try
             {
-                køberFunktion.TilføjKøber(navn, efternavn, adresse, tlfNummer, cprNummer, email, søgeområde, prisklasse, boligtype);
+                køberFunktion.TilføjKøber(navn, efternavn, adresse, tlfNummer, cprNummer, email, søgeområde, prisklasse, boligtype, boligStørrelse, grundStørrelse, værelser, yderligereInfo);
                 MessageBox.Show("Køber er oprettet.");
+                this.Close();
             }
             catch
             {
