@@ -227,10 +227,8 @@
             BackColor = Color.FromArgb(255, 246, 182);
             ClientSize = new Size(589, 388);
             Controls.Add(panel1);
-
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Margin = new Padding(1, 1, 1, 1);
-
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "FormTilføjSælger";
             Text = "FormTilføjSælger";
             Load += FormTilføjSælger_Load;

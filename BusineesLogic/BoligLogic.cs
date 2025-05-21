@@ -1,5 +1,6 @@
 ﻿using DataAccess.Repositories;
 using Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace BusineesLogic
 {
@@ -64,7 +65,6 @@ namespace BusineesLogic
         public void UpdateBoligPris(Bolig bolig)
         {
             repository.UpdatePris(bolig.BoligID, bolig.Pris);
-
         }
 
         public int PrisEsmator(int boligAreal, int grundAreal, int værelser, string boligType)

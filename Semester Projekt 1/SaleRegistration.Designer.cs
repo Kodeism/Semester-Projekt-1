@@ -59,110 +59,45 @@
             SaleFormPanel.Controls.Add(SaleBuyerCPRLabel);
             SaleFormPanel.Controls.Add(SaleNameLabel);
             SaleFormPanel.Controls.Add(SaleRegistrationForm);
-            SaleFormPanel.Location = new Point(88, 32);
-            SaleFormPanel.Margin = new Padding(2, 2, 2, 2);
+            SaleFormPanel.Controls.Add(SaleDateTextBox);
+            SaleFormPanel.Location = new Point(212, 88);
+            SaleFormPanel.Margin = new Padding(5);
             SaleFormPanel.Name = "SaleFormPanel";
-            SaleFormPanel.Size = new Size(386, 385);
+            SaleFormPanel.Size = new Size(935, 1128);
             SaleFormPanel.TabIndex = 0;
             SaleFormPanel.Paint += SaleRegistrationForm_Paint;
-            // 
-            // SaleMenuPanel
-            // 
-            SaleMenuPanel.BorderStyle = BorderStyle.FixedSingle;
-            SaleMenuPanel.Controls.Add(SaleFormExit);
-            SaleMenuPanel.Controls.Add(SaleFormularLabel);
-            SaleMenuPanel.Location = new Point(-1, -1);
-            SaleMenuPanel.Margin = new Padding(2, 2, 2, 2);
-            SaleMenuPanel.Name = "SaleMenuPanel";
-            SaleMenuPanel.Size = new Size(386, 24);
-            SaleMenuPanel.TabIndex = 10;
-            // 
-            // SaleFormExit
-            // 
-            SaleFormExit.BackColor = Color.FromArgb(255, 100, 100);
-            SaleFormExit.FlatStyle = FlatStyle.Flat;
-            SaleFormExit.Location = new Point(363, -3);
-            SaleFormExit.Margin = new Padding(2, 2, 2, 2);
-            SaleFormExit.Name = "SaleFormExit";
-            SaleFormExit.Size = new Size(29, 31);
-            SaleFormExit.TabIndex = 1;
-            SaleFormExit.Text = "X";
-            SaleFormExit.UseVisualStyleBackColor = false;
-            // 
-            // SaleFormularLabel
-            // 
-            SaleFormularLabel.AutoSize = true;
-            SaleFormularLabel.Font = new Font("Segoe UI", 12F);
-            SaleFormularLabel.Location = new Point(133, 0);
-            SaleFormularLabel.Margin = new Padding(2, 0, 2, 0);
-            SaleFormularLabel.Name = "SaleFormularLabel";
-            SaleFormularLabel.Size = new Size(115, 21);
-            SaleFormularLabel.TabIndex = 0;
-            SaleFormularLabel.Text = "Salgs Formular";
-            // 
-            // SaleDateTextBox
-            // 
-            SaleDateTextBox.Font = new Font("Segoe UI", 18F);
-            SaleDateTextBox.Location = new Point(21, 263);
-            SaleDateTextBox.Margin = new Padding(2, 2, 2, 2);
-            SaleDateTextBox.MinimumSize = new Size(4, 58);
-            SaleDateTextBox.Name = "SaleDateTextBox";
-            SaleDateTextBox.Size = new Size(348, 39);
-            SaleDateTextBox.TabIndex = 9;
             // 
             // SalePriceTextBox
             // 
             SalePriceTextBox.Font = new Font("Segoe UI", 18F);
-            SalePriceTextBox.Location = new Point(21, 194);
-            SalePriceTextBox.Margin = new Padding(2, 2, 2, 2);
+            SalePriceTextBox.ForeColor = SystemColors.Desktop;
+            SalePriceTextBox.Location = new Point(51, 655);
+            SalePriceTextBox.Margin = new Padding(5);
             SalePriceTextBox.MinimumSize = new Size(4, 58);
             SalePriceTextBox.Name = "SalePriceTextBox";
-            SalePriceTextBox.Size = new Size(348, 39);
+            SalePriceTextBox.Size = new Size(839, 87);
             SalePriceTextBox.TabIndex = 8;
             // 
             // SaleBuyerCPRTextBox
             // 
             SaleBuyerCPRTextBox.Font = new Font("Segoe UI", 18F);
-            SaleBuyerCPRTextBox.Location = new Point(21, 125);
-            SaleBuyerCPRTextBox.Margin = new Padding(2, 2, 2, 2);
+            SaleBuyerCPRTextBox.ForeColor = SystemColors.Desktop;
+            SaleBuyerCPRTextBox.Location = new Point(51, 474);
+            SaleBuyerCPRTextBox.Margin = new Padding(5);
             SaleBuyerCPRTextBox.MinimumSize = new Size(4, 58);
             SaleBuyerCPRTextBox.Name = "SaleBuyerCPRTextBox";
-            SaleBuyerCPRTextBox.Size = new Size(348, 39);
+            SaleBuyerCPRTextBox.Size = new Size(839, 87);
             SaleBuyerCPRTextBox.TabIndex = 7;
-            // 
-            // CreateSaleButton
-            // 
-            CreateSaleButton.BackColor = Color.FromArgb(45, 199, 92);
-            CreateSaleButton.Font = new Font("Segoe UI", 16F);
-            CreateSaleButton.Location = new Point(230, 311);
-            CreateSaleButton.Margin = new Padding(2, 2, 2, 2);
-            CreateSaleButton.Name = "CreateSaleButton";
-            CreateSaleButton.Size = new Size(108, 53);
-            CreateSaleButton.TabIndex = 6;
-            CreateSaleButton.Text = "Opret";
-            CreateSaleButton.UseVisualStyleBackColor = false;
-            // 
-            // CancelSaleButton
-            // 
-            CancelSaleButton.BackColor = Color.FromArgb(255, 100, 100);
-            CancelSaleButton.Font = new Font("Segoe UI", 16F);
-            CancelSaleButton.Location = new Point(45, 311);
-            CancelSaleButton.Margin = new Padding(2, 2, 2, 2);
-            CancelSaleButton.Name = "CancelSaleButton";
-            CancelSaleButton.Size = new Size(109, 54);
-            CancelSaleButton.TabIndex = 5;
-            CancelSaleButton.Text = "Annuller";
-            CancelSaleButton.UseVisualStyleBackColor = false;
             // 
             // SaleDateLabel
             // 
             SaleDateLabel.AutoSize = true;
             SaleDateLabel.BackColor = Color.Transparent;
             SaleDateLabel.Font = new Font("Segoe UI", 16F);
-            SaleDateLabel.Location = new Point(18, 234);
-            SaleDateLabel.Margin = new Padding(2, 0, 2, 0);
+            SaleDateLabel.Location = new Point(42, 754);
+            SaleDateLabel.Margin = new Padding(5, 0, 5, 0);
             SaleDateLabel.Name = "SaleDateLabel";
-            SaleDateLabel.Size = new Size(107, 30);
+            SaleDateLabel.Size = new Size(263, 72);
             SaleDateLabel.TabIndex = 4;
             SaleDateLabel.Text = "Salgsdato";
             // 
@@ -170,10 +105,10 @@
             // 
             SalePriceLabel.AutoSize = true;
             SalePriceLabel.Font = new Font("Segoe UI", 16F);
-            SalePriceLabel.Location = new Point(18, 165);
-            SalePriceLabel.Margin = new Padding(2, 0, 2, 0);
+            SalePriceLabel.Location = new Point(42, 577);
+            SalePriceLabel.Margin = new Padding(5, 0, 5, 0);
             SalePriceLabel.Name = "SalePriceLabel";
-            SalePriceLabel.Size = new Size(184, 30);
+            SalePriceLabel.Size = new Size(454, 72);
             SalePriceLabel.TabIndex = 3;
             SalePriceLabel.Text = "Endelige salgspris";
             // 
@@ -181,21 +116,21 @@
             // 
             SaleBuyerCPRLabel.AutoSize = true;
             SaleBuyerCPRLabel.Font = new Font("Segoe UI", 16F);
-            SaleBuyerCPRLabel.Location = new Point(18, 96);
-            SaleBuyerCPRLabel.Margin = new Padding(2, 0, 2, 0);
+            SaleBuyerCPRLabel.Location = new Point(42, 405);
+            SaleBuyerCPRLabel.Margin = new Padding(5, 0, 5, 0);
             SaleBuyerCPRLabel.Name = "SaleBuyerCPRLabel";
-            SaleBuyerCPRLabel.Size = new Size(221, 30);
+            SaleBuyerCPRLabel.Size = new Size(539, 72);
             SaleBuyerCPRLabel.TabIndex = 2;
             SaleBuyerCPRLabel.Text = "Købers CPR-Nummer";
             // 
             // SaleNameLabel
             // 
             SaleNameLabel.AutoSize = true;
-            SaleNameLabel.Font = new Font("Segoe UI", 22F);
-            SaleNameLabel.Location = new Point(18, 34);
-            SaleNameLabel.Margin = new Padding(2, 0, 2, 0);
+            SaleNameLabel.Font = new Font("Segoe UI", 16F);
+            SaleNameLabel.Location = new Point(256, 26);
+            SaleNameLabel.Margin = new Padding(5, 0, 5, 0);
             SaleNameLabel.Name = "SaleNameLabel";
-            SaleNameLabel.Size = new Size(276, 41);
+            SaleNameLabel.Size = new Size(429, 72);
             SaleNameLabel.TabIndex = 1;
             SaleNameLabel.Text = "Salgsregistrering";
             // 

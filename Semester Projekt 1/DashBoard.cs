@@ -42,7 +42,7 @@ namespace Semester_Projekt_1
         {
             pageLabel.Text = "Personer";
             var min = personDBKnap.Height;
-            var maxunder = min + mÃ¦glerDBKnap.Height + sÃ¦lgereDBKnap.Height + kÃ¸berDBKnap.Height;
+            var maxunder = min + mæglerDBKnap.Height + sælgereDBKnap.Height + køberDBKnap.Height;
             if (personDBPanel.Height == min)
             {
                 personDBPanel.Height = maxunder;
@@ -54,48 +54,48 @@ namespace Semester_Projekt_1
             else if (personDBPanel.Height > maxunder)
             {
                 personDBPanel.Height = min;
-                sÃ¦lgerDBPanel.Height = sÃ¦lgereDBKnap.Height;
-                kÃ¸berDBPanel.Height = kÃ¸berDBKnap.Height;
+                sælgerDBPanel.Height = sælgereDBKnap.Height;
+                køberDBPanel.Height = køberDBKnap.Height;
             }
             openPage(new PersonForside());
         }
 
-        private void sÃ¦lgereDBKnap_Click(object sender, EventArgs e)
+        private void sælgereDBKnap_Click(object sender, EventArgs e)
         {
-            pageLabel.Text = "SÃ¦lgere";
-            var max = sÃ¦lgereDBKnap.Height + mineSÃ¦lgereDBKnap.Height + alleSÃ¦lgereDBKnap.Height + registrerDBKnap.Height;
-            var min = sÃ¦lgereDBKnap.Height;
+            pageLabel.Text = "Sælgere";
+            var max = sælgereDBKnap.Height + mineSælgereDBKnap.Height + alleSælgereDBKnap.Height + registrerDBKnap.Height;
+            var min = sælgereDBKnap.Height;
             var dif = max - min;
-            if (sÃ¦lgerDBPanel.Height == max)
+            if (sælgerDBPanel.Height == max)
             {
-                sÃ¦lgerDBPanel.Height = min;
+                sælgerDBPanel.Height = min;
                 personDBPanel.Height -= dif;
             }
-            else if (sÃ¦lgerDBPanel.Height == min)
+            else if (sælgerDBPanel.Height == min)
             {
-                sÃ¦lgerDBPanel.Height = max;
+                sælgerDBPanel.Height = max;
                 personDBPanel.Height += dif;
             }
-            openPage(new duoForside(duoForside.Mode.SÃ¦lgere));
+            openPage(new duoForside(duoForside.Mode.Sælgere));
         }
 
-        private void kÃ¸berDBKnap_Click(object sender, EventArgs e)
+        private void køberDBKnap_Click(object sender, EventArgs e)
         {
-            pageLabel.Text = "KÃ¸bere";
-            var max = kÃ¸berDBKnap.Height + mineKÃ¸bereDBKnap.Height + alleKÃ¸bereDBKnap.Height + registrerKÃ¸berDBKnap.Height;
-            var min = kÃ¸berDBKnap.Height;
+            pageLabel.Text = "Købere";
+            var max = køberDBKnap.Height + mineKøbereDBKnap.Height + alleKøbereDBKnap.Height + registrerKøberDBKnap.Height;
+            var min = køberDBKnap.Height;
             var dif = max - min;
-            if (kÃ¸berDBPanel.Height == max)
+            if (køberDBPanel.Height == max)
             {
-                kÃ¸berDBPanel.Height = min;
+                køberDBPanel.Height = min;
                 personDBPanel.Height -= dif;
             }
-            else if (kÃ¸berDBPanel.Height == min)
+            else if (køberDBPanel.Height == min)
             {
-                kÃ¸berDBPanel.Height = max;
+                køberDBPanel.Height = max;
                 personDBPanel.Height += dif;
             }
-            openPage(new duoForside(duoForside.Mode.KÃ¸bere));
+            openPage(new duoForside(duoForside.Mode.Købere));
         }
 
         private void salgDBKnap_Click(object sender, EventArgs e)
@@ -114,46 +114,46 @@ namespace Semester_Projekt_1
             openPage(new duoForside(duoForside.Mode.Salg));
         }
 
-        private void mÃ¦glerDBKnap_Click(object sender, EventArgs e)
+        private void mæglerDBKnap_Click(object sender, EventArgs e)
         {
-            pageLabel.Text = "MÃ¦glere";
-            openPage(new MÃ¦glerSide());
+            pageLabel.Text = "Mæglere";
+            openPage(new MæglerSide());
         }
 
-        private void mineSÃ¦lgereDBKnap_Click(object sender, EventArgs e)
+        private void mineSælgereDBKnap_Click(object sender, EventArgs e)
         {
-            pageLabel.Text = "Mine SÃ¦lgere";
+            pageLabel.Text = "Mine Sælgere";
             openPage(new UniForside(UniForside.Mode.MineS));
         }
 
-        private void alleSÃ¦lgereDBKnap_Click(object sender, EventArgs e)
+        private void alleSælgereDBKnap_Click(object sender, EventArgs e)
         {
-            pageLabel.Text = "Alle SÃ¦lgere";
+            pageLabel.Text = "Alle Sælgere";
             openPage(new UniForside(UniForside.Mode.AlleS));
         }
 
         private void registrerDBKnap_Click(object sender, EventArgs e)
         {
-            FormTilfÃ¸jSÃ¦lger formTilfÃ¸jSÃ¦lger = new FormTilfÃ¸jSÃ¦lger();
-            formTilfÃ¸jSÃ¦lger.ShowDialog();
+            FormTilføjSælger formTilføjSælger = new FormTilføjSælger();
+            formTilføjSælger.ShowDialog();
         }
 
-        private void mineKÃ¸bereDBKnap_Click(object sender, EventArgs e)
+        private void mineKøbereDBKnap_Click(object sender, EventArgs e)
         {
-            pageLabel.Text = "Mine KÃ¸bere";
+            pageLabel.Text = "Mine Købere";
             openPage(new UniForside(UniForside.Mode.MineK));
         }
 
-        private void alleKÃ¸bereDBKnap_Click(object sender, EventArgs e)
+        private void alleKøbereDBKnap_Click(object sender, EventArgs e)
         {
-            pageLabel.Text = "Alle KÃ¸bere";
+            pageLabel.Text = "Alle Købere";
             openPage(new UniForside(UniForside.Mode.AlleK));
         }
 
-        private void registrerKÃ¸berDBKnap_Click(object sender, EventArgs e)
+        private void registrerKøberDBKnap_Click(object sender, EventArgs e)
         {
-            TilfÃ¸jKÃ¸ber tilKÃ¸ber = new TilfÃ¸jKÃ¸ber();
-            tilKÃ¸ber.ShowDialog();
+            TilføjKøber tilKøber = new TilføjKøber();
+            tilKøber.ShowDialog();
         }
 
         private void mineSalgDBKnap_Click(object sender, EventArgs e)
@@ -186,18 +186,18 @@ namespace Semester_Projekt_1
             openPage(new UniForside(UniForside.Mode.AlleB));
         }
 
-        private void boligerRegistrerDBKnap_Click(object sender, EventArgs e)
-        {
-            BoligRegistration boligRegistration = new BoligRegistration();
-            boligRegistration.ShowDialog();
-        }
-
         private void logUdDBKnap_Click(object sender, EventArgs e)
         {
             Login login = new Login();
             login.Show();
             this.Hide();
             SessionManager.Clear();
+        }
+
+        private void boligerRegistrerDBKnap_Click(object sender, EventArgs e)
+        {
+            BoligRegistration boligRegistration = new BoligRegistration();
+            boligRegistration.ShowDialog();
         }
     }
 }
