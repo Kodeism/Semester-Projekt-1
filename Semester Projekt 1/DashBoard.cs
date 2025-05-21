@@ -1,3 +1,5 @@
+using Models;
+
 namespace Semester_Projekt_1
 {
     public partial class DashBoard : Form
@@ -6,7 +8,7 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
             openPage(new Forside());
-            screenDBPanel.AutoScrollPosition = new Point(0, 0);
+            brugerNavnLabel.Text = SessionManager.FuldeNavn;
         }
         private void closeMenu(FlowLayoutPanel menu)
         {
@@ -32,6 +34,7 @@ namespace Semester_Projekt_1
         internal void boligDBKnap_Click(object sender, EventArgs e)
         {
             pageLabel.Text = "Boliger";
+            openPage(new duoForside(duoForside.Mode.Boliger));
             var max = boligDBPanel.MaximumSize.Height;
             var min = boligDBPanel.MinimumSize.Height;
             if (boligDBPanel.Height != max)
@@ -61,6 +64,7 @@ namespace Semester_Projekt_1
                 sælgerDBPanel.Height = sælgerDBPanel.MinimumSize.Height;
                 køberDBPanel.Height = køberDBPanel.MinimumSize.Height;
             }
+            openPage(new PersonForside());
         }
 
         private void sælgereDBKnap_Click(object sender, EventArgs e)
@@ -79,6 +83,7 @@ namespace Semester_Projekt_1
                 personDBPanel.Height += dif;
                 sælgerDBPanel.Height = max;
             }
+            openPage(new duoForside(duoForside.Mode.Sælgere));
         }
 
         private void køberDBKnap_Click(object sender, EventArgs e)
@@ -97,6 +102,7 @@ namespace Semester_Projekt_1
                 personDBPanel.Height += dif;
                 køberDBPanel.Height = max;
             }
+            openPage(new duoForside(duoForside.Mode.Købere));
         }
 
         private void salgDBKnap_Click(object sender, EventArgs e)
@@ -112,21 +118,25 @@ namespace Semester_Projekt_1
             {
                 salgDBPanel.Height = min;
             }
+            openPage(new duoForside(duoForside.Mode.Salg));
         }
 
         private void mæglerDBKnap_Click(object sender, EventArgs e)
         {
             pageLabel.Text = "Mæglere";
+            openPage(new MæglerSide());
         }
 
         private void mineSælgereDBKnap_Click(object sender, EventArgs e)
         {
             pageLabel.Text = "Mine Sælgere";
+            openPage(new UniForside(UniForside.Mode.MineS));
         }
 
         private void alleSælgereDBKnap_Click(object sender, EventArgs e)
         {
             pageLabel.Text = "Alle Sælgere";
+            openPage(new UniForside(UniForside.Mode.AlleS));
         }
 
         private void registrerDBKnap_Click(object sender, EventArgs e)
@@ -137,11 +147,13 @@ namespace Semester_Projekt_1
         private void mineKøbereDBKnap_Click(object sender, EventArgs e)
         {
             pageLabel.Text = "Mine Købere";
+            openPage(new UniForside(UniForside.Mode.MineK));
         }
 
         private void alleKøbereDBKnap_Click(object sender, EventArgs e)
         {
             pageLabel.Text = "Alle Købere";
+            openPage(new UniForside(UniForside.Mode.AlleK));
         }
 
         private void registrerKøberDBKnap_Click(object sender, EventArgs e)
@@ -152,11 +164,13 @@ namespace Semester_Projekt_1
         private void mineSalgDBKnap_Click(object sender, EventArgs e)
         {
             pageLabel.Text = "Mine Salg";
+            openPage(new salgSide(salgSide.Mode.Mine));
         }
 
         private void alleSalgDBKnap_Click(object sender, EventArgs e)
         {
             pageLabel.Text = "Alle Salg";
+            openPage(new salgSide(salgSide.Mode.Alle));
         }
 
         private void salgRegistrerDBKnap_Click(object sender, EventArgs e)
@@ -167,11 +181,21 @@ namespace Semester_Projekt_1
         private void mineBoligerDBKnap_Click(object sender, EventArgs e)
         {
             pageLabel.Text = "Mine Boliger";
+            openPage(new UniForside(UniForside.Mode.MineB));
         }
 
         private void alleBolgierDBKnap_Click(object sender, EventArgs e)
         {
             pageLabel.Text = "Alle Boliger";
+            openPage(new UniForside(UniForside.Mode.AlleB));
+        }
+
+        private void logUdDBKnap_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+            SessionManager.Clear();
         }
     }
 }

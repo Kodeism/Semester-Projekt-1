@@ -129,6 +129,7 @@
             logUdDBKnap.TabIndex = 1;
             logUdDBKnap.TextAlign = ContentAlignment.MiddleRight;
             logUdDBKnap.UseVisualStyleBackColor = false;
+            logUdDBKnap.Click += logUdDBKnap_Click;
             // 
             // menuDBLayoutPanel
             // 
@@ -655,9 +656,10 @@
             screenDBPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             screenDBPanel.AutoScroll = true;
             screenDBPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            screenDBPanel.Location = new Point(166, 72);
+            screenDBPanel.Location = new Point(166, 63);
+            screenDBPanel.Margin = new Padding(0);
             screenDBPanel.Name = "screenDBPanel";
-            screenDBPanel.Size = new Size(652, 634);
+            screenDBPanel.Size = new Size(652, 654);
             screenDBPanel.TabIndex = 2;
             // 
             // brugerLayoutPanel
