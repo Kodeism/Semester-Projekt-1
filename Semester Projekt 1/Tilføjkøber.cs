@@ -35,10 +35,10 @@ namespace Semester_Projekt_1
             string efternavn = efternavnTextbox.Text;
             string adresse = adresseTextbox.Text;
             //Giver error message, og highlighter box med rød, hvis der indtastes andet end tal i til tlfnummer.
-            int tlfNummer = 0;
+            string tlfNummer = "0";
             try
             {
-                tlfNummer = int.Parse(telefonnummerTextbox.Text);
+                tlfNummer = telefonnummerTextbox.Text;
             }
             catch
             {

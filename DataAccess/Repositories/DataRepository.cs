@@ -131,7 +131,7 @@ namespace DataAccess.Repositories
             command.Parameters.AddWithValue("@BoligType", køber.BoligType);
             command.Parameters.AddWithValue("@Noter", køber.KøberInfo);
             command.Parameters.AddWithValue("@ØnsketGrundStørrelse", køber.GrundStørrelse);
-            command.Parameters.AddWithValue("@ØnsketBoligStørrelse", køber.Boligstørrelse);
+            command.Parameters.AddWithValue("@ØnsketBoligStørrelse", køber.BoligStørrelse);
             command.Parameters.AddWithValue("@ØnsketVærelser", køber.Værelser);
 
             connection.Open();
@@ -179,7 +179,7 @@ namespace DataAccess.Repositories
             connection.Close();
 
         }
-        public static List<Bolig> SøgMedFilter(SqlConnection connection, BoligFilter boligFilter)
+        public static List<Bolig> SøgMedFilter(SqlConnection connection, BoligFilter boligFilter, int? mæglerID = 0)
         {
             List<Bolig> boligList = new List<Bolig>();
 
@@ -191,6 +191,7 @@ namespace DataAccess.Repositories
                 Bolig.Postnummer, Bolig.ByNavn, Bolig.BoligType, 
                 Bolig.BoligAreal, Bolig.Værelser, Bolig.ByggeDato, 
                 Bolig.GrundStørrelse, Bolig.EnergiMærke, 
+                Bolig.EjendomsmæglerID,
                 (dbo.Ejendomsmægler.Fornavn + ' ' + dbo.Ejendomsmægler.EfterNavn) AS Ejendomsmægler, 
                 (dbo.Sælger.Fornavn + ' ' + dbo.Sælger.EfterNavn) AS Sælger, Status
                 FROM dbo.Bolig
@@ -199,7 +200,13 @@ namespace DataAccess.Repositories
                 WHERE 1=1
                 """;
 
-
+            // ejendomsmægler ID
+            Debug.WriteLine("mæglerid" + mæglerID);
+            if (mæglerID > 0)
+            {
+                sql += " AND Bolig.EjendomsmæglerID = @mæglerID";
+                command.Parameters.AddWithValue("@mæglerID", mæglerID);
+            }
             // Pris
             if (boligFilter.PrisMin > 0)
             {
@@ -290,7 +297,7 @@ namespace DataAccess.Repositories
                 command.Parameters.AddWithValue("@ejendomsmægler", "%" + boligFilter.EjendomsmæglerNavn + "%");
             }
 
-            // SælgerID
+            // Sælger fulde navn
             if (boligFilter.SælgerNavn != null)
             {
                 sql += " AND LOWER(Sælger.Fornavn + ' ' + Sælger.EfterNavn) LIKE LOWER(@sælger)";
@@ -311,11 +318,11 @@ namespace DataAccess.Repositories
                 command.Parameters.AddWithValue("@status", boligFilter.Status);
             }
 
+
             command.CommandText = sql;
 
             connection.Open();
             var reader = command.ExecuteReader();
-
 
             while (reader.Read())
             {
@@ -336,7 +343,8 @@ namespace DataAccess.Repositories
                     : reader.GetString(reader.GetOrdinal("EnergiMærke")),
                     EjendomsmæglerNavn = reader.GetString(reader.GetOrdinal("Ejendomsmægler")),
                     SælgerNavn = reader.GetString(reader.GetOrdinal("Sælger")),
-                    Status = reader.GetString(reader.GetOrdinal("Status"))
+                    Status = reader.GetString(reader.GetOrdinal("Status")),
+                    EjendomsmæglerID = reader.GetInt32(reader.GetOrdinal("EjendomsmæglerID"))
                 };
 
                 boligList.Add(bolig);
@@ -348,6 +356,234 @@ namespace DataAccess.Repositories
             return boligList; // Tager data fra query og giver den tilbage,
                               // Hermed kan det bruges til at udfylde en datagridview eksempelvis
                               // Dette kan ses i test siden BoligFilterTest
+        }
+        public static List<Køber> SøgKøberMedFilter(SqlConnection connection, KøberFilter filter, int? mæglerID = 0)
+        {
+            List<Køber> køberList = new List<Køber>();
+            SqlCommand command = connection.CreateCommand();
+
+            string sql = """
+                SELECT 
+                    Køber.KøberID,Køber.Fornavn, Køber.EfterNavn, Køber.Email,
+                    Køber.TlfNummer, Køber.CprNr, Køber.Adresse,
+                    Køber.PrisKlasse, Køber.SøgeOmråde, Køber.BoligType,
+                    Køber.Noter, Køber.ØnsketGrundStørrelse, Køber.ØnsketBoligStørrelse,
+                    Køber.ØnsketVærelser, Ejendomsmægler.EjendomsmæglerID
+                FROM Køber
+                LEFT JOIN Salg ON Køber.KøberID = Salg.KøberID
+                LEFT JOIN Bolig ON Salg.BoligID = Bolig.BoligID
+                LEFT JOIN Ejendomsmægler ON Bolig.EjendomsmæglerID = Ejendomsmægler.EjendomsmæglerID
+                WHERE Ejendomsmægler.EjendomsmæglerID IS NOT NULL
+                """;
+            if (mæglerID > 0)
+            {
+                sql += " AND Ejendomsmægler.EjendomsmæglerID = @mæglerID";
+                command.Parameters.AddWithValue("@mæglerID", mæglerID);
+            }
+            if (!string.IsNullOrWhiteSpace(filter.PrisKlasse))
+            {
+                sql += " AND PrisKlasse = @prisKlasse";
+                command.Parameters.AddWithValue("@prisKlasse", filter.PrisKlasse);
+            }
+
+            if (!string.IsNullOrWhiteSpace(filter.SøgeOmråde))
+            {
+                sql += " AND SøgeOmråde LIKE @søgeområde";
+                command.Parameters.AddWithValue("@søgeområde", "%" + filter.SøgeOmråde + "%");
+            }
+
+            if (!string.IsNullOrWhiteSpace(filter.BoligType))
+            {
+                sql += " AND BoligType = @boligtype";
+                command.Parameters.AddWithValue("@boligtype", filter.BoligType);
+            }
+
+            if (filter.ØnsketGrundStørrelseMin.HasValue)
+            {
+                sql += " AND ØnsketGrundStørrelse >= @grundMin";
+                command.Parameters.AddWithValue("@grundMin", filter.ØnsketGrundStørrelseMin);
+            }
+
+            if (filter.ØnsketGrundStørrelseMax.HasValue)
+            {
+                sql += " AND ØnsketGrundStørrelse <= @grundMax";
+                command.Parameters.AddWithValue("@grundMax", filter.ØnsketGrundStørrelseMax);
+            }
+
+            if (filter.ØnsketBoligStørrelseMin.HasValue)
+            {
+                sql += " AND ØnsketBoligStørrelse >= @boligMin";
+                command.Parameters.AddWithValue("@boligMin", filter.ØnsketBoligStørrelseMin);
+            }
+
+            if (filter.ØnsketBoligStørrelseMax.HasValue)
+            {
+                sql += " AND ØnsketBoligStørrelse <= @boligMax";
+                command.Parameters.AddWithValue("@boligMax", filter.ØnsketBoligStørrelseMax);
+            }
+
+            if (filter.ØnsketVærelserMin.HasValue)
+            {
+                sql += " AND ØnsketVærelser >= @værelserMin";
+                command.Parameters.AddWithValue("@værelserMin", filter.ØnsketVærelserMin);
+            }
+
+            if (filter.ØnsketVærelserMax.HasValue)
+            {
+                sql += " AND ØnsketVærelser <= @værelserMax";
+                command.Parameters.AddWithValue("@værelserMax", filter.ØnsketVærelserMax);
+            }
+
+            if (!string.IsNullOrWhiteSpace(filter.Navn))
+            {
+                sql += " AND LOWER(Fornavn + ' ' + EfterNavn) LIKE LOWER(@navn)";
+                command.Parameters.AddWithValue("@navn", "%" + filter.Navn + "%");
+            }
+
+            command.CommandText = sql;
+            connection.Open();
+            var reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                var køber = new Køber
+                {
+                    KøberID = reader.GetInt32(reader.GetOrdinal("KøberID")),
+                    Navn = reader.GetString(reader.GetOrdinal("Fornavn")),
+                    Efternavn = reader.GetString(reader.GetOrdinal("EfterNavn")),
+                    Email = reader.GetString(reader.GetOrdinal("Email")),
+                    TlfNummer = reader.GetString(reader.GetOrdinal("TlfNummer")),
+                    CprNr = reader.GetString(reader.GetOrdinal("CprNr")),
+                    Adresse = reader.GetString(reader.GetOrdinal("Adresse")),
+                    PrisKlasse = reader.GetInt32(reader.GetOrdinal("PrisKlasse")),
+                    SøgeOmråde = reader.GetString(reader.GetOrdinal("SøgeOmråde")),
+                    BoligType = reader.GetString(reader.GetOrdinal("BoligType")),
+                    GrundStørrelse = reader.GetInt32(reader.GetOrdinal("ØnsketGrundStørrelse")),
+                    BoligStørrelse = reader.GetInt32(reader.GetOrdinal("ØnsketBoligStørrelse")),
+                    Værelser = reader.GetInt32(reader.GetOrdinal("ØnsketVærelser"))
+                };
+
+                køberList.Add(køber);
+            }
+
+            connection.Close();
+            return køberList;
+        }
+
+        public static List<Ejendomsmægler> HentEjendomsmæglere(SqlConnection connection)
+        {
+            List<Ejendomsmægler> mæglere = new List<Ejendomsmægler>();
+
+            var sql = """
+            SELECT EjendomsmæglerID, Fornavn, EfterNavn, Email, TlfNummer, Brugernavn, Adgangsniveau
+            FROM [Semester projekt gruppe 1].[dbo].[Ejendomsmægler]
+            """;
+
+            using (var command = new SqlCommand(sql, connection))
+            {
+                connection.Open();
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var mægler = new Ejendomsmægler
+                        {
+                            EjendomsmæglerID = reader.GetInt32(reader.GetOrdinal("EjendomsmæglerID")),
+                            Navn = reader.GetString(reader.GetOrdinal("Fornavn")),
+                            Efternavn = reader.GetString(reader.GetOrdinal("EfterNavn")),
+                            Email = reader.GetString(reader.GetOrdinal("Email")),
+                            TlfNummer = reader.GetString(reader.GetOrdinal("TlfNummer"))
+                        };
+                        mæglere.Add(mægler);
+                    }
+                }
+                connection.Close();
+            }
+
+            return mæglere;
+        }
+        public static List<Sælger> SøgSælgerMedFilter(SqlConnection connection, SælgerFilter filter, int? mæglerID = 0)
+        {
+            List<Sælger> sælgere = new List<Sælger>();
+            SqlCommand command = connection.CreateCommand();
+
+            var sql = """
+            SELECT DISTINCT s.SælgerID, s.Fornavn, s.EfterNavn, 
+            s.Email, s.TlfNummer, s.Adresse, s.CprNummer, 
+            (e.Fornavn + ' ' + e.EfterNavn) AS EjendomsmæglerNavn, e.EjendomsmæglerID
+            FROM Sælger s
+            JOIN Bolig b ON s.SælgerID = b.SælgerID
+            JOIN Ejendomsmægler e ON b.EjendomsmæglerID = e.EjendomsmæglerID
+            WHERE 1=1
+            """;
+            if (mæglerID > 0)
+            {
+                sql += " AND e.EjendomsmæglerID = @ejendomsmæglerID";
+                command.Parameters.AddWithValue("@ejendomsmæglerID", mæglerID);
+            }
+
+            if (!string.IsNullOrWhiteSpace(filter.Fornavn))
+            {
+                sql += " AND LOWER(Fornavn + ' ' + EfterNavn) LIKE LOWER(@fornavn)";
+                command.Parameters.AddWithValue("@efternavn", $"%{filter.Fornavn}%");
+            }
+            if (!string.IsNullOrWhiteSpace(filter.EfterNavn))
+            {
+                sql += " AND LOWER(Fornavn + ' ' + EfterNavn) LIKE LOWER(@efternavn)";
+                command.Parameters.AddWithValue("@fornavn", $"%{filter.EfterNavn}%");
+            }
+
+            if (!string.IsNullOrWhiteSpace(filter.Email))
+            {
+                sql += " AND Email LIKE @Email";
+                command.Parameters.AddWithValue("@Email", $"%{filter.Email}%");
+            }
+
+            if (!string.IsNullOrWhiteSpace(filter.TlfNummer))
+            {
+                sql += " AND TlfNummer LIKE @Tlf";
+                command.Parameters.AddWithValue("@Tlf", $"%{filter.TlfNummer}%");
+            }
+
+            if (!string.IsNullOrWhiteSpace(filter.Adresse))
+            {
+                sql += " AND Adresse LIKE @Adresse";
+                command.Parameters.AddWithValue("@Adresse", $"%{filter.Adresse}%");
+            }
+
+            if (!string.IsNullOrWhiteSpace(filter.CprNummer))
+            {
+                sql += " AND CprNummer = @Cpr";
+                command.Parameters.AddWithValue("@Cpr", filter.CprNummer);
+            }
+
+            command.CommandText = sql;
+
+            connection.Open();
+            var reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+
+                var sælger = new Sælger
+                {
+                    SælgerID = reader.GetInt32(reader.GetOrdinal("SælgerID")),
+                    Navn = reader.GetString(reader.GetOrdinal("Fornavn")),
+                    Efternavn = reader.GetString(reader.GetOrdinal("EfterNavn")),
+                    Email = reader.GetString(reader.GetOrdinal("Email")),
+                    TlfNummer = reader.GetString(reader.GetOrdinal("TlfNummer")),
+                    CprNr = reader.GetString(reader.GetOrdinal("CprNummer")),
+                    Adresse = reader.GetString(reader.GetOrdinal("Adresse")),
+                    EjendomsmæglerNavn = reader.GetString(reader.GetOrdinal("EjendomsmæglerNavn")),
+                    EjendomsmæglerID = reader.GetInt32(reader.GetOrdinal("EjendomsmæglerID"))
+                };
+
+                sælgere.Add(sælger);
+
+            }
+
+            connection.Close();
+            return sælgere;
         }
 
         public int CountRows(string tabelname, string condition="")
@@ -446,15 +682,15 @@ namespace DataAccess.Repositories
         public static void EjendomsmæglerLogin(SqlConnection connection, string username, string password)
         {
 
-            SqlCommand command = connection.CreateCommand();
+            SqlCommand command = connection.CreateCommand(); // ændrer tilbage til @brugernavn og @password
             var sql = """
             SELECT Ejendomsmægler.EjendomsmæglerID, 
             Ejendomsmægler.Fornavn, Ejendomsmægler.EfterNavn, 
             Ejendomsmægler.Email, Ejendomsmægler.TlfNummer, 
             Ejendomsmægler.Brugernavn, Ejendomsmægler.Adgangsniveau
             FROM dbo.Ejendomsmægler
-            WHERE Ejendomsmægler.Brugernavn = @brugernavn
-            AND Ejendomsmægler.Password = @password
+            WHERE Ejendomsmægler.Brugernavn = 'tsosa'
+            AND Ejendomsmægler.Password = 'Tho4780'
             """;
             command.CommandText = sql;
             command.Parameters.AddWithValue("@brugernavn", username);
@@ -485,16 +721,3 @@ namespace DataAccess.Repositories
         }
     }
 }
-//// ByNavn
-//if (!string.IsNullOrWhiteSpace(boligFilter.ByNavn))
-//{
-//    sql += " AND ByNavn LIKE @bynavn";
-//    command.Parameters.AddWithValue("@bynavn", $"%{boligFilter.ByNavn}%");
-//}
-
-//// Type
-//if (!string.IsNullOrWhiteSpace(boligFilter.Type))
-//{
-//    sql += " AND BoligType = @type";
-//    command.Parameters.AddWithValue("@type", boligFilter.Type);
-//}

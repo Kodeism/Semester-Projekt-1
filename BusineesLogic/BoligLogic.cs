@@ -31,13 +31,13 @@ namespace BusineesLogic
         {
             return new List<Sælger>()
             {
-                new Sælger(1, "Lars", "Jensen", 22334455, "lars.jensen@example.com", "12345678-1234", "hejsaalle"),
-                new Sælger(2, "Maria", "Andersen", 11223344, "maria.andersen@example.com", "12345678-1234", "hejsaalle"),
-                new Sælger(3, "Thomas", "Nielsen", 33445566, "thomas.nielsen@example.com", "12345678-1234", "hejsaalle"),
-                new Sælger(4, "Camilla", "Pedersen", 55667788, "camilla.pedersen@example.com", "12345678-1234", "hejsaalle"),
-                new Sælger(5, "Jonas", "Christensen", 66778899, "jonas.christensen@example.com", "12345678-1234", "hejsaalle"),
-                new Sælger(6, "Sofie", "Larsen", 99887766, "sofie.larsen@example.com", "12345678-1234", "hejsaalle"),
-                new Sælger(7, "Emil", "Madsen", 77889900, "emil.madsen@example.com", "12345678-1234", "hejsaalle")
+                new Sælger(1, "Lars", "Jensen", "22334455", "lars.jensen@example.com", "12345678-1234", "hejsaalle"),
+                new Sælger(2, "Maria", "Andersen", "11223344", "maria.andersen@example.com", "12345678-1234", "hejsaalle"),
+                new Sælger(3, "Thomas", "Nielsen", "33445566", "thomas.nielsen@example.com", "12345678-1234", "hejsaalle"),
+                new Sælger(4, "Camilla", "Pedersen", "55667788", "camilla.pedersen@example.com", "12345678-1234", "hejsaalle"),
+                new Sælger(5, "Jonas", "Christensen", "66778899", "jonas.christensen@example.com", "12345678-1234", "hejsaalle"),
+                new Sælger(6, "Sofie", "Larsen", "99887766", "sofie.larsen@example.com", "12345678-1234", "hejsaalle"),
+                new Sælger(7, "Emil", "Madsen", "77889900", "emil.madsen@example.com", "12345678-1234", "hejsaalle")
             };
         }
 

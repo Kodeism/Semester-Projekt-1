@@ -126,6 +126,7 @@
             uniFilterKnap.TabIndex = 1;
             uniFilterKnap.Text = "Filtrer";
             uniFilterKnap.UseVisualStyleBackColor = false;
+            uniFilterKnap.Click += uniFilterKnap_Click;
             // 
             // uniLabel
             // 

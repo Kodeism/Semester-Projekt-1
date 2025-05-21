@@ -79,7 +79,7 @@
             personLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             personLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             personLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            personLayoutPanel.Size = new Size(502, 1008);
+            personLayoutPanel.Size = new Size(294, 1008);
             personLayoutPanel.TabIndex = 0;
             // 
             // mæglerLayoutPanel
@@ -101,7 +101,7 @@
             mæglerLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 17.8683376F));
             mæglerLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 10.6583071F));
             mæglerLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 71.7868347F));
-            mæglerLayoutPanel.Size = new Size(496, 323);
+            mæglerLayoutPanel.Size = new Size(288, 323);
             mæglerLayoutPanel.TabIndex = 3;
             // 
             // mæglerDataGrid
@@ -113,7 +113,7 @@
             mæglerDataGrid.Margin = new Padding(10, 0, 10, 10);
             mæglerDataGrid.Name = "mæglerDataGrid";
             mæglerDataGrid.RowHeadersWidth = 62;
-            mæglerDataGrid.Size = new Size(474, 220);
+            mæglerDataGrid.Size = new Size(266, 220);
             mæglerDataGrid.TabIndex = 4;
             // 
             // mæglerMenuLayoutPanel
@@ -131,7 +131,7 @@
             mæglerMenuLayoutPanel.Name = "mæglerMenuLayoutPanel";
             mæglerMenuLayoutPanel.RowCount = 1;
             mæglerMenuLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            mæglerMenuLayoutPanel.Size = new Size(474, 33);
+            mæglerMenuLayoutPanel.Size = new Size(266, 33);
             mæglerMenuLayoutPanel.TabIndex = 3;
             // 
             // mæglerSøgeFelt
@@ -142,7 +142,7 @@
             mæglerSøgeFelt.Location = new Point(0, 0);
             mæglerSøgeFelt.Margin = new Padding(0);
             mæglerSøgeFelt.Name = "mæglerSøgeFelt";
-            mæglerSøgeFelt.Size = new Size(331, 34);
+            mæglerSøgeFelt.Size = new Size(186, 34);
             mæglerSøgeFelt.TabIndex = 0;
             mæglerSøgeFelt.Text = "Søg Navn...";
             // 
@@ -153,12 +153,12 @@
             mæglerFilterKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             mæglerFilterKnap.BackColor = Color.FromArgb(255, 202, 202);
             mæglerFilterKnap.FlatStyle = FlatStyle.Popup;
-            mæglerFilterKnap.Location = new Point(331, 0);
+            mæglerFilterKnap.Location = new Point(186, 0);
             mæglerFilterKnap.Margin = new Padding(0);
             mæglerFilterKnap.MaximumSize = new Size(0, 34);
             mæglerFilterKnap.MinimumSize = new Size(0, 34);
             mæglerFilterKnap.Name = "mæglerFilterKnap";
-            mæglerFilterKnap.Size = new Size(143, 34);
+            mæglerFilterKnap.Size = new Size(80, 34);
             mæglerFilterKnap.TabIndex = 1;
             mæglerFilterKnap.Text = "Filtrer";
             mæglerFilterKnap.UseVisualStyleBackColor = false;
@@ -195,7 +195,7 @@
             købereSalgLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 17.8683376F));
             købereSalgLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 10.6583071F));
             købereSalgLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 71.7868347F));
-            købereSalgLayoutPanel.Size = new Size(496, 323);
+            købereSalgLayoutPanel.Size = new Size(288, 323);
             købereSalgLayoutPanel.TabIndex = 2;
             // 
             // købereDataGridView
@@ -207,7 +207,7 @@
             købereDataGridView.Margin = new Padding(10, 0, 10, 10);
             købereDataGridView.Name = "købereDataGridView";
             købereDataGridView.RowHeadersWidth = 62;
-            købereDataGridView.Size = new Size(474, 220);
+            købereDataGridView.Size = new Size(266, 220);
             købereDataGridView.TabIndex = 4;
             // 
             // købereMenuLayoutPanel
@@ -227,7 +227,7 @@
             købereMenuLayoutPanel.Name = "købereMenuLayoutPanel";
             købereMenuLayoutPanel.RowCount = 1;
             købereMenuLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            købereMenuLayoutPanel.Size = new Size(474, 33);
+            købereMenuLayoutPanel.Size = new Size(266, 33);
             købereMenuLayoutPanel.TabIndex = 3;
             // 
             // købereRegistrerKnap
@@ -237,12 +237,12 @@
             købereRegistrerKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             købereRegistrerKnap.BackColor = Color.FromArgb(211, 222, 255);
             købereRegistrerKnap.FlatStyle = FlatStyle.Popup;
-            købereRegistrerKnap.Location = new Point(402, 0);
+            købereRegistrerKnap.Location = new Point(225, 0);
             købereRegistrerKnap.Margin = new Padding(0);
             købereRegistrerKnap.MaximumSize = new Size(0, 34);
             købereRegistrerKnap.MinimumSize = new Size(0, 34);
             købereRegistrerKnap.Name = "købereRegistrerKnap";
-            købereRegistrerKnap.Size = new Size(72, 34);
+            købereRegistrerKnap.Size = new Size(41, 34);
             købereRegistrerKnap.TabIndex = 2;
             købereRegistrerKnap.Text = "Registrer";
             købereRegistrerKnap.UseVisualStyleBackColor = false;
@@ -255,7 +255,7 @@
             købereSøgeFelt.Location = new Point(0, 0);
             købereSøgeFelt.Margin = new Padding(0);
             købereSøgeFelt.Name = "købereSøgeFelt";
-            købereSøgeFelt.Size = new Size(331, 34);
+            købereSøgeFelt.Size = new Size(186, 34);
             købereSøgeFelt.TabIndex = 0;
             købereSøgeFelt.Text = "Søg Navn...";
             // 
@@ -266,12 +266,12 @@
             købereFilterKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             købereFilterKnap.BackColor = Color.FromArgb(255, 202, 202);
             købereFilterKnap.FlatStyle = FlatStyle.Popup;
-            købereFilterKnap.Location = new Point(331, 0);
+            købereFilterKnap.Location = new Point(186, 0);
             købereFilterKnap.Margin = new Padding(0);
             købereFilterKnap.MaximumSize = new Size(0, 34);
             købereFilterKnap.MinimumSize = new Size(0, 34);
             købereFilterKnap.Name = "købereFilterKnap";
-            købereFilterKnap.Size = new Size(71, 34);
+            købereFilterKnap.Size = new Size(39, 34);
             købereFilterKnap.TabIndex = 1;
             købereFilterKnap.Text = "Filtrer";
             købereFilterKnap.UseVisualStyleBackColor = false;
@@ -309,7 +309,7 @@
             sælgereLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 17.9245281F));
             sælgereLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 10.691824F));
             sælgereLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 71.06918F));
-            sælgereLayoutPanel.Size = new Size(496, 323);
+            sælgereLayoutPanel.Size = new Size(288, 323);
             sælgereLayoutPanel.TabIndex = 1;
             // 
             // sælgereLabel
@@ -334,7 +334,7 @@
             sælgereDataGridView.Margin = new Padding(10, 0, 10, 10);
             sælgereDataGridView.Name = "sælgereDataGridView";
             sælgereDataGridView.RowHeadersWidth = 62;
-            sælgereDataGridView.Size = new Size(474, 218);
+            sælgereDataGridView.Size = new Size(266, 218);
             sælgereDataGridView.TabIndex = 1;
             // 
             // sælgereMenuLayoutPanel
@@ -354,7 +354,7 @@
             sælgereMenuLayoutPanel.Name = "sælgereMenuLayoutPanel";
             sælgereMenuLayoutPanel.RowCount = 1;
             sælgereMenuLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            sælgereMenuLayoutPanel.Size = new Size(474, 34);
+            sælgereMenuLayoutPanel.Size = new Size(266, 34);
             sælgereMenuLayoutPanel.TabIndex = 2;
             // 
             // sælgereRegistrerKnap
@@ -364,12 +364,12 @@
             sælgereRegistrerKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             sælgereRegistrerKnap.BackColor = Color.FromArgb(211, 222, 255);
             sælgereRegistrerKnap.FlatStyle = FlatStyle.Popup;
-            sælgereRegistrerKnap.Location = new Point(402, 0);
+            sælgereRegistrerKnap.Location = new Point(225, 0);
             sælgereRegistrerKnap.Margin = new Padding(0);
             sælgereRegistrerKnap.MaximumSize = new Size(0, 34);
             sælgereRegistrerKnap.MinimumSize = new Size(0, 34);
             sælgereRegistrerKnap.Name = "sælgereRegistrerKnap";
-            sælgereRegistrerKnap.Size = new Size(72, 34);
+            sælgereRegistrerKnap.Size = new Size(41, 34);
             sælgereRegistrerKnap.TabIndex = 2;
             sælgereRegistrerKnap.Text = "Registrer";
             sælgereRegistrerKnap.UseVisualStyleBackColor = false;
@@ -382,7 +382,7 @@
             sælgereSøgeFelt.Location = new Point(0, 0);
             sælgereSøgeFelt.Margin = new Padding(0);
             sælgereSøgeFelt.Name = "sælgereSøgeFelt";
-            sælgereSøgeFelt.Size = new Size(331, 34);
+            sælgereSøgeFelt.Size = new Size(186, 34);
             sælgereSøgeFelt.TabIndex = 0;
             sælgereSøgeFelt.Text = "Søg Navn...";
             // 
@@ -393,12 +393,12 @@
             sælgereFilterKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             sælgereFilterKnap.BackColor = Color.FromArgb(255, 202, 202);
             sælgereFilterKnap.FlatStyle = FlatStyle.Popup;
-            sælgereFilterKnap.Location = new Point(331, 0);
+            sælgereFilterKnap.Location = new Point(186, 0);
             sælgereFilterKnap.Margin = new Padding(0);
             sælgereFilterKnap.MaximumSize = new Size(0, 34);
             sælgereFilterKnap.MinimumSize = new Size(0, 34);
             sælgereFilterKnap.Name = "sælgereFilterKnap";
-            sælgereFilterKnap.Size = new Size(71, 34);
+            sælgereFilterKnap.Size = new Size(39, 34);
             sælgereFilterKnap.TabIndex = 1;
             sælgereFilterKnap.Text = "Filtrer";
             sælgereFilterKnap.UseVisualStyleBackColor = false;
@@ -410,7 +410,7 @@
             AutoScroll = true;
             Controls.Add(personLayoutPanel);
             Name = "PersonForside";
-            Size = new Size(502, 667);
+            Size = new Size(294, 667);
             personLayoutPanel.ResumeLayout(false);
             mæglerLayoutPanel.ResumeLayout(false);
             mæglerLayoutPanel.PerformLayout();

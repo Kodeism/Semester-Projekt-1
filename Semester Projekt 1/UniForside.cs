@@ -1,4 +1,8 @@
-﻿using System;
+﻿using BusineesLogic;
+using DataAccess.Repositories;
+using Microsoft.Data.SqlClient;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +17,8 @@ namespace Semester_Projekt_1
     public partial class UniForside : UserControl
     {
         public enum Mode { AlleS, MineS, AlleK, MineK, AlleB, MineB }
+        private Mode currentMode;
+
         public UniForside(Mode mode)
         {
             InitializeComponent();
@@ -20,33 +26,115 @@ namespace Semester_Projekt_1
         }
         public void SetMode(Mode mode)
         {
-            switch(mode)
+            currentMode = mode;
+            switch (mode)
             {
                 case Mode.AlleS:
                     uniLabel.Text = "Alle Sælgere";
                     uniSøgeFelt.Text = "Søg Navn...";
+                    HentSælgerLoad();
                     break;
                 case Mode.MineS:
                     uniLabel.Text = "Mine Sælgere";
                     uniSøgeFelt.Text = "Søg Navn...";
+                    HentSælgerLoad(SessionManager.EjendomsmæglerId);
                     break;
                 case Mode.AlleK:
                     uniLabel.Text = "Alle Købere";
                     uniSøgeFelt.Text = "Søg Navn...";
+                    HentKøberLoad();
                     break;
                 case Mode.MineK:
                     uniLabel.Text = "Mine Købere";
                     uniSøgeFelt.Text = "Søg Navn...";
+                    HentKøberLoad(SessionManager.EjendomsmæglerId);
                     break;
                 case Mode.AlleB:
                     uniLabel.Text = "Alle Boliger";
                     uniSøgeFelt.Text = "Søg Adresse...";
+                    HentBoligLoad();
                     break;
                 case Mode.MineB:
                     uniLabel.Text = "Mine Boliger";
                     uniSøgeFelt.Text = "Søg Adresse...";
+                    HentBoligLoad(SessionManager.EjendomsmæglerId);
                     break;
             }
+        }
+
+        public void OpdaterKøberDataGrid(List<Køber> køber)
+        {
+            uniDataGridView.DataSource = null;
+            uniDataGridView.DataSource = køber;
+            // Skjul id som ikke burde blive vist men de bliver vist aligevel
+            if (uniDataGridView.Columns.Contains("EjendomsmæglerID"))
+                uniDataGridView.Columns["EjendomsmæglerID"].Visible = false;
+
+            if (uniDataGridView.Columns.Contains("SælgerID"))
+                uniDataGridView.Columns["SælgerID"].Visible = false;
+
+            uniDataGridView.Columns["KøberInfo"].Visible = false;
+            uniDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+        }
+
+        public void OpdaterBoligerDataGrid(List<Bolig> boliger)
+        {
+            uniDataGridView.DataSource = null;
+            uniDataGridView.DataSource = boliger;
+            // Skjul id som ikke burde blive vist men de bliver vist aligevel
+            if (uniDataGridView.Columns.Contains("EjendomsmæglerID"))
+                uniDataGridView.Columns["EjendomsmæglerID"].Visible = false;
+
+            if (uniDataGridView.Columns.Contains("SælgerID"))
+                uniDataGridView.Columns["SælgerID"].Visible = false;
+            uniDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+        }
+        public void OpdaterSælgerDataGrid(List<Sælger> sælgerer)
+        {
+            uniDataGridView.DataSource = null;
+            uniDataGridView.DataSource = sælgerer;
+            // Skjul id som ikke burde blive vist men de bliver vist aligevel
+            if (uniDataGridView.Columns.Contains("EjendomsmæglerID"))
+                uniDataGridView.Columns["EjendomsmæglerID"].Visible = false;
+
+            if (uniDataGridView.Columns.Contains("SælgerID"))
+                uniDataGridView.Columns["SælgerID"].Visible = false;
+            uniDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
+        }
+        private void HentKøberLoad(int? mæglerID = 0)
+        {
+            var køberFilter = new Models.KøberFilter();
+            using (SqlConnection conn = new SqlConnection(BoligLogic.GetConnectionString()))
+            {
+                var result = DataRepository.SøgKøberMedFilter(conn, køberFilter, mæglerID);
+                OpdaterKøberDataGrid(result);
+            }
+        }
+        private void HentSælgerLoad(int? mæglerID = 0)
+        {
+            var sælgerFilter = new Models.SælgerFilter();
+            using (SqlConnection conn = new SqlConnection(BoligLogic.GetConnectionString()))
+            {
+                var result = DataRepository.SøgSælgerMedFilter(conn, sælgerFilter, mæglerID);
+                OpdaterSælgerDataGrid(result);
+            }
+        }
+        private void HentBoligLoad(int? mæglerID = 0)
+        {
+            var boligFilter = new Models.BoligFilter();
+
+            using (SqlConnection conn = new SqlConnection(BoligLogic.GetConnectionString()))
+            {
+                var result = DataRepository.SøgMedFilter(conn, boligFilter, mæglerID);
+                OpdaterBoligerDataGrid(result);
+            }
+        }
+
+        private void uniFilterKnap_Click(object sender, EventArgs e)
+        {
+            BoligFilterForm boligFilterForm = new BoligFilterForm(this, currentMode);
+            boligFilterForm.Show();
         }
     }
 }

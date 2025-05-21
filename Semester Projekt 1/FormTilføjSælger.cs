@@ -42,10 +42,10 @@ namespace Semester_Projekt_1
             string efternavn = sælgerEfternavnTextbox.Text;
             string adresse = sælgerAdresseTextbox.Text;
             //Giver error message, og highlighter box med rød, hvis der indtastes andet end tal i til tlfnummer.
-            int tlfNummer = 0;
+            string tlfNummer = "";
             try
             {
-                tlfNummer = int.Parse(SælgerTelefonNummerTextbox.Text);
+                tlfNummer = SælgerTelefonNummerTextbox.Text;
             }
             catch
             {
