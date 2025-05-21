@@ -14,10 +14,17 @@ namespace BusineesLogic
         public BoligLogic()
         {
             // Special connection string for Ruben's "special" pc
-            repository = new("Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;");
+            //repository = new("Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;");
 
             // For normal people 
-            //repository = new("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;");
+            repository = new();
+        }
+        public static string GetConnectionString() // bruges til kald af metode i BoligFilter
+        {
+            // Special connection string for Ruben's "special" pc
+            //return "Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;";
+            // For normal people 
+            return "Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate=True;";
         }
 
         public List<Sælger> GetSælgerList()
@@ -44,6 +51,19 @@ namespace BusineesLogic
                 byggeDato, grundAreal, mæglerId, sæglerID, energiMærke, status
             );
             repository.CreateBolig(tempBolig);
+        }
+
+        public Bolig GetBolig(int boligID)
+        {
+            //repository.getSingleBolig(boligID);
+            var bolig = repository.GetSingleBolig(boligID);
+            //var bolig = new Bolig(boligID, 700000, "testvej 28", 7000, "testby", "Villa", 700, 17, DateTime.Now, 900000, 2, 1);
+            return bolig;
+        }
+
+        public void UpdateBoligPris(Bolig bolig)
+        {
+            repository.UpdatePris(bolig.BoligID, bolig.Pris);
         }
     }
 }
