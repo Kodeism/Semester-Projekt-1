@@ -7,6 +7,12 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
         }
+        public DeleteBolig(int boligID)
+        {
+            InitializeComponent();
+            boligID = boligID;
+            boligIDTextBox.Text = boligID.ToString();
+        }
 
         private void annullerButton_Click(object sender, EventArgs e)
         {
