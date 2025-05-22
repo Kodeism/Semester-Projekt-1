@@ -37,32 +37,32 @@ namespace Semester_Projekt_1
             {
                 case Mode.AlleS:
                     uniLabel.Text = "Alle Sælgere";
-                    uniSøgeFelt.Text = "Søg Navn...";
+                    uniSøgeFelt.PlaceholderText = "Søg Navn...";
                     HentSælgerLoad();
                     break;
                 case Mode.MineS:
                     uniLabel.Text = "Mine Sælgere";
-                    uniSøgeFelt.Text = "Søg Navn...";
+                    uniSøgeFelt.PlaceholderText = "Søg Navn...";
                     HentSælgerLoad(SessionManager.EjendomsmæglerId);
                     break;
                 case Mode.AlleK:
                     uniLabel.Text = "Alle Købere";
-                    uniSøgeFelt.Text = "Søg Navn...";
+                    uniSøgeFelt.PlaceholderText = "Søg Navn...";
                     HentKøberLoad();
                     break;
                 case Mode.MineK:
                     uniLabel.Text = "Mine Købere";
-                    uniSøgeFelt.Text = "Søg Navn...";
+                    uniSøgeFelt.PlaceholderText = "Søg Navn...";
                     HentKøberLoad(SessionManager.EjendomsmæglerId);
                     break;
                 case Mode.AlleB:
                     uniLabel.Text = "Alle Boliger";
-                    uniSøgeFelt.Text = "Søg Adresse...";
+                    uniSøgeFelt.PlaceholderText = "Søg Adresse...";
                     HentBoligLoad();
                     break;
                 case Mode.MineB:
                     uniLabel.Text = "Mine Boliger";
-                    uniSøgeFelt.Text = "Søg Adresse...";
+                    uniSøgeFelt.PlaceholderText = "Søg Adresse...";
                     HentBoligLoad(SessionManager.EjendomsmæglerId);
                     break;
             }
