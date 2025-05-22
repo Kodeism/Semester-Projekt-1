@@ -1041,31 +1041,22 @@ namespace DataAccess.Repositories
                 "left join Bolig B on S.BoligID = B.BoligID " +
                 "left join Køber K on S.KøberID = K.KøberID " +
                 "left join Ejendomsmægler E on B.EjendomsmæglerID = E.EjendomsmæglerID " +
-                "left join Sælger C on B.SælgerID = C.SælgerID "},
+                $"left join Sælger C on B.SælgerID = C.SælgerID order by S.{sortby}"},
+
                 {"Boliger", "select B.BoligID, B.Adresse, B.Postnummer, B.ByNavn, B.BoligType, B.BoligAreal, B.Værelser, B.ByggeDato, B.GrundStørrelse, B.EnergiMærke, " +
                 "C.SælgerID, C.Fornavn, C.EfterNavn, C.TlfNummer, C.Email, C.Adresse, " +
                 "E.EjendomsmæglerID, E.Fornavn, E.EfterNavn, E.TlfNummer, E.Email, E.Brugernavn " +
                 "from Bolig B " +
                 "left join Ejendomsmægler E on B.EjendomsmæglerID = E.EjendomsmæglerID " +
-                "left join Sælger C on B.SælgerID = C.SælgerID"},
-                {"Ejendomsmæglere", "select EjendomsmæglerID, Fornavn, EfterNavn, TlfNummer, Email, Brugernavn from Ejendomsmægler"},
-                {"Køber", "select KøberID, Fornavn, EfterNavn, TlfNummer, Email, Adresse, PrisKlasse, SøgeOmråde, BoligType, Noter, ØnsketGrundStørrelse, ØnsketBoligStørrelse, ØnsketVærelser from Køber"},
-                {"Sælger", "select SælgerID, Fornavn, EfterNavn, TlfNummer, Email, Adresse from Sælger"},
-                {"BoligerSolgt", """
-                    
-                    select 
-                    B.BoligID, B.Adresse, B.Postnummer, B.ByNavn, B.BoligType,
-                    B.BoligAreal, B.Værelser, B.ByggeDato, B.GrundStørrelse, B.EnergiMærke,
-                    C.SælgerID, C.Fornavn, C.EfterNavn, C.TlfNummer, C.Email, C.Adresse,
-                    E.EjendomsmæglerID, E.Fornavn, E.EfterNavn, E.TlfNummer, E.Email, E.Brugernavn
-                    from Bolig B
-                    left join Ejendomsmægler E on B.EjendomsmæglerID = E.EjendomsmæglerID
-                    left join Sælger C on B.SælgerID = C.SælgerID
-                    where B.Status = 'Solgt'
-                    
-                    """ }
+                $"left join Sælger C on B.SælgerID = C.SælgerID order by B.{sortby}"},
+
+                {"Ejendomsmæglere", $"select EjendomsmæglerID, Fornavn, EfterNavn, TlfNummer, Email, Brugernavn from Ejendomsmægler order by {sortby}"},
+
+                {"Køber", $"select KøberID, Fornavn, EfterNavn, TlfNummer, Email, Adresse, PrisKlasse, SøgeOmråde, BoligType, Noter, ØnsketGrundStørrelse, ØnsketBoligStørrelse, ØnsketVærelser from Køber order by {sortby}"},
+                
+                {"Sælger", $"select SælgerID, Fornavn, EfterNavn, TlfNummer, Email, Adresse from Sælger order by {sortby}"}
                 };
-            query = queriesSingle[data] + " order by " + sortby;
+            query = queriesSingle[data];
             DataTable dataTable = new DataTable();
             using (SqlCommand cmd = new SqlCommand(query, connection))
             {
@@ -1089,89 +1080,67 @@ namespace DataAccess.Repositories
             var json = JsonSerializer.Serialize(rækker, new JsonSerializerOptions { WriteIndented = true, Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping });
             File.WriteAllText(filsti, json);
         }
-    }
-}
-//// ByNavn
-//if (!string.IsNullOrWhiteSpace(boligFilter.ByNavn))
-//{
-//    sql += " AND ByNavn LIKE @bynavn";
-//    command.Parameters.AddWithValue("@bynavn", $"%{boligFilter.ByNavn}%");
-//}
-
-//// Type
-//if (!string.IsNullOrWhiteSpace(boligFilter.Type))
-//{
-//    sql += " AND BoligType = @type";
-//    command.Parameters.AddWithValue("@type", boligFilter.Type);
-//}
-    public List <BoligMedSælgerInfo> EksporterBoligSælgerListe(string ByNavn)
-        { 
-            List <BoligMedSælgerInfo> boligMedSælgerInfoListe = new List<BoligMedSælgerInfo> ();
-            SqlCommand command = connection.CreateCommand();
-            var sql = " SELECT Bolig.Adresse, Bolig.ByNavn, Sælger.Fornavn, Sælger.EfterNavn,Sælger.Email,Sælger.TlfNummer FROM Bolig LEFT JOIN Sælger ON Sælger.SælgerID = Bolig.SælgerID WHERE ByNavn = @ByNavn";
-            command.CommandText = sql;
-            command.Parameters.AddWithValue("@ByNavn", ByNavn );
-
-            connection.Open();
-            var reader = command.ExecuteReader();
-            while (reader.Read())
-            {
-                var boligMedSælgerInfo = new BoligMedSælgerInfo { Adresse = reader["Adresse"].ToString(), Bynavn = reader["ByNavn"].ToString(), Fornavn = reader["Fornavn"].ToString(), Efternavn = reader["EfterNavn"].ToString(), Email = reader["Email"].ToString(), Tlfnummer = reader["TlfNummer"].ToString() };
-                boligMedSælgerInfoListe.Add(boligMedSælgerInfo);
-            
-            
-            }
-            
-            connection.Close ();
-            
-            return boligMedSælgerInfoListe;
-        }
-    
-    public List <BoligerIkkeSolgtInfo> EksporterBoligerIkkeSolgt(string sorteringsString)
+    public DataTable EksporterBoligSælgerListe(string ByNavn, string Status, string sorteringsString)
         {
-            List <BoligerIkkeSolgtInfo> boligerIkkeSolgtInfoListe = new List<BoligerIkkeSolgtInfo> ();
-            SqlCommand command = connection.CreateCommand();
-
-            var sql = "";
-            if (sorteringsString == "Pris")
-            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY Pris"; }
-            else if (sorteringsString == "Adresse")
-            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY Adresse"; }
-            else if (sorteringsString == "Postnummer")
-            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY Postnummer"; }
-            else if (sorteringsString == "ByNavn")
-            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY ByNavn"; }
-            else if (sorteringsString == "BoligType")
-            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY BoligType"; }
-            else if (sorteringsString == "BoligAreal")
-            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY BoligAreal"; }
-            else if (sorteringsString == "Værelser")
-            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY Værelser"; }
-            else if (sorteringsString == "ByggeDato")
-            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY ByggeDato"; }
-            else if (sorteringsString == "GrundStørrelse")
-            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY GrundStørrelse"; }
-            else if (sorteringsString == "EnergiMærke")
-            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY EnergiMærke"; }
-
-
-            command.CommandText = sql;
-            
-
-            connection.Open();
-            var reader = command.ExecuteReader();
-            while (reader.Read())
+            var sql = """
+                    
+                    select 
+                    B.BoligID, B.Adresse, B.Postnummer, B.ByNavn, B.BoligType,
+                    B.BoligAreal, B.Værelser, B.ByggeDato, B.GrundStørrelse, B.EnergiMærke,
+                    C.SælgerID, C.Fornavn, C.EfterNavn, C.TlfNummer, C.Email, C.Adresse,
+                    E.EjendomsmæglerID, E.Fornavn, E.EfterNavn, E.TlfNummer, E.Email, E.Brugernavn
+                    from Bolig B
+                    left join Ejendomsmægler E on B.EjendomsmæglerID = E.EjendomsmæglerID
+                    left join Sælger C on B.SælgerID = C.SælgerID
+                    """;
+            if (Status == "Alle")
+                Status = "";
+            if(Status=="Ikke Solgt"&& ByNavn != "")
             {
-                var boligerIkkeSolgtInfoInfo = new BoligerIkkeSolgtInfo { Pris = Convert.ToString(reader["Pris"]), Adresse = Convert.ToString(reader["Adresse"]), PostNummer = Convert.ToString(reader["Postnummer"]), ByNavn = Convert.ToString(reader["ByNavn"]), Type = Convert.ToString(reader["BoligType"]), BoligAreal = Convert.ToString(reader["BoligAreal"]), Værelser = Convert.ToString(reader["Værelser"]), ByggeDato = Convert.ToString(reader["ByggeDato"]), GrundStørrelse = Convert.ToString(reader["GrundStørrelse"]), EnergiMærke = Convert.ToString(reader["EnergiMærke"]) };
-            boligerIkkeSolgtInfoListe.Add(boligerIkkeSolgtInfoInfo);
-            
-            
-            
+                sql += " where B.ByNavn = " + "'" + ByNavn + "'" + " and B.Status != " + "'Solgt'";
             }
-            connection.Close();
-            return boligerIkkeSolgtInfoListe;
-        } 
-    
+            else if (Status == "Ikke Solgt" && ByNavn == "")
+            {
+                sql += " and B.Status != " + "'Solgt'";
+            }
+            else if(ByNavn != "" && Status != "")
+            {
+                sql += " where B.ByNavn = " + "'" + ByNavn + "'" + " and B.Status = " + "'" + Status + "'";
+            }
+            else if (ByNavn != "" && Status == "")
+            {
+                sql += " where B.ByNavn = " + "'" + ByNavn + "'";
+            }
+            else if (ByNavn == "" && Status != "")
+            {
+                sql += " where B.Status = " + "'" + Status+"'";
+            }
+            if(sorteringsString != "")
+            {
+                sql += " order by " + sorteringsString;
+            }
+            DataTable dataTable = new DataTable();
+            using (SqlCommand cmd = new SqlCommand(sql, connection))
+            {
+                using (SqlDataAdapter dad = new SqlDataAdapter(cmd))
+                {
+                    connection.Open();
+                    dad.Fill(dataTable);
+                    connection.Close();
+                }
+            }
+            var rækker = new List<Dictionary<string, object>>();
+            foreach (DataRow row in dataTable.Rows)
+            {
+                var rækkeData = new Dictionary<string, object>();
+                foreach (DataColumn column in dataTable.Columns)
+                {
+                    rækkeData[column.ColumnName] = row[column];
+                }
+                rækker.Add(rækkeData);
+            }       
+            return dataTable;
+        }
     
     }
 }

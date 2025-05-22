@@ -1,7 +1,11 @@
-using System;
 using DataAccess.Repositories;
 using Microsoft.VisualBasic;
 using Models;
+using System;
+using System.Data;
+using System.Text.Encodings.Web;
+using System.Text.Json;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace BusineesLogic
 {
@@ -81,46 +85,39 @@ namespace BusineesLogic
     }
     public class EksporterText
     {
-        public void EksporterBoligSælgerText(string bynavn)
+        public string EksporterBoligSælgerText(string bynavn, string status, string orderby)
         {
             DataRepository testDR = new DataRepository();
-            var listeTilEksportering = testDR.EksporterBoligSælgerListe(bynavn);
-            String downloads = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\Downloads";
-            string path = Path.Combine(downloads, "BoligSælgerInfo.txt");
-
-
-
-            using (StreamWriter writer = new StreamWriter(path)) 
+            var listeTilEksportering = testDR.EksporterBoligSælgerListe(bynavn, status, orderby);
+            if(listeTilEksportering == null || listeTilEksportering.Rows.Count == 0)
             {
-                {
-                    writer.WriteLine("Adresse : Bynavn : Fornavn : Efternavn : Email : Tlfnummer");
-                    foreach (var bolig in listeTilEksportering)
-                    {
-                        writer.WriteLine($"{bolig.Adresse} : {bolig.Bynavn} : {bolig.Fornavn} : {bolig.Efternavn} :  {bolig.Email} : {bolig.Tlfnummer}");
-                    }
-
-
-                }
-
+                return "Ingen boliger fundet med det bynavn";
             }
-
-        }
-       public void EksporterBoligerTilSalgText(string sorteringsstring)
-        {
-            DataRepository testDR = new DataRepository();
-            var listeTilEksportering = testDR.EksporterBoligerIkkeSolgt(sorteringsstring);
-            String downloads = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\Downloads";
-            string path = Path.Combine(downloads, "BoligerTilSalg.txt");
-
-            using (StreamWriter writer = new StreamWriter(path))
+            string skriveBord = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            string mappesti = Path.Combine(skriveBord, "MineEksports");
+            Directory.CreateDirectory(mappesti);
+            string filnavn = $"Bolig"+ " " + bynavn;
+            string filtype = ".json";
+            string filsti = Path.Combine(mappesti, $"{filnavn}{filtype}");
+            int tæller = 1;
+            while (File.Exists(filsti))
             {
-                writer.WriteLine("Pris : Adresse : Postnummer : ByNavn : BoligType : BoligAreal : Værelser : ByggeDato : GrundStørrelse : EnergiMærke");   
-                foreach (var bolig in listeTilEksportering)
-                {
-                    writer.WriteLine($"{bolig.Pris} : {bolig.Adresse} : {bolig.PostNummer} : {bolig.ByNavn} : {bolig.Type} : {bolig.BoligAreal} : {bolig.Værelser} : {bolig.ByggeDato} : {bolig.GrundStørrelse} : {bolig.EnergiMærke}");
-                }
-
+                filsti = Path.Combine(mappesti, $"{filnavn}({tæller}){filtype}");
+                tæller++;
             }
+            var rækker = new List<Dictionary<string, object>>();
+            foreach (DataRow row in listeTilEksportering.Rows)
+            {
+                var rækkeData = new Dictionary<string, object>();
+                foreach (DataColumn column in listeTilEksportering.Columns)
+                {
+                    rækkeData[column.ColumnName] = row[column];
+                }
+                rækker.Add(rækkeData);
+            }
+            var json = JsonSerializer.Serialize(rækker, new JsonSerializerOptions { WriteIndented = true, Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping });
+            File.WriteAllText(filsti, json);
+            return $"Data fil: {filnavn + tæller.ToString() + filtype} - nu gemt i Mappe: {mappesti}";
         }
 
 
