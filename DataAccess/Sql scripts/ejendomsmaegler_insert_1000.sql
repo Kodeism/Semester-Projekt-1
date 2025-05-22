@@ -1,13 +1,13 @@
-CREATE TABLE Ejendomsmægler (
-    EjendomsmæglerID INT PRIMARY KEY IDENTITY,
-    Fornavn VARCHAR(100),
-    EfterNavn VARCHAR(100),
-    Email VARCHAR(100),
-    TlfNummer VARCHAR(50),
-    Brugernavn VARCHAR(50),
-    Password VARCHAR(50),
-    Adgangsniveau INT -- 1 or 2. Level 2 giver admin privilegier.
-);
+--CREATE TABLE Ejendomsmægler (
+--    EjendomsmæglerID INT PRIMARY KEY IDENTITY,
+--    Fornavn VARCHAR(100),
+--    EfterNavn VARCHAR(100),
+--    Email VARCHAR(100),
+--    TlfNummer VARCHAR(50),
+--    Brugernavn VARCHAR(50),
+--    Password VARCHAR(50),
+--    Adgangsniveau INT -- 1 or 2. Level 2 giver admin privilegier.
+--);
 
 INSERT INTO Ejendomsmægler (Fornavn, EfterNavn, Email, TlfNummer, Brugernavn, Password, Adgangsniveau) VALUES
 ('Thomas', 'Sosa', 'jennifer65@hotmail.com', '470.714.9979x783', 'tsosa', 'Tho4780', 1),

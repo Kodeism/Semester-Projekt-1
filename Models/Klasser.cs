@@ -1,4 +1,6 @@
-﻿namespace Models
+﻿using System.Reflection.PortableExecutable;
+
+namespace Models
 {
     //Dette er bare forslag til klasser. De er ikke færdige. 
     //Kun bolig og salgskvitering indeholder forignkeys.
@@ -14,14 +16,18 @@
     {
         public string Navn { get; set; }
         public string Efternavn { get; set; }
-        public int TlfNummer { get; set; }
+        public string TlfNummer { get; set; }
         public string Email { get; set; }
-        public Person(string navn, string efternavn, int tlfNummer, string email)
+        public Person(string navn, string efternavn, string tlfNummer, string email)
         {
             Navn = navn;
             Efternavn = efternavn;
             TlfNummer = tlfNummer;
             Email = email;
+        }
+        public Person()
+        {
+
         }
     }
     public static class SessionManager
@@ -40,7 +46,7 @@
             EjendomsmæglerId = 0;
             Brugernavn = string.Empty;
             Fornavn = string.Empty;
-            Efternavn= string.Empty;
+            Efternavn = string.Empty;
             FuldeNavn = string.Empty;
             AdgangsNiveau = 0;
         }
@@ -53,10 +59,14 @@
 
         public string CprNr { get; set; }
         public string Adresse { get; set; }
-        public Kunde(string navn, string efternavn, int tlfNummer, string email, string cprNr, string adresse) : base(navn, efternavn, tlfNummer, email)
+        public Kunde(string navn, string efternavn, string tlfNummer, string email, string cprNr, string adresse) : base(navn, efternavn, tlfNummer, email)
         {
             CprNr = cprNr;
             Adresse = adresse;
+        }
+        public Kunde()
+        {
+
         }
     }
 
@@ -75,18 +85,32 @@
         //info om købernes omstændigheder (børn? dyr? job? Hvis det kan hjælpe med at finde noget)
         public int? GrundStørrelse { get; set; }//optional 
         //Hvis de har en fornemmelse af hvor stor grunden gerne skulle være
-        public int? Boligstørrelse { get; set; } //optional
+        public int? BoligStørrelse { get; set; } //optional
         //Hvis de har en fornemmelse af hvor stor boligen gerne skulle være
         public int? Værelser { get; set; } //optional
         //Hvor mange værelser vil de have som minimum.
-        public Køber(string navn, string efternavn, int tlfNummer, string email, int prisKlasse, string søgeOmråde, string boligType, string cprNr, string adresse, string køberinfo = "", int? grundStørrelse = null, int? boligStørrelse = null, int? værelser = null) : base(navn, efternavn, tlfNummer, email, cprNr, adresse)
+        public Køber()
+        {
+
+        }
+        public Køber(string navn, string efternavn, string tlfNummer, string email, int prisKlasse, string søgeOmråde, string boligType, string cprNr, string adresse, string køberinfo = "", int? grundStørrelse = null, int? boligStørrelse = null, int? værelser = null) : base(navn, efternavn, tlfNummer, email, cprNr, adresse)
         {
             SøgeOmråde = søgeOmråde;
             PrisKlasse = prisKlasse;
             BoligType = boligType;
             KøberInfo = køberinfo;
             GrundStørrelse = grundStørrelse;
-            Boligstørrelse = boligStørrelse;
+            BoligStørrelse = boligStørrelse;
+            Værelser = værelser;
+        }
+        public Køber(int køberID, string navn, string efternavn, string tlfNummer, string email, int prisKlasse, string søgeOmråde, string boligType, string cprNr, string adresse, int? grundStørrelse = null, int? boligStørrelse = null, int? værelser = null) : base(navn, efternavn, tlfNummer, email, cprNr, adresse)
+        {
+            KøberID = køberID;
+            SøgeOmråde = søgeOmråde;
+            PrisKlasse = prisKlasse;
+            BoligType = boligType;
+            GrundStørrelse = grundStørrelse;
+            BoligStørrelse = boligStørrelse;
             Værelser = værelser;
         }
     }
@@ -95,9 +119,15 @@
     {
         //sælgere vil have sin egen tabel (altså tabel over alle sælgere)
         public int SælgerID { get; set; }
+        public string EjendomsmæglerNavn { get; set; }
+        public int EjendomsmæglerID { get; set; }
 
         //Sælgerens ID, (dette skulle gerne gives af sql med identity markatet)
-        public Sælger(string navn, string efternavn, int tlfNummer, string email, string cprNr, string adresse) : base(navn, efternavn, tlfNummer, email, cprNr, adresse)
+        public Sælger()
+        {
+
+        }
+        public Sælger(string navn, string efternavn, string tlfNummer, string email, string cprNr, string adresse) : base(navn, efternavn, tlfNummer, email, cprNr, adresse)
         {
 
         }
@@ -105,9 +135,21 @@
         /// <summary>
         /// Sælger constructor med ID så den kan hente ID fra databasen
         /// </summary>
-        public Sælger(int id, string navn, string efternavn, int tlfNummer, string email, string cprNr, string adresse) : base(navn, efternavn, tlfNummer, email, cprNr, adresse)
+        public Sælger(int id, string navn, string efternavn, string tlfNummer, string email, string cprNr, string adresse) : base(navn, efternavn, tlfNummer, email, cprNr, adresse)
         {
             SælgerID = id;
+        }
+        public Sælger(int id, string navn, string efternavn, string tlfNummer, string email, string cprNr, string adresse, string ejendomsmæglerNavn, int ejendomsmæglerID) : base(navn, efternavn, tlfNummer, email, cprNr, adresse)
+        {
+            SælgerID = id;
+            Navn = navn;
+            Efternavn = efternavn;
+            TlfNummer = tlfNummer;
+            Email = email;
+            CprNr = cprNr;
+            Adresse = adresse;
+            EjendomsmæglerNavn = ejendomsmæglerNavn;
+            EjendomsmæglerID = ejendomsmæglerID;
         }
     }
 
@@ -119,9 +161,21 @@
         //hvilket vil give data redundancy.
         public int EjendomsmæglerID { get; set; }
         //Ejendomsmæglerns ID, (dette skulle gerne gives af sql med identity markatet)
-        public Ejendomsmægler(string navn, string efternavn, int tlfNummer, string email) : base(navn, efternavn, tlfNummer, email)
+        public Ejendomsmægler()
         {
 
+        }
+        public Ejendomsmægler(string navn, string efternavn, string tlfNummer, string email) : base(navn, efternavn, tlfNummer, email)
+        {
+
+        }
+        public Ejendomsmægler(int ejendomsmæglerIDstring, string navn, string efternavn, string tlfNummer, string email) : base(navn, efternavn, tlfNummer, email) 
+        {
+            EjendomsmæglerID = ejendomsmæglerIDstring;
+            Navn = navn;
+            Efternavn = efternavn;
+            TlfNummer = tlfNummer;
+            Email = email;
         }
     }
     public class Bolig
@@ -165,7 +219,7 @@
         //Solgt, eller Usolgt
         public string EjendomsmæglerNavn { get; set; } // tilføjet eftersom filter viser navne, ved ikke om ejendomsmæglerID og sælgerID
                                                        // blev brugt til andre ting så de bliver som de er
-        //Navn på ejendomsmægleren der administreret boligen
+                                                       //Navn på ejendomsmægleren der administreret boligen
         public string SælgerNavn { get; set; }
         //Navn på sælgeren der vil sælge boligen
         public Bolig(int pris, string adresse, int postNummer, string byNavn, string type, int boligAreal, int værelser, DateTime byggeDato, int grundStørrelse, int mæglerID, int sælgerID, string energimærke = "", string status = "Usolgt")
@@ -184,8 +238,27 @@
             EnergiMærke = energimærke;
             Status = status;
         }
-        public Bolig(int boligID, int pris, string adresse, int postNummer, string byNavn, string type, int boligAreal, int værelser, DateTime byggeDato, int grundStørrelse, string mæglerNavn, string sælgerNavn, string energimærke = "", string status = "Usolgt")
+        public Bolig(int boligID, int pris, string adresse, int postNummer, string byNavn, string type, int boligAreal, int værelser, DateTime byggeDato, int grundStørrelse, string mæglerNavn, string sælgerNavn, int mæglerID, int sælgerID, string energimærke = "", string status = "Usolgt")
         { // ny bolig constructor til filter
+            BoligID = boligID;
+            Pris = pris;
+            Adresse = adresse;
+            PostNummer = postNummer;
+            ByNavn = byNavn;
+            Type = type;
+            BoligAreal = boligAreal;
+            Værelser = værelser;
+            ByggeDato = byggeDato;
+            GrundStørrelse = grundStørrelse;
+            EjendomsmæglerNavn = mæglerNavn;
+            SælgerNavn = sælgerNavn;
+            EjendomsmæglerID = mæglerID;
+            SælgerID = sælgerID;
+            EnergiMærke = energimærke;
+            Status = status;
+        }
+        public Bolig(int boligID, int pris, string adresse, int postNummer, string byNavn, string type, int boligAreal, int værelser, DateTime byggeDato, int grundStørrelse, string mæglerNavn, string sælgerNavn, string energimærke, string status)
+        {
             BoligID = boligID;
             Pris = pris;
             Adresse = adresse;
@@ -201,6 +274,7 @@
             EnergiMærke = energimærke;
             Status = status;
         }
+
         public Bolig() // tom bolig constructor som bliver brugt til at lave en tom query til første load af tabel
         {
 
@@ -235,7 +309,8 @@
         ////boligens bynavn
         public string Type { get; set; }
         ////boligtypen
-        public DateTime ByggeDato { get; set; } // skal ændres til datetime senere
+        public DateTime? ByggeDatoMin { get; set; }
+        public DateTime? ByggeDatoMax { get; set; }
         ////hvornår var den bygget/renoveret
         public string? EnergiMærke { get; set; } //optional
         ////boligens energimærke
@@ -245,12 +320,16 @@
         ////sælgeren der vil sælge boligen
         public string Status { get; set; }
         ////Solgt, eller Usolgt
+        public int EjendomsmæglerID { get; set; }
+        ////ID på ejendomsmægleren
+        public int SælgerID {  get; set; }
         public BoligFilter(int prisMin, int prisMax, int boligArealMin,
                             int boligArealMax, int grundStørrelseMin, int grundStørrelseMax,
                             int værelserMin, int værelserMax, string adresse,
                             int postnummer, string byNavn, string type,
+                            DateTime? byggeDatoMin, DateTime? byggeDatoMax,
                             string energiMærke, string status, string ejendomsmæglerNavn, 
-                            string sælgerNavn)
+                            string sælgerNavn, int ejendomsmæglerID, int sælgerID)
                             /*DateTime byggeDato,*/// byggedato skal ændres til en datetime senere
         {
             PrisMin = prisMin;
@@ -266,16 +345,44 @@
             ByNavn = byNavn;
             EnergiMærke = energiMærke;
             Type = type;
+            ByggeDatoMin = byggeDatoMin;
+            ByggeDatoMax = byggeDatoMax;
             Status = status;
             EjendomsmæglerNavn = ejendomsmæglerNavn;
             SælgerNavn = sælgerNavn;
-            //ByggeDato = byggeDato;
+            EjendomsmæglerID = ejendomsmæglerID;
+            SælgerID = sælgerID;
         }
         public BoligFilter()
         {
 
         }
     }
+    public class SælgerFilter
+    {
+        public string Fornavn { get; set; }
+        public string EfterNavn { get; set; }
+        public string Email { get; set; }
+        public string TlfNummer { get; set; }
+        public string Adresse { get; set; }
+        public string CprNummer { get; set; }
+        public string EjendomsmæglerNavn { get; set; }
+        public int EjendomsmæglerID { get; set; }
+    }
+    public class KøberFilter
+    {
+        public string? PrisKlasse { get; set; }
+        public string? SøgeOmråde { get; set; }
+        public string? BoligType { get; set; }
+        public int? ØnsketGrundStørrelseMin { get; set; }
+        public int? ØnsketGrundStørrelseMax { get; set; }
+        public int? ØnsketBoligStørrelseMin { get; set; }
+        public int? ØnsketBoligStørrelseMax { get; set; }
+        public int? ØnsketVærelserMin { get; set; }
+        public int? ØnsketVærelserMax { get; set; }
+        public string? Navn { get; set; } // Søger på fornavn + efternavn
+    }
+
 
     public class Salg
     {
@@ -287,9 +394,19 @@
         public int BoligID { get; set; }
         //boligen (som indeholder forign keys for sælgeren og Ejendomsmægleren)
         public int SælgerID { get; set; }
-        public DateOnly Dato { get; set; }
+        public DateTime Dato { get; set; }
         public int Beløb { get; set; }
-        public Salg(int køberID, int boligID, int sælgerID,DateOnly dato, int beløb)
+        public string Adresse { get; set; } // bruges til join i query
+        public string ByNavn { get; set; }
+        public string MæglerNavn { get; set; }
+        public string SælgerNavn { get; set; }
+        public string KøberNavn { get; set; }
+        
+        public Salg()
+        {
+
+        }
+        public Salg(int køberID, int boligID, int sælgerID, DateTime dato, int beløb)
         {
             KøberID = køberID;
             BoligID = boligID;
@@ -297,5 +414,53 @@
             Dato = dato;
             Beløb = beløb;
         }
+        public Salg(int salgID, int køberID, int boligID, DateTime dato, int beløb, string adresse, string byNavn, string mæglerNavn, string sælgerNavn, string køberNavn)
+        {
+            SalgsID = salgID;
+            KøberID = køberID;
+            BoligID = boligID;
+            Dato = dato;
+            Beløb = beløb;
+            Adresse = adresse;
+            ByNavn = byNavn;
+            MæglerNavn = mæglerNavn;
+            SælgerNavn = sælgerNavn;
+            KøberNavn = køberNavn;
+        }
+    }
+    public class BoligMedSælgerInfo
+    {
+        public string Adresse { get; set; }
+        public string Bynavn { get; set; }
+        public string Fornavn { get; set; }
+        public string Efternavn { get; set; }
+        public string Email { get; set; }
+        public string Tlfnummer { get; set; }
+    }
+    public class BoligerIkkeSolgtInfo
+    {
+        
+        public string Pris { get; set; }
+        //pris på boligen
+        public string Adresse { get; set; }
+        //boligens adresse
+        public string PostNummer { get; set; }
+        //boligens postnummer
+        public string ByNavn { get; set; }
+        //boligens bynavn
+        public string Type { get; set; }
+        //boligtypen
+        public string BoligAreal { get; set; }
+        //boligens areal
+        public string Værelser { get; set; }
+        //antal af værelser/rum
+        public string ByggeDato { get; set; }
+        //hvornår var den bygget/renoveret
+        public string GrundStørrelse { get; set; }
+        //det samlet areal af bolig og land
+        public string EnergiMærke { get; set; } //optional
+        //boligens energimærke
+        public string Status { get; set; }
+        //Boligens status
     }
 }

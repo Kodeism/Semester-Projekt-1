@@ -19,16 +19,29 @@ namespace Semester_Projekt_1
     public partial class BoligFilterForm : Form
     {
         private BoligFilterTest boligFilterTest;
+        private UniForside uniForside;
+        private UniForside.Mode currentModeUni;
+        private duoForside duoForside;
+        private duoForside.Mode currentModeDuo;
+        private bool mine;
         public BoligFilterForm()
         {
             InitializeComponent();
 
         }
-        public BoligFilterForm(BoligFilterTest boligForm)
+        public BoligFilterForm(UniForside boligForm, UniForside.Mode mode)
         {
             InitializeComponent();
-            boligFilterTest = boligForm;
+            uniForside = boligForm;
+            currentModeUni = mode;
 
+        }
+        public BoligFilterForm(duoForside boligForm, duoForside.Mode mode, bool erMine)
+        {
+            InitializeComponent();
+            duoForside = boligForm;
+            currentModeDuo = mode;
+            mine = erMine;
         }
 
 
@@ -96,8 +109,10 @@ namespace Semester_Projekt_1
             // Type
             string boligType = FilterHousingTypeComboBox.SelectedItem?.ToString();
 
-            // Byggeår // mangler at blive lavet
-            //DateTime? byggeDato = DateTime.TryParse(FilterBuiltDateTextBox.Text, out DateTime bd) ? bd : (DateTime?)null;
+            // Byggeår min
+            DateTime? byggeDatoMin = FilterBuiltDateTimePickerMin.Checked ? FilterBuiltDateTimePickerMin.Value : (DateTime?)null;
+            // Byggeår maks
+            DateTime? byggeDatoMax = FilterBuiltDateTimePickerMax.Checked ? FilterBuiltDateTimePickerMax.Value : (DateTime?)null;
 
             // Energimærke
             string energiMærke = FilterEnergyLabelComboBox.SelectedItem?.ToString();
@@ -112,25 +127,59 @@ namespace Semester_Projekt_1
 
             // Status
             string status = FilterStatusComboBox.SelectedItem?.ToString();
+            int ejendomsmæglerID = 0;
+
+            if (uniForside != null && currentModeUni == UniForside.Mode.MineB)
+            {
+                ejendomsmæglerID = SessionManager.EjendomsmæglerId;
+            }
+            else if (duoForside != null && currentModeDuo == duoForside.Mode.Boliger && mine == true)
+            {
+                ejendomsmæglerID = SessionManager.EjendomsmæglerId;
+            }
+
+            int sælgerID = 0;
 
             var boligFilter = new BoligFilter(
-                prisMin, prisMax, 
+                prisMin, prisMax,
                 boligArealMin, boligArealMax,
                 grundStørrelseMin, grundStørrelseMax,
                 værelserMin, værelserMax,
                 adresse, postnummer,
-                byNavn, boligType, 
+                byNavn, boligType,
+                byggeDatoMin, byggeDatoMax,
                 energiMærke, status,
-                ejendomsmæglerNavn, sælgerNavn
-                //byggeDato ?? DateTime.MinValue // mangler at blive lavet
+                ejendomsmæglerNavn, sælgerNavn,
+                ejendomsmæglerID, sælgerID
             );
 
             using (SqlConnection conn = new SqlConnection(BoligLogic.GetConnectionString()))
             {
-                var result = DataRepository.SøgMedFilter(conn, boligFilter);
-                boligFilterTest.OpdaterBoligerDataGrid(result);
-
+                if (uniForside != null && currentModeUni == UniForside.Mode.MineB)
+                {
+                    var result = DataRepository.SøgMedFilter(conn, boligFilter, ejendomsmæglerID);
+                    uniForside.OpdaterBoligerDataGrid(result);
+                }
+                else if (uniForside != null && currentModeUni == UniForside.Mode.AlleB)
+                {
+                    var result = DataRepository.SøgMedFilter(conn, boligFilter, ejendomsmæglerID);
+                    uniForside.OpdaterBoligerDataGrid(result);
+                }
+                else if (duoForside != null && currentModeDuo == duoForside.Mode.Boliger)
+                {
+                    if (mine)
+                    {
+                        var result = DataRepository.SøgMedFilter(conn, boligFilter, ejendomsmæglerID);
+                        duoForside.OpdaterMineBoligerDataGrid(result);
+                    }
+                    else
+                    {
+                        var result = DataRepository.SøgMedFilter(conn, boligFilter, ejendomsmæglerID);
+                        duoForside.OpdaterAlleBoligerDataGrid(result);
+                    }
+                }
             }
+
         }
 
     }

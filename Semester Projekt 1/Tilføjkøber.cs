@@ -4,6 +4,14 @@ namespace Semester_Projekt_1
 {
     public partial class TilføjKøber : Form
     {
+        private int boligID;
+
+        public TilføjKøber(int boligID)
+        {
+            InitializeComponent();
+            this.boligID = boligID;
+            Console.Write(boligID);
+        }
         public TilføjKøber()
         {
             InitializeComponent();
@@ -55,10 +63,10 @@ namespace Semester_Projekt_1
                 MessageBox.Show("Indtast venligst adresse");
             }
             //Giver error message, og highlighter box med rød, hvis der indtastes andet end tal i til tlfnummer.
-            int tlfNummer = 0;
+            string tlfNummer = "0";
             try
             {
-                tlfNummer = int.Parse(telefonnummerTextbox.Text);
+                tlfNummer = telefonnummerTextbox.Text;
             }
             catch
             {
