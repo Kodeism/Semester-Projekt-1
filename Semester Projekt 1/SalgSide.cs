@@ -22,6 +22,7 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
             SetMode(mode);
+            salgSøgeFelt.PlaceholderText = "Søg Adresse...";
             salgDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
         private void SetMode(Mode _mode)

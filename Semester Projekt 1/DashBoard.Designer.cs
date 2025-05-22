@@ -33,6 +33,7 @@
             pageLabel = new Label();
             logUdDBKnap = new Button();
             menuDBLayoutPanel = new TableLayoutPanel();
+            exportData = new Button();
             personDBPanel = new FlowLayoutPanel();
             personDBKnap = new Button();
             mæglerDBKnap = new Button();
@@ -120,7 +121,7 @@
             logUdDBKnap.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             logUdDBKnap.ForeColor = Color.Black;
             logUdDBKnap.ImageAlign = ContentAlignment.MiddleLeft;
-            logUdDBKnap.Location = new Point(3, 114);
+            logUdDBKnap.Location = new Point(3, 147);
             logUdDBKnap.Margin = new Padding(2);
             logUdDBKnap.MaximumSize = new Size(97, 31);
             logUdDBKnap.MinimumSize = new Size(97, 31);
@@ -139,22 +140,48 @@
             menuDBLayoutPanel.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
             menuDBLayoutPanel.ColumnCount = 1;
             menuDBLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            menuDBLayoutPanel.Controls.Add(exportData, 0, 3);
             menuDBLayoutPanel.Controls.Add(personDBPanel, 0, 1);
             menuDBLayoutPanel.Controls.Add(salgDBPanel, 0, 2);
-            menuDBLayoutPanel.Controls.Add(logUdDBKnap, 0, 3);
             menuDBLayoutPanel.Controls.Add(boligDBPanel, 0, 0);
+            menuDBLayoutPanel.Controls.Add(logUdDBKnap, 0, 4);
             menuDBLayoutPanel.Location = new Point(1, 101);
             menuDBLayoutPanel.Margin = new Padding(0);
             menuDBLayoutPanel.MaximumSize = new Size(101, 0);
             menuDBLayoutPanel.MinimumSize = new Size(101, 140);
             menuDBLayoutPanel.Name = "menuDBLayoutPanel";
-            menuDBLayoutPanel.RowCount = 4;
+            menuDBLayoutPanel.RowCount = 5;
             menuDBLayoutPanel.RowStyles.Add(new RowStyle());
             menuDBLayoutPanel.RowStyles.Add(new RowStyle());
             menuDBLayoutPanel.RowStyles.Add(new RowStyle());
             menuDBLayoutPanel.RowStyles.Add(new RowStyle());
-            menuDBLayoutPanel.Size = new Size(101, 148);
+            menuDBLayoutPanel.RowStyles.Add(new RowStyle());
+            menuDBLayoutPanel.Size = new Size(101, 181);
             menuDBLayoutPanel.TabIndex = 0;
+            // 
+            // exportData
+            // 
+            exportData.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            exportData.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            exportData.BackColor = Color.FromArgb(150, 175, 184);
+            exportData.BackgroundImage = Properties.Resources._154838;
+            exportData.BackgroundImageLayout = ImageLayout.Zoom;
+            exportData.FlatAppearance.BorderColor = Color.Black;
+            exportData.FlatStyle = FlatStyle.Flat;
+            exportData.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            exportData.ForeColor = Color.Black;
+            exportData.ImageAlign = ContentAlignment.MiddleLeft;
+            exportData.Location = new Point(3, 111);
+            exportData.Margin = new Padding(2);
+            exportData.MaximumSize = new Size(97, 31);
+            exportData.MinimumSize = new Size(97, 31);
+            exportData.Name = "exportData";
+            exportData.RightToLeft = RightToLeft.No;
+            exportData.Size = new Size(97, 31);
+            exportData.TabIndex = 6;
+            exportData.TextAlign = ContentAlignment.MiddleRight;
+            exportData.UseVisualStyleBackColor = false;
+            exportData.Click += exportData_Click;
             // 
             // personDBPanel
             // 
@@ -462,7 +489,7 @@
             salgDBPanel.Margin = new Padding(2);
             salgDBPanel.MinimumSize = new Size(97, 31);
             salgDBPanel.Name = "salgDBPanel";
-            salgDBPanel.Size = new Size(97, 34);
+            salgDBPanel.Size = new Size(97, 31);
             salgDBPanel.TabIndex = 5;
             // 
             // salgDBKnap
@@ -821,5 +848,6 @@
         private Button mæglerDBKnap;
         private TableLayoutPanel brugerLayoutPanel;
         private Label brugerNavnLabel;
+        private Button exportData;
     }
 }

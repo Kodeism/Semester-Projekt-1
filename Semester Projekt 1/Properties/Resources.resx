@@ -136,20 +136,20 @@
   <data name="houses-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\houses-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="image (25)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\image (25).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="image (22) mini" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image (22) mini.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="image (22)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image (22).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="image (24) mini" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\image (24) mini.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image (25)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image (25).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="8503b364be6ba9825ae617c947fa5280" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8503b364be6ba9825ae617c947fa5280.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image (24) mini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image (24) mini.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="image (23) mini1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image (23) mini1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,10 +157,13 @@
   <data name="image (23) mini" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image (23) mini.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Drop-down-arrow-icon-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Drop-down-arrow-icon-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="houses-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\houses-icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Drop-down-arrow-icon-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Drop-down-arrow-icon-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="154838" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\154838.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
