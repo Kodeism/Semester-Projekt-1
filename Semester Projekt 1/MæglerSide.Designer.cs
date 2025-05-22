@@ -125,6 +125,7 @@
             mæglerDataGridView.Location = new Point(10, 89);
             mæglerDataGridView.Margin = new Padding(10, 0, 10, 5);
             mæglerDataGridView.Name = "mæglerDataGridView";
+            mæglerDataGridView.ReadOnly = true;
             mæglerDataGridView.RowHeadersWidth = 62;
             mæglerDataGridView.Size = new Size(669, 572);
             mæglerDataGridView.TabIndex = 2;

@@ -139,29 +139,48 @@ namespace Semester_Projekt_1
 
         private void uniFilterKnap_Click(object sender, EventArgs e)
         {
-            BoligFilterForm boligFilterForm = new BoligFilterForm(this, currentMode);
-            boligFilterForm.Show();
+            if (currentMode == Mode.AlleB || currentMode == Mode.MineB)
+            {
+                BoligFilterForm boligFilterForm = new BoligFilterForm(this, currentMode);
+                boligFilterForm.Show();
+            }
         }
 
         private void uniDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (currentMode != Mode.MineK)
+            if (currentMode == Mode.MineS)
             {
-                return;
+                if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
+                {
+                    DataGridView uniDataGridView = (DataGridView)sender;
+
+                    // Hent værdien af BoligID i den valgte række
+                    var sælgerIDValue = uniDataGridView.Rows[e.RowIndex].Cells["SælgerID"].Value;
+
+                    // Konverter evt. til int hvis nødvendigt
+                    int sælgerID = Convert.ToInt32(sælgerIDValue);
+
+                    // Brug boligId som du vil
+                    DeleteSælger deleteSælger = new DeleteSælger(sælgerID);
+                    deleteSælger.Show();
+                }
             }
-            if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
+            if (currentMode == Mode.MineB)
             {
-                DataGridView uniDataGridView = (DataGridView)sender;
+                if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
+                {
+                    DataGridView uniDataGridView = (DataGridView)sender;
 
-                // Hent værdien af BoligID i den valgte række
-                var køberIDValue = uniDataGridView.Rows[e.RowIndex].Cells["KøberID"].Value;
+                    // Hent værdien af BoligID i den valgte række
+                    var boligIDValue = uniDataGridView.Rows[e.RowIndex].Cells["BoligID"].Value;
 
-                // Konverter evt. til int hvis nødvendigt
-                int køberID = Convert.ToInt32(køberIDValue);
+                    // Konverter evt. til int hvis nødvendigt
+                    int boligID = Convert.ToInt32(boligIDValue);
 
-                // Brug boligId som du vil
-                TilføjKøber tilføjKøber = new TilføjKøber(køberID);
-                tilføjKøber.Show();
+                    // Brug boligId som du vil
+                    DeleteBolig deleteBolig = new DeleteBolig(boligID);
+                    deleteBolig.Show();
+                }
             }
         }
 
@@ -169,8 +188,8 @@ namespace Semester_Projekt_1
         {
             if (mode_ == Mode.AlleS || mode_ == Mode.MineS)
             {
-                SaleRegistration saleRegistration = new SaleRegistration();
-                saleRegistration.ShowDialog();
+                FormTilføjSælger formTilføjSælger = new FormTilføjSælger();
+                formTilføjSælger.ShowDialog();
             }
             else if (mode_ == Mode.AlleK || mode_ == Mode.MineK)
             {
@@ -184,25 +203,38 @@ namespace Semester_Projekt_1
             }
         }
 
+        private string lastSortedColumn = "";
+        private bool sortAscending = true;
+
         private void uniDataGridView_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            // Tjek om det er "Pris"-kolonnen
-            if (uniDataGridView.Columns[e.ColumnIndex].Name == "Pris")
+            if (boligerCache != null && boligerCache.Any())
             {
-                if (boligerCache != null)
+                string columnName = uniDataGridView.Columns[e.ColumnIndex].Name;
+
+                // Find property på Bolig-objekter der matcher kolonnenavnet
+                var propInfo = typeof(Bolig).GetProperty(columnName);
+                if (propInfo != null)
                 {
                     List<Bolig> sortedList;
-                    if (sortAscendingPris)
-                        sortedList = boligerCache.OrderBy(b => b.Pris).ToList();
-                    else
-                        sortedList = boligerCache.OrderByDescending(b => b.Pris).ToList();
 
-                    sortAscendingPris = !sortAscendingPris;
+                    // Skift sorteringsretning hvis det er samme kolonne som sidst
+                    if (lastSortedColumn == columnName)
+                        sortAscending = !sortAscending;
+                    else
+                        sortAscending = true;
+
+                    lastSortedColumn = columnName;
+
+                    if (sortAscending)
+                        sortedList = boligerCache.OrderBy(b => propInfo.GetValue(b, null)).ToList();
+                    else
+                        sortedList = boligerCache.OrderByDescending(b => propInfo.GetValue(b, null)).ToList();
 
                     uniDataGridView.DataSource = null;
                     uniDataGridView.DataSource = sortedList;
 
-                    // Skjul id som ikke burde blive vist men de bliver vist aligevel
+                    // Skjul ID-kolonner
                     if (uniDataGridView.Columns.Contains("EjendomsmæglerID"))
                         uniDataGridView.Columns["EjendomsmæglerID"].Visible = false;
 
@@ -211,6 +243,7 @@ namespace Semester_Projekt_1
                 }
             }
         }
+
 
     }
 }
