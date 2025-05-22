@@ -1,1000 +1,4001 @@
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (914, 232, '2023-12-03', 3138955);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (618, 821, '2022-04-23', 5178749);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (975, 458, '2005-11-18', 4123419);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (557, 170, '2016-10-12', 3757232);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (168, 910, '2018-04-21', 4170993);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (977, 120, '2022-07-05', 3018125);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (263, 639, '2014-02-06', 1882573);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (616, 878, '2011-01-28', 5478689);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (177, 113, '2013-03-26', 4798777);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (606, 645, '2021-08-13', 4450446);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (743, 890, '2006-12-25', 2215836);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (824, 489, '2019-02-14', 5151127);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (670, 754, '2017-07-21', 2939979);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (84, 140, '2015-11-18', 3584615);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (747, 436, '2006-07-03', 2916924);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (130, 941, '2021-06-25', 4447199);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (909, 826, '2022-09-03', 1184072);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (812, 594, '2010-01-01', 1645637);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (553, 596, '2020-08-03', 3549494);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (157, 636, '2014-10-23', 3375166);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (902, 259, '2009-12-01', 5660248);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (54, 630, '2012-08-30', 5034369);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (216, 311, '2020-06-04', 5031060);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (213, 307, '2023-10-01', 2371468);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (630, 498, '2014-08-11', 848305);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (165, 567, '2007-08-27', 950125);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (640, 584, '2010-08-25', 5721851);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (344, 407, '2014-06-30', 1539279);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (689, 229, '2008-10-08', 2030005);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (193, 705, '2020-07-26', 4424861);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (342, 983, '2009-11-26', 807324);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (643, 586, '2022-05-23', 2006922);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (902, 835, '2013-01-03', 3090790);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (212, 63, '2021-01-25', 4286061);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (231, 586, '2023-01-01', 2143906);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (221, 44, '2021-12-04', 1537974);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (176, 666, '2009-06-26', 4091737);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (843, 347, '2025-02-05', 1077971);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (517, 109, '2009-08-01', 4057461);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (132, 516, '2022-05-23', 3337905);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (325, 469, '2022-08-04', 2690556);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (218, 643, '2019-02-21', 2591038);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (13, 485, '2017-12-31', 2615953);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (55, 9, '2024-08-24', 3526440);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (375, 765, '2009-09-18', 2903081);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (458, 849, '2017-06-23', 4699697);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (498, 3, '2010-10-17', 2645599);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (530, 379, '2022-06-15', 2576394);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (513, 935, '2018-12-19', 1520618);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (578, 618, '2006-08-15', 5567406);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (771, 577, '2015-06-12', 4416054);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (913, 957, '2021-08-02', 4433859);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (316, 94, '2007-10-09', 4063802);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (321, 142, '2015-05-22', 5392261);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (759, 870, '2019-09-05', 5557770);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (57, 643, '2005-06-14', 2346220);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (476, 550, '2022-01-21', 5008090);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (349, 243, '2020-12-20', 4254408);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (395, 359, '2017-11-06', 1626718);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (236, 260, '2010-03-19', 5321313);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (511, 777, '2009-11-26', 1848497);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (342, 255, '2010-12-29', 1545121);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (787, 111, '2015-06-17', 3828691);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (403, 900, '2023-01-26', 3366834);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (624, 357, '2020-08-22', 1673370);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (411, 45, '2017-08-19', 3691641);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (837, 38, '2016-09-17', 948060);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (853, 596, '2017-01-23', 3351183);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (712, 948, '2021-08-15', 2050986);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (672, 848, '2017-05-10', 2639701);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (417, 40, '2006-01-04', 2001484);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (916, 394, '2018-02-01', 2792293);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (466, 268, '2011-10-17', 1135471);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (67, 661, '2023-06-25', 2443586);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (307, 38, '2017-03-18', 2898713);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (972, 187, '2006-04-04', 5604507);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (799, 413, '2022-09-26', 720284);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (86, 508, '2010-02-09', 5910181);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (860, 249, '2019-10-11', 4338024);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (621, 834, '2009-05-09', 4276323);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (956, 476, '2005-08-16', 4342809);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (641, 635, '2021-08-26', 3760951);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (554, 861, '2021-03-11', 543919);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (270, 987, '2014-06-09', 3829041);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (663, 601, '2008-07-20', 5484143);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (851, 74, '2013-03-20', 1040994);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (516, 812, '2013-08-21', 1339883);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (911, 55, '2023-12-26', 5961331);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (427, 165, '2023-03-09', 1053386);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (124, 94, '2013-09-26', 3553976);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (616, 593, '2013-11-24', 1351895);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (187, 90, '2007-11-21', 1862112);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (78, 271, '2009-02-04', 659182);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (231, 109, '2019-01-08', 4383900);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (943, 778, '2005-10-21', 3437298);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (994, 442, '2016-01-03', 5299580);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (254, 22, '2007-07-09', 2022980);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (440, 787, '2008-10-25', 3403347);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (655, 714, '2005-07-23', 2843846);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (609, 952, '2015-02-27', 2656382);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (982, 994, '2015-02-08', 1575285);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (786, 108, '2020-07-14', 3163986);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (432, 793, '2018-05-17', 5487997);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (807, 816, '2010-05-24', 2242944);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (769, 928, '2009-11-11', 2488780);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (568, 903, '2025-03-24', 1434981);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (937, 589, '2020-10-06', 1520358);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (99, 619, '2012-09-24', 2718361);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (251, 90, '2010-09-20', 4333743);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (142, 986, '2017-09-01', 5952644);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (183, 172, '2017-05-16', 5482428);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (786, 167, '2006-03-02', 2102749);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (30, 909, '2011-11-05', 4236147);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (287, 619, '2019-04-17', 5824273);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (109, 419, '2009-07-28', 5186142);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (794, 822, '2006-05-21', 4479686);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (566, 428, '2024-02-12', 2556535);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (568, 319, '2010-01-19', 5314114);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (186, 314, '2009-02-09', 5865444);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (175, 64, '2007-10-28', 1052640);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (737, 292, '2020-06-15', 2631820);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (221, 495, '2014-01-24', 2030844);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (654, 396, '2023-10-14', 813878);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (410, 1, '2016-01-25', 2878197);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (261, 822, '2023-03-02', 2011495);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (776, 657, '2021-07-29', 1552063);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (258, 193, '2018-06-03', 4175584);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (924, 119, '2010-08-06', 3277880);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (524, 104, '2005-06-14', 568379);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (259, 805, '2024-10-27', 568399);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (244, 803, '2007-07-10', 2405066);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (742, 974, '2013-07-31', 1275815);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (206, 25, '2017-10-17', 945788);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (944, 547, '2011-09-14', 1137302);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (768, 343, '2022-05-24', 3731533);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (876, 974, '2012-05-14', 2995560);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (643, 112, '2018-12-26', 991251);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (194, 20, '2017-08-31', 2246345);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (830, 790, '2016-07-16', 2233708);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (894, 323, '2021-09-05', 5356059);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (945, 163, '2006-01-01', 2488839);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (602, 534, '2013-11-17', 4006918);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (657, 128, '2013-04-16', 4775273);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (688, 902, '2024-01-25', 5083557);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (430, 245, '2019-01-23', 5052066);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (25, 686, '2006-04-28', 4736543);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (807, 968, '2007-07-25', 5792311);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (502, 67, '2022-10-05', 1004335);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (872, 692, '2018-10-30', 2503374);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (841, 403, '2011-08-22', 5187969);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (167, 801, '2009-05-23', 1485633);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (974, 87, '2021-09-08', 2223331);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (856, 176, '2016-02-05', 4522405);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (423, 947, '2014-10-25', 3221990);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (537, 608, '2015-10-25', 619605);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (348, 289, '2010-11-27', 4037361);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (879, 457, '2020-07-09', 3874786);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (16, 146, '2006-02-16', 4745404);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (225, 712, '2019-08-05', 4127135);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (330, 29, '2005-11-17', 5066881);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (415, 403, '2015-07-04', 3911396);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (342, 552, '2015-06-13', 2585306);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (467, 17, '2023-12-30', 1733749);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (520, 835, '2018-05-09', 5130546);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (792, 485, '2010-04-04', 5342045);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (592, 145, '2014-10-20', 1424516);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (609, 732, '2016-09-25', 2696436);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (351, 59, '2013-02-26', 5899525);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (989, 63, '2019-08-04', 870686);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (900, 696, '2011-07-20', 4141565);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (291, 856, '2018-09-06', 1044021);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (226, 523, '2006-03-26', 5992993);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (475, 749, '2018-09-05', 1810100);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (886, 782, '2009-05-10', 1387327);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (902, 801, '2015-09-29', 3555275);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (160, 559, '2005-11-27', 2479275);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (789, 316, '2023-10-31', 4620819);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (43, 798, '2010-05-18', 1068267);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (714, 499, '2007-08-12', 5908817);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (79, 185, '2015-02-08', 5493660);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (502, 596, '2005-12-10', 5860995);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (803, 644, '2016-08-21', 2870097);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (188, 732, '2024-08-25', 919299);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (541, 298, '2014-06-14', 769722);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (510, 564, '2015-05-07', 1708027);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (845, 88, '2024-02-04', 1996266);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (29, 520, '2017-03-28', 2536944);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (35, 521, '2021-09-16', 3294280);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (654, 516, '2020-09-18', 4234184);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (756, 130, '2012-02-23', 2196348);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (129, 195, '2011-08-20', 2527057);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (131, 450, '2019-01-24', 5999291);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (110, 721, '2020-07-24', 5577275);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (915, 631, '2022-11-08', 2330555);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (195, 932, '2017-07-31', 844573);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (618, 390, '2010-07-18', 3322395);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (789, 569, '2012-01-10', 5616723);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (273, 582, '2024-05-07', 1624869);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (891, 909, '2007-09-02', 2197868);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (814, 549, '2011-03-10', 3268532);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (206, 784, '2007-10-15', 749950);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (20, 628, '2007-10-20', 4051893);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (339, 92, '2024-07-20', 4263205);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (50, 885, '2008-09-19', 3194715);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (741, 758, '2011-07-20', 1901757);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (322, 550, '2011-10-09', 2852611);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (52, 803, '2021-06-05', 5159468);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (474, 271, '2023-06-05', 1787711);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (606, 836, '2020-10-21', 1156166);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (742, 659, '2014-08-01', 5953945);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (828, 835, '2009-02-26', 1222455);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (501, 451, '2020-06-10', 1232686);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (518, 495, '2016-01-17', 2562858);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (188, 779, '2010-03-13', 2943000);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (256, 102, '2021-08-05', 3432099);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (772, 98, '2014-04-11', 3895832);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (534, 644, '2023-02-11', 4348789);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (561, 247, '2019-02-14', 5433213);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (315, 463, '2023-05-23', 5797941);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (652, 226, '2023-09-03', 4173315);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (177, 773, '2022-08-01', 2902688);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (569, 388, '2023-11-14', 2519874);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (162, 11, '2018-07-07', 1610023);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (308, 680, '2008-04-15', 4749069);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (591, 106, '2024-01-13', 3144557);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (694, 237, '2022-06-16', 3292940);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (452, 255, '2019-09-25', 4863557);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (184, 782, '2010-08-07', 4780818);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (429, 720, '2017-08-24', 4695571);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (283, 61, '2005-11-16', 1819146);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (85, 407, '2019-05-14', 2221275);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (176, 659, '2014-03-26', 653752);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (183, 546, '2005-11-27', 4032537);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (29, 53, '2015-10-20', 5650106);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (340, 79, '2010-05-27', 4211163);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (506, 849, '2015-09-26', 2040570);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (198, 403, '2011-10-11', 4274553);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (915, 976, '2006-10-18', 2661406);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (295, 673, '2015-03-18', 3923575);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (277, 264, '2007-09-17', 5005962);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (317, 569, '2015-01-15', 5370627);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (847, 489, '2007-07-02', 2119708);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (430, 434, '2021-04-30', 5339157);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (775, 310, '2015-05-14', 5916543);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (258, 430, '2007-01-06', 1079071);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (61, 361, '2023-12-29', 4481204);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (359, 898, '2018-04-05', 4225733);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (423, 725, '2023-03-04', 2089184);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (812, 673, '2014-03-01', 4404176);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (346, 627, '2008-06-19', 1540226);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (295, 596, '2012-05-01', 1656385);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (327, 326, '2014-03-28', 980964);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (531, 422, '2023-04-22', 3711431);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (301, 609, '2011-01-03', 5688982);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (159, 966, '2012-07-20', 1671075);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (104, 53, '2024-12-20', 4433953);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (827, 695, '2016-06-07', 703562);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (908, 680, '2023-12-23', 697206);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (757, 42, '2018-05-03', 5450316);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (302, 238, '2018-08-01', 1859789);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (743, 705, '2016-04-18', 3641279);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (262, 971, '2013-10-11', 2558820);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (852, 897, '2019-10-28', 1476224);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (185, 628, '2020-05-29', 1016962);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (733, 207, '2009-11-20', 516414);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (415, 530, '2011-10-03', 5100661);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (901, 383, '2011-07-03', 1999271);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (326, 594, '2017-02-07', 5992338);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (125, 316, '2025-05-09', 2886925);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (360, 77, '2015-01-02', 3315070);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (359, 687, '2023-10-17', 4625783);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (633, 83, '2010-06-03', 5239597);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (990, 273, '2020-01-05', 5725699);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (28, 87, '2022-04-20', 678998);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (323, 92, '2021-07-11', 3163417);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (493, 757, '2020-02-21', 3014675);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (798, 690, '2020-06-11', 671623);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (698, 401, '2007-07-03', 4111302);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (351, 742, '2006-03-19', 5515454);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (11, 53, '2011-10-17', 2103548);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (765, 252, '2016-04-28', 3869717);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (630, 390, '2023-09-11', 4346501);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (306, 121, '2012-12-10', 4436396);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (989, 47, '2013-07-13', 2986893);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (109, 441, '2021-12-31', 3381739);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (926, 571, '2016-01-06', 2528251);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (155, 654, '2020-08-13', 3730668);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (993, 550, '2014-04-06', 4927448);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (92, 978, '2020-10-22', 3065736);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (822, 321, '2010-11-07', 2400260);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (424, 106, '2010-02-19', 4140627);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (975, 677, '2015-12-31', 1545329);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (295, 85, '2013-11-14', 5232579);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (950, 955, '2005-07-13', 1289960);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (179, 604, '2007-07-27', 2572378);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (134, 372, '2019-03-06', 5180263);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (841, 101, '2023-09-27', 4777337);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (228, 400, '2023-09-10', 1076551);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (506, 372, '2017-10-08', 4477818);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (198, 521, '2022-05-03', 1112194);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (598, 353, '2017-01-07', 3874605);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (148, 951, '2010-09-11', 3641886);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (494, 162, '2018-02-22', 5137842);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (107, 364, '2015-02-09', 3667239);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (680, 513, '2011-01-06', 4268525);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (811, 39, '2024-09-07', 5702091);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (559, 810, '2012-05-04', 501970);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (648, 368, '2015-11-08', 4275206);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (260, 280, '2018-04-17', 3795139);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (554, 161, '2023-09-17', 933806);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (330, 621, '2015-03-21', 5837012);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (820, 814, '2018-03-03', 942872);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (468, 268, '2018-05-26', 4782857);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (590, 487, '2012-01-20', 3689488);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (656, 241, '2013-10-31', 5322044);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (200, 466, '2022-02-02', 657309);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (635, 263, '2024-01-17', 4453345);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (202, 21, '2006-04-12', 5688749);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (4, 726, '2014-02-05', 3507791);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (632, 148, '2018-12-29', 4906846);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (966, 330, '2020-11-24', 5974196);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (555, 605, '2023-08-31', 1524621);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (853, 685, '2016-03-17', 847570);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (466, 595, '2014-02-06', 5911872);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (793, 301, '2024-01-15', 4936664);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (641, 285, '2006-01-12', 2458370);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (956, 169, '2007-06-04', 5388557);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (930, 689, '2020-12-23', 5097962);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (39, 503, '2009-04-26', 3506172);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (329, 647, '2021-08-17', 1843243);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (101, 855, '2009-02-16', 4882657);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (128, 840, '2020-02-18', 2967538);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (603, 846, '2010-05-24', 5515440);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (190, 323, '2007-12-10', 3540441);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (248, 456, '2010-05-21', 5912208);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (640, 972, '2021-02-10', 4975623);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (767, 326, '2025-03-17', 1344989);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (634, 715, '2019-12-29', 4513461);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (874, 810, '2020-07-22', 3707812);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (343, 617, '2011-09-13', 4014401);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (987, 559, '2006-03-13', 1649297);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (959, 808, '2019-02-25', 882178);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (186, 182, '2017-08-24', 1123537);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (281, 582, '2024-12-02', 2446301);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (836, 595, '2006-06-01', 956225);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (371, 268, '2023-11-27', 1828628);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (842, 243, '2025-01-07', 5378385);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (638, 199, '2020-09-24', 4030647);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (452, 262, '2011-02-04', 2524745);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (376, 292, '2007-06-09', 5997660);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (733, 522, '2021-09-09', 4697656);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (360, 580, '2014-06-14', 1951020);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (691, 437, '2019-01-24', 2718088);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (368, 501, '2018-06-07', 3859329);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (853, 968, '2024-10-29', 1267545);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (626, 358, '2008-01-29', 1545188);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (947, 641, '2023-12-12', 2099731);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (725, 752, '2019-04-20', 757861);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (104, 193, '2015-12-31', 1192715);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (727, 584, '2023-07-07', 3330984);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (408, 355, '2015-02-10', 1882535);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (176, 728, '2009-01-28', 1072446);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (412, 815, '2022-03-16', 2527653);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (430, 666, '2017-01-14', 5204415);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (384, 969, '2022-06-27', 5224888);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (365, 513, '2006-06-21', 4901837);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (398, 453, '2015-10-28', 5592861);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (370, 40, '2011-04-03', 1250858);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (445, 808, '2021-01-22', 831776);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (590, 71, '2024-12-18', 4329077);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (755, 223, '2007-07-28', 4433709);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (154, 816, '2018-07-16', 2816240);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (21, 538, '2016-01-07', 675554);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (185, 214, '2020-09-23', 2797737);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (921, 555, '2015-10-16', 5255473);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (458, 634, '2018-09-15', 4021480);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (933, 770, '2005-06-23', 638044);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (307, 968, '2016-12-01', 2725351);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (389, 865, '2012-11-11', 1392766);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (49, 988, '2023-11-22', 945204);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (375, 108, '2017-01-08', 2570724);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (351, 641, '2017-08-07', 5975184);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (627, 368, '2006-02-15', 923052);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (612, 932, '2014-09-01', 1660006);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (808, 317, '2010-05-20', 4384788);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (309, 722, '2020-05-08', 1093898);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (983, 963, '2019-08-16', 2598426);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (981, 712, '2018-03-06', 759105);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (267, 507, '2008-09-10', 5739680);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (833, 699, '2023-08-05', 4162223);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (119, 161, '2010-09-29', 5426449);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (428, 669, '2007-12-03', 3960786);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (982, 410, '2019-09-10', 3093059);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (223, 623, '2011-11-21', 5156666);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (205, 218, '2017-04-03', 4535192);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (436, 379, '2018-11-30', 5948765);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (782, 285, '2019-03-13', 4190928);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (872, 128, '2011-07-26', 2232259);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (860, 710, '2020-05-01', 3359793);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (435, 826, '2021-12-11', 566939);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (34, 223, '2014-09-14', 4188420);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (203, 532, '2016-09-05', 4032662);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (212, 67, '2016-02-15', 1850957);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (609, 87, '2018-12-15', 5598730);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (673, 429, '2025-02-21', 3322487);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (679, 498, '2011-04-10', 5934527);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (868, 284, '2011-02-28', 5257435);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (524, 603, '2018-10-25', 2226320);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (792, 406, '2010-12-27', 4783058);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (670, 867, '2013-08-02', 5744048);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (725, 774, '2006-12-20', 627237);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (900, 429, '2024-12-08', 2326986);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (862, 846, '2012-02-18', 1248602);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (546, 927, '2009-11-26', 1629132);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (945, 863, '2015-04-29', 3367793);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (953, 227, '2009-08-21', 2005038);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (869, 468, '2019-10-13', 1524602);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (951, 218, '2017-06-30', 812678);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (261, 684, '2009-11-26', 2085222);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (839, 789, '2022-12-17', 5330294);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (874, 46, '2020-05-26', 609025);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (705, 690, '2019-12-28', 1284717);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (28, 333, '2013-10-28', 2685562);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (5, 578, '2006-02-15', 3491015);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (567, 486, '2014-07-27', 1439901);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (929, 488, '2014-04-01', 2613414);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (115, 642, '2018-07-21', 1220569);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (186, 402, '2013-07-29', 4615813);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (141, 944, '2020-06-22', 3498951);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (944, 651, '2025-04-16', 5225078);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (669, 17, '2016-02-27', 5634883);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (626, 360, '2015-09-11', 3378963);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (632, 519, '2022-02-27', 5146920);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (718, 212, '2023-02-08', 3201273);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (4, 231, '2024-02-21', 4973446);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (986, 982, '2017-08-07', 3577734);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (702, 696, '2017-01-14', 3969824);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (124, 332, '2021-09-30', 2936043);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (435, 148, '2023-11-03', 5387213);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (157, 185, '2020-08-13', 2236267);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (73, 796, '2019-04-07', 2261841);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (397, 628, '2023-10-05', 828094);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (559, 91, '2008-03-18', 5821109);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (531, 318, '2011-02-03', 1107468);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (702, 839, '2005-06-13', 4041663);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (737, 876, '2007-12-11', 5294643);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (175, 477, '2015-12-16', 3646175);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (253, 575, '2011-07-22', 5223368);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (861, 566, '2006-12-02', 2264219);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (446, 862, '2018-04-30', 3073259);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (509, 573, '2012-09-21', 1597118);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (236, 93, '2021-06-24', 2079095);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (590, 609, '2011-04-23', 2228441);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (785, 260, '2020-10-11', 4798811);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (917, 855, '2022-04-24', 3845632);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (445, 847, '2024-12-07', 4951697);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (114, 120, '2006-10-19', 5531311);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (15, 218, '2007-04-07', 2409227);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (299, 264, '2017-07-20', 5857040);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (983, 418, '2023-07-08', 3670025);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (618, 491, '2006-07-22', 4255221);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (826, 486, '2006-03-19', 1867867);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (622, 665, '2007-06-30', 2162955);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (889, 326, '2015-08-26', 5464074);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (881, 515, '2017-08-21', 3570777);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (423, 779, '2016-06-19', 3295947);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (933, 336, '2022-10-22', 5534411);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (846, 343, '2020-11-28', 2235753);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (985, 469, '2010-06-22', 1012426);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (146, 111, '2016-10-31', 3266276);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (834, 977, '2013-12-04', 5256379);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (162, 207, '2013-09-27', 693439);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (997, 946, '2012-12-13', 5976046);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (962, 715, '2018-07-22', 4124163);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (364, 137, '2015-07-17', 2673103);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (153, 343, '2022-12-07', 1219688);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (496, 262, '2005-07-24', 3642042);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (840, 949, '2020-07-08', 1886494);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (632, 957, '2009-03-21', 726411);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (403, 699, '2021-03-29', 2926823);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (910, 249, '2007-05-26', 5738835);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (296, 215, '2023-08-28', 3038937);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (283, 277, '2011-02-21', 971740);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (544, 113, '2015-02-16', 3293108);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (460, 984, '2015-09-19', 3255282);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (770, 820, '2019-02-04', 3895502);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (575, 863, '2014-09-09', 2777577);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (905, 645, '2018-01-08', 1002118);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (392, 401, '2010-10-15', 2027590);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (238, 98, '2005-08-23', 4179818);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (476, 304, '2010-11-06', 4995754);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (654, 36, '2007-05-29', 2013265);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (441, 863, '2011-06-20', 4783905);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (826, 486, '2022-05-12', 5404762);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (593, 864, '2015-07-07', 2823749);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (99, 822, '2013-04-13', 3918627);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (257, 845, '2010-02-24', 1268236);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (8, 432, '2018-01-13', 1553997);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (733, 973, '2017-04-05', 5518004);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (21, 989, '2023-01-03', 4118662);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (171, 415, '2015-12-18', 513612);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (544, 892, '2009-05-08', 5912091);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (708, 644, '2008-04-20', 4237608);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (212, 31, '2024-02-21', 2684836);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (774, 558, '2015-09-18', 3106052);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (547, 460, '2012-05-30', 5749533);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (816, 467, '2007-08-24', 4297168);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (683, 645, '2016-03-01', 534040);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (221, 561, '2016-10-14', 1423462);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (158, 272, '2023-12-16', 3687403);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (54, 97, '2021-12-11', 1272167);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (886, 998, '2022-03-03', 4025703);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (460, 777, '2006-04-28', 4692692);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (108, 190, '2022-05-28', 4539626);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (111, 358, '2013-08-16', 4557070);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (286, 949, '2022-12-04', 2679913);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (720, 215, '2010-07-21', 3262491);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (147, 769, '2017-10-30', 2106977);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (701, 806, '2018-05-25', 3940410);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (440, 256, '2023-10-02', 4754505);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (803, 495, '2018-09-04', 5316410);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (183, 372, '2013-11-21', 1362967);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (445, 632, '2015-10-06', 5655273);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (186, 974, '2017-04-14', 2877891);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (931, 31, '2020-01-20', 3502563);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (578, 62, '2018-12-16', 4260961);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (170, 213, '2016-10-13', 1984425);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (980, 992, '2008-01-08', 1493117);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (277, 885, '2021-04-16', 4472968);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (9, 967, '2008-07-07', 2255254);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (620, 306, '2010-05-18', 3063119);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (998, 21, '2022-09-03', 3007708);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (935, 221, '2017-04-14', 1217991);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (747, 465, '2020-02-09', 5190088);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (137, 650, '2023-03-29', 3716870);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (577, 85, '2015-07-10', 3506083);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (1, 795, '2015-06-01', 1883644);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (279, 835, '2013-08-26', 3923250);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (346, 304, '2006-12-16', 4489519);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (890, 516, '2024-10-14', 4181420);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (110, 671, '2020-02-08', 1947075);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (814, 964, '2007-05-21', 792256);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (868, 794, '2009-12-13', 5091920);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (70, 612, '2018-12-17', 1373939);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (354, 363, '2010-03-03', 639493);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (431, 785, '2025-02-07', 4529900);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (328, 425, '2020-02-23', 4512629);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (961, 281, '2006-03-14', 5231566);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (643, 278, '2007-07-21', 1142832);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (42, 370, '2013-10-24', 801947);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (944, 730, '2008-06-12', 5544968);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (670, 588, '2015-08-19', 4884075);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (693, 16, '2017-02-08', 3543070);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (871, 84, '2019-08-19', 988780);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (627, 232, '2019-10-18', 1109424);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (701, 649, '2012-10-15', 3247548);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (646, 798, '2015-08-08', 3765734);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (792, 430, '2015-04-24', 670428);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (8, 921, '2015-07-08', 4788648);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (584, 564, '2016-09-27', 1319261);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (608, 382, '2021-10-21', 4683842);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (438, 576, '2019-08-19', 725798);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (779, 200, '2016-03-30', 2090482);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (214, 268, '2012-10-15', 968800);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (347, 999, '2021-02-25', 2866558);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (945, 171, '2017-06-16', 5613757);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (432, 100, '2017-05-04', 1802627);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (875, 642, '2009-04-19', 2730575);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (169, 36, '2017-07-30', 5481012);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (701, 95, '2013-12-11', 604779);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (631, 617, '2015-02-22', 5905530);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (745, 397, '2018-07-14', 5577059);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (457, 32, '2017-05-20', 5149742);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (139, 245, '2016-07-11', 2298669);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (939, 665, '2006-02-05', 4953225);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (1, 68, '2016-12-05', 5235183);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (826, 150, '2011-03-09', 5036577);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (400, 829, '2018-08-24', 3153707);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (49, 959, '2010-12-02', 738957);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (400, 139, '2011-10-22', 969633);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (520, 618, '2009-12-30', 1700915);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (117, 777, '2024-10-28', 4272465);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (350, 253, '2013-07-08', 2941511);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (427, 624, '2021-02-21', 1833911);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (86, 257, '2013-07-13', 5570916);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (769, 783, '2017-05-27', 1976810);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (478, 887, '2022-05-13', 1828800);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (760, 151, '2007-06-30', 1033931);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (234, 761, '2006-03-15', 4677205);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (186, 441, '2024-02-02', 5160389);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (743, 304, '2008-12-11', 4615242);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (446, 599, '2015-09-15', 5750419);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (492, 162, '2009-04-09', 3954156);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (861, 115, '2012-08-04', 1622057);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (776, 607, '2023-11-22', 4686200);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (595, 678, '2014-09-23', 1933194);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (295, 26, '2008-02-28', 2428322);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (889, 487, '2020-01-18', 1621706);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (36, 331, '2014-05-06', 3487405);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (515, 811, '2018-02-21', 4749500);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (592, 536, '2013-12-25', 4812649);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (859, 458, '2009-02-15', 5936001);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (849, 67, '2013-02-01', 2223861);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (266, 620, '2013-03-30', 2063611);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (928, 559, '2012-11-09', 3273236);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (303, 376, '2025-03-15', 5175108);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (754, 776, '2010-05-25', 1476696);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (146, 779, '2008-03-18', 5315905);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (379, 729, '2008-09-09', 5592801);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (168, 514, '2012-04-24', 4626295);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (130, 778, '2007-07-04', 1164662);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (924, 901, '2005-08-31', 3245624);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (495, 403, '2020-08-01', 610815);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (77, 380, '2024-10-18', 5972336);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (286, 930, '2023-04-19', 2581890);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (55, 113, '2019-03-02', 1927944);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (400, 873, '2009-12-05', 851879);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (810, 837, '2012-02-22', 5886040);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (180, 955, '2020-01-28', 4367687);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (593, 125, '2013-01-07', 2254581);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (905, 970, '2014-09-26', 4046884);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (675, 161, '2006-05-24', 2522523);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (759, 603, '2007-08-31', 5144637);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (826, 235, '2006-07-08', 4227805);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (790, 903, '2022-02-06', 5171469);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (52, 479, '2005-08-21', 2663977);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (809, 546, '2010-08-28', 2104624);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (921, 960, '2023-09-29', 3176727);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (294, 657, '2013-11-20', 4619462);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (255, 180, '2013-12-20', 2311863);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (671, 691, '2022-09-20', 947538);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (309, 93, '2008-07-17', 2889906);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (451, 571, '2006-01-04', 5665978);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (708, 586, '2006-03-02', 2401276);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (255, 115, '2010-05-10', 5863505);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (752, 215, '2007-06-03', 1774891);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (265, 327, '2005-08-15', 5156439);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (55, 208, '2005-12-13', 4153169);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (920, 262, '2021-02-07', 5194453);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (98, 939, '2015-07-02', 2490562);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (837, 390, '2015-11-28', 874532);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (895, 958, '2013-09-09', 4398424);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (443, 912, '2005-11-06', 2487888);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (574, 126, '2021-06-12', 2720945);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (585, 413, '2020-06-29', 4706665);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (553, 985, '2008-06-07', 2255560);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (540, 634, '2008-05-28', 3714545);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (329, 690, '2011-07-15', 1579165);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (885, 598, '2018-03-03', 597057);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (628, 89, '2010-02-22', 2463316);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (816, 140, '2009-08-30', 3785296);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (623, 933, '2021-03-08', 4864693);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (288, 971, '2023-08-21', 5556489);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (659, 311, '2022-11-20', 2548773);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (659, 512, '2006-09-07', 5665729);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (131, 289, '2014-09-05', 1123062);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (520, 328, '2009-11-29', 5314131);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (552, 783, '2016-03-22', 4205025);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (783, 637, '2016-07-08', 4461879);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (436, 642, '2021-04-01', 2016284);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (93, 850, '2019-05-03', 4007841);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (134, 896, '2013-04-11', 4640798);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (496, 728, '2019-05-26', 5354253);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (514, 78, '2014-05-16', 5373921);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (130, 316, '2006-12-26', 1661592);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (131, 953, '2018-10-20', 2560200);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (916, 637, '2024-05-01', 1026839);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (158, 784, '2010-05-24', 1849954);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (60, 841, '2011-09-17', 3836366);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (243, 886, '2016-06-18', 3244313);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (459, 58, '2012-10-11', 5130714);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (795, 276, '2021-10-26', 2920753);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (408, 493, '2008-03-02', 3641598);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (74, 775, '2009-12-31', 3649992);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (267, 430, '2022-12-14', 5097695);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (339, 323, '2018-01-17', 3266626);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (18, 819, '2015-02-01', 1916474);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (357, 753, '2021-06-14', 1312169);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (171, 263, '2008-07-02', 3894377);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (144, 393, '2020-01-06', 5738647);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (143, 999, '2021-02-27', 5887169);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (291, 700, '2010-03-09', 3565253);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (907, 685, '2023-02-26', 2200075);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (524, 842, '2020-07-27', 2934047);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (556, 944, '2018-08-31', 2706760);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (199, 925, '2022-04-23', 2669543);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (519, 354, '2014-02-16', 669346);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (699, 190, '2014-09-10', 5591633);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (777, 869, '2009-07-13', 3999318);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (24, 532, '2023-11-24', 3014680);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (752, 235, '2021-05-18', 4517040);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (172, 46, '2019-03-27', 5358069);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (16, 856, '2017-12-27', 3879773);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (720, 765, '2016-01-21', 4941765);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (651, 302, '2014-05-16', 2872275);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (112, 233, '2016-03-28', 5719384);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (215, 858, '2012-11-19', 2285950);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (862, 245, '2024-06-12', 1473971);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (663, 852, '2014-09-02', 4249024);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (671, 473, '2017-03-30', 3648266);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (393, 59, '2011-10-14', 3669942);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (735, 429, '2007-05-23', 3838513);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (565, 240, '2023-07-12', 618010);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (653, 326, '2014-10-23', 3812931);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (973, 871, '2010-09-18', 4494692);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (863, 60, '2006-04-07', 5895403);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (180, 634, '2020-12-16', 1160794);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (379, 45, '2021-02-22', 4390865);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (623, 401, '2010-06-12', 4985814);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (742, 460, '2006-05-01', 5545827);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (556, 126, '2014-10-12', 4235905);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (351, 886, '2023-09-29', 2861155);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (633, 376, '2012-02-09', 875777);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (79, 784, '2020-08-05', 3316429);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (686, 377, '2014-06-24', 1522812);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (65, 180, '2021-09-14', 4591411);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (863, 318, '2018-08-10', 2459700);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (680, 240, '2012-07-07', 2628576);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (364, 812, '2018-07-26', 4842838);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (289, 808, '2005-07-10', 5865753);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (179, 68, '2010-12-19', 698846);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (91, 43, '2006-06-24', 3904398);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (935, 474, '2008-02-27', 1081484);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (954, 618, '2024-12-16', 2682086);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (735, 360, '2007-12-28', 5411499);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (912, 198, '2018-03-09', 965199);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (888, 338, '2006-03-19', 5568006);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (799, 762, '2006-04-13', 2741782);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (858, 233, '2013-06-14', 2265091);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (205, 750, '2013-05-07', 3262353);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (578, 719, '2006-07-19', 3251624);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (186, 808, '2018-05-14', 5095818);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (998, 978, '2022-09-04', 5057415);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (215, 859, '2010-08-14', 1764754);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (360, 474, '2006-01-31', 1244803);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (712, 951, '2019-03-01', 581507);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (184, 470, '2006-05-16', 3794750);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (841, 454, '2012-01-15', 4899081);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (840, 788, '2009-06-06', 2421435);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (745, 835, '2014-10-09', 4123480);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (14, 233, '2008-08-27', 3686407);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (326, 832, '2019-08-22', 516596);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (693, 885, '2019-03-07', 770195);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (160, 934, '2012-01-19', 5695322);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (69, 731, '2025-05-03', 4366872);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (101, 500, '2015-03-04', 1475227);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (49, 843, '2017-08-18', 1179618);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (948, 934, '2023-06-21', 920310);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (98, 597, '2013-07-23', 5370694);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (10, 508, '2019-11-10', 1460171);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (496, 926, '2007-02-07', 3640078);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (638, 170, '2007-06-01', 2795325);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (728, 549, '2009-03-14', 2967006);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (826, 475, '2022-08-11', 5077173);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (754, 731, '2007-12-19', 5986939);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (747, 334, '2013-03-22', 5113346);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (381, 261, '2008-04-17', 3761736);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (156, 373, '2009-02-25', 3327565);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (844, 531, '2015-04-08', 4656274);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (754, 634, '2011-12-05', 948254);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (712, 7, '2008-09-26', 5069330);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (304, 636, '2007-10-06', 700522);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (858, 55, '2021-08-07', 1319864);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (74, 139, '2009-05-09', 2017656);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (102, 7, '2013-06-08', 5353176);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (181, 719, '2013-07-03', 1114097);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (195, 353, '2023-05-14', 3237483);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (617, 943, '2020-04-02', 1085686);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (918, 226, '2021-04-09', 1722299);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (960, 23, '2020-09-22', 4832424);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (799, 959, '2021-10-14', 1667933);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (607, 772, '2010-04-12', 4454413);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (959, 208, '2006-07-29', 2553194);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (270, 361, '2020-11-17', 3917163);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (618, 914, '2011-11-24', 4623272);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (622, 199, '2024-03-28', 1211696);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (208, 152, '2011-04-08', 1125183);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (481, 562, '2022-09-08', 4392298);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (206, 532, '2010-08-28', 2523812);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (125, 785, '2015-12-17', 1336508);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (585, 568, '2023-10-26', 2682113);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (292, 391, '2013-07-13', 4044744);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (911, 853, '2023-12-28', 4618285);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (472, 796, '2007-10-09', 2882739);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (278, 15, '2013-03-08', 5653497);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (997, 966, '2019-06-18', 932681);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (337, 796, '2009-06-12', 4486616);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (691, 643, '2005-10-08', 5197401);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (167, 360, '2021-01-29', 5176675);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (967, 8, '2013-03-25', 4610209);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (495, 37, '2013-08-04', 1368268);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (764, 89, '2020-05-28', 3060795);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (647, 284, '2012-01-17', 5981096);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (545, 691, '2010-08-22', 4481182);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (859, 245, '2024-12-10', 2084072);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (658, 678, '2016-10-11', 1853937);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (461, 294, '2014-03-09', 1302295);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (632, 955, '2018-10-11', 2072073);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (1, 264, '2005-10-11', 934132);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (461, 480, '2016-02-14', 1662311);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (101, 766, '2016-03-15', 1878695);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (8, 989, '2008-01-03', 2405127);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (526, 112, '2022-09-05', 5873959);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (64, 52, '2023-07-11', 3009074);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (609, 563, '2007-11-02', 2556411);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (6, 477, '2009-02-02', 2946949);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (337, 577, '2010-04-10', 2873761);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (278, 218, '2010-06-21', 689637);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (267, 42, '2019-03-12', 3412903);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (100, 662, '2021-11-19', 3385817);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (953, 986, '2016-11-11', 4048551);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (485, 478, '2006-03-25', 1040556);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (512, 756, '2017-09-03', 5740729);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (804, 739, '2008-10-17', 696863);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (552, 459, '2023-09-26', 5813487);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (623, 231, '2011-11-17', 1050995);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (858, 367, '2014-07-19', 3687150);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (816, 148, '2010-12-21', 4679193);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (507, 249, '2022-04-18', 3114512);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (733, 314, '2012-07-13', 2512148);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (801, 511, '2007-11-27', 3620713);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (527, 909, '2005-10-29', 2487678);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (264, 830, '2007-09-11', 5357891);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (86, 524, '2022-09-18', 4084587);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (952, 231, '2021-11-23', 4376909);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (291, 232, '2018-09-27', 5815083);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (658, 693, '2023-08-09', 953186);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (591, 166, '2015-05-24', 4833734);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (157, 807, '2011-09-16', 5620252);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (77, 418, '2016-08-09', 1958812);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (586, 917, '2013-03-01', 1177043);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (931, 150, '2023-02-11', 1117013);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (93, 763, '2006-10-08', 2545540);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (760, 314, '2017-01-24', 4957629);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (472, 596, '2023-12-13', 2587144);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (536, 24, '2014-05-11', 5284891);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (452, 87, '2017-05-05', 3517286);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (485, 354, '2016-12-17', 4718550);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (940, 635, '2011-10-25', 3355480);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (895, 570, '2011-08-18', 5362621);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (415, 892, '2015-12-16', 5956201);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (27, 555, '2009-02-14', 711861);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (399, 593, '2021-01-08', 2479669);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (895, 493, '2015-11-22', 2601767);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (129, 726, '2013-03-06', 2570391);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (382, 114, '2013-04-26', 5683681);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (85, 219, '2024-12-04', 3150830);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (539, 989, '2021-04-18', 2475352);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (942, 886, '2022-10-20', 5477235);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (531, 261, '2022-06-29', 2255920);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (461, 879, '2021-12-20', 4450637);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (671, 199, '2022-12-29', 1995072);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (828, 791, '2014-05-29', 4298826);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (538, 825, '2012-04-28', 5249130);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (596, 126, '2016-01-03', 2638722);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (411, 772, '2013-02-22', 5568819);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (969, 866, '2009-10-24', 3484282);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (852, 641, '2017-12-17', 896029);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (743, 287, '2012-07-29', 3865982);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (706, 76, '2020-12-10', 5851377);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (912, 522, '2007-04-22', 5448468);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (334, 451, '2024-05-23', 2314507);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (347, 629, '2011-03-18', 2832482);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (761, 236, '2016-09-16', 4485921);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (369, 828, '2024-06-23', 5040093);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (437, 128, '2015-11-11', 964563);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (583, 267, '2018-11-08', 599635);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (59, 327, '2024-10-08', 1875988);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (338, 918, '2017-06-24', 3609679);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (511, 69, '2025-03-08', 711000);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (553, 955, '2007-10-02', 2892322);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (514, 237, '2010-09-24', 1373283);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (611, 990, '2007-07-14', 1570400);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (744, 114, '2022-10-01', 4139959);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (715, 978, '2022-09-19', 500611);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (166, 510, '2021-07-12', 1079786);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (510, 625, '2025-02-18', 667767);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (105, 640, '2019-08-24', 3666970);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (350, 91, '2023-02-07', 4035417);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (379, 529, '2012-08-03', 4600308);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (234, 966, '2007-12-24', 5589340);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (484, 831, '2015-06-14', 980376);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (455, 749, '2018-03-23', 671455);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (463, 801, '2019-08-18', 2115722);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (203, 828, '2010-06-22', 3317120);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (189, 826, '2014-07-25', 1235263);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (74, 267, '2007-10-20', 3166347);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (415, 893, '2012-07-18', 2568553);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (546, 603, '2011-08-10', 1539975);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (750, 224, '2015-08-29', 5304436);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (788, 782, '2017-08-05', 4370853);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (373, 773, '2017-08-02', 4105059);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (52, 57, '2017-06-16', 2438697);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (697, 227, '2014-12-18', 763306);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (422, 933, '2018-01-16', 2618082);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (857, 89, '2009-09-27', 823970);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (620, 173, '2017-11-07', 3962868);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (607, 445, '2025-04-26', 2711886);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (711, 102, '2008-04-15', 5002411);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (19, 78, '2017-09-28', 1973275);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (37, 328, '2009-03-09', 2675573);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (254, 954, '2013-09-26', 1285605);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (122, 70, '2011-12-23', 1406492);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (153, 770, '2022-12-04', 2319066);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (866, 255, '2007-06-02', 3449662);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (545, 430, '2016-03-02', 4309288);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (909, 81, '2018-01-04', 1196776);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (304, 468, '2011-04-07', 5398555);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (6, 801, '2011-07-29', 4757356);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (539, 368, '2011-09-30', 3646096);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (48, 179, '2021-03-12', 1709597);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (709, 70, '2019-12-25', 3496536);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (940, 814, '2006-08-04', 5545766);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (174, 644, '2025-01-10', 2077356);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (453, 435, '2006-06-05', 923374);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (112, 187, '2012-01-09', 4399315);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (482, 575, '2006-05-24', 5188005);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (536, 891, '2016-01-02', 4376318);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (125, 16, '2013-09-23', 1501651);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (598, 793, '2013-06-29', 4513096);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (55, 468, '2007-08-19', 5756018);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (925, 795, '2019-01-30', 4637682);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (121, 741, '2021-08-18', 2142671);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (850, 578, '2012-01-29', 3195567);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (488, 562, '2024-12-07', 644808);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (843, 751, '2012-04-12', 3600558);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (531, 610, '2021-06-02', 2511564);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (568, 811, '2017-10-15', 3737958);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (566, 982, '2005-08-04', 1569690);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (234, 343, '2016-01-14', 4826490);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (58, 406, '2013-02-17', 2823785);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (667, 660, '2012-05-25', 5354788);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (833, 393, '2006-02-01', 3785296);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (456, 306, '2011-11-30', 2343433);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (960, 873, '2022-07-21', 3431701);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (54, 41, '2010-08-16', 2421109);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (398, 355, '2011-10-27', 5550834);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (497, 755, '2007-09-19', 5293368);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (488, 197, '2017-05-28', 1409119);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (653, 312, '2012-05-12', 2879997);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (853, 2, '2019-12-20', 3528879);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (619, 619, '2016-07-08', 1414413);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (800, 85, '2005-06-29', 2620291);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (732, 829, '2022-12-02', 4756968);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (416, 208, '2020-01-07', 2572575);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (614, 704, '2011-12-05', 2029228);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (626, 502, '2016-11-29', 777986);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (700, 992, '2019-03-19', 3448249);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (595, 261, '2019-12-27', 3702863);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (811, 749, '2019-04-28', 5123001);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (147, 177, '2021-01-10', 1151367);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (917, 97, '2006-06-26', 2878439);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (621, 800, '2009-07-03', 1542766);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (294, 892, '2010-06-23', 3019914);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (742, 531, '2016-03-28', 4144935);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (511, 457, '2006-09-19', 5050012);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (505, 579, '2010-10-22', 4290030);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (735, 786, '2014-10-15', 5905902);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (877, 315, '2016-04-18', 2803911);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (677, 301, '2008-11-01', 5979893);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (836, 792, '2022-01-15', 3095161);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (613, 155, '2009-03-05', 1882482);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (97, 596, '2013-12-25', 5055996);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (285, 366, '2006-08-03', 4547188);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (501, 732, '2017-08-10', 3309478);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (941, 328, '2013-02-17', 5164963);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (720, 325, '2025-05-05', 5619112);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (681, 448, '2017-07-13', 3450146);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (286, 433, '2017-09-15', 1550412);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (568, 341, '2025-02-12', 1070386);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (145, 941, '2019-09-18', 4181896);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (891, 951, '2010-05-29', 2084284);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (937, 301, '2014-08-24', 4812637);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (802, 657, '2019-08-27', 4631803);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (734, 292, '2006-11-18', 4205304);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (578, 217, '2012-01-21', 4356484);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (846, 164, '2019-06-21', 1645282);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (138, 705, '2011-05-17', 3543954);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (27, 290, '2018-05-01', 4144862);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (878, 722, '2021-12-10', 3943443);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (412, 47, '2022-08-08', 2304909);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (166, 982, '2020-09-05', 1515490);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (986, 13, '2010-05-16', 4007127);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (752, 716, '2008-05-08', 5125820);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (949, 681, '2012-07-12', 4525197);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (304, 598, '2019-05-09', 5097369);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (72, 466, '2023-05-28', 5318756);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (42, 982, '2011-02-16', 2661274);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (974, 123, '2020-08-27', 2175485);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (760, 681, '2010-01-02', 4292633);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (694, 999, '2009-06-23', 4359162);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (566, 999, '2009-07-16', 4662303);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (499, 981, '2023-01-05', 2187333);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (131, 510, '2011-02-01', 4843963);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (917, 777, '2009-05-20', 970345);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (511, 515, '2006-04-30', 3684899);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (704, 291, '2007-04-25', 1994391);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (705, 349, '2018-07-16', 1451929);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (461, 898, '2021-03-03', 1777458);
-INSERT INTO Salg (KøberID, BoligID, Dato, Beløb) VALUES (738, 811, '2011-07-29', 3466708);
+insert into Salg(KøberID,BoligID,Dato,Beløb,SælgerID)
+values
+        (
+        806, 1, '2007-06-19', 4690107, 436
+        ),
+
+        (
+        996, 2, '2018-12-21', 5192940, 623
+        ),
+
+        (
+        253, 3, '2013-06-19', 5450335, 204
+        ),
+
+        (
+        538, 4, '2002-05-19', 3713521, 47
+        ),
+
+        (
+        757, 5, '2013-01-18', 8897710, 343
+        ),
+
+        (
+        565, 6, '2014-10-22', 6370373, 419
+        ),
+
+        (
+        433, 7, '2014-12-23', 5613845, 444
+        ),
+
+        (
+        909, 8, '2010-08-09', 4342651, 933
+        ),
+
+        (
+        154, 9, '2010-03-14', 3090509, 978
+        ),
+
+        (
+        116, 10, '2006-01-18', 1453159, 40
+        ),
+
+        (
+        576, 11, '2025-04-09', 9434211, 171
+        ),
+
+        (
+        510, 12, '2021-01-06', 8598816, 958
+        ),
+
+        (
+        760, 13, '2004-08-24', 5299864, 387
+        ),
+
+        (
+        97, 14, '2011-10-29', 6108619, 805
+        ),
+
+        (
+        505, 15, '2003-09-27', 936101, 986
+        ),
+
+        (
+        94, 16, '2014-09-13', 2496168, 332
+        ),
+
+        (
+        414, 17, '2018-10-16', 4873953, 157
+        ),
+
+        (
+        575, 18, '2008-01-18', 9178337, 853
+        ),
+
+        (
+        169, 19, '2005-10-25', 3081599, 9
+        ),
+
+        (
+        111, 20, '2011-05-05', 3819387, 940
+        ),
+
+        (
+        583, 21, '2006-07-23', 5060171, 733
+        ),
+
+        (
+        580, 22, '2020-07-07', 5377815, 782
+        ),
+
+        (
+        660, 23, '2019-08-24', 8075310, 973
+        ),
+
+        (
+        868, 24, '2017-12-30', 9468319, 744
+        ),
+
+        (
+        949, 25, '2024-06-08', 3480071, 252
+        ),
+
+        (
+        549, 26, '2019-10-31', 352263, 745
+        ),
+
+        (
+        750, 27, '2022-02-03', 4650984, 311
+        ),
+
+        (
+        267, 28, '2023-01-10', 4381486, 389
+        ),
+
+        (
+        688, 29, '2021-10-20', 787236, 539
+        ),
+
+        (
+        149, 30, '2005-09-19', 1027263, 476
+        ),
+
+        (
+        394, 31, '2019-09-26', 7071968, 817
+        ),
+
+        (
+        871, 32, '2008-11-14', 4474203, 329
+        ),
+
+        (
+        977, 33, '2004-02-25', 3358380, 17
+        ),
+
+        (
+        160, 34, '2007-04-30', 998310, 475
+        ),
+
+        (
+        176, 35, '2023-09-27', 5828744, 838
+        ),
+
+        (
+        557, 36, '2002-02-10', 4705683, 898
+        ),
+
+        (
+        85, 37, '2003-05-01', 2147335, 492
+        ),
+
+        (
+        398, 38, '2022-12-14', 571064, 700
+        ),
+
+        (
+        173, 39, '2021-06-01', 3898576, 983
+        ),
+
+        (
+        61, 40, '2010-01-12', 8177126, 319
+        ),
+
+        (
+        906, 41, '2024-08-21', 8989160, 993
+        ),
+
+        (
+        872, 42, '2006-02-04', 749336, 978
+        ),
+
+        (
+        182, 43, '2007-01-27', 9226289, 690
+        ),
+
+        (
+        44, 44, '2010-08-28', 8026345, 474
+        ),
+
+        (
+        971, 45, '2008-01-15', 7415910, 6
+        ),
+
+        (
+        162, 46, '2018-01-18', 9101245, 678
+        ),
+
+        (
+        425, 47, '2007-03-28', 5526765, 23
+        ),
+
+        (
+        200, 48, '2016-01-10', 1375006, 100
+        ),
+
+        (
+        240, 49, '2014-08-07', 4590480, 194
+        ),
+
+        (
+        825, 50, '2015-08-20', 6534870, 789
+        ),
+
+        (
+        868, 51, '2018-02-03', 3659026, 606
+        ),
+
+        (
+        228, 52, '2004-05-24', 7827088, 677
+        ),
+
+        (
+        799, 53, '2017-01-29', 6808686, 115
+        ),
+
+        (
+        235, 54, '2009-04-03', 6152505, 681
+        ),
+
+        (
+        641, 55, '2004-02-02', 7531291, 315
+        ),
+
+        (
+        661, 56, '2018-08-29', 5222521, 723
+        ),
+
+        (
+        105, 57, '2008-06-29', 6309994, 947
+        ),
+
+        (
+        318, 58, '2006-10-06', 6416247, 495
+        ),
+
+        (
+        676, 59, '2002-12-23', 1765491, 188
+        ),
+
+        (
+        68, 60, '2001-10-06', 3004803, 620
+        ),
+
+        (
+        816, 61, '2015-04-03', 2156464, 346
+        ),
+
+        (
+        150, 62, '2012-11-17', 3986798, 578
+        ),
+
+        (
+        798, 63, '2004-07-15', 6009731, 894
+        ),
+
+        (
+        659, 64, '2009-02-03', 3377498, 240
+        ),
+
+        (
+        458, 65, '2008-11-12', 8966811, 696
+        ),
+
+        (
+        886, 66, '2009-04-25', 6567296, 680
+        ),
+
+        (
+        229, 67, '2002-12-30', 1490644, 402
+        ),
+
+        (
+        526, 68, '2001-07-27', 2455752, 431
+        ),
+
+        (
+        984, 69, '2023-06-07', 7917337, 566
+        ),
+
+        (
+        450, 70, '2018-12-25', 2315894, 415
+        ),
+
+        (
+        279, 71, '2021-08-25', 4041746, 833
+        ),
+
+        (
+        655, 72, '2022-08-16', 2134760, 809
+        ),
+
+        (
+        486, 73, '2010-11-01', 630702, 227
+        ),
+
+        (
+        758, 74, '2007-10-31', 713627, 233
+        ),
+
+        (
+        771, 75, '2011-03-11', 3944855, 227
+        ),
+
+        (
+        182, 76, '2016-04-29', 8851085, 196
+        ),
+
+        (
+        347, 77, '2008-05-14', 6940140, 640
+        ),
+
+        (
+        897, 78, '2002-10-14', 1969636, 941
+        ),
+
+        (
+        234, 79, '2006-10-09', 6056494, 585
+        ),
+
+        (
+        369, 80, '2022-02-15', 5906772, 337
+        ),
+
+        (
+        652, 81, '2001-09-15', 1460560, 959
+        ),
+
+        (
+        163, 82, '2009-10-11', 9826386, 589
+        ),
+
+        (
+        24, 83, '2016-04-11', 3992557, 221
+        ),
+
+        (
+        355, 84, '2020-08-28', 1767622, 718
+        ),
+
+        (
+        139, 85, '2013-03-02', 9139168, 596
+        ),
+
+        (
+        923, 86, '2023-01-19', 2726723, 116
+        ),
+
+        (
+        338, 87, '2014-03-05', 5773669, 145
+        ),
+
+        (
+        561, 88, '2023-12-15', 6061423, 790
+        ),
+
+        (
+        551, 89, '2003-05-27', 8923613, 536
+        ),
+
+        (
+        697, 90, '2015-05-04', 2827000, 435
+        ),
+
+        (
+        715, 91, '2005-01-25', 5823349, 543
+        ),
+
+        (
+        854, 92, '2019-02-01', 2695942, 642
+        ),
+
+        (
+        784, 93, '2025-03-30', 5151866, 458
+        ),
+
+        (
+        898, 94, '2017-09-15', 6656893, 485
+        ),
+
+        (
+        522, 95, '2003-02-19', 1354507, 404
+        ),
+
+        (
+        893, 96, '2008-11-11', 4013448, 147
+        ),
+
+        (
+        651, 97, '2024-09-23', 5862241, 590
+        ),
+
+        (
+        106, 98, '2003-03-13', 6849244, 542
+        ),
+
+        (
+        1000, 99, '2024-03-30', 9891557, 141
+        ),
+
+        (
+        331, 100, '2017-04-22', 3523497, 19
+        ),
+
+        (
+        494, 101, '2012-12-31', 8574357, 847
+        ),
+
+        (
+        136, 102, '2002-11-06', 5799520, 424
+        ),
+
+        (
+        180, 103, '2022-11-29', 9194491, 543
+        ),
+
+        (
+        654, 104, '2005-09-28', 7625892, 878
+        ),
+
+        (
+        974, 105, '2004-12-04', 3693147, 347
+        ),
+
+        (
+        324, 106, '2023-05-23', 2810768, 446
+        ),
+
+        (
+        511, 107, '2023-04-22', 1290382, 156
+        ),
+
+        (
+        315, 108, '2019-01-22', 6535181, 100
+        ),
+
+        (
+        807, 109, '2013-01-31', 6560056, 180
+        ),
+
+        (
+        969, 110, '2006-08-13', 5988233, 21
+        ),
+
+        (
+        51, 111, '2012-12-16', 3052126, 509
+        ),
+
+        (
+        11, 112, '2021-11-04', 9606490, 553
+        ),
+
+        (
+        544, 113, '2010-01-15', 8527984, 175
+        ),
+
+        (
+        800, 114, '2013-07-16', 8629054, 702
+        ),
+
+        (
+        126, 115, '2018-11-18', 9738468, 306
+        ),
+
+        (
+        502, 116, '2016-02-08', 7035672, 272
+        ),
+
+        (
+        849, 117, '2004-05-31', 9428995, 350
+        ),
+
+        (
+        48, 118, '2012-10-02', 4244776, 220
+        ),
+
+        (
+        920, 119, '2025-05-06', 2550806, 804
+        ),
+
+        (
+        150, 120, '2004-07-11', 5246792, 427
+        ),
+
+        (
+        980, 121, '2017-09-02', 4492094, 239
+        ),
+
+        (
+        598, 122, '2020-10-16', 7640528, 159
+        ),
+
+        (
+        980, 123, '2003-11-09', 7432211, 341
+        ),
+
+        (
+        257, 124, '2010-04-23', 1886888, 285
+        ),
+
+        (
+        314, 125, '2013-08-03', 5906330, 730
+        ),
+
+        (
+        309, 126, '2016-09-11', 4706916, 708
+        ),
+
+        (
+        430, 127, '2013-11-08', 1934882, 334
+        ),
+
+        (
+        143, 128, '2003-09-03', 372314, 35
+        ),
+
+        (
+        121, 129, '2012-10-26', 8276138, 474
+        ),
+
+        (
+        717, 130, '2004-09-21', 898820, 462
+        ),
+
+        (
+        67, 131, '2018-10-14', 1111886, 938
+        ),
+
+        (
+        124, 132, '2019-09-10', 8137286, 886
+        ),
+
+        (
+        52, 133, '2013-03-10', 4148960, 675
+        ),
+
+        (
+        961, 134, '2023-11-17', 2654583, 604
+        ),
+
+        (
+        535, 135, '2022-06-10', 4786551, 303
+        ),
+
+        (
+        951, 136, '2002-12-02', 4861060, 176
+        ),
+
+        (
+        286, 137, '2023-10-27', 6160771, 709
+        ),
+
+        (
+        889, 138, '2008-09-03', 3273413, 441
+        ),
+
+        (
+        474, 139, '2002-07-12', 3826579, 32
+        ),
+
+        (
+        432, 140, '2016-05-10', 4468083, 340
+        ),
+
+        (
+        254, 141, '2022-09-06', 1331486, 835
+        ),
+
+        (
+        555, 142, '2025-01-20', 4240084, 527
+        ),
+
+        (
+        264, 143, '2007-02-24', 4474580, 219
+        ),
+
+        (
+        1, 144, '2004-07-27', 9028589, 512
+        ),
+
+        (
+        493, 145, '2025-02-01', 4252052, 91
+        ),
+
+        (
+        787, 146, '2007-02-18', 7004867, 344
+        ),
+
+        (
+        67, 147, '2017-12-17', 8800495, 708
+        ),
+
+        (
+        78, 148, '2007-10-22', 164018, 696
+        ),
+
+        (
+        602, 149, '2007-05-01', 7357790, 669
+        ),
+
+        (
+        400, 150, '2024-03-31', 2305309, 450
+        ),
+
+        (
+        664, 151, '2003-04-08', 2408623, 880
+        ),
+
+        (
+        975, 152, '2002-07-19', 879061, 68
+        ),
+
+        (
+        114, 153, '2019-10-10', 4940648, 955
+        ),
+
+        (
+        906, 154, '2023-06-07', 5644468, 989
+        ),
+
+        (
+        893, 155, '2024-07-13', 8313789, 525
+        ),
+
+        (
+        957, 156, '2016-11-19', 2574880, 339
+        ),
+
+        (
+        304, 157, '2016-08-13', 429231, 623
+        ),
+
+        (
+        595, 158, '2010-04-15', 6539458, 616
+        ),
+
+        (
+        521, 159, '2002-04-25', 1634965, 694
+        ),
+
+        (
+        638, 160, '2018-09-26', 5663321, 326
+        ),
+
+        (
+        231, 161, '2002-01-29', 6240219, 722
+        ),
+
+        (
+        181, 162, '2012-09-19', 2210738, 181
+        ),
+
+        (
+        743, 163, '2001-06-14', 9200320, 873
+        ),
+
+        (
+        189, 164, '2023-08-30', 8606786, 666
+        ),
+
+        (
+        294, 165, '2002-10-28', 7354670, 36
+        ),
+
+        (
+        890, 166, '2016-06-03', 2388088, 239
+        ),
+
+        (
+        323, 167, '2017-06-27', 409735, 822
+        ),
+
+        (
+        991, 168, '2010-01-20', 3702626, 115
+        ),
+
+        (
+        748, 169, '2023-07-26', 7851940, 488
+        ),
+
+        (
+        316, 170, '2005-07-14', 6335473, 969
+        ),
+
+        (
+        520, 171, '2017-11-02', 113099, 878
+        ),
+
+        (
+        41, 172, '2007-11-30', 7660559, 383
+        ),
+
+        (
+        138, 173, '2006-07-18', 1588469, 307
+        ),
+
+        (
+        152, 174, '2002-06-09', 567802, 337
+        ),
+
+        (
+        296, 175, '2022-04-17', 3552760, 586
+        ),
+
+        (
+        731, 176, '2020-12-26', 4197394, 127
+        ),
+
+        (
+        456, 177, '2022-04-06', 1963732, 862
+        ),
+
+        (
+        980, 178, '2019-06-16', 9018600, 68
+        ),
+
+        (
+        591, 179, '2013-12-09', 3757833, 188
+        ),
+
+        (
+        186, 180, '2017-12-15', 9337404, 27
+        ),
+
+        (
+        797, 181, '2008-04-15', 2070736, 9
+        ),
+
+        (
+        247, 182, '2019-12-05', 2309665, 471
+        ),
+
+        (
+        170, 183, '2002-05-11', 7328030, 866
+        ),
+
+        (
+        115, 184, '2024-07-28', 9812510, 971
+        ),
+
+        (
+        936, 185, '2017-07-07', 5020041, 632
+        ),
+
+        (
+        887, 186, '2018-10-25', 4658644, 815
+        ),
+
+        (
+        2, 187, '2010-04-05', 9073427, 391
+        ),
+
+        (
+        945, 188, '2017-08-19', 9404083, 60
+        ),
+
+        (
+        771, 189, '2003-11-15', 5950488, 873
+        ),
+
+        (
+        252, 190, '2011-04-10', 7384866, 128
+        ),
+
+        (
+        526, 191, '2023-01-05', 2433139, 903
+        ),
+
+        (
+        286, 192, '2019-12-19', 2240054, 325
+        ),
+
+        (
+        59, 193, '2008-04-30', 8800400, 721
+        ),
+
+        (
+        382, 194, '2025-03-14', 8261766, 156
+        ),
+
+        (
+        331, 195, '2007-09-09', 1719560, 355
+        ),
+
+        (
+        491, 196, '2021-06-06', 3443653, 34
+        ),
+
+        (
+        551, 197, '2008-10-01', 3773200, 902
+        ),
+
+        (
+        839, 198, '2005-08-23', 185411, 827
+        ),
+
+        (
+        406, 199, '2012-05-28', 6459665, 555
+        ),
+
+        (
+        268, 200, '2022-07-17', 319916, 611
+        ),
+
+        (
+        747, 201, '2013-07-11', 815504, 597
+        ),
+
+        (
+        774, 202, '2015-04-26', 7425677, 112
+        ),
+
+        (
+        66, 203, '2005-02-03', 4539579, 762
+        ),
+
+        (
+        571, 204, '2002-12-30', 4963594, 118
+        ),
+
+        (
+        275, 205, '2019-02-21', 4109726, 10
+        ),
+
+        (
+        516, 206, '2004-06-11', 2768547, 141
+        ),
+
+        (
+        239, 207, '2024-08-30', 9544078, 910
+        ),
+
+        (
+        887, 208, '2006-01-24', 470074, 688
+        ),
+
+        (
+        568, 209, '2004-03-02', 7555808, 265
+        ),
+
+        (
+        546, 210, '2013-10-07', 2853758, 543
+        ),
+
+        (
+        809, 211, '2018-03-07', 5761743, 861
+        ),
+
+        (
+        100, 212, '2005-11-01', 8800569, 9
+        ),
+
+        (
+        899, 213, '2017-07-16', 2672304, 931
+        ),
+
+        (
+        460, 214, '2016-10-04', 7135270, 237
+        ),
+
+        (
+        787, 215, '2012-02-01', 160590, 393
+        ),
+
+        (
+        584, 216, '2002-02-07', 9093883, 934
+        ),
+
+        (
+        411, 217, '2015-03-31', 6298971, 433
+        ),
+
+        (
+        282, 218, '2012-12-01', 4201400, 115
+        ),
+
+        (
+        215, 219, '2012-06-08', 5946269, 779
+        ),
+
+        (
+        143, 220, '2011-05-01', 927453, 183
+        ),
+
+        (
+        314, 221, '2010-06-02', 5426912, 953
+        ),
+
+        (
+        303, 222, '2017-06-27', 1714784, 226
+        ),
+
+        (
+        503, 223, '2017-02-13', 6938607, 181
+        ),
+
+        (
+        567, 224, '2022-04-26', 7281260, 955
+        ),
+
+        (
+        443, 225, '2024-10-27', 5179586, 52
+        ),
+
+        (
+        365, 226, '2014-02-03', 1374967, 960
+        ),
+
+        (
+        953, 227, '2014-02-05', 4633870, 495
+        ),
+
+        (
+        555, 228, '2020-10-11', 152703, 489
+        ),
+
+        (
+        655, 229, '2023-10-09', 9536735, 20
+        ),
+
+        (
+        967, 230, '2009-04-24', 108374, 520
+        ),
+
+        (
+        744, 231, '2002-04-09', 2108925, 130
+        ),
+
+        (
+        41, 232, '2008-04-15', 4132698, 178
+        ),
+
+        (
+        875, 233, '2008-01-04', 4207753, 315
+        ),
+
+        (
+        514, 234, '2024-11-30', 669959, 742
+        ),
+
+        (
+        408, 235, '2023-11-17', 6404638, 346
+        ),
+
+        (
+        218, 236, '2022-11-22', 9242622, 153
+        ),
+
+        (
+        86, 237, '2014-07-02', 6096837, 456
+        ),
+
+        (
+        962, 238, '2018-01-22', 7455780, 752
+        ),
+
+        (
+        540, 239, '2021-09-27', 3394551, 530
+        ),
+
+        (
+        539, 240, '2005-10-01', 4842680, 745
+        ),
+
+        (
+        415, 241, '2017-12-23', 7405877, 701
+        ),
+
+        (
+        116, 242, '2018-06-16', 9109419, 249
+        ),
+
+        (
+        789, 243, '2013-12-26', 7880390, 106
+        ),
+
+        (
+        215, 244, '2006-08-27', 931796, 353
+        ),
+
+        (
+        586, 245, '2009-12-19', 3748489, 609
+        ),
+
+        (
+        91, 246, '2022-09-19', 4824499, 82
+        ),
+
+        (
+        695, 247, '2019-01-25', 5313175, 185
+        ),
+
+        (
+        128, 248, '2008-03-20', 3252804, 979
+        ),
+
+        (
+        246, 249, '2009-02-18', 1886804, 944
+        ),
+
+        (
+        848, 250, '2014-11-04', 9570658, 242
+        ),
+
+        (
+        214, 251, '2015-06-02', 4687096, 602
+        ),
+
+        (
+        986, 252, '2019-01-18', 6252847, 766
+        ),
+
+        (
+        359, 253, '2006-03-01', 5192966, 849
+        ),
+
+        (
+        222, 254, '2006-03-15', 3834471, 117
+        ),
+
+        (
+        949, 255, '2022-06-10', 600616, 773
+        ),
+
+        (
+        921, 256, '2023-02-03', 9066371, 956
+        ),
+
+        (
+        799, 257, '2024-05-24', 4591520, 291
+        ),
+
+        (
+        821, 258, '2004-11-10', 426825, 690
+        ),
+
+        (
+        882, 259, '2013-09-06', 3447304, 899
+        ),
+
+        (
+        662, 260, '2012-04-14', 8798602, 503
+        ),
+
+        (
+        615, 261, '2004-11-21', 4147692, 237
+        ),
+
+        (
+        962, 262, '2008-06-26', 3025953, 17
+        ),
+
+        (
+        478, 263, '2015-09-04', 9568057, 859
+        ),
+
+        (
+        283, 264, '2011-07-02', 2687496, 696
+        ),
+
+        (
+        393, 265, '2002-10-11', 8358982, 580
+        ),
+
+        (
+        298, 266, '2023-05-14', 5701632, 784
+        ),
+
+        (
+        892, 267, '2016-02-09', 6542865, 95
+        ),
+
+        (
+        754, 268, '2013-01-21', 5552051, 657
+        ),
+
+        (
+        620, 269, '2006-05-03', 6589977, 557
+        ),
+
+        (
+        397, 270, '2016-11-19', 3498163, 499
+        ),
+
+        (
+        738, 271, '2006-04-25', 1512769, 723
+        ),
+
+        (
+        920, 272, '2018-06-23', 1431331, 447
+        ),
+
+        (
+        422, 273, '2008-10-18', 3888141, 243
+        ),
+
+        (
+        360, 274, '2004-05-03', 7252552, 964
+        ),
+
+        (
+        748, 275, '2020-10-06', 9260447, 749
+        ),
+
+        (
+        875, 276, '2022-04-30', 5432194, 770
+        ),
+
+        (
+        620, 277, '2001-11-20', 9799134, 984
+        ),
+
+        (
+        127, 278, '2012-01-30', 548568, 165
+        ),
+
+        (
+        122, 279, '2012-05-04', 940756, 920
+        ),
+
+        (
+        224, 280, '2019-10-24', 6695192, 912
+        ),
+
+        (
+        881, 281, '2006-05-09', 9344192, 300
+        ),
+
+        (
+        247, 282, '2002-05-12', 3708574, 242
+        ),
+
+        (
+        391, 283, '2022-12-01', 3222926, 589
+        ),
+
+        (
+        24, 284, '2003-01-17', 1731575, 437
+        ),
+
+        (
+        882, 285, '2002-10-08', 5276564, 984
+        ),
+
+        (
+        838, 286, '2006-08-12', 4479800, 882
+        ),
+
+        (
+        271, 287, '2008-07-07', 255168, 708
+        ),
+
+        (
+        683, 288, '2019-02-16', 5496757, 662
+        ),
+
+        (
+        744, 289, '2022-12-28', 6503142, 98
+        ),
+
+        (
+        601, 290, '2015-06-05', 3215229, 888
+        ),
+
+        (
+        127, 291, '2019-02-05', 8686578, 692
+        ),
+
+        (
+        550, 292, '2019-06-16', 8264692, 607
+        ),
+
+        (
+        484, 293, '2001-09-28', 1809592, 650
+        ),
+
+        (
+        108, 294, '2008-06-15', 9918798, 517
+        ),
+
+        (
+        712, 295, '2021-09-06', 9079510, 669
+        ),
+
+        (
+        798, 296, '2006-12-25', 1552038, 769
+        ),
+
+        (
+        438, 297, '2021-10-28', 7281222, 920
+        ),
+
+        (
+        610, 298, '2019-12-10', 3678173, 472
+        ),
+
+        (
+        618, 299, '2002-06-01', 7050969, 957
+        ),
+
+        (
+        197, 300, '2002-11-24', 774721, 242
+        ),
+
+        (
+        129, 301, '2007-03-03', 8042832, 27
+        ),
+
+        (
+        256, 302, '2020-05-26', 7303900, 701
+        ),
+
+        (
+        481, 303, '2020-04-24', 3530414, 725
+        ),
+
+        (
+        484, 304, '2019-11-25', 6894943, 963
+        ),
+
+        (
+        246, 305, '2019-05-24', 5685463, 795
+        ),
+
+        (
+        211, 306, '2010-12-08', 3935763, 969
+        ),
+
+        (
+        491, 307, '2014-02-02', 4750894, 574
+        ),
+
+        (
+        695, 308, '2014-04-14', 5212183, 516
+        ),
+
+        (
+        554, 309, '2021-10-01', 3354309, 949
+        ),
+
+        (
+        532, 310, '2012-01-11', 2853367, 693
+        ),
+
+        (
+        27, 311, '2005-09-05', 9236678, 156
+        ),
+
+        (
+        619, 312, '2015-11-13', 997896, 661
+        ),
+
+        (
+        870, 313, '2022-08-02', 3067976, 212
+        ),
+
+        (
+        257, 314, '2009-04-09', 9455480, 644
+        ),
+
+        (
+        309, 315, '2017-07-02', 355823, 620
+        ),
+
+        (
+        758, 316, '2017-05-21', 3096841, 773
+        ),
+
+        (
+        851, 317, '2021-07-25', 4727069, 370
+        ),
+
+        (
+        348, 318, '2019-02-21', 686321, 815
+        ),
+
+        (
+        488, 319, '2003-12-01', 8187899, 301
+        ),
+
+        (
+        281, 320, '2017-09-11', 7727518, 35
+        ),
+
+        (
+        322, 321, '2004-09-08', 1007068, 341
+        ),
+
+        (
+        950, 322, '2008-05-10', 8048117, 456
+        ),
+
+        (
+        567, 323, '2012-06-19', 5686777, 967
+        ),
+
+        (
+        482, 324, '2024-12-30', 8669567, 222
+        ),
+
+        (
+        223, 325, '2021-10-09', 6380009, 597
+        ),
+
+        (
+        154, 326, '2012-05-19', 5433650, 848
+        ),
+
+        (
+        397, 327, '2012-01-31', 3746759, 843
+        ),
+
+        (
+        255, 328, '2015-12-25', 3393599, 416
+        ),
+
+        (
+        526, 329, '2024-09-27', 6948054, 284
+        ),
+
+        (
+        797, 330, '2020-08-24', 4215223, 540
+        ),
+
+        (
+        652, 331, '2018-03-17', 7659979, 245
+        ),
+
+        (
+        385, 332, '2015-06-14', 7137898, 623
+        ),
+
+        (
+        1, 333, '2011-03-05', 1225941, 979
+        ),
+
+        (
+        105, 334, '2013-09-23', 6109839, 912
+        ),
+
+        (
+        272, 335, '2004-04-02', 6324711, 853
+        ),
+
+        (
+        514, 336, '2002-01-25', 8664294, 350
+        ),
+
+        (
+        547, 337, '2008-08-26', 3214422, 536
+        ),
+
+        (
+        830, 338, '2017-08-01', 7798583, 319
+        ),
+
+        (
+        909, 339, '2006-09-13', 8419058, 333
+        ),
+
+        (
+        31, 340, '2013-06-23', 6144624, 875
+        ),
+
+        (
+        869, 341, '2001-10-18', 7087289, 408
+        ),
+
+        (
+        674, 342, '2004-03-15', 6896825, 306
+        ),
+
+        (
+        786, 343, '2023-10-29', 3634331, 96
+        ),
+
+        (
+        234, 344, '2017-10-21', 1122841, 745
+        ),
+
+        (
+        500, 345, '2022-03-26', 7759332, 29
+        ),
+
+        (
+        995, 346, '2011-02-06', 3038307, 428
+        ),
+
+        (
+        992, 347, '2022-04-28', 2506225, 751
+        ),
+
+        (
+        508, 348, '2014-10-01', 6800800, 924
+        ),
+
+        (
+        423, 349, '2018-10-28', 5214966, 696
+        ),
+
+        (
+        39, 350, '2008-01-12', 4836844, 40
+        ),
+
+        (
+        320, 351, '2006-11-19', 6905807, 452
+        ),
+
+        (
+        136, 352, '2006-02-08', 9254761, 443
+        ),
+
+        (
+        179, 353, '2001-07-04', 9869299, 831
+        ),
+
+        (
+        702, 354, '2015-12-23', 9955910, 70
+        ),
+
+        (
+        801, 355, '2007-05-11', 2967392, 582
+        ),
+
+        (
+        78, 356, '2015-12-13', 9469713, 863
+        ),
+
+        (
+        54, 357, '2013-01-24', 6983051, 539
+        ),
+
+        (
+        576, 358, '2021-04-08', 4388867, 900
+        ),
+
+        (
+        661, 359, '2015-06-01', 5322443, 847
+        ),
+
+        (
+        334, 360, '2009-01-13', 6483310, 434
+        ),
+
+        (
+        876, 361, '2002-08-26', 3531532, 396
+        ),
+
+        (
+        814, 362, '2023-06-10', 846500, 880
+        ),
+
+        (
+        146, 363, '2016-08-21', 5353446, 59
+        ),
+
+        (
+        485, 364, '2014-02-21', 6819440, 390
+        ),
+
+        (
+        25, 365, '2025-03-16', 2685352, 360
+        ),
+
+        (
+        496, 366, '2021-08-15', 2546427, 384
+        ),
+
+        (
+        439, 367, '2002-09-29', 5570644, 347
+        ),
+
+        (
+        295, 368, '2008-09-28', 8273059, 81
+        ),
+
+        (
+        187, 369, '2018-02-17', 8170621, 430
+        ),
+
+        (
+        939, 370, '2023-07-12', 484703, 143
+        ),
+
+        (
+        722, 371, '2023-08-13', 9065827, 17
+        ),
+
+        (
+        349, 372, '2017-11-24', 4858506, 513
+        ),
+
+        (
+        749, 373, '2017-12-09', 8286196, 804
+        ),
+
+        (
+        832, 374, '2002-03-21', 888955, 749
+        ),
+
+        (
+        723, 375, '2018-05-11', 6566352, 716
+        ),
+
+        (
+        994, 376, '2021-07-14', 670353, 879
+        ),
+
+        (
+        612, 377, '2020-07-02', 9927809, 257
+        ),
+
+        (
+        828, 378, '2003-10-17', 6507688, 424
+        ),
+
+        (
+        778, 379, '2005-10-10', 4310169, 286
+        ),
+
+        (
+        135, 380, '2012-10-16', 7531274, 653
+        ),
+
+        (
+        528, 381, '2020-01-17', 4298425, 482
+        ),
+
+        (
+        42, 382, '2002-07-05', 4464968, 419
+        ),
+
+        (
+        658, 383, '2003-10-15', 4369671, 124
+        ),
+
+        (
+        401, 384, '2016-05-04', 7170362, 976
+        ),
+
+        (
+        847, 385, '2004-12-28', 8050456, 754
+        ),
+
+        (
+        990, 386, '2018-12-18', 9157247, 44
+        ),
+
+        (
+        343, 387, '2018-01-09', 7084229, 867
+        ),
+
+        (
+        842, 388, '2021-08-16', 2127527, 478
+        ),
+
+        (
+        829, 389, '2001-06-05', 2236446, 259
+        ),
+
+        (
+        568, 390, '2022-10-13', 3623206, 8
+        ),
+
+        (
+        3, 391, '2023-07-11', 6354925, 354
+        ),
+
+        (
+        592, 392, '2021-10-28', 5149043, 113
+        ),
+
+        (
+        785, 393, '2001-06-30', 9439739, 967
+        ),
+
+        (
+        54, 394, '2015-02-24', 8765275, 836
+        ),
+
+        (
+        676, 395, '2020-11-09', 813413, 492
+        ),
+
+        (
+        931, 396, '2022-08-16', 5748400, 471
+        ),
+
+        (
+        725, 397, '2014-01-19', 7642397, 420
+        ),
+
+        (
+        780, 398, '2012-07-05', 8690699, 715
+        ),
+
+        (
+        454, 399, '2007-08-24', 4862424, 117
+        ),
+
+        (
+        476, 400, '2014-04-21', 6433371, 734
+        ),
+
+        (
+        52, 401, '2005-09-13', 1430146, 353
+        ),
+
+        (
+        825, 402, '2009-06-20', 4724904, 606
+        ),
+
+        (
+        923, 403, '2003-09-28', 8944567, 715
+        ),
+
+        (
+        118, 404, '2007-11-03', 3863494, 331
+        ),
+
+        (
+        14, 405, '2022-01-06', 2842909, 216
+        ),
+
+        (
+        850, 406, '2021-03-11', 5925485, 981
+        ),
+
+        (
+        445, 407, '2024-10-15', 3904175, 216
+        ),
+
+        (
+        653, 408, '2001-08-01', 1021467, 140
+        ),
+
+        (
+        584, 409, '2017-09-07', 5891943, 659
+        ),
+
+        (
+        445, 410, '2023-06-09', 9359729, 453
+        ),
+
+        (
+        446, 411, '2003-09-01', 3795765, 305
+        ),
+
+        (
+        212, 412, '2023-06-01', 2437632, 656
+        ),
+
+        (
+        711, 413, '2021-11-02', 1047317, 918
+        ),
+
+        (
+        875, 414, '2020-07-06', 8599665, 312
+        ),
+
+        (
+        890, 415, '2011-10-21', 2304913, 274
+        ),
+
+        (
+        37, 416, '2021-11-15', 3543311, 29
+        ),
+
+        (
+        124, 417, '2022-09-16', 1479674, 450
+        ),
+
+        (
+        409, 418, '2004-05-27', 3436903, 76
+        ),
+
+        (
+        212, 419, '2011-04-29', 3179754, 959
+        ),
+
+        (
+        277, 420, '2004-08-23', 7407936, 82
+        ),
+
+        (
+        364, 421, '2010-02-19', 4058367, 22
+        ),
+
+        (
+        778, 422, '2024-09-11', 6316633, 46
+        ),
+
+        (
+        801, 423, '2018-11-23', 3267557, 850
+        ),
+
+        (
+        354, 424, '2002-12-19', 2002323, 482
+        ),
+
+        (
+        547, 425, '2003-11-17', 2256734, 726
+        ),
+
+        (
+        102, 426, '2018-02-04', 2020529, 68
+        ),
+
+        (
+        215, 427, '2010-01-16', 8827395, 557
+        ),
+
+        (
+        825, 428, '2013-12-07', 1157936, 576
+        ),
+
+        (
+        186, 429, '2019-01-02', 3982797, 699
+        ),
+
+        (
+        870, 430, '2022-10-07', 8175962, 367
+        ),
+
+        (
+        541, 431, '2011-04-14', 7481190, 374
+        ),
+
+        (
+        598, 432, '2019-04-08', 2307901, 161
+        ),
+
+        (
+        851, 433, '2025-04-17', 809355, 696
+        ),
+
+        (
+        661, 434, '2016-03-22', 1557801, 408
+        ),
+
+        (
+        889, 435, '2012-10-02', 7871951, 155
+        ),
+
+        (
+        698, 436, '2012-01-28', 8709452, 679
+        ),
+
+        (
+        893, 437, '2003-06-25', 9785786, 874
+        ),
+
+        (
+        585, 438, '2011-10-06', 6410704, 279
+        ),
+
+        (
+        220, 439, '2007-02-08', 5375584, 960
+        ),
+
+        (
+        751, 440, '2020-03-15', 3329651, 285
+        ),
+
+        (
+        918, 441, '2003-09-13', 6655078, 930
+        ),
+
+        (
+        692, 442, '2010-10-07', 4062669, 647
+        ),
+
+        (
+        365, 443, '2019-03-26', 7304139, 525
+        ),
+
+        (
+        101, 444, '2015-05-15', 7275033, 959
+        ),
+
+        (
+        354, 445, '2017-03-27', 1091651, 816
+        ),
+
+        (
+        567, 446, '2009-05-26', 4925736, 131
+        ),
+
+        (
+        923, 447, '2016-12-22', 3994822, 672
+        ),
+
+        (
+        263, 448, '2019-09-10', 8612655, 333
+        ),
+
+        (
+        710, 449, '2018-11-18', 2079569, 939
+        ),
+
+        (
+        722, 450, '2016-02-01', 3952931, 960
+        ),
+
+        (
+        27, 451, '2022-10-02', 3361427, 820
+        ),
+
+        (
+        379, 452, '2002-10-23', 9897610, 376
+        ),
+
+        (
+        760, 453, '2011-12-23', 2085087, 365
+        ),
+
+        (
+        941, 454, '2004-05-11', 2311257, 277
+        ),
+
+        (
+        975, 455, '2008-04-15', 9885384, 907
+        ),
+
+        (
+        751, 456, '2018-08-16', 5886999, 37
+        ),
+
+        (
+        229, 457, '2007-11-04', 7582630, 905
+        ),
+
+        (
+        415, 458, '2024-01-09', 4238439, 761
+        ),
+
+        (
+        230, 459, '2012-12-09', 4526660, 309
+        ),
+
+        (
+        580, 460, '2003-09-24', 7051608, 338
+        ),
+
+        (
+        32, 461, '2014-10-09', 6228469, 947
+        ),
+
+        (
+        536, 462, '2021-06-29', 757430, 196
+        ),
+
+        (
+        734, 463, '2004-07-10', 1540986, 773
+        ),
+
+        (
+        555, 464, '2009-12-21', 5095531, 998
+        ),
+
+        (
+        30, 465, '2016-06-16', 4404387, 674
+        ),
+
+        (
+        659, 466, '2013-08-05', 6658746, 968
+        ),
+
+        (
+        705, 467, '2003-10-31', 6729813, 481
+        ),
+
+        (
+        777, 468, '2012-12-06', 5914243, 137
+        ),
+
+        (
+        483, 469, '2001-06-06', 5429751, 27
+        ),
+
+        (
+        888, 470, '2016-07-16', 3978265, 466
+        ),
+
+        (
+        783, 471, '2023-02-06', 4138159, 184
+        ),
+
+        (
+        67, 472, '2012-12-03', 5452086, 141
+        ),
+
+        (
+        456, 473, '2022-03-18', 1362351, 370
+        ),
+
+        (
+        323, 474, '2002-01-02', 4147146, 240
+        ),
+
+        (
+        712, 475, '2013-06-23', 2642285, 801
+        ),
+
+        (
+        419, 476, '2016-01-18', 1412133, 929
+        ),
+
+        (
+        113, 477, '2009-09-26', 5509576, 820
+        ),
+
+        (
+        691, 478, '2020-02-22', 4180095, 234
+        ),
+
+        (
+        525, 479, '2007-12-10', 8736898, 266
+        ),
+
+        (
+        471, 480, '2003-04-29', 8039811, 796
+        ),
+
+        (
+        205, 481, '2003-08-20', 5936828, 55
+        ),
+
+        (
+        289, 482, '2004-05-04', 9120431, 16
+        ),
+
+        (
+        107, 483, '2022-07-10', 1614794, 833
+        ),
+
+        (
+        743, 484, '2015-04-19', 6433130, 19
+        ),
+
+        (
+        109, 485, '2003-05-12', 8160286, 841
+        ),
+
+        (
+        607, 486, '2016-02-21', 8751181, 803
+        ),
+
+        (
+        996, 487, '2013-01-03', 2546162, 329
+        ),
+
+        (
+        799, 488, '2021-12-08', 9517513, 716
+        ),
+
+        (
+        35, 489, '2011-06-14', 9725221, 592
+        ),
+
+        (
+        955, 490, '2011-08-29', 4242255, 283
+        ),
+
+        (
+        26, 491, '2021-03-29', 7375315, 333
+        ),
+
+        (
+        903, 492, '2004-05-13', 353153, 985
+        ),
+
+        (
+        832, 493, '2019-10-08', 8338626, 552
+        ),
+
+        (
+        823, 494, '2015-09-22', 4023074, 926
+        ),
+
+        (
+        430, 495, '2010-02-28', 238338, 509
+        ),
+
+        (
+        171, 496, '2011-01-16', 3339890, 15
+        ),
+
+        (
+        141, 497, '2021-06-15', 478142, 718
+        ),
+
+        (
+        872, 498, '2022-08-03', 7505050, 843
+        ),
+
+        (
+        252, 499, '2019-07-04', 7959422, 917
+        ),
+
+        (
+        924, 500, '2005-01-18', 6716161, 107
+        ),
+
+        (
+        549, 501, '2007-12-01', 1055880, 961
+        ),
+
+        (
+        702, 502, '2018-07-13', 185145, 33
+        ),
+
+        (
+        110, 503, '2012-04-21', 3939364, 706
+        ),
+
+        (
+        231, 504, '2014-10-30', 4782093, 181
+        ),
+
+        (
+        902, 505, '2023-02-13', 7765940, 141
+        ),
+
+        (
+        192, 506, '2018-03-02', 2928417, 614
+        ),
+
+        (
+        901, 507, '2015-05-29', 861337, 449
+        ),
+
+        (
+        448, 508, '2006-06-21', 4345020, 434
+        ),
+
+        (
+        16, 509, '2022-09-15', 1800524, 670
+        ),
+
+        (
+        267, 510, '2015-11-29', 633207, 464
+        ),
+
+        (
+        106, 511, '2015-09-21', 2693010, 710
+        ),
+
+        (
+        427, 512, '2022-12-04', 7776829, 833
+        ),
+
+        (
+        726, 513, '2022-11-13', 2950437, 464
+        ),
+
+        (
+        669, 514, '2025-01-15', 9099791, 291
+        ),
+
+        (
+        398, 515, '2025-01-30', 5716935, 73
+        ),
+
+        (
+        200, 516, '2008-12-29', 2928756, 475
+        ),
+
+        (
+        66, 517, '2004-06-03', 4934214, 864
+        ),
+
+        (
+        151, 518, '2016-12-08', 1801966, 133
+        ),
+
+        (
+        501, 519, '2012-09-25', 2607721, 649
+        ),
+
+        (
+        883, 520, '2018-09-18', 7355873, 184
+        ),
+
+        (
+        167, 521, '2011-04-20', 5850657, 432
+        ),
+
+        (
+        22, 522, '2013-12-23', 2685883, 415
+        ),
+
+        (
+        128, 523, '2006-07-20', 9806599, 951
+        ),
+
+        (
+        432, 524, '2016-01-21', 4721692, 144
+        ),
+
+        (
+        28, 525, '2017-03-03', 6757240, 441
+        ),
+
+        (
+        392, 526, '2016-09-03', 2688258, 323
+        ),
+
+        (
+        152, 527, '2011-01-10', 8873670, 773
+        ),
+
+        (
+        610, 528, '2017-04-13', 2522362, 53
+        ),
+
+        (
+        849, 529, '2005-08-27', 306695, 70
+        ),
+
+        (
+        495, 530, '2015-06-06', 7719314, 90
+        ),
+
+        (
+        936, 531, '2015-09-26', 5658560, 952
+        ),
+
+        (
+        523, 532, '2003-07-16', 5575585, 871
+        ),
+
+        (
+        825, 533, '2006-11-01', 9694238, 135
+        ),
+
+        (
+        200, 534, '2006-01-10', 1127434, 737
+        ),
+
+        (
+        949, 535, '2010-02-19', 8437441, 117
+        ),
+
+        (
+        459, 536, '2015-05-30', 2573999, 557
+        ),
+
+        (
+        523, 537, '2008-06-15', 3905137, 196
+        ),
+
+        (
+        2, 538, '2010-05-07', 4576848, 438
+        ),
+
+        (
+        41, 539, '2003-03-11', 5377831, 36
+        ),
+
+        (
+        316, 540, '2023-03-02', 9084681, 462
+        ),
+
+        (
+        788, 541, '2018-04-09', 5917652, 953
+        ),
+
+        (
+        485, 542, '2003-05-31', 4191807, 856
+        ),
+
+        (
+        206, 543, '2016-01-29', 8488601, 404
+        ),
+
+        (
+        484, 544, '2018-01-07', 4554073, 987
+        ),
+
+        (
+        692, 545, '2018-07-20', 4190961, 107
+        ),
+
+        (
+        179, 546, '2017-09-09', 8595348, 702
+        ),
+
+        (
+        145, 547, '2014-04-17', 2229948, 118
+        ),
+
+        (
+        561, 548, '2013-11-28', 4289694, 178
+        ),
+
+        (
+        180, 549, '2006-09-29', 8318687, 37
+        ),
+
+        (
+        313, 550, '2006-04-04', 7719194, 729
+        ),
+
+        (
+        438, 551, '2017-01-06', 9657639, 863
+        ),
+
+        (
+        717, 552, '2025-02-17', 1628157, 994
+        ),
+
+        (
+        125, 553, '2021-12-22', 6739166, 872
+        ),
+
+        (
+        299, 554, '2003-06-13', 2392225, 635
+        ),
+
+        (
+        365, 555, '2002-12-23', 7246730, 896
+        ),
+
+        (
+        624, 556, '2005-05-16', 7768700, 307
+        ),
+
+        (
+        88, 557, '2001-06-18', 8809591, 863
+        ),
+
+        (
+        193, 558, '2012-10-02', 9401667, 845
+        ),
+
+        (
+        757, 559, '2012-03-23', 2997737, 636
+        ),
+
+        (
+        697, 560, '2001-10-12', 5551193, 487
+        ),
+
+        (
+        752, 561, '2007-09-30', 4757070, 885
+        ),
+
+        (
+        959, 562, '2013-03-17', 6099953, 532
+        ),
+
+        (
+        825, 563, '2010-12-05', 4847965, 462
+        ),
+
+        (
+        403, 564, '2023-11-13', 1988463, 852
+        ),
+
+        (
+        12, 565, '2001-06-17', 9052634, 145
+        ),
+
+        (
+        51, 566, '2013-12-19', 1629461, 326
+        ),
+
+        (
+        119, 567, '2012-01-01', 9109430, 55
+        ),
+
+        (
+        250, 568, '2005-08-10', 6050143, 580
+        ),
+
+        (
+        907, 569, '2011-07-13', 3464711, 122
+        ),
+
+        (
+        353, 570, '2012-05-01', 6847917, 242
+        ),
+
+        (
+        391, 571, '2006-08-21', 6360314, 739
+        ),
+
+        (
+        681, 572, '2007-04-26', 6755113, 168
+        ),
+
+        (
+        36, 573, '2005-06-03', 1809974, 618
+        ),
+
+        (
+        445, 574, '2014-12-31', 8916394, 585
+        ),
+
+        (
+        750, 575, '2019-07-28', 1403741, 87
+        ),
+
+        (
+        160, 576, '2023-04-01', 7419118, 136
+        ),
+
+        (
+        331, 577, '2005-03-02', 4287308, 880
+        ),
+
+        (
+        714, 578, '2020-08-03', 3634269, 801
+        ),
+
+        (
+        476, 579, '2012-06-30', 6420535, 704
+        ),
+
+        (
+        837, 580, '2025-03-13', 7472878, 922
+        ),
+
+        (
+        652, 581, '2012-05-27', 4315222, 1000
+        ),
+
+        (
+        40, 582, '2018-01-22', 8818901, 318
+        ),
+
+        (
+        734, 583, '2020-09-01', 7086740, 800
+        ),
+
+        (
+        807, 584, '2016-08-15', 2934536, 294
+        ),
+
+        (
+        944, 585, '2023-05-19', 944371, 212
+        ),
+
+        (
+        715, 586, '2018-05-22', 9181656, 527
+        ),
+
+        (
+        892, 587, '2007-02-11', 1751324, 899
+        ),
+
+        (
+        991, 588, '2018-07-18', 1851868, 741
+        ),
+
+        (
+        136, 589, '2017-11-23', 2511977, 305
+        ),
+
+        (
+        721, 590, '2007-03-24', 2141337, 575
+        ),
+
+        (
+        22, 591, '2011-07-25', 165919, 122
+        ),
+
+        (
+        890, 592, '2024-11-02', 5644284, 328
+        ),
+
+        (
+        415, 593, '2013-08-24', 4328499, 590
+        ),
+
+        (
+        654, 594, '2012-10-20', 8425383, 475
+        ),
+
+        (
+        761, 595, '2008-06-14', 9474186, 918
+        ),
+
+        (
+        3, 596, '2011-02-08', 9443677, 388
+        ),
+
+        (
+        25, 597, '2005-12-13', 3727074, 266
+        ),
+
+        (
+        956, 598, '2002-04-04', 7818415, 770
+        ),
+
+        (
+        588, 599, '2019-02-22', 6087606, 782
+        ),
+
+        (
+        569, 600, '2023-05-17', 3448406, 824
+        ),
+
+        (
+        807, 601, '2020-11-29', 6201844, 73
+        ),
+
+        (
+        22, 602, '2005-12-16', 2272851, 635
+        ),
+
+        (
+        668, 603, '2008-08-23', 5439011, 285
+        ),
+
+        (
+        261, 604, '2003-01-21', 5951846, 211
+        ),
+
+        (
+        945, 605, '2005-08-15', 224984, 957
+        ),
+
+        (
+        853, 606, '2007-08-29', 5466168, 41
+        ),
+
+        (
+        890, 607, '2006-09-07', 4267245, 403
+        ),
+
+        (
+        394, 608, '2007-12-02', 6877506, 709
+        ),
+
+        (
+        662, 609, '2009-08-07', 7727608, 708
+        ),
+
+        (
+        934, 610, '2007-10-23', 2315960, 581
+        ),
+
+        (
+        601, 611, '2022-12-17', 250626, 526
+        ),
+
+        (
+        452, 612, '2007-04-20', 200824, 672
+        ),
+
+        (
+        767, 613, '2015-06-10', 9140670, 325
+        ),
+
+        (
+        595, 614, '2005-07-02', 5206798, 307
+        ),
+
+        (
+        314, 615, '2001-09-29', 242518, 105
+        ),
+
+        (
+        572, 616, '2015-06-02', 4332152, 320
+        ),
+
+        (
+        264, 617, '2024-09-04', 8615837, 25
+        ),
+
+        (
+        656, 618, '2017-01-16', 4274754, 922
+        ),
+
+        (
+        620, 619, '2006-03-12', 825011, 187
+        ),
+
+        (
+        815, 620, '2017-05-09', 1559717, 276
+        ),
+
+        (
+        336, 621, '2003-02-09', 3251724, 451
+        ),
+
+        (
+        808, 622, '2014-06-24', 1428680, 525
+        ),
+
+        (
+        439, 623, '2016-01-23', 125644, 843
+        ),
+
+        (
+        151, 624, '2019-10-12', 5783365, 722
+        ),
+
+        (
+        636, 625, '2021-07-18', 4466572, 849
+        ),
+
+        (
+        396, 626, '2007-05-01', 3026997, 401
+        ),
+
+        (
+        496, 627, '2013-04-18', 2873970, 279
+        ),
+
+        (
+        788, 628, '2003-09-05', 4861696, 336
+        ),
+
+        (
+        50, 629, '2011-11-24', 7319886, 900
+        ),
+
+        (
+        348, 630, '2001-08-08', 8019734, 153
+        ),
+
+        (
+        346, 631, '2005-04-05', 9169377, 884
+        ),
+
+        (
+        168, 632, '2005-01-27', 3128371, 878
+        ),
+
+        (
+        994, 633, '2003-11-28', 5444784, 379
+        ),
+
+        (
+        133, 634, '2008-02-07', 4363845, 992
+        ),
+
+        (
+        842, 635, '2019-12-15', 8092385, 419
+        ),
+
+        (
+        923, 636, '2007-11-05', 802166, 77
+        ),
+
+        (
+        882, 637, '2023-01-29', 5295264, 905
+        ),
+
+        (
+        704, 638, '2011-07-21', 161579, 637
+        ),
+
+        (
+        726, 639, '2023-03-19', 5111721, 590
+        ),
+
+        (
+        328, 640, '2024-10-14', 9517825, 174
+        ),
+
+        (
+        960, 641, '2005-01-08', 3460289, 211
+        ),
+
+        (
+        740, 642, '2014-11-08', 5423836, 505
+        ),
+
+        (
+        604, 643, '2022-11-07', 4171941, 693
+        ),
+
+        (
+        87, 644, '2010-12-04', 9287016, 39
+        ),
+
+        (
+        916, 645, '2010-08-24', 5000564, 361
+        ),
+
+        (
+        892, 646, '2015-11-28', 5740407, 744
+        ),
+
+        (
+        51, 647, '2015-04-18', 2793593, 454
+        ),
+
+        (
+        41, 648, '2014-10-27', 2204480, 517
+        ),
+
+        (
+        25, 649, '2014-05-11', 9953666, 685
+        ),
+
+        (
+        583, 650, '2017-01-01', 9013425, 114
+        ),
+
+        (
+        95, 651, '2010-11-07', 2896435, 171
+        ),
+
+        (
+        407, 652, '2006-05-23', 2790619, 702
+        ),
+
+        (
+        782, 653, '2005-05-22', 7329619, 409
+        ),
+
+        (
+        576, 654, '2011-02-06', 3113202, 367
+        ),
+
+        (
+        297, 655, '2013-05-17', 5020413, 737
+        ),
+
+        (
+        930, 656, '2010-07-22', 1158225, 561
+        ),
+
+        (
+        138, 657, '2012-01-07', 2324134, 269
+        ),
+
+        (
+        274, 658, '2005-11-29', 6291220, 536
+        ),
+
+        (
+        936, 659, '2011-12-24', 6856862, 756
+        ),
+
+        (
+        338, 660, '2011-11-05', 4341914, 51
+        ),
+
+        (
+        240, 661, '2019-11-26', 8692745, 264
+        ),
+
+        (
+        65, 662, '2003-01-17', 5064434, 545
+        ),
+
+        (
+        732, 663, '2022-11-19', 4013715, 399
+        ),
+
+        (
+        347, 664, '2019-01-09', 4283479, 689
+        ),
+
+        (
+        653, 665, '2019-07-09', 1542994, 65
+        ),
+
+        (
+        779, 666, '2007-01-09', 7205931, 846
+        ),
+
+        (
+        624, 667, '2013-04-29', 1037301, 199
+        ),
+
+        (
+        731, 668, '2002-05-07', 8981465, 547
+        ),
+
+        (
+        978, 669, '2010-04-19', 8411951, 353
+        ),
+
+        (
+        542, 670, '2021-08-28', 9586632, 412
+        ),
+
+        (
+        596, 671, '2003-10-08', 2322728, 728
+        ),
+
+        (
+        716, 672, '2004-08-14', 1165860, 730
+        ),
+
+        (
+        709, 673, '2010-07-08', 1516073, 491
+        ),
+
+        (
+        526, 674, '2013-06-21', 1390723, 205
+        ),
+
+        (
+        362, 675, '2001-09-06', 3119508, 603
+        ),
+
+        (
+        837, 676, '2017-11-16', 4084833, 33
+        ),
+
+        (
+        521, 677, '2017-08-11', 1545388, 723
+        ),
+
+        (
+        876, 678, '2007-11-09', 6696651, 177
+        ),
+
+        (
+        98, 679, '2013-12-07', 3687674, 212
+        ),
+
+        (
+        680, 680, '2019-10-08', 505631, 495
+        ),
+
+        (
+        952, 681, '2018-03-25', 7453338, 48
+        ),
+
+        (
+        990, 682, '2017-05-08', 7552992, 939
+        ),
+
+        (
+        313, 683, '2010-04-01', 6209087, 921
+        ),
+
+        (
+        598, 684, '2013-04-25', 122860, 711
+        ),
+
+        (
+        996, 685, '2019-02-14', 947884, 409
+        ),
+
+        (
+        701, 686, '2006-03-12', 328696, 872
+        ),
+
+        (
+        431, 687, '2024-10-20', 5294274, 849
+        ),
+
+        (
+        971, 688, '2023-10-19', 2686906, 464
+        ),
+
+        (
+        590, 689, '2002-06-16', 6636539, 98
+        ),
+
+        (
+        471, 690, '2010-10-03', 2151954, 163
+        ),
+
+        (
+        868, 691, '2018-08-07', 7685351, 317
+        ),
+
+        (
+        319, 692, '2021-08-10', 1462574, 696
+        ),
+
+        (
+        136, 693, '2022-09-19', 3889322, 421
+        ),
+
+        (
+        907, 694, '2019-01-20', 4474997, 701
+        ),
+
+        (
+        284, 695, '2002-01-16', 4916347, 916
+        ),
+
+        (
+        562, 696, '2020-05-21', 1556231, 540
+        ),
+
+        (
+        965, 697, '2001-08-10', 2251689, 237
+        ),
+
+        (
+        795, 698, '2011-04-02', 7974952, 87
+        ),
+
+        (
+        906, 699, '2006-09-11', 1840795, 355
+        ),
+
+        (
+        912, 700, '2023-01-09', 4201024, 473
+        ),
+
+        (
+        243, 701, '2015-03-04', 1941652, 422
+        ),
+
+        (
+        110, 702, '2024-01-05', 4771089, 794
+        ),
+
+        (
+        345, 703, '2024-10-01', 8134510, 398
+        ),
+
+        (
+        872, 704, '2013-02-22', 8191512, 275
+        ),
+
+        (
+        31, 705, '2016-12-24', 6549039, 290
+        ),
+
+        (
+        454, 706, '2013-12-17', 3297106, 240
+        ),
+
+        (
+        558, 707, '2013-04-23', 2054444, 651
+        ),
+
+        (
+        414, 708, '2017-12-15', 1215332, 363
+        ),
+
+        (
+        597, 709, '2016-11-05', 1997721, 925
+        ),
+
+        (
+        731, 710, '2003-06-29', 1885381, 528
+        ),
+
+        (
+        469, 711, '2014-11-08', 6148302, 174
+        ),
+
+        (
+        815, 712, '2015-11-16', 5890715, 412
+        ),
+
+        (
+        175, 713, '2024-08-25', 1114028, 351
+        ),
+
+        (
+        202, 714, '2019-04-18', 2343691, 430
+        ),
+
+        (
+        215, 715, '2016-02-21', 1330818, 601
+        ),
+
+        (
+        659, 716, '2023-05-02', 1399422, 413
+        ),
+
+        (
+        344, 717, '2001-07-27', 3643357, 636
+        ),
+
+        (
+        998, 718, '2023-10-01', 5379701, 282
+        ),
+
+        (
+        259, 719, '2002-04-26', 6392664, 808
+        ),
+
+        (
+        392, 720, '2007-10-16', 3048120, 261
+        ),
+
+        (
+        492, 721, '2015-04-08', 8465598, 567
+        ),
+
+        (
+        966, 722, '2006-05-12', 5041752, 588
+        ),
+
+        (
+        641, 723, '2022-09-25', 1487721, 395
+        ),
+
+        (
+        747, 724, '2003-03-01', 4618734, 249
+        ),
+
+        (
+        834, 725, '2009-10-16', 8383228, 603
+        ),
+
+        (
+        988, 726, '2022-07-13', 4901484, 921
+        ),
+
+        (
+        849, 727, '2023-05-07', 6019585, 419
+        ),
+
+        (
+        675, 728, '2008-01-07', 2466906, 590
+        ),
+
+        (
+        840, 729, '2012-01-06', 316610, 951
+        ),
+
+        (
+        252, 730, '2011-01-22', 4120278, 911
+        ),
+
+        (
+        141, 731, '2001-10-04', 3240014, 15
+        ),
+
+        (
+        967, 732, '2011-11-27', 2365291, 839
+        ),
+
+        (
+        748, 733, '2008-05-28', 6219156, 84
+        ),
+
+        (
+        266, 734, '2013-11-17', 6039436, 479
+        ),
+
+        (
+        751, 735, '2001-11-21', 503089, 892
+        ),
+
+        (
+        545, 736, '2015-04-18', 1630478, 542
+        ),
+
+        (
+        397, 737, '2004-12-10', 1296426, 147
+        ),
+
+        (
+        266, 738, '2020-04-10', 8766335, 896
+        ),
+
+        (
+        639, 739, '2021-08-04', 355167, 875
+        ),
+
+        (
+        382, 740, '2012-01-29', 2986325, 218
+        ),
+
+        (
+        810, 741, '2005-03-24', 4054016, 895
+        ),
+
+        (
+        141, 742, '2009-01-26', 6770952, 370
+        ),
+
+        (
+        207, 743, '2015-04-22', 3379913, 201
+        ),
+
+        (
+        681, 744, '2005-07-03', 6762157, 596
+        ),
+
+        (
+        389, 745, '2004-09-30', 7371464, 981
+        ),
+
+        (
+        51, 746, '2004-10-26', 3487863, 820
+        ),
+
+        (
+        339, 747, '2007-02-18', 6598826, 541
+        ),
+
+        (
+        210, 748, '2015-01-07', 7901289, 837
+        ),
+
+        (
+        888, 749, '2005-12-21', 3258866, 439
+        ),
+
+        (
+        743, 750, '2011-05-14', 5779403, 342
+        ),
+
+        (
+        269, 751, '2011-01-19', 2426131, 494
+        ),
+
+        (
+        718, 752, '2011-09-24', 4940263, 421
+        ),
+
+        (
+        380, 753, '2007-08-14', 9899209, 894
+        ),
+
+        (
+        21, 754, '2020-01-22', 1986493, 781
+        ),
+
+        (
+        107, 755, '2023-10-13', 8979477, 937
+        ),
+
+        (
+        688, 756, '2024-11-25', 3329541, 99
+        ),
+
+        (
+        362, 757, '2006-04-05', 5246075, 541
+        ),
+
+        (
+        100, 758, '2012-08-11', 7396785, 340
+        ),
+
+        (
+        630, 759, '2006-09-28', 6946252, 939
+        ),
+
+        (
+        303, 760, '2017-12-03', 1686223, 451
+        ),
+
+        (
+        216, 761, '2018-02-07', 4347680, 406
+        ),
+
+        (
+        915, 762, '2015-06-14', 8514022, 205
+        ),
+
+        (
+        729, 763, '2010-09-02', 6679995, 124
+        ),
+
+        (
+        544, 764, '2005-05-12', 7385284, 185
+        ),
+
+        (
+        539, 765, '2007-04-14', 4669388, 408
+        ),
+
+        (
+        382, 766, '2011-12-20', 3095692, 90
+        ),
+
+        (
+        78, 767, '2019-01-03', 9275401, 715
+        ),
+
+        (
+        356, 768, '2021-06-16', 5054925, 547
+        ),
+
+        (
+        667, 769, '2021-02-10', 5367114, 922
+        ),
+
+        (
+        552, 770, '2024-03-06', 2524875, 291
+        ),
+
+        (
+        298, 771, '2010-02-20', 592574, 187
+        ),
+
+        (
+        971, 772, '2011-07-07', 9444254, 643
+        ),
+
+        (
+        538, 773, '2002-08-30', 1471341, 396
+        ),
+
+        (
+        128, 774, '2004-04-27', 8349776, 173
+        ),
+
+        (
+        185, 775, '2009-11-29', 9020829, 221
+        ),
+
+        (
+        836, 776, '2017-08-13', 9013153, 989
+        ),
+
+        (
+        523, 777, '2025-02-28', 4046833, 320
+        ),
+
+        (
+        858, 778, '2024-03-17', 1921210, 461
+        ),
+
+        (
+        466, 779, '2009-01-17', 2288423, 309
+        ),
+
+        (
+        144, 780, '2021-11-14', 4181182, 152
+        ),
+
+        (
+        413, 781, '2009-07-07', 7596850, 245
+        ),
+
+        (
+        181, 782, '2023-02-07', 7438403, 422
+        ),
+
+        (
+        847, 783, '2004-02-25', 1435469, 918
+        ),
+
+        (
+        859, 784, '2010-06-29', 5332334, 86
+        ),
+
+        (
+        138, 785, '2009-10-13', 7950365, 683
+        ),
+
+        (
+        85, 786, '2022-01-02', 1305946, 961
+        ),
+
+        (
+        110, 787, '2007-10-09', 5588708, 665
+        ),
+
+        (
+        964, 788, '2019-08-15', 3499225, 280
+        ),
+
+        (
+        827, 789, '2022-03-10', 8912300, 397
+        ),
+
+        (
+        471, 790, '2011-10-01', 960401, 215
+        ),
+
+        (
+        467, 791, '2011-08-19', 9399852, 501
+        ),
+
+        (
+        786, 792, '2016-09-28', 3960661, 652
+        ),
+
+        (
+        247, 793, '2010-05-11', 9870927, 2
+        ),
+
+        (
+        368, 794, '2021-03-05', 7789871, 574
+        ),
+
+        (
+        378, 795, '2021-09-27', 6578325, 897
+        ),
+
+        (
+        64, 796, '2005-12-12', 6993262, 288
+        ),
+
+        (
+        823, 797, '2017-12-14', 8724789, 431
+        ),
+
+        (
+        933, 798, '2015-05-19', 9378368, 321
+        ),
+
+        (
+        504, 799, '2018-02-23', 3381633, 253
+        ),
+
+        (
+        970, 800, '2005-03-01', 535749, 817
+        ),
+
+        (
+        999, 801, '2021-02-14', 8007290, 799
+        ),
+
+        (
+        85, 802, '2024-04-11', 5409908, 924
+        ),
+
+        (
+        226, 803, '2016-02-18', 7993587, 111
+        ),
+
+        (
+        786, 804, '2005-06-05', 8947643, 257
+        ),
+
+        (
+        158, 805, '2003-05-03', 2203476, 861
+        ),
+
+        (
+        370, 806, '2020-05-23', 5520960, 33
+        ),
+
+        (
+        231, 807, '2018-11-02', 3868099, 987
+        ),
+
+        (
+        155, 808, '2015-02-18', 7366196, 336
+        ),
+
+        (
+        204, 809, '2018-09-22', 5636216, 73
+        ),
+
+        (
+        899, 810, '2013-12-15', 2499080, 690
+        ),
+
+        (
+        851, 811, '2015-11-22', 180646, 738
+        ),
+
+        (
+        998, 812, '2021-02-20', 1856489, 857
+        ),
+
+        (
+        16, 813, '2016-08-23', 5236829, 904
+        ),
+
+        (
+        935, 814, '2021-06-28', 5670407, 737
+        ),
+
+        (
+        620, 815, '2017-07-31', 2634034, 296
+        ),
+
+        (
+        432, 816, '2017-01-16', 130027, 11
+        ),
+
+        (
+        813, 817, '2001-10-10', 7306420, 708
+        ),
+
+        (
+        229, 818, '2022-12-31', 4409116, 103
+        ),
+
+        (
+        474, 819, '2007-08-21', 3122529, 655
+        ),
+
+        (
+        291, 820, '2020-08-01', 6971083, 491
+        ),
+
+        (
+        829, 821, '2006-01-20', 1824588, 126
+        ),
+
+        (
+        359, 822, '2018-09-14', 2940287, 233
+        ),
+
+        (
+        308, 823, '2015-10-22', 2945371, 647
+        ),
+
+        (
+        58, 824, '2002-05-11', 1686779, 614
+        ),
+
+        (
+        932, 825, '2007-04-10', 9619511, 809
+        ),
+
+        (
+        140, 826, '2019-08-31', 6686163, 130
+        ),
+
+        (
+        622, 827, '2006-06-04', 4459995, 843
+        ),
+
+        (
+        243, 828, '2002-01-22', 5513526, 296
+        ),
+
+        (
+        360, 829, '2004-07-12', 4714015, 502
+        ),
+
+        (
+        857, 830, '2019-04-01', 7417023, 735
+        ),
+
+        (
+        923, 831, '2010-01-08', 3193021, 772
+        ),
+
+        (
+        146, 832, '2001-09-04', 2310640, 455
+        ),
+
+        (
+        966, 833, '2023-06-16', 2783204, 364
+        ),
+
+        (
+        834, 834, '2025-05-12', 2846347, 718
+        ),
+
+        (
+        653, 835, '2020-03-08', 5653931, 304
+        ),
+
+        (
+        221, 836, '2023-01-04', 5876961, 44
+        ),
+
+        (
+        190, 837, '2020-05-05', 1363301, 261
+        ),
+
+        (
+        337, 838, '2010-02-14', 956209, 472
+        ),
+
+        (
+        960, 839, '2013-07-31', 1221499, 80
+        ),
+
+        (
+        758, 840, '2008-12-25', 4012235, 489
+        ),
+
+        (
+        799, 841, '2007-12-08', 3453747, 939
+        ),
+
+        (
+        215, 842, '2020-01-07', 3622336, 471
+        ),
+
+        (
+        963, 843, '2004-05-02', 3124003, 862
+        ),
+
+        (
+        526, 844, '2015-07-22', 237150, 126
+        ),
+
+        (
+        707, 845, '2020-07-09', 2542278, 395
+        ),
+
+        (
+        867, 846, '2017-04-22', 4526808, 91
+        ),
+
+        (
+        285, 847, '2023-02-27', 9735321, 859
+        ),
+
+        (
+        935, 848, '2013-07-04', 7024634, 250
+        ),
+
+        (
+        544, 849, '2004-02-22', 6003751, 64
+        ),
+
+        (
+        946, 850, '2017-02-24', 4157876, 601
+        ),
+
+        (
+        156, 851, '2003-02-19', 6337660, 1000
+        ),
+
+        (
+        338, 852, '2012-06-18', 541749, 754
+        ),
+
+        (
+        299, 853, '2002-01-15', 5026962, 817
+        ),
+
+        (
+        94, 854, '2011-05-10', 8033284, 167
+        ),
+
+        (
+        244, 855, '2012-06-12', 9436727, 730
+        ),
+
+        (
+        515, 856, '2010-06-21', 5230558, 73
+        ),
+
+        (
+        323, 857, '2025-01-25', 6605750, 187
+        ),
+
+        (
+        260, 858, '2011-10-28', 9822934, 418
+        ),
+
+        (
+        509, 859, '2005-10-28', 978337, 313
+        ),
+
+        (
+        843, 860, '2018-02-20', 5984720, 403
+        ),
+
+        (
+        386, 861, '2004-12-17', 7463738, 94
+        ),
+
+        (
+        754, 862, '2019-01-03', 4351270, 334
+        ),
+
+        (
+        828, 863, '2005-06-23', 7979168, 100
+        ),
+
+        (
+        83, 864, '2025-01-25', 9088754, 841
+        ),
+
+        (
+        162, 865, '2022-09-08', 6423350, 662
+        ),
+
+        (
+        443, 866, '2008-03-15', 1193550, 863
+        ),
+
+        (
+        912, 867, '2020-01-19', 3500920, 232
+        ),
+
+        (
+        175, 868, '2015-02-21', 9859283, 957
+        ),
+
+        (
+        77, 869, '2022-07-13', 9332306, 700
+        ),
+
+        (
+        579, 870, '2004-01-29', 3017128, 983
+        ),
+
+        (
+        535, 871, '2013-10-21', 7605598, 969
+        ),
+
+        (
+        401, 872, '2023-11-18', 6727323, 907
+        ),
+
+        (
+        964, 873, '2021-10-26', 9629778, 79
+        ),
+
+        (
+        343, 874, '2006-09-20', 9725822, 917
+        ),
+
+        (
+        888, 875, '2013-12-13', 9568139, 185
+        ),
+
+        (
+        60, 876, '2009-03-13', 8001383, 487
+        ),
+
+        (
+        90, 877, '2010-11-29', 6243709, 930
+        ),
+
+        (
+        94, 878, '2008-09-26', 2396119, 343
+        ),
+
+        (
+        262, 879, '2005-12-24', 2605165, 520
+        ),
+
+        (
+        171, 880, '2024-12-20', 9759221, 630
+        ),
+
+        (
+        180, 881, '2016-03-12', 9774372, 898
+        ),
+
+        (
+        824, 882, '2010-02-25', 6195931, 214
+        ),
+
+        (
+        29, 883, '2006-03-20', 3063741, 661
+        ),
+
+        (
+        945, 884, '2006-03-19', 9863215, 264
+        ),
+
+        (
+        711, 885, '2016-02-13', 1447222, 226
+        ),
+
+        (
+        622, 886, '2017-06-09', 4622449, 438
+        ),
+
+        (
+        461, 887, '2011-07-09', 9219236, 43
+        ),
+
+        (
+        862, 888, '2022-03-31', 3240840, 188
+        ),
+
+        (
+        11, 889, '2024-01-29', 6232516, 160
+        ),
+
+        (
+        574, 890, '2013-12-13', 1441390, 934
+        ),
+
+        (
+        630, 891, '2023-08-24', 410512, 865
+        ),
+
+        (
+        762, 892, '2009-01-17', 7247694, 690
+        ),
+
+        (
+        15, 893, '2008-01-20', 2733237, 104
+        ),
+
+        (
+        770, 894, '2004-11-03', 7708358, 297
+        ),
+
+        (
+        998, 895, '2009-08-18', 8880133, 478
+        ),
+
+        (
+        796, 896, '2015-11-27', 2879537, 489
+        ),
+
+        (
+        479, 897, '2021-04-21', 4931330, 948
+        ),
+
+        (
+        247, 898, '2023-10-30', 4732492, 378
+        ),
+
+        (
+        351, 899, '2002-05-01', 3222734, 825
+        ),
+
+        (
+        606, 900, '2012-06-29', 9760096, 453
+        ),
+
+        (
+        385, 901, '2021-02-17', 6762595, 285
+        ),
+
+        (
+        779, 902, '2020-10-01', 9621025, 515
+        ),
+
+        (
+        414, 903, '2018-07-26', 8699972, 69
+        ),
+
+        (
+        687, 904, '2007-06-20', 6615260, 13
+        ),
+
+        (
+        229, 905, '2024-11-06', 7035169, 823
+        ),
+
+        (
+        10, 906, '2019-03-21', 3455157, 68
+        ),
+
+        (
+        775, 907, '2005-09-25', 6437550, 870
+        ),
+
+        (
+        600, 908, '2017-04-15', 9211590, 605
+        ),
+
+        (
+        152, 909, '2001-12-01', 6120738, 623
+        ),
+
+        (
+        142, 910, '2003-08-03', 2788803, 415
+        ),
+
+        (
+        296, 911, '2013-03-29', 7367254, 455
+        ),
+
+        (
+        442, 912, '2009-02-26', 1050195, 210
+        ),
+
+        (
+        740, 913, '2011-03-08', 1704304, 985
+        ),
+
+        (
+        678, 914, '2018-07-16', 1686945, 710
+        ),
+
+        (
+        162, 915, '2015-10-05', 3760588, 600
+        ),
+
+        (
+        359, 916, '2022-07-24', 6663414, 108
+        ),
+
+        (
+        834, 917, '2003-02-14', 9657975, 120
+        ),
+
+        (
+        827, 918, '2025-05-17', 9267762, 231
+        ),
+
+        (
+        524, 919, '2013-08-03', 2002865, 571
+        ),
+
+        (
+        997, 920, '2024-09-25', 4386593, 906
+        ),
+
+        (
+        438, 921, '2016-04-27', 4142531, 401
+        ),
+
+        (
+        130, 922, '2023-03-14', 3978591, 494
+        ),
+
+        (
+        669, 923, '2016-08-01', 5724649, 730
+        ),
+
+        (
+        743, 924, '2024-04-23', 3662343, 986
+        ),
+
+        (
+        411, 925, '2006-04-16', 101124, 494
+        ),
+
+        (
+        950, 926, '2006-10-11', 8733894, 36
+        ),
+
+        (
+        273, 927, '2004-08-25', 7285500, 396
+        ),
+
+        (
+        282, 928, '2012-04-02', 5638035, 983
+        ),
+
+        (
+        545, 929, '2017-05-05', 7866592, 908
+        ),
+
+        (
+        527, 930, '2019-07-07', 8289762, 67
+        ),
+
+        (
+        636, 931, '2022-11-26', 2664853, 934
+        ),
+
+        (
+        384, 932, '2012-06-23', 7260582, 958
+        ),
+
+        (
+        660, 933, '2010-02-10', 8677175, 774
+        ),
+
+        (
+        697, 934, '2012-07-31', 8781052, 228
+        ),
+
+        (
+        93, 935, '2023-04-22', 4152630, 690
+        ),
+
+        (
+        890, 936, '2025-02-13', 4263983, 568
+        ),
+
+        (
+        230, 937, '2002-06-16', 1990684, 598
+        ),
+
+        (
+        414, 938, '2024-06-17', 2170826, 703
+        ),
+
+        (
+        646, 939, '2012-02-05', 4125286, 169
+        ),
+
+        (
+        755, 940, '2018-11-15', 4124243, 578
+        ),
+
+        (
+        941, 941, '2018-08-26', 9577120, 994
+        ),
+
+        (
+        97, 942, '2002-04-07', 3925897, 52
+        ),
+
+        (
+        867, 943, '2015-05-29', 5483893, 606
+        ),
+
+        (
+        431, 944, '2004-11-21', 1684226, 483
+        ),
+
+        (
+        572, 945, '2012-08-03', 9895636, 213
+        ),
+
+        (
+        777, 946, '2016-12-11', 5936904, 617
+        ),
+
+        (
+        271, 947, '2018-03-03', 1650491, 852
+        ),
+
+        (
+        878, 948, '2016-05-22', 713984, 1000
+        ),
+
+        (
+        311, 949, '2010-12-15', 9930652, 465
+        ),
+
+        (
+        695, 950, '2018-09-15', 3673629, 209
+        ),
+
+        (
+        565, 951, '2020-01-25', 8536480, 588
+        ),
+
+        (
+        464, 952, '2023-10-26', 2915117, 572
+        ),
+
+        (
+        970, 953, '2015-10-07', 8008776, 429
+        ),
+
+        (
+        143, 954, '2004-06-12', 7050019, 192
+        ),
+
+        (
+        974, 955, '2015-06-07', 4638541, 82
+        ),
+
+        (
+        386, 956, '2018-07-02', 8400564, 859
+        ),
+
+        (
+        364, 957, '2011-09-01', 6730659, 405
+        ),
+
+        (
+        66, 958, '2015-07-17', 8967640, 672
+        ),
+
+        (
+        625, 959, '2003-08-02', 3671885, 709
+        ),
+
+        (
+        771, 960, '2017-08-17', 3858943, 670
+        ),
+
+        (
+        544, 961, '2007-09-03', 1999357, 193
+        ),
+
+        (
+        467, 962, '2004-05-08', 800672, 150
+        ),
+
+        (
+        93, 963, '2006-01-10', 9391262, 820
+        ),
+
+        (
+        848, 964, '2007-08-11', 6732667, 149
+        ),
+
+        (
+        71, 965, '2003-12-24', 6126414, 424
+        ),
+
+        (
+        910, 966, '2003-09-09', 7602724, 243
+        ),
+
+        (
+        326, 967, '2003-07-14', 1241258, 897
+        ),
+
+        (
+        589, 968, '2023-03-19', 9801242, 766
+        ),
+
+        (
+        998, 969, '2007-12-31', 8777918, 790
+        ),
+
+        (
+        265, 970, '2001-09-28', 3773661, 843
+        ),
+
+        (
+        292, 971, '2014-07-27', 5692138, 546
+        ),
+
+        (
+        379, 972, '2007-01-05', 9580427, 508
+        ),
+
+        (
+        209, 973, '2017-08-12', 1400702, 129
+        ),
+
+        (
+        406, 974, '2016-06-10', 6268748, 792
+        ),
+
+        (
+        983, 975, '2021-01-14', 9470827, 898
+        ),
+
+        (
+        262, 976, '2021-08-21', 2006494, 460
+        ),
+
+        (
+        780, 977, '2023-10-06', 9901330, 441
+        ),
+
+        (
+        615, 978, '2016-01-07', 3138364, 56
+        ),
+
+        (
+        580, 979, '2017-05-24', 302796, 124
+        ),
+
+        (
+        839, 980, '2006-04-20', 5963096, 142
+        ),
+
+        (
+        998, 981, '2017-08-04', 3906528, 927
+        ),
+
+        (
+        850, 982, '2007-09-08', 3573389, 802
+        ),
+
+        (
+        357, 983, '2019-01-09', 7433087, 361
+        ),
+
+        (
+        85, 984, '2003-03-04', 8786355, 921
+        ),
+
+        (
+        87, 985, '2007-06-08', 1912172, 424
+        ),
+
+        (
+        219, 986, '2011-01-11', 6767047, 458
+        ),
+
+        (
+        603, 987, '2016-08-04', 2120062, 758
+        ),
+
+        (
+        476, 988, '2023-12-06', 3010497, 748
+        ),
+
+        (
+        900, 989, '2010-04-27', 454438, 363
+        ),
+
+        (
+        106, 990, '2007-02-05', 4018966, 509
+        ),
+
+        (
+        375, 991, '2023-07-16', 2235604, 192
+        ),
+
+        (
+        405, 992, '2004-10-04', 3191807, 640
+        ),
+
+        (
+        884, 993, '2024-07-26', 8698774, 621
+        ),
+
+        (
+        725, 994, '2017-10-20', 6589850, 526
+        ),
+
+        (
+        322, 995, '2004-03-22', 5235508, 158
+        ),
+
+        (
+        30, 996, '2018-12-21', 4669708, 751
+        ),
+
+        (
+        687, 997, '2007-06-29', 5892118, 285
+        ),
+
+        (
+        890, 998, '2007-10-03', 526344, 265
+        ),
+
+        (
+        621, 999, '2004-08-12', 7761535, 813
+        ),
+
+        (
+        193, 1000, '2015-05-27', 1371780, 269
+        );
