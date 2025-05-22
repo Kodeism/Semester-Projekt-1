@@ -101,9 +101,11 @@
             alleDataGridView.Location = new Point(11, 92);
             alleDataGridView.Margin = new Padding(10, 0, 10, 10);
             alleDataGridView.Name = "alleDataGridView";
+            alleDataGridView.ReadOnly = true;
             alleDataGridView.RowHeadersWidth = 62;
             alleDataGridView.Size = new Size(386, 222);
             alleDataGridView.TabIndex = 4;
+            alleDataGridView.CellDoubleClick += alleDataGridView_CellDoubleClick;
             alleDataGridView.ColumnHeaderMouseClick += alleDataGridView_ColumnHeaderMouseClick;
             // 
             // alleMenuLayoutPanel
@@ -226,9 +228,11 @@
             mineDataGridView.Location = new Point(11, 92);
             mineDataGridView.Margin = new Padding(10, 0, 10, 10);
             mineDataGridView.Name = "mineDataGridView";
+            mineDataGridView.ReadOnly = true;
             mineDataGridView.RowHeadersWidth = 62;
             mineDataGridView.Size = new Size(386, 213);
             mineDataGridView.TabIndex = 1;
+            mineDataGridView.CellDoubleClick += mineDataGridView_CellDoubleClick;
             mineDataGridView.ColumnHeaderMouseClick += mineDataGridView_ColumnHeaderMouseClick;
             // 
             // mineMenuLayoutPanel

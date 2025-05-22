@@ -146,6 +146,7 @@
             uniDataGridView.Location = new Point(10, 89);
             uniDataGridView.Margin = new Padding(10, 0, 10, 5);
             uniDataGridView.Name = "uniDataGridView";
+            uniDataGridView.ReadOnly = true;
             uniDataGridView.RowHeadersWidth = 62;
             uniDataGridView.Size = new Size(669, 572);
             uniDataGridView.TabIndex = 2;

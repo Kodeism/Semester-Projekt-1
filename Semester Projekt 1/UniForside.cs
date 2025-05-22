@@ -145,23 +145,39 @@ namespace Semester_Projekt_1
 
         private void uniDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (currentMode != Mode.MineK)
+            if (currentMode == Mode.MineS)
             {
-                return;
+                if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
+                {
+                    DataGridView uniDataGridView = (DataGridView)sender;
+
+                    // Hent værdien af BoligID i den valgte række
+                    var sælgerIDValue = uniDataGridView.Rows[e.RowIndex].Cells["SælgerID"].Value;
+
+                    // Konverter evt. til int hvis nødvendigt
+                    int sælgerID = Convert.ToInt32(sælgerIDValue);
+
+                    // Brug boligId som du vil
+                    DeleteSælger deleteSælger = new DeleteSælger(sælgerID);
+                    deleteSælger.Show();
+                }
             }
-            if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
+            if (currentMode == Mode.MineB)
             {
-                DataGridView uniDataGridView = (DataGridView)sender;
+                if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
+                {
+                    DataGridView uniDataGridView = (DataGridView)sender;
 
-                // Hent værdien af BoligID i den valgte række
-                var køberIDValue = uniDataGridView.Rows[e.RowIndex].Cells["KøberID"].Value;
+                    // Hent værdien af BoligID i den valgte række
+                    var boligIDValue = uniDataGridView.Rows[e.RowIndex].Cells["BoligID"].Value;
 
-                // Konverter evt. til int hvis nødvendigt
-                int køberID = Convert.ToInt32(køberIDValue);
+                    // Konverter evt. til int hvis nødvendigt
+                    int boligID = Convert.ToInt32(boligIDValue);
 
-                // Brug boligId som du vil
-                TilføjKøber tilføjKøber = new TilføjKøber(køberID);
-                tilføjKøber.Show();
+                    // Brug boligId som du vil
+                    DeleteBolig deleteBolig = new DeleteBolig(boligID);
+                    deleteBolig.Show();
+                }
             }
         }
 

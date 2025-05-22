@@ -352,5 +352,77 @@ namespace Semester_Projekt_1
                 }
             }
         }
+
+        private void mineDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (currentMode == Mode.Sælgere)
+            {
+                if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
+                {
+                    DataGridView mineDataGridView = (DataGridView)sender;
+
+                    // Hent værdien af BoligID i den valgte række
+                    var sælgerIDValue = mineDataGridView.Rows[e.RowIndex].Cells["SælgerID"].Value;
+
+                    int sælgerID = Convert.ToInt32(sælgerIDValue);
+
+                    DeleteSælger deleteSælger = new DeleteSælger(sælgerID);
+                    deleteSælger.Show();
+                }
+            }
+            if (currentMode == Mode.Boliger)
+            {
+                if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
+                {
+                    DataGridView mineDataGridView = (DataGridView)sender;
+
+                    // Hent værdien af BoligID i den valgte række
+                    var boligIDValue = mineDataGridView.Rows[e.RowIndex].Cells["BoligID"].Value;
+
+                    int boligID = Convert.ToInt32(boligIDValue);
+
+                    DeleteBolig deleteBolig = new DeleteBolig(boligID);
+                    deleteBolig.Show();
+                }
+            }
+        }
+
+        private void alleDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // burde potentielt også blive udkommenteret, men det er fint indtil videre
+            // altså hvorfor kan jeg slette sælgere som ikke har med en specifik ejendomsmægler?
+            if (currentMode == Mode.Sælgere)
+            {
+                if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
+                {
+                    DataGridView alleDataGridView = (DataGridView)sender;
+
+                    // Hent værdien af BoligID i den valgte række
+                    var sælgerIDValue = alleDataGridView.Rows[e.RowIndex].Cells["SælgerID"].Value;
+
+                    // Konverter evt. til int hvis nødvendigt
+                    int sælgerID = Convert.ToInt32(sælgerIDValue);
+
+                    DeleteSælger deleteSælger = new DeleteSælger(sælgerID);
+                    deleteSælger.Show();
+                }
+            }
+            // udkommenteret eftersom det vil være underligt at kunne slette andres boliger
+            //if (currentMode == Mode.Boliger)
+            //{
+            //    if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
+            //    {
+            //        DataGridView alleDataGridView = (DataGridView)sender;
+
+            //        // Hent værdien af BoligID i den valgte række
+            //        var boligIDValue = alleDataGridView.Rows[e.RowIndex].Cells["BoligID"].Value;
+
+            //        int boligID = Convert.ToInt32(boligIDValue);
+
+            //        DeleteBolig deleteBolig = new DeleteBolig(boligID);
+            //        deleteBolig.Show();
+            //    }
+            //}
+        }
     }
 }
