@@ -123,6 +123,7 @@
             uniFilterKnap.TabIndex = 1;
             uniFilterKnap.Text = "Filtrer";
             uniFilterKnap.UseVisualStyleBackColor = false;
+            uniFilterKnap.Click += uniFilterKnap_Click;
             // 
             // uniLabel
             // 
@@ -148,6 +149,7 @@
             uniDataGridView.RowHeadersWidth = 62;
             uniDataGridView.Size = new Size(468, 343);
             uniDataGridView.TabIndex = 2;
+            uniDataGridView.CellDoubleClick += uniDataGridView_CellDoubleClick;
             // 
             // UniForside
             // 
