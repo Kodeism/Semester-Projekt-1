@@ -97,6 +97,7 @@
             eksporterDataKnap.TabIndex = 3;
             eksporterDataKnap.Text = "Eksporter";
             eksporterDataKnap.UseVisualStyleBackColor = false;
+            eksporterDataKnap.Click += eksporterDataKnap_Click;
             // 
             // salgRegistrerKnap
             // 
