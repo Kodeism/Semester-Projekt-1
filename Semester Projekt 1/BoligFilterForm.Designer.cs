@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             FilterFormPanel = new Panel();
+            FilterBuiltDateMax = new Label();
+            FilterBuiltDateMin = new Label();
+            FilterBuiltDateTimePickerMax = new DateTimePicker();
+            FilterBuiltDateTimePickerMin = new DateTimePicker();
             FilterStatusComboBox = new ComboBox();
             label1 = new Label();
             FilterPostNummerLabel = new Label();
@@ -56,7 +60,6 @@
             FilterHousingAreaMinTextBox = new TextBox();
             FilterPriceMaxTextBox = new TextBox();
             FilterRealtorTextBox = new TextBox();
-            FilterBuiltDateTextBox = new TextBox();
             FilterCityTextBox = new TextBox();
             FilterSellerTextBox = new TextBox();
             FilterPriceMinTextbox = new TextBox();
@@ -68,6 +71,10 @@
             // 
             FilterFormPanel.BackColor = Color.FromArgb(255, 246, 218);
             FilterFormPanel.BorderStyle = BorderStyle.FixedSingle;
+            FilterFormPanel.Controls.Add(FilterBuiltDateMax);
+            FilterFormPanel.Controls.Add(FilterBuiltDateMin);
+            FilterFormPanel.Controls.Add(FilterBuiltDateTimePickerMax);
+            FilterFormPanel.Controls.Add(FilterBuiltDateTimePickerMin);
             FilterFormPanel.Controls.Add(FilterStatusComboBox);
             FilterFormPanel.Controls.Add(label1);
             FilterFormPanel.Controls.Add(FilterPostNummerLabel);
@@ -95,36 +102,67 @@
             FilterFormPanel.Controls.Add(FilterHousingAreaMinTextBox);
             FilterFormPanel.Controls.Add(FilterPriceMaxTextBox);
             FilterFormPanel.Controls.Add(FilterRealtorTextBox);
-            FilterFormPanel.Controls.Add(FilterBuiltDateTextBox);
             FilterFormPanel.Controls.Add(FilterCityTextBox);
             FilterFormPanel.Controls.Add(FilterSellerTextBox);
             FilterFormPanel.Controls.Add(FilterPriceMinTextbox);
             FilterFormPanel.Controls.Add(FilterAddressTextBox);
-            FilterFormPanel.Location = new Point(32, 19);
-            FilterFormPanel.Margin = new Padding(2, 2, 2, 2);
+            FilterFormPanel.Location = new Point(46, 32);
             FilterFormPanel.Name = "FilterFormPanel";
-            FilterFormPanel.Size = new Size(514, 439);
+            FilterFormPanel.Size = new Size(733, 790);
             FilterFormPanel.TabIndex = 0;
+            // 
+            // FilterBuiltDateMax
+            // 
+            FilterBuiltDateMax.AutoSize = true;
+            FilterBuiltDateMax.Location = new Point(627, 504);
+            FilterBuiltDateMax.Name = "FilterBuiltDateMax";
+            FilterBuiltDateMax.Size = new Size(29, 25);
+            FilterBuiltDateMax.TabIndex = 53;
+            FilterBuiltDateMax.Text = "Til";
+            // 
+            // FilterBuiltDateMin
+            // 
+            FilterBuiltDateMin.AutoSize = true;
+            FilterBuiltDateMin.Location = new Point(379, 504);
+            FilterBuiltDateMin.Name = "FilterBuiltDateMin";
+            FilterBuiltDateMin.Size = new Size(36, 25);
+            FilterBuiltDateMin.TabIndex = 52;
+            FilterBuiltDateMin.Text = "Fra";
+            // 
+            // FilterBuiltDateTimePickerMax
+            // 
+            FilterBuiltDateTimePickerMax.Format = DateTimePickerFormat.Short;
+            FilterBuiltDateTimePickerMax.Location = new Point(519, 473);
+            FilterBuiltDateTimePickerMax.Name = "FilterBuiltDateTimePickerMax";
+            FilterBuiltDateTimePickerMax.Size = new Size(138, 31);
+            FilterBuiltDateTimePickerMax.TabIndex = 51;
+            // 
+            // FilterBuiltDateTimePickerMin
+            // 
+            FilterBuiltDateTimePickerMin.Format = DateTimePickerFormat.Short;
+            FilterBuiltDateTimePickerMin.Location = new Point(379, 473);
+            FilterBuiltDateTimePickerMin.Name = "FilterBuiltDateTimePickerMin";
+            FilterBuiltDateTimePickerMin.Size = new Size(140, 31);
+            FilterBuiltDateTimePickerMin.TabIndex = 50;
+            FilterBuiltDateTimePickerMin.Value = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             // 
             // FilterStatusComboBox
             // 
             FilterStatusComboBox.Font = new Font("Segoe UI", 13F);
             FilterStatusComboBox.FormattingEnabled = true;
             FilterStatusComboBox.Items.AddRange(new object[] { "Til Salg", "Solgt" });
-            FilterStatusComboBox.Location = new Point(267, 337);
-            FilterStatusComboBox.Margin = new Padding(2, 2, 2, 2);
+            FilterStatusComboBox.Location = new Point(381, 605);
             FilterStatusComboBox.Name = "FilterStatusComboBox";
-            FilterStatusComboBox.Size = new Size(193, 31);
+            FilterStatusComboBox.Size = new Size(274, 44);
             FilterStatusComboBox.TabIndex = 49;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10F);
-            label1.Location = new Point(265, 319);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(379, 575);
             label1.Name = "label1";
-            label1.Size = new Size(47, 19);
+            label1.Size = new Size(65, 28);
             label1.TabIndex = 48;
             label1.Text = "Status";
             // 
@@ -132,10 +170,9 @@
             // 
             FilterPostNummerLabel.AutoSize = true;
             FilterPostNummerLabel.Font = new Font("Segoe UI", 10F);
-            FilterPostNummerLabel.Location = new Point(416, 49);
-            FilterPostNummerLabel.Margin = new Padding(2, 0, 2, 0);
+            FilterPostNummerLabel.Location = new Point(594, 82);
             FilterPostNummerLabel.Name = "FilterPostNummerLabel";
-            FilterPostNummerLabel.Size = new Size(87, 19);
+            FilterPostNummerLabel.Size = new Size(122, 28);
             FilterPostNummerLabel.TabIndex = 46;
             FilterPostNummerLabel.Text = "Postnummer";
             // 
@@ -144,30 +181,27 @@
             FilterHousingTypeComboBox.Font = new Font("Segoe UI", 13F);
             FilterHousingTypeComboBox.FormattingEnabled = true;
             FilterHousingTypeComboBox.Items.AddRange(new object[] { "Villa", "Lejlighed", "Rækkehus", "Andelsbolig", "Ejerlejlighed", "Sommerhus", "Ungdomsbolig", "Ældrebolig", "Kolonihavehus" });
-            FilterHousingTypeComboBox.Location = new Point(267, 121);
-            FilterHousingTypeComboBox.Margin = new Padding(2, 2, 2, 2);
+            FilterHousingTypeComboBox.Location = new Point(381, 202);
             FilterHousingTypeComboBox.Name = "FilterHousingTypeComboBox";
-            FilterHousingTypeComboBox.Size = new Size(193, 31);
+            FilterHousingTypeComboBox.Size = new Size(274, 44);
             FilterHousingTypeComboBox.TabIndex = 42;
             // 
             // FilterHousingTypeLabel
             // 
             FilterHousingTypeLabel.AutoSize = true;
             FilterHousingTypeLabel.Font = new Font("Segoe UI", 10F);
-            FilterHousingTypeLabel.Location = new Point(267, 102);
-            FilterHousingTypeLabel.Margin = new Padding(2, 0, 2, 0);
+            FilterHousingTypeLabel.Location = new Point(381, 170);
             FilterHousingTypeLabel.Name = "FilterHousingTypeLabel";
-            FilterHousingTypeLabel.Size = new Size(71, 19);
+            FilterHousingTypeLabel.Size = new Size(103, 28);
             FilterHousingTypeLabel.TabIndex = 31;
             FilterHousingTypeLabel.Text = "Bolig Type";
             // 
             // FilterPostnummerTextBox
             // 
-            FilterPostnummerTextBox.Location = new Point(416, 67);
-            FilterPostnummerTextBox.Margin = new Padding(2, 2, 2, 2);
+            FilterPostnummerTextBox.Location = new Point(594, 112);
             FilterPostnummerTextBox.MinimumSize = new Size(4, 45);
             FilterPostnummerTextBox.Name = "FilterPostnummerTextBox";
-            FilterPostnummerTextBox.Size = new Size(44, 23);
+            FilterPostnummerTextBox.Size = new Size(61, 45);
             FilterPostnummerTextBox.TabIndex = 45;
             // 
             // FilterEnergyLabelComboBox
@@ -175,20 +209,18 @@
             FilterEnergyLabelComboBox.Font = new Font("Segoe UI", 13F);
             FilterEnergyLabelComboBox.FormattingEnabled = true;
             FilterEnergyLabelComboBox.Items.AddRange(new object[] { "A2020", "A2015", "A", "B", "C", "D", "E", "F", "G" });
-            FilterEnergyLabelComboBox.Location = new Point(267, 175);
-            FilterEnergyLabelComboBox.Margin = new Padding(2, 2, 2, 2);
+            FilterEnergyLabelComboBox.Location = new Point(381, 292);
             FilterEnergyLabelComboBox.Name = "FilterEnergyLabelComboBox";
-            FilterEnergyLabelComboBox.Size = new Size(193, 31);
+            FilterEnergyLabelComboBox.Size = new Size(274, 44);
             FilterEnergyLabelComboBox.TabIndex = 43;
             // 
             // FilterFormLabel
             // 
             FilterFormLabel.AutoSize = true;
             FilterFormLabel.Font = new Font("Segoe UI", 20F);
-            FilterFormLabel.Location = new Point(165, 7);
-            FilterFormLabel.Margin = new Padding(2, 0, 2, 0);
+            FilterFormLabel.Location = new Point(236, 12);
             FilterFormLabel.Name = "FilterFormLabel";
-            FilterFormLabel.Size = new Size(174, 37);
+            FilterFormLabel.Size = new Size(258, 54);
             FilterFormLabel.TabIndex = 44;
             FilterFormLabel.Text = "Filter af bolig";
             // 
@@ -196,10 +228,9 @@
             // 
             FilterEnergyLabelLabel.AutoSize = true;
             FilterEnergyLabelLabel.Font = new Font("Segoe UI", 10F);
-            FilterEnergyLabelLabel.Location = new Point(267, 156);
-            FilterEnergyLabelLabel.Margin = new Padding(2, 0, 2, 0);
+            FilterEnergyLabelLabel.Location = new Point(381, 260);
             FilterEnergyLabelLabel.Name = "FilterEnergyLabelLabel";
-            FilterEnergyLabelLabel.Size = new Size(90, 19);
+            FilterEnergyLabelLabel.Size = new Size(128, 28);
             FilterEnergyLabelLabel.TabIndex = 34;
             FilterEnergyLabelLabel.Text = "Energimærke";
             // 
@@ -207,10 +238,9 @@
             // 
             FilterHousingAreaLabel.AutoSize = true;
             FilterHousingAreaLabel.Font = new Font("Segoe UI", 10F);
-            FilterHousingAreaLabel.Location = new Point(51, 157);
-            FilterHousingAreaLabel.Margin = new Padding(2, 0, 2, 0);
+            FilterHousingAreaLabel.Location = new Point(73, 262);
             FilterHousingAreaLabel.Name = "FilterHousingAreaLabel";
-            FilterHousingAreaLabel.Size = new Size(74, 19);
+            FilterHousingAreaLabel.Size = new Size(107, 28);
             FilterHousingAreaLabel.TabIndex = 39;
             FilterHousingAreaLabel.Text = "Bolig Areal";
             // 
@@ -218,10 +248,9 @@
             // 
             FilterRoomCountLabel.AutoSize = true;
             FilterRoomCountLabel.Font = new Font("Segoe UI", 10F);
-            FilterRoomCountLabel.Location = new Point(267, 205);
-            FilterRoomCountLabel.Margin = new Padding(2, 0, 2, 0);
+            FilterRoomCountLabel.Location = new Point(381, 342);
             FilterRoomCountLabel.Name = "FilterRoomCountLabel";
-            FilterRoomCountLabel.Size = new Size(73, 19);
+            FilterRoomCountLabel.Size = new Size(103, 28);
             FilterRoomCountLabel.TabIndex = 38;
             FilterRoomCountLabel.Text = "Antal Rum";
             // 
@@ -229,10 +258,9 @@
             // 
             FilterBuiltDateLabel.AutoSize = true;
             FilterBuiltDateLabel.Font = new Font("Segoe UI", 10F);
-            FilterBuiltDateLabel.Location = new Point(265, 265);
-            FilterBuiltDateLabel.Margin = new Padding(2, 0, 2, 0);
+            FilterBuiltDateLabel.Location = new Point(379, 442);
             FilterBuiltDateLabel.Name = "FilterBuiltDateLabel";
-            FilterBuiltDateLabel.Size = new Size(81, 19);
+            FilterBuiltDateLabel.Size = new Size(115, 28);
             FilterBuiltDateLabel.TabIndex = 37;
             FilterBuiltDateLabel.Text = "Bygge Dato";
             // 
@@ -241,20 +269,18 @@
             FilterRoomCountMaxComboBox.Font = new Font("Segoe UI", 13F);
             FilterRoomCountMaxComboBox.FormattingEnabled = true;
             FilterRoomCountMaxComboBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9+" });
-            FilterRoomCountMaxComboBox.Location = new Point(363, 224);
-            FilterRoomCountMaxComboBox.Margin = new Padding(2, 2, 2, 2);
+            FilterRoomCountMaxComboBox.Location = new Point(519, 373);
             FilterRoomCountMaxComboBox.Name = "FilterRoomCountMaxComboBox";
-            FilterRoomCountMaxComboBox.Size = new Size(97, 31);
+            FilterRoomCountMaxComboBox.Size = new Size(137, 44);
             FilterRoomCountMaxComboBox.TabIndex = 41;
             // 
             // FilterPlotAreaLabel
             // 
             FilterPlotAreaLabel.AutoSize = true;
             FilterPlotAreaLabel.Font = new Font("Segoe UI", 10F);
-            FilterPlotAreaLabel.Location = new Point(51, 211);
-            FilterPlotAreaLabel.Margin = new Padding(2, 0, 2, 0);
+            FilterPlotAreaLabel.Location = new Point(73, 352);
             FilterPlotAreaLabel.Name = "FilterPlotAreaLabel";
-            FilterPlotAreaLabel.Size = new Size(83, 19);
+            FilterPlotAreaLabel.Size = new Size(117, 28);
             FilterPlotAreaLabel.TabIndex = 35;
             FilterPlotAreaLabel.Text = "Grund Areal";
             // 
@@ -263,20 +289,18 @@
             FilterRoomCountMinComboBox.Font = new Font("Segoe UI", 13F);
             FilterRoomCountMinComboBox.FormattingEnabled = true;
             FilterRoomCountMinComboBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9+" });
-            FilterRoomCountMinComboBox.Location = new Point(267, 224);
-            FilterRoomCountMinComboBox.Margin = new Padding(2, 2, 2, 2);
+            FilterRoomCountMinComboBox.Location = new Point(381, 373);
             FilterRoomCountMinComboBox.Name = "FilterRoomCountMinComboBox";
-            FilterRoomCountMinComboBox.Size = new Size(98, 31);
+            FilterRoomCountMinComboBox.Size = new Size(138, 44);
             FilterRoomCountMinComboBox.TabIndex = 40;
             // 
             // FilterPriceLabel
             // 
             FilterPriceLabel.AutoSize = true;
             FilterPriceLabel.Font = new Font("Segoe UI", 10F);
-            FilterPriceLabel.Location = new Point(51, 103);
-            FilterPriceLabel.Margin = new Padding(2, 0, 2, 0);
+            FilterPriceLabel.Location = new Point(73, 172);
             FilterPriceLabel.Name = "FilterPriceLabel";
-            FilterPriceLabel.Size = new Size(31, 19);
+            FilterPriceLabel.Size = new Size(43, 28);
             FilterPriceLabel.TabIndex = 29;
             FilterPriceLabel.Text = "Pris";
             // 
@@ -284,10 +308,9 @@
             // 
             FilterRealtorLabel.AutoSize = true;
             FilterRealtorLabel.Font = new Font("Segoe UI", 10F);
-            FilterRealtorLabel.Location = new Point(51, 319);
-            FilterRealtorLabel.Margin = new Padding(2, 0, 2, 0);
+            FilterRealtorLabel.Location = new Point(73, 575);
             FilterRealtorLabel.Name = "FilterRealtorLabel";
-            FilterRealtorLabel.Size = new Size(115, 19);
+            FilterRealtorLabel.Size = new Size(165, 28);
             FilterRealtorLabel.TabIndex = 28;
             FilterRealtorLabel.Text = "Ejendomsmægler";
             // 
@@ -295,10 +318,9 @@
             // 
             FilterSellerLabel.AutoSize = true;
             FilterSellerLabel.Font = new Font("Segoe UI", 10F);
-            FilterSellerLabel.Location = new Point(51, 265);
-            FilterSellerLabel.Margin = new Padding(2, 0, 2, 0);
+            FilterSellerLabel.Location = new Point(73, 442);
             FilterSellerLabel.Name = "FilterSellerLabel";
-            FilterSellerLabel.Size = new Size(51, 19);
+            FilterSellerLabel.Size = new Size(74, 28);
             FilterSellerLabel.TabIndex = 27;
             FilterSellerLabel.Text = "Sælger";
             // 
@@ -306,10 +328,9 @@
             // 
             FilterCityLabel.AutoSize = true;
             FilterCityLabel.Font = new Font("Segoe UI", 10F);
-            FilterCityLabel.Location = new Point(267, 49);
-            FilterCityLabel.Margin = new Padding(2, 0, 2, 0);
+            FilterCityLabel.Location = new Point(381, 82);
             FilterCityLabel.Name = "FilterCityLabel";
-            FilterCityLabel.Size = new Size(24, 19);
+            FilterCityLabel.Size = new Size(33, 28);
             FilterCityLabel.TabIndex = 25;
             FilterCityLabel.Text = "By";
             // 
@@ -317,10 +338,9 @@
             // 
             FilterAddressLabel.AutoSize = true;
             FilterAddressLabel.Font = new Font("Segoe UI", 10F);
-            FilterAddressLabel.Location = new Point(51, 49);
-            FilterAddressLabel.Margin = new Padding(2, 0, 2, 0);
+            FilterAddressLabel.Location = new Point(73, 82);
             FilterAddressLabel.Name = "FilterAddressLabel";
-            FilterAddressLabel.Size = new Size(57, 19);
+            FilterAddressLabel.Size = new Size(80, 28);
             FilterAddressLabel.TabIndex = 24;
             FilterAddressLabel.Text = "Adresse";
             // 
@@ -328,10 +348,9 @@
             // 
             FilterFormButton.BackColor = Color.FromArgb(208, 227, 255);
             FilterFormButton.Font = new Font("Segoe UI", 18F);
-            FilterFormButton.Location = new Point(48, 385);
-            FilterFormButton.Margin = new Padding(2, 2, 2, 2);
+            FilterFormButton.Location = new Point(68, 693);
             FilterFormButton.Name = "FilterFormButton";
-            FilterFormButton.Size = new Size(411, 34);
+            FilterFormButton.Size = new Size(587, 57);
             FilterFormButton.TabIndex = 23;
             FilterFormButton.Text = "Anvend filter";
             FilterFormButton.UseVisualStyleBackColor = false;
@@ -339,112 +358,92 @@
             // 
             // FilterPlotAreaMaxTextBox
             // 
-            FilterPlotAreaMaxTextBox.Location = new Point(146, 229);
-            FilterPlotAreaMaxTextBox.Margin = new Padding(2, 2, 2, 2);
+            FilterPlotAreaMaxTextBox.Location = new Point(209, 382);
             FilterPlotAreaMaxTextBox.MinimumSize = new Size(4, 45);
             FilterPlotAreaMaxTextBox.Name = "FilterPlotAreaMaxTextBox";
-            FilterPlotAreaMaxTextBox.Size = new Size(98, 23);
+            FilterPlotAreaMaxTextBox.Size = new Size(138, 45);
             FilterPlotAreaMaxTextBox.TabIndex = 20;
             // 
             // FilterPlotAreaMinTextBox
             // 
-            FilterPlotAreaMinTextBox.Location = new Point(51, 229);
-            FilterPlotAreaMinTextBox.Margin = new Padding(2, 2, 2, 2);
+            FilterPlotAreaMinTextBox.Location = new Point(73, 382);
             FilterPlotAreaMinTextBox.MinimumSize = new Size(4, 45);
             FilterPlotAreaMinTextBox.Name = "FilterPlotAreaMinTextBox";
-            FilterPlotAreaMinTextBox.Size = new Size(96, 23);
+            FilterPlotAreaMinTextBox.Size = new Size(135, 45);
             FilterPlotAreaMinTextBox.TabIndex = 19;
             // 
             // FilterHousingAreaMaxTextBox
             // 
-            FilterHousingAreaMaxTextBox.Location = new Point(146, 175);
-            FilterHousingAreaMaxTextBox.Margin = new Padding(2, 2, 2, 2);
+            FilterHousingAreaMaxTextBox.Location = new Point(209, 292);
             FilterHousingAreaMaxTextBox.MinimumSize = new Size(4, 45);
             FilterHousingAreaMaxTextBox.Name = "FilterHousingAreaMaxTextBox";
-            FilterHousingAreaMaxTextBox.Size = new Size(98, 23);
+            FilterHousingAreaMaxTextBox.Size = new Size(138, 45);
             FilterHousingAreaMaxTextBox.TabIndex = 18;
             // 
             // FilterHousingAreaMinTextBox
             // 
-            FilterHousingAreaMinTextBox.Location = new Point(51, 175);
-            FilterHousingAreaMinTextBox.Margin = new Padding(2, 2, 2, 2);
+            FilterHousingAreaMinTextBox.Location = new Point(73, 292);
             FilterHousingAreaMinTextBox.MinimumSize = new Size(4, 45);
             FilterHousingAreaMinTextBox.Name = "FilterHousingAreaMinTextBox";
-            FilterHousingAreaMinTextBox.Size = new Size(96, 23);
+            FilterHousingAreaMinTextBox.Size = new Size(135, 45);
             FilterHousingAreaMinTextBox.TabIndex = 17;
             // 
             // FilterPriceMaxTextBox
             // 
-            FilterPriceMaxTextBox.Location = new Point(146, 121);
-            FilterPriceMaxTextBox.Margin = new Padding(2, 2, 2, 2);
+            FilterPriceMaxTextBox.Location = new Point(209, 202);
             FilterPriceMaxTextBox.MinimumSize = new Size(4, 45);
             FilterPriceMaxTextBox.Name = "FilterPriceMaxTextBox";
-            FilterPriceMaxTextBox.Size = new Size(98, 23);
+            FilterPriceMaxTextBox.Size = new Size(138, 45);
             FilterPriceMaxTextBox.TabIndex = 16;
             // 
             // FilterRealtorTextBox
             // 
-            FilterRealtorTextBox.Location = new Point(51, 337);
-            FilterRealtorTextBox.Margin = new Padding(2, 2, 2, 2);
+            FilterRealtorTextBox.Location = new Point(73, 605);
             FilterRealtorTextBox.MinimumSize = new Size(4, 45);
             FilterRealtorTextBox.Name = "FilterRealtorTextBox";
-            FilterRealtorTextBox.Size = new Size(193, 23);
+            FilterRealtorTextBox.Size = new Size(274, 45);
             FilterRealtorTextBox.TabIndex = 14;
-            // 
-            // FilterBuiltDateTextBox
-            // 
-            FilterBuiltDateTextBox.Location = new Point(265, 283);
-            FilterBuiltDateTextBox.Margin = new Padding(2, 2, 2, 2);
-            FilterBuiltDateTextBox.MinimumSize = new Size(4, 45);
-            FilterBuiltDateTextBox.Name = "FilterBuiltDateTextBox";
-            FilterBuiltDateTextBox.Size = new Size(194, 23);
-            FilterBuiltDateTextBox.TabIndex = 11;
             // 
             // FilterCityTextBox
             // 
-            FilterCityTextBox.Location = new Point(267, 67);
-            FilterCityTextBox.Margin = new Padding(2, 2, 2, 2);
+            FilterCityTextBox.Location = new Point(381, 112);
             FilterCityTextBox.MinimumSize = new Size(4, 45);
             FilterCityTextBox.Name = "FilterCityTextBox";
-            FilterCityTextBox.Size = new Size(150, 23);
+            FilterCityTextBox.Size = new Size(213, 45);
             FilterCityTextBox.TabIndex = 10;
             // 
             // FilterSellerTextBox
             // 
-            FilterSellerTextBox.Location = new Point(51, 283);
-            FilterSellerTextBox.Margin = new Padding(2, 2, 2, 2);
+            FilterSellerTextBox.Location = new Point(73, 472);
             FilterSellerTextBox.MinimumSize = new Size(4, 45);
             FilterSellerTextBox.Name = "FilterSellerTextBox";
-            FilterSellerTextBox.Size = new Size(193, 23);
+            FilterSellerTextBox.Size = new Size(274, 45);
             FilterSellerTextBox.TabIndex = 9;
             // 
             // FilterPriceMinTextbox
             // 
-            FilterPriceMinTextbox.Location = new Point(51, 121);
-            FilterPriceMinTextbox.Margin = new Padding(2, 2, 2, 2);
+            FilterPriceMinTextbox.Location = new Point(73, 202);
             FilterPriceMinTextbox.MinimumSize = new Size(4, 45);
             FilterPriceMinTextbox.Name = "FilterPriceMinTextbox";
-            FilterPriceMinTextbox.Size = new Size(96, 23);
+            FilterPriceMinTextbox.Size = new Size(135, 45);
             FilterPriceMinTextbox.TabIndex = 8;
             // 
             // FilterAddressTextBox
             // 
-            FilterAddressTextBox.Location = new Point(51, 67);
-            FilterAddressTextBox.Margin = new Padding(2, 2, 2, 2);
+            FilterAddressTextBox.Location = new Point(73, 112);
             FilterAddressTextBox.MinimumSize = new Size(4, 45);
             FilterAddressTextBox.Name = "FilterAddressTextBox";
-            FilterAddressTextBox.Size = new Size(193, 23);
+            FilterAddressTextBox.Size = new Size(274, 45);
             FilterAddressTextBox.TabIndex = 0;
             // 
             // BoligFilterForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 246, 182);
-            ClientSize = new Size(578, 472);
+            ClientSize = new Size(826, 852);
             Controls.Add(FilterFormPanel);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Margin = new Padding(2, 2, 2, 2);
             Name = "BoligFilterForm";
             Text = "Filter";
             FilterFormPanel.ResumeLayout(false);
@@ -456,7 +455,6 @@
 
         private Panel FilterFormPanel;
         private TextBox FilterRealtorTextBox;
-        private TextBox FilterBuiltDateTextBox;
         private TextBox FilterCityTextBox;
         private TextBox FilterSellerTextBox;
         private TextBox FilterAddressTextBox;
@@ -487,5 +485,9 @@
         private TextBox FilterPostnummerTextBox;
         private Label label1;
         private ComboBox FilterStatusComboBox;
+        private DateTimePicker FilterBuiltDateTimePickerMax;
+        private DateTimePicker FilterBuiltDateTimePickerMin;
+        private Label FilterBuiltDateMax;
+        private Label FilterBuiltDateMin;
     }
 }

@@ -131,7 +131,6 @@ namespace DataAccess.Repositories
                     }
                     catch (Exception)
                     {
-                        Debug.WriteLine("Big fail in making bolig");
                         connection.Close();
                         throw;
                     }
@@ -411,7 +410,6 @@ namespace DataAccess.Repositories
                 """;
 
             // ejendomsmægler ID
-            Debug.WriteLine("mæglerid" + mæglerID);
             if (mæglerID > 0)
             {
                 sql += " AND Bolig.EjendomsmæglerID = @mæglerID";
@@ -493,12 +491,18 @@ namespace DataAccess.Repositories
                 command.Parameters.AddWithValue("@type", boligFilter.Type);
             }
 
-            //// ByggeDato // Mangler at blive tilføjet
-            ////if (boligFilter.ByggeDato != null)
-            ////{
-            ////    sql += " AND ByggeDato = @byggeDato";
-            ////    command.Parameters.AddWithValue("@byggeDato", boligFilter.ByggeDato);
-            ////}
+            if (boligFilter.ByggeDatoMin != null)
+            {
+                sql += " AND CAST(ByggeDato AS DATE) >= @byggeDatoMin";
+                command.Parameters.AddWithValue("@byggeDatoMin", boligFilter.ByggeDatoMin.Value.Date);
+            }
+
+            if (boligFilter.ByggeDatoMax != null)
+            {
+                sql += " AND CAST(ByggeDato AS DATE) <= @byggeDatoMax";
+                command.Parameters.AddWithValue("@byggeDatoMax", boligFilter.ByggeDatoMax.Value.Date);
+            }
+
 
             // Filtrer på ejendomsmæglerens fulde navn
             if (boligFilter.EjendomsmæglerNavn != null)
@@ -700,7 +704,6 @@ namespace DataAccess.Repositories
         		INNER JOIN Køber ON Salg.KøberID = Køber.KøberID
         """;
 
-            Debug.WriteLine(mæglerID);
             if (mæglerID > 0)
             {
                 sql += " AND Ejendomsmægler.EjendomsmæglerID = @mæglerID";
@@ -970,12 +973,6 @@ namespace DataAccess.Repositories
                 SessionManager.Fornavn = reader.GetString(reader.GetOrdinal("Fornavn"));
                 SessionManager.Efternavn = reader.GetString(reader.GetOrdinal("Efternavn"));
                 SessionManager.FuldeNavn = SessionManager.Fornavn + " " + SessionManager.Efternavn;
-                for (int i = 0; i < reader.FieldCount; i++)
-                {
-                    string columnName = reader.GetName(i);
-                    object value = reader.GetValue(i);
-                    Debug.WriteLine($"{columnName}: {value}");
-                }
             }
 
             connection.Close();

@@ -34,7 +34,6 @@ namespace Semester_Projekt_1
             InitializeComponent();
             uniForside = boligForm;
             currentModeUni = mode;
-            Debug.WriteLine("Test uni");
 
         }
         public BoligFilterForm(duoForside boligForm, duoForside.Mode mode, bool erMine)
@@ -42,7 +41,6 @@ namespace Semester_Projekt_1
             InitializeComponent();
             duoForside = boligForm;
             currentModeDuo = mode;
-            Debug.WriteLine("Test duo");
             mine = erMine;
         }
 
@@ -111,8 +109,10 @@ namespace Semester_Projekt_1
             // Type
             string boligType = FilterHousingTypeComboBox.SelectedItem?.ToString();
 
-            // Byggeår // mangler at blive lavet
-            //DateTime? byggeDato = DateTime.TryParse(FilterBuiltDateTextBox.Text, out DateTime bd) ? bd : (DateTime?)null;
+            // Byggeår min
+            DateTime? byggeDatoMin = FilterBuiltDateTimePickerMin.Checked ? FilterBuiltDateTimePickerMin.Value : (DateTime?)null;
+            // Byggeår maks
+            DateTime? byggeDatoMax = FilterBuiltDateTimePickerMax.Checked ? FilterBuiltDateTimePickerMax.Value : (DateTime?)null;
 
             // Energimærke
             string energiMærke = FilterEnergyLabelComboBox.SelectedItem?.ToString();
@@ -138,7 +138,7 @@ namespace Semester_Projekt_1
                 ejendomsmæglerID = SessionManager.EjendomsmæglerId;
             }
 
-                int sælgerID = 0;
+            int sælgerID = 0;
 
             var boligFilter = new BoligFilter(
                 prisMin, prisMax,
@@ -147,17 +147,20 @@ namespace Semester_Projekt_1
                 værelserMin, værelserMax,
                 adresse, postnummer,
                 byNavn, boligType,
+                byggeDatoMin, byggeDatoMax,
                 energiMærke, status,
                 ejendomsmæglerNavn, sælgerNavn,
                 ejendomsmæglerID, sælgerID
-            //byggeDato ?? DateTime.MinValue // mangler at blive lavet
             );
 
-            Debug.WriteLine("id" + ejendomsmæglerID);
-            Debug.WriteLine("idsesh" + SessionManager.EjendomsmæglerId);
             using (SqlConnection conn = new SqlConnection(BoligLogic.GetConnectionString()))
             {
                 if (uniForside != null && currentModeUni == UniForside.Mode.MineB)
+                {
+                    var result = DataRepository.SøgMedFilter(conn, boligFilter, ejendomsmæglerID);
+                    uniForside.OpdaterBoligerDataGrid(result);
+                }
+                else if (uniForside != null && currentModeUni == UniForside.Mode.AlleB)
                 {
                     var result = DataRepository.SøgMedFilter(conn, boligFilter, ejendomsmæglerID);
                     uniForside.OpdaterBoligerDataGrid(result);
@@ -168,7 +171,8 @@ namespace Semester_Projekt_1
                     {
                         var result = DataRepository.SøgMedFilter(conn, boligFilter, ejendomsmæglerID);
                         duoForside.OpdaterMineBoligerDataGrid(result);
-                    } else
+                    }
+                    else
                     {
                         var result = DataRepository.SøgMedFilter(conn, boligFilter, ejendomsmæglerID);
                         duoForside.OpdaterAlleBoligerDataGrid(result);

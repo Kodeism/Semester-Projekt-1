@@ -16,6 +16,10 @@ namespace Semester_Projekt_1
 {
     public partial class duoForside : UserControl
     {
+        private List<Bolig> mineBoligerCache; // til sortering af pris
+        private bool sortAscendingPrisMineBoliger = true;
+        private List<Bolig> alleBoligerCache; // til sortering af pris
+        private bool sortAscendingPrisAlleBoliger = true;
         public enum Mode { Salg, Boliger, Købere, Sælgere }
         private Mode _mode;
         private Mode currentMode;
@@ -23,8 +27,6 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
             SetMode(mode);
-            mineDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            alleDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
         }
         public void SetMode(Mode mode)
@@ -74,7 +76,6 @@ namespace Semester_Projekt_1
 
             if (alleDataGridView.Columns.Contains("SælgerID"))
                 alleDataGridView.Columns["SælgerID"].Visible = false;
-            alleDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
         }
         public void OpdaterMineSælgerDataGrid(List<Sælger> sælgerer)
@@ -87,7 +88,7 @@ namespace Semester_Projekt_1
 
             if (mineDataGridView.Columns.Contains("SælgerID"))
                 mineDataGridView.Columns["SælgerID"].Visible = false;
-            mineDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
         }
 
         public void OpdaterMineSalgDataGrid(List<Salg> salg)
@@ -100,7 +101,6 @@ namespace Semester_Projekt_1
 
             if (mineDataGridView.Columns.Contains("SælgerID"))
                 mineDataGridView.Columns["SælgerID"].Visible = false;
-            mineDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
         public void OpdaterAlleSalgDataGrid(List<Salg> salg)
         {
@@ -112,7 +112,6 @@ namespace Semester_Projekt_1
 
             if (alleDataGridView.Columns.Contains("SælgerID"))
                 alleDataGridView.Columns["SælgerID"].Visible = false;
-            alleDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
         private void HentSalgLoad(int? mæglerID = 0)
         {
@@ -158,7 +157,6 @@ namespace Semester_Projekt_1
                 mineDataGridView.Columns["SælgerID"].Visible = false;
 
             mineDataGridView.Columns["KøberInfo"].Visible = false;
-            mineDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
         public void OpdaterAlleKøberDataGrid(List<Køber> køber)
         {
@@ -172,11 +170,11 @@ namespace Semester_Projekt_1
                 alleDataGridView.Columns["SælgerID"].Visible = false;
 
             alleDataGridView.Columns["KøberInfo"].Visible = false;
-            alleDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
 
         public void OpdaterMineBoligerDataGrid(List<Bolig> boliger)
         {
+            mineBoligerCache = boliger; // gem den til lokal sortering
             mineDataGridView.DataSource = null;
             mineDataGridView.DataSource = boliger;
             // Skjul id som ikke burde blive vist men de bliver vist aligevel
@@ -185,11 +183,11 @@ namespace Semester_Projekt_1
 
             if (mineDataGridView.Columns.Contains("SælgerID"))
                 mineDataGridView.Columns["SælgerID"].Visible = false;
-            mineDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
         }
         public void OpdaterAlleBoligerDataGrid(List<Bolig> boliger)
         {
+            alleBoligerCache = boliger; // gem den til lokal sortering
             alleDataGridView.DataSource = null;
             alleDataGridView.DataSource = boliger;
             // Skjul id som ikke burde blive vist men de bliver vist aligevel
@@ -198,7 +196,6 @@ namespace Semester_Projekt_1
 
             if (alleDataGridView.Columns.Contains("SælgerID"))
                 alleDataGridView.Columns["SælgerID"].Visible = false;
-            alleDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
         }
         private void HentBoligLoad(int? mæglerID = 0)
@@ -271,6 +268,62 @@ namespace Semester_Projekt_1
             {
                 BoligRegistration formTilføjBolig = new BoligRegistration();
                 formTilføjBolig.ShowDialog();
+            }
+        }
+
+        private void mineDataGridView_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            // Tjek om det er "Pris"-kolonnen
+            if (mineDataGridView.Columns[e.ColumnIndex].Name == "Pris")
+            {
+                if (mineBoligerCache != null)
+                {
+                    List<Bolig> sortedList;
+                    if (sortAscendingPrisMineBoliger)
+                        sortedList = mineBoligerCache.OrderBy(b => b.Pris).ToList();
+                    else
+                        sortedList = mineBoligerCache.OrderByDescending(b => b.Pris).ToList();
+
+                    sortAscendingPrisMineBoliger = !sortAscendingPrisMineBoliger;
+
+                    mineDataGridView.DataSource = null;
+                    mineDataGridView.DataSource = sortedList;
+
+                    // Skjul id som ikke burde blive vist men de bliver vist aligevel
+                    if (mineDataGridView.Columns.Contains("EjendomsmæglerID"))
+                        mineDataGridView.Columns["EjendomsmæglerID"].Visible = false;
+
+                    if (mineDataGridView.Columns.Contains("SælgerID"))
+                        mineDataGridView.Columns["SælgerID"].Visible = false;
+                }
+            }
+        }
+
+        private void alleDataGridView_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            // Tjek om det er "Pris"-kolonnen
+            if (alleDataGridView.Columns[e.ColumnIndex].Name == "Pris")
+            {
+                if (alleBoligerCache != null)
+                {
+                    List<Bolig> sortedList;
+                    if (sortAscendingPrisAlleBoliger)
+                        sortedList = alleBoligerCache.OrderBy(b => b.Pris).ToList();
+                    else
+                        sortedList = alleBoligerCache.OrderByDescending(b => b.Pris).ToList();
+
+                    sortAscendingPrisAlleBoliger = !sortAscendingPrisAlleBoliger;
+
+                    alleDataGridView.DataSource = null;
+                    alleDataGridView.DataSource = sortedList;
+
+                    // Skjul id som ikke burde blive vist men de bliver vist aligevel
+                    if (alleDataGridView.Columns.Contains("EjendomsmæglerID"))
+                        alleDataGridView.Columns["EjendomsmæglerID"].Visible = false;
+
+                    if (alleDataGridView.Columns.Contains("SælgerID"))
+                        alleDataGridView.Columns["SælgerID"].Visible = false;
+                }
             }
         }
     }

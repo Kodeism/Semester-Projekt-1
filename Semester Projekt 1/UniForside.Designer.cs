@@ -150,6 +150,7 @@
             uniDataGridView.Size = new Size(669, 572);
             uniDataGridView.TabIndex = 2;
             uniDataGridView.CellDoubleClick += uniDataGridView_CellDoubleClick;
+            uniDataGridView.ColumnHeaderMouseClick += uniDataGridView_ColumnHeaderMouseClick;
             // 
             // UniForside
             // 

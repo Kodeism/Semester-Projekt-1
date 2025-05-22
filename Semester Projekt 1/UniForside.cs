@@ -16,6 +16,9 @@ namespace Semester_Projekt_1
 {
     public partial class UniForside : UserControl
     {
+        private bool sortAscendingPris = true;
+        private List<Bolig> boligerCache; // til sortering af pris
+
         private Mode mode_;
         public enum Mode { AlleS, MineS, AlleK, MineK, AlleB, MineB }
         private Mode currentMode;
@@ -24,7 +27,6 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
             SetMode(mode);
-            uniDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // skaler størrelse til hele bredden
 
             mode_ = mode;
         }
@@ -78,21 +80,22 @@ namespace Semester_Projekt_1
                 uniDataGridView.Columns["SælgerID"].Visible = false;
 
             uniDataGridView.Columns["KøberInfo"].Visible = false;
-            uniDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
 
         public void OpdaterBoligerDataGrid(List<Bolig> boliger)
         {
+            boligerCache = boliger; // gem den til lokal sortering
             uniDataGridView.DataSource = null;
             uniDataGridView.DataSource = boliger;
-            // Skjul id som ikke burde blive vist men de bliver vist aligevel
+
             if (uniDataGridView.Columns.Contains("EjendomsmæglerID"))
                 uniDataGridView.Columns["EjendomsmæglerID"].Visible = false;
 
             if (uniDataGridView.Columns.Contains("SælgerID"))
                 uniDataGridView.Columns["SælgerID"].Visible = false;
-            uniDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
         }
+
         public void OpdaterSælgerDataGrid(List<Sælger> sælgerer)
         {
             uniDataGridView.DataSource = null;
@@ -103,7 +106,6 @@ namespace Semester_Projekt_1
 
             if (uniDataGridView.Columns.Contains("SælgerID"))
                 uniDataGridView.Columns["SælgerID"].Visible = false;
-            uniDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
         }
         private void HentKøberLoad(int? mæglerID = 0)
@@ -165,7 +167,7 @@ namespace Semester_Projekt_1
 
         private void uniRegistrerKnap_Click(object sender, EventArgs e)
         {
-            if(mode_==Mode.AlleS||mode_==Mode.MineS)
+            if (mode_ == Mode.AlleS || mode_ == Mode.MineS)
             {
                 SaleRegistration saleRegistration = new SaleRegistration();
                 saleRegistration.ShowDialog();
@@ -181,5 +183,34 @@ namespace Semester_Projekt_1
                 tilBolig.ShowDialog();
             }
         }
+
+        private void uniDataGridView_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            // Tjek om det er "Pris"-kolonnen
+            if (uniDataGridView.Columns[e.ColumnIndex].Name == "Pris")
+            {
+                if (boligerCache != null)
+                {
+                    List<Bolig> sortedList;
+                    if (sortAscendingPris)
+                        sortedList = boligerCache.OrderBy(b => b.Pris).ToList();
+                    else
+                        sortedList = boligerCache.OrderByDescending(b => b.Pris).ToList();
+
+                    sortAscendingPris = !sortAscendingPris;
+
+                    uniDataGridView.DataSource = null;
+                    uniDataGridView.DataSource = sortedList;
+
+                    // Skjul id som ikke burde blive vist men de bliver vist aligevel
+                    if (uniDataGridView.Columns.Contains("EjendomsmæglerID"))
+                        uniDataGridView.Columns["EjendomsmæglerID"].Visible = false;
+
+                    if (uniDataGridView.Columns.Contains("SælgerID"))
+                        uniDataGridView.Columns["SælgerID"].Visible = false;
+                }
+            }
+        }
+
     }
 }
