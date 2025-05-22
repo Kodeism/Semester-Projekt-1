@@ -1,3 +1,4 @@
+using System;
 using DataAccess.Repositories;
 using Microsoft.VisualBasic;
 using Models;
@@ -56,6 +57,59 @@ namespace BusineesLogic
         }
 
     }
+    public class EksporterText
+    {
+        public void EksporterBoligSælgerText(string bynavn)
+        {
+            DataRepository testDR = new DataRepository();
+            var listeTilEksportering = testDR.EksporterBoligSælgerListe(bynavn);
+            String downloads = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\Downloads";
+            string path = Path.Combine(downloads, "BoligSælgerInfo.txt");
+
+
+
+            using (StreamWriter writer = new StreamWriter(path)) 
+            {
+                {
+                    writer.WriteLine("Adresse : Bynavn : Fornavn : Efternavn : Email : Tlfnummer");
+                    foreach (var bolig in listeTilEksportering)
+                    {
+                        writer.WriteLine($"{bolig.Adresse} : {bolig.Bynavn} : {bolig.Fornavn} : {bolig.Efternavn} :  {bolig.Email} : {bolig.Tlfnummer}");
+                    }
+
+
+                }
+
+            }
+
+        }
+       public void EksporterBoligerTilSalgText(string sorteringsstring)
+        {
+            DataRepository testDR = new DataRepository();
+            var listeTilEksportering = testDR.EksporterBoligerIkkeSolgt(sorteringsstring);
+            String downloads = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\Downloads";
+            string path = Path.Combine(downloads, "BoligerTilSalg.txt");
+
+            using (StreamWriter writer = new StreamWriter(path))
+            {
+                writer.WriteLine("Pris : Adresse : Postnummer : ByNavn : BoligType : BoligAreal : Værelser : ByggeDato : GrundStørrelse : EnergiMærke");   
+                foreach (var bolig in listeTilEksportering)
+                {
+                    writer.WriteLine($"{bolig.Pris} : {bolig.Adresse} : {bolig.PostNummer} : {bolig.ByNavn} : {bolig.Type} : {bolig.BoligAreal} : {bolig.Værelser} : {bolig.ByggeDato} : {bolig.GrundStørrelse} : {bolig.EnergiMærke}");
+                }
+
+            }
+        }
+
+
+
+    }
+
+
+
+
+
 
 }
+
 

@@ -1,3 +1,5 @@
+using BusineesLogic;
+
 namespace Semester_Projekt_1
 {
     internal static class Program
@@ -13,8 +15,10 @@ namespace Semester_Projekt_1
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
 
+          
             Application.Run(new Login());
 
+            
         }
     }
 }
