@@ -299,7 +299,8 @@
         ////boligens bynavn
         public string Type { get; set; }
         ////boligtypen
-        public DateTime ByggeDato { get; set; } // skal ændres til datetime senere
+        public DateTime? ByggeDatoMin { get; set; }
+        public DateTime? ByggeDatoMax { get; set; }
         ////hvornår var den bygget/renoveret
         public string? EnergiMærke { get; set; } //optional
         ////boligens energimærke
@@ -316,6 +317,7 @@
                             int boligArealMax, int grundStørrelseMin, int grundStørrelseMax,
                             int værelserMin, int værelserMax, string adresse,
                             int postnummer, string byNavn, string type,
+                            DateTime? byggeDatoMin, DateTime? byggeDatoMax,
                             string energiMærke, string status, string ejendomsmæglerNavn, 
                             string sælgerNavn, int ejendomsmæglerID, int sælgerID)
                             /*DateTime byggeDato,*/// byggedato skal ændres til en datetime senere
@@ -333,10 +335,11 @@
             ByNavn = byNavn;
             EnergiMærke = energiMærke;
             Type = type;
+            ByggeDatoMin = byggeDatoMin;
+            ByggeDatoMax = byggeDatoMax;
             Status = status;
             EjendomsmæglerNavn = ejendomsmæglerNavn;
             SælgerNavn = sælgerNavn;
-            //ByggeDato = byggeDato;
             EjendomsmæglerID = ejendomsmæglerID;
             SælgerID = sælgerID;
         }

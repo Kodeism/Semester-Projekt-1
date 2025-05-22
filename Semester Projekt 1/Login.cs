@@ -67,8 +67,6 @@ namespace Semester_Projekt_1
                 using (SqlConnection conn = new SqlConnection(BoligLogic.GetConnectionString()))
                 {
                     DataRepository.EjendomsmæglerLogin(conn, UsernameTextBox.Text, PasswordTextBox.Text);
-                    Debug.WriteLine(UsernameTextBox.Text);
-                    Debug.WriteLine(PasswordTextBox.Text);
                     if (SessionManager.IsLoggedIn)
                     {
                         DashBoard dashBoard = new DashBoard();
