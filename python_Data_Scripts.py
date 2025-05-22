@@ -86,8 +86,8 @@ def generate_bolig(n):
         byggedato = fake.date_between(start_date='-100y', end_date='-1y')
         grundstørrelse = random.randint(100, 1500)
         energimærke = random.choice(energimærker)
-        ejendomsmægler_id = random.randint(1, 1000)  # adjust to match your data
-        sælger_id = random.randint(1, 1000)          # adjust to match your data
+        ejendomsmægler_id = random.randint(1, 1000)
+        sælger_id = random.randint(1, 1000)
         status = random.choice(statusmuligheder)
 
         sql = f"""
