@@ -19,6 +19,7 @@ namespace Semester_Projekt_1
         public MæglerSide()
         {
             InitializeComponent();
+            mæglerSøgeFelt.PlaceholderText = "Søg Navn...";
             HentEjendomsmægler();
             mæglerDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }

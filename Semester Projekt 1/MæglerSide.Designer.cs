@@ -87,7 +87,6 @@
             mæglerSøgeFelt.Name = "mæglerSøgeFelt";
             mæglerSøgeFelt.Size = new Size(501, 34);
             mæglerSøgeFelt.TabIndex = 0;
-            mæglerSøgeFelt.Text = "Søg Navn...";
             // 
             // mæglerFilterKnap
             // 

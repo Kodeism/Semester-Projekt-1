@@ -196,7 +196,15 @@ namespace Models
         public int BoligAreal { get; set; }
         //boligens areal
         public int Værelser { get; set; }
-        //antal af værelser/rum
+        //antal af værelser
+        public int Badeværelser { get; set; }
+        //antal af badeværelser
+        public int Køkkener{ get; set; }
+        //antal af køkkener
+        public int Soveværelser { get; set; }
+        //antal af soveværelser
+        public string Tilstand { get; set; }
+        //tilstand; Fremragende, God, Acceptabel, Dårlig, Meget dårlig
         public DateTime ByggeDato { get; set; }
         //hvornår var den bygget/renoveret
         public int GrundStørrelse { get; set; }

@@ -124,7 +124,6 @@
             salgSøgeFelt.Name = "salgSøgeFelt";
             salgSøgeFelt.Size = new Size(238, 25);
             salgSøgeFelt.TabIndex = 0;
-            salgSøgeFelt.Text = "Søg Adresse...";
             // 
             // salgFilterKnap
             // 
