@@ -207,7 +207,8 @@ namespace Semester_Projekt_1
 
         private void exportData_Click(object sender, EventArgs e)
         {
-
+            Ekspoterdata eksport = new Ekspoterdata();
+            eksport.ShowDialog();
         }
     }
 }

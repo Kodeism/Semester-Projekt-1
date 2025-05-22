@@ -1,10 +1,13 @@
+using DataAccess.Repositories.Contracts;
+using Microsoft.Data.SqlClient;
+using Microsoft.Identity.Client;
+using Models;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
-using DataAccess.Repositories.Contracts;
-using Microsoft.Data.SqlClient;
-using Models;
 using System.Diagnostics;
+using System.Text.Encodings.Web;
+using System.Text.Json;
 
 namespace DataAccess.Repositories
 {
@@ -741,6 +744,67 @@ namespace DataAccess.Repositories
                 }
                 return Convert.ToInt32(result);
             }
+        }
+        public void EksportData(string data, string sortby, string filsti, string condition="")
+        {
+            string query = "";
+            Dictionary<string, string> queriesSingle = new Dictionary<string, string> {
+                {"Salg", "select S.SalgsID, S.Beløb,S.BoligID,S.Dato,S.Beløb, " +
+                "B.BoligID, B.Adresse, B.Postnummer, B.ByNavn, B.BoligType, B.BoligAreal, B.Værelser, B.ByggeDato, B.GrundStørrelse, B.EnergiMærke, " +
+                "K.KøberID, K.Fornavn, K.EfterNavn, K.TlfNummer, K.Email, K.Adresse, K.PrisKlasse, K.SøgeOmråde, K.BoligType, K.Noter, K.ØnsketGrundStørrelse, K.ØnsketBoligStørrelse, K.ØnsketVærelser, " +
+                "C.SælgerID, C.Fornavn, C.EfterNavn, C.TlfNummer, C.Email, C.Adresse, " +
+                "E.EjendomsmæglerID, E.Fornavn, E.EfterNavn, E.TlfNummer, E.Email, E.Brugernavn " +
+                "from Salg S " +
+                "left join Bolig B on S.BoligID = B.BoligID " +
+                "left join Køber K on S.KøberID = K.KøberID " +
+                "left join Ejendomsmægler E on B.EjendomsmæglerID = E.EjendomsmæglerID " +
+                "left join Sælger C on B.SælgerID = C.SælgerID "},
+                {"Boliger", "select B.BoligID, B.Adresse, B.Postnummer, B.ByNavn, B.BoligType, B.BoligAreal, B.Værelser, B.ByggeDato, B.GrundStørrelse, B.EnergiMærke, " +
+                "C.SælgerID, C.Fornavn, C.EfterNavn, C.TlfNummer, C.Email, C.Adresse, " +
+                "E.EjendomsmæglerID, E.Fornavn, E.EfterNavn, E.TlfNummer, E.Email, E.Brugernavn " +
+                "from Bolig B " +
+                "left join Ejendomsmægler E on B.EjendomsmæglerID = E.EjendomsmæglerID " +
+                "left join Sælger C on B.SælgerID = C.SælgerID"},
+                {"Ejendomsmæglere", "select EjendomsmæglerID, Fornavn, EfterNavn, TlfNummer, Email, Brugernavn from Ejendomsmægler"},
+                {"Køber", "select KøberID, Fornavn, EfterNavn, TlfNummer, Email, Adresse, PrisKlasse, SøgeOmråde, BoligType, Noter, ØnsketGrundStørrelse, ØnsketBoligStørrelse, ØnsketVærelser from Køber"},
+                {"Sælger", "select SælgerID, Fornavn, EfterNavn, TlfNummer, Email, Adresse from Sælger"},
+                {"BoligerSolgt", """
+                    
+                    select 
+                    B.BoligID, B.Adresse, B.Postnummer, B.ByNavn, B.BoligType,
+                    B.BoligAreal, B.Værelser, B.ByggeDato, B.GrundStørrelse, B.EnergiMærke,
+                    C.SælgerID, C.Fornavn, C.EfterNavn, C.TlfNummer, C.Email, C.Adresse,
+                    E.EjendomsmæglerID, E.Fornavn, E.EfterNavn, E.TlfNummer, E.Email, E.Brugernavn
+                    from Bolig B
+                    left join Ejendomsmægler E on B.EjendomsmæglerID = E.EjendomsmæglerID
+                    left join Sælger C on B.SælgerID = C.SælgerID
+                    where B.Status = 'Solgt'
+                    
+                    """ }
+                };
+            query = queriesSingle[data] + " order by " + sortby;
+            DataTable dataTable = new DataTable();
+            using (SqlCommand cmd = new SqlCommand(query, connection))
+            {
+                using(SqlDataAdapter dad = new SqlDataAdapter(cmd))
+                {
+                    connection.Open();
+                    dad.Fill(dataTable);
+                    connection.Close();
+                }
+            }
+            var rækker = new List<Dictionary<string, object>>();
+            foreach (DataRow row in dataTable.Rows)
+            {
+                var rækkeData = new Dictionary<string, object>();
+                foreach (DataColumn column in dataTable.Columns)
+                {
+                    rækkeData[column.ColumnName] = row[column];
+                }
+                rækker.Add(rækkeData);
+            }
+            var json = JsonSerializer.Serialize(rækker, new JsonSerializerOptions { WriteIndented = true, Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping });
+            File.WriteAllText(filsti, json);
         }
     }
 }

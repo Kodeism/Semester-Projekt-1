@@ -56,6 +56,27 @@ namespace BusineesLogic
         }
 
     }
+    public class EksportLogik
+    {
+        public string eksportData(string data, string sortBy, string condition = "")
+        {
+            string skriveBord = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            string mappesti = Path.Combine(skriveBord, "MineEksports");
+            Directory.CreateDirectory(mappesti);
+            string filnavn = $"{data}";
+            string filtype = ".json";
+            string filsti = Path.Combine(mappesti, $"{filnavn}{filtype}");
+            int tæller = 1;
+            while(File.Exists(filsti))
+            {
+                filsti = Path.Combine(mappesti, $"{filnavn}({tæller}){filtype}");
+                tæller++;
+            }
+            DataRepository repository = new DataRepository();
+            repository.EksportData(data, sortBy, filsti);
+            return $"Data fil: {filnavn+tæller.ToString()+filtype} - nu gemt i Mappe: {mappesti}";
+        }
+    }
 
 }
 
