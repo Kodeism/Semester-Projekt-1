@@ -1,1000 +1,7003 @@
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5498515, '378 Josefa Fork', 3533, 'East Trevion', 'Ældrebolig', 214, 4, '1988-07-11', 919, 'C', 98, 278, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5787861, '60782 Legros Pass', 4465, 'Davisport', 'Ældrebolig', 40, 5, '1967-06-11', 1144, 'D', 21, 45, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2246887, '789 Lance Corners', 3094, 'Howellfort', 'Sommerhus', 96, 5, '2005-04-06', 1291, 'A', 58, 77, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5590597, '873 Blanche Spur', 8037, 'North Presley', 'Andelsbolig', 68, 7, '1980-11-03', 1027, 'A', 99, 390, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4333633, '58446 Felicity Station', 6573, 'North Opalland', 'Ungdomsbolig', 182, 2, '1996-11-27', 332, 'D', 89, 292, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4891080, '43688 Veda Oval', 5913, 'Larsonport', 'Andelsbolig', 190, 5, '1987-01-06', 398, 'F', 96, 99, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6117011, '7691 Legros Cove', 8197, 'Jerroldberg', 'Ungdomsbolig', 223, 7, '2006-11-12', 924, 'G', 91, 189, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4160103, '097 Kerluke Shores', 263, 'Gloverborough', 'Lejlighed', 51, 1, '1986-02-07', 250, 'G', 20, 239, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1271546, '77162 Vandervort Islands', 1306, 'Port Isabel', 'Sommerhus', 248, 1, '1960-06-11', 1543, 'D', 4, 355, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3835532, '9954 Ferry Street', 9350, 'North Hector', 'Ejerlejlighed', 229, 7, '1996-10-02', 711, 'D', 99, 391, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7821324, '388 Rolfson Parkway', 2005, 'New Maximillian', 'Sommerhus', 221, 1, '2003-03-15', 954, 'G', 84, 55, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5653034, '07348 Padberg Trace', 9041, 'Lake Alvis', 'Ældrebolig', 60, 7, '1957-05-14', 378, 'F', 33, 447, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7556173, '24873 Simonis Alley', 2627, 'West Moses', 'Sommerhus', 68, 2, '1984-09-23', 1469, 'F', 73, 155, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5909211, '43019 Dietrich Orchard', 7935, 'Grantmouth', 'Villa', 148, 1, '2000-08-08', 540, 'A', 51, 51, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1380650, '59323 Raven Route', 2023, 'Alverafurt', 'Ældrebolig', 108, 7, '2009-05-20', 421, 'E', 29, 145, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6049195, '969 Hansen Via', 9874, 'Tobinside', 'Kolonihavehus', 141, 4, '1968-08-06', 500, 'B', 82, 428, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6735046, '0219 Lynch Village', 1047, 'New Albertborough', 'Sommerhus', 62, 6, '1985-04-22', 1561, 'A', 97, 452, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2236187, '04553 Breitenberg Shoals', 7006, 'Jarvisberg', 'Sommerhus', 266, 3, '2020-05-08', 1449, 'A', 79, 425, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4888469, '6315 Vanessa Rapids', 2285, 'South Monique', 'Sommerhus', 224, 7, '1978-01-29', 792, 'C', 75, 274, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3741315, '27047 Collier Gardens', 4274, 'Earlineview', 'Kolonihavehus', 114, 1, '1955-10-06', 468, 'G', 23, 481, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7390235, '87033 Kohler Ports', 7322, 'Port Lamont', 'Lejlighed', 100, 1, '2000-12-24', 1455, 'B', 84, 313, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5836251, '286 Vita Turnpike', 2309, 'New Alanna', 'Ejerlejlighed', 280, 8, '2012-07-16', 693, 'D', 95, 76, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3992106, '913 Sauer Junctions', 3157, 'Port Eloisa', 'Sommerhus', 242, 8, '2005-07-17', 354, 'A', 88, 313, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2341068, '7423 Morar Locks', 1275, 'West Jaden', 'Ældrebolig', 188, 4, '1956-07-19', 593, 'G', 89, 405, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4999999, '33407 Mariane Point', 2941, 'Mariellechester', 'Rækkehus', 214, 7, '1981-02-15', 1447, 'F', 63, 30, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7221355, '9983 Lera Rapid', 5570, 'North Alexandrostad', 'Kolonihavehus', 69, 3, '2014-09-20', 977, 'E', 95, 453, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3318794, '4281 Lorenzo Loaf', 2845, 'South Mafalda', 'Villa', 231, 1, '1960-11-08', 1090, 'D', 8, 481, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6046210, '28420 Gladyce Street', 9811, 'Otiliaport', 'Lejlighed', 146, 5, '1978-02-05', 1313, 'A', 4, 385, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3841749, '992 Kozey Bypass', 6684, 'Robelfort', 'Andelsbolig', 260, 3, '1975-08-11', 660, 'C', 40, 334, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7998112, '915 O''Connell Lights', 8687, 'New Mortimer', 'Ældrebolig', 288, 5, '1989-08-20', 1369, 'G', 88, 94, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1600671, '2348 O''Kon Point', 3963, 'Terryton', 'Sommerhus', 213, 2, '1998-01-14', 953, 'G', 45, 213, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3129066, '5195 Crooks Locks', 7318, 'North Gabrielle', 'Lejlighed', 107, 1, '1969-01-17', 1519, 'E', 33, 320, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1326713, '199 Dorothy Landing', 2037, 'Lake Murphymouth', 'Andelsbolig', 253, 3, '1955-05-23', 654, 'A', 26, 372, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5154601, '810 Chadd Manors', 2389, 'Kreigerchester', 'Ungdomsbolig', 156, 8, '2017-02-17', 660, 'E', 83, 44, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2285213, '6203 Price Isle', 7416, 'West Destinee', 'Rækkehus', 272, 7, '2005-12-05', 375, 'C', 6, 485, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4496996, '1765 Elisha Forest', 6443, 'Ornbury', 'Villa', 148, 8, '1982-01-14', 1514, 'E', 32, 164, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3907200, '4184 Cartwright Landing', 2402, 'Maryambury', 'Andelsbolig', 125, 7, '1972-08-28', 795, 'A', 70, 385, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5080812, '1867 Mayer Ramp', 4138, 'West Fayebury', 'Rækkehus', 185, 2, '1997-05-03', 1641, 'A', 45, 241, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4238454, '6434 Luciano Pike', 7470, 'Carsonberg', 'Ældrebolig', 41, 3, '2004-10-24', 1221, 'A', 30, 149, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5076428, '5238 Krystel Rapids', 1546, 'Port Gabe', 'Villa', 226, 2, '1985-12-12', 367, 'D', 48, 310, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4232900, '30040 Marcella Extension', 3603, 'West Edwinchester', 'Lejlighed', 158, 5, '1974-08-24', 1413, 'F', 36, 70, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5318850, '3675 Sidney Forges', 4485, 'Port Johnson', 'Rækkehus', 233, 6, '1966-05-08', 997, 'B', 43, 241, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2986138, '6925 Reid Greens', 9699, 'Gislasonbury', 'Andelsbolig', 74, 2, '2015-08-15', 1273, 'C', 29, 89, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (633409, '9390 Hagenes Estates', 526, 'Veldaton', 'Lejlighed', 104, 4, '1988-08-31', 537, 'E', 26, 256, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2637610, '5065 Kirstin Corners', 7397, 'Lake Aric', 'Kolonihavehus', 201, 4, '2010-06-29', 448, 'B', 68, 27, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2403979, '853 Natalie Turnpike', 3209, 'Gordonton', 'Villa', 216, 2, '2016-06-27', 1175, 'E', 96, 55, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2039658, '356 Purdy Corner', 3028, 'Bethmouth', 'Kolonihavehus', 105, 4, '1978-10-16', 481, 'B', 37, 148, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5733037, '45198 Elise Estates', 6106, 'Waltertown', 'Villa', 47, 4, '1984-01-24', 1291, 'C', 17, 357, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6479852, '85854 Jerde Stravenue', 1940, 'Port Katherine', 'Ejerlejlighed', 111, 8, '1994-03-17', 576, 'B', 90, 333, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7298671, '961 O''Kon Ramp', 1220, 'Port Tyrelmouth', 'Ældrebolig', 125, 7, '1994-01-21', 514, 'B', 74, 239, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5947853, '108 Jabari Skyway', 3439, 'East Horacio', 'Sommerhus', 183, 1, '1970-06-17', 581, 'C', 79, 95, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5070006, '788 Roxane Heights', 4335, 'Turnerfort', 'Villa', 91, 5, '1967-12-03', 1356, 'E', 67, 423, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6723275, '353 Marquardt Corners', 8034, 'Alejandrinfurt', 'Sommerhus', 249, 2, '1996-10-08', 990, 'A', 95, 462, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7647641, '933 Haag Islands', 7420, 'Rogahnstad', 'Villa', 285, 3, '1975-02-09', 1247, 'G', 44, 318, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4505814, '6472 Turner Streets', 415, 'North Mathiasside', 'Ældrebolig', 250, 3, '1983-01-17', 1652, 'G', 70, 328, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3649751, '27390 Colt Way', 248, 'Mittiehaven', 'Sommerhus', 125, 7, '1984-03-15', 618, 'C', 47, 201, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1548012, '859 Schoen Divide', 1252, 'Port Jany', 'Rækkehus', 73, 4, '1971-03-07', 679, 'G', 39, 498, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4920031, '308 Carli Rest', 1752, 'Kochville', 'Lejlighed', 265, 7, '1963-09-21', 542, 'D', 53, 16, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5932000, '9907 Williamson Creek', 7629, 'Jaleelchester', 'Kolonihavehus', 268, 8, '2015-03-04', 1518, 'F', 78, 328, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1104163, '729 Cathy Flat', 5502, 'North Laurie', 'Ældrebolig', 140, 5, '1990-03-08', 251, 'C', 55, 121, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1472853, '1939 Nakia Ramp', 9764, 'New Demarcoside', 'Ældrebolig', 40, 7, '1959-06-21', 1317, 'F', 39, 498, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1148897, '825 Natalia Trail', 885, 'Klingview', 'Ejerlejlighed', 298, 8, '1991-11-04', 408, 'E', 31, 53, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2146084, '035 Bode Forest', 1987, 'Robertsshire', 'Kolonihavehus', 210, 3, '1978-09-04', 791, 'A', 46, 459, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4986068, '73803 Deion Curve', 8557, 'Rueckerport', 'Villa', 159, 1, '1967-01-15', 676, 'F', 37, 74, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7562790, '197 Koss Bypass', 4259, 'East Amariberg', 'Ældrebolig', 289, 4, '2008-08-06', 796, 'E', 73, 181, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5043492, '59963 Hahn Ramp', 3801, 'West Marvin', 'Ejerlejlighed', 283, 4, '1997-05-04', 1189, 'D', 56, 211, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6259797, '769 Archibald Cliff', 3954, 'Port Reed', 'Sommerhus', 189, 4, '2016-01-22', 1079, 'B', 83, 321, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7865088, '021 Ian Route', 8511, 'Riceland', 'Kolonihavehus', 89, 7, '1963-10-15', 582, 'C', 36, 276, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5324462, '419 Samantha Square', 1096, 'Connietown', 'Sommerhus', 230, 2, '1980-06-30', 403, 'D', 10, 103, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1485427, '899 McLaughlin Mountains', 9099, 'West Vance', 'Ungdomsbolig', 198, 2, '2022-04-09', 1281, 'G', 93, 85, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2540378, '8921 Bailee Trail', 632, 'East Marcelle', 'Kolonihavehus', 107, 4, '1970-11-13', 805, 'D', 25, 255, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1606584, '5982 Pollich Tunnel', 1471, 'East Rickie', 'Ejerlejlighed', 224, 1, '1965-05-02', 425, 'G', 35, 386, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3452120, '70807 Octavia Garden', 9914, 'Schinnerborough', 'Ungdomsbolig', 50, 8, '1955-12-16', 1415, 'F', 56, 23, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6514098, '190 McLaughlin Underpass', 7852, 'Harrytown', 'Villa', 226, 6, '2011-07-14', 714, 'F', 87, 53, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (599099, '401 Norberto Vista', 3390, 'Fadelburgh', 'Sommerhus', 255, 7, '1964-02-07', 661, 'D', 9, 23, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (617135, '279 Ritchie Mission', 2811, 'Hoppeshire', 'Ejerlejlighed', 220, 6, '2017-07-02', 372, 'E', 83, 112, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2185801, '1195 Dax Forest', 9219, 'South Russellberg', 'Ældrebolig', 125, 8, '1998-06-07', 997, 'B', 77, 209, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6740286, '526 Heller Land', 4747, 'Lake Glennietown', 'Rækkehus', 98, 5, '2013-07-02', 1342, 'F', 48, 227, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7751508, '70076 Zieme Valleys', 3700, 'Hermannhaven', 'Ejerlejlighed', 266, 4, '1962-12-12', 585, 'D', 35, 408, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1207483, '0158 Stanton Highway', 428, 'North Jenifer', 'Andelsbolig', 125, 1, '1958-05-29', 485, 'C', 23, 162, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (733928, '53149 Adah Radial', 8441, 'Turcotteville', 'Sommerhus', 175, 7, '1976-11-16', 1336, 'E', 27, 165, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7831880, '4434 Thompson Ways', 4375, 'East Bettieberg', 'Sommerhus', 149, 6, '2021-04-14', 1403, 'B', 30, 276, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4057903, '5755 Martin Roads', 1984, 'New Verner', 'Ungdomsbolig', 104, 8, '1973-05-14', 1010, 'A', 96, 231, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (752096, '8546 Parker Crescent', 1735, 'Schneiderport', 'Villa', 247, 5, '2004-05-01', 777, 'E', 26, 229, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3826873, '0846 Spinka Viaduct', 582, 'North Selena', 'Andelsbolig', 54, 7, '1978-06-10', 391, 'F', 37, 498, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3427439, '43438 Price Ridge', 6574, 'New Selmerport', 'Andelsbolig', 217, 2, '1973-05-17', 399, 'E', 31, 246, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1068070, '46056 Spencer Plaza', 4305, 'Whitneychester', 'Rækkehus', 99, 6, '1972-02-07', 1169, 'D', 2, 496, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1772745, '455 Ernest Light', 1165, 'Hoytport', 'Ældrebolig', 47, 1, '2005-02-20', 322, 'F', 91, 467, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2344199, '1895 Lauryn Forest', 6190, 'Quigleyport', 'Villa', 229, 1, '1980-11-27', 1194, 'E', 70, 261, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5599911, '3017 Daniel Flats', 8402, 'Everetteborough', 'Kolonihavehus', 245, 2, '1959-11-05', 1501, 'F', 35, 305, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2310821, '46677 Quigley Views', 5200, 'Jarrodchester', 'Kolonihavehus', 86, 8, '2016-01-09', 967, 'B', 7, 490, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1000688, '975 Bradly Hill', 8252, 'South Richmond', 'Sommerhus', 116, 8, '2022-08-09', 1206, 'B', 22, 55, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3102827, '599 Breitenberg Keys', 3081, 'Lake Joanne', 'Rækkehus', 245, 8, '1968-12-25', 434, 'D', 48, 337, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3806658, '08982 Terrill Forest', 6148, 'Port Kelli', 'Andelsbolig', 94, 3, '1985-12-26', 708, 'C', 25, 474, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3896600, '47281 Crooks Mews', 6483, 'Hagenesside', 'Lejlighed', 270, 2, '1988-12-22', 1042, 'G', 23, 406, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3346844, '4132 Jammie Stream', 20, 'West Dion', 'Andelsbolig', 144, 6, '1957-07-25', 1635, 'E', 80, 452, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5001461, '512 Jaquelin Stream', 1033, 'Mayraside', 'Rækkehus', 56, 7, '1969-09-24', 1202, 'C', 80, 413, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (643128, '8913 Juvenal Shores', 5369, 'Port Dorian', 'Lejlighed', 179, 1, '1987-10-24', 927, 'E', 11, 220, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7640764, '950 Keanu Views', 4897, 'Lake Eunaview', 'Villa', 58, 8, '2009-08-23', 413, 'F', 64, 471, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6235175, '8232 Dina Gateway', 7917, 'New Mackenzie', 'Rækkehus', 66, 5, '1981-04-01', 1440, 'E', 51, 456, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5208696, '5180 Koepp Lakes', 1273, 'South Izaiah', 'Ældrebolig', 57, 8, '1970-02-13', 763, 'B', 33, 460, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1561628, '923 Zackary Stream', 8288, 'West Koleville', 'Rækkehus', 64, 6, '1966-11-05', 200, 'B', 54, 143, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3692288, '78272 Littel Manor', 1887, 'Shieldsshire', 'Lejlighed', 170, 6, '1976-08-14', 1335, 'A', 67, 408, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5391763, '72047 Witting Rapid', 3672, 'East Deondreshire', 'Ældrebolig', 40, 5, '1963-12-09', 1345, 'G', 18, 20, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3154994, '53936 Santiago Hill', 3392, 'South Jamilshire', 'Sommerhus', 135, 2, '1957-06-09', 788, 'D', 33, 384, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3157139, '5259 Aufderhar Trail', 7587, 'Fadeltown', 'Lejlighed', 101, 5, '2022-12-09', 461, 'A', 62, 272, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3817718, '230 Zander Well', 9257, 'South Jackfort', 'Villa', 162, 2, '1962-04-26', 313, 'C', 62, 402, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1650004, '9350 Barton Motorway', 4929, 'West Dillanbury', 'Kolonihavehus', 284, 8, '1987-06-03', 664, 'F', 55, 96, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3729850, '1204 Turcotte Glen', 1382, 'Greenberg', 'Ungdomsbolig', 188, 3, '2007-01-20', 403, 'A', 46, 166, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7968714, '83353 Vern Cliffs', 4407, 'Lake Eusebio', 'Villa', 224, 3, '2024-07-10', 1095, 'G', 8, 310, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2978020, '40824 Fay Stream', 34, 'Ondrickafort', 'Rækkehus', 164, 2, '1984-10-08', 756, 'D', 58, 163, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5229625, '427 Reilly Corner', 1356, 'Marvinside', 'Ungdomsbolig', 192, 3, '2007-07-02', 1340, 'F', 97, 452, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4610749, '34554 Treutel Knoll', 2510, 'Port Yoshikochester', 'Sommerhus', 84, 8, '1963-04-13', 994, 'E', 28, 164, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2364429, '99584 Cassidy Unions', 3219, 'Louveniabury', 'Ejerlejlighed', 122, 6, '2012-12-28', 1079, 'B', 8, 4, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4825826, '217 Corwin Fords', 1065, 'West Ansel', 'Rækkehus', 54, 8, '1999-05-09', 838, 'G', 13, 371, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (591356, '8814 Gerlach Pass', 5724, 'New Treyton', 'Lejlighed', 291, 8, '1978-04-12', 1244, 'C', 47, 21, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4658147, '9545 Katharina Wells', 2954, 'Mullermouth', 'Lejlighed', 277, 3, '1967-12-22', 546, 'A', 39, 199, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7970607, '9324 Mercedes Forest', 703, 'Dejonfort', 'Kolonihavehus', 173, 2, '1968-11-14', 1443, 'A', 39, 255, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6335653, '40226 Norberto Flats', 7073, 'Crooksmouth', 'Ejerlejlighed', 111, 4, '2014-01-06', 1081, 'D', 54, 498, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3084267, '33972 Gerhold Parkway', 9848, 'Laurachester', 'Ældrebolig', 245, 8, '1982-07-15', 937, 'D', 37, 12, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2373037, '96397 Wisozk Expressway', 1282, 'West Reba', 'Ældrebolig', 221, 5, '1964-12-05', 939, 'C', 47, 168, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6421588, '697 Ayden Road', 6814, 'Port Nigel', 'Villa', 159, 2, '1959-09-16', 303, 'A', 45, 87, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5177770, '9695 Stella Pike', 7282, 'East Jonathan', 'Rækkehus', 59, 1, '2023-02-19', 371, 'C', 72, 386, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1464941, '51055 Schmidt Junction', 2637, 'West Amelie', 'Andelsbolig', 62, 4, '2017-09-15', 562, 'A', 13, 334, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6541143, '943 Renner Forges', 5861, 'East Kenyattaview', 'Villa', 41, 3, '1990-10-03', 904, 'C', 22, 337, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5414833, '87626 Walter Alley', 6805, 'Wittingside', 'Villa', 137, 7, '1977-07-12', 1197, 'F', 5, 259, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1227202, '078 Waelchi Station', 2201, 'West Elwinburgh', 'Ejerlejlighed', 95, 4, '2009-08-19', 1542, 'A', 21, 360, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5577876, '2127 Jenkins Dam', 972, 'West Minnieberg', 'Ejerlejlighed', 125, 3, '1960-08-03', 1136, 'A', 53, 85, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3358006, '81246 Larkin Way', 4903, 'Keeblerborough', 'Andelsbolig', 147, 4, '1961-08-26', 864, 'A', 13, 245, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2881331, '9320 Beatty Ford', 225, 'Lake Hans', 'Andelsbolig', 116, 6, '1958-05-30', 1024, 'C', 51, 209, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5766989, '378 Auer Island', 950, 'Wymanburgh', 'Sommerhus', 277, 1, '1994-02-17', 1193, 'C', 96, 492, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1886365, '013 Murphy Centers', 6164, 'Lake Maria', 'Sommerhus', 166, 4, '1998-10-09', 1564, 'C', 28, 303, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7357746, '55591 Osvaldo Pines', 753, 'Reynoldsville', 'Sommerhus', 294, 8, '1990-06-14', 1616, 'E', 88, 446, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7124907, '86495 Dillon Prairie', 9805, 'Framistad', 'Kolonihavehus', 88, 5, '1990-01-30', 1080, 'G', 38, 276, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3939089, '026 Georgiana Plaza', 466, 'Janiceborough', 'Rækkehus', 82, 7, '1974-05-16', 1506, 'B', 55, 493, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (689149, '2306 Ashton Inlet', 2280, 'North Christina', 'Ungdomsbolig', 187, 3, '1994-06-30', 305, 'C', 53, 163, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (966751, '561 Jedediah Center', 4193, 'Port Amparoville', 'Rækkehus', 213, 8, '1987-11-28', 1352, 'E', 70, 134, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (827950, '0433 Cydney Shores', 3263, 'West Londonshire', 'Villa', 186, 4, '1981-04-10', 295, 'G', 46, 389, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7688891, '9414 Henri Freeway', 4756, 'East Letaside', 'Lejlighed', 205, 7, '2015-10-30', 926, 'D', 96, 149, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7820495, '3339 Trystan Brooks', 27, 'Streichshire', 'Ejerlejlighed', 270, 5, '1992-07-06', 1322, 'F', 10, 212, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5450137, '92638 Daija Manor', 7931, 'West Miguelview', 'Lejlighed', 59, 8, '1999-12-13', 745, 'D', 94, 156, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6918303, '756 Geraldine Point', 2534, 'Magnoliaport', 'Kolonihavehus', 85, 7, '2022-05-21', 1201, 'F', 63, 483, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3261603, '272 Gabriel Lake', 2857, 'Kshlerinburgh', 'Ældrebolig', 278, 3, '1991-10-31', 1253, 'B', 15, 291, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (886785, '2423 Brando Skyway', 2709, 'Lake Estrella', 'Sommerhus', 185, 3, '2007-07-03', 546, 'C', 68, 446, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1554658, '1871 Greenholt Drives', 929, 'Binsshire', 'Villa', 225, 5, '1993-12-11', 660, 'C', 28, 283, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5884620, '2437 Muller Court', 5968, 'East Chasity', 'Sommerhus', 131, 6, '1992-09-30', 462, 'B', 39, 491, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3614093, '10020 Jaskolski Hills', 258, 'Manntown', 'Villa', 46, 4, '1966-11-20', 302, 'D', 56, 322, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1941976, '74414 Israel Terrace', 7518, 'South Zackery', 'Andelsbolig', 269, 8, '1959-06-16', 761, 'F', 95, 129, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5929864, '8024 Dickens Passage', 2380, 'Micaelafort', 'Andelsbolig', 167, 2, '1977-03-16', 1075, 'B', 60, 367, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4897234, '72775 Stanford Centers', 7574, 'Zechariahview', 'Villa', 113, 6, '2001-04-08', 1308, 'C', 53, 213, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5600051, '90514 Sanford Way', 4797, 'North Sunny', 'Sommerhus', 246, 2, '1966-03-20', 1600, 'B', 77, 294, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1734631, '0250 Armani Roads', 4945, 'Lake Bonnieborough', 'Ejerlejlighed', 290, 4, '2004-01-05', 1179, 'A', 11, 451, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (734888, '0690 Rodrigo Ville', 819, 'Manleyfurt', 'Kolonihavehus', 171, 6, '2012-12-16', 497, 'F', 15, 142, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (921725, '465 Hegmann Ferry', 1798, 'South Idella', 'Ejerlejlighed', 114, 4, '1963-12-20', 841, 'G', 4, 15, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4594281, '817 Alize Wall', 5511, 'Halvorsonborough', 'Kolonihavehus', 156, 2, '1993-06-07', 1434, 'F', 53, 228, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1909315, '189 Caleb Pike', 141, 'Nikkoshire', 'Sommerhus', 153, 8, '1957-11-20', 863, 'A', 55, 449, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5298928, '125 Gregorio Island', 9156, 'Lake Susanna', 'Villa', 143, 2, '2014-02-11', 963, 'D', 53, 126, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (722658, '073 Kris Prairie', 7756, 'Rolfsonstad', 'Kolonihavehus', 58, 1, '1997-01-09', 365, 'F', 76, 145, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1633701, '63558 Waelchi Oval', 2684, 'Raynormouth', 'Ejerlejlighed', 277, 1, '2003-01-30', 970, 'D', 72, 47, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6518055, '232 Paolo Station', 9220, 'West Mikaylamouth', 'Lejlighed', 207, 4, '1982-09-09', 1115, 'G', 76, 250, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6832715, '539 Strosin Via', 2438, 'East Kira', 'Ældrebolig', 182, 3, '2009-10-05', 1065, 'D', 64, 99, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7039226, '745 Hane Views', 2456, 'East Martinamouth', 'Andelsbolig', 173, 7, '1959-08-08', 275, 'D', 50, 296, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7329280, '55570 Haag Junctions', 1181, 'South Paulaland', 'Andelsbolig', 192, 1, '2004-01-16', 777, 'B', 4, 120, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5991423, '0602 Reynolds Ridges', 4915, 'Sengermouth', 'Kolonihavehus', 191, 2, '1967-11-19', 863, 'E', 24, 107, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4651288, '600 Walker Harbor', 4772, 'Emardtown', 'Ejerlejlighed', 236, 5, '2024-10-02', 1339, 'A', 98, 41, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6112354, '803 Mathew Point', 3606, 'West Leon', 'Ejerlejlighed', 172, 1, '1995-06-30', 1544, 'F', 23, 3, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4423030, '8959 Price Lights', 6178, 'Corwinbury', 'Andelsbolig', 169, 6, '2000-11-24', 990, 'E', 96, 174, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4367160, '6939 Fannie Hills', 5445, 'North Dewaynehaven', 'Villa', 213, 2, '1972-09-04', 1471, 'A', 78, 96, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2435933, '23017 Ray Prairie', 3397, 'Sawaynville', 'Ældrebolig', 117, 6, '1968-06-29', 960, 'G', 65, 198, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (604529, '47525 Senger Plains', 6802, 'North Amelyberg', 'Lejlighed', 123, 6, '1967-10-03', 1127, 'G', 80, 174, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3621228, '00795 Keebler Courts', 4984, 'Port Sashaborough', 'Ungdomsbolig', 224, 2, '2008-04-16', 800, 'F', 24, 419, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4019254, '543 Ortiz Keys', 8615, 'Gageview', 'Ungdomsbolig', 78, 1, '2014-02-24', 930, 'A', 50, 284, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2052025, '8962 Bartoletti Square', 3291, 'McLaughlintown', 'Ejerlejlighed', 139, 6, '2021-10-29', 1569, 'G', 35, 485, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1700143, '58407 Lamont Ridge', 5359, 'Ratkeburgh', 'Lejlighed', 168, 5, '2011-04-22', 577, 'A', 66, 61, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7252764, '628 Kailyn Dale', 2064, 'West Loyal', 'Lejlighed', 123, 3, '2012-12-05', 1213, 'F', 81, 16, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5141511, '64451 Brown Plains', 5557, 'Abbotttown', 'Lejlighed', 190, 8, '1963-12-30', 1148, 'F', 94, 471, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4929301, '73770 Kaci Port', 8909, 'Port Adrian', 'Andelsbolig', 101, 1, '1986-06-24', 1467, 'A', 64, 137, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2696719, '86298 McKenzie Road', 7246, 'Quincyberg', 'Villa', 259, 1, '2018-07-10', 1366, 'E', 9, 214, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1885427, '19829 Watson Turnpike', 9515, 'Conniehaven', 'Ældrebolig', 121, 7, '1986-03-04', 1289, 'F', 2, 398, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2599103, '07613 Demarcus Mount', 8988, 'Jenkinsside', 'Ældrebolig', 145, 6, '2020-10-26', 910, 'C', 67, 453, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3111302, '70404 Balistreri Court', 8011, 'Hipolitoport', 'Lejlighed', 53, 1, '1992-06-23', 1031, 'F', 72, 67, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3636510, '3094 Simonis Oval', 7815, 'South Zander', 'Kolonihavehus', 129, 6, '1962-11-14', 902, 'E', 81, 318, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2103330, '580 Neoma Locks', 5813, 'South Corbintown', 'Lejlighed', 136, 6, '1984-12-02', 1055, 'B', 15, 486, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5810758, '806 Kemmer Parks', 8744, 'Helenport', 'Lejlighed', 286, 6, '1968-12-18', 1025, 'B', 100, 326, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2609918, '779 Crooks Roads', 7655, 'Lindgrenview', 'Ældrebolig', 103, 6, '2003-05-30', 990, 'B', 71, 370, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3884222, '22362 Cecelia Valleys', 865, 'Rosendoberg', 'Rækkehus', 92, 7, '2009-11-13', 501, 'G', 44, 269, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (626666, '2480 Heathcote Village', 2443, 'Rathland', 'Ungdomsbolig', 170, 4, '1958-03-18', 1407, 'C', 6, 35, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4249055, '825 Elliot Mills', 4574, 'South Robertotown', 'Lejlighed', 102, 7, '1984-10-29', 1444, 'E', 60, 493, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6717310, '2838 Ashley Lane', 2913, 'Klingview', 'Ungdomsbolig', 247, 2, '1956-01-28', 591, 'D', 39, 112, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3470597, '589 Breitenberg View', 4159, 'Dallasbury', 'Sommerhus', 192, 4, '1966-10-20', 1425, 'A', 75, 143, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6000396, '367 Rippin Parks', 9794, 'East Jackieville', 'Rækkehus', 151, 1, '2007-07-06', 1214, 'D', 51, 311, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5105053, '7521 Kirlin Stream', 3810, 'West Makayla', 'Sommerhus', 182, 1, '1994-05-11', 1211, 'A', 100, 466, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5133034, '683 Hector Shoals', 1173, 'Helgastad', 'Ejerlejlighed', 183, 6, '2021-01-15', 1617, 'C', 68, 297, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4573712, '156 Torp Junctions', 2229, 'South Idellachester', 'Andelsbolig', 136, 3, '2009-11-27', 1510, 'D', 13, 181, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (577172, '0009 Jaunita Squares', 4576, 'Hoppeland', 'Sommerhus', 174, 5, '1980-09-19', 866, 'G', 44, 94, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7242572, '17724 Raynor Square', 7031, 'Port Blair', 'Ældrebolig', 265, 1, '2015-10-26', 1088, 'A', 21, 131, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5395268, '92914 Shanahan Well', 4012, 'North Montanastad', 'Andelsbolig', 51, 6, '1974-07-10', 1311, 'C', 22, 401, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (539798, '724 Otto Burg', 5363, 'South Ellsworth', 'Ældrebolig', 71, 5, '1971-10-21', 1452, 'E', 85, 213, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5098418, '1445 Rosalee Lane', 8737, 'Guiseppeborough', 'Ejerlejlighed', 217, 6, '1973-04-17', 1139, 'E', 98, 207, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7330614, '706 Cesar Passage', 1867, 'South Nikkochester', 'Sommerhus', 243, 3, '1971-01-23', 1690, 'E', 65, 328, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2736804, '786 Randi Fork', 4683, 'North Francesview', 'Andelsbolig', 57, 7, '1993-12-29', 1150, 'C', 45, 248, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2803592, '36569 Makenzie Loop', 2076, 'New Christelleview', 'Sommerhus', 261, 6, '1966-03-28', 924, 'F', 41, 462, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1820107, '4404 Kozey Meadows', 9099, 'New Alize', 'Kolonihavehus', 180, 4, '1964-06-23', 1383, 'F', 75, 380, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3187670, '273 Fisher Ville', 2899, 'East Estelle', 'Ældrebolig', 245, 2, '1991-07-01', 1330, 'F', 19, 434, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1911604, '4697 Harvey Plaza', 5502, 'Hodkiewiczland', 'Lejlighed', 130, 8, '1983-06-02', 893, 'E', 60, 71, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (818664, '762 Issac Parkway', 333, 'Bennieview', 'Rækkehus', 268, 1, '1964-08-22', 632, 'B', 39, 117, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3390696, '16285 Sabina Meadows', 6680, 'Marvinbury', 'Lejlighed', 54, 8, '2019-04-19', 1537, 'A', 28, 85, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4606483, '240 Ariel Extension', 2814, 'Port Izabella', 'Kolonihavehus', 54, 1, '1998-11-26', 1494, 'C', 49, 341, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1302258, '2401 Larkin Estate', 1404, 'Patienceport', 'Ejerlejlighed', 155, 8, '2006-04-27', 350, 'C', 54, 136, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5686968, '58614 Aniya Mews', 3305, 'Feilbury', 'Ungdomsbolig', 260, 7, '1991-02-16', 914, 'F', 31, 218, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1788124, '9658 Jillian Views', 4973, 'Arashire', 'Sommerhus', 160, 2, '2023-08-02', 951, 'C', 20, 123, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6598573, '03498 Huels Locks', 3112, 'Port Darbychester', 'Sommerhus', 91, 5, '1957-11-29', 932, 'G', 77, 433, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2959675, '722 Flatley Ford', 5723, 'New Abbie', 'Ungdomsbolig', 185, 7, '1978-10-20', 1650, 'A', 44, 48, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2411090, '301 Fahey Radial', 6978, 'New Meda', 'Andelsbolig', 132, 1, '1976-09-24', 809, 'D', 92, 4, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4011173, '49392 Gina Lodge', 2866, 'Florencioview', 'Ungdomsbolig', 111, 3, '1995-12-28', 306, 'D', 1, 476, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1303866, '1105 Gutkowski Locks', 8693, 'West Rowland', 'Rækkehus', 188, 4, '1971-01-05', 364, 'D', 83, 136, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1314398, '1357 Collins Tunnel', 390, 'Hirthebury', 'Andelsbolig', 42, 7, '2024-06-05', 1026, 'D', 60, 292, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4301325, '1436 Retha Mills', 8213, 'North Albertaland', 'Ældrebolig', 177, 1, '2020-05-06', 1215, 'A', 19, 458, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6245096, '2714 Ignatius Fields', 7079, 'Port Amparoport', 'Villa', 171, 1, '1964-11-21', 1650, 'E', 72, 426, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5953834, '586 Estel Ways', 511, 'New Otha', 'Villa', 129, 4, '1963-04-02', 1094, 'E', 14, 438, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5093489, '10348 Wiza Throughway', 2223, 'Boganside', 'Lejlighed', 61, 2, '1964-10-11', 647, 'E', 36, 410, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5052582, '24300 Simonis View', 7699, 'Abagailtown', 'Villa', 184, 8, '1984-03-25', 1480, 'D', 46, 103, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4703077, '77519 Abernathy Stravenue', 2851, 'South Violette', 'Ejerlejlighed', 70, 4, '2000-06-28', 782, 'B', 42, 157, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7467276, '766 Sabryna Haven', 3631, 'Lake Alphonsofort', 'Sommerhus', 157, 4, '1976-11-01', 618, 'F', 22, 264, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (907919, '6157 Goldner Turnpike', 9619, 'Port Heleneberg', 'Andelsbolig', 269, 3, '2022-11-08', 375, 'D', 22, 357, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4010947, '985 Alejandra Expressway', 6863, 'Inesfurt', 'Ældrebolig', 225, 8, '1959-11-20', 491, 'B', 76, 128, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3440657, '718 Doris Overpass', 7235, 'Dexterberg', 'Ejerlejlighed', 107, 6, '2016-02-04', 1167, 'B', 14, 154, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7014123, '11412 Lehner Ville', 8360, 'Chelseymouth', 'Ældrebolig', 135, 7, '1972-07-29', 646, 'D', 94, 76, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1209183, '53428 Fisher Center', 4535, 'Yolandachester', 'Villa', 215, 3, '1960-07-07', 446, 'D', 73, 367, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2137594, '7166 Bailee Fork', 4719, 'South Alexzander', 'Villa', 102, 5, '1969-11-17', 1018, 'G', 19, 223, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7256374, '6628 Champlin Mission', 4845, 'Lake Vena', 'Lejlighed', 171, 6, '1985-10-28', 1073, 'D', 46, 478, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3264548, '6771 Eliane Neck', 835, 'West Franzbury', 'Andelsbolig', 209, 3, '1977-08-10', 1282, 'D', 97, 19, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7379491, '827 Bauch Pike', 8014, 'East Enola', 'Ejerlejlighed', 208, 1, '2014-10-27', 1142, 'F', 97, 482, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2814982, '5087 Krajcik Island', 6306, 'New Laurenceside', 'Kolonihavehus', 289, 5, '1989-05-12', 1441, 'A', 54, 351, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4957877, '7251 Kulas Vista', 9459, 'Lake Mike', 'Ungdomsbolig', 224, 4, '1956-03-14', 1672, 'D', 53, 247, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6148875, '730 Billie Pass', 3306, 'Lake Oceane', 'Rækkehus', 100, 1, '1966-04-16', 476, 'F', 74, 495, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5902602, '16049 Hamill Turnpike', 7, 'Lake Felicityland', 'Lejlighed', 189, 4, '1965-02-22', 1431, 'E', 76, 209, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2399730, '90653 Jarrett Place', 1603, 'East Pansy', 'Lejlighed', 127, 6, '1968-06-11', 1279, 'E', 97, 200, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1647110, '9616 Carter Loop', 1904, 'Albinafort', 'Ældrebolig', 269, 4, '2006-05-16', 1568, 'G', 30, 498, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2816629, '30128 Karl Rapids', 4724, 'Port Stephaniehaven', 'Lejlighed', 191, 7, '1996-01-27', 1657, 'A', 83, 22, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1586795, '012 Maurice Gateway', 8128, 'North Adolph', 'Ejerlejlighed', 88, 2, '1980-05-03', 1301, 'C', 91, 331, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4681450, '3396 Fisher Court', 8913, 'Sofiafurt', 'Villa', 129, 7, '1971-05-23', 387, 'G', 71, 404, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6664178, '2582 Hailey Squares', 8193, 'Langworthside', 'Ejerlejlighed', 104, 2, '1967-04-06', 764, 'D', 62, 133, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2807678, '1327 Nienow Forks', 7822, 'Konopelskifort', 'Sommerhus', 141, 7, '2009-10-09', 1008, 'A', 10, 441, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6712963, '133 Hintz Plaza', 7545, 'Port Johnnie', 'Kolonihavehus', 125, 3, '1997-06-25', 929, 'C', 19, 322, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4302874, '836 Roxane Well', 6935, 'Port Josiahbury', 'Sommerhus', 287, 3, '2003-06-08', 1728, 'G', 81, 487, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1124181, '2749 Laverne Mount', 1246, 'Gustavebury', 'Villa', 295, 1, '1969-07-11', 1578, 'D', 60, 371, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4951014, '483 Yundt Walks', 6878, 'Sheaville', 'Kolonihavehus', 225, 3, '1958-11-25', 1645, 'F', 4, 21, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5103292, '47625 Marilyne Oval', 7591, 'Haneberg', 'Ældrebolig', 52, 7, '1994-10-30', 1335, 'E', 4, 70, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6872561, '530 Craig Junction', 5974, 'Jakubowskichester', 'Rækkehus', 254, 3, '1981-07-12', 1542, 'E', 61, 339, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2029733, '179 Bosco Forest', 798, 'Emoryton', 'Sommerhus', 151, 1, '1963-11-07', 1295, 'D', 52, 468, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6267413, '47922 Schamberger Expressway', 4400, 'Aglaeton', 'Rækkehus', 180, 6, '1997-06-05', 935, 'C', 34, 301, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2419659, '44976 Drake Inlet', 9695, 'North Raymondborough', 'Andelsbolig', 73, 4, '1970-02-02', 258, 'F', 50, 402, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6056909, '5985 Mary Pines', 7769, 'Swaniawskifurt', 'Andelsbolig', 40, 5, '1996-09-21', 1454, 'B', 73, 492, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6815299, '937 Zemlak Turnpike', 2941, 'Stiedemannburgh', 'Sommerhus', 282, 4, '2021-07-12', 1447, 'E', 82, 138, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4709180, '613 Halie Path', 5728, 'Lake Georgettemouth', 'Sommerhus', 69, 7, '2002-09-22', 617, 'B', 55, 368, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1886532, '23521 Pouros Plain', 7449, 'Lake Candacestad', 'Kolonihavehus', 276, 1, '1981-07-30', 1770, 'F', 87, 372, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3985602, '3882 Aliya Inlet', 4454, 'Asaburgh', 'Villa', 89, 5, '1959-02-16', 191, 'G', 88, 265, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2941379, '440 Anabel Oval', 9903, 'Framiport', 'Ejerlejlighed', 123, 5, '1972-11-29', 379, 'A', 21, 34, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4237501, '48525 Rath Harbors', 592, 'Eloytown', 'Ungdomsbolig', 113, 3, '1999-06-08', 1327, 'E', 32, 259, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4254990, '12755 Watson Station', 7667, 'Stokesmouth', 'Rækkehus', 287, 5, '2014-04-25', 1453, 'A', 5, 32, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2992146, '74073 Dereck Fords', 9929, 'South Maeveton', 'Ejerlejlighed', 139, 8, '1983-12-29', 418, 'F', 34, 313, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (599892, '07326 Armstrong Mount', 9410, 'New Graciela', 'Sommerhus', 101, 6, '1997-07-09', 278, 'E', 45, 292, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6214641, '60184 Mante Glen', 3766, 'North Gladysland', 'Ungdomsbolig', 128, 2, '2014-01-28', 723, 'F', 60, 331, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2641018, '7616 Ratke Stream', 6650, 'Purdyville', 'Ældrebolig', 236, 3, '1972-01-11', 1585, 'G', 64, 403, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5323318, '7877 Feeney Heights', 3889, 'Sheaborough', 'Kolonihavehus', 62, 5, '1972-07-22', 426, 'E', 7, 196, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3255250, '46773 Gail Station', 8294, 'Creminton', 'Andelsbolig', 139, 1, '1965-02-04', 495, 'G', 38, 385, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6990645, '60046 Champlin Crest', 1058, 'Port Evans', 'Kolonihavehus', 292, 2, '1994-03-17', 1455, 'C', 77, 325, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1466978, '28336 Smith Glen', 4977, 'Port Natasha', 'Ungdomsbolig', 248, 5, '1966-07-28', 1548, 'E', 91, 224, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3943459, '94823 Allen Village', 1778, 'Amelybury', 'Ældrebolig', 276, 7, '1967-06-18', 1395, 'E', 52, 92, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4068954, '021 Kari Mountain', 6655, 'Marquischester', 'Ældrebolig', 108, 3, '1959-08-02', 1483, 'C', 95, 288, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5784827, '4659 Kunde Forest', 8076, 'Lake Kianna', 'Kolonihavehus', 92, 1, '1966-07-25', 1134, 'D', 55, 198, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1388467, '2913 Feest Squares', 6459, 'South Lauriane', 'Rækkehus', 106, 4, '1968-04-02', 648, 'G', 58, 384, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6786231, '961 Aiyana Gardens', 7343, 'Tomasatown', 'Kolonihavehus', 292, 1, '2015-07-30', 505, 'G', 65, 42, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2403733, '094 Moises Turnpike', 3414, 'North Kolebury', 'Ældrebolig', 299, 5, '1991-12-31', 1407, 'C', 18, 59, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6855949, '6513 Yesenia Square', 7261, 'Bradleyburgh', 'Rækkehus', 259, 7, '1991-10-23', 1587, 'F', 98, 193, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6269249, '3251 Russel Forges', 9605, 'Altenwerthhaven', 'Rækkehus', 101, 8, '1969-05-29', 842, 'E', 40, 176, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2631553, '92632 Bradtke Dale', 8856, 'Alanamouth', 'Villa', 284, 7, '1991-08-21', 991, 'A', 25, 375, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1573182, '7401 Kamryn Bridge', 8330, 'Port Antonette', 'Villa', 225, 2, '1976-12-31', 538, 'G', 6, 252, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1935573, '4693 Gulgowski Summit', 4627, 'Brakusberg', 'Rækkehus', 81, 2, '1975-08-07', 1090, 'E', 70, 116, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5203675, '69950 Hammes Lodge', 4916, 'Crystalstad', 'Ejerlejlighed', 183, 2, '1978-02-27', 528, 'C', 81, 174, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4988651, '62624 Conn Forks', 8038, 'East Clemmie', 'Ungdomsbolig', 248, 6, '2023-06-14', 1503, 'A', 27, 278, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7843465, '608 Malachi Burgs', 8865, 'Evertburgh', 'Ejerlejlighed', 167, 4, '2001-09-18', 1659, 'C', 98, 62, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3988677, '6475 Maggie Divide', 8802, 'East Torey', 'Andelsbolig', 56, 7, '1986-04-05', 373, 'D', 47, 364, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7234902, '804 Geovanni Coves', 7471, 'East Sterlingberg', 'Rækkehus', 87, 4, '1977-09-01', 1164, 'A', 24, 294, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1961168, '66192 Cruickshank Radial', 5543, 'Leoraville', 'Andelsbolig', 284, 3, '1956-11-06', 1098, 'B', 6, 67, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1076872, '309 Kendrick Squares', 38, 'Eusebiofort', 'Ungdomsbolig', 245, 8, '2006-02-15', 924, 'A', 58, 119, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5618305, '024 Oberbrunner Brooks', 7589, 'South Luis', 'Andelsbolig', 223, 8, '2001-08-24', 941, 'G', 78, 159, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2384587, '7425 Rafaela Station', 884, 'Howellberg', 'Ungdomsbolig', 119, 3, '2010-12-28', 1132, 'G', 49, 49, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5649709, '57488 Maximo Forest', 7432, 'Port Kobyshire', 'Sommerhus', 205, 7, '1990-09-23', 912, 'A', 17, 238, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1587424, '203 Hoeger Square', 7372, 'Letitiafurt', 'Andelsbolig', 43, 3, '1991-07-26', 317, 'F', 98, 69, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2199229, '03579 Reid Union', 1167, 'Sophieberg', 'Villa', 213, 5, '2008-05-05', 892, 'B', 16, 280, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4355877, '4389 Moen Manors', 5988, 'Port Hobartchester', 'Rækkehus', 66, 2, '1967-04-02', 555, 'B', 83, 45, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4039462, '431 Bartell Brook', 4637, 'North Ransom', 'Lejlighed', 172, 2, '1993-11-29', 995, 'C', 94, 234, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7011632, '8122 Torrance Creek', 483, 'Dejuantown', 'Sommerhus', 194, 6, '2014-10-11', 1584, 'D', 87, 102, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4704963, '439 Heidenreich Garden', 5953, 'New Asashire', 'Ungdomsbolig', 127, 1, '1978-05-25', 312, 'A', 57, 108, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3888668, '9989 Kunde Union', 5966, 'Richiebury', 'Villa', 128, 7, '1993-11-02', 1520, 'F', 86, 79, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5650706, '911 Senger Cape', 6420, 'Zanestad', 'Sommerhus', 105, 8, '1974-10-31', 313, 'A', 88, 29, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5720353, '90313 Bogisich Flat', 2738, 'Minervaburgh', 'Villa', 263, 7, '1971-06-15', 614, 'E', 81, 213, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6209763, '4728 Guiseppe Ford', 4681, 'Marvinchester', 'Ungdomsbolig', 237, 3, '1985-06-28', 944, 'B', 53, 168, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5743137, '87567 Hickle Gateway', 5480, 'Lake Stephenberg', 'Sommerhus', 139, 4, '1955-06-11', 1134, 'F', 61, 103, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2865898, '0748 Senger Keys', 1594, 'Port Braedenmouth', 'Kolonihavehus', 140, 7, '1997-11-11', 725, 'E', 71, 418, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2419322, '8577 Karl Turnpike', 3270, 'Daughertyfurt', 'Ejerlejlighed', 186, 4, '2004-02-07', 1114, 'B', 16, 456, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5973302, '61604 Wolff Canyon', 2865, 'New Leonie', 'Sommerhus', 223, 8, '1961-09-20', 823, 'E', 44, 469, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4685574, '621 Torp Well', 7179, 'Lake Arlie', 'Andelsbolig', 293, 4, '1973-06-10', 1313, 'E', 63, 51, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6074326, '45589 Moen Prairie', 217, 'Frederikfort', 'Ungdomsbolig', 206, 7, '1970-02-08', 948, 'C', 80, 188, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3369525, '81425 Bartholome Island', 5151, 'Jacobsburgh', 'Andelsbolig', 170, 6, '2007-12-24', 837, 'C', 25, 94, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4697289, '664 Erna Plain', 7635, 'North Toney', 'Rækkehus', 52, 2, '1962-01-10', 407, 'E', 19, 481, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5492521, '04482 Hauck Inlet', 6763, 'South Ludwigshire', 'Kolonihavehus', 122, 3, '1972-02-04', 1465, 'E', 54, 445, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5811878, '0019 Irma Rapid', 6743, 'Schulistland', 'Lejlighed', 233, 4, '1965-05-02', 622, 'F', 62, 103, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5590007, '638 Kohler Drive', 6475, 'Shanellebury', 'Ejerlejlighed', 132, 3, '1961-05-03', 1437, 'G', 84, 98, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4424884, '57744 Liliane Loaf', 6683, 'East Rosario', 'Ejerlejlighed', 94, 5, '1962-08-01', 342, 'F', 77, 62, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2115436, '93131 Mayer Divide', 4662, 'Mitchellfurt', 'Ejerlejlighed', 176, 6, '2007-08-30', 1332, 'G', 23, 66, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6282571, '73245 Swift Drive', 3533, 'East Justice', 'Ejerlejlighed', 168, 3, '1998-02-24', 829, 'F', 28, 190, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1981841, '282 Harris Ramp', 4667, 'Clarissabury', 'Kolonihavehus', 133, 8, '2012-11-07', 937, 'F', 68, 91, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6911427, '565 Nitzsche Port', 2872, 'Emilyhaven', 'Rækkehus', 42, 6, '2005-05-10', 494, 'F', 18, 481, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7593006, '70034 Enos Via', 3806, 'Wilkinsonland', 'Ældrebolig', 163, 3, '1963-07-27', 612, 'A', 86, 434, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2546818, '2517 Dominic Green', 6262, 'Lake Lizaport', 'Kolonihavehus', 100, 5, '1981-12-28', 1326, 'C', 67, 203, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2719018, '6976 Green Ford', 3925, 'South Orenview', 'Sommerhus', 275, 2, '1959-09-28', 1218, 'E', 82, 480, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7325366, '909 Leann Extension', 7640, 'Lake Catherinemouth', 'Rækkehus', 293, 7, '2000-05-12', 1428, 'D', 52, 32, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1319150, '2460 Emard Viaduct', 4170, 'Lake Zoraberg', 'Villa', 142, 3, '1955-09-02', 696, 'E', 58, 247, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4007985, '60973 Sonya Hills', 5740, 'North Reynold', 'Sommerhus', 93, 4, '2000-01-18', 1523, 'D', 82, 340, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7684631, '574 McLaughlin Club', 3020, 'Treutelmouth', 'Andelsbolig', 231, 2, '1987-10-29', 418, 'D', 98, 207, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1244069, '024 Rosenbaum Ridges', 7789, 'Marcellusberg', 'Lejlighed', 284, 6, '1988-01-24', 1519, 'G', 86, 329, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4751171, '46056 Alverta River', 1642, 'Funkshire', 'Ejerlejlighed', 145, 1, '2001-07-29', 326, 'G', 26, 5, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2688053, '37404 Reynold Port', 6091, 'East Izaiahborough', 'Andelsbolig', 191, 4, '1995-07-21', 862, 'A', 80, 303, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2692132, '366 Ashleigh Road', 5498, 'Walshmouth', 'Ejerlejlighed', 207, 6, '1969-02-14', 1181, 'F', 22, 394, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4803784, '5694 Wyman Cove', 2224, 'Port Penelope', 'Ældrebolig', 168, 6, '2013-02-09', 1349, 'G', 17, 327, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7903577, '88712 Rippin Mount', 8339, 'New Alexandramouth', 'Rækkehus', 154, 7, '1982-03-10', 1228, 'D', 33, 145, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5134088, '051 Watsica Land', 1054, 'Haleyville', 'Villa', 203, 7, '2020-04-09', 1238, 'F', 1, 259, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6859766, '83190 Johnston Glen', 3674, 'Port Meghanland', 'Andelsbolig', 135, 5, '2007-05-26', 556, 'D', 98, 189, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5999014, '9975 Bartoletti Ports', 5309, 'New Michellebury', 'Andelsbolig', 169, 7, '2005-09-17', 622, 'E', 45, 445, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3699790, '2119 Shanahan Drive', 4239, 'Adrainland', 'Rækkehus', 115, 1, '1988-03-07', 1578, 'F', 93, 243, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1873354, '715 Eileen Point', 7686, 'Port Carlosbury', 'Lejlighed', 142, 6, '1991-03-21', 679, 'E', 90, 415, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2010719, '47780 Mosciski Falls', 2487, 'Jeanettehaven', 'Sommerhus', 104, 3, '2015-05-06', 1382, 'D', 18, 218, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2201112, '221 Adolph Forge', 1671, 'Brooklynview', 'Ungdomsbolig', 267, 2, '2018-12-11', 1082, 'G', 32, 29, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3422552, '31855 Jennie Lodge', 8075, 'Pfannerstillhaven', 'Lejlighed', 64, 3, '2024-05-10', 1483, 'G', 57, 123, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2737494, '846 Orie Islands', 6704, 'New Larry', 'Ældrebolig', 222, 1, '2013-07-10', 702, 'A', 58, 357, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5545405, '32809 Elza Plains', 2138, 'Keeblerborough', 'Ejerlejlighed', 101, 3, '1973-11-15', 750, 'A', 16, 37, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1848876, '9321 Swift Overpass', 958, 'East Trevion', 'Ejerlejlighed', 250, 5, '1957-08-04', 605, 'B', 95, 485, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5852683, '6624 Balistreri Glens', 3879, 'Gulgowskiport', 'Kolonihavehus', 68, 3, '2020-07-08', 1528, 'F', 78, 422, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (880351, '191 Brandyn Drive', 3595, 'Revaside', 'Ældrebolig', 103, 7, '2008-10-23', 415, 'B', 88, 285, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2009451, '739 Dion Union', 3469, 'Ethelburgh', 'Lejlighed', 49, 5, '2005-04-13', 589, 'B', 45, 85, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1047907, '22534 Kub Haven', 2434, 'Edenstad', 'Rækkehus', 228, 2, '2002-12-16', 1164, 'A', 78, 458, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7448283, '809 Corwin Green', 5406, 'Okunevaborough', 'Rækkehus', 81, 2, '2025-02-13', 1501, 'F', 84, 178, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5165285, '4336 Towne Junctions', 7089, 'North Timmy', 'Villa', 248, 2, '1970-08-30', 1271, 'F', 32, 245, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3321761, '9413 Boehm Vista', 130, 'West Reyes', 'Villa', 148, 5, '2001-05-10', 1294, 'D', 35, 499, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4346251, '47297 Waelchi Square', 7726, 'South Dayana', 'Ungdomsbolig', 112, 8, '2022-10-17', 1483, 'A', 38, 251, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1060067, '02753 Shany Bypass', 738, 'Madelinechester', 'Villa', 119, 3, '1961-08-27', 635, 'A', 25, 133, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2296345, '52866 Mateo Hill', 9339, 'Camylleton', 'Ejerlejlighed', 214, 5, '1968-10-15', 1314, 'C', 26, 76, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5697445, '69406 Kunde Forge', 3665, 'Strackeland', 'Ældrebolig', 72, 7, '1982-11-24', 718, 'E', 11, 456, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4254431, '082 Ebert Mountains', 3173, 'Port Weldon', 'Ungdomsbolig', 60, 6, '2024-11-03', 781, 'G', 15, 476, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3523872, '6827 Shanna Overpass', 7640, 'Schinnerside', 'Kolonihavehus', 292, 6, '2011-08-10', 1026, 'C', 9, 398, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2139805, '7549 Osinski Lodge', 8848, 'O''Connellbury', 'Villa', 206, 2, '1982-06-13', 363, 'D', 65, 243, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2155351, '05512 Evelyn Glens', 7255, 'East Tressiemouth', 'Ældrebolig', 253, 4, '2012-10-12', 1671, 'A', 66, 379, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4504687, '0434 Zulauf Rest', 5091, 'South Wilbertberg', 'Andelsbolig', 69, 4, '1984-05-30', 476, 'D', 73, 366, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4637485, '65418 Block Village', 3062, 'East Wadeburgh', 'Villa', 58, 5, '1983-06-07', 689, 'C', 52, 211, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5323049, '66948 Wuckert Skyway', 2837, 'Nathanaelberg', 'Lejlighed', 100, 1, '2020-02-04', 973, 'F', 100, 476, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2082552, '0821 Sipes Road', 6708, 'Greenport', 'Villa', 103, 5, '2025-01-05', 1002, 'E', 7, 439, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1481286, '778 Carter Lights', 8913, 'Durganfort', 'Andelsbolig', 61, 7, '1977-04-23', 799, 'F', 84, 163, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5078282, '2757 Nienow Fort', 9926, 'North Howellview', 'Andelsbolig', 169, 1, '1994-04-21', 846, 'D', 15, 206, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4082459, '879 Bernhard Pass', 5930, 'Labadiefurt', 'Kolonihavehus', 280, 6, '1999-04-16', 731, 'C', 2, 447, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1057409, '04216 Irma Union', 1867, 'Moenburgh', 'Ældrebolig', 167, 1, '2012-01-30', 1466, 'C', 11, 263, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5030767, '1841 Pinkie Rest', 3240, 'Hammesmouth', 'Andelsbolig', 215, 8, '1989-04-03', 1433, 'A', 54, 193, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3631190, '2846 O''Keefe Rapid', 2033, 'North Willow', 'Ejerlejlighed', 167, 7, '1995-08-02', 958, 'C', 78, 172, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4555629, '596 Melany Crest', 7919, 'Considineshire', 'Ungdomsbolig', 255, 2, '2017-07-28', 1658, 'F', 26, 388, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7988212, '47944 Justyn Trail', 7567, 'Port Vena', 'Lejlighed', 49, 3, '1971-10-23', 1216, 'G', 62, 480, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1176929, '246 Ruecker Tunnel', 3104, 'North Vernice', 'Rækkehus', 296, 8, '1992-02-28', 473, 'F', 56, 120, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3803070, '912 Cummerata Glens', 5557, 'East Tristinview', 'Ældrebolig', 264, 3, '2006-05-16', 1248, 'B', 7, 210, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7626071, '744 Windler Spurs', 57, 'East Branson', 'Rækkehus', 290, 6, '2000-05-26', 664, 'B', 80, 443, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2064841, '5669 Baumbach Shore', 6598, 'East Colby', 'Lejlighed', 92, 8, '1986-01-08', 1102, 'E', 100, 198, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6193438, '2263 Howe Mountains', 7069, 'Port Kassandraland', 'Ungdomsbolig', 85, 7, '1958-12-06', 661, 'B', 33, 380, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3575125, '2943 Randall Square', 4484, 'West Zackerymouth', 'Andelsbolig', 255, 7, '2018-03-19', 965, 'E', 28, 153, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3502099, '6710 Marta Gateway', 8231, 'East Rainachester', 'Sommerhus', 55, 8, '2011-01-08', 1142, 'A', 24, 228, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6784100, '4675 Parker Street', 3662, 'Volkmanchester', 'Villa', 282, 4, '1994-11-24', 746, 'C', 88, 291, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7876944, '25262 Jermey Isle', 860, 'Harrischester', 'Sommerhus', 75, 7, '2007-12-26', 1142, 'G', 7, 416, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (500452, '313 Daniel Motorway', 8298, 'Port Thea', 'Kolonihavehus', 86, 2, '1961-10-10', 1504, 'F', 43, 124, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3013136, '0763 Brekke Curve', 3970, 'Raymundoville', 'Lejlighed', 163, 8, '1966-02-08', 873, 'F', 19, 215, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5747483, '448 Jones Mall', 7685, 'Townemouth', 'Andelsbolig', 250, 7, '2015-03-22', 795, 'D', 40, 334, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6074524, '2498 Salvatore Pine', 4998, 'Lake Jaquan', 'Kolonihavehus', 138, 8, '1967-05-29', 1282, 'G', 24, 158, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1574116, '77722 Von Port', 3486, 'O''Connermouth', 'Kolonihavehus', 64, 6, '2019-10-15', 986, 'C', 35, 479, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2040488, '572 Koepp Path', 9386, 'Emmettfurt', 'Andelsbolig', 198, 8, '1971-06-28', 1423, 'C', 14, 211, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5414563, '397 Ana Locks', 8137, 'West Andersonburgh', 'Lejlighed', 249, 4, '1985-10-24', 487, 'A', 41, 358, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4779358, '801 Feil Cape', 518, 'Taliaville', 'Lejlighed', 223, 2, '2020-03-24', 1268, 'A', 72, 62, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1390495, '970 D''Amore Rue', 8113, 'Wolfview', 'Villa', 43, 7, '2024-07-28', 1451, 'F', 82, 368, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5272962, '00445 Bailey River', 286, 'East Noah', 'Sommerhus', 109, 1, '2024-11-12', 977, 'B', 73, 194, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5635565, '949 Savion Stravenue', 4211, 'Doyletown', 'Ungdomsbolig', 71, 8, '2023-12-09', 847, 'F', 96, 403, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7057163, '04270 Harber Villages', 9368, 'Mohrhaven', 'Villa', 146, 1, '2006-01-17', 1633, 'C', 30, 479, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3137705, '309 Noelia Turnpike', 5124, 'New Oceane', 'Ungdomsbolig', 40, 6, '1993-08-02', 1398, 'G', 76, 432, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2332972, '83443 Jeanette Fork', 4174, 'New Jerrell', 'Ungdomsbolig', 59, 1, '2002-01-29', 340, 'E', 44, 498, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6801171, '641 Corwin Stream', 9935, 'North Alexafort', 'Ældrebolig', 231, 2, '1987-03-28', 1655, 'A', 76, 278, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (798501, '6197 Kristoffer Cape', 7345, 'Mckaylamouth', 'Rækkehus', 224, 8, '1957-05-03', 1569, 'F', 89, 393, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6837928, '25026 Baumbach Courts', 3529, 'Rodriguezberg', 'Ungdomsbolig', 254, 1, '1977-03-24', 743, 'G', 68, 214, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (666989, '20908 Benny Plaza', 6890, 'West Freddy', 'Ejerlejlighed', 46, 5, '1995-02-09', 442, 'E', 8, 459, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4408275, '9658 Murray Canyon', 1841, 'Bertrandfort', 'Lejlighed', 114, 3, '1995-07-06', 562, 'G', 20, 252, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5553183, '903 Kirk Springs', 6889, 'South Kurt', 'Kolonihavehus', 125, 4, '1975-06-15', 1605, 'F', 72, 300, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2439566, '55806 Kling Falls', 5348, 'Beierhaven', 'Ejerlejlighed', 187, 4, '1960-06-25', 1177, 'G', 63, 130, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5970165, '95212 Jane Roads', 7443, 'Lueilwitzborough', 'Andelsbolig', 191, 4, '1966-05-24', 1632, 'F', 36, 500, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1965288, '95983 Rempel Center', 5036, 'New Carolannetown', 'Ejerlejlighed', 55, 3, '1975-02-14', 1422, 'G', 42, 57, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7671945, '189 Windler Street', 8067, 'Reingertown', 'Kolonihavehus', 67, 5, '2015-11-30', 839, 'B', 95, 480, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4767030, '8752 Kyra Lock', 8459, 'Port Issac', 'Andelsbolig', 223, 4, '2007-05-23', 1592, 'D', 21, 285, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1788837, '582 Jermain Villages', 1248, 'Lake Hildegardmouth', 'Ejerlejlighed', 211, 4, '1964-11-11', 1136, 'C', 51, 134, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5916112, '0827 Ericka Mountains', 7264, 'Darienfurt', 'Lejlighed', 233, 3, '1978-06-30', 1620, 'B', 2, 473, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4962089, '2555 Gorczany Fort', 7519, 'Lake Lafayette', 'Rækkehus', 92, 2, '2006-04-16', 809, 'F', 44, 302, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2090638, '14769 Nolan Station', 6751, 'New London', 'Ældrebolig', 95, 3, '1958-09-06', 1274, 'B', 54, 316, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7947960, '2740 Oswaldo Trace', 368, 'Muellerburgh', 'Ungdomsbolig', 108, 8, '1998-04-06', 1459, 'D', 4, 250, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5302235, '59927 Nathanael Mill', 3980, 'Port Clotilde', 'Sommerhus', 88, 2, '1969-01-30', 203, 'E', 42, 94, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6130100, '8766 Dino Prairie', 5480, 'West Felipafort', 'Kolonihavehus', 156, 5, '1961-03-28', 1125, 'D', 13, 150, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1258393, '336 Rafael Landing', 4812, 'Kayabury', 'Ungdomsbolig', 52, 1, '1969-09-06', 736, 'F', 27, 384, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4555468, '29481 Eudora Roads', 543, 'Lake Enriquetown', 'Lejlighed', 45, 4, '1965-04-25', 601, 'G', 71, 226, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5741118, '9756 Cassie Plains', 5542, 'Hermannfurt', 'Ejerlejlighed', 175, 2, '2006-08-11', 1377, 'B', 33, 85, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7653259, '752 Russel Circle', 6660, 'Lake Edgardo', 'Rækkehus', 94, 7, '1973-10-23', 1131, 'C', 49, 102, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (619552, '39498 Tina Loop', 9714, 'Lake Aubree', 'Ejerlejlighed', 194, 8, '1994-04-04', 357, 'B', 36, 317, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1302919, '865 Eliza Junctions', 1902, 'Justenland', 'Ungdomsbolig', 136, 1, '2002-11-22', 1518, 'A', 39, 160, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1748622, '1148 Purdy Turnpike', 7315, 'Flossieshire', 'Ungdomsbolig', 69, 7, '1960-01-21', 1489, 'E', 17, 96, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6845021, '3239 Michaela Ports', 5821, 'East Alysaborough', 'Sommerhus', 284, 5, '2023-07-31', 894, 'G', 32, 220, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4925464, '8864 Kub Alley', 1615, 'Mariannatown', 'Ældrebolig', 78, 8, '2021-10-21', 1286, 'C', 46, 435, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2596352, '8713 Earline Summit', 8840, 'Hesseltown', 'Villa', 40, 3, '1991-06-17', 1535, 'F', 59, 346, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2944549, '83618 Schmeler Hills', 3752, 'Batzburgh', 'Andelsbolig', 254, 5, '1976-03-20', 813, 'B', 53, 165, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5134461, '0221 Bruen Viaduct', 8579, 'Lockmanmouth', 'Sommerhus', 243, 2, '2018-04-17', 1646, 'A', 38, 34, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4707735, '974 Fritsch Ways', 666, 'Kraigchester', 'Lejlighed', 117, 5, '1976-04-19', 1104, 'D', 31, 45, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (718073, '46123 Nicolas Plains', 2748, 'West Billie', 'Lejlighed', 43, 5, '1962-12-23', 384, 'C', 59, 207, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6521905, '091 Kristin Hill', 2301, 'Jarrellview', 'Ungdomsbolig', 181, 8, '1982-02-28', 1355, 'G', 45, 388, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5125898, '26376 Mayra Flat', 8813, 'South Elsie', 'Sommerhus', 219, 2, '1987-06-11', 1076, 'C', 77, 480, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (609442, '84782 Ratke River', 3277, 'Hymanshire', 'Andelsbolig', 86, 8, '2024-01-10', 312, 'A', 44, 183, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4252162, '573 MacGyver Hollow', 5011, 'New Zella', 'Sommerhus', 172, 2, '1990-01-19', 1167, 'F', 44, 8, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5213660, '591 Van Gardens', 3959, 'Beckerhaven', 'Rækkehus', 132, 6, '1967-11-07', 819, 'E', 82, 430, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6683158, '4525 Kuvalis Trafficway', 1055, 'Reynoldsport', 'Andelsbolig', 59, 7, '1966-03-28', 1245, 'E', 64, 399, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3836374, '3161 Cary Canyon', 7347, 'North Maiabury', 'Sommerhus', 237, 5, '2019-11-08', 769, 'E', 64, 116, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5841923, '329 Gabriella Valleys', 3159, 'Murphybury', 'Ungdomsbolig', 289, 5, '1992-10-28', 1521, 'B', 88, 143, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1391750, '3330 Schaefer Hill', 7051, 'South Alberta', 'Ejerlejlighed', 198, 7, '1961-09-03', 1383, 'C', 37, 92, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6232299, '246 Miracle Locks', 7064, 'Port Carlieberg', 'Ungdomsbolig', 139, 3, '1985-10-02', 726, 'B', 24, 351, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4327805, '324 King Pass', 8481, 'East Ramon', 'Ungdomsbolig', 298, 7, '1978-05-05', 1196, 'D', 27, 272, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3585579, '92036 Rosalee Lock', 5745, 'Kirlinmouth', 'Villa', 232, 5, '1971-03-02', 1068, 'A', 13, 24, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6125175, '778 Ondricka Station', 4368, 'Port Brandyn', 'Lejlighed', 252, 6, '1957-04-10', 747, 'B', 46, 244, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3147913, '627 Bradtke Stravenue', 558, 'West Breanne', 'Ældrebolig', 106, 4, '1980-01-29', 772, 'A', 1, 50, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6287831, '7438 Reinger Stravenue', 9926, 'Carterchester', 'Villa', 45, 1, '1984-07-10', 1281, 'G', 41, 404, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5960832, '52576 Romaguera Crossing', 9542, 'Alexannestad', 'Ejerlejlighed', 61, 2, '1988-01-13', 1004, 'F', 17, 32, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4159900, '74839 Hudson Isle', 6312, 'East Cicero', 'Ejerlejlighed', 52, 1, '2018-07-26', 931, 'B', 12, 404, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5889404, '089 Dicki Bridge', 4647, 'Trevershire', 'Andelsbolig', 257, 1, '1981-09-17', 1639, 'G', 48, 407, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3811094, '88967 Ansley Lake', 2097, 'East Muhammadside', 'Ejerlejlighed', 78, 7, '2021-09-13', 984, 'E', 82, 366, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3904630, '2439 Laila Spring', 3239, 'Dejafurt', 'Sommerhus', 244, 2, '1995-01-05', 664, 'C', 20, 449, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3528253, '3918 Elisa Plains', 1808, 'New Mohamedton', 'Ungdomsbolig', 226, 3, '1989-04-13', 1626, 'E', 71, 390, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3690643, '6034 Dorian Loop', 813, 'West Van', 'Ejerlejlighed', 121, 3, '2019-08-16', 368, 'E', 72, 20, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5815829, '66356 Clarissa Trace', 1293, 'O''Konport', 'Sommerhus', 202, 7, '2021-07-05', 1332, 'B', 84, 138, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1245704, '18825 Alison Drive', 6503, 'Constanceshire', 'Andelsbolig', 104, 3, '1975-06-16', 851, 'F', 57, 249, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1506877, '2300 Pablo Circles', 5321, 'Lake Reymundoberg', 'Kolonihavehus', 223, 6, '1963-08-22', 1430, 'G', 32, 183, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1983802, '8733 Adeline Manors', 6632, 'Irwinmouth', 'Ungdomsbolig', 85, 8, '1980-07-16', 419, 'F', 52, 372, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4225898, '634 Krajcik Run', 3294, 'South Carmenmouth', 'Kolonihavehus', 300, 3, '2010-12-08', 1724, 'G', 46, 106, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6777702, '4348 Adolfo Crossing', 3446, 'Lake Adolf', 'Kolonihavehus', 92, 4, '1996-04-13', 1241, 'G', 77, 378, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4663635, '51420 Torey Lodge', 2351, 'Prosaccomouth', 'Sommerhus', 158, 1, '2017-11-10', 380, 'B', 27, 216, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7086618, '152 Aurore Court', 6069, 'Edgardomouth', 'Villa', 103, 5, '2005-06-16', 1050, 'C', 4, 205, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6693983, '74677 Monty Views', 1297, 'Vergieshire', 'Kolonihavehus', 95, 5, '1964-06-17', 1092, 'D', 56, 324, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3891244, '87415 Julio Valley', 9911, 'East Megane', 'Sommerhus', 51, 2, '1983-11-18', 1081, 'F', 94, 246, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1849624, '599 Gardner Overpass', 2403, 'Murrayside', 'Villa', 120, 6, '1999-06-28', 602, 'C', 81, 184, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2695289, '9687 Graham Station', 5991, 'South Luella', 'Lejlighed', 298, 2, '2002-01-05', 625, 'B', 69, 42, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2494503, '6892 Kovacek Passage', 8148, 'Lake Jaylanview', 'Andelsbolig', 263, 5, '1986-10-29', 1018, 'E', 96, 128, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6945714, '59632 Alena Plain', 2878, 'Alfredofurt', 'Lejlighed', 223, 8, '1958-03-03', 830, 'F', 55, 9, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2563242, '74956 Tyson Avenue', 7079, 'Paucekmouth', 'Ejerlejlighed', 198, 4, '2021-06-04', 1219, 'B', 29, 30, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5245739, '1960 Cristian Radial', 2940, 'Lake Adriennefort', 'Ejerlejlighed', 162, 6, '2023-01-24', 1562, 'D', 59, 125, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6113610, '489 Hickle Crossroad', 1029, 'New Ulices', 'Lejlighed', 84, 6, '1955-10-13', 841, 'G', 84, 25, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3180310, '366 Watsica Springs', 4247, 'Hahnville', 'Sommerhus', 249, 8, '1966-09-05', 825, 'E', 5, 140, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2255791, '819 Blair Wells', 814, 'East Kendrafort', 'Rækkehus', 51, 3, '2025-03-31', 1182, 'C', 62, 452, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7504515, '378 Felicity Gateway', 479, 'East Shyann', 'Ejerlejlighed', 220, 5, '1956-04-28', 487, 'E', 29, 197, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3522230, '1137 Torphy Parks', 6152, 'Giovannifort', 'Ældrebolig', 224, 1, '1999-09-17', 1611, 'D', 20, 24, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (662981, '549 Pattie Expressway', 6007, 'New Donavon', 'Sommerhus', 225, 8, '2015-06-03', 893, 'D', 65, 300, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3450209, '11564 Alycia Gardens', 2306, 'South Brianamouth', 'Ungdomsbolig', 133, 4, '2020-12-10', 1107, 'D', 44, 28, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2382699, '4445 Ruben Mission', 8831, 'Hyattmouth', 'Andelsbolig', 179, 7, '1984-10-18', 774, 'G', 44, 186, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5584092, '9466 Lolita Fall', 5179, 'Eugeniafurt', 'Rækkehus', 67, 8, '1997-12-02', 1291, 'C', 51, 405, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4713444, '27333 Antwan Plaza', 4477, 'Cormierbury', 'Lejlighed', 269, 4, '2016-05-19', 1579, 'A', 75, 159, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6871779, '273 Osbaldo Squares', 2633, 'North Bellaborough', 'Villa', 238, 4, '1984-04-27', 866, 'F', 71, 37, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6400972, '80873 Annamarie Inlet', 6498, 'Lake Carmine', 'Andelsbolig', 285, 3, '1973-07-11', 1647, 'B', 21, 99, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3014551, '240 Jovanny Park', 6293, 'South Nathanial', 'Kolonihavehus', 161, 6, '2007-02-26', 376, 'D', 93, 34, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3795112, '656 Gislason Station', 7324, 'Cathyburgh', 'Sommerhus', 265, 5, '2006-07-13', 1514, 'E', 59, 344, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1478814, '8176 Jeffrey Ports', 597, 'Swiftfort', 'Villa', 63, 4, '1973-07-20', 1066, 'B', 84, 126, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1298774, '052 Brekke Summit', 961, 'South Yoshikoside', 'Kolonihavehus', 204, 5, '1971-07-19', 412, 'D', 16, 384, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2704802, '9742 Dameon Rue', 6602, 'Juanitaview', 'Lejlighed', 98, 6, '2004-10-09', 1107, 'F', 77, 125, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2598215, '68222 Orville Landing', 5741, 'Schultzhaven', 'Villa', 220, 5, '1971-05-29', 669, 'D', 9, 406, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1017798, '37411 Olson Radial', 3560, 'Lake Nellie', 'Sommerhus', 191, 6, '1971-11-07', 1510, 'D', 5, 375, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3810611, '17572 Cullen Highway', 8152, 'Morarland', 'Kolonihavehus', 242, 1, '1964-09-10', 1728, 'B', 64, 70, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5887663, '5214 Ratke Village', 5520, 'Lake Camyllefurt', 'Rækkehus', 119, 2, '1978-06-03', 1044, 'D', 86, 77, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5478928, '3145 Marcia Burg', 8343, 'Lebsackstad', 'Kolonihavehus', 233, 5, '1959-05-04', 1211, 'G', 44, 42, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1321395, '97896 Tommie Garden', 5264, 'Parisianville', 'Ældrebolig', 295, 6, '1993-10-13', 1134, 'C', 74, 58, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6175646, '71928 Emilie Prairie', 6848, 'Lelandmouth', 'Ejerlejlighed', 173, 7, '1996-12-18', 1623, 'D', 9, 46, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6213749, '3932 Foster Union', 7119, 'West Reece', 'Sommerhus', 225, 1, '2017-09-04', 1281, 'D', 9, 389, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (778172, '566 Rolfson Expressway', 1299, 'New Tristonfurt', 'Rækkehus', 177, 8, '1958-06-30', 617, 'C', 89, 25, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4582436, '04718 Adams Keys', 1273, 'Amparofort', 'Ungdomsbolig', 143, 1, '1984-06-19', 974, 'A', 38, 255, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4629594, '97611 Faustino Plaza', 8480, 'Wildermanmouth', 'Rækkehus', 190, 2, '1987-10-12', 1409, 'G', 64, 246, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5488773, '325 Yundt Falls', 2231, 'West Jesusmouth', 'Kolonihavehus', 57, 4, '2004-11-27', 706, 'E', 52, 87, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2083500, '00940 Witting Plain', 3432, 'Grimesberg', 'Ungdomsbolig', 87, 1, '1982-03-31', 1004, 'A', 93, 373, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2980656, '18378 Corrine Corners', 3013, 'Vilmamouth', 'Ældrebolig', 209, 8, '1970-04-26', 880, 'G', 27, 56, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4255015, '984 Norbert Pike', 2646, 'Gregoryview', 'Ældrebolig', 205, 5, '1990-06-28', 844, 'F', 43, 49, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1669808, '76818 Ophelia Bypass', 980, 'Lake Eliezer', 'Sommerhus', 69, 8, '1997-07-24', 625, 'B', 23, 5, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7789424, '276 Lakin Isle', 6660, 'East Wandamouth', 'Villa', 254, 8, '1974-03-25', 821, 'A', 42, 29, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5523146, '00069 Geovanny Road', 1253, 'East Kobetown', 'Andelsbolig', 125, 1, '1964-05-04', 378, 'F', 69, 171, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7463836, '063 Harber Canyon', 3544, 'Grantbury', 'Ældrebolig', 64, 6, '2011-01-01', 1313, 'B', 53, 199, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2081406, '7354 King Pike', 6206, 'North Avisfurt', 'Kolonihavehus', 198, 5, '1975-01-14', 312, 'G', 33, 231, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3315507, '338 Schaden Path', 7720, 'Cathrynshire', 'Andelsbolig', 50, 1, '1973-11-21', 1379, 'E', 94, 470, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5422902, '91423 Maiya Bridge', 7082, 'North Anaside', 'Villa', 136, 2, '2022-09-21', 1513, 'C', 91, 414, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7794269, '9876 MacGyver Branch', 2828, 'West Bethelton', 'Kolonihavehus', 168, 6, '1981-03-29', 626, 'C', 29, 173, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3139586, '9614 Quigley Plaza', 9940, 'Evanchester', 'Lejlighed', 133, 4, '2001-08-24', 931, 'A', 77, 231, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4809236, '4630 Brayan Parkway', 535, 'Lake Landen', 'Ældrebolig', 256, 6, '2019-12-21', 873, 'D', 9, 159, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (866397, '3066 Streich Court', 5108, 'Wisokyside', 'Ejerlejlighed', 204, 1, '2013-10-12', 1181, 'A', 95, 347, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6100646, '72184 Schimmel Greens', 501, 'Lake Cortneystad', 'Sommerhus', 113, 3, '1980-10-01', 1046, 'C', 51, 198, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3741909, '362 Marjolaine Trafficway', 5918, 'East Douglasberg', 'Villa', 283, 1, '1955-06-21', 1672, 'G', 55, 476, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3876300, '7009 Naomi Walks', 5802, 'Gradyview', 'Andelsbolig', 96, 1, '2001-08-10', 1027, 'F', 100, 262, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7515029, '79116 Jerod Corners', 4275, 'Littlebury', 'Villa', 85, 3, '1958-04-13', 1548, 'A', 42, 468, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1389092, '399 Rath Pine', 5256, 'Marlintown', 'Sommerhus', 91, 1, '1978-06-27', 916, 'F', 48, 115, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1186452, '88900 Maeve Inlet', 4002, 'Bahringerton', 'Kolonihavehus', 51, 5, '1968-05-16', 237, 'F', 57, 461, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1275368, '44938 Halvorson Causeway', 7951, 'Criststad', 'Lejlighed', 47, 5, '1983-12-26', 589, 'A', 37, 477, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2051901, '08582 Lesly Center', 2615, 'Hoppefurt', 'Lejlighed', 148, 3, '2014-08-19', 1342, 'A', 45, 251, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3611170, '0985 Dooley Fork', 9309, 'South Clara', 'Ejerlejlighed', 118, 1, '2020-10-11', 1361, 'E', 42, 280, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6343043, '4761 Chanel Port', 2824, 'Deloresburgh', 'Villa', 205, 2, '2011-09-02', 1537, 'G', 80, 495, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1396717, '330 Mohammad Fords', 961, 'South Juwan', 'Sommerhus', 201, 8, '1970-01-22', 715, 'C', 62, 200, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3458530, '867 Ernest Ramp', 8763, 'New Madyson', 'Lejlighed', 78, 7, '2004-01-31', 299, 'D', 54, 4, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1491717, '4993 Gulgowski Park', 6393, 'Lake Brock', 'Villa', 180, 8, '1998-01-18', 1224, 'E', 70, 348, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2307512, '3623 Lurline Island', 2287, 'Heaneymouth', 'Sommerhus', 53, 1, '2010-02-23', 1374, 'G', 48, 135, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7002381, '705 Heloise Junctions', 8426, 'Jaskolskimouth', 'Rækkehus', 96, 8, '1958-01-31', 1458, 'B', 26, 218, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3532349, '36393 Klocko Dale', 3302, 'Hansenfurt', 'Rækkehus', 50, 3, '2014-08-26', 334, 'A', 22, 205, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4824809, '20860 Carter Expressway', 4496, 'Feilchester', 'Andelsbolig', 144, 2, '2006-03-17', 1491, 'A', 92, 383, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (664617, '6404 Rhoda Spring', 9831, 'South Elizabethmouth', 'Ungdomsbolig', 267, 7, '2007-06-25', 595, 'C', 26, 407, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5846554, '726 Rodrigo Squares', 8305, 'Bruentown', 'Ungdomsbolig', 289, 1, '1967-01-22', 445, 'G', 71, 303, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1207262, '647 Kutch Throughway', 9833, 'Alisonport', 'Villa', 132, 6, '1956-05-28', 316, 'B', 92, 325, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4349437, '1433 Ansley Villages', 7729, 'Fisherland', 'Villa', 269, 7, '1977-03-06', 1267, 'F', 82, 442, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1016996, '026 Osinski Summit', 1824, 'West Lavernside', 'Lejlighed', 280, 1, '1977-11-20', 438, 'D', 75, 375, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1549353, '50733 Rosetta Trail', 6073, 'Vandervortfort', 'Lejlighed', 270, 2, '1992-05-12', 1390, 'D', 10, 242, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2233584, '45800 Filiberto Route', 8309, 'Lake Cathymouth', 'Sommerhus', 271, 1, '2005-02-12', 1518, 'F', 21, 381, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (545302, '2610 Arlo Mission', 473, 'Adolphusstad', 'Lejlighed', 188, 5, '1958-12-06', 1389, 'C', 77, 206, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7841880, '35210 Wilderman Curve', 7975, 'Metaside', 'Sommerhus', 110, 7, '1989-02-09', 711, 'C', 33, 444, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3415535, '32431 Welch Avenue', 9754, 'New Alicetown', 'Ungdomsbolig', 183, 2, '2000-10-09', 798, 'G', 61, 359, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3994914, '0098 Francisco Valley', 3531, 'North Stefanville', 'Villa', 172, 2, '1997-01-31', 411, 'B', 71, 228, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5494774, '184 Hettinger Ranch', 6546, 'Lake Micaela', 'Ungdomsbolig', 138, 1, '1957-05-31', 350, 'A', 11, 378, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4927597, '19584 Romaguera Pass', 9513, 'Bernardland', 'Kolonihavehus', 203, 2, '1984-10-13', 1441, 'E', 24, 446, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7553582, '22662 Nikolaus Junctions', 9341, 'O''Connelltown', 'Sommerhus', 49, 5, '1960-09-20', 1500, 'E', 55, 404, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3388812, '8367 Kerluke Ridge', 9410, 'New Estebanmouth', 'Rækkehus', 100, 4, '2023-09-17', 433, 'F', 70, 104, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3255451, '917 Upton Isle', 5422, 'Moshechester', 'Sommerhus', 158, 7, '1960-03-12', 1115, 'F', 96, 132, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1844399, '2698 Murray Forge', 8437, 'Reginaldhaven', 'Lejlighed', 245, 5, '1991-05-07', 1182, 'G', 60, 360, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2589413, '391 Dietrich Ramp', 8525, 'South Ericaport', 'Ældrebolig', 279, 6, '1977-01-22', 942, 'A', 14, 361, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1658179, '4804 Stroman Oval', 5120, 'North Ulicesberg', 'Rækkehus', 198, 7, '1963-05-05', 1579, 'B', 20, 175, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4341294, '21391 Bruen Ranch', 5935, 'Parisianbury', 'Lejlighed', 207, 3, '2014-09-04', 654, 'A', 41, 455, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7455577, '6635 Abdiel Prairie', 8945, 'Graysonbury', 'Kolonihavehus', 299, 4, '1977-05-11', 546, 'F', 18, 475, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5751056, '9384 Trantow Forge', 3800, 'Cristshire', 'Rækkehus', 109, 1, '1978-02-02', 1246, 'A', 22, 317, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4823655, '3024 Solon View', 3609, 'Wellingtonberg', 'Ældrebolig', 56, 6, '1984-05-24', 1282, 'C', 8, 428, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2542869, '24479 O''Keefe Cliffs', 3535, 'Durganchester', 'Villa', 101, 1, '1969-07-22', 413, 'A', 35, 54, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3227431, '2641 Lori Hill', 8497, 'Emardland', 'Lejlighed', 279, 6, '1970-12-12', 1037, 'C', 5, 322, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3703821, '98427 Reese Island', 9281, 'Legrosport', 'Ungdomsbolig', 267, 6, '2012-01-31', 627, 'E', 68, 266, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6019013, '6259 Avery Street', 7571, 'Funkshire', 'Ældrebolig', 195, 2, '1961-02-06', 963, 'C', 7, 117, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4070595, '25873 Oberbrunner Overpass', 2294, 'Jacobsfort', 'Villa', 104, 7, '2020-03-08', 711, 'G', 69, 469, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3303860, '181 Cummings Turnpike', 4773, 'Prohaskaberg', 'Ungdomsbolig', 210, 5, '2001-02-11', 977, 'G', 57, 388, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3882993, '59721 Schultz Vista', 386, 'Schimmelhaven', 'Ungdomsbolig', 133, 4, '1967-07-18', 1416, 'E', 90, 309, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5164941, '771 Paxton Station', 1517, 'West Bernie', 'Villa', 89, 1, '1993-07-25', 1204, 'E', 6, 386, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3663981, '13265 Domenic Vista', 8059, 'Aliyaborough', 'Sommerhus', 181, 2, '1969-01-14', 1268, 'E', 81, 313, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1273213, '259 Wisozk Heights', 9123, 'North Earnestine', 'Ejerlejlighed', 264, 8, '1978-09-16', 696, 'D', 24, 131, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3443131, '67812 Heath Shore', 7396, 'North Eulahbury', 'Sommerhus', 125, 7, '1980-12-28', 413, 'C', 35, 42, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5910087, '781 Hamill Rapid', 976, 'Schneiderhaven', 'Rækkehus', 181, 8, '2000-02-11', 524, 'E', 53, 461, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6569995, '2997 Cummerata Island', 4934, 'Hirtheview', 'Sommerhus', 76, 5, '1993-07-25', 1498, 'D', 8, 38, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (744057, '91501 Kovacek Harbor', 5631, 'Edisonburgh', 'Ejerlejlighed', 115, 6, '1969-11-28', 1303, 'A', 45, 388, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1126508, '1412 Kyler Turnpike', 5970, 'North Reginaldport', 'Lejlighed', 260, 1, '2000-06-03', 643, 'A', 67, 179, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (599651, '079 Gleichner Vista', 1955, 'Klockoborough', 'Sommerhus', 226, 8, '1979-05-16', 922, 'B', 77, 417, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1940890, '302 Anna Crest', 3003, 'Nikolausfurt', 'Lejlighed', 148, 2, '2011-12-03', 1631, 'B', 48, 16, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2863910, '1820 Lakin Ville', 6941, 'West Marielaville', 'Ældrebolig', 66, 5, '1977-07-18', 602, 'B', 82, 432, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6680905, '05200 Bogisich Manors', 2772, 'New Elbertshire', 'Lejlighed', 131, 3, '1989-10-11', 1134, 'A', 97, 81, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1377728, '6521 Winifred Village', 1695, 'Harleymouth', 'Kolonihavehus', 62, 7, '2000-12-08', 179, 'A', 8, 494, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (888142, '98937 Marks Plains', 2639, 'Kautzerville', 'Kolonihavehus', 297, 6, '1997-07-17', 1505, 'E', 32, 476, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1235530, '7727 Maudie Ferry', 8094, 'New Gildamouth', 'Lejlighed', 197, 8, '2015-05-06', 303, 'G', 24, 196, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4103770, '0974 Lina Walks', 3231, 'Lake Austinland', 'Ungdomsbolig', 57, 6, '1984-09-05', 618, 'F', 32, 277, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6795119, '5751 Bauch Mountain', 8015, 'Beierchester', 'Lejlighed', 241, 5, '2024-07-05', 376, 'C', 15, 74, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7261803, '54906 Ondricka Road', 2511, 'Alvertamouth', 'Andelsbolig', 107, 7, '1960-04-26', 991, 'E', 48, 467, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2259666, '471 Senger Terrace', 1822, 'East Cielohaven', 'Rækkehus', 238, 7, '1962-12-12', 775, 'C', 74, 472, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4753677, '63254 Wintheiser Square', 4539, 'Langoshberg', 'Lejlighed', 131, 6, '1988-05-02', 710, 'D', 89, 17, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5997542, '99372 Ernser Cove', 7567, 'Noblechester', 'Lejlighed', 180, 7, '1989-04-01', 681, 'E', 85, 183, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7497980, '90502 Rempel Knoll', 5969, 'Port Arnoldobury', 'Rækkehus', 88, 8, '1964-08-08', 782, 'A', 74, 299, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4925980, '9942 Rolfson Avenue', 6896, 'North Akeem', 'Ældrebolig', 58, 8, '1977-02-13', 1256, 'B', 71, 79, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7176625, '377 Trycia Hills', 830, 'Spinkaberg', 'Andelsbolig', 272, 3, '1962-01-29', 742, 'A', 47, 60, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2115162, '67209 Schimmel Crest', 4983, 'Port Fredrickland', 'Rækkehus', 228, 1, '1998-05-26', 1134, 'E', 61, 326, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3932160, '524 Robel Village', 9934, 'Busterport', 'Kolonihavehus', 92, 6, '2022-04-28', 302, 'C', 4, 88, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (580818, '1388 Watsica Station', 1752, 'Johnsville', 'Ældrebolig', 261, 5, '2017-03-12', 992, 'E', 5, 55, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2948251, '09421 Mertz Parkways', 4665, 'Reichertside', 'Lejlighed', 234, 3, '1986-02-13', 1310, 'B', 18, 484, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7036078, '64733 Connelly Spring', 8419, 'Ebonyborough', 'Ældrebolig', 96, 7, '1984-12-07', 1392, 'E', 85, 496, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4677644, '508 Sonya Valleys', 2189, 'Ullrichland', 'Villa', 290, 5, '2002-08-11', 1286, 'F', 21, 418, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1516015, '96903 Smitham Springs', 6448, 'North Francesco', 'Ejerlejlighed', 120, 6, '2019-03-07', 1484, 'E', 84, 342, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4920635, '44109 Marcelina Village', 413, 'Jaycebury', 'Lejlighed', 72, 3, '2012-03-10', 1206, 'G', 12, 342, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4648982, '87036 Juwan View', 9453, 'Batzton', 'Ældrebolig', 173, 2, '1974-09-26', 1523, 'F', 9, 224, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2705663, '4715 Lynch Fords', 7150, 'Raphaelleborough', 'Andelsbolig', 151, 1, '2005-07-25', 838, 'E', 73, 148, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (536581, '6320 Brakus Stream', 124, 'South Savion', 'Kolonihavehus', 134, 8, '2006-06-04', 737, 'A', 37, 13, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6768235, '09382 Haleigh Trail', 162, 'Pagacport', 'Kolonihavehus', 243, 3, '2001-09-30', 409, 'G', 79, 37, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4361361, '86082 Wisoky Landing', 7950, 'Blockfurt', 'Ejerlejlighed', 296, 5, '2009-03-14', 751, 'F', 81, 484, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6123301, '426 Maye Manor', 8549, 'Sipesville', 'Villa', 192, 3, '1978-10-29', 470, 'G', 85, 81, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4106749, '3164 Trycia Tunnel', 3930, 'East Julius', 'Lejlighed', 40, 8, '2017-08-06', 991, 'D', 43, 471, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1729524, '4402 Koby Crest', 3800, 'Schadenhaven', 'Sommerhus', 141, 6, '2000-08-10', 285, 'E', 21, 59, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6838868, '38055 Shanahan Views', 5200, 'Martinton', 'Rækkehus', 297, 6, '1969-08-11', 1258, 'A', 55, 106, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4918271, '5857 Bernier Alley', 6329, 'North Hermannmouth', 'Lejlighed', 265, 1, '1987-07-14', 1531, 'G', 37, 73, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6970108, '2385 Cielo Walk', 2728, 'Beerstad', 'Sommerhus', 197, 4, '1968-02-18', 452, 'B', 66, 260, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2723456, '7133 Adelia Falls', 5038, 'West Verda', 'Ejerlejlighed', 181, 3, '1992-08-03', 1451, 'A', 3, 453, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3214697, '158 Karen Stream', 8484, 'Lake Maximilliaburgh', 'Kolonihavehus', 213, 7, '2019-03-14', 596, 'B', 91, 442, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5745928, '13946 Konopelski Flat', 9905, 'Mandyview', 'Andelsbolig', 192, 5, '2023-01-30', 1429, 'G', 53, 7, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6709461, '18063 Schultz Point', 9894, 'New Mack', 'Ejerlejlighed', 181, 8, '1982-05-09', 1572, 'F', 16, 128, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6908948, '2515 Jettie Corner', 854, 'East Vinceport', 'Villa', 220, 5, '1995-05-12', 767, 'E', 98, 134, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2637455, '271 Kariane Pines', 5606, 'Lake Torrancemouth', 'Rækkehus', 181, 1, '2013-09-28', 1289, 'G', 95, 329, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3342155, '8027 Kyla Center', 8020, 'Natstad', 'Rækkehus', 44, 8, '2005-05-24', 1146, 'D', 5, 127, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (870949, '3378 Emanuel Villages', 7963, 'North Jed', 'Ældrebolig', 184, 6, '1967-08-21', 1160, 'C', 60, 421, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3573583, '607 Wehner Skyway', 9805, 'Lake Elmoreville', 'Lejlighed', 233, 2, '2018-07-13', 1091, 'F', 93, 45, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4185193, '250 Keeling Cape', 1121, 'East Bulah', 'Villa', 50, 3, '2004-02-02', 803, 'C', 100, 39, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3382429, '127 Hodkiewicz Junction', 7151, 'Jastchester', 'Villa', 163, 7, '1964-10-13', 987, 'G', 67, 248, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2256542, '58110 Lane Creek', 4481, 'Grimeshaven', 'Ejerlejlighed', 290, 4, '2016-10-19', 1010, 'A', 44, 399, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4724218, '32328 Kassandra Passage', 4329, 'Genovevafurt', 'Ungdomsbolig', 172, 7, '2010-08-01', 1518, 'A', 74, 424, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3259649, '368 Schamberger Hollow', 5980, 'North Casimir', 'Ældrebolig', 273, 8, '2009-03-12', 727, 'A', 21, 148, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5225290, '550 Fern Village', 5970, 'Brooketown', 'Ungdomsbolig', 124, 1, '2011-09-05', 972, 'C', 57, 324, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3150785, '02012 Bruen Street', 4392, 'Jeannemouth', 'Andelsbolig', 168, 2, '2022-07-04', 591, 'B', 36, 437, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3517611, '192 Carter Throughway', 5815, 'Wuckerthaven', 'Rækkehus', 43, 6, '1994-05-28', 891, 'E', 71, 203, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2284166, '434 Chyna Springs', 5559, 'Daphneychester', 'Kolonihavehus', 75, 3, '1985-12-17', 1361, 'G', 45, 311, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4919565, '609 Nico Hollow', 8912, 'East Dax', 'Ældrebolig', 287, 8, '2000-09-03', 740, 'C', 81, 480, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5777356, '96878 Arno Divide', 2374, 'Mallietown', 'Lejlighed', 215, 1, '1972-01-09', 1119, 'C', 33, 89, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2643682, '6792 Ayden Ford', 4258, 'Lewisside', 'Rækkehus', 67, 2, '2014-07-23', 1488, 'C', 48, 159, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1165642, '79717 Schroeder Isle', 8189, 'Winifredmouth', 'Andelsbolig', 172, 8, '1975-10-29', 1126, 'G', 76, 308, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7931273, '5541 Misael Inlet', 1160, 'Kilbackborough', 'Kolonihavehus', 293, 5, '2016-03-10', 1584, 'E', 74, 287, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2876176, '1880 Kuphal Turnpike', 9208, 'Minervaburgh', 'Ejerlejlighed', 226, 2, '1974-01-25', 730, 'A', 70, 295, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3436618, '0431 Kunze Burg', 460, 'Amparoton', 'Ejerlejlighed', 237, 4, '2004-08-11', 1474, 'G', 35, 271, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6821442, '93097 Howe Lakes', 3128, 'Fletamouth', 'Ældrebolig', 183, 1, '1998-01-30', 1113, 'F', 44, 265, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3663358, '8209 Rylee Glen', 6873, 'West Ralph', 'Andelsbolig', 93, 4, '1991-11-08', 352, 'G', 67, 22, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2372550, '869 Elmore Shore', 4832, 'Santinamouth', 'Andelsbolig', 63, 5, '2021-12-03', 1078, 'C', 38, 235, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4002646, '9843 Jammie Knolls', 8012, 'South Adriana', 'Lejlighed', 132, 5, '1963-06-14', 344, 'B', 96, 183, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2531223, '9053 Karlee Parks', 4945, 'Jamisonton', 'Andelsbolig', 92, 6, '1964-11-16', 251, 'B', 46, 439, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5024133, '36366 Dickinson Plaza', 3573, 'Port Oleta', 'Andelsbolig', 284, 7, '1986-07-25', 1433, 'E', 47, 239, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6271297, '9702 Sarah Pike', 4956, 'West Lilyan', 'Ældrebolig', 167, 6, '1984-06-28', 286, 'D', 77, 73, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6546797, '67128 Aiyana Fields', 9297, 'Waterstown', 'Ældrebolig', 68, 7, '2013-06-13', 824, 'C', 40, 205, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4476782, '1728 MacGyver Coves', 978, 'Harveymouth', 'Ældrebolig', 98, 6, '2001-04-04', 649, 'C', 38, 437, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4760149, '99458 Mia Ranch', 1465, 'Wiegandside', 'Lejlighed', 147, 2, '2023-02-17', 890, 'A', 94, 499, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5999636, '745 Johnston Garden', 7130, 'North Timmyville', 'Rækkehus', 189, 8, '1993-11-30', 306, 'F', 67, 165, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5637586, '84005 VonRueden Tunnel', 7815, 'New Xanderstad', 'Rækkehus', 131, 3, '2022-08-08', 373, 'G', 7, 387, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2499888, '20395 Marks Rest', 6090, 'Cronintown', 'Ældrebolig', 84, 3, '2001-10-16', 1223, 'D', 69, 256, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1409011, '17678 Simonis Summit', 3010, 'West Nella', 'Rækkehus', 256, 7, '1970-03-19', 1081, 'C', 1, 237, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2520996, '3131 Ferry Fork', 3793, 'Olentown', 'Lejlighed', 240, 8, '1975-06-05', 1331, 'E', 28, 484, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4521317, '519 Ratke Manors', 984, 'Juniortown', 'Ældrebolig', 264, 6, '1997-12-09', 1388, 'G', 58, 466, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6434665, '49380 Haley Isle', 1968, 'Marieview', 'Lejlighed', 177, 3, '1956-04-25', 1097, 'D', 40, 423, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2221530, '04968 Medhurst Motorway', 8596, 'Oberbrunnertown', 'Sommerhus', 110, 2, '2000-04-11', 481, 'E', 69, 67, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4705090, '599 Koepp Isle', 9262, 'New Sanford', 'Villa', 155, 2, '2017-12-17', 452, 'G', 55, 193, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2762653, '07171 Liliane Well', 3351, 'Oswaldview', 'Ejerlejlighed', 69, 4, '1978-06-04', 246, 'E', 88, 139, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3243432, '944 Moen Falls', 9913, 'Paulaville', 'Sommerhus', 71, 8, '1987-08-12', 171, 'E', 8, 336, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6015459, '188 Hollis Street', 190, 'Wisokytown', 'Andelsbolig', 250, 3, '2013-10-28', 1189, 'C', 86, 156, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2941219, '38334 Wendy Vista', 9734, 'Sandrabury', 'Kolonihavehus', 67, 7, '2018-08-16', 445, 'B', 62, 371, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (969575, '7083 McLaughlin Cape', 7976, 'Lake Garnettview', 'Andelsbolig', 213, 6, '1967-04-19', 1021, 'D', 44, 66, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4313068, '784 Vickie Spring', 1731, 'Wittingville', 'Ejerlejlighed', 205, 2, '2004-01-12', 1085, 'F', 35, 17, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6660262, '0036 Rowe Turnpike', 5826, 'East Lempiland', 'Sommerhus', 135, 3, '1977-04-18', 1174, 'D', 5, 359, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3646414, '63627 Antonietta Alley', 5834, 'West Judson', 'Lejlighed', 46, 2, '1993-06-12', 324, 'F', 62, 43, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5715409, '5082 Kshlerin Station', 5448, 'Kailynbury', 'Rækkehus', 64, 5, '1978-04-16', 228, 'E', 82, 130, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6156124, '993 Bailey Camp', 6457, 'Mertzchester', 'Andelsbolig', 135, 5, '2010-10-05', 344, 'G', 86, 97, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6255773, '0714 Kshlerin Falls', 37, 'Harberbury', 'Lejlighed', 233, 3, '1973-04-17', 1377, 'D', 17, 134, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (826382, '61601 Kulas Neck', 2893, 'South Aureliofurt', 'Ejerlejlighed', 249, 1, '1983-03-23', 970, 'A', 17, 202, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2668395, '63138 Camilla Port', 6127, 'Myrlhaven', 'Villa', 93, 2, '2007-09-12', 1366, 'A', 86, 115, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7182251, '4502 Randall Ports', 1490, 'Kristinaburgh', 'Kolonihavehus', 48, 3, '1996-01-15', 223, 'D', 53, 116, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3143400, '534 Adolfo Junctions', 7917, 'Kianmouth', 'Ungdomsbolig', 147, 1, '1968-10-07', 1547, 'E', 90, 433, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7025234, '702 Mitchell Prairie', 7116, 'East John', 'Villa', 211, 8, '1964-12-03', 777, 'B', 49, 341, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3125948, '225 Treutel Stream', 1278, 'Abbyburgh', 'Lejlighed', 150, 4, '1978-04-01', 1121, 'A', 84, 391, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4173993, '01119 Keanu Pike', 448, 'Yostchester', 'Lejlighed', 75, 3, '2014-10-24', 560, 'C', 93, 130, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4052192, '2639 Dietrich Heights', 177, 'South Cristopherfort', 'Sommerhus', 251, 5, '2006-05-18', 1194, 'B', 13, 241, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6647968, '966 Block Keys', 6759, 'Marjoriefurt', 'Andelsbolig', 131, 7, '1959-04-24', 1304, 'E', 15, 422, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5680863, '94523 Green Parkway', 8808, 'Kacieton', 'Lejlighed', 63, 4, '1996-09-23', 165, 'A', 80, 30, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4651439, '184 Muller Village', 6783, 'New Devanton', 'Kolonihavehus', 261, 2, '1966-09-10', 651, 'E', 31, 35, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6963857, '888 Keeling Brook', 8629, 'West Israel', 'Lejlighed', 57, 3, '2005-09-27', 815, 'B', 8, 156, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4218940, '8810 Josiah Canyon', 626, 'New Natashafurt', 'Andelsbolig', 83, 4, '1997-02-04', 1582, 'C', 64, 498, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4951104, '0635 Lauretta Ports', 2804, 'Hazelburgh', 'Lejlighed', 278, 3, '1996-05-17', 1518, 'C', 32, 122, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7414121, '95862 Anderson Stream', 5168, 'Evalynchester', 'Ungdomsbolig', 231, 8, '1981-04-12', 1499, 'C', 82, 9, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7948162, '5058 Bogisich Canyon', 547, 'Reingerton', 'Lejlighed', 297, 3, '1975-09-15', 1413, 'A', 100, 467, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3623406, '37818 Koepp Greens', 1142, 'Lake Neoma', 'Ældrebolig', 124, 2, '2002-12-13', 1076, 'E', 58, 305, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2423727, '082 Schuppe Glen', 9046, 'North Ted', 'Andelsbolig', 169, 6, '1993-04-03', 727, 'C', 22, 497, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7616043, '5780 Bennett Wells', 4790, 'North Caden', 'Villa', 179, 8, '2007-01-14', 1265, 'D', 6, 286, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7835647, '39130 Abernathy Lakes', 887, 'South Paula', 'Rækkehus', 133, 3, '2015-08-19', 721, 'B', 27, 206, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2846931, '13077 Miller Gateway', 4013, 'New Francistown', 'Lejlighed', 45, 7, '2009-02-13', 590, 'A', 30, 2, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7875106, '558 Braun Walk', 3996, 'Port Kyle', 'Ældrebolig', 270, 2, '2022-09-12', 578, 'B', 15, 448, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5435651, '7408 Rodger Crossing', 8162, 'Beahanmouth', 'Andelsbolig', 147, 5, '1985-01-04', 823, 'G', 50, 486, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6559547, '1055 Rosenbaum Tunnel', 9632, 'Deloresborough', 'Andelsbolig', 221, 2, '2009-02-09', 1452, 'D', 63, 302, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7018937, '748 Ankunding Mission', 7129, 'Pfannerstillmouth', 'Kolonihavehus', 86, 2, '1967-06-19', 604, 'E', 16, 207, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7895086, '661 Brisa Drives', 5345, 'Hobartville', 'Andelsbolig', 49, 8, '2006-09-27', 210, 'B', 50, 377, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3947623, '8256 Vernie Manors', 9393, 'Ritchiestad', 'Andelsbolig', 198, 2, '2023-01-08', 823, 'G', 99, 471, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3174369, '55689 Mraz Circle', 5968, 'West Cydney', 'Andelsbolig', 222, 2, '1974-01-12', 401, 'D', 36, 33, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7261581, '86416 Emory Union', 3225, 'Cleomouth', 'Rækkehus', 163, 6, '2011-11-27', 1552, 'F', 81, 198, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7060579, '27812 Beier Path', 9037, 'West Anita', 'Lejlighed', 175, 6, '2023-07-13', 1662, 'C', 34, 352, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5637817, '37047 Catalina Knoll', 8160, 'Lake Annabelle', 'Ældrebolig', 161, 7, '2002-11-11', 569, 'A', 53, 449, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4684040, '8311 Becker Trace', 5006, 'Coleport', 'Sommerhus', 129, 2, '1968-03-11', 356, 'C', 70, 480, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7550776, '7794 O''Hara Manor', 8912, 'East Javon', 'Sommerhus', 265, 2, '1974-03-30', 1495, 'A', 72, 422, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (990942, '052 Conroy Forge', 1096, 'Jaydaport', 'Sommerhus', 124, 5, '2000-06-20', 1233, 'A', 100, 448, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3153349, '857 Okuneva Run', 9040, 'Vonburgh', 'Lejlighed', 107, 8, '2001-11-18', 601, 'B', 86, 305, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2524951, '7740 Soledad Roads', 6994, 'North Treverland', 'Lejlighed', 47, 2, '2003-04-06', 340, 'B', 40, 203, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4143087, '83858 Ludwig Key', 6109, 'Anastasiahaven', 'Kolonihavehus', 272, 5, '1955-11-02', 808, 'E', 22, 37, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (641011, '678 Cecil Port', 4845, 'Weissnatfurt', 'Kolonihavehus', 118, 3, '2001-05-09', 1042, 'E', 37, 399, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (855219, '757 Upton Manor', 613, 'Oralview', 'Ældrebolig', 207, 8, '1963-09-02', 729, 'A', 32, 10, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4099070, '62052 Maggio Parkway', 575, 'Hudsonville', 'Lejlighed', 164, 8, '1996-05-13', 361, 'A', 78, 455, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (808010, '24426 Alexanne Station', 1448, 'West Leopoldohaven', 'Rækkehus', 136, 6, '1979-03-22', 862, 'F', 78, 304, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6055279, '71964 Labadie Estate', 4100, 'Yadiraview', 'Rækkehus', 191, 8, '1992-09-08', 1689, 'B', 72, 161, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5893254, '85358 Gilberto Glen', 8198, 'Hectorfort', 'Ejerlejlighed', 142, 4, '1992-11-11', 1145, 'F', 7, 329, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5497824, '9011 Mertz Ports', 9787, 'Prosaccoburgh', 'Sommerhus', 226, 1, '1991-12-24', 580, 'C', 61, 389, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6075618, '063 Hauck Circles', 4457, 'Johnstonberg', 'Ungdomsbolig', 227, 5, '1970-01-10', 1234, 'E', 26, 433, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1638970, '31193 Billie Point', 6365, 'Lake Katharina', 'Ejerlejlighed', 112, 7, '2006-09-12', 814, 'C', 42, 283, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7103688, '5701 Gustave Springs', 5896, 'South Devanview', 'Ungdomsbolig', 193, 4, '1975-01-26', 1405, 'D', 82, 356, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6871325, '282 Gia Highway', 5693, 'Rennerfort', 'Sommerhus', 138, 8, '1987-05-04', 747, 'A', 84, 476, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5366006, '4487 Al Field', 1899, 'Cristopherside', 'Rækkehus', 283, 6, '1956-05-02', 1042, 'A', 93, 388, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6297682, '05622 Keon Square', 7727, 'Prohaskatown', 'Ejerlejlighed', 120, 2, '2014-06-28', 1001, 'G', 10, 340, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7675793, '64302 Abbott Loaf', 8971, 'Lake Quincybury', 'Ældrebolig', 71, 3, '1977-11-25', 1091, 'F', 7, 62, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4525656, '9291 Hardy Plaza', 6355, 'East Tyreseland', 'Kolonihavehus', 214, 2, '2005-10-24', 1083, 'E', 8, 255, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4543383, '6612 Schaden Row', 758, 'Williamsonberg', 'Rækkehus', 116, 3, '2000-04-08', 801, 'C', 85, 146, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5716272, '8799 Roob Keys', 8152, 'Aniyahshire', 'Ungdomsbolig', 128, 1, '2003-09-08', 1290, 'D', 58, 153, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6217303, '45798 Kaleb Freeway', 1050, 'Kuvalisland', 'Andelsbolig', 146, 8, '1971-05-19', 473, 'A', 82, 438, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2921186, '0297 Alessandro Creek', 1704, 'Millerborough', 'Lejlighed', 47, 7, '1987-10-25', 348, 'D', 13, 81, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7633025, '358 Wolff River', 6777, 'Selenaburgh', 'Lejlighed', 41, 4, '2007-06-12', 1120, 'E', 43, 6, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6460843, '45952 Cydney Plaza', 7259, 'New Mikelport', 'Kolonihavehus', 81, 7, '2007-04-14', 483, 'G', 5, 262, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6561076, '528 Keebler Meadows', 6922, 'Terrybury', 'Rækkehus', 119, 4, '2004-02-12', 1484, 'E', 46, 64, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6726849, '140 Brandy Groves', 9475, 'West Josiane', 'Kolonihavehus', 116, 8, '1983-08-30', 305, 'D', 15, 289, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1417943, '78505 Block Roads', 2926, 'Richmondborough', 'Rækkehus', 154, 3, '1981-09-14', 928, 'C', 59, 195, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4575981, '8414 Connelly Crossroad', 7429, 'Jeffreyton', 'Ejerlejlighed', 226, 6, '1972-03-02', 889, 'E', 75, 46, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1477141, '671 Annetta Island', 3562, 'Leviside', 'Ældrebolig', 89, 8, '1973-02-27', 813, 'D', 17, 358, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4366664, '85116 Parker Viaduct', 2222, 'Lake Gilbertofort', 'Sommerhus', 140, 3, '1998-10-03', 569, 'A', 9, 249, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6470963, '3764 Ferry Crest', 7929, 'Buckridgeview', 'Lejlighed', 62, 2, '1976-12-20', 1375, 'B', 68, 87, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1357087, '92525 Nicolas Knoll', 116, 'Willborough', 'Kolonihavehus', 96, 7, '2001-01-10', 984, 'E', 99, 196, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2054970, '50727 Luettgen Skyway', 771, 'Port Liliane', 'Lejlighed', 103, 1, '2023-10-07', 490, 'G', 10, 50, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1564181, '449 Ryan Avenue', 4932, 'Emmaleehaven', 'Ejerlejlighed', 284, 1, '2016-04-08', 1778, 'D', 29, 117, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2589220, '176 Francisco Groves', 41, 'South Fredericside', 'Lejlighed', 281, 1, '1992-04-18', 1331, 'D', 39, 116, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3025016, '42026 Olen Pike', 1082, 'Lake Annabelleshire', 'Kolonihavehus', 100, 5, '1962-08-31', 766, 'E', 84, 178, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5443976, '139 Ansley Roads', 2539, 'North Gonzaloside', 'Villa', 238, 3, '1996-05-25', 477, 'F', 4, 48, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3083552, '142 Walter Extensions', 7301, 'Maybelleville', 'Villa', 154, 1, '1995-09-12', 1442, 'G', 95, 229, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6255360, '46219 Amara Springs', 2821, 'West Maiachester', 'Sommerhus', 134, 3, '1977-06-01', 999, 'D', 97, 266, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5606966, '1413 Frida Cliff', 1243, 'West Ethan', 'Sommerhus', 205, 7, '1985-07-24', 1025, 'C', 18, 332, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2748251, '715 Sporer Courts', 4274, 'Seamusfurt', 'Lejlighed', 250, 6, '2011-04-20', 1640, 'G', 59, 248, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7258388, '06220 Winnifred Mills', 2318, 'Roobhaven', 'Ungdomsbolig', 143, 3, '1983-03-10', 855, 'A', 95, 190, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6537565, '75489 O''Keefe Throughway', 9983, 'Lake Courtneyton', 'Ældrebolig', 63, 5, '1975-04-19', 1527, 'A', 59, 104, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6537506, '2156 Weber Drive', 3318, 'West Crystalfort', 'Ungdomsbolig', 117, 5, '1981-11-01', 952, 'A', 78, 70, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4477171, '83465 Gerhold Mews', 7901, 'Manuelaburgh', 'Rækkehus', 83, 8, '2006-06-23', 1480, 'B', 69, 481, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7276925, '67346 Hoppe Vista', 2307, 'Leopoldfurt', 'Ældrebolig', 79, 3, '2018-09-28', 310, 'F', 29, 183, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4009944, '3969 Christop Crossing', 9558, 'Gradyland', 'Lejlighed', 173, 1, '2017-10-11', 1614, 'A', 12, 355, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5526818, '77380 Smitham Squares', 6935, 'East Ramiro', 'Lejlighed', 82, 3, '1966-04-14', 1367, 'A', 18, 252, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4591829, '49688 Olson Trafficway', 8727, 'Careymouth', 'Ejerlejlighed', 181, 5, '2006-07-16', 1147, 'D', 25, 162, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4118538, '1365 Terrence Meadow', 9476, 'Okunevaville', 'Villa', 93, 2, '2011-05-10', 1185, 'D', 90, 305, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6823511, '423 Maia Tunnel', 1301, 'Port Meta', 'Ejerlejlighed', 41, 4, '2025-01-18', 385, 'D', 98, 181, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2469434, '2990 Ebert Mountain', 4921, 'Westborough', 'Ejerlejlighed', 82, 5, '2019-02-08', 438, 'B', 63, 408, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5391439, '98845 Ortiz Pass', 456, 'Auershire', 'Sommerhus', 196, 4, '1999-11-22', 663, 'G', 41, 420, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4482534, '99563 Forrest Bypass', 1110, 'Velmaburgh', 'Ejerlejlighed', 252, 3, '2010-09-08', 1619, 'A', 46, 480, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5809934, '013 Marvin Gardens', 5540, 'Mossietown', 'Villa', 119, 2, '1968-07-05', 1279, 'C', 73, 407, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5486002, '2317 Gulgowski Squares', 9848, 'Heloisebury', 'Kolonihavehus', 48, 6, '1982-12-03', 1405, 'B', 26, 170, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4638670, '382 Shirley Mount', 7756, 'Haydenborough', 'Sommerhus', 201, 7, '1975-04-13', 1037, 'G', 21, 76, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2862209, '03880 Mills Highway', 5775, 'Stromanborough', 'Ejerlejlighed', 273, 1, '2025-02-04', 1154, 'A', 60, 456, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6523656, '80041 Dwight Radial', 7741, 'Lake Melvinaland', 'Sommerhus', 278, 4, '1981-11-20', 914, 'C', 60, 496, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4204191, '138 Stella Lodge', 8744, 'Greenton', 'Rækkehus', 247, 3, '1981-09-07', 1637, 'G', 2, 81, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1290914, '8794 Langworth Cliff', 3122, 'West Adelle', 'Ældrebolig', 116, 4, '1964-11-28', 1468, 'D', 34, 386, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7781612, '9752 Swaniawski Skyway', 8238, 'Hansenstad', 'Andelsbolig', 183, 2, '2023-07-31', 1311, 'C', 97, 348, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7626495, '209 Schinner Views', 7886, 'Port Demarcushaven', 'Ældrebolig', 92, 2, '2008-06-16', 778, 'C', 56, 445, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2983171, '39651 Vivienne Place', 3538, 'Port Lenna', 'Lejlighed', 242, 2, '1968-08-03', 957, 'G', 99, 301, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1998537, '90018 Kuhic Flat', 7922, 'Ortiztown', 'Ældrebolig', 182, 4, '1976-04-06', 646, 'C', 16, 425, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3578232, '562 Alejandra Plain', 5373, 'Orlandoton', 'Ældrebolig', 77, 5, '2002-06-02', 1247, 'G', 54, 47, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3961961, '47018 Rosalinda Expressway', 358, 'Lake Willardland', 'Kolonihavehus', 209, 3, '2004-12-25', 622, 'B', 63, 402, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5245457, '0421 Beahan Underpass', 927, 'South Gustave', 'Lejlighed', 40, 4, '2018-01-12', 1453, 'E', 44, 254, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1348150, '11250 Margarita Inlet', 1671, 'Brekkefort', 'Andelsbolig', 238, 8, '2010-05-22', 1462, 'D', 39, 103, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5561747, '5843 Willms Way', 262, 'Kutchburgh', 'Ungdomsbolig', 76, 5, '2000-05-22', 734, 'F', 29, 361, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3860890, '5422 Jaime Road', 4410, 'Vanfort', 'Andelsbolig', 167, 2, '1987-03-28', 297, 'C', 31, 197, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5491986, '3678 Malvina Circles', 4828, 'North Percystad', 'Kolonihavehus', 207, 5, '1962-11-10', 871, 'E', 16, 175, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7836390, '69840 Batz Lane', 7812, 'West Martine', 'Rækkehus', 242, 6, '1999-10-16', 1683, 'D', 37, 348, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7898335, '67334 Balistreri View', 5405, 'East Jayde', 'Ældrebolig', 70, 8, '1992-07-08', 1328, 'B', 78, 165, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7441880, '67604 Koelpin Green', 1213, 'Lake Josie', 'Lejlighed', 279, 1, '2017-10-28', 1662, 'E', 29, 223, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7910893, '038 Murray Point', 9580, 'West Cyrus', 'Rækkehus', 133, 4, '1972-08-15', 1297, 'G', 42, 363, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7322941, '556 Leonardo Stream', 5782, 'Pansyberg', 'Lejlighed', 172, 8, '1994-03-30', 1500, 'B', 87, 238, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2527806, '8851 Jones Fall', 6717, 'Nicolechester', 'Rækkehus', 244, 7, '1973-05-22', 1236, 'E', 63, 460, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7453577, '4975 Ayana Lakes', 4101, 'Lake Jada', 'Ældrebolig', 177, 3, '1962-12-09', 1148, 'E', 45, 230, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4435824, '134 Emard Plaza', 4360, 'Lake Francisberg', 'Rækkehus', 91, 7, '1986-06-16', 952, 'F', 92, 281, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (544581, '187 Hane Green', 6766, 'Madelynnburgh', 'Rækkehus', 132, 2, '2018-07-31', 1379, 'D', 15, 24, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6492356, '4503 Bernhard Estates', 8814, 'Champlinton', 'Sommerhus', 45, 5, '2015-03-02', 473, 'A', 93, 284, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1838875, '602 Schuppe Glens', 8041, 'Braunland', 'Lejlighed', 222, 6, '1995-03-26', 1132, 'B', 4, 149, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4959013, '02142 Raul Extensions', 4229, 'East Kiramouth', 'Rækkehus', 298, 2, '2014-10-14', 943, 'E', 36, 490, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7311193, '05606 Lina Mews', 5733, 'Emelietown', 'Andelsbolig', 85, 4, '2024-07-11', 1127, 'A', 88, 72, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4047996, '181 Abby Lake', 8910, 'East Gagetown', 'Sommerhus', 175, 8, '1987-09-26', 825, 'F', 34, 347, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6175184, '8808 Keeling Hill', 1358, 'West Margot', 'Ungdomsbolig', 202, 7, '2015-05-15', 1463, 'A', 40, 452, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1517590, '38129 Myrtle Loaf', 5672, 'Hettingerland', 'Ældrebolig', 66, 6, '1994-10-02', 1459, 'B', 44, 318, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6912815, '28809 Ezra Trail', 6746, 'North Kallie', 'Ældrebolig', 64, 1, '2002-03-20', 1522, 'E', 35, 300, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4253059, '5916 Hansen Glen', 3927, 'Anastasiaborough', 'Ejerlejlighed', 191, 6, '2004-11-28', 1357, 'B', 14, 58, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2477933, '089 Sharon Shores', 4639, 'Wilkinsonville', 'Rækkehus', 105, 1, '2022-03-31', 854, 'C', 97, 382, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1412099, '85919 Crawford Road', 5765, 'Donnyborough', 'Sommerhus', 144, 5, '1972-10-21', 1606, 'G', 68, 389, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5730889, '209 Willie Meadows', 9468, 'Tremblaymouth', 'Ungdomsbolig', 123, 1, '2017-01-14', 1379, 'B', 67, 58, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1656879, '46340 Dayton Curve', 892, 'Lake Austen', 'Ældrebolig', 97, 2, '1974-10-10', 1323, 'B', 63, 369, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6573201, '9693 Quitzon Bridge', 2264, 'Vonburgh', 'Ungdomsbolig', 97, 6, '1957-10-20', 1436, 'F', 45, 241, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4305555, '486 Delmer Vista', 9677, 'New Pietro', 'Villa', 48, 6, '1982-04-22', 669, 'B', 32, 95, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7852942, '75592 Hauck Parkways', 8862, 'North Bernitaburgh', 'Sommerhus', 177, 3, '1984-03-14', 1020, 'F', 73, 349, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7760195, '835 Linnea Forge', 6263, 'Lake Ciara', 'Rækkehus', 108, 5, '2002-12-12', 273, 'B', 98, 169, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5643641, '29931 Marisol Village', 6363, 'Lemkechester', 'Ejerlejlighed', 297, 2, '2016-10-23', 1649, 'G', 91, 157, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5565995, '9745 Mosciski Branch', 1130, 'Arielland', 'Andelsbolig', 47, 4, '2002-04-25', 611, 'D', 49, 190, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3535860, '33467 Neva Mission', 7707, 'North Ozellashire', 'Sommerhus', 102, 1, '1978-10-09', 1355, 'A', 68, 488, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1578288, '10836 Mikel Parkway', 7137, 'Winstonville', 'Andelsbolig', 274, 1, '1995-08-29', 451, 'A', 48, 100, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1526289, '04104 Hackett Spur', 2373, 'West Freedamouth', 'Ældrebolig', 178, 5, '1969-10-25', 468, 'C', 86, 81, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (605257, '14235 Ratke Field', 1324, 'Lake Katarinaview', 'Sommerhus', 164, 6, '1955-10-04', 1063, 'E', 11, 442, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2692872, '69483 Paul Overpass', 9481, 'Port Georgettetown', 'Villa', 51, 2, '1961-03-15', 1169, 'B', 71, 372, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3942425, '21067 Jettie Mountain', 8571, 'Kubport', 'Sommerhus', 187, 2, '2012-03-28', 577, 'A', 64, 338, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4370188, '80840 Williamson Stream', 9540, 'New Bernardo', 'Sommerhus', 223, 2, '2017-09-06', 594, 'G', 92, 230, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5831408, '3077 Maryam Landing', 187, 'East Veda', 'Villa', 228, 1, '1984-01-08', 1112, 'F', 95, 168, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5332625, '4658 Dagmar Glens', 8084, 'West Darron', 'Kolonihavehus', 64, 3, '2023-10-30', 1187, 'C', 4, 420, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6161340, '841 Marion Locks', 3106, 'Port Isom', 'Ældrebolig', 228, 1, '1994-10-25', 1614, 'D', 76, 418, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3834128, '828 Wilderman Lock', 1290, 'Christineshire', 'Lejlighed', 221, 8, '1993-03-19', 718, 'B', 24, 80, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6071694, '7199 Stokes Harbors', 9252, 'South Sanford', 'Lejlighed', 149, 4, '1964-01-14', 1201, 'G', 35, 483, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1173959, '942 Jenkins Wall', 9835, 'Sidtown', 'Sommerhus', 147, 1, '1997-10-11', 876, 'D', 43, 357, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6210345, '69985 Maximillia Road', 3415, 'Boscobury', 'Ejerlejlighed', 71, 6, '2001-08-11', 414, 'D', 44, 347, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (640052, '4234 Eve Ford', 9217, 'Fritschside', 'Villa', 67, 4, '2002-09-08', 958, 'B', 57, 276, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4272345, '06817 Leslie Camp', 2366, 'Lake Jodyside', 'Ældrebolig', 178, 4, '1956-11-28', 909, 'D', 19, 478, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1728868, '8558 Ernestina Flats', 2532, 'South Toy', 'Ejerlejlighed', 61, 1, '1989-10-16', 287, 'A', 43, 82, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1264018, '306 Moen Pine', 5086, 'North Wava', 'Ungdomsbolig', 103, 4, '1992-11-29', 542, 'B', 60, 67, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4858504, '7177 Kip Extensions', 215, 'Port Marionborough', 'Ældrebolig', 85, 8, '2000-07-17', 909, 'F', 67, 306, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2778326, '9306 Oleta Fields', 5623, 'Willachester', 'Ejerlejlighed', 42, 8, '1978-12-02', 332, 'D', 56, 83, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4088541, '6890 Gleichner Plains', 7722, 'Shieldshaven', 'Ejerlejlighed', 51, 3, '1983-09-16', 651, 'G', 19, 244, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5494281, '5237 Beier Glen', 3786, 'Donaldshire', 'Kolonihavehus', 138, 8, '1966-09-24', 625, 'B', 17, 312, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2668292, '73389 Gilbert Rest', 9740, 'Clementinamouth', 'Sommerhus', 294, 8, '1997-05-06', 890, 'A', 57, 257, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6166541, '9904 Alexie Shoals', 9669, 'West Juwanfort', 'Ungdomsbolig', 142, 3, '2021-12-17', 924, 'A', 64, 178, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6077201, '2464 Crist Freeway', 867, 'Lake Abelardo', 'Ungdomsbolig', 199, 5, '1993-02-15', 1462, 'D', 31, 324, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4189458, '19265 Evan Knolls', 1929, 'Lake Edgardofurt', 'Ældrebolig', 105, 5, '2009-11-10', 325, 'A', 4, 218, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5392409, '631 Sawayn Corners', 6486, 'Casperland', 'Villa', 91, 5, '1969-06-27', 261, 'E', 24, 380, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6689293, '116 Cremin Freeway', 7707, 'Erneststad', 'Sommerhus', 221, 1, '1958-08-23', 1147, 'D', 17, 40, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7100693, '8087 Jessika Forge', 4859, 'Solonside', 'Lejlighed', 270, 3, '2006-01-14', 1212, 'A', 8, 143, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6764538, '78888 Yost Lake', 9050, 'Friesenhaven', 'Lejlighed', 51, 1, '2016-09-06', 1474, 'A', 56, 175, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6667071, '131 Spencer Well', 9411, 'Starkside', 'Rækkehus', 139, 5, '1992-03-21', 387, 'G', 7, 196, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5059918, '52281 Nicolas Walks', 3039, 'Daniellafort', 'Ungdomsbolig', 121, 8, '1977-03-12', 1091, 'A', 64, 475, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7496682, '18102 Gorczany Locks', 8484, 'West Demondville', 'Ungdomsbolig', 226, 4, '2020-10-26', 1038, 'E', 19, 366, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4917128, '021 Clementina Manors', 1719, 'Majorville', 'Ældrebolig', 205, 4, '1983-09-03', 862, 'B', 98, 163, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7262478, '40107 Macejkovic Fork', 9697, 'Lake Letitiafort', 'Kolonihavehus', 149, 2, '1993-06-13', 1389, 'E', 83, 406, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6115153, '31350 Tressa Track', 7895, 'Hoseaborough', 'Kolonihavehus', 205, 7, '1978-11-19', 1315, 'A', 90, 342, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3497519, '8961 Lang Ferry', 9864, 'South Adrienne', 'Ungdomsbolig', 284, 5, '1991-10-20', 965, 'C', 1, 254, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3563885, '55387 Labadie Street', 9605, 'Lake Maybellemouth', 'Sommerhus', 76, 5, '1968-05-02', 1134, 'C', 61, 321, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1883381, '25827 Buckridge Viaduct', 6753, 'Faustinofurt', 'Andelsbolig', 180, 7, '1970-06-20', 1089, 'B', 34, 364, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2413558, '868 Dovie Mount', 8098, 'Huelsland', 'Ungdomsbolig', 128, 2, '1979-09-13', 679, 'B', 26, 42, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6158784, '640 Carissa Rest', 2933, 'Jacobsonburgh', 'Andelsbolig', 47, 1, '1976-06-16', 1188, 'F', 40, 419, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6417656, '5114 Carroll Knoll', 7516, 'East Rickyport', 'Sommerhus', 195, 6, '2011-11-27', 803, 'F', 81, 265, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5248962, '03478 Jillian Estates', 1929, 'Nataliafort', 'Ejerlejlighed', 120, 3, '2018-10-09', 1007, 'C', 2, 231, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7443786, '76413 Bauch Mountains', 4277, 'Orlandtown', 'Ejerlejlighed', 106, 4, '1964-05-20', 820, 'C', 68, 317, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4575732, '0262 Susan Harbors', 2297, 'Lake Itzel', 'Lejlighed', 178, 1, '1972-08-31', 881, 'D', 43, 325, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6649934, '489 Adelle Stream', 3424, 'Starkmouth', 'Kolonihavehus', 282, 2, '1978-01-20', 1220, 'D', 72, 408, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3179208, '922 Gottlieb Plain', 8898, 'Francoburgh', 'Lejlighed', 164, 4, '2008-03-04', 811, 'C', 23, 254, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2899637, '701 Lebsack Mission', 3564, 'East Leon', 'Ældrebolig', 255, 4, '1971-06-06', 1222, 'C', 49, 175, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6646831, '2753 Chad Forks', 4332, 'Angelinaberg', 'Ældrebolig', 65, 8, '2022-09-28', 344, 'B', 21, 198, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1556496, '4315 Rogelio Path', 3239, 'Johnstonchester', 'Villa', 234, 5, '2001-03-31', 1732, 'G', 86, 31, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7306928, '020 Rhett Manors', 4735, 'Goldnermouth', 'Sommerhus', 89, 7, '2016-06-09', 914, 'B', 7, 252, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (584947, '7506 Kovacek Turnpike', 5981, 'Port Russel', 'Kolonihavehus', 87, 8, '1988-10-02', 1378, 'D', 18, 15, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7836102, '2561 Mills Forges', 4387, 'Heathcotebury', 'Ældrebolig', 166, 5, '1980-04-15', 697, 'F', 92, 280, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3333923, '9367 Miles Camp', 9668, 'Tremblaymouth', 'Rækkehus', 148, 6, '2015-07-11', 1445, 'E', 53, 211, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7578328, '627 Stanton Mountain', 8022, 'South Mauriciohaven', 'Rækkehus', 202, 4, '1973-05-03', 1095, 'G', 60, 139, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5962078, '798 Jacky Brook', 666, 'Elbertport', 'Andelsbolig', 219, 8, '1977-11-13', 528, 'E', 50, 203, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2286789, '36659 Herzog Ports', 9190, 'New Cieloville', 'Ældrebolig', 92, 5, '1976-09-26', 748, 'D', 43, 495, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7314164, '15889 Reynolds Unions', 9672, 'Rachelfurt', 'Villa', 179, 1, '2007-04-16', 1213, 'C', 4, 483, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7662847, '975 Gottlieb Mall', 3043, 'East Stefanfort', 'Andelsbolig', 209, 4, '1982-12-08', 681, 'B', 58, 155, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5628598, '2375 Quigley Track', 4359, 'North Clareside', 'Ungdomsbolig', 51, 1, '1966-04-18', 940, 'E', 15, 50, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7092096, '941 Kovacek Unions', 4000, 'Mayrafort', 'Villa', 265, 2, '1995-02-07', 765, 'D', 66, 384, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2507507, '682 Crona Knoll', 4784, 'Gilbertside', 'Rækkehus', 210, 4, '1992-12-29', 910, 'A', 96, 430, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1466516, '89031 Alfonso Trafficway', 2400, 'Armandbury', 'Rækkehus', 204, 8, '1964-12-15', 1096, 'D', 60, 251, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4325776, '7456 Upton Mountains', 3, 'Aricmouth', 'Kolonihavehus', 148, 8, '1971-03-25', 738, 'A', 23, 85, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4189840, '330 Ritchie Inlet', 397, 'East Benjamin', 'Ungdomsbolig', 188, 8, '1998-09-20', 1091, 'D', 19, 304, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3557144, '70223 Leola Summit', 9215, 'Andresfort', 'Kolonihavehus', 148, 6, '1991-01-16', 1005, 'A', 99, 389, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1025283, '4967 Marilou Fall', 9558, 'North Jeanne', 'Ungdomsbolig', 164, 2, '2001-07-25', 1083, 'D', 34, 16, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5465763, '4270 Price Mountains', 4793, 'West Lennieshire', 'Ejerlejlighed', 215, 3, '1963-05-10', 629, 'F', 83, 320, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6318885, '8808 Maggio Walks', 5158, 'East Zackery', 'Villa', 45, 1, '1971-02-26', 770, 'G', 43, 162, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1234008, '2192 Batz Village', 6644, 'Kutchmouth', 'Rækkehus', 178, 2, '1987-11-06', 1273, 'G', 58, 236, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1627892, '22860 Nathanael Forest', 1141, 'North Jonatan', 'Ældrebolig', 83, 3, '1983-12-02', 843, 'D', 45, 355, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4792040, '633 Estella Union', 7000, 'North Jaden', 'Lejlighed', 151, 8, '1955-08-03', 1184, 'B', 37, 386, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1548968, '5042 Katlynn Rapid', 1189, 'East Tremaine', 'Villa', 75, 5, '2021-08-07', 650, 'C', 65, 64, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3356957, '8688 Malachi Unions', 7840, 'West Julianberg', 'Ældrebolig', 160, 8, '1986-12-07', 898, 'D', 65, 453, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5195592, '9561 Kaylee Junctions', 5623, 'Lake Santa', 'Ungdomsbolig', 234, 4, '2023-01-26', 1304, 'A', 10, 303, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6376373, '16624 Maribel Trace', 3567, 'Hunterbury', 'Ungdomsbolig', 82, 1, '1981-09-10', 1443, 'F', 52, 39, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5480276, '70926 Lindgren Prairie', 1664, 'Schimmelberg', 'Lejlighed', 207, 4, '1956-01-11', 999, 'D', 40, 192, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5573047, '1871 Daryl Plaza', 1851, 'South Melvina', 'Ejerlejlighed', 123, 2, '2009-06-06', 1433, 'B', 53, 49, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7616025, '713 Kellen Meadows', 1386, 'East Unaborough', 'Villa', 69, 2, '1970-04-22', 260, 'A', 51, 185, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1920624, '13775 Elmer Mall', 4550, 'Daniellastad', 'Lejlighed', 157, 5, '1975-01-21', 1290, 'E', 37, 310, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7042481, '567 Benjamin Junctions', 7123, 'Yvettechester', 'Andelsbolig', 176, 1, '2019-06-26', 561, 'E', 19, 5, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3315280, '40190 Stiedemann Way', 5425, 'Port Amari', 'Andelsbolig', 170, 3, '2003-02-23', 443, 'E', 87, 172, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6604318, '832 Keven Court', 2438, 'Lake Pascale', 'Villa', 228, 7, '1967-02-07', 1550, 'F', 90, 252, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7848772, '9788 Marielle Avenue', 2151, 'Jeniferton', 'Kolonihavehus', 213, 3, '1981-03-26', 1548, 'A', 49, 2, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4064290, '2324 Abbott Trail', 5315, 'Port Arianeview', 'Sommerhus', 190, 6, '2020-05-14', 700, 'G', 85, 90, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1183473, '319 Bogisich Hollow', 859, 'North Kadin', 'Lejlighed', 114, 2, '1967-07-06', 422, 'E', 27, 112, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2333521, '3200 Hills Plaza', 8208, 'Baumbachmouth', 'Kolonihavehus', 177, 8, '1972-06-12', 817, 'F', 7, 131, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4073013, '66748 Gleason Unions', 8307, 'Rosalindbury', 'Villa', 63, 5, '1992-12-06', 1263, 'C', 34, 56, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5327749, '3266 Zula Groves', 2196, 'East Margotmouth', 'Ungdomsbolig', 89, 3, '1986-08-11', 1544, 'E', 56, 99, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1750610, '6835 Thiel Pine', 4024, 'Walshborough', 'Andelsbolig', 189, 1, '2015-11-06', 536, 'F', 87, 326, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4607423, '16237 Ledner Parkway', 853, 'New Leonetown', 'Sommerhus', 191, 6, '2000-02-15', 487, 'E', 32, 74, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3481270, '7251 Harber Fork', 1141, 'East Nathanielmouth', 'Ældrebolig', 77, 3, '1976-09-24', 840, 'C', 78, 176, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3892820, '214 Zboncak Estate', 3466, 'New Evanport', 'Lejlighed', 293, 5, '1967-09-21', 1113, 'B', 80, 210, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7610298, '670 Lemke Cliff', 5646, 'Reingerview', 'Andelsbolig', 261, 3, '2022-07-28', 553, 'F', 71, 325, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1666516, '705 Goodwin Field', 33, 'South Marshallville', 'Sommerhus', 211, 1, '2015-05-25', 502, 'G', 33, 197, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4307833, '9611 Hauck Squares', 6092, 'East Christina', 'Villa', 156, 1, '1996-06-23', 589, 'E', 89, 74, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2455887, '653 Nadia Field', 9024, 'South Madysonmouth', 'Sommerhus', 268, 7, '1970-03-23', 439, 'F', 86, 389, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5864097, '0708 Genesis Ferry', 6820, 'Rhodaland', 'Sommerhus', 161, 5, '1966-05-15', 1617, 'D', 32, 400, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5527259, '61563 Kimberly Court', 9059, 'South Maia', 'Sommerhus', 214, 3, '2003-02-18', 1676, 'C', 43, 436, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4278675, '02363 Tillman Crest', 6155, 'North Julianneborough', 'Lejlighed', 272, 7, '2011-08-12', 457, 'A', 4, 154, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7315281, '873 Kirlin Shoals', 5681, 'North Soledadhaven', 'Rækkehus', 208, 8, '2006-06-03', 956, 'A', 62, 15, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1643088, '95059 Herzog Motorway', 2189, 'Mariannaton', 'Rækkehus', 128, 1, '2013-04-06', 299, 'E', 75, 320, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2555671, '9935 Hershel Plains', 434, 'Vicentamouth', 'Rækkehus', 272, 6, '1999-07-08', 1066, 'E', 83, 499, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6429463, '443 Jacobs Knoll', 5298, 'Prosaccomouth', 'Ejerlejlighed', 166, 5, '1986-07-12', 1646, 'A', 24, 259, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4817873, '9355 Schinner Freeway', 413, 'Ornhaven', 'Villa', 252, 1, '2007-08-11', 929, 'D', 64, 120, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6026999, '058 Simone Lake', 9899, 'Bethelville', 'Ejerlejlighed', 178, 2, '1973-01-18', 891, 'F', 1, 326, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2385226, '93392 Vergie Circles', 355, 'Dagmarburgh', 'Ungdomsbolig', 232, 7, '1966-07-16', 1368, 'C', 30, 377, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2597175, '85631 Gladyce Valleys', 8122, 'South Queen', 'Villa', 200, 6, '2006-11-02', 873, 'E', 48, 474, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1852166, '59515 Kunze Road', 5176, 'South Maggie', 'Ejerlejlighed', 58, 2, '1956-05-25', 237, 'B', 55, 69, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7096582, '74762 Mertz Run', 5478, 'South Mikayla', 'Rækkehus', 117, 4, '2001-07-04', 930, 'B', 30, 126, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3444283, '808 Graham Track', 1975, 'South Mauricioland', 'Rækkehus', 152, 1, '1978-06-13', 1123, 'G', 26, 354, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6169230, '630 Consuelo Trail', 860, 'East Miraclemouth', 'Sommerhus', 143, 4, '1972-12-01', 362, 'C', 31, 415, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4267295, '875 Kuhic Turnpike', 325, 'Astridfurt', 'Lejlighed', 154, 2, '1998-08-05', 1582, 'E', 62, 258, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5560733, '67155 Cassandre Cape', 3982, 'McKenzieton', 'Andelsbolig', 89, 7, '1976-07-23', 1101, 'B', 98, 291, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4685054, '2746 Phoebe Extensions', 4505, 'Abdulchester', 'Ældrebolig', 260, 8, '2004-05-22', 1230, 'A', 91, 329, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5902968, '8287 Raegan Wall', 9542, 'Kuhnbury', 'Ungdomsbolig', 150, 7, '1963-08-23', 1518, 'A', 80, 200, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4053331, '8442 Clyde Mills', 9517, 'North Katharina', 'Kolonihavehus', 115, 4, '1961-12-27', 1486, 'B', 85, 492, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5063935, '467 Alyce Brook', 9845, 'New Cordiabury', 'Ældrebolig', 242, 2, '1980-01-14', 636, 'A', 78, 405, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5126225, '609 Isabell Overpass', 3312, 'Connertown', 'Rækkehus', 134, 8, '1988-08-19', 1508, 'E', 73, 220, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6409615, '24681 Jaunita Knoll', 5274, 'Demarcochester', 'Ungdomsbolig', 198, 4, '2007-05-13', 866, 'E', 15, 202, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1885675, '4824 Margot Mews', 3514, 'Lake Sibylside', 'Sommerhus', 273, 3, '1958-01-19', 1724, 'D', 85, 230, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2033519, '1102 Gabe Unions', 8116, 'Stiedemannview', 'Ungdomsbolig', 186, 8, '1985-11-01', 1383, 'A', 85, 305, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7805198, '290 Predovic Prairie', 1092, 'North Brielle', 'Andelsbolig', 240, 1, '1977-09-08', 1714, 'A', 70, 340, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4133269, '86679 Wuckert Courts', 1957, 'New Aylahaven', 'Ældrebolig', 248, 5, '1979-07-18', 1384, 'A', 81, 10, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5103012, '479 Madge Street', 4388, 'South Ikeburgh', 'Ungdomsbolig', 50, 4, '2008-07-06', 616, 'E', 75, 1, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5852747, '9702 Arnulfo Park', 9227, 'Treutelport', 'Andelsbolig', 118, 4, '1967-06-13', 1041, 'E', 15, 368, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1950184, '7101 Freddy Junctions', 7736, 'Lake Verda', 'Ældrebolig', 94, 5, '1980-10-30', 251, 'A', 71, 96, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7180551, '72825 Wilderman Summit', 3804, 'Port Lucie', 'Andelsbolig', 212, 2, '1972-01-30', 733, 'A', 33, 68, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2618023, '130 Stehr Fork', 3828, 'North Loy', 'Andelsbolig', 49, 6, '1960-05-26', 1396, 'B', 67, 207, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4971094, '19362 Brain Views', 1996, 'Lake Durwardmouth', 'Andelsbolig', 247, 4, '2016-12-10', 1171, 'F', 32, 65, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2826741, '65208 Gustave Extensions', 870, 'Lake Francesca', 'Rækkehus', 257, 2, '1968-03-17', 454, 'E', 78, 214, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6230302, '13059 Brad Point', 5615, 'Reillyton', 'Villa', 204, 1, '2007-11-02', 527, 'D', 25, 476, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5133290, '199 Gleichner Islands', 5883, 'Murraychester', 'Rækkehus', 153, 2, '1987-07-30', 788, 'E', 29, 67, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4547145, '74470 Dickens Road', 168, 'West Tamia', 'Ejerlejlighed', 226, 8, '1985-01-29', 576, 'G', 43, 410, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4609796, '16233 Rowe Alley', 3834, 'Ritchieside', 'Ældrebolig', 82, 7, '1974-08-07', 1394, 'G', 64, 69, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5346030, '12329 Leffler Meadow', 9217, 'Lake Casey', 'Ungdomsbolig', 174, 5, '2024-04-22', 1092, 'F', 77, 397, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (720484, '316 Dach Pine', 4355, 'Marisolland', 'Ældrebolig', 76, 2, '2009-02-17', 1269, 'A', 98, 149, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5676338, '494 Kurt Ports', 3399, 'New Efrentown', 'Ældrebolig', 224, 1, '2020-03-30', 409, 'A', 44, 100, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6714255, '934 Kautzer Island', 8245, 'Mitchellport', 'Rækkehus', 268, 1, '2021-12-24', 1263, 'B', 52, 89, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5277974, '3457 Nathan Via', 4626, 'West Reymundomouth', 'Andelsbolig', 245, 8, '1997-03-22', 1293, 'E', 47, 397, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2771173, '33638 Weissnat Parkways', 5944, 'Alfredhaven', 'Ældrebolig', 87, 3, '1988-06-23', 377, 'F', 66, 370, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2565756, '968 Garett Valley', 9546, 'Dibbertborough', 'Rækkehus', 99, 4, '1966-07-25', 1225, 'F', 20, 382, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4020235, '89708 Wintheiser Islands', 5202, 'New Devinside', 'Ejerlejlighed', 53, 1, '2017-09-09', 1357, 'A', 49, 495, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6443658, '8058 Gulgowski Street', 32, 'D''angeloshire', 'Kolonihavehus', 231, 1, '1986-03-25', 1591, 'A', 29, 342, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5717389, '6988 Beatty Wells', 1676, 'North Lilian', 'Ejerlejlighed', 181, 4, '1956-02-26', 1239, 'E', 48, 396, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5784320, '32718 Berge Trace', 1485, 'Josechester', 'Andelsbolig', 276, 6, '1962-06-23', 414, 'B', 71, 258, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4143081, '453 Ward Branch', 5721, 'Wisozkmouth', 'Lejlighed', 55, 5, '1988-12-07', 1269, 'G', 40, 298, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4205761, '378 Cruickshank Common', 6185, 'Cassidyside', 'Lejlighed', 295, 7, '1955-08-07', 1560, 'A', 92, 486, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5504453, '0170 Kihn Mission', 8223, 'New Brayan', 'Sommerhus', 209, 4, '1957-09-23', 1176, 'E', 7, 286, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5465405, '88327 Powlowski Mills', 3612, 'Lake Genevievemouth', 'Lejlighed', 192, 8, '1999-10-15', 951, 'D', 70, 311, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6220509, '622 Vicky Tunnel', 2750, 'Parkerborough', 'Kolonihavehus', 61, 7, '2011-05-30', 1025, 'C', 54, 494, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7200316, '23803 Era Overpass', 26, 'West Wallacestad', 'Ældrebolig', 134, 1, '1964-10-26', 1194, 'G', 47, 142, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2407980, '13291 Oliver Points', 4931, 'New Joeltown', 'Rækkehus', 255, 6, '2023-02-21', 606, 'C', 97, 114, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7854517, '3938 Boyer Harbor', 5015, 'Laurineville', 'Rækkehus', 286, 5, '1998-08-11', 1516, 'C', 72, 270, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2645876, '0605 Sawayn Shoals', 6857, 'Lake Delfina', 'Kolonihavehus', 215, 8, '2007-04-24', 494, 'F', 60, 185, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2059052, '814 Lourdes Field', 523, 'West Chase', 'Rækkehus', 78, 3, '2002-11-14', 716, 'B', 99, 213, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3650147, '249 Osinski Harbor', 523, 'East Queen', 'Ungdomsbolig', 202, 1, '1958-01-06', 825, 'A', 9, 333, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2600852, '929 Morris Highway', 8816, 'Otismouth', 'Villa', 58, 3, '1984-05-30', 1192, 'D', 7, 85, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6764075, '3372 Barrows Fall', 4372, 'Port Gertrudeshire', 'Ældrebolig', 241, 5, '1964-10-06', 664, 'E', 99, 72, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5309454, '4090 Alivia Loaf', 9991, 'Georgianafort', 'Lejlighed', 75, 2, '1956-11-27', 1448, 'F', 83, 2, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2654384, '8781 Dickens Plaza', 2062, 'New Junestad', 'Ejerlejlighed', 245, 4, '1977-02-28', 1421, 'D', 90, 188, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6996083, '6458 Emelia Fords', 3796, 'Julianaberg', 'Sommerhus', 220, 6, '2003-01-19', 613, 'A', 31, 483, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1539248, '19151 Cara Forge', 4844, 'Dashawnbury', 'Ungdomsbolig', 259, 1, '1982-06-09', 521, 'B', 49, 476, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6739848, '4199 Lowe Mall', 3700, 'Port Jeromeview', 'Andelsbolig', 138, 3, '2023-06-15', 440, 'G', 81, 93, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3954781, '7452 Granville Canyon', 7002, 'Brookburgh', 'Kolonihavehus', 92, 6, '1992-06-14', 594, 'A', 96, 165, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5065080, '954 Flatley Garden', 3484, 'West Maynard', 'Rækkehus', 98, 8, '1999-03-30', 693, 'A', 87, 472, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6881024, '70930 Walker Unions', 4057, 'Lake Fidel', 'Andelsbolig', 238, 1, '1967-01-08', 1676, 'F', 61, 188, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1985740, '77528 Medhurst Unions', 1157, 'Blandatown', 'Andelsbolig', 298, 7, '2009-10-15', 1440, 'D', 41, 138, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4360935, '580 Raina Cliffs', 6031, 'East Brayan', 'Kolonihavehus', 89, 3, '1979-07-14', 575, 'C', 35, 460, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4359457, '9291 Hilll Cove', 2190, 'Idellburgh', 'Lejlighed', 185, 2, '1968-02-09', 531, 'F', 1, 30, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5831462, '53840 Walsh Landing', 983, 'West Phyllis', 'Andelsbolig', 256, 8, '1960-04-26', 1167, 'D', 31, 197, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2634886, '73323 Dietrich Estate', 7319, 'East Kailynborough', 'Sommerhus', 132, 7, '1970-03-01', 454, 'E', 24, 200, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4732278, '5044 Noel Curve', 5567, 'Baileytown', 'Rækkehus', 58, 8, '1973-04-18', 1428, 'C', 62, 167, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5341533, '82512 Legros Stravenue', 8362, 'New Mittieburgh', 'Kolonihavehus', 198, 4, '1973-08-01', 996, 'F', 6, 249, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5877648, '3414 Simonis Lodge', 9461, 'West Brock', 'Villa', 165, 2, '2009-11-06', 1333, 'B', 100, 69, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7653821, '53057 Ethan Rapid', 1599, 'Ginachester', 'Sommerhus', 72, 6, '2007-03-14', 212, 'C', 83, 362, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1752631, '697 Ottilie Mountains', 8235, 'North Claratown', 'Villa', 284, 7, '1997-02-08', 1383, 'C', 15, 427, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1574835, '333 Quinten Alley', 6371, 'Carterville', 'Rækkehus', 234, 4, '2017-10-26', 1302, 'D', 17, 477, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4666255, '77659 Heller Pines', 5577, 'Port Titusville', 'Kolonihavehus', 50, 4, '2007-10-04', 967, 'E', 17, 472, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1777062, '85734 Thaddeus Locks', 235, 'West Marcella', 'Lejlighed', 183, 3, '1961-08-28', 1519, 'D', 80, 162, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3827613, '845 Hudson Loaf', 3611, 'Blandashire', 'Ungdomsbolig', 108, 7, '1992-06-28', 766, 'G', 9, 169, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1296538, '1556 Hirthe Route', 5637, 'Harrisonmouth', 'Andelsbolig', 49, 8, '1991-04-20', 1525, 'E', 99, 319, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3200130, '7966 Jackson Course', 9388, 'Powlowskiview', 'Villa', 258, 3, '1986-06-20', 1735, 'A', 43, 93, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (665624, '34138 Stoltenberg Burg', 9383, 'Mosheview', 'Sommerhus', 77, 6, '1998-10-11', 1137, 'D', 100, 50, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7763944, '9697 Buckridge Valley', 4778, 'Tobinside', 'Ungdomsbolig', 94, 1, '1970-08-22', 1265, 'B', 77, 216, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4939272, '673 Constantin Plaza', 7774, 'Nikolausmouth', 'Rækkehus', 179, 2, '1989-07-14', 722, 'B', 61, 84, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2298261, '32423 Ryan Plaza', 7089, 'Port Marielle', 'Villa', 256, 8, '1982-10-31', 1417, 'A', 74, 402, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2574212, '25820 Alysson Ville', 8924, 'North Nannie', 'Kolonihavehus', 178, 6, '1987-12-29', 1299, 'E', 83, 248, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4800532, '51286 Harmon Spring', 2952, 'Howeland', 'Ungdomsbolig', 205, 2, '1995-03-08', 1548, 'B', 57, 89, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3857482, '95281 Hills Hill', 4136, 'Mannbury', 'Rækkehus', 130, 7, '1966-01-19', 1614, 'D', 56, 421, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6904559, '9106 Moore Street', 3494, 'Janessamouth', 'Ejerlejlighed', 183, 5, '2007-04-20', 634, 'F', 100, 143, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4746014, '5398 Feest Pine', 8873, 'New Gastonmouth', 'Kolonihavehus', 203, 3, '1965-09-06', 1464, 'C', 9, 431, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6734326, '45810 Pfannerstill Overpass', 143, 'Wildermanberg', 'Lejlighed', 234, 6, '1996-07-01', 1641, 'C', 71, 10, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7501706, '430 Cummings Squares', 5324, 'Alexandraborough', 'Villa', 253, 2, '1975-08-09', 480, 'E', 56, 15, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7241278, '80247 Torrance Fort', 5769, 'New Eden', 'Lejlighed', 184, 6, '2001-12-12', 1105, 'C', 63, 92, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6553935, '57336 Mack Run', 8244, 'New Enochberg', 'Lejlighed', 274, 6, '1955-12-22', 857, 'G', 20, 232, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (833314, '67817 Hudson Meadows', 6613, 'Port Juliannestad', 'Lejlighed', 152, 5, '1972-12-01', 1459, 'C', 24, 227, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5703947, '7061 Hessel Forge', 4787, 'New Rexburgh', 'Ældrebolig', 123, 7, '2003-04-15', 631, 'D', 39, 372, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2266306, '697 Parisian Locks', 9172, 'West Eveline', 'Andelsbolig', 96, 8, '2003-08-19', 291, 'E', 22, 125, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3757078, '49931 Aron Place', 7556, 'Lake Esther', 'Ejerlejlighed', 163, 5, '1961-04-06', 1626, 'A', 2, 326, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5409697, '418 Terry Loop', 7966, 'Port Damarisfurt', 'Kolonihavehus', 84, 5, '1977-06-03', 969, 'G', 54, 8, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4320160, '6174 Heather Alley', 7425, 'South Angie', 'Kolonihavehus', 55, 4, '1984-11-19', 662, 'E', 12, 194, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2585908, '02117 Rice Cliffs', 5052, 'Hegmannfort', 'Lejlighed', 166, 8, '2016-12-12', 769, 'C', 12, 66, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2491437, '021 Luis Plain', 7416, 'Gerholdberg', 'Ældrebolig', 297, 1, '2007-10-04', 1319, 'F', 28, 255, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4725090, '44317 Padberg Route', 3509, 'Abbottton', 'Ungdomsbolig', 259, 2, '1989-04-17', 627, 'A', 30, 227, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5754294, '1313 Amanda Lodge', 9907, 'West Ismaelville', 'Ældrebolig', 63, 6, '1991-03-22', 1261, 'A', 25, 456, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1886767, '8326 Wyman Burg', 7667, 'New Amayaburgh', 'Ungdomsbolig', 162, 7, '2005-08-07', 1051, 'G', 93, 113, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7433860, '7602 Beahan Pass', 7176, 'Rickiefurt', 'Ejerlejlighed', 222, 8, '1980-10-05', 607, 'A', 71, 152, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (2093905, '0128 Koepp Stravenue', 1944, 'Port Marleneton', 'Sommerhus', 73, 8, '1969-03-27', 308, 'C', 74, 289, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5861136, '837 Keagan Roads', 3893, 'New Johnathanbury', 'Andelsbolig', 278, 4, '1999-09-27', 1063, 'E', 61, 463, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (5743737, '1704 Witting Plain', 6790, 'East Rosetta', 'Andelsbolig', 203, 7, '1959-05-19', 1159, 'D', 6, 144, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4816087, '53924 Stroman Mount', 9567, 'East Baron', 'Ungdomsbolig', 79, 7, '1969-09-04', 1132, 'D', 43, 47, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (6821770, '5721 Gutkowski Mall', 3725, 'Quintenburgh', 'Ældrebolig', 223, 8, '1994-01-23', 981, 'B', 14, 450, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4335863, '35916 Tremaine Mountain', 2614, 'New Omer', 'Lejlighed', 225, 5, '1995-04-25', 628, 'A', 80, 290, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (1440687, '6995 Farrell Wells', 6620, 'Bergstrombury', 'Lejlighed', 176, 3, '1957-07-26', 1442, 'E', 12, 24, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (3331264, '14605 Carolyne Club', 962, 'Port Enolaburgh', 'Ungdomsbolig', 72, 2, '2022-08-09', 252, 'F', 79, 235, 'Solgt');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (4624153, '0223 Zachery Alley', 3759, 'Lake Ivyborough', 'Kolonihavehus', 223, 6, '1997-07-09', 1457, 'E', 60, 281, 'Til Salg');
-INSERT INTO Bolig (Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status) VALUES (7721075, '459 Yesenia Summit', 2246, 'Adalbertotown', 'Lejlighed', 53, 1, '2020-10-14', 260, 'G', 63, 488, 'Solgt');
+INSERT INTO Bolig (
+    Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser,
+    ByggeDato, GrundStørrelse, EnergiMærke, EjendomsmæglerID, SælgerID, Status
+) VALUES
+
+ (
+    2626666, 'Tøndebindergade 6', 6524, 'Horslunde', 'Ungdomsbolig', 351,
+    1, '1943-06-05', 571, 'G',
+    548, 853, 'Under Behandling'
+),
+
+
+ (
+    6793967, 'Bechgaardsgade 619', 2870, 'Gilleleje', 'Sommerhus', 95,
+    2, '2023-11-19', 1230, 'E',
+    285, 888, 'Under Behandling'
+),
+
+
+ (
+    5517722, 'Admiralvej 471', 5123, 'Hvalsø', 'Ældrebolig', 96,
+    7, '1983-05-16', 1216, 'C',
+    386, 503, 'Til salg'
+),
+
+
+ (
+    3869028, 'Scharlingsgade 225', 8884, 'Snekkersten', 'Rækkehus', 200,
+    7, '1957-04-09', 908, 'F',
+    782, 922, 'Under Behandling'
+),
+
+
+ (
+    7313854, 'Ejderstedvej 2', 3092, 'Smørum', 'Lejlighed', 51,
+    7, '1970-03-19', 715, 'D',
+    765, 21, 'Til salg'
+),
+
+
+ (
+    8050313, 'Amagerbrostræde 745', 8692, 'Kalvehave', 'Ejerlejlighed', 274,
+    6, '2015-03-04', 1435, 'D',
+    592, 262, 'Til salg'
+),
+
+
+ (
+    9210404, 'Tjørnelundsstræde 1', 7608, 'Klarup', 'Villa', 276,
+    8, '1984-06-19', 1454, 'B',
+    772, 262, 'Under Behandling'
+),
+
+
+ (
+    982389, 'Krudtløbsgade 5', 1732, 'Klovborg', 'Lejlighed', 50,
+    4, '1963-04-11', 204, 'C',
+    190, 726, 'Solgt'
+),
+
+
+ (
+    8692513, 'Kærskiftegade 349', 3476, 'Smørum', 'Ungdomsbolig', 289,
+    2, '2004-07-27', 905, 'E',
+    285, 575, 'Til salg'
+),
+
+
+ (
+    5547548, 'Summerredgade 47', 2548, 'Gedved', 'Rækkehus', 66,
+    8, '1999-03-04', 308, 'E',
+    755, 6, 'Solgt'
+),
+
+
+ (
+    5910366, 'Rødbyvej 9', 5637, 'Aabybro', 'Ungdomsbolig', 122,
+    6, '2014-10-28', 484, 'B',
+    514, 118, 'Til salg'
+),
+
+
+ (
+    1118059, 'Stenosvej 147', 3054, 'Jyllinge', 'Andelsbolig', 339,
+    4, '1932-01-03', 893, 'D',
+    922, 689, 'Under Behandling'
+),
+
+
+ (
+    7590232, 'Tuxensstræde 78', 1376, 'Vojens', 'Ældrebolig', 127,
+    6, '1997-05-11', 479, 'E',
+    328, 844, 'Solgt'
+),
+
+
+ (
+    9697225, 'Bogfinkevej 108', 9812, 'Brande', 'Ejerlejlighed', 163,
+    3, '1946-02-05', 659, 'G',
+    624, 23, 'Til salg'
+),
+
+
+ (
+    2237861, 'Røsågade 995', 9505, 'Veflinge', 'Andelsbolig', 122,
+    2, '1955-03-20', 216, 'C',
+    874, 956, 'Solgt'
+),
+
+
+ (
+    1262444, 'Valbygårdsstræde 61', 2565, 'Valby', 'Ældrebolig', 183,
+    5, '2001-02-13', 361, 'C',
+    459, 356, 'Under Behandling'
+),
+
+
+ (
+    3144106, 'Nordre Kongelundsstræde 965', 5794, 'Millinge', 'Andelsbolig', 163,
+    4, '2009-12-12', 708, 'A',
+    176, 920, 'Solgt'
+),
+
+
+ (
+    4709762, 'Blushøjvej 36', 2806, 'Grevinge', 'Ejerlejlighed', 188,
+    8, '2018-09-30', 273, 'D',
+    872, 552, 'Under Behandling'
+),
+
+
+ (
+    9755524, 'Øselsvej 7', 6747, 'Bording', 'Andelsbolig', 361,
+    4, '1997-05-24', 178, 'B',
+    109, 554, 'Til salg'
+),
+
+
+ (
+    9731191, 'Sternberggade 52', 6477, 'Gedved', 'Kolonihavehus', 96,
+    5, '1926-09-25', 1365, 'A',
+    128, 545, 'Solgt'
+),
+
+
+ (
+    7650106, 'Hyltebjerggade 2', 7761, 'Ribe', 'Villa', 120,
+    5, '1943-01-19', 289, 'D',
+    962, 539, 'Solgt'
+),
+
+
+ (
+    8447472, 'Knippelsbrovej 6', 1149, 'Brædstrup', 'Ejerlejlighed', 306,
+    7, '1931-01-17', 283, 'G',
+    328, 524, 'Solgt'
+),
+
+
+ (
+    7648214, 'Engelstedsvej 4', 4401, 'Assens', 'Sommerhus', 171,
+    4, '2011-07-02', 915, 'F',
+    574, 575, 'Under Behandling'
+),
+
+
+ (
+    6249309, 'Basnæsvej 99', 5937, 'Millinge', 'Ejerlejlighed', 269,
+    1, '2010-06-15', 344, 'E',
+    270, 399, 'Til salg'
+),
+
+
+ (
+    7579455, 'Moselstræde 55', 3649, 'Vester Skerninge', 'Ældrebolig', 94,
+    7, '1927-09-25', 409, 'D',
+    886, 975, 'Under Behandling'
+),
+
+
+ (
+    5938391, 'Løgæblestræde 24', 2330, 'Bording', 'Ældrebolig', 126,
+    7, '1989-07-24', 1226, 'E',
+    666, 630, 'Solgt'
+),
+
+
+ (
+    314081, 'Vester Farimagsstræde 66', 2577, 'Stouby', 'Villa', 41,
+    5, '1949-01-06', 755, 'G',
+    853, 136, 'Under Behandling'
+),
+
+
+ (
+    9732033, 'Tartinisvej 158', 2843, 'Helsingør', 'Sommerhus', 107,
+    3, '2012-10-09', 844, 'E',
+    744, 391, 'Solgt'
+),
+
+
+ (
+    5897116, 'Bredstræde 4', 2099, 'Sulsted', 'Ungdomsbolig', 373,
+    6, '2022-04-10', 130, 'A',
+    993, 61, 'Solgt'
+),
+
+
+ (
+    7544401, 'Jægersborg Allé 748', 2915, 'Charlottenlund', 'Andelsbolig', 118,
+    5, '1999-09-30', 978, 'D',
+    723, 686, 'Under Behandling'
+),
+
+
+ (
+    5855704, 'Østerdalsgade 11', 6237, 'Brædstrup', 'Rækkehus', 377,
+    5, '1990-10-07', 911, 'E',
+    36, 359, 'Solgt'
+),
+
+
+ (
+    4233764, 'Morsø Allé 24', 8772, 'Hellerup', 'Andelsbolig', 204,
+    5, '2018-05-12', 266, 'E',
+    489, 258, 'Til salg'
+),
+
+
+ (
+    4858468, 'Saabyes Allé 146', 3273, 'Farsø', 'Kolonihavehus', 198,
+    5, '1955-10-16', 284, 'E',
+    22, 538, 'Til salg'
+),
+
+
+ (
+    4895598, 'Blågårdsvej 621', 1977, 'Vallensbæk', 'Sommerhus', 220,
+    1, '1991-06-01', 868, 'E',
+    646, 785, 'Solgt'
+),
+
+
+ (
+    3621929, 'Letlandsgade 96', 6409, 'Lem', 'Ejerlejlighed', 239,
+    7, '2006-12-09', 868, 'F',
+    733, 357, 'Solgt'
+),
+
+
+ (
+    9819847, 'Skovgaardsvej 6', 3600, 'Ishøj', 'Rækkehus', 366,
+    2, '1998-09-04', 1219, 'F',
+    156, 882, 'Under Behandling'
+),
+
+
+ (
+    5195945, 'Larslejsgade 9', 6258, 'Bække', 'Kolonihavehus', 109,
+    6, '1985-08-13', 263, 'G',
+    61, 977, 'Under Behandling'
+),
+
+
+ (
+    7350958, 'Viborggade 661', 1402, 'Aakirkeby', 'Andelsbolig', 366,
+    1, '1986-04-17', 276, 'G',
+    750, 115, 'Solgt'
+),
+
+
+ (
+    3921657, 'Klaksvigsgade 912', 8694, 'Skamby', 'Sommerhus', 158,
+    8, '1940-09-29', 715, 'B',
+    865, 365, 'Under Behandling'
+),
+
+
+ (
+    2697402, 'Rysensteensvej 2', 8688, 'Risskov', 'Kolonihavehus', 63,
+    3, '1950-08-24', 1216, 'C',
+    967, 483, 'Under Behandling'
+),
+
+
+ (
+    9338331, 'Ystadgade 387', 3172, 'Ryomgård', 'Kolonihavehus', 294,
+    3, '2017-04-17', 1401, 'F',
+    524, 612, 'Solgt'
+),
+
+
+ (
+    913726, 'Dybensgade 33', 8470, 'Kastrup', 'Kolonihavehus', 204,
+    7, '1998-04-19', 804, 'F',
+    686, 892, 'Under Behandling'
+),
+
+
+ (
+    4988153, 'Clematisvej 738', 4968, 'Greve Strand', 'Ungdomsbolig', 379,
+    4, '1979-10-09', 377, 'D',
+    345, 693, 'Under Behandling'
+),
+
+
+ (
+    2957706, 'Sejrøvej 79', 9257, 'Roslev', 'Lejlighed', 400,
+    4, '1969-02-07', 643, 'E',
+    89, 236, 'Under Behandling'
+),
+
+
+ (
+    3801465, 'Selsøgade 9', 8850, 'Hellerup', 'Ungdomsbolig', 377,
+    8, '1960-11-08', 1195, 'G',
+    448, 825, 'Under Behandling'
+),
+
+
+ (
+    5229031, 'Todesvej 2', 3634, 'Mesinge', 'Andelsbolig', 68,
+    5, '1928-07-21', 860, 'A',
+    167, 959, 'Solgt'
+),
+
+
+ (
+    2359147, 'Pasteursstræde 6', 7238, 'Bredsten', 'Sommerhus', 221,
+    8, '1942-12-16', 399, 'G',
+    254, 620, 'Til salg'
+),
+
+
+ (
+    6920500, 'Dønnerupvej 3', 4968, 'Gørløse', 'Ejerlejlighed', 107,
+    4, '1969-11-14', 1432, 'D',
+    715, 876, 'Under Behandling'
+),
+
+
+ (
+    2828370, 'Grevingevej 774', 3814, 'Brædstrup', 'Andelsbolig', 52,
+    1, '2008-08-21', 1425, 'A',
+    329, 717, 'Under Behandling'
+),
+
+
+ (
+    2877746, 'Sokkelundsstræde 203', 5085, 'Korsør', 'Sommerhus', 295,
+    8, '1928-04-26', 795, 'F',
+    667, 877, 'Til salg'
+),
+
+
+ (
+    3832228, 'Stenmaglevej 8', 5866, 'Lundby', 'Ældrebolig', 187,
+    8, '1934-12-01', 1379, 'A',
+    700, 984, 'Under Behandling'
+),
+
+
+ (
+    4031026, 'Maribovej 166', 3986, 'Bredebro', 'Ejerlejlighed', 124,
+    5, '2004-11-08', 578, 'G',
+    923, 354, 'Under Behandling'
+),
+
+
+ (
+    7466269, 'Væbnergade 17', 6642, 'Højer', 'Villa', 311,
+    2, '1988-12-03', 1344, 'C',
+    939, 922, 'Til salg'
+),
+
+
+ (
+    4473885, 'Tyborøngade 289', 6332, 'Thorsø', 'Ejerlejlighed', 115,
+    6, '1935-11-20', 1008, 'C',
+    928, 861, 'Under Behandling'
+),
+
+
+ (
+    6722048, 'Abrikosvej 5', 1052, 'Vemb', 'Ældrebolig', 108,
+    3, '2017-07-19', 213, 'F',
+    856, 467, 'Under Behandling'
+),
+
+
+ (
+    9494885, 'Skipper Clementsgade 2', 9138, 'Thyborøn', 'Villa', 377,
+    2, '1993-07-13', 155, 'E',
+    413, 73, 'Til salg'
+),
+
+
+ (
+    2302941, 'Tudskærgade 80', 7891, 'Grevinge', 'Ejerlejlighed', 87,
+    4, '1981-05-02', 1251, 'F',
+    993, 929, 'Under Behandling'
+),
+
+
+ (
+    9496560, 'Cumberlandsvej 5', 1767, 'Randbøl', 'Lejlighed', 111,
+    3, '1965-11-17', 853, 'B',
+    891, 163, 'Under Behandling'
+),
+
+
+ (
+    1808532, 'Flidsager Allé 1', 5435, 'Frederikshavn', 'Ungdomsbolig', 142,
+    4, '2008-06-17', 1337, 'B',
+    97, 838, 'Under Behandling'
+),
+
+
+ (
+    254492, 'Nivåvej 692', 7025, 'Strandby', 'Andelsbolig', 131,
+    3, '1967-06-22', 1174, 'B',
+    983, 605, 'Solgt'
+),
+
+
+ (
+    6602143, 'Stenhuggerstræde 6', 9887, 'Horbelev', 'Andelsbolig', 49,
+    5, '2004-03-10', 1349, 'F',
+    563, 14, 'Til salg'
+),
+
+
+ (
+    3966872, 'Pæonvej 323', 6347, 'Brøndby Strand', 'Villa', 74,
+    6, '2024-03-14', 139, 'B',
+    770, 518, 'Til salg'
+),
+
+
+ (
+    6668733, 'Støbegodsgade 59', 1945, 'Hasselager', 'Sommerhus', 379,
+    5, '2017-12-21', 585, 'B',
+    270, 676, 'Solgt'
+),
+
+
+ (
+    6695989, 'Landfogedgade 428', 8096, 'Skodsborg', 'Villa', 379,
+    3, '2006-09-16', 1433, 'C',
+    422, 947, 'Under Behandling'
+),
+
+
+ (
+    9721348, 'Degnemosegade 8', 4438, 'Nyborg', 'Villa', 382,
+    1, '1929-10-13', 1034, 'B',
+    280, 283, 'Under Behandling'
+),
+
+
+ (
+    777091, 'Farvergade 12', 2819, 'Gudhjem', 'Ejerlejlighed', 396,
+    3, '1939-01-19', 739, 'E',
+    13, 476, 'Solgt'
+),
+
+
+ (
+    5496802, 'Dyvekesgade 4', 9926, 'Sommersted', 'Villa', 317,
+    3, '1986-01-19', 511, 'A',
+    431, 703, 'Solgt'
+),
+
+
+ (
+    5587039, 'Venedigvej 4', 1730, 'Jægerspris', 'Andelsbolig', 151,
+    4, '1961-10-11', 429, 'C',
+    715, 574, 'Under Behandling'
+),
+
+
+ (
+    4108003, 'Ourøstræde 188', 7773, 'Ørsted', 'Ungdomsbolig', 62,
+    2, '2002-11-02', 649, 'D',
+    612, 363, 'Til salg'
+),
+
+
+ (
+    1933018, 'Lillevej 21', 6921, 'Solrød Strand', 'Kolonihavehus', 308,
+    1, '2010-09-25', 316, 'B',
+    494, 208, 'Til salg'
+),
+
+
+ (
+    3090250, 'Wibrandtsgade 324', 3604, 'Kettinge', 'Kolonihavehus', 149,
+    4, '1993-04-10', 933, 'G',
+    23, 483, 'Under Behandling'
+),
+
+
+ (
+    868507, 'Teglholmgade 88', 6719, 'Ullerslev', 'Rækkehus', 336,
+    3, '2002-03-25', 216, 'D',
+    200, 968, 'Til salg'
+),
+
+
+ (
+    1001624, 'Bådsmandsgade 534', 5680, 'Ejby', 'Villa', 118,
+    7, '1993-05-29', 669, 'C',
+    107, 694, 'Solgt'
+),
+
+
+ (
+    7552041, 'Ny Kongensgade 46', 7740, 'Svenstrup', 'Rækkehus', 131,
+    6, '1996-05-09', 257, 'F',
+    804, 43, 'Til salg'
+),
+
+
+ (
+    2540503, 'Spaniensstræde 778', 1707, 'Rødovre', 'Ungdomsbolig', 144,
+    2, '1964-10-16', 1304, 'E',
+    720, 713, 'Til salg'
+),
+
+
+ (
+    8839772, 'Sadelmagervej 52', 9064, 'Gedsted', 'Ejerlejlighed', 304,
+    3, '1972-03-05', 914, 'G',
+    554, 350, 'Til salg'
+),
+
+
+ (
+    7897231, 'Astrupvej 31', 3326, 'Asnæs', 'Lejlighed', 266,
+    2, '1952-08-12', 1123, 'E',
+    176, 782, 'Til salg'
+),
+
+
+ (
+    4263404, 'Elsdyrsvej 669', 9002, 'Pandrup', 'Sommerhus', 380,
+    4, '2001-01-02', 778, 'B',
+    570, 576, 'Under Behandling'
+),
+
+
+ (
+    1113200, 'Hyskenvej 594', 6458, 'Frederiksværk', 'Sommerhus', 309,
+    6, '1952-02-06', 923, 'A',
+    549, 559, 'Solgt'
+),
+
+
+ (
+    9659091, 'Østergårdsvej 1', 5247, 'Haslev', 'Ældrebolig', 320,
+    8, '1945-09-08', 1394, 'D',
+    731, 825, 'Under Behandling'
+),
+
+
+ (
+    8901382, 'Bogtrykkervej 2', 4980, 'Tappernøje', 'Ejerlejlighed', 325,
+    5, '1998-02-04', 823, 'B',
+    844, 594, 'Til salg'
+),
+
+
+ (
+    5462369, 'Rosenvængetsvej 1', 8059, 'Hornsyld', 'Ældrebolig', 76,
+    6, '2017-03-26', 759, 'D',
+    590, 980, 'Til salg'
+),
+
+
+ (
+    3871907, 'Toldskrivervej 53', 4863, 'Nykøbing F', 'Ældrebolig', 54,
+    1, '1988-06-06', 960, 'E',
+    556, 174, 'Til salg'
+),
+
+
+ (
+    4766367, 'Hjelmsvej 597', 9972, 'Svebølle', 'Sommerhus', 131,
+    2, '1987-03-19', 288, 'B',
+    595, 985, 'Solgt'
+),
+
+
+ (
+    2395552, 'Sundevedsvej 475', 6511, 'Otterup', 'Sommerhus', 155,
+    7, '2010-01-02', 1431, 'G',
+    113, 228, 'Til salg'
+),
+
+
+ (
+    3871544, 'Ålstrupvej 6', 5820, 'Faaborg', 'Ældrebolig', 331,
+    8, '2008-09-27', 931, 'B',
+    157, 51, 'Under Behandling'
+),
+
+
+ (
+    6134666, 'Farvervej 809', 1590, 'København', 'Rækkehus', 102,
+    8, '1961-01-17', 741, 'F',
+    342, 163, 'Til salg'
+),
+
+
+ (
+    7974738, 'Gammeltoftsvej 95', 2951, 'Hvide Sande', 'Lejlighed', 48,
+    8, '1978-10-25', 1171, 'C',
+    330, 863, 'Under Behandling'
+),
+
+
+ (
+    6735031, 'Bergthorasvej 5', 4648, 'Skive', 'Villa', 135,
+    3, '2021-06-13', 242, 'D',
+    552, 540, 'Under Behandling'
+),
+
+
+ (
+    4486668, 'Randersvej 74', 1005, 'Faaborg', 'Ungdomsbolig', 153,
+    2, '1993-05-08', 1046, 'C',
+    86, 14, 'Under Behandling'
+),
+
+
+ (
+    1418888, 'Løjtegårdsgade 7', 3991, 'Gjern', 'Sommerhus', 122,
+    7, '2022-08-07', 1135, 'E',
+    935, 465, 'Under Behandling'
+),
+
+
+ (
+    7177202, 'Elmelundestræde 6', 9560, 'Snekkersten', 'Ældrebolig', 345,
+    3, '1967-04-11', 823, 'B',
+    426, 36, 'Til salg'
+),
+
+
+ (
+    6564243, 'Gammel Køge Landevej 651', 6767, 'Gudbjerg', 'Ældrebolig', 321,
+    4, '1930-05-06', 207, 'C',
+    28, 751, 'Solgt'
+),
+
+
+ (
+    6651115, 'Hestemøllevej 7', 9453, 'Skanderborg', 'Andelsbolig', 202,
+    1, '1983-01-03', 1296, 'E',
+    583, 538, 'Til salg'
+),
+
+
+ (
+    6599176, 'Speditørgade 4', 1546, 'Terndrup', 'Ungdomsbolig', 264,
+    8, '1958-10-31', 814, 'E',
+    544, 117, 'Solgt'
+),
+
+
+ (
+    4264843, 'Emblasgade 786', 2985, 'Odense', 'Ældrebolig', 248,
+    2, '1993-08-01', 506, 'E',
+    308, 599, 'Til salg'
+),
+
+
+ (
+    2451536, 'Sandbjergvej 480', 9220, 'Harboøre', 'Kolonihavehus', 318,
+    1, '1950-11-13', 616, 'F',
+    975, 661, 'Til salg'
+),
+
+
+ (
+    8639847, 'Blågårdsgade 33', 8558, 'Glumsø', 'Sommerhus', 48,
+    5, '1953-11-11', 1449, 'F',
+    48, 107, 'Til salg'
+),
+
+
+ (
+    1186679, 'Timiansvej 686', 3747, 'Frederikssund', 'Rækkehus', 57,
+    3, '1979-11-16', 1312, 'G',
+    108, 166, 'Under Behandling'
+),
+
+
+ (
+    6145847, 'Enghavegade 476', 3861, 'Rømø', 'Sommerhus', 111,
+    2, '1996-09-15', 812, 'A',
+    126, 470, 'Solgt'
+),
+
+
+ (
+    6509918, 'Lærdalsgade 274', 2418, 'Hvidovre', 'Sommerhus', 175,
+    5, '2007-08-19', 401, 'E',
+    275, 258, 'Solgt'
+),
+
+
+ (
+    1326492, 'Obdamsvej 1', 9572, 'Holeby', 'Villa', 46,
+    4, '1964-08-31', 1371, 'C',
+    920, 459, 'Til salg'
+),
+
+
+ (
+    7114415, 'Kornskyldgade 89', 8848, 'Aakirkeby', 'Rækkehus', 291,
+    2, '2006-10-16', 1473, 'C',
+    269, 384, 'Under Behandling'
+),
+
+
+ (
+    7337854, 'Tipsagergade 7', 3963, 'Helsinge', 'Sommerhus', 169,
+    2, '1955-06-13', 374, 'D',
+    232, 549, 'Under Behandling'
+),
+
+
+ (
+    4772271, 'Jernbanevej 85', 3179, 'Taastrup', 'Lejlighed', 47,
+    1, '1978-05-23', 1193, 'C',
+    70, 956, 'Under Behandling'
+),
+
+
+ (
+    1108808, 'Lille Istedvej 368', 9563, 'Tilst', 'Rækkehus', 266,
+    6, '1992-12-24', 1024, 'B',
+    733, 861, 'Til salg'
+),
+
+
+ (
+    5383118, 'Aldersro Allé 56', 4548, 'Humble', 'Ungdomsbolig', 302,
+    1, '1989-04-01', 858, 'E',
+    687, 81, 'Til salg'
+),
+
+
+ (
+    5173775, 'Moselstræde 662', 4392, 'Bogense', 'Ejerlejlighed', 227,
+    6, '2021-12-12', 126, 'G',
+    829, 310, 'Solgt'
+),
+
+
+ (
+    2114023, 'Æbeløvej 251', 1872, 'Otterup', 'Ældrebolig', 182,
+    8, '2003-11-12', 132, 'E',
+    481, 949, 'Under Behandling'
+),
+
+
+ (
+    5757807, 'Knabro Allé 728', 7010, 'Vejby', 'Sommerhus', 174,
+    1, '1956-03-30', 1009, 'A',
+    298, 878, 'Til salg'
+),
+
+
+ (
+    5865439, 'Antwerpenvej 6', 4506, 'Vordingborg', 'Ungdomsbolig', 60,
+    3, '2012-05-14', 632, 'C',
+    896, 563, 'Solgt'
+),
+
+
+ (
+    9656015, 'Mellemfortsvej 606', 9477, 'Frøstrup', 'Andelsbolig', 249,
+    4, '2006-02-07', 1363, 'F',
+    610, 438, 'Under Behandling'
+),
+
+
+ (
+    5398932, 'Rahbeks Allé 7', 5712, 'Regstrup', 'Ungdomsbolig', 153,
+    1, '1995-06-23', 117, 'A',
+    299, 326, 'Solgt'
+),
+
+
+ (
+    2533776, 'Holbækgade 4', 6606, 'Ansager', 'Andelsbolig', 145,
+    5, '1981-10-25', 762, 'B',
+    776, 972, 'Solgt'
+),
+
+
+ (
+    9532499, 'Kronborgvej 853', 8660, 'Nexø', 'Ældrebolig', 54,
+    7, '1938-07-09', 301, 'D',
+    238, 660, 'Til salg'
+),
+
+
+ (
+    4531336, 'Haderslevvej 5', 6319, 'Holbæk', 'Ungdomsbolig', 340,
+    7, '2012-05-28', 1301, 'C',
+    452, 339, 'Solgt'
+),
+
+
+ (
+    9320688, 'Sixtusgade 978', 8284, 'Mern', 'Kolonihavehus', 142,
+    3, '1979-03-06', 1371, 'D',
+    491, 886, 'Solgt'
+),
+
+
+ (
+    600825, 'Heilsvej 245', 4327, 'Højbjerg', 'Villa', 125,
+    5, '2023-01-07', 1065, 'F',
+    106, 363, 'Under Behandling'
+),
+
+
+ (
+    320909, 'Spøttrupvej 59', 3829, 'Sønder Felding', 'Lejlighed', 343,
+    3, '1999-03-03', 549, 'G',
+    559, 480, 'Under Behandling'
+),
+
+
+ (
+    5540933, 'Rosenlundsvej 9', 6801, 'Brabrand', 'Sommerhus', 329,
+    3, '1930-09-15', 714, 'F',
+    538, 802, 'Under Behandling'
+),
+
+
+ (
+    197840, 'Nelson Mandelasvej 7', 2436, 'Gedved', 'Sommerhus', 378,
+    5, '1972-05-14', 889, 'B',
+    271, 105, 'Under Behandling'
+),
+
+
+ (
+    3497744, 'Tromsøvej 497', 8782, 'Møldrup', 'Ungdomsbolig', 296,
+    4, '1970-10-21', 555, 'A',
+    656, 499, 'Solgt'
+),
+
+
+ (
+    7333814, 'Mælkeenvej 6', 6489, 'Faaborg', 'Kolonihavehus', 134,
+    8, '1941-05-30', 940, 'A',
+    830, 29, 'Under Behandling'
+),
+
+
+ (
+    2149673, 'Nørre Søgade 295', 1773, 'Samsø', 'Ejerlejlighed', 195,
+    7, '1997-08-31', 942, 'B',
+    422, 288, 'Under Behandling'
+),
+
+
+ (
+    5975937, 'Beldringestræde 225', 2203, 'Asperup', 'Ungdomsbolig', 238,
+    4, '1946-02-09', 943, 'D',
+    609, 634, 'Til salg'
+),
+
+
+ (
+    4501596, 'Dorthea Allé 7', 3487, 'Glumsø', 'Sommerhus', 226,
+    4, '1954-06-15', 1244, 'G',
+    776, 119, 'Under Behandling'
+),
+
+
+ (
+    5727404, 'Fyensgade 206', 2689, 'Egernsund', 'Ældrebolig', 70,
+    6, '2017-05-24', 1155, 'E',
+    431, 336, 'Solgt'
+),
+
+
+ (
+    3932121, 'Tordenskjoldsvej 77', 8446, 'Hemmet', 'Sommerhus', 244,
+    1, '1976-08-02', 545, 'A',
+    975, 396, 'Til salg'
+),
+
+
+ (
+    4037647, 'Egevej 195', 7513, 'Brøndby Strand', 'Andelsbolig', 281,
+    6, '2021-10-09', 1400, 'D',
+    566, 213, 'Til salg'
+),
+
+
+ (
+    7816572, 'Møntmester Allé 636', 2954, 'Karup', 'Lejlighed', 317,
+    6, '2022-08-17', 693, 'C',
+    298, 658, 'Under Behandling'
+),
+
+
+ (
+    1462953, 'Remisegade 3', 9386, 'Rønde', 'Kolonihavehus', 399,
+    1, '1927-06-24', 941, 'C',
+    760, 675, 'Til salg'
+),
+
+
+ (
+    5020264, 'Bremens Allé 12', 3137, 'Ørnhøj', 'Ungdomsbolig', 204,
+    5, '1931-03-09', 944, 'B',
+    980, 43, 'Solgt'
+),
+
+
+ (
+    7138234, 'Sorrentogade 568', 1467, 'Augustenborg', 'Rækkehus', 264,
+    8, '2021-02-07', 1307, 'B',
+    202, 471, 'Til salg'
+),
+
+
+ (
+    1830729, 'Gråspurvegade 91', 5591, 'Lystrup', 'Lejlighed', 257,
+    3, '1995-07-20', 1389, 'D',
+    801, 614, 'Til salg'
+),
+
+
+ (
+    7147943, 'Hovgaardsvej 24', 5918, 'Lynge', 'Kolonihavehus', 226,
+    4, '1954-12-17', 1425, 'G',
+    341, 984, 'Under Behandling'
+),
+
+
+ (
+    5573484, 'Hørdums Allé 6', 7698, 'Hammel', 'Kolonihavehus', 254,
+    1, '1951-08-09', 1027, 'B',
+    861, 543, 'Under Behandling'
+),
+
+
+ (
+    6556740, 'Gaunøvej 610', 3573, 'Glostrup', 'Sommerhus', 397,
+    2, '1961-03-08', 1158, 'G',
+    818, 668, 'Til salg'
+),
+
+
+ (
+    9312102, 'Morsøstræde 389', 1418, 'Nørager', 'Andelsbolig', 110,
+    8, '1999-11-23', 947, 'C',
+    349, 636, 'Solgt'
+),
+
+
+ (
+    553253, 'Ryvangsgade 32', 6327, 'Thyholm', 'Rækkehus', 341,
+    4, '1926-04-17', 376, 'B',
+    351, 751, 'Til salg'
+),
+
+
+ (
+    2527215, 'Skanderborggade 6', 4883, 'Gjern', 'Ungdomsbolig', 117,
+    1, '1952-08-09', 1478, 'B',
+    555, 669, 'Solgt'
+),
+
+
+ (
+    647025, 'Parnasvej 299', 6156, 'Nimtofte', 'Kolonihavehus', 164,
+    3, '1938-01-27', 597, 'D',
+    789, 715, 'Til salg'
+),
+
+
+ (
+    5872554, 'Frejasstræde 293', 9031, 'Ørbæk', 'Lejlighed', 261,
+    1, '2016-10-06', 276, 'B',
+    864, 685, 'Under Behandling'
+),
+
+
+ (
+    5287355, 'Rothes Allé 3', 9817, 'Mern', 'Ungdomsbolig', 140,
+    1, '1984-04-09', 1159, 'D',
+    673, 44, 'Solgt'
+),
+
+
+ (
+    683297, 'Marskensgade 9', 7752, 'Vesterborg', 'Sommerhus', 44,
+    7, '1971-10-10', 602, 'B',
+    313, 291, 'Solgt'
+),
+
+
+ (
+    6333473, 'Åstræde 842', 1174, 'Gadstrup', 'Andelsbolig', 304,
+    8, '1975-11-07', 364, 'B',
+    777, 237, 'Under Behandling'
+),
+
+
+ (
+    5332044, 'Farver Allé 69', 9602, 'Jordrup', 'Lejlighed', 172,
+    2, '1943-03-31', 1325, 'C',
+    660, 725, 'Under Behandling'
+),
+
+
+ (
+    5773241, 'Gamle Vasby Allé 1', 3129, 'Melby', 'Ejerlejlighed', 328,
+    4, '1951-11-21', 714, 'G',
+    391, 484, 'Under Behandling'
+),
+
+
+ (
+    997730, 'Uffesvej 67', 1971, 'Fjerritslev', 'Villa', 321,
+    7, '1986-06-12', 934, 'A',
+    677, 608, 'Under Behandling'
+),
+
+
+ (
+    5588901, 'Præstegårdsgade 960', 8564, 'Lunderskov', 'Kolonihavehus', 254,
+    8, '1943-09-28', 415, 'E',
+    619, 168, 'Til salg'
+),
+
+
+ (
+    6186981, 'Norgesgade 66', 6371, 'Kokkedal', 'Andelsbolig', 244,
+    7, '1989-07-01', 112, 'F',
+    405, 199, 'Til salg'
+),
+
+
+ (
+    1045644, 'Nokken Hovedn Allé 24', 2652, 'Blokhus', 'Sommerhus', 141,
+    5, '1980-04-17', 1317, 'G',
+    782, 60, 'Under Behandling'
+),
+
+
+ (
+    2372829, 'Skibelundstræde 38', 3340, 'Svaneke', 'Lejlighed', 228,
+    1, '1925-08-20', 448, 'B',
+    831, 590, 'Til salg'
+),
+
+
+ (
+    4068710, 'Badstuegade 30', 8451, 'Haderslev', 'Sommerhus', 364,
+    7, '1932-05-14', 401, 'E',
+    973, 506, 'Under Behandling'
+),
+
+
+ (
+    6651472, 'Østergårdsgade 4', 4668, 'Trustrup', 'Andelsbolig', 167,
+    3, '1977-11-17', 754, 'G',
+    120, 870, 'Under Behandling'
+),
+
+
+ (
+    5112836, 'Hyttehusvej 71', 5723, 'Knebel', 'Andelsbolig', 381,
+    8, '1983-07-18', 829, 'B',
+    319, 824, 'Til salg'
+),
+
+
+ (
+    6001595, 'Stenmaglestræde 28', 7014, 'Mørke', 'Rækkehus', 332,
+    5, '1938-11-18', 1142, 'C',
+    374, 325, 'Solgt'
+),
+
+
+ (
+    508949, 'Billesborgvej 675', 6703, 'Bredebro', 'Andelsbolig', 67,
+    2, '1979-06-14', 809, 'G',
+    242, 17, 'Solgt'
+),
+
+
+ (
+    9886588, 'Vanløse Byvej 4', 1753, 'Sønderborg', 'Lejlighed', 260,
+    8, '2008-12-01', 898, 'B',
+    284, 195, 'Solgt'
+),
+
+
+ (
+    691327, 'Østerdals Allé 19', 3714, 'Rude', 'Villa', 42,
+    7, '1958-10-31', 1020, 'A',
+    42, 431, 'Solgt'
+),
+
+
+ (
+    2946856, 'Bjernedevej 57', 1440, 'Vestervig', 'Andelsbolig', 260,
+    2, '1941-03-01', 1365, 'A',
+    67, 700, 'Til salg'
+),
+
+
+ (
+    2886263, 'Hørhusvej 1', 2122, 'Nexø', 'Andelsbolig', 202,
+    4, '1938-10-12', 1273, 'F',
+    566, 635, 'Solgt'
+),
+
+
+ (
+    4846658, 'Arendalsvej 1', 7317, 'Bække', 'Ejerlejlighed', 338,
+    2, '1981-09-11', 1363, 'G',
+    166, 31, 'Solgt'
+),
+
+
+ (
+    1091307, 'Hannoverstræde 8', 5819, 'Mariager', 'Ejerlejlighed', 55,
+    5, '1975-11-12', 208, 'F',
+    994, 635, 'Til salg'
+),
+
+
+ (
+    5884229, 'Vester Farimagsvej 94', 2884, 'Fårvang', 'Kolonihavehus', 358,
+    3, '1962-11-25', 788, 'B',
+    663, 455, 'Solgt'
+),
+
+
+ (
+    1239409, 'Vagtmestervej 585', 8028, 'Bjæverskov', 'Andelsbolig', 214,
+    4, '1973-11-17', 668, 'B',
+    698, 928, 'Til salg'
+),
+
+
+ (
+    628384, 'Hamletsstræde 549', 1046, 'Ringkøbing', 'Rækkehus', 92,
+    1, '1932-10-15', 1265, 'C',
+    491, 242, 'Under Behandling'
+),
+
+
+ (
+    5332849, 'Fenrisvej 8', 7913, 'Østermarie', 'Rækkehus', 380,
+    3, '2022-03-11', 1322, 'G',
+    92, 476, 'Solgt'
+),
+
+
+ (
+    9524974, 'Kyringevej 13', 8015, 'Ribe', 'Ungdomsbolig', 110,
+    8, '1977-04-18', 1064, 'F',
+    611, 51, 'Solgt'
+),
+
+
+ (
+    321137, 'Møllegårdsstræde 3', 9698, 'Ebberup', 'Lejlighed', 244,
+    4, '1989-03-01', 1445, 'C',
+    85, 573, 'Til salg'
+),
+
+
+ (
+    4770071, 'Angelstræde 210', 8483, 'Helsingør', 'Andelsbolig', 44,
+    5, '1995-08-06', 796, 'G',
+    766, 524, 'Under Behandling'
+),
+
+
+ (
+    9129929, 'Kielgade 59', 2928, 'Søby Ærø', 'Andelsbolig', 127,
+    3, '1928-10-13', 175, 'F',
+    855, 42, 'Under Behandling'
+),
+
+
+ (
+    1937267, 'Hannovergade 94', 8962, 'Kirke Hyllinge', 'Rækkehus', 41,
+    5, '1930-02-14', 179, 'G',
+    570, 367, 'Solgt'
+),
+
+
+ (
+    220761, 'Store Regnevej 45', 3905, 'Skals', 'Kolonihavehus', 76,
+    5, '1955-11-14', 923, 'D',
+    137, 650, 'Under Behandling'
+),
+
+
+ (
+    3860120, 'Hedebyvej 553', 9725, 'Veflinge', 'Lejlighed', 378,
+    6, '1948-06-26', 1325, 'F',
+    250, 824, 'Under Behandling'
+),
+
+
+ (
+    9439399, 'Dampfærgegade 8', 3853, 'Holte', 'Ungdomsbolig', 265,
+    5, '1987-09-01', 299, 'F',
+    972, 619, 'Til salg'
+),
+
+
+ (
+    2194976, 'Lille Fredens Allé 5', 6079, 'Hvalsø', 'Andelsbolig', 183,
+    2, '1955-03-09', 960, 'E',
+    327, 25, 'Solgt'
+),
+
+
+ (
+    5823507, 'Nybogade 7', 5434, 'Ebeltoft', 'Ældrebolig', 311,
+    2, '1963-08-30', 620, 'F',
+    443, 587, 'Til salg'
+),
+
+
+ (
+    1587891, 'Klingseygade 7', 3970, 'Thisted', 'Rækkehus', 196,
+    5, '1943-03-13', 1177, 'D',
+    868, 225, 'Til salg'
+),
+
+
+ (
+    5240216, 'Følfodgade 8', 1910, 'Stubbekøbing', 'Kolonihavehus', 222,
+    3, '1981-02-13', 140, 'A',
+    849, 996, 'Solgt'
+),
+
+
+ (
+    5240654, 'Floridagade 69', 1578, 'Bagsværd', 'Sommerhus', 152,
+    6, '1934-07-03', 519, 'C',
+    774, 465, 'Under Behandling'
+),
+
+
+ (
+    9697259, 'Kirstinedalsvej 546', 9570, 'Oksbøl', 'Ældrebolig', 197,
+    7, '1971-05-09', 479, 'B',
+    788, 935, 'Under Behandling'
+),
+
+
+ (
+    3720583, 'Sundby Parkvej 8', 4094, 'Middelfart', 'Sommerhus', 297,
+    8, '1933-09-10', 676, 'D',
+    906, 583, 'Til salg'
+),
+
+
+ (
+    1239360, 'Kornblomstvej 2', 5036, 'Køge', 'Kolonihavehus', 392,
+    5, '2000-12-30', 329, 'C',
+    14, 368, 'Solgt'
+),
+
+
+ (
+    9873382, 'Værnedams Allé 440', 9454, 'Kjellerup', 'Sommerhus', 301,
+    2, '1985-11-22', 929, 'C',
+    792, 132, 'Til salg'
+),
+
+
+ (
+    9738142, 'Grøndalsvængevej 5', 7574, 'Tølløse', 'Ejerlejlighed', 184,
+    4, '2000-11-10', 1499, 'E',
+    795, 473, 'Til salg'
+),
+
+
+ (
+    8421440, 'Molbechsstræde 71', 4482, 'Risskov', 'Rækkehus', 182,
+    5, '1936-02-09', 213, 'D',
+    930, 963, 'Til salg'
+),
+
+
+ (
+    2046949, 'Absalonsvej 105', 6137, 'Almind', 'Ungdomsbolig', 218,
+    3, '1988-08-03', 434, 'E',
+    629, 697, 'Solgt'
+),
+
+
+ (
+    2256227, 'Hjertingvej 9', 2274, 'Janderup', 'Ungdomsbolig', 237,
+    3, '1933-12-04', 322, 'G',
+    875, 164, 'Under Behandling'
+),
+
+
+ (
+    2848697, 'Florasvej 940', 2126, 'Marslev', 'Ældrebolig', 105,
+    1, '1977-05-08', 1116, 'G',
+    352, 644, 'Under Behandling'
+),
+
+
+ (
+    3788306, 'Skindergade 686', 9563, 'Børkop', 'Lejlighed', 222,
+    6, '1983-08-01', 1388, 'G',
+    499, 426, 'Under Behandling'
+),
+
+
+ (
+    5503292, 'Pakhusvej 530', 4353, 'Gentofte', 'Villa', 340,
+    1, '1937-03-06', 1331, 'E',
+    918, 60, 'Under Behandling'
+),
+
+
+ (
+    1378574, 'Elmelundegade 2', 9983, 'Askeby', 'Ældrebolig', 328,
+    6, '1981-07-07', 532, 'F',
+    564, 800, 'Til salg'
+),
+
+
+ (
+    849502, 'Sorøvej 836', 1644, 'Frederikssund', 'Andelsbolig', 354,
+    6, '1975-03-21', 720, 'E',
+    749, 413, 'Til salg'
+),
+
+
+ (
+    7950460, 'Amagervej 3', 8023, 'Hadsund', 'Ejerlejlighed', 112,
+    7, '1935-04-17', 109, 'F',
+    644, 925, 'Til salg'
+),
+
+
+ (
+    8212642, 'Ny Østervej 989', 8948, 'Engesvang', 'Sommerhus', 275,
+    2, '1948-02-07', 780, 'A',
+    265, 963, 'Solgt'
+),
+
+
+ (
+    1126723, 'Brønshøjholmsvej 613', 7206, 'Dragør', 'Kolonihavehus', 251,
+    2, '1989-08-08', 251, 'A',
+    112, 406, 'Solgt'
+),
+
+
+ (
+    9862063, 'Oldenborgstræde 7', 7551, 'Dianalund', 'Ældrebolig', 117,
+    5, '2010-11-10', 1399, 'F',
+    651, 700, 'Under Behandling'
+),
+
+
+ (
+    6867044, 'Tranevej 552', 1667, 'Oksbøl', 'Ældrebolig', 396,
+    4, '1967-11-16', 894, 'E',
+    634, 401, 'Solgt'
+),
+
+
+ (
+    1456258, 'Dronninglundvej 2', 4782, 'Them', 'Ældrebolig', 266,
+    4, '2009-04-05', 451, 'A',
+    135, 577, 'Under Behandling'
+),
+
+
+ (
+    1272085, 'Biensvej 87', 2004, 'Præstø', 'Rækkehus', 112,
+    3, '1988-08-20', 1303, 'D',
+    596, 42, 'Under Behandling'
+),
+
+
+ (
+    2222774, 'Oehlenschlægersgade 80', 3949, 'Jerup', 'Lejlighed', 248,
+    1, '1965-02-01', 1471, 'G',
+    539, 650, 'Under Behandling'
+),
+
+
+ (
+    5249823, 'Gårdfæstevej 1', 8333, 'Vejle', 'Villa', 181,
+    7, '1954-12-27', 792, 'A',
+    997, 649, 'Under Behandling'
+),
+
+
+ (
+    6221672, 'Engskiftevej 453', 2868, 'Charlottenlund', 'Kolonihavehus', 315,
+    1, '1943-07-26', 1116, 'E',
+    391, 414, 'Under Behandling'
+),
+
+
+ (
+    1300705, 'Præstegårdsgade 79', 5603, 'Aulum', 'Villa', 240,
+    4, '1928-05-25', 377, 'A',
+    398, 65, 'Under Behandling'
+),
+
+
+ (
+    1976051, 'Eckersbergsvej 89', 9057, 'Glamsbjerg', 'Rækkehus', 389,
+    2, '1979-06-12', 299, 'C',
+    503, 794, 'Solgt'
+),
+
+
+ (
+    5227144, 'Wagnersvej 3', 5342, 'Søborg', 'Andelsbolig', 53,
+    6, '2011-01-25', 222, 'G',
+    440, 616, 'Til salg'
+),
+
+
+ (
+    8452569, 'Amaliegade 56', 1233, 'Assens', 'Sommerhus', 62,
+    5, '1965-09-29', 1323, 'C',
+    327, 117, 'Solgt'
+),
+
+
+ (
+    8661975, 'Kløverbladsvej 166', 1488, 'Nysted', 'Ældrebolig', 71,
+    1, '2020-05-26', 1484, 'D',
+    6, 621, 'Til salg'
+),
+
+
+ (
+    184956, 'Birkholmgade 42', 7360, 'Rude', 'Kolonihavehus', 85,
+    3, '1938-01-19', 543, 'F',
+    836, 679, 'Under Behandling'
+),
+
+
+ (
+    3148205, 'Strandagergade 406', 4317, 'Hjerm', 'Ældrebolig', 110,
+    1, '2023-03-01', 103, 'C',
+    73, 931, 'Solgt'
+),
+
+
+ (
+    3030154, 'Sankelmarksvej 77', 1809, 'Storvorde', 'Lejlighed', 255,
+    6, '1926-12-06', 810, 'A',
+    715, 64, 'Til salg'
+),
+
+
+ (
+    6218964, 'Hveensvej 130', 7797, 'Vejle Øst', 'Lejlighed', 259,
+    6, '1993-12-05', 351, 'G',
+    998, 139, 'Under Behandling'
+),
+
+
+ (
+    5512759, 'Stæregade 7', 7539, 'Løsning', 'Sommerhus', 75,
+    7, '1996-05-29', 590, 'D',
+    361, 575, 'Solgt'
+),
+
+
+ (
+    7002280, 'Fyensgade 153', 2529, 'Sandved', 'Lejlighed', 280,
+    1, '1955-10-03', 855, 'B',
+    351, 555, 'Under Behandling'
+),
+
+
+ (
+    9715870, 'Godthåbs Allé 76', 5824, 'Skanderborg', 'Ejerlejlighed', 48,
+    8, '1936-05-06', 1385, 'C',
+    456, 701, 'Til salg'
+),
+
+
+ (
+    4068625, 'Lauravej 8', 8842, 'Juelsminde', 'Sommerhus', 52,
+    6, '2022-04-24', 1407, 'D',
+    111, 996, 'Solgt'
+),
+
+
+ (
+    1211975, 'Skjulhøjvej 19', 2272, 'Gilleleje', 'Sommerhus', 390,
+    8, '1950-09-25', 701, 'A',
+    965, 566, 'Under Behandling'
+),
+
+
+ (
+    191650, 'Værnedamsvej 689', 9190, 'Føvling', 'Kolonihavehus', 396,
+    8, '1999-07-18', 1330, 'E',
+    863, 760, 'Til salg'
+),
+
+
+ (
+    2594167, 'Industrigade 29', 5629, 'Odder', 'Andelsbolig', 226,
+    7, '1929-11-10', 252, 'E',
+    588, 282, 'Solgt'
+),
+
+
+ (
+    6949834, 'Lynæsgade 6', 9379, 'Vallensbæk Strand', 'Kolonihavehus', 119,
+    7, '2013-02-17', 124, 'D',
+    374, 525, 'Under Behandling'
+),
+
+
+ (
+    1542336, 'Færgehavnsvej 6', 5998, 'Ribe', 'Sommerhus', 304,
+    2, '1935-08-10', 1091, 'F',
+    686, 227, 'Under Behandling'
+),
+
+
+ (
+    6830777, 'Palnatokesvej 45', 9280, 'Storvorde', 'Lejlighed', 144,
+    3, '1938-02-14', 1079, 'C',
+    641, 721, 'Til salg'
+),
+
+
+ (
+    4917355, 'Klaipedagade 1', 5887, 'Taastrup', 'Ungdomsbolig', 68,
+    1, '1947-04-10', 926, 'A',
+    731, 27, 'Solgt'
+),
+
+
+ (
+    6971939, 'Kuhlausgade 12', 9690, 'Ballerup', 'Ældrebolig', 394,
+    3, '2010-05-27', 1390, 'F',
+    648, 457, 'Solgt'
+),
+
+
+ (
+    3398669, 'Haldagergade 68', 7324, 'Slagelse', 'Rækkehus', 130,
+    5, '1963-02-05', 838, 'A',
+    773, 479, 'Under Behandling'
+),
+
+
+ (
+    9716652, 'Flidsagerstræde 66', 6226, 'Ry', 'Ungdomsbolig', 151,
+    2, '1980-02-11', 337, 'F',
+    704, 295, 'Til salg'
+),
+
+
+ (
+    9446338, 'Harboøregade 3', 9303, 'Virum', 'Villa', 275,
+    6, '2000-05-09', 909, 'E',
+    441, 250, 'Under Behandling'
+),
+
+
+ (
+    3573459, 'Bygmester Allé 15', 5693, 'Malling', 'Ejerlejlighed', 238,
+    4, '1988-03-21', 1259, 'E',
+    96, 621, 'Solgt'
+),
+
+
+ (
+    1018216, 'Sturlasvej 564', 4410, 'Klemensker', 'Andelsbolig', 381,
+    1, '1947-08-14', 1327, 'B',
+    871, 53, 'Under Behandling'
+),
+
+
+ (
+    1912180, 'Aggerstræde 176', 7526, 'Varde', 'Lejlighed', 172,
+    4, '2008-02-28', 731, 'G',
+    941, 559, 'Under Behandling'
+),
+
+
+ (
+    6135690, 'Ågerupvej 398', 8982, 'Egtved', 'Lejlighed', 262,
+    8, '1929-08-20', 555, 'D',
+    356, 840, 'Til salg'
+),
+
+
+ (
+    1237285, 'Burgundy Allé 288', 5588, 'Kalvehave', 'Kolonihavehus', 77,
+    5, '1973-11-14', 417, 'A',
+    376, 157, 'Til salg'
+),
+
+
+ (
+    9870396, 'Bygholmvej 1', 3389, 'Munkebo', 'Kolonihavehus', 317,
+    1, '2019-09-07', 1015, 'D',
+    362, 452, 'Til salg'
+),
+
+
+ (
+    5679808, 'Hjortholmsvej 17', 3259, 'Gelsted', 'Lejlighed', 74,
+    6, '1964-04-15', 1317, 'C',
+    510, 23, 'Til salg'
+),
+
+
+ (
+    8268306, 'Midgårds Allé 26', 6181, 'Nivå', 'Villa', 313,
+    2, '2002-10-14', 119, 'E',
+    670, 70, 'Under Behandling'
+),
+
+
+ (
+    5271612, 'Store Søndervoldgade 56', 7148, 'Skærbæk', 'Rækkehus', 318,
+    5, '1962-11-27', 418, 'E',
+    258, 731, 'Solgt'
+),
+
+
+ (
+    3652713, 'Landehjælp Allé 491', 3904, 'Sorø', 'Ungdomsbolig', 310,
+    4, '2005-09-13', 267, 'A',
+    314, 849, 'Til salg'
+),
+
+
+ (
+    6900418, 'Lynettevej 75', 5154, 'Billund', 'Ungdomsbolig', 297,
+    3, '1928-07-31', 193, 'E',
+    230, 354, 'Under Behandling'
+),
+
+
+ (
+    7867588, 'Fiskedamsgade 65', 6984, 'Glumsø', 'Villa', 57,
+    8, '1945-10-26', 407, 'G',
+    763, 110, 'Solgt'
+),
+
+
+ (
+    5525040, 'Tscherningsgade 239', 1559, 'Bryrup', 'Villa', 393,
+    7, '1942-12-28', 161, 'F',
+    212, 398, 'Under Behandling'
+),
+
+
+ (
+    9596162, 'Kongedybsvej 216', 1822, 'Mesinge', 'Rækkehus', 143,
+    5, '1994-10-26', 1488, 'B',
+    221, 582, 'Til salg'
+),
+
+
+ (
+    5646992, 'Stemannsgade 6', 3469, 'Langeskov', 'Sommerhus', 294,
+    5, '1934-04-10', 190, 'C',
+    560, 612, 'Under Behandling'
+),
+
+
+ (
+    3797226, 'Ebertsvej 704', 5047, 'Bælum', 'Sommerhus', 350,
+    2, '1972-03-09', 238, 'B',
+    384, 876, 'Under Behandling'
+),
+
+
+ (
+    9496436, 'Stevnsgade 5', 7432, 'Rødkærsbro', 'Rækkehus', 305,
+    4, '1940-03-29', 136, 'A',
+    202, 173, 'Under Behandling'
+),
+
+
+ (
+    8414683, 'Christiansminde Allé 467', 3602, 'Roslev', 'Sommerhus', 115,
+    1, '1947-12-02', 807, 'A',
+    116, 280, 'Under Behandling'
+),
+
+
+ (
+    6979381, 'Hannovergade 48', 7194, 'Mern', 'Kolonihavehus', 211,
+    2, '1967-03-29', 197, 'G',
+    745, 96, 'Til salg'
+),
+
+
+ (
+    4878793, 'Fordresgårdvej 566', 4074, 'Egernsund', 'Villa', 89,
+    4, '1968-12-06', 1055, 'E',
+    35, 519, 'Under Behandling'
+),
+
+
+ (
+    9818003, 'Krügersgade 204', 8280, 'Brovst', 'Lejlighed', 346,
+    2, '1972-10-01', 941, 'C',
+    647, 841, 'Under Behandling'
+),
+
+
+ (
+    9139630, 'Hannemanns Allé 921', 9814, 'Bjerringbro', 'Sommerhus', 237,
+    4, '2006-01-04', 1120, 'E',
+    153, 861, 'Til salg'
+),
+
+
+ (
+    3499711, 'Kirsteins Allé 9', 9960, 'Fårup', 'Ejerlejlighed', 46,
+    7, '1945-01-21', 1374, 'F',
+    789, 328, 'Til salg'
+),
+
+
+ (
+    9041779, 'Rovsings Allé 973', 1492, 'Brøndby', 'Ungdomsbolig', 98,
+    3, '1966-06-07', 212, 'E',
+    397, 572, 'Til salg'
+),
+
+
+ (
+    2978030, 'Venøstræde 1', 9117, 'Taastrup', 'Ejerlejlighed', 273,
+    7, '2018-04-12', 1178, 'B',
+    430, 127, 'Til salg'
+),
+
+
+ (
+    3780503, 'Lergravsvej 82', 1090, 'Aarup', 'Sommerhus', 338,
+    7, '1994-03-17', 1212, 'D',
+    65, 879, 'Til salg'
+),
+
+
+ (
+    7169903, 'Vindingevej 3', 5887, 'Aulum', 'Villa', 225,
+    4, '1996-02-08', 1061, 'E',
+    380, 134, 'Under Behandling'
+),
+
+
+ (
+    7775568, 'Hardenbergvej 287', 1014, 'Låsby', 'Rækkehus', 321,
+    5, '1933-04-26', 940, 'E',
+    95, 668, 'Under Behandling'
+),
+
+
+ (
+    1662385, 'Ådalsstræde 6', 3046, 'Billund', 'Kolonihavehus', 375,
+    6, '1941-08-30', 1370, 'G',
+    424, 989, 'Under Behandling'
+),
+
+
+ (
+    6702567, 'Stenlillegade 755', 4585, 'Stoholm', 'Sommerhus', 320,
+    1, '2000-08-24', 971, 'C',
+    749, 640, 'Til salg'
+),
+
+
+ (
+    4322079, 'Dovrevej 9', 9835, 'Skodsborg', 'Rækkehus', 247,
+    4, '1965-08-11', 903, 'B',
+    886, 846, 'Til salg'
+),
+
+
+ (
+    9489421, 'Rygårdsvej 2', 7078, 'Assens', 'Rækkehus', 226,
+    3, '2021-02-20', 1037, 'A',
+    719, 565, 'Til salg'
+),
+
+
+ (
+    865317, 'Ramundsgade 66', 2844, 'Langebæk', 'Kolonihavehus', 132,
+    1, '1953-11-17', 1089, 'E',
+    4, 930, 'Under Behandling'
+),
+
+
+ (
+    1968437, 'Fajancevej 26', 7613, 'Skødstrup', 'Ejerlejlighed', 90,
+    7, '2017-02-25', 850, 'A',
+    720, 249, 'Solgt'
+),
+
+
+ (
+    8499096, 'Apollogade 71', 7677, 'Bedsted Thy', 'Lejlighed', 292,
+    6, '2016-08-23', 1271, 'G',
+    765, 758, 'Til salg'
+),
+
+
+ (
+    1752341, 'Hellested Allé 8', 6559, 'Ærøskøbing', 'Sommerhus', 336,
+    3, '1948-08-09', 554, 'D',
+    23, 919, 'Under Behandling'
+),
+
+
+ (
+    9964867, 'Øster Voldvej 13', 6255, 'Støvring', 'Lejlighed', 128,
+    2, '1931-09-05', 613, 'G',
+    690, 94, 'Solgt'
+),
+
+
+ (
+    5794317, 'Hørtofte Allé 6', 4908, 'Vildbjerg', 'Rækkehus', 54,
+    1, '1932-05-17', 1355, 'F',
+    414, 531, 'Til salg'
+),
+
+
+ (
+    574461, 'Dag Hammarskjölds Allé 410', 9887, 'Bagsværd', 'Ungdomsbolig', 389,
+    2, '1953-06-10', 1353, 'D',
+    533, 943, 'Solgt'
+),
+
+
+ (
+    7920502, 'Ceylon Allé 75', 7029, 'Viby J', 'Andelsbolig', 384,
+    6, '1968-04-04', 342, 'C',
+    1, 657, 'Solgt'
+),
+
+
+ (
+    4209602, 'Glinkasgade 80', 7220, 'Frederiksværk', 'Sommerhus', 159,
+    1, '1994-03-02', 349, 'G',
+    541, 204, 'Solgt'
+),
+
+
+ (
+    4709829, 'Bissens Allé 5', 3853, 'Åbyhøj', 'Ældrebolig', 168,
+    7, '2005-09-06', 240, 'G',
+    390, 591, 'Under Behandling'
+),
+
+
+ (
+    9155971, 'Ørhage Allé 316', 5826, 'Sabro', 'Ejerlejlighed', 304,
+    8, '1983-08-08', 368, 'B',
+    139, 380, 'Under Behandling'
+),
+
+
+ (
+    3047524, 'Birkagervej 65', 3092, 'Ringkøbing', 'Lejlighed', 44,
+    3, '1955-01-02', 741, 'G',
+    647, 481, 'Til salg'
+),
+
+
+ (
+    8190154, 'Kalkbrænderihavns Allé 57', 9613, 'Munke Bjergby', 'Sommerhus', 222,
+    5, '1996-03-23', 1036, 'B',
+    500, 655, 'Solgt'
+),
+
+
+ (
+    7227259, 'Drogdensvej 42', 4251, 'Svendborg', 'Kolonihavehus', 178,
+    8, '1972-07-09', 1078, 'C',
+    323, 461, 'Solgt'
+),
+
+
+ (
+    7170118, 'Degneæblegade 86', 9849, 'Haderup', 'Sommerhus', 90,
+    6, '1983-07-03', 218, 'D',
+    851, 466, 'Til salg'
+),
+
+
+ (
+    3821648, 'Matthæus Allé 488', 4020, 'Bylderup-Bov', 'Lejlighed', 273,
+    2, '1980-04-05', 822, 'C',
+    634, 306, 'Solgt'
+),
+
+
+ (
+    8091069, 'Maltastræde 521', 1536, 'Vestervig', 'Lejlighed', 256,
+    1, '1988-12-05', 737, 'C',
+    602, 514, 'Under Behandling'
+),
+
+
+ (
+    8877730, 'Suensonsvej 244', 2446, 'Mørke', 'Ejerlejlighed', 250,
+    3, '1970-07-09', 183, 'F',
+    376, 824, 'Til salg'
+),
+
+
+ (
+    9822884, 'Hannemannsvej 186', 3303, 'Fur', 'Andelsbolig', 137,
+    3, '1976-07-23', 375, 'E',
+    238, 200, 'Solgt'
+),
+
+
+ (
+    9800120, 'Rørsangergade 38', 5515, 'Gislev', 'Lejlighed', 346,
+    3, '2014-02-18', 1062, 'A',
+    615, 960, 'Solgt'
+),
+
+
+ (
+    2012473, 'Rodosgade 96', 2916, 'Gadstrup', 'Villa', 135,
+    3, '1967-03-29', 255, 'C',
+    983, 918, 'Solgt'
+),
+
+
+ (
+    7277630, 'Valdemars Allé 8', 6259, 'Tranekær', 'Ældrebolig', 113,
+    7, '2009-05-25', 356, 'C',
+    4, 608, 'Solgt'
+),
+
+
+ (
+    1918217, 'Skyggelundsvej 236', 4125, 'Vester Skerninge', 'Rækkehus', 275,
+    6, '1970-04-07', 935, 'A',
+    78, 590, 'Under Behandling'
+),
+
+
+ (
+    6142475, 'Frederiksgade 353', 7729, 'Ølsted', 'Villa', 136,
+    7, '2011-01-01', 385, 'C',
+    2, 548, 'Solgt'
+),
+
+
+ (
+    9138816, 'Astrupvej 227', 6616, 'Veksø Sjælland', 'Villa', 282,
+    3, '1935-05-29', 511, 'B',
+    986, 507, 'Til salg'
+),
+
+
+ (
+    938247, 'Løjtegårdsvej 6', 1337, 'Spøttrup', 'Andelsbolig', 61,
+    2, '1965-04-26', 1002, 'E',
+    659, 670, 'Solgt'
+),
+
+
+ (
+    774264, 'Fortunvej 76', 3621, 'Asaa', 'Ældrebolig', 179,
+    4, '1982-05-09', 781, 'D',
+    641, 565, 'Under Behandling'
+),
+
+
+ (
+    545733, 'Jordbærgade 242', 9024, 'Søndersø', 'Sommerhus', 374,
+    7, '1973-08-29', 1295, 'C',
+    126, 544, 'Til salg'
+),
+
+
+ (
+    2877876, 'Fuglagerstræde 6', 3470, 'Skamby', 'Kolonihavehus', 347,
+    7, '1995-06-01', 1266, 'G',
+    602, 247, 'Solgt'
+),
+
+
+ (
+    4815681, 'Harwichgade 697', 5720, 'Lintrup', 'Ældrebolig', 73,
+    4, '2003-07-09', 611, 'B',
+    375, 100, 'Under Behandling'
+),
+
+
+ (
+    3220187, 'Tryggevælde Allé 55', 3964, 'Fredensborg', 'Ældrebolig', 254,
+    4, '1961-02-13', 828, 'C',
+    810, 578, 'Solgt'
+),
+
+
+ (
+    4838998, 'Bergthorasvej 62', 8078, 'Vester Skerninge', 'Ungdomsbolig', 171,
+    7, '1996-11-10', 245, 'B',
+    906, 380, 'Under Behandling'
+),
+
+
+ (
+    5373297, 'Ahlefeldtsstræde 12', 1464, 'Nyrup', 'Villa', 302,
+    4, '1974-01-15', 163, 'A',
+    35, 609, 'Solgt'
+),
+
+
+ (
+    9148719, 'Gyvelvej 916', 6236, 'Klarup', 'Andelsbolig', 208,
+    2, '2020-05-04', 780, 'G',
+    515, 789, 'Solgt'
+),
+
+
+ (
+    7407233, 'Montagnevej 46', 2733, 'Struer', 'Ældrebolig', 121,
+    8, '1939-10-18', 1417, 'A',
+    594, 926, 'Under Behandling'
+),
+
+
+ (
+    6911744, 'Fredericiavej 11', 2765, 'Ålsgårde', 'Andelsbolig', 187,
+    7, '2002-03-31', 1046, 'D',
+    302, 609, 'Under Behandling'
+),
+
+
+ (
+    6099872, 'Primulagade 762', 9745, 'Ørbæk', 'Andelsbolig', 122,
+    8, '1946-04-10', 831, 'F',
+    13, 973, 'Under Behandling'
+),
+
+
+ (
+    321390, 'Enighedsvej 47', 9709, 'Suldrup', 'Villa', 305,
+    8, '1991-10-24', 776, 'B',
+    423, 685, 'Til salg'
+),
+
+
+ (
+    9743834, 'Korsagergade 192', 5431, 'Løgstør', 'Rækkehus', 332,
+    1, '1963-04-11', 590, 'F',
+    318, 366, 'Solgt'
+),
+
+
+ (
+    8768174, 'Tingskrivervej 77', 8565, 'Ruds Vedby', 'Villa', 94,
+    4, '1967-09-27', 1336, 'E',
+    765, 865, 'Solgt'
+),
+
+
+ (
+    2567360, 'Rahbeksvej 89', 7748, 'Tikøb', 'Sommerhus', 118,
+    6, '2007-03-14', 157, 'A',
+    217, 508, 'Under Behandling'
+),
+
+
+ (
+    8594742, 'Lemnos Allé 111', 8450, 'Langeskov', 'Andelsbolig', 244,
+    2, '1977-04-08', 1278, 'G',
+    80, 391, 'Under Behandling'
+),
+
+
+ (
+    4442202, 'Rosendalsstræde 73', 3489, 'Frederiksberg', 'Andelsbolig', 171,
+    2, '1957-11-05', 628, 'D',
+    229, 483, 'Solgt'
+),
+
+
+ (
+    900397, 'Rahbeks Allé 24', 7110, 'Sunds', 'Ældrebolig', 360,
+    2, '1961-01-30', 1068, 'E',
+    165, 821, 'Til salg'
+),
+
+
+ (
+    9916735, 'Øresund Parkvej 37', 7965, 'Bøvlingbjerg', 'Ungdomsbolig', 199,
+    5, '1983-03-29', 992, 'D',
+    61, 341, 'Til salg'
+),
+
+
+ (
+    7687117, 'Møntmestergade 429', 7907, 'Horsens', 'Villa', 51,
+    8, '2000-06-10', 639, 'B',
+    222, 810, 'Under Behandling'
+),
+
+
+ (
+    5497096, 'Sandbjergvej 3', 1757, 'Hammel', 'Ejerlejlighed', 275,
+    6, '1997-07-06', 630, 'G',
+    507, 722, 'Under Behandling'
+),
+
+
+ (
+    8863451, 'Thurebyholmgade 76', 7838, 'Christiansfeld', 'Andelsbolig', 218,
+    3, '2005-03-08', 870, 'E',
+    952, 383, 'Solgt'
+),
+
+
+ (
+    6611533, 'Heldbovej 7', 6979, 'Græsted', 'Ungdomsbolig', 234,
+    1, '1975-04-04', 294, 'D',
+    338, 15, 'Til salg'
+),
+
+
+ (
+    2397923, 'Heimdalsvej 402', 9821, 'Børkop', 'Ungdomsbolig', 372,
+    5, '1997-08-30', 475, 'B',
+    517, 791, 'Under Behandling'
+),
+
+
+ (
+    2014058, 'Grøndalsvængegade 8', 9106, 'Aars', 'Rækkehus', 350,
+    8, '1968-02-29', 524, 'D',
+    943, 257, 'Til salg'
+),
+
+
+ (
+    723789, 'Aarestrupsgade 94', 5184, 'Skamby', 'Ejerlejlighed', 337,
+    6, '1994-04-29', 723, 'C',
+    939, 442, 'Under Behandling'
+),
+
+
+ (
+    3153367, 'Belle de Boskoopgade 4', 8202, 'Gudme', 'Ejerlejlighed', 329,
+    1, '1955-05-21', 474, 'D',
+    621, 889, 'Til salg'
+),
+
+
+ (
+    4264410, 'Rygårdsvej 2', 7358, 'Mesinge', 'Ejerlejlighed', 270,
+    4, '1931-09-28', 574, 'F',
+    965, 520, 'Solgt'
+),
+
+
+ (
+    8890375, 'Rantzausvej 91', 5041, 'Holstebro', 'Andelsbolig', 179,
+    1, '1985-10-26', 346, 'D',
+    725, 200, 'Under Behandling'
+),
+
+
+ (
+    2818559, 'Gransangervej 20', 8870, 'Sejerø', 'Sommerhus', 242,
+    4, '1975-12-03', 541, 'A',
+    399, 93, 'Til salg'
+),
+
+
+ (
+    6016763, 'Kabbelejegade 78', 9699, 'Askeby', 'Ejerlejlighed', 347,
+    8, '2016-02-18', 940, 'B',
+    241, 690, 'Solgt'
+),
+
+
+ (
+    4674823, 'Vindingevej 6', 9130, 'Skibby', 'Kolonihavehus', 154,
+    7, '2010-05-25', 381, 'A',
+    731, 660, 'Til salg'
+),
+
+
+ (
+    9278712, 'Lystrupvej 1', 4224, 'Skjern', 'Ungdomsbolig', 322,
+    4, '1971-11-03', 472, 'G',
+    898, 186, 'Under Behandling'
+),
+
+
+ (
+    6521399, 'Arnesvej 290', 3130, 'Pandrup', 'Rækkehus', 365,
+    8, '2019-05-05', 168, 'D',
+    887, 140, 'Til salg'
+),
+
+
+ (
+    5037764, 'Borupsgade 35', 8511, 'Karrebæksminde', 'Lejlighed', 202,
+    4, '1952-11-13', 123, 'D',
+    126, 792, 'Til salg'
+),
+
+
+ (
+    6062113, 'Åbakkevej 231', 3927, 'Kirke Såby', 'Ældrebolig', 324,
+    2, '1976-01-31', 674, 'C',
+    663, 975, 'Under Behandling'
+),
+
+
+ (
+    5556736, 'Herbergenvej 46', 1390, 'Løsning', 'Sommerhus', 315,
+    1, '1967-03-31', 1225, 'D',
+    378, 838, 'Til salg'
+),
+
+
+ (
+    9766400, 'Birkagergade 91', 4322, 'Broby', 'Ældrebolig', 208,
+    2, '2005-01-23', 1484, 'C',
+    557, 995, 'Under Behandling'
+),
+
+
+ (
+    2365013, 'Elselillegade 57', 6002, 'Kerteminde', 'Ejerlejlighed', 79,
+    5, '2005-05-21', 228, 'G',
+    72, 190, 'Solgt'
+),
+
+
+ (
+    4177443, 'Rebildgade 309', 7551, 'Høng', 'Kolonihavehus', 67,
+    2, '2024-03-08', 748, 'B',
+    552, 994, 'Til salg'
+),
+
+
+ (
+    4413081, 'Klaksvigsstræde 3', 8329, 'Hadsund', 'Sommerhus', 349,
+    2, '1971-09-22', 1406, 'B',
+    242, 512, 'Under Behandling'
+),
+
+
+ (
+    2047718, 'Gulkløverstræde 3', 5215, 'Rødvig Stevns', 'Kolonihavehus', 160,
+    4, '1973-12-08', 646, 'B',
+    684, 895, 'Solgt'
+),
+
+
+ (
+    1050262, 'Morsøgade 631', 9224, 'Nørre Alslev', 'Kolonihavehus', 133,
+    6, '2008-04-05', 732, 'G',
+    677, 189, 'Solgt'
+),
+
+
+ (
+    1264789, 'Møntmestergade 562', 7344, 'Melby', 'Rækkehus', 220,
+    8, '1978-08-28', 395, 'B',
+    530, 273, 'Til salg'
+),
+
+
+ (
+    5893926, 'Hjortø Allé 70', 5824, 'Strandby', 'Rækkehus', 108,
+    7, '1956-05-11', 1236, 'C',
+    11, 334, 'Til salg'
+),
+
+
+ (
+    5801451, 'Ystadvej 474', 7063, 'Store Merløse', 'Kolonihavehus', 163,
+    2, '1952-08-26', 1367, 'G',
+    846, 74, 'Solgt'
+),
+
+
+ (
+    7145704, 'Tomsgårdsvej 149', 2523, 'Brande', 'Ungdomsbolig', 253,
+    5, '1970-04-25', 1402, 'D',
+    888, 76, 'Til salg'
+),
+
+
+ (
+    5137662, 'Ørholmgade 4', 7882, 'Dybvad', 'Ejerlejlighed', 314,
+    8, '1939-01-23', 1499, 'F',
+    827, 440, 'Under Behandling'
+),
+
+
+ (
+    2432632, 'Slåen Allé 428', 8577, 'Låsby', 'Kolonihavehus', 331,
+    8, '1926-08-02', 1425, 'B',
+    698, 123, 'Til salg'
+),
+
+
+ (
+    738343, 'Stratfordgade 8', 6629, 'Blåvand', 'Ejerlejlighed', 374,
+    1, '1930-06-09', 624, 'C',
+    44, 191, 'Under Behandling'
+),
+
+
+ (
+    2070419, 'Liflandsstræde 23', 8882, 'Tistrup', 'Kolonihavehus', 321,
+    8, '1991-11-23', 798, 'C',
+    599, 320, 'Under Behandling'
+),
+
+
+ (
+    9005750, 'Ingolfsvej 72', 5717, 'Lunderskov', 'Ungdomsbolig', 195,
+    5, '1967-11-01', 1330, 'D',
+    804, 118, 'Under Behandling'
+),
+
+
+ (
+    754144, 'Sigyns Allé 80', 9749, 'Marstal', 'Rækkehus', 80,
+    1, '1927-03-06', 361, 'C',
+    899, 399, 'Solgt'
+),
+
+
+ (
+    275600, 'Klingseyvej 541', 4518, 'Fårevejle', 'Kolonihavehus', 357,
+    4, '1991-03-24', 218, 'D',
+    924, 92, 'Til salg'
+),
+
+
+ (
+    9515756, 'Rørsangerstræde 13', 1067, 'Ærøskøbing', 'Villa', 203,
+    7, '1957-04-20', 391, 'D',
+    682, 665, 'Til salg'
+),
+
+
+ (
+    2183456, 'Knabrovej 486', 9440, 'Nørre Nebel', 'Ejerlejlighed', 148,
+    6, '1974-03-06', 594, 'E',
+    988, 235, 'Til salg'
+),
+
+
+ (
+    3386879, 'Retortgade 281', 7888, 'Vallensbæk Strand', 'Ældrebolig', 120,
+    2, '1997-10-16', 871, 'E',
+    546, 517, 'Til salg'
+),
+
+
+ (
+    2188837, 'Bjergmarksgade 8', 4059, 'Tilst', 'Andelsbolig', 208,
+    7, '1980-05-04', 648, 'F',
+    162, 33, 'Solgt'
+),
+
+
+ (
+    9636150, 'Berggreensstræde 818', 1758, 'Fanø', 'Ejerlejlighed', 278,
+    2, '1955-09-04', 765, 'E',
+    2, 634, 'Solgt'
+),
+
+
+ (
+    2593096, 'Ribevej 4', 1489, 'Randbøl', 'Andelsbolig', 393,
+    8, '1980-08-12', 1483, 'E',
+    316, 332, 'Til salg'
+),
+
+
+ (
+    6963729, 'Blågårdsvej 3', 9751, 'Gørding', 'Ejerlejlighed', 351,
+    4, '1996-03-18', 273, 'E',
+    764, 634, 'Til salg'
+),
+
+
+ (
+    8717759, 'Store Kannikegade 8', 1309, 'Ugerløse', 'Ungdomsbolig', 213,
+    5, '2019-05-10', 216, 'A',
+    431, 401, 'Under Behandling'
+),
+
+
+ (
+    3462348, 'Mozartsgade 7', 7143, 'Randers', 'Rækkehus', 219,
+    3, '1930-11-27', 1383, 'B',
+    485, 247, 'Solgt'
+),
+
+
+ (
+    4302614, 'Mjøsens Allé 73', 9077, 'Ejstrupholm', 'Andelsbolig', 193,
+    3, '1961-06-15', 591, 'D',
+    250, 663, 'Under Behandling'
+),
+
+
+ (
+    2177631, 'Holbækvej 3', 5704, 'Bække', 'Lejlighed', 202,
+    4, '2023-05-11', 1494, 'C',
+    523, 504, 'Under Behandling'
+),
+
+
+ (
+    2586112, 'James Grievevej 727', 4364, 'Jerup', 'Kolonihavehus', 147,
+    8, '1961-12-18', 278, 'D',
+    832, 776, 'Under Behandling'
+),
+
+
+ (
+    3672367, 'Dovrevej 562', 9086, 'Dalby', 'Kolonihavehus', 292,
+    3, '1933-02-10', 117, 'C',
+    966, 812, 'Til salg'
+),
+
+
+ (
+    4496875, 'Keldsøvej 954', 9194, 'Karrebæksminde', 'Andelsbolig', 49,
+    7, '1938-07-15', 976, 'E',
+    774, 832, 'Solgt'
+),
+
+
+ (
+    3589825, 'Lemnosvej 73', 1378, 'Brabrand', 'Villa', 398,
+    8, '1953-01-27', 544, 'G',
+    604, 280, 'Til salg'
+),
+
+
+ (
+    8435403, 'Hørsholmsvej 34', 9862, 'Arden', 'Lejlighed', 204,
+    3, '1980-01-24', 287, 'B',
+    294, 924, 'Under Behandling'
+),
+
+
+ (
+    7396085, 'Sommerstedstræde 6', 6387, 'Hvidovre', 'Ejerlejlighed', 40,
+    2, '1972-01-17', 339, 'E',
+    769, 628, 'Til salg'
+),
+
+
+ (
+    137594, 'Arne Jacobsensvej 98', 7878, 'Ballerup', 'Rækkehus', 151,
+    8, '1968-08-14', 1078, 'A',
+    279, 934, 'Solgt'
+),
+
+
+ (
+    8351657, 'Thingvallavej 40', 3508, 'Holbæk', 'Ældrebolig', 346,
+    6, '1953-08-22', 234, 'F',
+    448, 935, 'Under Behandling'
+),
+
+
+ (
+    2096407, 'Ulrik Birchs Allé 491', 5896, 'Bjæverskov', 'Villa', 297,
+    2, '1942-04-30', 165, 'F',
+    20, 425, 'Solgt'
+),
+
+
+ (
+    4812083, 'Gaunøgade 8', 2166, 'Rørvig', 'Lejlighed', 177,
+    7, '1953-10-27', 1060, 'C',
+    162, 652, 'Solgt'
+),
+
+
+ (
+    9052062, 'Sassnitzstræde 410', 4625, 'Thyborøn', 'Ældrebolig', 388,
+    5, '1995-10-31', 617, 'F',
+    257, 772, 'Solgt'
+),
+
+
+ (
+    1839924, 'Travemünde Allé 582', 8326, 'Dragør', 'Villa', 41,
+    8, '1984-09-10', 1304, 'G',
+    361, 522, 'Til salg'
+),
+
+
+ (
+    1943967, 'Bådsmands Allé 355', 7442, 'Millinge', 'Sommerhus', 227,
+    6, '1946-04-10', 804, 'C',
+    756, 173, 'Til salg'
+),
+
+
+ (
+    6801146, 'Klingseygade 57', 4469, 'Hinnerup', 'Villa', 166,
+    3, '1972-06-12', 613, 'F',
+    54, 127, 'Under Behandling'
+),
+
+
+ (
+    1604618, 'Høsterkøbvej 8', 2776, 'Gørding', 'Villa', 374,
+    6, '2007-03-22', 911, 'F',
+    612, 531, 'Til salg'
+),
+
+
+ (
+    1106705, 'Glückstadtsvej 18', 2746, 'Bækmarksbro', 'Ungdomsbolig', 322,
+    7, '1962-06-08', 491, 'E',
+    515, 802, 'Solgt'
+),
+
+
+ (
+    6125470, 'Ingolfsvej 31', 3743, 'Herning', 'Ældrebolig', 189,
+    2, '1932-03-30', 197, 'A',
+    252, 819, 'Solgt'
+),
+
+
+ (
+    7061815, 'Tikøbgade 585', 7031, 'Klovborg', 'Ejerlejlighed', 156,
+    7, '2001-12-09', 770, 'E',
+    570, 134, 'Solgt'
+),
+
+
+ (
+    4178489, 'Højsagervej 767', 8039, 'Vejstrup', 'Rækkehus', 304,
+    7, '2010-09-20', 533, 'B',
+    690, 141, 'Solgt'
+),
+
+
+ (
+    3063450, 'Absalonsvej 1', 6949, 'Rask Mølle', 'Kolonihavehus', 237,
+    6, '1951-06-07', 534, 'C',
+    858, 177, 'Under Behandling'
+),
+
+
+ (
+    9202870, 'Mårumstræde 55', 7812, 'Melby', 'Lejlighed', 339,
+    1, '1948-11-10', 211, 'B',
+    223, 31, 'Solgt'
+),
+
+
+ (
+    9239116, 'Philip De Langesvej 6', 6863, 'Store Merløse', 'Sommerhus', 123,
+    5, '2008-04-19', 1159, 'E',
+    820, 663, 'Solgt'
+),
+
+
+ (
+    5465220, 'Annekegade 758', 5521, 'Børkop', 'Rækkehus', 288,
+    2, '1977-05-16', 973, 'A',
+    526, 762, 'Solgt'
+),
+
+
+ (
+    5508902, 'Colbjørnsensgade 399', 7461, 'Smørum', 'Sommerhus', 230,
+    6, '1941-04-09', 1022, 'C',
+    311, 41, 'Solgt'
+),
+
+
+ (
+    8444164, 'Bellisgade 169', 1048, 'Hjortshøj', 'Lejlighed', 387,
+    7, '1996-09-01', 1239, 'E',
+    205, 315, 'Til salg'
+),
+
+
+ (
+    6284672, 'Metro Allé 7', 1805, 'Vesløs', 'Lejlighed', 128,
+    8, '2018-07-08', 124, 'D',
+    153, 982, 'Til salg'
+),
+
+
+ (
+    7725548, 'Gyvelgade 32', 3454, 'Silkeborg', 'Ejerlejlighed', 119,
+    8, '1953-11-28', 715, 'D',
+    900, 611, 'Til salg'
+),
+
+
+ (
+    7708745, 'Syriensvej 771', 5913, 'Kibæk', 'Rækkehus', 356,
+    5, '1933-11-19', 523, 'A',
+    445, 472, 'Under Behandling'
+),
+
+
+ (
+    3914351, 'Svanemølle Allé 544', 1989, 'Hammel', 'Ejerlejlighed', 246,
+    8, '1940-11-19', 548, 'D',
+    436, 598, 'Solgt'
+),
+
+
+ (
+    340327, 'Hedemannsgade 66', 6799, 'Brønshøj', 'Ungdomsbolig', 282,
+    8, '1943-11-10', 832, 'C',
+    572, 576, 'Solgt'
+),
+
+
+ (
+    300040, 'Valløgade 61', 3451, 'Hampen', 'Kolonihavehus', 197,
+    1, '1933-05-01', 1381, 'A',
+    176, 473, 'Til salg'
+),
+
+
+ (
+    1706177, 'Svogerslevstræde 567', 4629, 'Hejnsvig', 'Kolonihavehus', 321,
+    7, '2001-01-03', 743, 'B',
+    252, 235, 'Under Behandling'
+),
+
+
+ (
+    5695003, 'Jupitergade 138', 3970, 'Stakroge', 'Rækkehus', 363,
+    8, '1949-04-08', 947, 'D',
+    854, 726, 'Solgt'
+),
+
+
+ (
+    3847163, 'Clausholmstræde 9', 4466, 'Løgumkloster', 'Villa', 337,
+    1, '2022-07-16', 634, 'A',
+    276, 51, 'Til salg'
+),
+
+
+ (
+    3437364, 'Oliebladsgade 46', 2026, 'Grindsted', 'Rækkehus', 237,
+    2, '1946-09-23', 911, 'B',
+    492, 987, 'Til salg'
+),
+
+
+ (
+    1481984, 'Tallinn Allé 87', 3085, 'Nimtofte', 'Rækkehus', 364,
+    2, '1968-04-08', 626, 'G',
+    932, 227, 'Solgt'
+),
+
+
+ (
+    779706, 'Gudenåvej 5', 2367, 'Jyllinge', 'Kolonihavehus', 208,
+    4, '2017-06-29', 740, 'A',
+    543, 733, 'Solgt'
+),
+
+
+ (
+    6380066, 'Valby Torve Allé 11', 7249, 'Hadsten', 'Lejlighed', 134,
+    3, '1948-04-25', 1167, 'D',
+    12, 480, 'Under Behandling'
+),
+
+
+ (
+    340796, 'Bolandsgade 956', 3261, 'Ribe', 'Sommerhus', 74,
+    5, '2004-11-28', 800, 'F',
+    727, 822, 'Under Behandling'
+),
+
+
+ (
+    6473164, 'Krausesgade 1', 5918, 'Højby', 'Lejlighed', 277,
+    6, '1978-03-19', 399, 'B',
+    205, 331, 'Under Behandling'
+),
+
+
+ (
+    5087824, 'Borupsgade 640', 2044, 'Samsø', 'Ungdomsbolig', 91,
+    5, '2018-03-03', 1186, 'B',
+    851, 740, 'Under Behandling'
+),
+
+
+ (
+    3605575, 'Prøvestensvej 5', 7241, 'Haderup', 'Kolonihavehus', 310,
+    2, '2008-12-07', 646, 'E',
+    379, 756, 'Under Behandling'
+),
+
+
+ (
+    1239996, 'Borgergade 6', 4786, 'Store Heddinge', 'Andelsbolig', 334,
+    8, '1968-02-26', 1046, 'B',
+    181, 898, 'Solgt'
+),
+
+
+ (
+    2220371, 'Ellebjergvej 14', 7128, 'Karlslunde', 'Ungdomsbolig', 375,
+    6, '2020-09-29', 418, 'E',
+    516, 942, 'Under Behandling'
+),
+
+
+ (
+    1830888, 'Toldbodvej 881', 6766, 'Vallensbæk', 'Lejlighed', 301,
+    1, '1932-04-18', 623, 'B',
+    895, 552, 'Til salg'
+),
+
+
+ (
+    9478231, 'Møntmester Allé 8', 1550, 'Nørager', 'Villa', 241,
+    5, '1943-10-04', 647, 'D',
+    467, 101, 'Solgt'
+),
+
+
+ (
+    5132986, 'Skelbækvej 175', 8444, 'Taastrup', 'Ejerlejlighed', 257,
+    4, '1981-12-10', 1136, 'G',
+    206, 213, 'Solgt'
+),
+
+
+ (
+    9316446, 'Arne Jacobsensstræde 1', 3738, 'Holte', 'Lejlighed', 311,
+    1, '1937-07-11', 545, 'A',
+    879, 34, 'Solgt'
+),
+
+
+ (
+    505829, 'Eriksstræde 4', 7308, 'Møldrup', 'Andelsbolig', 85,
+    3, '1995-07-24', 662, 'C',
+    766, 979, 'Under Behandling'
+),
+
+
+ (
+    2337327, 'Klaksvigsstræde 774', 1276, 'Kibæk', 'Ældrebolig', 97,
+    7, '1940-04-09', 272, 'E',
+    909, 663, 'Under Behandling'
+),
+
+
+ (
+    6715350, 'Vejlandsvej 22', 1578, 'Vejby', 'Ældrebolig', 246,
+    4, '2022-02-01', 797, 'B',
+    474, 371, 'Til salg'
+),
+
+
+ (
+    4497051, 'Middelfartgade 11', 4103, 'Skørping', 'Rækkehus', 110,
+    4, '1974-01-20', 1077, 'C',
+    248, 883, 'Til salg'
+),
+
+
+ (
+    8862169, 'Beategade 45', 4646, 'Sørvad', 'Villa', 320,
+    7, '1976-05-16', 1328, 'A',
+    150, 767, 'Til salg'
+),
+
+
+ (
+    190498, 'Refsnæsgade 483', 6988, 'Liseleje', 'Sommerhus', 64,
+    7, '1940-05-01', 603, 'E',
+    974, 287, 'Til salg'
+),
+
+
+ (
+    6347165, 'Eriksgade 557', 8830, 'Bække', 'Ejerlejlighed', 198,
+    3, '1982-12-19', 940, 'B',
+    775, 531, 'Solgt'
+),
+
+
+ (
+    9718308, 'Mågegade 230', 8493, 'Allingåbro', 'Villa', 343,
+    1, '1959-07-13', 1101, 'E',
+    959, 899, 'Solgt'
+),
+
+
+ (
+    6574513, 'Hanstholmvej 86', 2016, 'Knebel', 'Rækkehus', 208,
+    6, '1966-09-15', 359, 'A',
+    893, 186, 'Under Behandling'
+),
+
+
+ (
+    6590101, 'Møntervej 4', 8526, 'Saltum', 'Ungdomsbolig', 137,
+    3, '2000-11-20', 188, 'E',
+    862, 363, 'Solgt'
+),
+
+
+ (
+    6645468, 'Nørre Voldvej 91', 4783, 'Karup', 'Ungdomsbolig', 298,
+    3, '1987-09-29', 617, 'D',
+    391, 588, 'Under Behandling'
+),
+
+
+ (
+    968138, 'Bakkegade 77', 9233, 'Klampenborg', 'Sommerhus', 157,
+    5, '2004-02-08', 1088, 'F',
+    505, 119, 'Til salg'
+),
+
+
+ (
+    9274115, 'Valby Maskinfabriksvej 952', 9025, 'Horsens', 'Sommerhus', 74,
+    2, '2003-09-26', 194, 'C',
+    286, 921, 'Solgt'
+),
+
+
+ (
+    1920844, 'Brombærgade 54', 7633, 'Broby', 'Andelsbolig', 246,
+    4, '2009-09-05', 1472, 'C',
+    56, 952, 'Under Behandling'
+),
+
+
+ (
+    3643771, 'Bregnerødgade 878', 7283, 'Kerteminde', 'Ældrebolig', 292,
+    4, '2019-03-05', 1112, 'G',
+    598, 469, 'Under Behandling'
+),
+
+
+ (
+    2333136, 'Elsdyrsvej 862', 1501, 'Brædstrup', 'Sommerhus', 200,
+    2, '1987-07-12', 624, 'A',
+    440, 937, 'Til salg'
+),
+
+
+ (
+    2417766, 'Haldagerstræde 82', 3337, 'Stoholm', 'Ungdomsbolig', 189,
+    5, '1966-11-04', 1169, 'D',
+    109, 802, 'Under Behandling'
+),
+
+
+ (
+    1327435, 'Lille Kannikevej 54', 2989, 'Skals', 'Ældrebolig', 323,
+    7, '1964-02-21', 631, 'G',
+    292, 538, 'Solgt'
+),
+
+
+ (
+    2656265, 'Rentemestervej 21', 9658, 'Terndrup', 'Andelsbolig', 125,
+    8, '1948-04-21', 1185, 'E',
+    593, 808, 'Solgt'
+),
+
+
+ (
+    3848496, 'Willemoesgade 7', 2686, 'Asnæs', 'Rækkehus', 360,
+    5, '1980-12-26', 815, 'F',
+    234, 598, 'Til salg'
+),
+
+
+ (
+    9885413, 'Frankrigsvej 365', 8006, 'Branderup', 'Ungdomsbolig', 202,
+    3, '1926-02-15', 395, 'B',
+    955, 920, 'Solgt'
+),
+
+
+ (
+    1478808, 'Krogagervej 8', 8828, 'Haarby', 'Ungdomsbolig', 382,
+    7, '1948-03-09', 1341, 'F',
+    21, 872, 'Under Behandling'
+),
+
+
+ (
+    7900037, 'Sundkrogsvej 5', 5629, 'Tim', 'Kolonihavehus', 172,
+    4, '2021-04-09', 1295, 'G',
+    455, 526, 'Til salg'
+),
+
+
+ (
+    3730919, 'Oxford Allé 6', 6388, 'Vejers Strand', 'Kolonihavehus', 43,
+    5, '1982-12-22', 987, 'D',
+    665, 818, 'Solgt'
+),
+
+
+ (
+    1621733, 'Bøhmensvej 313', 5027, 'Aabenraa', 'Ejerlejlighed', 355,
+    6, '1946-03-29', 1251, 'D',
+    494, 217, 'Til salg'
+),
+
+
+ (
+    4570370, 'Støvring Allé 124', 1918, 'Møldrup', 'Andelsbolig', 322,
+    4, '2002-10-13', 1242, 'B',
+    370, 717, 'Under Behandling'
+),
+
+
+ (
+    796578, 'Persillevej 77', 2456, 'Gudbjerg', 'Ældrebolig', 306,
+    7, '1944-02-16', 480, 'A',
+    756, 416, 'Solgt'
+),
+
+
+ (
+    1494871, 'Dannebrogsstræde 215', 3035, 'Ebberup', 'Ældrebolig', 381,
+    7, '1985-09-28', 314, 'B',
+    428, 232, 'Under Behandling'
+),
+
+
+ (
+    8733920, 'Husumvej 569', 2076, 'Brønshøj', 'Villa', 100,
+    5, '2012-01-20', 150, 'D',
+    551, 299, 'Solgt'
+),
+
+
+ (
+    4346348, 'Absalonsvej 7', 3337, 'Højslev', 'Andelsbolig', 186,
+    4, '1990-09-18', 783, 'D',
+    986, 817, 'Solgt'
+),
+
+
+ (
+    127879, 'Milanovej 9', 1104, 'Asaa', 'Lejlighed', 299,
+    1, '2017-06-13', 1098, 'G',
+    7, 702, 'Under Behandling'
+),
+
+
+ (
+    7815141, 'Rentemestergade 1', 5129, 'Rønde', 'Ejerlejlighed', 57,
+    6, '1931-10-03', 1450, 'E',
+    828, 824, 'Solgt'
+),
+
+
+ (
+    8337957, 'Grenåstræde 6', 4984, 'Hjerm', 'Villa', 371,
+    1, '1984-12-27', 102, 'F',
+    106, 78, 'Under Behandling'
+),
+
+
+ (
+    437653, 'Skovløbervej 8', 7163, 'Regstrup', 'Kolonihavehus', 89,
+    3, '1963-08-07', 1289, 'E',
+    619, 184, 'Solgt'
+),
+
+
+ (
+    8618924, 'Sølundsvej 7', 2151, 'Hobro', 'Kolonihavehus', 400,
+    8, '1953-07-21', 1053, 'C',
+    505, 610, 'Solgt'
+),
+
+
+ (
+    2828522, 'Valby Langvej 35', 7997, 'Herfølge', 'Ejerlejlighed', 55,
+    5, '1995-01-10', 831, 'A',
+    816, 361, 'Til salg'
+),
+
+
+ (
+    6589043, 'Botoftegade 867', 7050, 'Klovborg', 'Villa', 97,
+    2, '1990-06-09', 251, 'F',
+    572, 251, 'Under Behandling'
+),
+
+
+ (
+    9205957, 'Rubinsteinsvej 4', 3753, 'Årre', 'Sommerhus', 148,
+    3, '1996-03-19', 896, 'B',
+    641, 45, 'Under Behandling'
+),
+
+
+ (
+    9176874, 'Boyesgade 17', 2503, 'Haderslev', 'Ældrebolig', 265,
+    5, '1946-06-04', 1234, 'A',
+    815, 445, 'Til salg'
+),
+
+
+ (
+    1404520, 'Hyltebjergvej 74', 1705, 'Stensved', 'Ældrebolig', 332,
+    6, '1991-05-02', 133, 'F',
+    933, 197, 'Under Behandling'
+),
+
+
+ (
+    6962593, 'Smedevej 65', 5635, 'Dronninglund', 'Lejlighed', 204,
+    6, '2008-09-06', 930, 'F',
+    206, 186, 'Under Behandling'
+),
+
+
+ (
+    8108982, 'Reykjaviks Allé 5', 8720, 'Korsør', 'Rækkehus', 81,
+    4, '1995-06-19', 898, 'A',
+    12, 561, 'Under Behandling'
+),
+
+
+ (
+    5693416, 'Nørre Farimagsvej 8', 8154, 'Ry', 'Rækkehus', 198,
+    7, '1948-02-06', 1091, 'G',
+    165, 624, 'Under Behandling'
+),
+
+
+ (
+    4847431, 'Helsingborgstræde 3', 1894, 'Boeslunde', 'Villa', 192,
+    1, '1971-03-30', 1027, 'C',
+    804, 750, 'Til salg'
+),
+
+
+ (
+    2385336, 'Strandvej 5', 4440, 'Væggerløse', 'Ældrebolig', 123,
+    6, '1982-05-28', 1283, 'A',
+    952, 753, 'Solgt'
+),
+
+
+ (
+    2075460, 'Solsikke Allé 3', 8504, 'Vorbasse', 'Sommerhus', 335,
+    1, '1941-03-20', 906, 'D',
+    138, 364, 'Til salg'
+),
+
+
+ (
+    7759375, 'Møllegårdsgade 6', 9004, 'Branderup', 'Sommerhus', 98,
+    1, '1993-09-21', 833, 'A',
+    690, 827, 'Under Behandling'
+),
+
+
+ (
+    311487, 'Brombærvej 56', 6790, 'Bevtoft', 'Sommerhus', 359,
+    8, '1970-05-18', 1345, 'G',
+    995, 558, 'Under Behandling'
+),
+
+
+ (
+    5255203, 'Tirsbækvej 854', 8552, 'Skælskør', 'Ejerlejlighed', 148,
+    2, '1930-08-01', 1398, 'D',
+    870, 460, 'Under Behandling'
+),
+
+
+ (
+    5646876, 'Obdamsvej 25', 9857, 'Broby', 'Andelsbolig', 350,
+    4, '1999-11-23', 1039, 'B',
+    986, 18, 'Under Behandling'
+),
+
+
+ (
+    7872573, 'Rosbæksgade 990', 9096, 'Gedved', 'Rækkehus', 194,
+    5, '1943-05-23', 605, 'B',
+    84, 991, 'Solgt'
+),
+
+
+ (
+    9901681, 'Hørtoftestræde 1', 9756, 'Svenstrup', 'Kolonihavehus', 313,
+    6, '1990-09-01', 1288, 'G',
+    736, 337, 'Til salg'
+),
+
+
+ (
+    1579544, 'Farvervej 168', 1546, 'Nærum', 'Ældrebolig', 76,
+    5, '1975-06-09', 1225, 'G',
+    284, 682, 'Til salg'
+),
+
+
+ (
+    7292004, 'Bakke Allé 39', 9287, 'Padborg', 'Ældrebolig', 337,
+    3, '1928-05-12', 838, 'E',
+    993, 103, 'Til salg'
+),
+
+
+ (
+    211019, 'Milanovej 2', 8064, 'Føllenslev', 'Andelsbolig', 391,
+    8, '1956-10-13', 877, 'F',
+    623, 81, 'Under Behandling'
+),
+
+
+ (
+    2031812, 'Overdrevsstræde 3', 2998, 'Langå', 'Ældrebolig', 358,
+    4, '2016-06-14', 564, 'B',
+    461, 498, 'Under Behandling'
+),
+
+
+ (
+    902765, 'Dunkerquegade 436', 4017, 'Marstal', 'Lejlighed', 375,
+    1, '1934-12-25', 709, 'F',
+    13, 613, 'Solgt'
+),
+
+
+ (
+    3616430, 'Rosenvængets Hovedvej 2', 5509, 'Idestrup', 'Kolonihavehus', 244,
+    6, '1970-05-06', 1101, 'A',
+    535, 18, 'Til salg'
+),
+
+
+ (
+    8537174, 'Skibelundvej 6', 8326, 'Vils', 'Lejlighed', 355,
+    6, '1928-08-05', 101, 'G',
+    546, 815, 'Til salg'
+),
+
+
+ (
+    8827361, 'Ingrid Marievej 9', 1167, 'Blommenslyst', 'Sommerhus', 108,
+    6, '1965-04-25', 1398, 'C',
+    875, 751, 'Under Behandling'
+),
+
+
+ (
+    1288818, 'Glommensvej 941', 3819, 'Ørsted', 'Sommerhus', 113,
+    2, '1969-02-06', 805, 'E',
+    540, 443, 'Solgt'
+),
+
+
+ (
+    902342, 'Schacksvej 978', 7442, 'Fanø', 'Kolonihavehus', 107,
+    6, '1950-03-09', 556, 'B',
+    552, 769, 'Solgt'
+),
+
+
+ (
+    5039572, 'Speditørvej 22', 4429, 'Rønnede', 'Kolonihavehus', 134,
+    1, '1988-12-14', 852, 'D',
+    982, 559, 'Solgt'
+),
+
+
+ (
+    3954338, 'Bilbaogade 660', 6841, 'Middelfart', 'Lejlighed', 337,
+    1, '1995-07-10', 1386, 'G',
+    240, 733, 'Under Behandling'
+),
+
+
+ (
+    1223354, 'Myggenæsvej 2', 7337, 'Hellerup', 'Ældrebolig', 52,
+    6, '1985-03-20', 1057, 'G',
+    58, 468, 'Solgt'
+),
+
+
+ (
+    3003971, 'Egebæksgade 672', 5047, 'Liseleje', 'Kolonihavehus', 114,
+    5, '1962-08-17', 123, 'D',
+    192, 936, 'Solgt'
+),
+
+
+ (
+    6318929, 'Nordbyvej 8', 2966, 'Holbæk', 'Sommerhus', 400,
+    5, '1998-02-03', 1118, 'F',
+    181, 368, 'Solgt'
+),
+
+
+ (
+    3627780, 'Titan Allé 489', 8273, 'Vejby', 'Ungdomsbolig', 181,
+    1, '1929-06-03', 426, 'D',
+    349, 90, 'Solgt'
+),
+
+
+ (
+    5760590, 'Strandstræde 35', 4629, 'Borup', 'Ungdomsbolig', 282,
+    7, '2022-05-19', 284, 'C',
+    909, 959, 'Solgt'
+),
+
+
+ (
+    5707380, 'P.D. Løvs Allé 63', 1184, 'Sommersted', 'Ældrebolig', 148,
+    3, '1946-03-06', 1364, 'D',
+    355, 268, 'Til salg'
+),
+
+
+ (
+    2862902, 'Pladehalsgade 9', 8148, 'Fakse Ladeplads', 'Ældrebolig', 41,
+    5, '1977-04-26', 1424, 'F',
+    154, 884, 'Under Behandling'
+),
+
+
+ (
+    5226454, 'Rostgaardsgade 861', 9840, 'Rønde', 'Lejlighed', 239,
+    3, '1952-12-05', 1205, 'B',
+    30, 480, 'Til salg'
+),
+
+
+ (
+    6457488, 'Industrivej 4', 3976, 'Vejers Strand', 'Ungdomsbolig', 140,
+    7, '1950-05-18', 1092, 'E',
+    325, 560, 'Solgt'
+),
+
+
+ (
+    9666064, 'Selegade 1', 7313, 'Nimtofte', 'Sommerhus', 114,
+    8, '1941-10-15', 180, 'E',
+    551, 183, 'Til salg'
+),
+
+
+ (
+    7303770, 'Beldringe Allé 585', 9094, 'Dronninglund', 'Villa', 116,
+    2, '1974-12-26', 1215, 'E',
+    793, 973, 'Solgt'
+),
+
+
+ (
+    838329, 'Engskiftegade 2', 1198, 'Rødding', 'Villa', 89,
+    1, '2006-07-29', 927, 'G',
+    63, 764, 'Solgt'
+),
+
+
+ (
+    3545561, 'Lindenovs Allé 358', 8514, 'Søborg', 'Sommerhus', 235,
+    6, '1973-06-11', 1427, 'F',
+    737, 206, 'Til salg'
+),
+
+
+ (
+    8730434, 'Bjernedevej 63', 1630, 'Barrit', 'Ungdomsbolig', 113,
+    2, '1979-02-22', 721, 'F',
+    648, 645, 'Under Behandling'
+),
+
+
+ (
+    4608923, 'Rigensvej 730', 4140, 'Brædstrup', 'Ungdomsbolig', 357,
+    2, '2024-04-28', 1034, 'G',
+    642, 314, 'Til salg'
+),
+
+
+ (
+    6905907, 'Amagerfælled Allé 135', 5556, 'Farum', 'Lejlighed', 330,
+    8, '1992-10-21', 1435, 'A',
+    975, 680, 'Solgt'
+),
+
+
+ (
+    1737808, 'Østbane Allé 86', 8555, 'Marslev', 'Villa', 46,
+    4, '1985-03-19', 181, 'F',
+    218, 853, 'Under Behandling'
+),
+
+
+ (
+    3368990, 'Folevadsgade 7', 8130, 'Sakskøbing', 'Andelsbolig', 364,
+    1, '1973-09-06', 545, 'F',
+    740, 800, 'Solgt'
+),
+
+
+ (
+    7608735, 'Rosenvej 13', 2275, 'Dianalund', 'Andelsbolig', 314,
+    6, '1949-03-05', 248, 'F',
+    505, 348, 'Under Behandling'
+),
+
+
+ (
+    1586555, 'Snertingevej 23', 3675, 'Jyllinge', 'Ejerlejlighed', 238,
+    2, '2020-12-17', 949, 'C',
+    330, 955, 'Under Behandling'
+),
+
+
+ (
+    1274767, 'Lindegade 6', 7364, 'Kolding', 'Andelsbolig', 356,
+    2, '1965-01-27', 427, 'B',
+    530, 707, 'Under Behandling'
+),
+
+
+ (
+    5682444, 'Estlandsvej 84', 1631, 'Thorsø', 'Ungdomsbolig', 208,
+    4, '1943-08-04', 353, 'E',
+    315, 62, 'Til salg'
+),
+
+
+ (
+    9604441, 'Hammerichsgade 96', 9181, 'Svenstrup', 'Lejlighed', 378,
+    7, '1975-02-26', 511, 'D',
+    760, 424, 'Til salg'
+),
+
+
+ (
+    6246899, 'Rothesvej 18', 9474, 'Juelsminde', 'Lejlighed', 61,
+    6, '2019-02-26', 169, 'C',
+    354, 921, 'Under Behandling'
+),
+
+
+ (
+    4172306, 'Forbindelsesgade 8', 3069, 'Rødkærsbro', 'Sommerhus', 202,
+    5, '1970-02-13', 260, 'B',
+    771, 437, 'Under Behandling'
+),
+
+
+ (
+    8097763, 'Kattegat Allé 290', 8563, 'Vejle', 'Sommerhus', 311,
+    1, '1947-09-28', 999, 'D',
+    398, 886, 'Solgt'
+),
+
+
+ (
+    6256640, 'Keplersvej 786', 4196, 'Hjortshøj', 'Sommerhus', 136,
+    4, '1990-11-26', 389, 'D',
+    432, 259, 'Solgt'
+),
+
+
+ (
+    9374633, 'Løvstræde 81', 4358, 'Tarm', 'Rækkehus', 60,
+    5, '1995-12-07', 696, 'E',
+    574, 450, 'Solgt'
+),
+
+
+ (
+    3334780, 'Otto Bachesvej 18', 5096, 'Stenlille', 'Sommerhus', 307,
+    3, '1973-08-29', 1091, 'C',
+    676, 358, 'Til salg'
+),
+
+
+ (
+    5659107, 'Tomsgårdsvej 9', 2089, 'Nørre Snede', 'Rækkehus', 288,
+    1, '2000-11-19', 235, 'A',
+    804, 730, 'Til salg'
+),
+
+
+ (
+    8705078, 'Corkvej 7', 1180, 'Juelsminde', 'Andelsbolig', 229,
+    1, '1973-09-07', 1161, 'G',
+    382, 649, 'Til salg'
+),
+
+
+ (
+    1528775, 'Elværksgade 3', 5675, 'Øster Assels', 'Andelsbolig', 202,
+    7, '1968-01-06', 1445, 'B',
+    138, 885, 'Under Behandling'
+),
+
+
+ (
+    2066263, 'Refsnæsvej 5', 2454, 'Nordborg', 'Lejlighed', 47,
+    7, '1966-12-14', 610, 'C',
+    245, 796, 'Under Behandling'
+),
+
+
+ (
+    7426359, 'Belle de Boskoopvej 944', 6708, 'Øster Vrå', 'Villa', 52,
+    3, '1972-10-25', 893, 'B',
+    542, 431, 'Under Behandling'
+),
+
+
+ (
+    1539278, 'Heldbovej 878', 4923, 'Kerteminde', 'Ældrebolig', 315,
+    6, '2002-12-17', 425, 'A',
+    884, 736, 'Til salg'
+),
+
+
+ (
+    6427403, 'Skolestræde 848', 8253, 'Hundslund', 'Rækkehus', 86,
+    8, '1975-11-10', 163, 'C',
+    313, 812, 'Under Behandling'
+),
+
+
+ (
+    8005814, 'Herfølge Allé 85', 9099, 'Nørre Asmindrup', 'Sommerhus', 350,
+    1, '1949-01-20', 1440, 'B',
+    665, 858, 'Solgt'
+),
+
+
+ (
+    5200978, 'Vesterhavsvej 50', 8404, 'Vesterborg', 'Sommerhus', 48,
+    1, '1938-05-18', 1240, 'A',
+    393, 475, 'Under Behandling'
+),
+
+
+ (
+    1218299, 'Bjørnsonsvej 28', 5405, 'Mariager', 'Rækkehus', 308,
+    8, '1982-06-21', 186, 'E',
+    570, 365, 'Solgt'
+),
+
+
+ (
+    6963621, 'Montagehals Allé 5', 9816, 'Vedbæk', 'Sommerhus', 189,
+    3, '1959-02-11', 1325, 'G',
+    979, 122, 'Under Behandling'
+),
+
+
+ (
+    3771529, 'Slagtehus Allé 206', 8454, 'Ølsted', 'Villa', 219,
+    8, '1952-09-05', 1287, 'B',
+    99, 964, 'Under Behandling'
+),
+
+
+ (
+    1188949, 'Tværagervej 29', 2866, 'Sindal', 'Kolonihavehus', 388,
+    2, '2000-06-22', 869, 'C',
+    333, 402, 'Til salg'
+),
+
+
+ (
+    8778931, 'Olymposvej 439', 8264, 'Slagelse', 'Ejerlejlighed', 271,
+    8, '1950-06-16', 1001, 'G',
+    916, 644, 'Solgt'
+),
+
+
+ (
+    6621022, 'Søllerødvej 88', 4727, 'Ringsted', 'Kolonihavehus', 274,
+    3, '1936-03-12', 1284, 'D',
+    659, 338, 'Til salg'
+),
+
+
+ (
+    7749670, 'Vestrevej 3', 5478, 'Hadsten', 'Lejlighed', 348,
+    7, '1946-02-04', 958, 'C',
+    217, 295, 'Solgt'
+),
+
+
+ (
+    7240809, 'Tersløsegade 63', 4308, 'Børkop', 'Kolonihavehus', 218,
+    4, '1960-06-26', 632, 'G',
+    652, 855, 'Til salg'
+),
+
+
+ (
+    1727673, 'Florensvej 686', 7398, 'Læsø', 'Ældrebolig', 134,
+    4, '1969-04-14', 265, 'F',
+    56, 303, 'Til salg'
+),
+
+
+ (
+    5698870, 'Nøjsomhedsvej 49', 3875, 'Grenaa', 'Ejerlejlighed', 364,
+    6, '2020-03-10', 161, 'E',
+    405, 642, 'Solgt'
+),
+
+
+ (
+    8555228, 'Teglbrænder Allé 24', 9434, 'Branderup', 'Andelsbolig', 87,
+    2, '1984-11-29', 168, 'B',
+    258, 642, 'Solgt'
+),
+
+
+ (
+    4010785, 'Vesterfælledgade 405', 4693, 'Sabro', 'Ungdomsbolig', 312,
+    8, '1997-03-01', 824, 'A',
+    421, 888, 'Til salg'
+),
+
+
+ (
+    5061941, 'Metrovej 864', 1646, 'Haderup', 'Andelsbolig', 45,
+    6, '1998-03-26', 306, 'D',
+    985, 393, 'Til salg'
+),
+
+
+ (
+    9170562, 'Skyttegårdvej 673', 3016, 'Janderup', 'Ejerlejlighed', 59,
+    3, '2009-08-30', 332, 'B',
+    890, 617, 'Til salg'
+),
+
+
+ (
+    2610561, 'Vognborggade 6', 9345, 'Ballerup', 'Andelsbolig', 67,
+    4, '2001-03-10', 821, 'F',
+    201, 963, 'Under Behandling'
+),
+
+
+ (
+    6972682, 'Dybendalsstræde 295', 6329, 'Vejers Strand', 'Villa', 151,
+    2, '2014-07-30', 241, 'E',
+    915, 667, 'Under Behandling'
+),
+
+
+ (
+    1390548, 'Ansgarsvej 377', 8667, 'Trustrup', 'Sommerhus', 71,
+    7, '1978-02-18', 669, 'F',
+    771, 181, 'Solgt'
+),
+
+
+ (
+    5468381, 'Landvindingsgade 10', 4561, 'Glostrup', 'Ejerlejlighed', 165,
+    5, '1966-10-19', 155, 'C',
+    247, 493, 'Under Behandling'
+),
+
+
+ (
+    6408754, 'Masteskurs Allé 414', 3484, 'Høng', 'Lejlighed', 159,
+    2, '1977-03-27', 442, 'G',
+    338, 924, 'Til salg'
+),
+
+
+ (
+    734288, 'Zinnsvej 1', 1264, 'Marstal', 'Ungdomsbolig', 176,
+    5, '1972-10-03', 195, 'G',
+    640, 472, 'Under Behandling'
+),
+
+
+ (
+    9566591, 'Gladbogade 4', 9701, 'Hasselager', 'Andelsbolig', 283,
+    1, '1976-04-19', 1494, 'B',
+    207, 147, 'Under Behandling'
+),
+
+
+ (
+    3665949, 'Dybbøls Allé 7', 2847, 'Nykøbing M', 'Rækkehus', 128,
+    5, '1971-11-30', 520, 'G',
+    77, 478, 'Under Behandling'
+),
+
+
+ (
+    301015, 'Mariehamngade 3', 9003, 'Sunds', 'Rækkehus', 289,
+    2, '1977-04-17', 1074, 'A',
+    603, 99, 'Solgt'
+),
+
+
+ (
+    3923519, 'Bjørnsonsgade 1', 4065, 'Trustrup', 'Sommerhus', 157,
+    6, '1982-08-14', 1153, 'D',
+    377, 545, 'Til salg'
+),
+
+
+ (
+    6644534, 'Emdrup Engvej 40', 8511, 'Nibe', 'Villa', 49,
+    7, '1994-07-07', 597, 'D',
+    401, 225, 'Under Behandling'
+),
+
+
+ (
+    151504, 'Bøllemosegårdsvej 7', 9058, 'Roslev', 'Ældrebolig', 240,
+    8, '1959-01-02', 593, 'D',
+    921, 587, 'Til salg'
+),
+
+
+ (
+    9428209, 'Ahlefeldtsgade 30', 7595, 'Helsinge', 'Lejlighed', 157,
+    2, '2011-06-20', 584, 'D',
+    416, 261, 'Solgt'
+),
+
+
+ (
+    2428545, 'Bogensevej 6', 4715, 'Hadsund', 'Ejerlejlighed', 214,
+    7, '1981-11-13', 1409, 'G',
+    930, 941, 'Solgt'
+),
+
+
+ (
+    5629643, 'Mozartsvej 149', 7161, 'Århus', 'Sommerhus', 65,
+    6, '1982-08-29', 831, 'E',
+    191, 189, 'Til salg'
+),
+
+
+ (
+    9150669, 'Røde Mellemvej 35', 6882, 'Silkeborg', 'Lejlighed', 56,
+    6, '1951-12-17', 263, 'A',
+    725, 846, 'Til salg'
+),
+
+
+ (
+    8000871, 'Javavej 932', 9605, 'Vinderup', 'Rækkehus', 101,
+    2, '1982-09-24', 566, 'E',
+    772, 741, 'Under Behandling'
+),
+
+
+ (
+    755126, 'Bregnerødstræde 88', 3278, 'Brøndby Strand', 'Ejerlejlighed', 363,
+    6, '1991-05-12', 955, 'D',
+    435, 662, 'Til salg'
+),
+
+
+ (
+    7932301, 'Glückstadts Allé 786', 2248, 'Vordingborg', 'Villa', 309,
+    8, '1982-03-08', 861, 'E',
+    68, 916, 'Under Behandling'
+),
+
+
+ (
+    5881914, 'Østergårdsvej 5', 3385, 'Haarby', 'Lejlighed', 200,
+    6, '1973-11-28', 1305, 'B',
+    565, 275, 'Til salg'
+),
+
+
+ (
+    3692640, 'Løgstørgade 6', 9186, 'Holte', 'Sommerhus', 348,
+    3, '1934-02-23', 822, 'C',
+    285, 129, 'Solgt'
+),
+
+
+ (
+    6293881, 'Dompapvej 371', 8363, 'Harlev', 'Rækkehus', 360,
+    2, '1936-07-16', 101, 'B',
+    560, 574, 'Solgt'
+),
+
+
+ (
+    6668972, 'Mindstrup Allé 797', 4368, 'Hillerød', 'Lejlighed', 228,
+    5, '1972-01-28', 293, 'A',
+    893, 916, 'Til salg'
+),
+
+
+ (
+    2651482, 'Ahlmannsstræde 70', 5124, 'Østbirk', 'Andelsbolig', 360,
+    3, '1927-02-06', 1192, 'C',
+    677, 937, 'Solgt'
+),
+
+
+ (
+    1912207, 'Allersgade 365', 1122, 'Bælum', 'Ejerlejlighed', 384,
+    1, '1985-10-12', 1413, 'C',
+    14, 159, 'Til salg'
+),
+
+
+ (
+    3437522, 'Løv Allé 97', 5358, 'Ebberup', 'Kolonihavehus', 237,
+    5, '1986-07-18', 1361, 'F',
+    838, 868, 'Til salg'
+),
+
+
+ (
+    245831, 'Lergravsvej 7', 5600, 'Solbjerg', 'Ungdomsbolig', 181,
+    1, '1990-06-23', 247, 'G',
+    437, 712, 'Til salg'
+),
+
+
+ (
+    1791683, 'Dovre Allé 956', 5859, 'Bedsted Thy', 'Ældrebolig', 208,
+    5, '2000-02-21', 556, 'B',
+    247, 235, 'Til salg'
+),
+
+
+ (
+    3405742, 'Letlandsstræde 68', 7129, 'Vejby', 'Ungdomsbolig', 374,
+    6, '1985-06-19', 511, 'G',
+    796, 818, 'Under Behandling'
+),
+
+
+ (
+    9491993, 'Degneæblestræde 414', 6838, 'Fur', 'Sommerhus', 298,
+    6, '2011-01-31', 1097, 'D',
+    634, 967, 'Til salg'
+),
+
+
+ (
+    7027692, 'Smyrna Allé 954', 8652, 'Blokhus', 'Villa', 379,
+    2, '1998-07-24', 574, 'B',
+    1, 374, 'Solgt'
+),
+
+
+ (
+    3626881, 'Herfølgevej 185', 1356, 'Billum', 'Lejlighed', 114,
+    3, '1969-06-17', 194, 'B',
+    632, 729, 'Til salg'
+),
+
+
+ (
+    3704584, 'Tonemestergade 297', 6470, 'Brædstrup', 'Ejerlejlighed', 353,
+    1, '1948-08-20', 1252, 'B',
+    642, 100, 'Til salg'
+),
+
+
+ (
+    302357, 'Veksøstræde 80', 3978, 'Køge', 'Rækkehus', 121,
+    1, '1998-12-03', 1495, 'G',
+    105, 964, 'Under Behandling'
+),
+
+
+ (
+    6716029, 'Todesstræde 689', 7409, 'Humble', 'Rækkehus', 363,
+    8, '2006-01-06', 1393, 'C',
+    60, 369, 'Til salg'
+),
+
+
+ (
+    1247120, 'Gittergade 67', 2753, 'Korsør', 'Ældrebolig', 338,
+    5, '1990-04-04', 252, 'F',
+    266, 692, 'Under Behandling'
+),
+
+
+ (
+    2264768, 'Fiolvej 9', 2936, 'Ørsted', 'Andelsbolig', 135,
+    4, '1949-11-17', 1493, 'B',
+    276, 416, 'Under Behandling'
+),
+
+
+ (
+    4409302, 'Amagerbrogade 801', 1480, 'Hesselager', 'Villa', 41,
+    2, '1989-03-24', 383, 'D',
+    875, 792, 'Solgt'
+),
+
+
+ (
+    8949090, 'Ny Østervej 13', 4158, 'Hellerup', 'Ungdomsbolig', 383,
+    7, '1952-05-20', 960, 'F',
+    253, 706, 'Til salg'
+),
+
+
+ (
+    1231586, 'Brønshøjgade 8', 7727, 'Langeskov', 'Sommerhus', 197,
+    6, '1999-01-30', 1471, 'G',
+    76, 472, 'Solgt'
+),
+
+
+ (
+    3686757, 'Uggerløse Allé 3', 4003, 'Bøvlingbjerg', 'Rækkehus', 263,
+    8, '1974-11-15', 1273, 'B',
+    830, 956, 'Til salg'
+),
+
+
+ (
+    9635735, 'Dybbøls Allé 69', 4308, 'Vinderup', 'Kolonihavehus', 369,
+    8, '1926-07-07', 699, 'E',
+    260, 21, 'Til salg'
+),
+
+
+ (
+    8600463, 'Vangsåvej 481', 4030, 'Sakskøbing', 'Ejerlejlighed', 293,
+    4, '2022-10-01', 1315, 'D',
+    199, 241, 'Solgt'
+),
+
+
+ (
+    6921451, 'Bjergstedgade 489', 3383, 'Ribe', 'Rækkehus', 350,
+    7, '1973-04-19', 669, 'B',
+    176, 878, 'Under Behandling'
+),
+
+
+ (
+    7872113, 'Amagerfælledvej 9', 8330, 'Rynkeby', 'Sommerhus', 281,
+    1, '1940-04-01', 1445, 'E',
+    716, 108, 'Solgt'
+),
+
+
+ (
+    6543757, 'Jægerspris Allé 25', 3760, 'Ulstrup', 'Ungdomsbolig', 348,
+    3, '1999-07-27', 573, 'D',
+    754, 191, 'Solgt'
+),
+
+
+ (
+    4570887, 'Sturlasstræde 8', 7782, 'Klarup', 'Rækkehus', 358,
+    1, '1950-09-26', 1133, 'D',
+    534, 918, 'Under Behandling'
+),
+
+
+ (
+    3125981, 'Uplandsvej 14', 4113, 'Flemming', 'Rækkehus', 194,
+    6, '1952-01-16', 1301, 'B',
+    81, 823, 'Under Behandling'
+),
+
+
+ (
+    3012324, 'Hirsevej 476', 4380, 'Sønder Felding', 'Villa', 302,
+    6, '2021-09-11', 958, 'E',
+    26, 958, 'Til salg'
+),
+
+
+ (
+    9047924, 'Rødtjørnevej 5', 8265, 'Ålbæk', 'Ungdomsbolig', 88,
+    8, '2014-12-15', 323, 'F',
+    734, 597, 'Til salg'
+),
+
+
+ (
+    6738211, 'Langebrovej 76', 9334, 'Dronningmølle', 'Ejerlejlighed', 91,
+    8, '1959-02-12', 1456, 'B',
+    275, 937, 'Under Behandling'
+),
+
+
+ (
+    9715328, 'Refsnæsvej 953', 1509, 'Aulum', 'Lejlighed', 361,
+    4, '1942-05-14', 1300, 'C',
+    26, 248, 'Til salg'
+),
+
+
+ (
+    7088821, 'Høsterkøbvej 98', 1165, 'Sønder Stenderup', 'Kolonihavehus', 190,
+    7, '1930-09-09', 1331, 'D',
+    666, 327, 'Til salg'
+),
+
+
+ (
+    7981279, 'Alstedvej 341', 2442, 'Samsø', 'Andelsbolig', 355,
+    8, '1983-07-22', 855, 'G',
+    781, 545, 'Solgt'
+),
+
+
+ (
+    9253371, 'Uffesvej 27', 4774, 'Dybvad', 'Ungdomsbolig', 354,
+    4, '2014-08-24', 375, 'E',
+    740, 864, 'Under Behandling'
+),
+
+
+ (
+    597770, 'Løjtegårdsgade 52', 6776, 'Kirke Såby', 'Ældrebolig', 136,
+    1, '1956-06-03', 648, 'B',
+    207, 693, 'Under Behandling'
+),
+
+
+ (
+    3640645, 'Tårnblæser Allé 34', 9500, 'Ejby', 'Ældrebolig', 93,
+    4, '1985-04-04', 271, 'A',
+    450, 538, 'Til salg'
+),
+
+
+ (
+    8801445, 'Lindgreensvej 3', 5209, 'Blokhus', 'Rækkehus', 138,
+    5, '1943-03-10', 100, 'A',
+    687, 271, 'Under Behandling'
+),
+
+
+ (
+    9145181, 'Puggaardsvej 373', 6716, 'Nakskov', 'Ældrebolig', 121,
+    3, '1976-11-26', 1452, 'G',
+    531, 399, 'Til salg'
+),
+
+
+ (
+    7678698, 'Åbakkegade 923', 9517, 'Lem', 'Rækkehus', 191,
+    8, '2013-07-09', 1310, 'E',
+    249, 694, 'Til salg'
+),
+
+
+ (
+    9621989, 'Tomsgårdsgade 59', 3486, 'Øster Vrå', 'Andelsbolig', 272,
+    4, '1967-05-14', 598, 'A',
+    692, 364, 'Til salg'
+),
+
+
+ (
+    5397937, 'Alsgade 32', 2091, 'Blommenslyst', 'Rækkehus', 156,
+    5, '2004-04-27', 722, 'F',
+    885, 293, 'Til salg'
+),
+
+
+ (
+    4092672, 'Stærevej 7', 8745, 'Herlev', 'Ejerlejlighed', 122,
+    5, '2012-03-11', 142, 'C',
+    409, 497, 'Solgt'
+),
+
+
+ (
+    588595, 'Ørhage Allé 468', 3231, 'Svendborg', 'Ungdomsbolig', 371,
+    1, '1945-11-01', 122, 'F',
+    402, 992, 'Til salg'
+),
+
+
+ (
+    3402848, 'Vognborgstræde 955', 7327, 'Nyborg', 'Rækkehus', 274,
+    4, '1997-06-11', 978, 'C',
+    794, 328, 'Under Behandling'
+),
+
+
+ (
+    378215, 'Sumatrastræde 6', 4986, 'Møldrup', 'Ældrebolig', 311,
+    7, '1991-05-30', 134, 'E',
+    930, 309, 'Solgt'
+),
+
+
+ (
+    7671273, 'Forbindelsesvej 54', 5961, 'Tistrup', 'Sommerhus', 296,
+    7, '1928-10-18', 474, 'F',
+    759, 1000, 'Under Behandling'
+),
+
+
+ (
+    6469988, 'Clematisgade 160', 4354, 'Aulum', 'Andelsbolig', 397,
+    7, '2019-02-24', 1314, 'C',
+    81, 685, 'Solgt'
+),
+
+
+ (
+    5857369, 'Hvidtjørnegade 652', 2273, 'Marslev', 'Ungdomsbolig', 170,
+    6, '1937-05-16', 770, 'F',
+    909, 489, 'Under Behandling'
+),
+
+
+ (
+    2181565, 'Sofienhøjvej 5', 8106, 'Vils', 'Lejlighed', 320,
+    7, '2014-06-02', 750, 'G',
+    891, 656, 'Solgt'
+),
+
+
+ (
+    6777657, 'Jægervej 3', 5577, 'Glesborg', 'Ungdomsbolig', 272,
+    5, '2000-10-07', 1487, 'A',
+    745, 971, 'Solgt'
+),
+
+
+ (
+    9934533, 'Tikøbgade 576', 5495, 'Mørkøv', 'Ejerlejlighed', 207,
+    2, '2018-05-03', 725, 'E',
+    214, 706, 'Solgt'
+),
+
+
+ (
+    1630167, 'Valhalsvej 9', 7585, 'Nørre Snede', 'Sommerhus', 60,
+    3, '2002-03-16', 1291, 'B',
+    618, 939, 'Til salg'
+),
+
+
+ (
+    6017121, 'Liselundgade 4', 8756, 'Humble', 'Sommerhus', 41,
+    2, '1981-08-09', 1239, 'G',
+    253, 256, 'Under Behandling'
+),
+
+
+ (
+    7917082, 'Dunhammervej 17', 2209, 'Broby', 'Andelsbolig', 364,
+    4, '2021-09-23', 828, 'D',
+    725, 8, 'Til salg'
+),
+
+
+ (
+    9089405, 'Dagmarsvej 992', 6774, 'Glesborg', 'Ældrebolig', 386,
+    7, '1944-01-16', 822, 'C',
+    144, 572, 'Til salg'
+),
+
+
+ (
+    7014607, 'Bøllemosegårdsvej 5', 7616, 'Tappernøje', 'Kolonihavehus', 315,
+    5, '1942-08-21', 934, 'A',
+    218, 532, 'Under Behandling'
+),
+
+
+ (
+    1209085, 'Høyens Allé 2', 3502, 'Rønne', 'Rækkehus', 54,
+    4, '1926-02-22', 908, 'D',
+    754, 389, 'Under Behandling'
+),
+
+
+ (
+    6741190, 'Sumatragade 7', 6581, 'Tureby', 'Andelsbolig', 330,
+    7, '1959-01-24', 171, 'A',
+    939, 184, 'Under Behandling'
+),
+
+
+ (
+    4980941, 'Hyacintgade 948', 6492, 'Askeby', 'Ungdomsbolig', 387,
+    1, '1925-09-18', 1477, 'A',
+    887, 877, 'Under Behandling'
+),
+
+
+ (
+    5024168, 'Gråspurvevej 75', 8613, 'Hemmet', 'Rækkehus', 99,
+    6, '1971-10-14', 1400, 'E',
+    761, 304, 'Solgt'
+),
+
+
+ (
+    2043959, 'Geysersgade 63', 7628, 'Vester Skerninge', 'Sommerhus', 198,
+    6, '1928-01-29', 1299, 'D',
+    97, 811, 'Under Behandling'
+),
+
+
+ (
+    4283746, 'Marbjerggade 96', 9325, 'Stokkemarke', 'Andelsbolig', 187,
+    4, '2014-08-05', 1274, 'F',
+    309, 532, 'Til salg'
+),
+
+
+ (
+    6128085, 'Frankrigsvej 82', 2879, 'Munkebo', 'Rækkehus', 337,
+    7, '1992-02-15', 888, 'F',
+    687, 441, 'Til salg'
+),
+
+
+ (
+    5081543, 'Bjerregårds Sidevej 398', 7939, 'Hjallerup', 'Andelsbolig', 392,
+    3, '1949-10-30', 1372, 'F',
+    839, 566, 'Under Behandling'
+),
+
+
+ (
+    8779090, 'Astersvej 4', 6756, 'Nørreballe', 'Ungdomsbolig', 63,
+    7, '1983-10-10', 1386, 'C',
+    852, 337, 'Under Behandling'
+),
+
+
+ (
+    2244098, 'Sokkelundsvej 2', 5324, 'Skamby', 'Andelsbolig', 53,
+    1, '1997-07-29', 597, 'A',
+    364, 214, 'Til salg'
+),
+
+
+ (
+    9729050, 'Istanbulgade 6', 9617, 'Barrit', 'Sommerhus', 240,
+    6, '1985-03-21', 200, 'A',
+    861, 300, 'Solgt'
+),
+
+
+ (
+    7160487, 'Kongovej 4', 7799, 'Nykøbing M', 'Ungdomsbolig', 347,
+    6, '1948-08-01', 650, 'F',
+    985, 981, 'Til salg'
+),
+
+
+ (
+    4693433, 'James Grievevej 651', 1755, 'Suldrup', 'Ejerlejlighed', 399,
+    7, '1999-06-02', 924, 'A',
+    142, 156, 'Solgt'
+),
+
+
+ (
+    2792642, 'Straussstræde 2', 6779, 'Hanstholm', 'Ejerlejlighed', 193,
+    6, '2002-09-30', 765, 'G',
+    353, 174, 'Under Behandling'
+),
+
+
+ (
+    536603, 'Møllegade 10', 4632, 'Dronningmølle', 'Andelsbolig', 148,
+    2, '1979-02-06', 593, 'A',
+    568, 486, 'Solgt'
+),
+
+
+ (
+    1030087, 'Slagelsevej 514', 4549, 'Vejen', 'Kolonihavehus', 215,
+    7, '1991-10-21', 679, 'C',
+    830, 425, 'Til salg'
+),
+
+
+ (
+    6603302, 'Bohlendach Allé 503', 5829, 'Munke Bjergby', 'Andelsbolig', 233,
+    6, '1968-04-04', 239, 'C',
+    913, 142, 'Til salg'
+),
+
+
+ (
+    4169815, 'Silkevej 6', 7693, 'Sjællands Odde', 'Ungdomsbolig', 202,
+    1, '2013-07-14', 1216, 'A',
+    228, 978, 'Solgt'
+),
+
+
+ (
+    5782754, 'Rumæniens Allé 5', 5778, 'Rødkærsbro', 'Ældrebolig', 223,
+    6, '1960-02-24', 221, 'B',
+    166, 411, 'Under Behandling'
+),
+
+
+ (
+    3402757, 'Saxhøjstræde 52', 1318, 'Svebølle', 'Sommerhus', 122,
+    2, '2021-08-11', 250, 'F',
+    847, 83, 'Solgt'
+),
+
+
+ (
+    381468, 'Fredenshøjstræde 85', 5747, 'Hundslund', 'Villa', 209,
+    8, '1934-01-19', 237, 'G',
+    959, 936, 'Solgt'
+),
+
+
+ (
+    8636073, 'Judiths Allé 2', 2330, 'Engesvang', 'Ældrebolig', 247,
+    5, '1992-11-01', 1069, 'E',
+    746, 327, 'Til salg'
+),
+
+
+ (
+    128778, 'Hermodsvej 3', 4187, 'Jystrup', 'Kolonihavehus', 122,
+    6, '2015-02-16', 962, 'E',
+    230, 218, 'Solgt'
+),
+
+
+ (
+    8107668, 'Iris Allé 25', 7005, 'Lem', 'Ejerlejlighed', 375,
+    4, '2009-02-03', 1309, 'A',
+    68, 858, 'Solgt'
+),
+
+
+ (
+    6474808, 'Willumsstræde 690', 1024, 'Smørum', 'Ejerlejlighed', 246,
+    2, '2020-02-02', 302, 'G',
+    16, 154, 'Under Behandling'
+),
+
+
+ (
+    9818465, 'Rømersgade 91', 5152, 'Gudhjem', 'Andelsbolig', 359,
+    5, '1942-09-18', 738, 'E',
+    410, 511, 'Solgt'
+),
+
+
+ (
+    7407898, 'Harrestrupvej 53', 9352, 'Skærbæk', 'Rækkehus', 228,
+    3, '1996-10-08', 225, 'G',
+    918, 943, 'Solgt'
+),
+
+
+ (
+    1794459, 'Bergens Allé 7', 8819, 'Hornsyld', 'Ungdomsbolig', 47,
+    8, '1939-05-10', 1123, 'C',
+    862, 309, 'Solgt'
+),
+
+
+ (
+    3003009, 'Slagtehusvej 370', 3184, 'Ølstykke', 'Lejlighed', 115,
+    3, '1987-07-19', 1385, 'F',
+    927, 380, 'Til salg'
+),
+
+
+ (
+    6932932, 'Valløgade 2', 3063, 'Christiansfeld', 'Kolonihavehus', 223,
+    7, '2010-12-30', 1467, 'C',
+    722, 394, 'Til salg'
+),
+
+
+ (
+    4083184, 'Gadekærgade 4', 9935, 'Viby Sjælland', 'Sommerhus', 61,
+    7, '1929-04-18', 1442, 'F',
+    378, 763, 'Under Behandling'
+),
+
+
+ (
+    766510, 'Milanogade 85', 8817, 'Mariager', 'Villa', 190,
+    4, '1934-05-21', 447, 'C',
+    665, 9, 'Under Behandling'
+),
+
+
+ (
+    4809950, 'Venøvej 477', 4361, 'Roskilde', 'Ungdomsbolig', 190,
+    4, '1926-07-16', 1461, 'F',
+    782, 20, 'Under Behandling'
+),
+
+
+ (
+    6049818, 'Stenosstræde 8', 4281, 'Helsingør', 'Rækkehus', 218,
+    3, '2022-09-06', 850, 'C',
+    318, 441, 'Til salg'
+),
+
+
+ (
+    8811410, 'Knabstrupvej 672', 1475, 'Glumsø', 'Rækkehus', 365,
+    3, '1986-08-15', 1153, 'E',
+    268, 528, 'Under Behandling'
+),
+
+
+ (
+    9236608, 'Rønningsgade 6', 2236, 'Gistrup', 'Ældrebolig', 64,
+    4, '1934-07-23', 173, 'E',
+    110, 324, 'Under Behandling'
+),
+
+
+ (
+    4449701, 'Korsørgade 145', 4540, 'Svebølle', 'Ældrebolig', 350,
+    2, '1989-06-30', 849, 'E',
+    361, 80, 'Solgt'
+),
+
+
+ (
+    2942891, 'Nannasgade 812', 8268, 'Brøndby', 'Andelsbolig', 377,
+    5, '2006-02-26', 215, 'D',
+    644, 497, 'Under Behandling'
+),
+
+
+ (
+    6627614, 'Rostockvej 303', 2096, 'Børkop', 'Lejlighed', 152,
+    7, '1944-05-16', 1492, 'B',
+    612, 275, 'Til salg'
+),
+
+
+ (
+    4478683, 'Vesterfælledvej 881', 1549, 'Ringkøbing', 'Villa', 137,
+    4, '1996-11-30', 1301, 'E',
+    58, 197, 'Solgt'
+),
+
+
+ (
+    5025520, 'Tybjerggade 292', 1036, 'Bramming', 'Ejerlejlighed', 84,
+    5, '1931-12-26', 797, 'C',
+    698, 756, 'Til salg'
+),
+
+
+ (
+    7320807, 'Stenlandsstræde 8', 6273, 'Oksbøl', 'Andelsbolig', 91,
+    2, '2003-05-02', 1003, 'B',
+    510, 513, 'Solgt'
+),
+
+
+ (
+    1787183, 'Tåsingestræde 5', 2431, 'Jægerspris', 'Villa', 247,
+    1, '1949-12-04', 1121, 'C',
+    685, 478, 'Til salg'
+),
+
+
+ (
+    2326336, 'Hjortdalsvej 184', 9426, 'Odder', 'Ældrebolig', 333,
+    2, '1948-02-28', 1030, 'B',
+    388, 821, 'Solgt'
+),
+
+
+ (
+    6375492, 'Knabrogade 671', 3684, 'Vordingborg', 'Ejerlejlighed', 351,
+    8, '1925-08-12', 281, 'C',
+    727, 48, 'Solgt'
+),
+
+
+ (
+    3128666, 'Freundsvej 74', 8132, 'Kvistgård', 'Lejlighed', 219,
+    2, '2009-05-11', 1091, 'C',
+    404, 879, 'Til salg'
+),
+
+
+ (
+    575741, 'Southamptongade 14', 3033, 'Vipperød', 'Rækkehus', 338,
+    3, '2017-05-09', 1162, 'F',
+    326, 597, 'Under Behandling'
+),
+
+
+ (
+    7894417, 'Fanøvej 496', 8790, 'Ærøskøbing', 'Ejerlejlighed', 365,
+    6, '1971-07-22', 436, 'B',
+    792, 375, 'Solgt'
+),
+
+
+ (
+    4007562, 'Øselsgade 104', 4180, 'Harlev', 'Lejlighed', 257,
+    5, '1986-03-15', 134, 'E',
+    855, 329, 'Solgt'
+),
+
+
+ (
+    7272652, 'Bomslutter Allé 4', 1386, 'Søllested', 'Sommerhus', 132,
+    4, '1946-11-06', 898, 'E',
+    803, 729, 'Under Behandling'
+),
+
+
+ (
+    2584073, 'Bardenflethsgade 4', 3004, 'Lintrup', 'Kolonihavehus', 158,
+    7, '1958-06-24', 786, 'F',
+    882, 708, 'Under Behandling'
+),
+
+
+ (
+    4464720, 'Toskiftevej 5', 2314, 'Fjerritslev', 'Sommerhus', 63,
+    3, '1957-03-27', 871, 'F',
+    29, 59, 'Under Behandling'
+),
+
+
+ (
+    8838991, 'Oldfuxvej 76', 4059, 'Rønde', 'Rækkehus', 59,
+    7, '2011-03-01', 685, 'E',
+    235, 743, 'Solgt'
+),
+
+
+ (
+    2515675, 'Prinsesse Allé 88', 3367, 'Fur', 'Rækkehus', 284,
+    5, '2016-09-17', 376, 'B',
+    768, 67, 'Solgt'
+),
+
+
+ (
+    3445024, 'Hendonvej 40', 2432, 'Langebæk', 'Ungdomsbolig', 312,
+    7, '1930-12-25', 248, 'D',
+    679, 4, 'Solgt'
+),
+
+
+ (
+    1535429, 'Skyggelundsgade 66', 3400, 'Lemvig', 'Sommerhus', 364,
+    2, '1938-05-14', 302, 'A',
+    443, 12, 'Solgt'
+),
+
+
+ (
+    4185878, 'Obdamsgade 529', 1648, 'Herlufmagle', 'Lejlighed', 332,
+    8, '2008-10-22', 1312, 'A',
+    823, 684, 'Solgt'
+),
+
+
+ (
+    6406165, 'Hagbardvej 60', 4612, 'Hornslet', 'Rækkehus', 141,
+    7, '2000-04-08', 1146, 'D',
+    343, 393, 'Solgt'
+),
+
+
+ (
+    2001357, 'Rahbeks Allé 30', 1828, 'Henne', 'Villa', 141,
+    6, '2015-03-20', 175, 'A',
+    490, 383, 'Til salg'
+),
+
+
+ (
+    4229344, 'Grønløkkegade 897', 8390, 'Haderslev', 'Rækkehus', 125,
+    1, '1957-06-05', 1135, 'E',
+    135, 19, 'Til salg'
+),
+
+
+ (
+    7497439, 'Malakkavej 816', 6222, 'Rørvig', 'Villa', 340,
+    3, '1986-05-10', 615, 'E',
+    957, 727, 'Under Behandling'
+),
+
+
+ (
+    6567549, 'Hedegaardsgade 290', 3905, 'Hellerup', 'Villa', 239,
+    7, '2010-08-09', 732, 'D',
+    591, 554, 'Solgt'
+),
+
+
+ (
+    4331569, 'Bogensevej 59', 4536, 'Fårup', 'Kolonihavehus', 294,
+    5, '1974-02-28', 1366, 'B',
+    297, 205, 'Til salg'
+),
+
+
+ (
+    2971114, 'Thorshavnsgade 3', 5175, 'Uldum', 'Kolonihavehus', 141,
+    7, '2017-03-17', 816, 'A',
+    514, 325, 'Solgt'
+),
+
+
+ (
+    8088619, 'Samosvej 7', 5616, 'Nimtofte', 'Ejerlejlighed', 384,
+    5, '1978-02-03', 743, 'C',
+    992, 112, 'Til salg'
+),
+
+
+ (
+    233478, 'Tovelillevej 6', 1019, 'Humble', 'Andelsbolig', 314,
+    7, '1985-01-22', 1258, 'G',
+    491, 371, 'Under Behandling'
+),
+
+
+ (
+    4897345, 'Verdisstræde 49', 1868, 'Klarup', 'Ældrebolig', 179,
+    5, '2016-09-19', 413, 'E',
+    477, 783, 'Til salg'
+),
+
+
+ (
+    5455653, 'Glückstadtsvej 9', 8298, 'Sønderborg', 'Sommerhus', 368,
+    6, '1978-01-08', 644, 'D',
+    987, 197, 'Under Behandling'
+),
+
+
+ (
+    1577623, 'Engdals Allé 463', 8883, 'Farsø', 'Sommerhus', 215,
+    2, '1932-09-28', 323, 'F',
+    495, 830, 'Solgt'
+),
+
+
+ (
+    603328, 'Gerlevgade 861', 1126, 'Hagersten', 'Ældrebolig', 197,
+    3, '2021-07-21', 712, 'E',
+    968, 707, 'Solgt'
+),
+
+
+ (
+    177152, 'Tyborøn Allé 450', 5114, 'Samsø', 'Kolonihavehus', 157,
+    4, '2023-11-30', 494, 'C',
+    511, 841, 'Solgt'
+),
+
+
+ (
+    952527, 'Turesensvej 58', 5485, 'Thisted', 'Villa', 79,
+    4, '1958-08-13', 1043, 'A',
+    628, 618, 'Solgt'
+),
+
+
+ (
+    8856620, 'Nymindevej 65', 9504, 'Nyborg', 'Sommerhus', 146,
+    2, '1973-09-05', 253, 'A',
+    404, 78, 'Til salg'
+),
+
+
+ (
+    6559865, 'Bristolgade 918', 6968, 'Henne', 'Ældrebolig', 358,
+    3, '2000-06-12', 1325, 'G',
+    43, 590, 'Solgt'
+),
+
+
+ (
+    2186660, 'India Allé 1', 9245, 'Vorbasse', 'Ungdomsbolig', 188,
+    5, '2021-02-07', 487, 'E',
+    797, 97, 'Under Behandling'
+),
+
+
+ (
+    2231508, 'Slangerupvej 11', 1967, 'Middelfart', 'Lejlighed', 75,
+    4, '1929-12-03', 347, 'D',
+    966, 411, 'Solgt'
+),
+
+
+ (
+    4240104, 'Reventlowsgade 7', 2626, 'Ærøskøbing', 'Andelsbolig', 132,
+    8, '1934-05-17', 1374, 'E',
+    228, 413, 'Solgt'
+),
+
+
+ (
+    7520930, 'Havsgårdsvej 273', 7122, 'Hørsholm', 'Villa', 257,
+    6, '1944-02-03', 1396, 'A',
+    708, 267, 'Til salg'
+),
+
+
+ (
+    9566263, 'Sallinggade 427', 4060, 'Ry', 'Lejlighed', 308,
+    2, '2021-03-02', 1278, 'B',
+    131, 408, 'Under Behandling'
+),
+
+
+ (
+    840596, 'Selinevej 158', 8596, 'Frederiksværk', 'Villa', 87,
+    2, '2023-02-16', 404, 'D',
+    169, 855, 'Til salg'
+),
+
+
+ (
+    7196060, 'Magdelone Allé 96', 3819, 'Skanderborg', 'Andelsbolig', 118,
+    5, '1941-08-13', 193, 'D',
+    972, 282, 'Under Behandling'
+),
+
+
+ (
+    5968634, 'Tordenskjolds Allé 46', 3607, 'Rungsted Kyst', 'Kolonihavehus', 237,
+    5, '2003-06-30', 1281, 'G',
+    728, 676, 'Til salg'
+),
+
+
+ (
+    4138590, 'Hambrosvej 34', 4619, 'Kerteminde', 'Kolonihavehus', 395,
+    1, '1966-02-18', 999, 'D',
+    625, 331, 'Til salg'
+),
+
+
+ (
+    3355563, 'Knuthenborgstræde 93', 9070, 'Broager', 'Sommerhus', 218,
+    8, '1961-07-13', 1323, 'F',
+    282, 388, 'Under Behandling'
+),
+
+
+ (
+    912961, 'Spaniensvej 315', 2537, 'Erslev', 'Ejerlejlighed', 194,
+    6, '1972-07-31', 519, 'F',
+    61, 312, 'Under Behandling'
+),
+
+
+ (
+    7453720, 'Oceanvej 301', 4653, 'Bogense', 'Rækkehus', 73,
+    8, '1931-05-24', 1311, 'A',
+    528, 440, 'Solgt'
+),
+
+
+ (
+    8032549, 'Nygårdsgade 826', 8067, 'Hvidovre', 'Andelsbolig', 230,
+    2, '1957-07-11', 772, 'F',
+    208, 860, 'Til salg'
+),
+
+
+ (
+    1165009, 'Bangertsgade 9', 1607, 'Hobro', 'Villa', 274,
+    6, '1959-04-18', 501, 'B',
+    41, 420, 'Til salg'
+),
+
+
+ (
+    9660553, 'Katholmvej 548', 3185, 'Nørre Alslev', 'Ældrebolig', 249,
+    7, '1950-04-23', 230, 'E',
+    78, 401, 'Solgt'
+),
+
+
+ (
+    4431691, 'Bratskovstræde 395', 2400, 'Sandved', 'Ungdomsbolig', 154,
+    5, '1997-07-02', 619, 'E',
+    747, 731, 'Solgt'
+),
+
+
+ (
+    5842466, 'Mikkel Skovsgade 218', 1186, 'Mørke', 'Sommerhus', 219,
+    8, '1958-12-05', 272, 'D',
+    434, 543, 'Til salg'
+),
+
+
+ (
+    7690750, 'Floridavej 953', 1301, 'Sønder Omme', 'Kolonihavehus', 146,
+    2, '1945-07-21', 778, 'A',
+    708, 803, 'Solgt'
+),
+
+
+ (
+    2993463, 'Valhals Allé 552', 9719, 'København', 'Rækkehus', 167,
+    1, '2005-04-16', 500, 'A',
+    741, 135, 'Under Behandling'
+),
+
+
+ (
+    233235, 'Middelgrundsstræde 218', 4649, 'Ørbæk', 'Villa', 190,
+    2, '1982-12-10', 1362, 'F',
+    766, 540, 'Under Behandling'
+),
+
+
+ (
+    1971796, 'Amagerbro Allé 478', 5273, 'Nørre Asmindrup', 'Lejlighed', 289,
+    2, '1975-09-13', 1364, 'G',
+    212, 225, 'Under Behandling'
+),
+
+
+ (
+    7195169, 'Borneogade 5', 7104, 'Vallensbæk Strand', 'Kolonihavehus', 102,
+    2, '2023-05-17', 748, 'B',
+    969, 194, 'Til salg'
+),
+
+
+ (
+    8683961, 'Magvej 3', 9990, 'Aarup', 'Rækkehus', 364,
+    7, '1972-06-03', 1124, 'E',
+    874, 837, 'Under Behandling'
+),
+
+
+ (
+    4064178, 'Gearhalsgade 278', 1353, 'Mern', 'Andelsbolig', 228,
+    7, '1971-01-12', 291, 'F',
+    195, 160, 'Under Behandling'
+),
+
+
+ (
+    1457908, 'Hillerød Allé 90', 5071, 'Vejby', 'Ungdomsbolig', 382,
+    6, '1959-09-21', 755, 'A',
+    398, 723, 'Under Behandling'
+),
+
+
+ (
+    4627731, 'Platanvej 6', 9996, 'Esbjerg', 'Villa', 265,
+    3, '1992-09-01', 1067, 'D',
+    407, 392, 'Solgt'
+),
+
+
+ (
+    4426192, 'Grækenlandsgade 83', 7212, 'Tureby', 'Lejlighed', 202,
+    5, '1988-10-12', 314, 'E',
+    683, 34, 'Under Behandling'
+),
+
+
+ (
+    8989710, 'Nørrevej 16', 1679, 'Hanstholm', 'Sommerhus', 58,
+    6, '2003-12-12', 895, 'G',
+    579, 477, 'Til salg'
+),
+
+
+ (
+    590720, 'Skyggelundsgade 96', 5712, 'Lejre', 'Kolonihavehus', 368,
+    4, '2012-11-17', 135, 'F',
+    542, 751, 'Til salg'
+),
+
+
+ (
+    6216529, 'Holbækmotorengade 84', 9730, 'Mårslet', 'Rækkehus', 379,
+    4, '2021-12-25', 1296, 'B',
+    87, 91, 'Under Behandling'
+),
+
+
+ (
+    4355643, 'Højstrupgade 523', 5505, 'Skørping', 'Kolonihavehus', 120,
+    1, '1946-06-26', 1382, 'F',
+    357, 713, 'Solgt'
+),
+
+
+ (
+    2662184, 'Glucksvej 958', 3097, 'Vinderup', 'Kolonihavehus', 347,
+    1, '1995-06-14', 349, 'B',
+    279, 842, 'Solgt'
+),
+
+
+ (
+    749305, 'Carstensstræde 2', 1089, 'Slagelse', 'Kolonihavehus', 253,
+    7, '1951-05-09', 1105, 'F',
+    73, 953, 'Til salg'
+),
+
+
+ (
+    1348704, 'Bredvej 423', 8147, 'Solrød Strand', 'Ejerlejlighed', 245,
+    3, '2004-01-02', 297, 'A',
+    857, 528, 'Solgt'
+),
+
+
+ (
+    5189575, 'Trangravsstræde 129', 1581, 'Hemmet', 'Ungdomsbolig', 142,
+    8, '1976-04-01', 604, 'D',
+    951, 604, 'Under Behandling'
+),
+
+
+ (
+    4146882, 'Asnæsvej 7', 8303, 'Aakirkeby', 'Rækkehus', 81,
+    5, '1941-08-17', 799, 'D',
+    754, 662, 'Under Behandling'
+),
+
+
+ (
+    1338655, 'Gråspurve Allé 515', 6663, 'Kvistgård', 'Rækkehus', 173,
+    6, '2013-10-22', 909, 'E',
+    851, 697, 'Til salg'
+),
+
+
+ (
+    7377021, 'Marmorgade 48', 2316, 'Stubbekøbing', 'Ungdomsbolig', 274,
+    6, '2016-08-30', 135, 'G',
+    718, 513, 'Under Behandling'
+),
+
+
+ (
+    1539916, 'Delfinstræde 915', 7691, 'Christiansfeld', 'Lejlighed', 164,
+    7, '1983-04-03', 159, 'A',
+    704, 574, 'Under Behandling'
+),
+
+
+ (
+    5975685, 'Maltagade 6', 7389, 'Højer', 'Ældrebolig', 293,
+    2, '1954-03-10', 741, 'B',
+    468, 844, 'Solgt'
+),
+
+
+ (
+    3513761, 'Rosendalsvej 9', 7636, 'Lem', 'Andelsbolig', 398,
+    5, '1984-07-25', 646, 'E',
+    462, 422, 'Til salg'
+),
+
+
+ (
+    3637801, 'Myggenæsstræde 40', 5713, 'Arden', 'Lejlighed', 78,
+    7, '1931-02-11', 330, 'A',
+    122, 829, 'Under Behandling'
+),
+
+
+ (
+    8869421, 'Danshøjvej 397', 1097, 'Fredensborg', 'Ældrebolig', 320,
+    3, '1960-07-13', 654, 'D',
+    401, 548, 'Solgt'
+),
+
+
+ (
+    9416111, 'Asminderødvej 9', 8143, 'Brønderslev', 'Kolonihavehus', 130,
+    3, '2001-03-26', 560, 'D',
+    963, 95, 'Under Behandling'
+),
+
+
+ (
+    6555025, 'Kampmannsstræde 700', 5654, 'Dronningmølle', 'Rækkehus', 204,
+    1, '1993-10-12', 1093, 'B',
+    840, 245, 'Til salg'
+),
+
+
+ (
+    4030327, 'Førslevvej 242', 6914, 'Præstø', 'Rækkehus', 89,
+    4, '1986-05-30', 1029, 'A',
+    706, 823, 'Under Behandling'
+),
+
+
+ (
+    3715364, 'Støberigade 12', 2746, 'Herning', 'Lejlighed', 172,
+    7, '1996-04-10', 620, 'E',
+    971, 224, 'Til salg'
+),
+
+
+ (
+    3626631, 'Øselsgade 6', 7052, 'Jystrup', 'Ældrebolig', 222,
+    4, '2000-09-28', 1421, 'G',
+    442, 665, 'Til salg'
+),
+
+
+ (
+    2722355, 'Trekløvergade 2', 3597, 'Nyrup', 'Sommerhus', 191,
+    5, '1996-10-24', 257, 'D',
+    74, 630, 'Under Behandling'
+),
+
+
+ (
+    5628884, 'Glückstadts Allé 65', 3084, 'Oksbøl', 'Kolonihavehus', 54,
+    2, '2020-02-16', 278, 'B',
+    893, 690, 'Solgt'
+),
+
+
+ (
+    4772735, 'Kornskyldgade 442', 1526, 'Kværndrup', 'Ejerlejlighed', 349,
+    7, '1931-07-10', 699, 'B',
+    365, 61, 'Solgt'
+),
+
+
+ (
+    7393136, 'Ægirs Allé 259', 4022, 'Hasle', 'Sommerhus', 171,
+    1, '1948-11-08', 1074, 'A',
+    842, 500, 'Solgt'
+),
+
+
+ (
+    7660751, 'Montagnevej 3', 8316, 'Holstebro', 'Ældrebolig', 370,
+    6, '1998-07-10', 924, 'G',
+    696, 80, 'Solgt'
+),
+
+
+ (
+    2529126, 'Tårnholmsgade 9', 2202, 'Faaborg', 'Ejerlejlighed', 104,
+    8, '1939-05-12', 1109, 'G',
+    986, 457, 'Under Behandling'
+),
+
+
+ (
+    4698943, 'Halfdansvej 77', 7774, 'Galten', 'Villa', 256,
+    5, '1962-06-06', 646, 'A',
+    636, 757, 'Til salg'
+),
+
+
+ (
+    8866501, 'Tustrupvej 52', 8244, 'Vejle Øst', 'Andelsbolig', 166,
+    1, '1954-10-07', 232, 'C',
+    496, 557, 'Solgt'
+),
+
+
+ (
+    4255469, 'Markmandsgade 8', 2021, 'Egå', 'Ungdomsbolig', 67,
+    6, '2001-05-28', 1441, 'C',
+    275, 972, 'Til salg'
+),
+
+
+ (
+    5453111, 'Rosenørnsvej 366', 7435, 'Sakskøbing', 'Sommerhus', 87,
+    1, '2016-07-31', 678, 'C',
+    354, 219, 'Til salg'
+),
+
+
+ (
+    5429147, 'Brønshøj Kirkegade 15', 2377, 'København', 'Ungdomsbolig', 225,
+    4, '1933-12-25', 538, 'E',
+    173, 20, 'Solgt'
+),
+
+
+ (
+    2532852, 'Perlestikker Allé 89', 4575, 'Christiansfeld', 'Ældrebolig', 336,
+    7, '1951-05-14', 310, 'C',
+    756, 877, 'Til salg'
+),
+
+
+ (
+    636210, 'Gerlev Allé 3', 2011, 'Glejbjerg', 'Ældrebolig', 385,
+    7, '1957-11-08', 1032, 'C',
+    809, 491, 'Solgt'
+),
+
+
+ (
+    7745240, 'Svalehalegade 734', 1193, 'Stege', 'Ungdomsbolig', 146,
+    6, '1931-08-28', 536, 'B',
+    958, 901, 'Solgt'
+),
+
+
+ (
+    4763640, 'Gaunøgade 802', 8225, 'Svaneke', 'Lejlighed', 173,
+    1, '2008-06-10', 120, 'A',
+    707, 938, 'Til salg'
+),
+
+
+ (
+    7563619, 'Rosengade 86', 2067, 'Løgstrup', 'Lejlighed', 213,
+    8, '1969-02-01', 1429, 'F',
+    509, 835, 'Under Behandling'
+),
+
+
+ (
+    2684466, 'Vendsysselvej 485', 2379, 'Gentofte', 'Lejlighed', 92,
+    5, '1952-09-25', 1229, 'G',
+    365, 628, 'Under Behandling'
+),
+
+
+ (
+    9636604, 'Hindustanvej 2', 1411, 'Asaa', 'Ejerlejlighed', 241,
+    8, '2022-09-18', 276, 'F',
+    126, 636, 'Solgt'
+),
+
+
+ (
+    396118, 'Montagehalsvej 510', 2382, 'Løgumkloster', 'Rækkehus', 149,
+    3, '1983-10-09', 385, 'C',
+    457, 184, 'Under Behandling'
+),
+
+
+ (
+    4029443, 'Paduagade 487', 4848, 'Kirke Hyllinge', 'Villa', 368,
+    2, '1981-05-27', 806, 'B',
+    989, 218, 'Til salg'
+),
+
+
+ (
+    9140902, 'Backersgade 6', 1652, 'Marslev', 'Andelsbolig', 205,
+    4, '2012-10-18', 258, 'B',
+    803, 174, 'Til salg'
+),
+
+
+ (
+    6588262, 'Hvalsøvej 192', 4557, 'Gadbjerg', 'Ungdomsbolig', 154,
+    1, '1972-05-07', 1484, 'D',
+    887, 980, 'Under Behandling'
+),
+
+
+ (
+    1202885, 'Reykjaviks Allé 2', 5369, 'Rødkærsbro', 'Andelsbolig', 396,
+    2, '1938-07-17', 1461, 'E',
+    175, 216, 'Under Behandling'
+),
+
+
+ (
+    1806700, 'Titangade 6', 6883, 'Stenstrup', 'Andelsbolig', 189,
+    4, '2023-09-28', 926, 'C',
+    421, 443, 'Til salg'
+),
+
+
+ (
+    5074235, 'Store Kannikegade 373', 7355, 'Løgstrup', 'Kolonihavehus', 300,
+    6, '1933-04-16', 325, 'B',
+    267, 842, 'Til salg'
+),
+
+
+ (
+    7328939, 'Metro Allé 283', 7548, 'Anholt', 'Kolonihavehus', 303,
+    4, '1973-12-26', 135, 'G',
+    474, 728, 'Solgt'
+),
+
+
+ (
+    5508621, 'Thingvallagade 27', 4639, 'Gedved', 'Ældrebolig', 51,
+    1, '1985-04-11', 919, 'B',
+    359, 375, 'Under Behandling'
+),
+
+
+ (
+    1002824, 'Mørkhøjvej 111', 3771, 'Them', 'Rækkehus', 44,
+    8, '1933-12-05', 182, 'E',
+    41, 336, 'Under Behandling'
+),
+
+
+ (
+    5064871, 'Højmosevej 5', 3519, 'Bøvlingbjerg', 'Villa', 148,
+    3, '1971-06-19', 1010, 'G',
+    612, 575, 'Under Behandling'
+),
+
+
+ (
+    270728, 'Hørhusstræde 8', 1651, 'Ålbæk', 'Kolonihavehus', 356,
+    8, '1925-11-12', 551, 'A',
+    610, 894, 'Til salg'
+),
+
+
+ (
+    6556714, 'Gloster Allé 264', 9104, 'Kolind', 'Lejlighed', 110,
+    4, '1926-08-11', 838, 'F',
+    167, 831, 'Til salg'
+),
+
+
+ (
+    9323960, 'Overn Neden Vandet Allé 335', 9517, 'Gedved', 'Andelsbolig', 263,
+    4, '1966-04-27', 187, 'F',
+    357, 704, 'Solgt'
+),
+
+
+ (
+    9432124, 'Skoubostræde 10', 8214, 'Esbjerg', 'Lejlighed', 245,
+    5, '1955-12-05', 486, 'C',
+    744, 711, 'Under Behandling'
+),
+
+
+ (
+    2039251, 'Helsingborgvej 9', 7330, 'Hvide Sande', 'Villa', 336,
+    5, '2014-06-14', 445, 'C',
+    500, 589, 'Under Behandling'
+),
+
+
+ (
+    4399533, 'Farumgade 40', 3840, 'Greve', 'Sommerhus', 342,
+    4, '2010-02-22', 925, 'D',
+    860, 871, 'Under Behandling'
+),
+
+
+ (
+    783420, 'Søndrevej 3', 1668, 'Snedsted', 'Sommerhus', 46,
+    8, '1978-12-12', 1273, 'A',
+    232, 169, 'Under Behandling'
+),
+
+
+ (
+    8788302, 'Valby Maskinfabriksgade 60', 1482, 'Hanstholm', 'Villa', 61,
+    1, '1946-10-17', 212, 'C',
+    893, 262, 'Under Behandling'
+),
+
+
+ (
+    522164, 'Kvægtorvsgade 918', 5551, 'Fanø', 'Villa', 160,
+    3, '2016-11-21', 679, 'D',
+    537, 652, 'Til salg'
+),
+
+
+ (
+    7268001, 'Fiskedamsvej 891', 6106, 'Nivå', 'Andelsbolig', 231,
+    1, '1966-11-03', 1359, 'B',
+    848, 283, 'Til salg'
+),
+
+
+ (
+    9719818, 'Teglværksstræde 5', 8653, 'Mårslet', 'Ældrebolig', 121,
+    6, '1984-04-16', 638, 'A',
+    820, 625, 'Under Behandling'
+),
+
+
+ (
+    8553145, 'Mikkel Skovsvej 9', 3652, 'Ebeltoft', 'Ældrebolig', 81,
+    7, '2023-05-08', 719, 'G',
+    39, 411, 'Under Behandling'
+),
+
+
+ (
+    9313402, 'Rosmarinvej 34', 3166, 'Præstø', 'Ældrebolig', 362,
+    5, '2014-08-12', 761, 'E',
+    895, 214, 'Til salg'
+),
+
+
+ (
+    5712442, 'Rahbeks Allé 8', 7782, 'Knebel', 'Ældrebolig', 375,
+    8, '1984-03-14', 890, 'D',
+    550, 362, 'Solgt'
+),
+
+
+ (
+    2958847, 'Javavej 73', 8857, 'Brørup', 'Ældrebolig', 348,
+    8, '1999-04-13', 1451, 'G',
+    157, 167, 'Under Behandling'
+),
+
+
+ (
+    794634, 'Heilsvej 54', 9513, 'Anholt', 'Lejlighed', 224,
+    8, '1970-05-13', 845, 'B',
+    632, 853, 'Under Behandling'
+),
+
+
+ (
+    6363421, 'Lotusgade 963', 7087, 'Give', 'Rækkehus', 333,
+    1, '1984-04-28', 313, 'E',
+    192, 547, 'Under Behandling'
+),
+
+
+ (
+    7037710, 'Sandhus Allé 687', 9965, 'Store Merløse', 'Sommerhus', 204,
+    6, '1957-08-15', 1161, 'G',
+    857, 255, 'Solgt'
+),
+
+
+ (
+    1693279, 'Sundbyvestergade 162', 3773, 'Dybvad', 'Kolonihavehus', 141,
+    2, '1947-05-04', 367, 'C',
+    37, 203, 'Til salg'
+),
+
+
+ (
+    6923375, 'Stjernestræde 76', 9432, 'Gislev', 'Lejlighed', 361,
+    4, '1970-11-25', 721, 'F',
+    121, 836, 'Under Behandling'
+),
+
+
+ (
+    1193141, 'Silkeborgstræde 21', 3155, 'Odder', 'Ungdomsbolig', 303,
+    8, '1995-04-06', 942, 'G',
+    960, 669, 'Til salg'
+),
+
+
+ (
+    6969594, 'Vestbanegade 89', 2327, 'Askeby', 'Ældrebolig', 237,
+    6, '1947-08-24', 186, 'F',
+    870, 427, 'Solgt'
+),
+
+
+ (
+    7680749, 'Nøjsomheds Allé 7', 6184, 'Idestrup', 'Kolonihavehus', 119,
+    6, '1971-10-04', 940, 'B',
+    6, 138, 'Under Behandling'
+),
+
+
+ (
+    8087062, 'Faksingevej 8', 6073, 'Tjele', 'Ungdomsbolig', 100,
+    7, '2012-09-22', 722, 'B',
+    650, 655, 'Til salg'
+),
+
+
+ (
+    5995618, 'Bramslykkevej 821', 8756, 'Lemvig', 'Ungdomsbolig', 90,
+    7, '1957-05-08', 673, 'A',
+    940, 61, 'Under Behandling'
+),
+
+
+ (
+    8860350, 'Ryvangsstræde 6', 5017, 'Liseleje', 'Kolonihavehus', 207,
+    7, '1929-05-17', 815, 'G',
+    667, 476, 'Under Behandling'
+),
+
+
+ (
+    9654041, 'Tikøb Allé 98', 7970, 'Bindslev', 'Ældrebolig', 226,
+    1, '1957-12-16', 690, 'F',
+    270, 325, 'Under Behandling'
+),
+
+
+ (
+    7959025, 'Hareskovvej 936', 2070, 'Vallensbæk Strand', 'Andelsbolig', 113,
+    7, '2022-05-04', 984, 'F',
+    114, 686, 'Under Behandling'
+),
+
+
+ (
+    4334656, 'Estlandsgade 8', 4766, 'Stakroge', 'Rækkehus', 382,
+    5, '1954-10-04', 157, 'D',
+    234, 68, 'Under Behandling'
+),
+
+
+ (
+    4639319, 'Børsvej 79', 2978, 'Svendborg', 'Kolonihavehus', 249,
+    8, '1985-04-23', 839, 'G',
+    340, 601, 'Til salg'
+),
+
+
+ (
+    9914168, 'Ålholmstræde 3', 3664, 'Viby Sjælland', 'Rækkehus', 297,
+    1, '1969-12-29', 831, 'A',
+    939, 956, 'Solgt'
+),
+
+
+ (
+    7637066, 'Dronninglundvej 1', 4033, 'Klemensker', 'Ungdomsbolig', 215,
+    5, '2020-04-07', 1221, 'D',
+    109, 168, 'Til salg'
+),
+
+
+ (
+    5440759, 'Nørrestræde 33', 1758, 'Gørding', 'Ungdomsbolig', 219,
+    2, '1983-05-21', 751, 'B',
+    670, 982, 'Til salg'
+),
+
+
+ (
+    2500444, 'Ural Allé 42', 6757, 'Hemmet', 'Rækkehus', 300,
+    8, '1949-12-17', 952, 'A',
+    511, 622, 'Under Behandling'
+),
+
+
+ (
+    6240240, 'Fabrikmester Allé 66', 6966, 'Hovborg', 'Andelsbolig', 167,
+    2, '1955-09-11', 677, 'B',
+    96, 128, 'Til salg'
+),
+
+
+ (
+    7265427, 'Støvnæs Allé 35', 4598, 'Hundslund', 'Ungdomsbolig', 179,
+    8, '1963-04-16', 977, 'F',
+    577, 673, 'Solgt'
+),
+
+
+ (
+    7109218, 'Wibrandtsstræde 2', 5306, 'Kokkedal', 'Ungdomsbolig', 190,
+    8, '1926-03-24', 1406, 'A',
+    558, 130, 'Til salg'
+),
+
+
+ (
+    1370934, 'Volosstræde 93', 5292, 'Børkop', 'Ungdomsbolig', 158,
+    7, '1942-06-22', 897, 'A',
+    913, 642, 'Solgt'
+),
+
+
+ (
+    700483, 'Stubbeløbvej 75', 9580, 'Sønder Omme', 'Ungdomsbolig', 293,
+    5, '1993-08-23', 109, 'B',
+    864, 196, 'Til salg'
+),
+
+
+ (
+    7739381, 'Smedevej 95', 2332, 'Svendborg', 'Rækkehus', 183,
+    3, '2022-08-22', 655, 'D',
+    226, 582, 'Til salg'
+),
+
+
+ (
+    9450269, 'Krystalgade 58', 9485, 'Kalundborg', 'Ungdomsbolig', 136,
+    2, '1939-07-03', 613, 'E',
+    744, 535, 'Til salg'
+),
+
+
+ (
+    4458345, 'Gittervej 3', 5538, 'Tommerup', 'Kolonihavehus', 155,
+    7, '1988-01-25', 450, 'E',
+    204, 695, 'Til salg'
+),
+
+
+ (
+    7131848, 'Pindosgade 27', 6385, 'Svendborg', 'Lejlighed', 298,
+    8, '2004-10-29', 305, 'D',
+    810, 209, 'Solgt'
+),
+
+
+ (
+    4037108, 'Karlskrona Allé 2', 8673, 'Bælum', 'Kolonihavehus', 161,
+    1, '2010-03-29', 321, 'F',
+    881, 62, 'Solgt'
+),
+
+
+ (
+    8789559, 'Sibbernsvej 2', 7795, 'Skævinge', 'Ungdomsbolig', 295,
+    3, '1930-08-18', 891, 'G',
+    555, 579, 'Solgt'
+),
+
+
+ (
+    3648552, 'Lundedalsstræde 6', 9289, 'Lundby', 'Sommerhus', 119,
+    8, '1966-09-02', 609, 'A',
+    954, 978, 'Solgt'
+),
+
+
+ (
+    7484997, 'Postholdervej 7', 6265, 'Skørping', 'Sommerhus', 337,
+    1, '1973-07-18', 450, 'D',
+    135, 453, 'Til salg'
+),
+
+
+ (
+    500349, 'Krusåvej 74', 3209, 'Skive', 'Rækkehus', 195,
+    4, '1996-09-20', 555, 'E',
+    56, 431, 'Under Behandling'
+),
+
+
+ (
+    1071311, 'Saabyesvej 31', 7016, 'Fakse Ladeplads', 'Ældrebolig', 42,
+    6, '2022-02-17', 782, 'E',
+    128, 438, 'Til salg'
+),
+
+
+ (
+    8383698, 'Nokken Strandvej 6', 3399, 'Gadbjerg', 'Ejerlejlighed', 208,
+    8, '1966-09-15', 341, 'C',
+    55, 42, 'Under Behandling'
+),
+
+
+ (
+    4064486, 'Nyropsgade 31', 1704, 'Hadsten', 'Kolonihavehus', 174,
+    4, '2022-01-17', 688, 'D',
+    277, 994, 'Til salg'
+),
+
+
+ (
+    3014909, 'Ålholmgade 56', 5941, 'Hadsten', 'Ældrebolig', 356,
+    4, '1929-03-25', 531, 'B',
+    104, 764, 'Solgt'
+),
+
+
+ (
+    2854588, 'Arresøvej 3', 6636, 'Gørding', 'Rækkehus', 110,
+    3, '1973-09-20', 788, 'F',
+    503, 39, 'Under Behandling'
+),
+
+
+ (
+    4114362, 'Landehjælpgade 5', 4472, 'Hvidovre', 'Lejlighed', 250,
+    2, '2016-10-17', 296, 'G',
+    91, 242, 'Under Behandling'
+),
+
+
+ (
+    7463304, 'Ægirsgade 753', 1114, 'Bjæverskov', 'Andelsbolig', 383,
+    7, '1957-01-05', 1109, 'E',
+    10, 949, 'Til salg'
+),
+
+
+ (
+    5722072, 'Overdrevsgade 74', 7558, 'Hirtshals', 'Villa', 94,
+    8, '1933-11-21', 242, 'G',
+    546, 639, 'Til salg'
+),
+
+
+ (
+    6530630, 'Herbergenvej 692', 3791, 'Kettinge', 'Villa', 252,
+    1, '1991-04-22', 1439, 'E',
+    148, 721, 'Solgt'
+),
+
+
+ (
+    7652667, 'Borrebyvej 81', 1653, 'Bække', 'Ældrebolig', 59,
+    4, '2007-09-16', 858, 'A',
+    105, 576, 'Under Behandling'
+),
+
+
+ (
+    7300649, 'Laksevej 509', 9544, 'Store Merløse', 'Ældrebolig', 363,
+    8, '2007-06-02', 1451, 'B',
+    519, 515, 'Til salg'
+),
+
+
+ (
+    9628449, 'Windsorstræde 601', 1878, 'Sjølund', 'Sommerhus', 315,
+    6, '1938-01-30', 672, 'D',
+    703, 689, 'Til salg'
+),
+
+
+ (
+    3217255, 'Tallinnvej 117', 9637, 'Bække', 'Kolonihavehus', 124,
+    7, '1978-12-27', 206, 'A',
+    162, 27, 'Solgt'
+),
+
+
+ (
+    658796, 'Landsdommergade 32', 5860, 'Frøstrup', 'Lejlighed', 342,
+    3, '1940-11-08', 722, 'G',
+    885, 142, 'Solgt'
+),
+
+
+ (
+    3621765, 'Mirabellegade 20', 8813, 'Holte', 'Kolonihavehus', 304,
+    4, '2009-04-09', 941, 'E',
+    525, 691, 'Solgt'
+),
+
+
+ (
+    195967, 'Kronprinsensstræde 4', 6562, 'Skjern', 'Ungdomsbolig', 102,
+    6, '2008-04-29', 132, 'B',
+    762, 658, 'Under Behandling'
+),
+
+
+ (
+    1955415, 'Liflandsvej 987', 9622, 'Dragør', 'Rækkehus', 204,
+    6, '1972-11-26', 455, 'G',
+    122, 43, 'Solgt'
+),
+
+
+ (
+    6209717, 'Brøndæblevej 77', 9773, 'Samsø', 'Lejlighed', 205,
+    8, '1946-03-28', 1188, 'G',
+    978, 450, 'Solgt'
+),
+
+
+ (
+    3791419, 'Mælkeen Allé 6', 6769, 'Ulfborg', 'Kolonihavehus', 258,
+    4, '1988-09-25', 866, 'G',
+    25, 193, 'Under Behandling'
+),
+
+
+ (
+    2227051, 'Nøkkerosegade 306', 4761, 'Vemmelev', 'Andelsbolig', 292,
+    5, '1927-06-20', 1205, 'F',
+    119, 150, 'Under Behandling'
+),
+
+
+ (
+    8827633, 'Svankærvej 76', 1042, 'Erslev', 'Kolonihavehus', 259,
+    4, '1948-08-17', 1069, 'G',
+    220, 689, 'Solgt'
+),
+
+
+ (
+    6273865, 'Kronborgvej 37', 7341, 'Hørsholm', 'Rækkehus', 42,
+    6, '1926-08-13', 1495, 'B',
+    75, 952, 'Solgt'
+),
+
+
+ (
+    4430638, 'Caprigade 90', 7497, 'Gedved', 'Ungdomsbolig', 281,
+    8, '1949-01-13', 1373, 'G',
+    490, 773, 'Solgt'
+),
+
+
+ (
+    3707985, 'Reverdilsvej 6', 7145, 'Broager', 'Ejerlejlighed', 41,
+    6, '1942-08-18', 1071, 'D',
+    113, 84, 'Solgt'
+),
+
+
+ (
+    8530326, 'Esthersvej 1', 6262, 'Horbelev', 'Sommerhus', 108,
+    2, '1970-03-16', 281, 'F',
+    696, 658, 'Solgt'
+),
+
+
+ (
+    2458657, 'Øresund Parkvej 287', 1321, 'Allingåbro', 'Villa', 41,
+    2, '2009-01-09', 555, 'D',
+    909, 5, 'Under Behandling'
+),
+
+
+ (
+    7005245, 'Burmeistersstræde 281', 2361, 'Gadbjerg', 'Ejerlejlighed', 160,
+    1, '2021-07-06', 1408, 'F',
+    821, 776, 'Under Behandling'
+),
+
+
+ (
+    8896234, 'Basnæsgade 978', 5889, 'Tinglev', 'Villa', 305,
+    8, '1945-03-31', 874, 'A',
+    524, 381, 'Solgt'
+),
+
+
+ (
+    8846004, 'Svendsvej 465', 6554, 'Balle', 'Kolonihavehus', 44,
+    2, '1984-02-03', 1349, 'D',
+    275, 585, 'Under Behandling'
+),
+
+
+ (
+    5371348, 'Mansasvej 1', 5922, 'Thorsø', 'Ældrebolig', 242,
+    5, '2022-06-12', 846, 'D',
+    567, 526, 'Solgt'
+),
+
+
+ (
+    9907885, 'Hedegaardsstræde 52', 6409, 'Sandved', 'Sommerhus', 319,
+    6, '1932-08-14', 1213, 'E',
+    432, 140, 'Solgt'
+),
+
+
+ (
+    2800520, 'Bøhmensvej 3', 3639, 'Give', 'Sommerhus', 41,
+    8, '1962-11-08', 415, 'A',
+    486, 40, 'Til salg'
+),
+
+
+ (
+    4795953, 'Arsenal Allé 34', 7038, 'Brørup', 'Andelsbolig', 173,
+    2, '1968-04-14', 1439, 'A',
+    955, 898, 'Under Behandling'
+),
+
+
+ (
+    3986369, 'Jægervej 6', 2697, 'Smørum', 'Sommerhus', 344,
+    3, '1980-05-02', 493, 'D',
+    636, 49, 'Under Behandling'
+),
+
+
+ (
+    1223758, 'Nøkkerosevej 723', 6567, 'Søllested', 'Sommerhus', 117,
+    5, '1947-09-05', 1325, 'C',
+    72, 610, 'Solgt'
+),
+
+
+ (
+    5202218, 'Hammershusgade 401', 9990, 'Thorsø', 'Ejerlejlighed', 383,
+    7, '1950-01-05', 1144, 'G',
+    961, 704, 'Under Behandling'
+),
+
+
+ (
+    187793, 'Kvæsthusvej 8', 9375, 'Gislev', 'Kolonihavehus', 177,
+    1, '1938-06-18', 887, 'D',
+    534, 1, 'Til salg'
+),
+
+
+ (
+    4209598, 'Tyttebærgade 697', 2363, 'Snedsted', 'Ejerlejlighed', 336,
+    3, '2014-08-06', 250, 'F',
+    133, 19, 'Under Behandling'
+),
+
+
+ (
+    6174394, 'Store Søndervoldgade 250', 3245, 'Toftlund', 'Villa', 366,
+    1, '1976-07-31', 675, 'F',
+    94, 963, 'Under Behandling'
+),
+
+
+ (
+    8400470, 'Nymindestræde 8', 3013, 'Tørring', 'Villa', 351,
+    4, '1979-11-13', 1466, 'D',
+    106, 873, 'Solgt'
+),
+
+
+ (
+    7579420, 'Skibelundstræde 56', 9692, 'Vemb', 'Ejerlejlighed', 176,
+    4, '1933-02-13', 819, 'F',
+    35, 21, 'Under Behandling'
+),
+
+
+ (
+    6537691, 'Højstrupvej 93', 7199, 'Rødekro', 'Lejlighed', 222,
+    1, '2001-08-04', 462, 'F',
+    501, 683, 'Solgt'
+),
+
+
+ (
+    5495631, 'Gyldenrisvej 5', 7925, 'Nibe', 'Andelsbolig', 120,
+    7, '1926-11-19', 202, 'B',
+    234, 928, 'Til salg'
+),
+
+
+ (
+    8687215, 'Ferskenvej 1', 6659, 'Ballerup', 'Ungdomsbolig', 156,
+    4, '1987-09-07', 112, 'F',
+    833, 7, 'Til salg'
+),
+
+
+ (
+    2992616, 'Majrosevej 266', 4663, 'Bramming', 'Sommerhus', 262,
+    6, '2003-10-26', 1146, 'A',
+    423, 609, 'Til salg'
+),
+
+
+ (
+    6459428, 'Røde Mellemvej 84', 7618, 'Sunds', 'Rækkehus', 224,
+    3, '1993-06-11', 972, 'F',
+    758, 879, 'Til salg'
+),
+
+
+ (
+    9594258, 'Tåstrupvej 21', 2064, 'Kastrup', 'Ældrebolig', 331,
+    4, '1941-02-28', 626, 'D',
+    352, 225, 'Under Behandling'
+),
+
+
+ (
+    7634568, 'Hestemøllevej 6', 5792, 'Hjallerup', 'Villa', 203,
+    7, '1981-05-06', 714, 'G',
+    833, 928, 'Under Behandling'
+),
+
+
+ (
+    6231715, 'Isafjordsstræde 37', 5385, 'Saltum', 'Ungdomsbolig', 246,
+    2, '2001-01-07', 1010, 'E',
+    368, 88, 'Til salg'
+),
+
+
+ (
+    438172, 'Metrostræde 8', 3747, 'Dalby', 'Ældrebolig', 276,
+    5, '1943-10-18', 554, 'F',
+    510, 130, 'Til salg'
+),
+
+
+ (
+    5348427, 'Rådvadsvej 96', 8709, 'Karise', 'Kolonihavehus', 165,
+    4, '1992-11-28', 113, 'G',
+    406, 248, 'Solgt'
+),
+
+
+ (
+    3602258, 'Brivej 70', 4165, 'Ringe', 'Villa', 166,
+    1, '1987-11-04', 1043, 'C',
+    203, 217, 'Under Behandling'
+),
+
+
+ (
+    2255601, 'Jernæblegade 4', 6728, 'Jyderup', 'Rækkehus', 41,
+    7, '1953-01-05', 1388, 'A',
+    647, 465, 'Til salg'
+),
+
+
+ (
+    3783791, 'Øresundsmotorenvej 50', 5100, 'Lemvig', 'Kolonihavehus', 376,
+    6, '1982-09-30', 457, 'E',
+    410, 831, 'Under Behandling'
+),
+
+
+ (
+    8343835, 'Næsbyholmstræde 49', 9278, 'Højer', 'Rækkehus', 198,
+    2, '2007-07-07', 1273, 'F',
+    416, 302, 'Solgt'
+),
+
+
+ (
+    6121355, 'Heisesstræde 8', 5324, 'Kastrup', 'Villa', 63,
+    5, '1983-11-25', 397, 'D',
+    652, 991, 'Solgt'
+),
+
+
+ (
+    9916339, 'Lille Kirke Allé 27', 8516, 'Ringe', 'Ejerlejlighed', 298,
+    8, '1948-10-27', 1005, 'E',
+    243, 190, 'Til salg'
+),
+
+
+ (
+    9140243, 'Ramundsvej 1', 7622, 'Glumsø', 'Ungdomsbolig', 254,
+    7, '2003-07-12', 1226, 'B',
+    477, 792, 'Til salg'
+),
+
+
+ (
+    4719199, 'Rosenholmsvej 7', 7768, 'Middelfart', 'Kolonihavehus', 399,
+    1, '1940-06-30', 1368, 'A',
+    393, 887, 'Solgt'
+),
+
+
+ (
+    3281007, 'Guldagervej 465', 8028, 'Ballerup', 'Andelsbolig', 283,
+    7, '1957-12-18', 1192, 'B',
+    805, 264, 'Under Behandling'
+),
+
+
+ (
+    6417307, 'Annexvej 2', 2000, 'Marstal', 'Rækkehus', 304,
+    4, '1945-01-28', 1067, 'A',
+    839, 760, 'Til salg'
+),
+
+
+ (
+    8490239, 'Grækenlandsstræde 99', 9522, 'Egå', 'Rækkehus', 281,
+    1, '1939-11-11', 1426, 'A',
+    449, 305, 'Til salg'
+),
+
+
+ (
+    2203752, 'Valkendorfsvej 8', 3877, 'Vejen', 'Villa', 179,
+    7, '1981-10-14', 1247, 'A',
+    338, 397, 'Til salg'
+),
+
+
+ (
+    9124177, 'Hammelstrup Allé 523', 3759, 'Gadstrup', 'Kolonihavehus', 321,
+    5, '1988-02-14', 578, 'E',
+    313, 517, 'Til salg'
+),
+
+
+ (
+    1758166, 'Gammel Jernbanestræde 7', 8955, 'Nyborg', 'Ungdomsbolig', 101,
+    8, '1945-09-22', 1366, 'G',
+    21, 899, 'Under Behandling'
+),
+
+
+ (
+    1153484, 'Ottiliastræde 2', 1935, 'Ulstrup', 'Lejlighed', 365,
+    4, '2004-06-06', 878, 'E',
+    84, 887, 'Til salg'
+),
+
+
+ (
+    118107, 'Katholm Allé 72', 4259, 'Kirke Hyllinge', 'Lejlighed', 200,
+    2, '1948-11-18', 1427, 'C',
+    789, 445, 'Til salg'
+),
+
+
+ (
+    3457690, 'Karlslundevej 229', 7769, 'Hammel', 'Ældrebolig', 395,
+    4, '1929-10-13', 912, 'C',
+    586, 551, 'Under Behandling'
+),
+
+
+ (
+    6561311, 'Harwichvej 3', 8795, 'Årslev', 'Andelsbolig', 205,
+    6, '2014-06-29', 389, 'E',
+    647, 459, 'Til salg'
+),
+
+
+ (
+    8460469, 'Marsalagade 3', 9914, 'Nærum', 'Ældrebolig', 204,
+    2, '2004-01-05', 203, 'A',
+    123, 108, 'Til salg'
+),
+
+
+ (
+    9898264, 'Pasteursgade 4', 7510, 'Vejers Strand', 'Andelsbolig', 220,
+    2, '1958-08-12', 939, 'A',
+    566, 767, 'Under Behandling'
+),
+
+
+ (
+    7782418, 'Elstargade 6', 2630, 'Nimtofte', 'Rækkehus', 374,
+    2, '2009-04-20', 830, 'A',
+    560, 21, 'Solgt'
+),
+
+
+ (
+    353461, 'Tømrergade 92', 8919, 'Ølstykke', 'Ældrebolig', 331,
+    7, '1976-09-01', 467, 'F',
+    839, 935, 'Solgt'
+),
+
+
+ (
+    7531294, 'Højbostræde 2', 5156, 'Nysted', 'Kolonihavehus', 271,
+    7, '1928-02-12', 146, 'G',
+    775, 408, 'Under Behandling'
+),
+
+
+ (
+    3907067, 'Cæciliagade 152', 8859, 'Veflinge', 'Ældrebolig', 283,
+    1, '2003-04-14', 1315, 'C',
+    79, 924, 'Under Behandling'
+),
+
+
+ (
+    5735442, 'Syvstensvej 38', 4056, 'Haderup', 'Ungdomsbolig', 94,
+    8, '2021-08-07', 1132, 'C',
+    426, 8, 'Under Behandling'
+),
+
+
+ (
+    1916732, 'Alstedgade 1', 2738, 'Outrup', 'Rækkehus', 366,
+    8, '2002-01-06', 329, 'A',
+    652, 847, 'Solgt'
+),
+
+
+ (
+    8833779, 'Arsenalvej 6', 7320, 'Lintrup', 'Andelsbolig', 390,
+    2, '2023-04-21', 396, 'E',
+    149, 721, 'Under Behandling'
+),
+
+
+ (
+    5368753, 'Ålborg Allé 851', 5039, 'Broby', 'Kolonihavehus', 95,
+    4, '1991-11-07', 365, 'C',
+    685, 563, 'Til salg'
+),
+
+
+ (
+    5351460, 'Bissensgade 7', 4520, 'Christiansfeld', 'Kolonihavehus', 364,
+    3, '1968-02-16', 617, 'C',
+    208, 666, 'Solgt'
+),
+
+
+ (
+    5842827, 'Strynøgade 996', 5262, 'Herning', 'Sommerhus', 244,
+    3, '1975-02-26', 738, 'G',
+    75, 740, 'Under Behandling'
+),
+
+
+ (
+    3863522, 'Hjortholmsvej 3', 5636, 'Frederikshavn', 'Ejerlejlighed', 360,
+    8, '1986-03-17', 934, 'D',
+    916, 730, 'Solgt'
+),
+
+
+ (
+    3607199, 'Tartinisvej 770', 9769, 'Vejle Øst', 'Villa', 294,
+    4, '1959-11-06', 237, 'G',
+    657, 175, 'Solgt'
+),
+
+
+ (
+    7952900, 'Sølvgade 913', 6774, 'Havndal', 'Andelsbolig', 162,
+    6, '1926-10-03', 712, 'B',
+    360, 425, 'Solgt'
+),
+
+
+ (
+    256976, 'Hovmestervej 9', 6737, 'Skårup', 'Rækkehus', 146,
+    3, '1973-04-28', 856, 'E',
+    558, 79, 'Til salg'
+),
+
+
+ (
+    7644174, 'Søndregade 5', 4260, 'Ullerslev', 'Andelsbolig', 319,
+    1, '1991-08-31', 1274, 'D',
+    64, 952, 'Solgt'
+),
+
+
+ (
+    7563355, 'Snertingestræde 30', 5842, 'Roslev', 'Rækkehus', 66,
+    2, '1951-04-23', 762, 'D',
+    499, 704, 'Solgt'
+),
+
+
+ (
+    2731475, 'Nakskovvej 586', 9454, 'Fårup', 'Ejerlejlighed', 375,
+    3, '2004-09-17', 337, 'B',
+    165, 422, 'Til salg'
+),
+
+
+ (
+    3915540, 'Krusemynte Allé 2', 1185, 'Gudbjerg', 'Lejlighed', 339,
+    7, '1937-01-12', 1418, 'G',
+    248, 797, 'Solgt'
+),
+
+
+ (
+    7548160, 'Jeppesvej 475', 9029, 'Thyholm', 'Rækkehus', 49,
+    4, '1988-06-20', 703, 'D',
+    460, 118, 'Solgt'
+),
+
+
+ (
+    2336742, 'Tornebuskegade 25', 5519, 'Nørreballe', 'Sommerhus', 71,
+    3, '2012-06-24', 714, 'A',
+    242, 109, 'Under Behandling'
+),
+
+
+ (
+    5794910, 'Dortheavej 991', 8103, 'Mern', 'Sommerhus', 244,
+    2, '1957-06-09', 162, 'G',
+    210, 537, 'Til salg'
+),
+
+
+ (
+    7445403, 'Mosedalvej 9', 3422, 'Egernsund', 'Villa', 391,
+    5, '1958-12-24', 604, 'F',
+    646, 214, 'Under Behandling'
+),
+
+
+ (
+    5972897, 'Hardanger Allé 8', 2041, 'Langå', 'Ungdomsbolig', 175,
+    1, '1929-08-05', 1228, 'G',
+    327, 546, 'Under Behandling'
+),
+
+
+ (
+    2045499, 'Engdalsgade 51', 2365, 'Skovlunde', 'Sommerhus', 236,
+    5, '1932-09-06', 796, 'B',
+    689, 140, 'Solgt'
+),
+
+
+ (
+    6348054, 'Hornbækstræde 3', 7661, 'Allingåbro', 'Ældrebolig', 91,
+    4, '1997-10-07', 1351, 'F',
+    603, 730, 'Solgt'
+),
+
+
+ (
+    7868590, 'Admiral Allé 6', 9057, 'Lintrup', 'Ældrebolig', 134,
+    8, '1935-06-04', 868, 'A',
+    236, 880, 'Solgt'
+),
+
+
+ (
+    3136168, 'Delosvej 8', 9436, 'Vejle', 'Ældrebolig', 158,
+    2, '1940-03-03', 582, 'A',
+    721, 606, 'Solgt'
+),
+
+
+ (
+    6814763, 'Geislersvej 896', 6095, 'Kirke Såby', 'Sommerhus', 280,
+    8, '1928-09-07', 291, 'G',
+    335, 546, 'Solgt'
+),
+
+
+ (
+    5176337, 'Refsnæsvej 13', 8790, 'Ejstrupholm', 'Ældrebolig', 394,
+    3, '1933-01-05', 1441, 'B',
+    565, 993, 'Under Behandling'
+),
+
+
+ (
+    5500821, 'Elværks Allé 893', 2486, 'Tommerup', 'Andelsbolig', 288,
+    3, '1932-05-26', 688, 'E',
+    484, 101, 'Solgt'
+),
+
+
+ (
+    687557, 'Østbanegade 879', 9508, 'Bylderup-Bov', 'Ungdomsbolig', 382,
+    8, '2018-09-28', 499, 'D',
+    979, 893, 'Til salg'
+),
+
+
+ (
+    4799706, 'Hagestedvej 961', 4806, 'Lunderskov', 'Ældrebolig', 388,
+    3, '1935-08-13', 1493, 'F',
+    814, 839, 'Solgt'
+),
+
+
+ (
+    5451930, 'Astrupstræde 7', 3610, 'Christiansfeld', 'Lejlighed', 283,
+    4, '1969-03-09', 431, 'E',
+    537, 33, 'Til salg'
+),
+
+
+ (
+    9254263, 'Guldstjernegade 8', 9194, 'Bording', 'Ejerlejlighed', 41,
+    3, '1964-02-17', 1283, 'F',
+    594, 850, 'Solgt'
+),
+
+
+ (
+    1860879, 'Præstøvej 77', 7872, 'Sabro', 'Andelsbolig', 111,
+    2, '2021-09-18', 1076, 'G',
+    776, 472, 'Under Behandling'
+),
+
+
+ (
+    6858237, 'Glostergade 731', 4888, 'Rungsted Kyst', 'Andelsbolig', 217,
+    8, '2006-04-13', 791, 'E',
+    665, 399, 'Under Behandling'
+),
+
+
+ (
+    6072068, 'Høsterkøb Allé 266', 3877, 'Nørre Nebel', 'Lejlighed', 393,
+    4, '1973-05-10', 801, 'A',
+    377, 684, 'Under Behandling'
+),
+
+
+ (
+    7220237, 'Kaktusgade 67', 8212, 'Oure', 'Ældrebolig', 214,
+    3, '1998-11-07', 1179, 'F',
+    420, 488, 'Under Behandling'
+),
+
+
+ (
+    6184165, 'Kinavej 700', 6512, 'Dragør', 'Andelsbolig', 65,
+    1, '1964-03-20', 702, 'C',
+    2, 710, 'Under Behandling'
+),
+
+
+ (
+    619022, 'Enveloppevej 32', 4561, 'Øster Ulslev', 'Kolonihavehus', 210,
+    2, '1993-04-04', 1262, 'C',
+    416, 955, 'Til salg'
+),
+
+
+ (
+    277902, 'Farverstræde 1', 4842, 'Karup', 'Villa', 226,
+    4, '1935-02-21', 491, 'B',
+    730, 91, 'Under Behandling'
+),
+
+
+ (
+    4727089, 'Vestrestræde 9', 5178, 'Give', 'Kolonihavehus', 352,
+    6, '1999-02-16', 868, 'F',
+    456, 288, 'Under Behandling'
+),
+
+
+ (
+    3515880, 'Refshalegade 9', 9482, 'Trustrup', 'Kolonihavehus', 128,
+    4, '1986-11-18', 997, 'G',
+    547, 409, 'Til salg'
+),
+
+
+ (
+    5352102, 'Sofienhøjgade 247', 8179, 'Fakse Ladeplads', 'Ungdomsbolig', 260,
+    7, '1958-05-24', 804, 'F',
+    120, 17, 'Under Behandling'
+),
+
+
+ (
+    1770634, 'Bjernedevej 92', 2642, 'Nyborg', 'Villa', 333,
+    3, '2011-01-02', 1232, 'D',
+    658, 156, 'Solgt'
+),
+
+
+ (
+    4594852, 'Stenkløvergade 4', 2486, 'Ejby', 'Ejerlejlighed', 156,
+    1, '1977-09-01', 1329, 'C',
+    499, 753, 'Under Behandling'
+),
+
+
+ (
+    3866551, 'Høgholtvej 42', 6949, 'Kerteminde', 'Rækkehus', 74,
+    4, '1928-05-21', 243, 'B',
+    871, 386, 'Under Behandling'
+),
+
+
+ (
+    4832093, 'Gullfossgade 73', 3270, 'Måløv', 'Kolonihavehus', 271,
+    2, '1999-04-23', 372, 'D',
+    482, 227, 'Under Behandling'
+),
+
+
+ (
+    3666455, 'Bykildevej 35', 5643, 'Brøndby', 'Kolonihavehus', 299,
+    5, '1991-02-03', 241, 'D',
+    157, 429, 'Under Behandling'
+),
+
+
+ (
+    8108033, 'Vendersstræde 770', 8049, 'Hvide Sande', 'Rækkehus', 89,
+    3, '1934-02-16', 1283, 'G',
+    353, 464, 'Til salg'
+),
+
+
+ (
+    2666634, 'Irangade 5', 4645, 'Svendborg', 'Ældrebolig', 143,
+    3, '1947-06-27', 134, 'C',
+    459, 357, 'Under Behandling'
+),
+
+
+ (
+    2063188, 'Blåmejse Allé 5', 8083, 'Tommerup', 'Lejlighed', 128,
+    8, '1977-11-13', 644, 'A',
+    751, 295, 'Under Behandling'
+),
+
+
+ (
+    8914232, 'Kongedybsgade 5', 2167, 'Taastrup', 'Rækkehus', 179,
+    1, '1959-06-21', 1343, 'G',
+    240, 660, 'Til salg'
+),
+
+
+ (
+    9396320, 'Mørkhøjvej 3', 5777, 'Bedsted Thy', 'Andelsbolig', 56,
+    3, '1987-10-09', 1144, 'B',
+    7, 348, 'Til salg'
+),
+
+
+ (
+    3122246, 'Vestermarksgade 1', 1756, 'Knebel', 'Ejerlejlighed', 224,
+    8, '1982-05-22', 1208, 'E',
+    591, 486, 'Til salg'
+),
+
+
+ (
+    6942360, 'Bjernedegade 7', 9098, 'Hirtshals', 'Ældrebolig', 76,
+    6, '1925-11-21', 956, 'G',
+    602, 954, 'Til salg'
+),
+
+
+ (
+    570754, 'Veksøgade 36', 2321, 'Snedsted', 'Villa', 245,
+    7, '1945-08-21', 1265, 'E',
+    180, 24, 'Til salg'
+),
+
+
+ (
+    3994764, 'Tønnesvej 103', 5688, 'Vodskov', 'Andelsbolig', 350,
+    7, '1958-05-22', 1099, 'G',
+    750, 554, 'Under Behandling'
+),
+
+
+ (
+    2800228, 'Tudskærgade 2', 3443, 'Struer', 'Lejlighed', 376,
+    5, '1984-01-09', 1428, 'D',
+    751, 839, 'Til salg'
+),
+
+
+ (
+    963483, 'Roselillevej 23', 9383, 'Roslev', 'Kolonihavehus', 245,
+    8, '1987-08-14', 222, 'E',
+    331, 100, 'Til salg'
+),
+
+
+ (
+    3993909, 'Nakskovgade 582', 7885, 'Fredericia', 'Andelsbolig', 247,
+    1, '1940-10-01', 1451, 'A',
+    568, 770, 'Under Behandling'
+),
+
+
+ (
+    685145, 'Cæciliagade 74', 6680, 'Sjølund', 'Andelsbolig', 256,
+    5, '1945-11-10', 782, 'D',
+    237, 534, 'Solgt'
+),
+
+
+ (
+    3086020, 'Førslevstræde 7', 3580, 'Ansager', 'Kolonihavehus', 306,
+    7, '2012-11-07', 1026, 'A',
+    458, 906, 'Til salg'
+),
+
+
+ (
+    3671317, 'Bogholderstræde 894', 3260, 'Melby', 'Lejlighed', 48,
+    2, '1986-04-03', 854, 'D',
+    691, 807, 'Under Behandling'
+),
+
+
+ (
+    4642574, 'Amaliestræde 9', 2508, 'Skamby', 'Rækkehus', 270,
+    8, '1995-04-28', 732, 'A',
+    87, 234, 'Under Behandling'
+),
+
+
+ (
+    8939547, 'Markskiftevej 85', 2360, 'Aars', 'Sommerhus', 117,
+    4, '1962-04-24', 271, 'B',
+    411, 304, 'Under Behandling'
+),
+
+
+ (
+    353961, 'Alexandriagade 5', 5347, 'Gadbjerg', 'Ejerlejlighed', 324,
+    3, '1948-04-14', 563, 'A',
+    605, 481, 'Solgt'
+),
+
+
+ (
+    3144470, 'Støbegods Allé 6', 6958, 'Harlev', 'Lejlighed', 218,
+    2, '1997-12-12', 1164, 'G',
+    302, 102, 'Solgt'
+),
+
+
+ (
+    1177505, 'Ørhage Allé 9', 9952, 'Rønne', 'Ejerlejlighed', 301,
+    3, '1942-08-16', 770, 'G',
+    338, 733, 'Under Behandling'
+),
+
+
+ (
+    4369330, 'Valby Langvej 920', 9226, 'Kjellerup', 'Ejerlejlighed', 49,
+    7, '1932-01-31', 1148, 'B',
+    384, 813, 'Under Behandling'
+),
+
+
+ (
+    8111058, 'Morgendugvej 8', 7568, 'Kongerslev', 'Rækkehus', 219,
+    5, '1929-11-18', 1263, 'F',
+    481, 929, 'Til salg'
+),
+
+
+ (
+    4491016, 'Diesel Allé 5', 5030, 'Nørre Asmindrup', 'Ejerlejlighed', 268,
+    1, '2001-06-25', 106, 'F',
+    171, 653, 'Solgt'
+),
+
+
+ (
+    9563743, 'Søndregade 4', 1777, 'Sakskøbing', 'Villa', 303,
+    3, '2018-01-27', 605, 'B',
+    569, 760, 'Under Behandling'
+),
+
+
+ (
+    8418818, 'Havre Allé 6', 2129, 'Sønderborg', 'Rækkehus', 102,
+    8, '2011-02-13', 598, 'A',
+    925, 538, 'Til salg'
+),
+
+
+ (
+    690922, 'Landgildegade 545', 4048, 'Nysted', 'Kolonihavehus', 243,
+    5, '1961-04-17', 145, 'B',
+    829, 576, 'Til salg'
+),
+
+
+ (
+    9884941, 'Nikolajvej 57', 6527, 'Ikast', 'Ejerlejlighed', 94,
+    2, '1982-06-25', 1155, 'F',
+    939, 2, 'Solgt'
+),
+
+
+ (
+    9443699, 'Kærskiftegade 93', 3890, 'Erslev', 'Ejerlejlighed', 132,
+    3, '1947-11-29', 320, 'B',
+    125, 990, 'Solgt'
+),
+
+
+ (
+    2723404, 'Skagerrakvej 834', 9149, 'Sommersted', 'Ungdomsbolig', 206,
+    4, '1941-05-22', 1003, 'D',
+    773, 522, 'Solgt'
+),
+
+
+ (
+    6513479, 'Silkeborgvej 654', 4640, 'Bindslev', 'Sommerhus', 393,
+    6, '1983-04-23', 331, 'F',
+    785, 194, 'Solgt'
+),
+
+
+ (
+    581581, 'Hellestedvej 676', 4806, 'Gislinge', 'Villa', 354,
+    6, '1946-02-26', 1309, 'F',
+    241, 73, 'Til salg'
+),
+
+
+ (
+    634413, 'Kulbanegade 2', 4497, 'Auning', 'Ældrebolig', 201,
+    4, '2020-07-14', 1348, 'F',
+    982, 254, 'Solgt'
+),
+
+
+ (
+    7287642, 'Spartastræde 5', 6596, 'Østermarie', 'Lejlighed', 245,
+    6, '1986-11-09', 1159, 'E',
+    81, 395, 'Under Behandling'
+),
+
+
+ (
+    7674451, 'Tersløsestræde 1', 7219, 'Hovedgård', 'Ældrebolig', 305,
+    3, '1942-06-29', 908, 'E',
+    474, 112, 'Solgt'
+),
+
+
+ (
+    2582163, 'Nøjsomhedsvej 26', 9219, 'Vodskov', 'Villa', 131,
+    8, '1964-02-04', 339, 'D',
+    781, 589, 'Solgt'
+),
+
+
+ (
+    7889213, 'Vangehusgade 3', 1447, 'Snekkersten', 'Rækkehus', 252,
+    1, '1964-05-07', 1245, 'G',
+    106, 319, 'Solgt'
+),
+
+
+ (
+    4055098, 'Guldstjerne Allé 532', 8236, 'Billum', 'Ungdomsbolig', 240,
+    8, '1973-04-05', 489, 'D',
+    45, 97, 'Til salg'
+),
+
+
+ (
+    1911849, 'Ravnsborggade 99', 3993, 'Børkop', 'Lejlighed', 232,
+    3, '1941-05-13', 807, 'B',
+    381, 381, 'Solgt'
+),
+
+
+ (
+    3229365, 'Glucksgade 83', 4264, 'Bryrup', 'Ejerlejlighed', 102,
+    1, '2002-05-22', 955, 'A',
+    831, 577, 'Solgt'
+),
+
+
+ (
+    1818243, 'Grøndalsvængegade 360', 3929, 'Horbelev', 'Villa', 324,
+    3, '2014-11-28', 730, 'D',
+    403, 773, 'Til salg'
+),
+
+
+ (
+    1821251, 'Krogagergade 6', 2743, 'Aabenraa', 'Ældrebolig', 334,
+    8, '1999-05-27', 753, 'F',
+    26, 685, 'Solgt'
+),
+
+
+ (
+    4264106, 'Bavnagervej 24', 4917, 'Væggerløse', 'Andelsbolig', 367,
+    6, '1973-01-01', 619, 'F',
+    755, 451, 'Solgt'
+),
+
+
+ (
+    7949083, 'Randersgade 65', 1885, 'Skodsborg', 'Ungdomsbolig', 93,
+    5, '1970-11-04', 734, 'D',
+    225, 173, 'Til salg'
+),
+
+
+ (
+    1507050, 'Rejsbystræde 791', 1638, 'Hals', 'Lejlighed', 59,
+    3, '1959-08-19', 1003, 'E',
+    296, 591, 'Solgt'
+),
+
+
+ (
+    9248622, 'Retort Allé 803', 2476, 'Jerup', 'Andelsbolig', 356,
+    1, '1977-04-07', 314, 'E',
+    345, 214, 'Under Behandling'
+),
+
+
+ (
+    4058073, 'Haraldsgade 2', 5001, 'Varde', 'Kolonihavehus', 300,
+    5, '1925-09-17', 747, 'G',
+    359, 325, 'Under Behandling'
+),
+
+
+ (
+    1274388, 'Botoftevej 9', 6508, 'Assens', 'Rækkehus', 268,
+    8, '1997-04-03', 225, 'D',
+    62, 324, 'Solgt'
+),
+
+
+ (
+    9679457, 'Tingskiftegade 707', 1805, 'Karise', 'Lejlighed', 316,
+    7, '1929-02-23', 834, 'A',
+    171, 258, 'Under Behandling'
+),
+
+
+ (
+    9619921, 'Nærumgade 867', 8496, 'Aulum', 'Ungdomsbolig', 349,
+    8, '1952-04-18', 1045, 'D',
+    421, 70, 'Under Behandling'
+),
+
+
+ (
+    9166485, 'Skovbogårdsvej 69', 1867, 'Erslev', 'Lejlighed', 304,
+    4, '1989-06-19', 313, 'A',
+    36, 275, 'Solgt'
+),
+
+
+ (
+    779127, 'Philip De Langesvej 65', 8103, 'Årslev', 'Ældrebolig', 208,
+    2, '1974-09-27', 1317, 'D',
+    352, 488, 'Solgt'
+),
+
+
+ (
+    5804381, 'Kejserstræde 58', 8354, 'Brønshøj', 'Villa', 256,
+    7, '1970-06-04', 1061, 'D',
+    218, 233, 'Solgt'
+),
+
+
+ (
+    8489091, 'Bremensgade 430', 1612, 'Gørlev', 'Rækkehus', 80,
+    5, '2012-05-19', 1124, 'C',
+    303, 158, 'Solgt'
+),
+
+
+ (
+    3435716, 'Gartneri Allé 7', 1707, 'Brønshøj', 'Ungdomsbolig', 235,
+    4, '2016-07-13', 1494, 'B',
+    701, 108, 'Solgt'
+),
+
+
+ (
+    7660542, 'Hvidkløvervej 7', 5537, 'Morud', 'Andelsbolig', 63,
+    1, '1965-07-30', 233, 'C',
+    866, 321, 'Under Behandling'
+),
+
+
+ (
+    3862668, 'Etonvej 146', 1302, 'Glejbjerg', 'Villa', 234,
+    5, '2013-04-23', 1256, 'E',
+    177, 5, 'Solgt'
+),
+
+
+ (
+    8206393, 'Skarøgade 92', 3807, 'Tørring', 'Sommerhus', 287,
+    5, '1957-01-22', 114, 'A',
+    674, 649, 'Under Behandling'
+),
+
+
+ (
+    4422521, 'Langebrogade 672', 6353, 'Hovedgård', 'Lejlighed', 366,
+    3, '1961-11-03', 756, 'C',
+    762, 60, 'Til salg'
+),
+
+
+ (
+    9304641, 'Tåsingegade 88', 6655, 'Sønder Felding', 'Lejlighed', 259,
+    5, '1938-07-02', 1083, 'G',
+    680, 818, 'Til salg'
+),
+
+
+ (
+    4300600, 'Emdrup Enggade 5', 8703, 'Harlev', 'Rækkehus', 216,
+    4, '1956-06-08', 703, 'E',
+    386, 292, 'Til salg'
+),
+
+
+ (
+    1081368, 'Etonvej 160', 3570, 'Søndersø', 'Sommerhus', 242,
+    5, '1984-03-07', 325, 'D',
+    397, 252, 'Til salg'
+),
+
+
+ (
+    3404251, 'Maltastræde 61', 3956, 'Slagelse', 'Lejlighed', 83,
+    4, '1944-02-06', 504, 'E',
+    646, 789, 'Under Behandling'
+),
+
+
+ (
+    6044028, 'Kæragervej 99', 4907, 'Fjerritslev', 'Kolonihavehus', 293,
+    1, '1932-10-12', 1034, 'B',
+    771, 765, 'Under Behandling'
+),
+
+
+ (
+    5978138, 'Nymindegade 75', 8445, 'Bjæverskov', 'Rækkehus', 276,
+    8, '1943-07-27', 739, 'C',
+    299, 932, 'Under Behandling'
+),
+
+
+ (
+    4709476, 'Amagerfælledgade 823', 9762, 'Nykøbing Sj', 'Ungdomsbolig', 98,
+    3, '2002-06-12', 421, 'G',
+    720, 803, 'Solgt'
+),
+
+
+ (
+    2095353, 'Gaunøgade 43', 3174, 'Tommerup', 'Ungdomsbolig', 174,
+    5, '1948-11-25', 478, 'G',
+    670, 809, 'Solgt'
+),
+
+
+ (
+    8392417, 'Persille Allé 207', 3037, 'Dragør', 'Sommerhus', 156,
+    3, '1947-08-21', 134, 'B',
+    656, 127, 'Til salg'
+),
+
+
+ (
+    6373098, 'Borgergade 1', 9842, 'Føllenslev', 'Ejerlejlighed', 326,
+    1, '1987-12-27', 186, 'E',
+    880, 988, 'Under Behandling'
+),
+
+
+ (
+    7361659, 'Følfodvej 3', 3166, 'Gistrup', 'Andelsbolig', 232,
+    8, '1934-01-26', 1074, 'A',
+    505, 656, 'Til salg'
+),
+
+
+ (
+    3632849, 'Badensvej 44', 1006, 'Hjallerup', 'Ungdomsbolig', 269,
+    3, '1990-09-03', 1119, 'G',
+    587, 143, 'Til salg'
+),
+
+
+ (
+    1101514, 'Florida Allé 5', 7734, 'Hvidovre', 'Ungdomsbolig', 101,
+    3, '1925-11-11', 599, 'E',
+    182, 813, 'Solgt'
+),
+
+
+ (
+    3014108, 'Tønderstræde 22', 6020, 'Klemensker', 'Ejerlejlighed', 302,
+    4, '1983-06-16', 1451, 'D',
+    280, 179, 'Til salg'
+),
+
+
+ (
+    311768, 'Elstar Allé 209', 5150, 'Store Fuglede', 'Ungdomsbolig', 161,
+    4, '1992-06-16', 808, 'B',
+    502, 160, 'Solgt'
+),
+
+
+ (
+    4977523, 'Danshøjvej 403', 1324, 'Aalestrup', 'Ejerlejlighed', 53,
+    4, '1993-08-24', 847, 'D',
+    530, 843, 'Under Behandling'
+),
+
+
+ (
+    1009643, 'Kronprinsensgade 5', 8379, 'Rønne', 'Rækkehus', 225,
+    8, '1952-05-13', 552, 'C',
+    222, 704, 'Til salg'
+),
+
+
+ (
+    4044370, 'Valkendorfsstræde 781', 4221, 'Billum', 'Villa', 332,
+    5, '1991-08-30', 1130, 'C',
+    200, 970, 'Til salg'
+),
+
+
+ (
+    6157188, 'Landehjælpvej 28', 3527, 'Hvide Sande', 'Lejlighed', 274,
+    5, '1994-12-15', 262, 'F',
+    367, 153, 'Til salg'
+),
+
+
+ (
+    2447935, 'Belle de Boskoopstræde 875', 4967, 'Nysted', 'Sommerhus', 304,
+    3, '1966-11-06', 217, 'G',
+    901, 487, 'Til salg'
+),
+
+
+ (
+    6949262, 'Admiralstræde 7', 8997, 'Thisted', 'Andelsbolig', 138,
+    6, '1961-02-24', 533, 'B',
+    574, 727, 'Til salg'
+),
+
+
+ (
+    8269760, 'Spøttrupgade 401', 3467, 'Grindsted', 'Ældrebolig', 395,
+    4, '1969-12-04', 954, 'D',
+    622, 822, 'Til salg'
+),
+
+
+ (
+    342073, 'Kronprinsensvej 7', 7273, 'Langå', 'Ungdomsbolig', 341,
+    2, '1949-01-14', 1206, 'B',
+    435, 829, 'Solgt'
+),
+
+
+ (
+    7071335, 'Krusågade 34', 6767, 'Terndrup', 'Ældrebolig', 110,
+    1, '1986-12-26', 517, 'C',
+    738, 688, 'Til salg'
+),
+
+
+ (
+    4743658, 'Æbeløvej 956', 8981, 'Redsted', 'Ejerlejlighed', 158,
+    7, '2006-09-13', 1360, 'F',
+    500, 383, 'Til salg'
+),
+
+
+ (
+    5815221, 'Strandagervej 9', 4839, 'Suldrup', 'Andelsbolig', 76,
+    2, '1993-05-08', 386, 'D',
+    743, 349, 'Under Behandling'
+),
+
+
+ (
+    5174631, 'Rugvej 1', 1875, 'Struer', 'Kolonihavehus', 208,
+    4, '1959-05-14', 1401, 'G',
+    733, 478, 'Under Behandling'
+),
+
+
+ (
+    9016682, 'Ystadvej 8', 3178, 'Viborg', 'Ungdomsbolig', 202,
+    7, '2011-10-04', 606, 'A',
+    360, 28, 'Under Behandling'
+),
+
+
+ (
+    9297236, 'Dagø Allé 218', 3767, 'Gentofte', 'Ungdomsbolig', 310,
+    2, '1971-03-02', 119, 'C',
+    285, 398, 'Solgt'
+),
+
+
+ (
+    7950759, 'Gartnerigade 53', 2807, 'Østermarie', 'Sommerhus', 198,
+    8, '1982-02-22', 123, 'B',
+    381, 877, 'Solgt'
+),
+
+
+ (
+    2006943, 'Tingskiftegade 5', 5752, 'Ballerup', 'Rækkehus', 189,
+    8, '1974-02-21', 685, 'E',
+    948, 127, 'Under Behandling'
+),
+
+
+ (
+    313192, 'Gulkløvergade 2', 1512, 'Fejø', 'Ældrebolig', 76,
+    7, '1949-01-05', 1371, 'B',
+    395, 287, 'Solgt'
+);
