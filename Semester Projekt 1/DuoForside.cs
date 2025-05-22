@@ -213,14 +213,20 @@ namespace Semester_Projekt_1
 
         private void mineFilterKnap_Click(object sender, EventArgs e)
         {
-            BoligFilterForm boligFilterForm = new BoligFilterForm(this, currentMode, true);
-            boligFilterForm.Show();
+            if (currentMode == Mode.Boliger)
+            {
+                BoligFilterForm boligFilterForm = new BoligFilterForm(this, currentMode, true);
+                boligFilterForm.Show();
+            }
         }
 
         private void alleFilterKnap_Click(object sender, EventArgs e)
         {
-            BoligFilterForm boligFilterForm = new BoligFilterForm(this, currentMode, false);
-            boligFilterForm.Show();
+            if (currentMode == Mode.Boliger)
+            {
+                BoligFilterForm boligFilterForm = new BoligFilterForm(this, currentMode, false);
+                boligFilterForm.Show();
+            }
         }
 
         private void mineRegistrerKnap_Click(object sender, EventArgs e)
@@ -423,6 +429,6 @@ namespace Semester_Projekt_1
             //        deleteBolig.Show();
             //    }
             //}
-        }
+}
     }
 }

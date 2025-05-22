@@ -139,8 +139,11 @@ namespace Semester_Projekt_1
 
         private void uniFilterKnap_Click(object sender, EventArgs e)
         {
-            BoligFilterForm boligFilterForm = new BoligFilterForm(this, currentMode);
-            boligFilterForm.Show();
+            if (currentMode == Mode.AlleB || currentMode == Mode.MineB)
+            {
+                BoligFilterForm boligFilterForm = new BoligFilterForm(this, currentMode);
+                boligFilterForm.Show();
+            }
         }
 
         private void uniDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -185,8 +188,8 @@ namespace Semester_Projekt_1
         {
             if (mode_ == Mode.AlleS || mode_ == Mode.MineS)
             {
-                SaleRegistration saleRegistration = new SaleRegistration();
-                saleRegistration.ShowDialog();
+                FormTilføjSælger formTilføjSælger = new FormTilføjSælger();
+                formTilføjSælger.ShowDialog();
             }
             else if (mode_ == Mode.AlleK || mode_ == Mode.MineK)
             {
