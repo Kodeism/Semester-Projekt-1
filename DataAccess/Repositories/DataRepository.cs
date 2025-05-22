@@ -15,10 +15,10 @@ namespace DataAccess.Repositories
         public DataRepository()
         {
             ///special case for Ruben
-            connectionString = "Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;";
+            //connectionString = "Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;";
             
             /// normal connection string
-            //connectionString = "Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;";
+            connectionString = "Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;";
             
             connection = new SqlConnection(connectionString);
         }
@@ -389,7 +389,7 @@ namespace DataAccess.Repositories
             connection.Close();
         }
 
-        public static List<Bolig> SøgMedFilter(SqlConnection connection, BoligFilter boligFilter)
+        public static List<Bolig> SøgMedFilter(SqlConnection connection, BoligFilter boligFilter, int? mæglerID = 0)
         {
             List<Bolig> boligList = new List<Bolig>();
 

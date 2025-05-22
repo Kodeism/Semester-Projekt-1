@@ -24,7 +24,7 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
             SetMode(mode);
-            uniDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            uniDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // skaler størrelse til hele bredden
 
             mode_ = mode;
         }
