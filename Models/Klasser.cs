@@ -1,4 +1,6 @@
-﻿namespace Models
+﻿using System.Reflection.PortableExecutable;
+
+namespace Models
 {
     //Dette er bare forslag til klasser. De er ikke færdige. 
     //Kun bolig og salgskvitering indeholder forignkeys.
@@ -40,7 +42,7 @@
             EjendomsmæglerId = 0;
             Brugernavn = string.Empty;
             Fornavn = string.Empty;
-            Efternavn= string.Empty;
+            Efternavn = string.Empty;
             FuldeNavn = string.Empty;
             AdgangsNiveau = 0;
         }
@@ -157,7 +159,7 @@
         //Solgt, eller Usolgt
         public string EjendomsmæglerNavn { get; set; } // tilføjet eftersom filter viser navne, ved ikke om ejendomsmæglerID og sælgerID
                                                        // blev brugt til andre ting så de bliver som de er
-        //Navn på ejendomsmægleren der administreret boligen
+                                                       //Navn på ejendomsmægleren der administreret boligen
         public string SælgerNavn { get; set; }
         //Navn på sælgeren der vil sælge boligen
         public Bolig(int pris, string adresse, int postNummer, string byNavn, string type, int boligAreal, int værelser, DateTime byggeDato, int grundStørrelse, int mæglerID, int sælgerID, string energimærke = "", string status = "Usolgt")
@@ -241,9 +243,9 @@
                             int boligArealMax, int grundStørrelseMin, int grundStørrelseMax,
                             int værelserMin, int værelserMax, string adresse,
                             int postnummer, string byNavn, string type,
-                            string energiMærke, string status, string ejendomsmæglerNavn, 
+                            string energiMærke, string status, string ejendomsmæglerNavn,
                             string sælgerNavn)
-                            /*DateTime byggeDato,*/// byggedato skal ændres til en datetime senere
+        /*DateTime byggeDato,*/// byggedato skal ændres til en datetime senere
         {
             PrisMin = prisMin;
             PrisMax = prisMax;
@@ -281,7 +283,7 @@
         public int SælgerID { get; set; }
         public DateOnly Dato { get; set; }
         public int Beløb { get; set; }
-        public Salg(int køberID, int boligID, int sælgerID,DateOnly dato, int beløb)
+        public Salg(int køberID, int boligID, int sælgerID, DateOnly dato, int beløb)
         {
             KøberID = køberID;
             BoligID = boligID;
@@ -289,5 +291,40 @@
             Dato = dato;
             Beløb = beløb;
         }
+    }
+    public class BoligMedSælgerInfo
+    {
+        public string Adresse { get; set; }
+        public string Bynavn { get; set; }
+        public string Fornavn { get; set; }
+        public string Efternavn { get; set; }
+        public string Email { get; set; }
+        public string Tlfnummer { get; set; }
+    }
+    public class BoligerIkkeSolgtInfo
+    {
+        
+        public string Pris { get; set; }
+        //pris på boligen
+        public string Adresse { get; set; }
+        //boligens adresse
+        public string PostNummer { get; set; }
+        //boligens postnummer
+        public string ByNavn { get; set; }
+        //boligens bynavn
+        public string Type { get; set; }
+        //boligtypen
+        public string BoligAreal { get; set; }
+        //boligens areal
+        public string Værelser { get; set; }
+        //antal af værelser/rum
+        public string ByggeDato { get; set; }
+        //hvornår var den bygget/renoveret
+        public string GrundStørrelse { get; set; }
+        //det samlet areal af bolig og land
+        public string EnergiMærke { get; set; } //optional
+        //boligens energimærke
+        public string Status { get; set; }
+        //Boligens status
     }
 }

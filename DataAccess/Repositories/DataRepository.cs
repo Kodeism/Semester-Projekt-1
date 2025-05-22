@@ -15,10 +15,10 @@ namespace DataAccess.Repositories
         public DataRepository()
         {
             ///special case for Ruben
-            connectionString = "Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1;Trusted_Connection = True; TrustServerCertificate = True;";
+            //connectionString = "Server = DESKTOP-LKSSI4H\\SQLEXPRESS; Database = Semester projekt gruppe 1; TrustServerCertificate = True;";
             
             /// normal connection string
-            //connectionString = "Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;";
+            connectionString = "Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;";
             
             connection = new SqlConnection(connectionString);
         }
@@ -693,6 +693,75 @@ namespace DataAccess.Repositories
 
             connection.Close();
         }
+    public List <BoligMedSælgerInfo> EksporterBoligSælgerListe(string ByNavn)
+        { 
+            List <BoligMedSælgerInfo> boligMedSælgerInfoListe = new List<BoligMedSælgerInfo> ();
+            SqlCommand command = connection.CreateCommand();
+            var sql = " SELECT Bolig.Adresse, Bolig.ByNavn, Sælger.Fornavn, Sælger.EfterNavn,Sælger.Email,Sælger.TlfNummer FROM Bolig LEFT JOIN Sælger ON Sælger.SælgerID = Bolig.SælgerID WHERE ByNavn = @ByNavn";
+            command.CommandText = sql;
+            command.Parameters.AddWithValue("@ByNavn", ByNavn );
+
+            connection.Open();
+            var reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                var boligMedSælgerInfo = new BoligMedSælgerInfo { Adresse = reader["Adresse"].ToString(), Bynavn = reader["ByNavn"].ToString(), Fornavn = reader["Fornavn"].ToString(), Efternavn = reader["EfterNavn"].ToString(), Email = reader["Email"].ToString(), Tlfnummer = reader["TlfNummer"].ToString() };
+                boligMedSælgerInfoListe.Add(boligMedSælgerInfo);
+            
+            
+            }
+            
+            connection.Close ();
+            
+            return boligMedSælgerInfoListe;
+        }
+    
+    public List <BoligerIkkeSolgtInfo> EksporterBoligerIkkeSolgt(string sorteringsString)
+        {
+            List <BoligerIkkeSolgtInfo> boligerIkkeSolgtInfoListe = new List<BoligerIkkeSolgtInfo> ();
+            SqlCommand command = connection.CreateCommand();
+
+            var sql = "";
+            if (sorteringsString == "Pris")
+            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY Pris"; }
+            else if (sorteringsString == "Adresse")
+            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY Adresse"; }
+            else if (sorteringsString == "Postnummer")
+            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY Postnummer"; }
+            else if (sorteringsString == "ByNavn")
+            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY ByNavn"; }
+            else if (sorteringsString == "BoligType")
+            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY BoligType"; }
+            else if (sorteringsString == "BoligAreal")
+            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY BoligAreal"; }
+            else if (sorteringsString == "Værelser")
+            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY Værelser"; }
+            else if (sorteringsString == "ByggeDato")
+            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY ByggeDato"; }
+            else if (sorteringsString == "GrundStørrelse")
+            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY GrundStørrelse"; }
+            else if (sorteringsString == "EnergiMærke")
+            { sql = "SELECT Pris, Adresse, Postnummer, ByNavn, BoligType, BoligAreal, Værelser, ByggeDato, GrundStørrelse, EnergiMærke FROM Bolig WHERE Status <> 'Solgt' ORDER BY EnergiMærke"; }
+
+
+            command.CommandText = sql;
+            
+
+            connection.Open();
+            var reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                var boligerIkkeSolgtInfoInfo = new BoligerIkkeSolgtInfo { Pris = Convert.ToString(reader["Pris"]), Adresse = Convert.ToString(reader["Adresse"]), PostNummer = Convert.ToString(reader["Postnummer"]), ByNavn = Convert.ToString(reader["ByNavn"]), Type = Convert.ToString(reader["BoligType"]), BoligAreal = Convert.ToString(reader["BoligAreal"]), Værelser = Convert.ToString(reader["Værelser"]), ByggeDato = Convert.ToString(reader["ByggeDato"]), GrundStørrelse = Convert.ToString(reader["GrundStørrelse"]), EnergiMærke = Convert.ToString(reader["EnergiMærke"]) };
+            boligerIkkeSolgtInfoListe.Add(boligerIkkeSolgtInfoInfo);
+            
+            
+            
+            }
+            connection.Close();
+            return boligerIkkeSolgtInfoListe;
+        } 
+    
+    
     }
 }
 //// ByNavn
