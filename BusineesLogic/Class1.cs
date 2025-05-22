@@ -37,7 +37,7 @@ namespace BusineesLogic
 
     public class SolgtFunktion
     {
-        public void ErklærSolgt(string køberCPR, string adresse, DateOnly dato, int beløb,string sælgerCPR)
+        public void ErklærSolgt(string køberCPR, string adresse, DateTime dato, int beløb,string sælgerCPR)
         {
             DataRepository testDR = new DataRepository();
             //Opretter ny solgt bolig i Solgt tabellen i databasen:

@@ -77,7 +77,7 @@ namespace Semester_Projekt_1
             }
 
             //Henter datetime fra DateTimePicker og konverterer til DateOnly.
-            DateOnly dato = DateOnly.FromDateTime(dateTimePicker1.Value);
+            DateTime dato = dateTimePicker1.Value;
 
             
             

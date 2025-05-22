@@ -247,6 +247,24 @@
             EnergiMærke = energimærke;
             Status = status;
         }
+        public Bolig(int boligID, int pris, string adresse, int postNummer, string byNavn, string type, int boligAreal, int værelser, DateTime byggeDato, int grundStørrelse, string mæglerNavn, string sælgerNavn, string energimærke, string status)
+        {
+            BoligID = boligID;
+            Pris = pris;
+            Adresse = adresse;
+            PostNummer = postNummer;
+            ByNavn = byNavn;
+            Type = type;
+            BoligAreal = boligAreal;
+            Værelser = værelser;
+            ByggeDato = byggeDato;
+            GrundStørrelse = grundStørrelse;
+            EjendomsmæglerNavn = mæglerNavn;
+            SælgerNavn = sælgerNavn;
+            EnergiMærke = energimærke;
+            Status = status;
+        }
+
         public Bolig() // tom bolig constructor som bliver brugt til at lave en tom query til første load af tabel
         {
 
@@ -362,6 +380,7 @@
         //hvem købte boligen
         public int BoligID { get; set; }
         //boligen (som indeholder forign keys for sælgeren og Ejendomsmægleren)
+        public int SælgerID { get; set; }
         public DateTime Dato { get; set; }
         public int Beløb { get; set; }
         public string Adresse { get; set; } // bruges til join i query
@@ -374,7 +393,7 @@
         {
 
         }
-        public Salg(Køber køber, Bolig bolig, DateTime dato, int beløb)
+        public Salg(int køberID, int boligID, int sælgerID, DateTime dato, int beløb)
         {
             KøberID = køberID;
             BoligID = boligID;
