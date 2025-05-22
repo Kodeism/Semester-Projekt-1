@@ -157,7 +157,13 @@ namespace Semester_Projekt_1
             Debug.WriteLine("idsesh" + SessionManager.EjendomsmæglerId);
             using (SqlConnection conn = new SqlConnection(BoligLogic.GetConnectionString()))
             {
+                Debug.WriteLine("duo " + currentModeDuo);
+                Debug.WriteLine("uni " + currentModeUni);
                 if (uniForside != null && currentModeUni == UniForside.Mode.MineB)
+                {
+                    var result = DataRepository.SøgMedFilter(conn, boligFilter, ejendomsmæglerID);
+                    uniForside.OpdaterBoligerDataGrid(result);
+                } else if (uniForside != null && currentModeUni == UniForside.Mode.AlleB)
                 {
                     var result = DataRepository.SøgMedFilter(conn, boligFilter, ejendomsmæglerID);
                     uniForside.OpdaterBoligerDataGrid(result);
