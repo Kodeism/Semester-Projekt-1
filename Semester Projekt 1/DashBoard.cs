@@ -10,6 +10,7 @@ namespace Semester_Projekt_1
             this.FormClosed += Close_Program;
             openPage(new Forside());
             brugerNavnLabel.Text = SessionManager.FuldeNavn;
+            startDBKnap.Width = lDBLayoutPanel.Width;
         }
         private void Close_Program(object sender, FormClosedEventArgs e)
         {
@@ -209,6 +210,11 @@ namespace Semester_Projekt_1
         {
             Ekspoterdata eksport = new Ekspoterdata();
             eksport.ShowDialog();
+        }
+
+        private void DashBoard_Load(object sender, EventArgs e)
+        {
+            startDBKnap.Width = lDBLayoutPanel.Width;
         }
     }
 }
