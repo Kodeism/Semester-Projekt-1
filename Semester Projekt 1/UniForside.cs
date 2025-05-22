@@ -184,25 +184,38 @@ namespace Semester_Projekt_1
             }
         }
 
+        private string lastSortedColumn = "";
+        private bool sortAscending = true;
+
         private void uniDataGridView_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            // Tjek om det er "Pris"-kolonnen
-            if (uniDataGridView.Columns[e.ColumnIndex].Name == "Pris")
+            if (boligerCache != null && boligerCache.Any())
             {
-                if (boligerCache != null)
+                string columnName = uniDataGridView.Columns[e.ColumnIndex].Name;
+
+                // Find property på Bolig-objekter der matcher kolonnenavnet
+                var propInfo = typeof(Bolig).GetProperty(columnName);
+                if (propInfo != null)
                 {
                     List<Bolig> sortedList;
-                    if (sortAscendingPris)
-                        sortedList = boligerCache.OrderBy(b => b.Pris).ToList();
-                    else
-                        sortedList = boligerCache.OrderByDescending(b => b.Pris).ToList();
 
-                    sortAscendingPris = !sortAscendingPris;
+                    // Skift sorteringsretning hvis det er samme kolonne som sidst
+                    if (lastSortedColumn == columnName)
+                        sortAscending = !sortAscending;
+                    else
+                        sortAscending = true;
+
+                    lastSortedColumn = columnName;
+
+                    if (sortAscending)
+                        sortedList = boligerCache.OrderBy(b => propInfo.GetValue(b, null)).ToList();
+                    else
+                        sortedList = boligerCache.OrderByDescending(b => propInfo.GetValue(b, null)).ToList();
 
                     uniDataGridView.DataSource = null;
                     uniDataGridView.DataSource = sortedList;
 
-                    // Skjul id som ikke burde blive vist men de bliver vist aligevel
+                    // Skjul ID-kolonner
                     if (uniDataGridView.Columns.Contains("EjendomsmæglerID"))
                         uniDataGridView.Columns["EjendomsmæglerID"].Visible = false;
 
@@ -211,6 +224,7 @@ namespace Semester_Projekt_1
                 }
             }
         }
+
 
     }
 }
