@@ -27,7 +27,6 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
             SetMode(mode);
-            uniDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // skaler størrelse til hele bredden
 
             mode_ = mode;
         }
@@ -81,7 +80,6 @@ namespace Semester_Projekt_1
                 uniDataGridView.Columns["SælgerID"].Visible = false;
 
             uniDataGridView.Columns["KøberInfo"].Visible = false;
-            uniDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
 
         public void OpdaterBoligerDataGrid(List<Bolig> boliger)
@@ -108,7 +106,6 @@ namespace Semester_Projekt_1
 
             if (uniDataGridView.Columns.Contains("SælgerID"))
                 uniDataGridView.Columns["SælgerID"].Visible = false;
-            uniDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
         }
         private void HentKøberLoad(int? mæglerID = 0)
