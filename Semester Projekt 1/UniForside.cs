@@ -17,7 +17,7 @@ namespace Semester_Projekt_1
     public partial class UniForside : UserControl
     {
         private bool sortAscendingPris = true;
-        private List<Bolig> boligerCache; // Vi gemmer listen her til sortering
+        private List<Bolig> boligerCache; // til sortering af pris
 
         private Mode mode_;
         public enum Mode { AlleS, MineS, AlleK, MineK, AlleB, MineB }

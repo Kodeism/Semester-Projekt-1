@@ -16,9 +16,10 @@ namespace Semester_Projekt_1
 {
     public partial class duoForside : UserControl
     {
-        private bool sortAscendingPris = true;
-        private List<Bolig> mineBoligerCache; // Vi gemmer listen her til sortering
-        private List<Bolig> alleBoligerCache; // Vi gemmer listen her til sortering
+        private List<Bolig> mineBoligerCache; // til sortering af pris
+        private bool sortAscendingPrisMineBoliger = true;
+        private List<Bolig> alleBoligerCache; // til sortering af pris
+        private bool sortAscendingPrisAlleBoliger = true;
         public enum Mode { Salg, Boliger, Købere, Sælgere }
         private Mode _mode;
         private Mode currentMode;
@@ -87,6 +88,7 @@ namespace Semester_Projekt_1
 
             if (mineDataGridView.Columns.Contains("SælgerID"))
                 mineDataGridView.Columns["SælgerID"].Visible = false;
+
         }
 
         public void OpdaterMineSalgDataGrid(List<Salg> salg)
@@ -172,6 +174,7 @@ namespace Semester_Projekt_1
 
         public void OpdaterMineBoligerDataGrid(List<Bolig> boliger)
         {
+            mineBoligerCache = boliger; // gem den til lokal sortering
             mineDataGridView.DataSource = null;
             mineDataGridView.DataSource = boliger;
             // Skjul id som ikke burde blive vist men de bliver vist aligevel
@@ -184,6 +187,7 @@ namespace Semester_Projekt_1
         }
         public void OpdaterAlleBoligerDataGrid(List<Bolig> boliger)
         {
+            alleBoligerCache = boliger; // gem den til lokal sortering
             alleDataGridView.DataSource = null;
             alleDataGridView.DataSource = boliger;
             // Skjul id som ikke burde blive vist men de bliver vist aligevel
@@ -266,6 +270,7 @@ namespace Semester_Projekt_1
                 formTilføjBolig.ShowDialog();
             }
         }
+
         private void mineDataGridView_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             // Tjek om det er "Pris"-kolonnen
@@ -274,12 +279,12 @@ namespace Semester_Projekt_1
                 if (mineBoligerCache != null)
                 {
                     List<Bolig> sortedList;
-                    if (sortAscendingPris)
+                    if (sortAscendingPrisMineBoliger)
                         sortedList = mineBoligerCache.OrderBy(b => b.Pris).ToList();
                     else
                         sortedList = mineBoligerCache.OrderByDescending(b => b.Pris).ToList();
 
-                    sortAscendingPris = !sortAscendingPris;
+                    sortAscendingPrisMineBoliger = !sortAscendingPrisMineBoliger;
 
                     mineDataGridView.DataSource = null;
                     mineDataGridView.DataSource = sortedList;
@@ -293,6 +298,7 @@ namespace Semester_Projekt_1
                 }
             }
         }
+
         private void alleDataGridView_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             // Tjek om det er "Pris"-kolonnen
@@ -301,12 +307,12 @@ namespace Semester_Projekt_1
                 if (alleBoligerCache != null)
                 {
                     List<Bolig> sortedList;
-                    if (sortAscendingPris)
+                    if (sortAscendingPrisAlleBoliger)
                         sortedList = alleBoligerCache.OrderBy(b => b.Pris).ToList();
                     else
                         sortedList = alleBoligerCache.OrderByDescending(b => b.Pris).ToList();
 
-                    sortAscendingPris = !sortAscendingPris;
+                    sortAscendingPrisAlleBoliger = !sortAscendingPrisAlleBoliger;
 
                     alleDataGridView.DataSource = null;
                     alleDataGridView.DataSource = sortedList;
@@ -320,6 +326,5 @@ namespace Semester_Projekt_1
                 }
             }
         }
-
     }
 }
