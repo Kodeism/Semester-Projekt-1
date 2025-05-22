@@ -36,9 +36,10 @@
             // 
             // annullerButton
             // 
-            annullerButton.Location = new Point(12, 120);
+            annullerButton.Location = new Point(17, 200);
+            annullerButton.Margin = new Padding(4, 5, 4, 5);
             annullerButton.Name = "annullerButton";
-            annullerButton.Size = new Size(75, 23);
+            annullerButton.Size = new Size(107, 38);
             annullerButton.TabIndex = 0;
             annullerButton.Text = "Annuller";
             annullerButton.UseVisualStyleBackColor = true;
@@ -46,9 +47,10 @@
             // 
             // sletButton
             // 
-            sletButton.Location = new Point(160, 120);
+            sletButton.Location = new Point(229, 200);
+            sletButton.Margin = new Padding(4, 5, 4, 5);
             sletButton.Name = "sletButton";
-            sletButton.Size = new Size(75, 23);
+            sletButton.Size = new Size(107, 38);
             sletButton.TabIndex = 1;
             sletButton.Text = "Slet";
             sletButton.UseVisualStyleBackColor = true;
@@ -57,29 +59,33 @@
             // boligIDLabel
             // 
             boligIDLabel.AutoSize = true;
-            boligIDLabel.Location = new Point(12, 9);
+            boligIDLabel.Location = new Point(17, 15);
+            boligIDLabel.Margin = new Padding(4, 0, 4, 0);
             boligIDLabel.Name = "boligIDLabel";
-            boligIDLabel.Size = new Size(57, 15);
+            boligIDLabel.Size = new Size(30, 25);
             boligIDLabel.TabIndex = 2;
-            boligIDLabel.Text = "Indtast ID";
+            boligIDLabel.Text = "ID";
             // 
             // boligIDTextBox
             // 
-            boligIDTextBox.Location = new Point(12, 27);
+            boligIDTextBox.Location = new Point(17, 45);
+            boligIDTextBox.Margin = new Padding(4, 5, 4, 5);
             boligIDTextBox.Name = "boligIDTextBox";
-            boligIDTextBox.Size = new Size(100, 23);
+            boligIDTextBox.ReadOnly = true;
+            boligIDTextBox.Size = new Size(141, 31);
             boligIDTextBox.TabIndex = 3;
             // 
             // DeleteBolig
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 246, 182);
-            ClientSize = new Size(251, 165);
+            ClientSize = new Size(359, 275);
             Controls.Add(boligIDTextBox);
             Controls.Add(boligIDLabel);
             Controls.Add(sletButton);
             Controls.Add(annullerButton);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "DeleteBolig";
             Text = "DeleteBolig";
             ResumeLayout(false);

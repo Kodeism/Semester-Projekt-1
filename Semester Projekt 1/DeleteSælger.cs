@@ -4,9 +4,16 @@ namespace Semester_Projekt_1
 {
     public partial class DeleteSælger : Form
     {
+        private int sælgerID;
         public DeleteSælger()
         {
             InitializeComponent();
+        }
+        public DeleteSælger(int sælgerID)
+        {
+            InitializeComponent();
+            sælgerID = sælgerID;
+            sælgerIDTextBox.Text = sælgerID.ToString();
         }
 
         private void annullerButton_Click(object sender, EventArgs e)

@@ -112,6 +112,7 @@
             mæglerDataGrid.Location = new Point(11, 70);
             mæglerDataGrid.Margin = new Padding(10, 0, 10, 10);
             mæglerDataGrid.Name = "mæglerDataGrid";
+            mæglerDataGrid.ReadOnly = true;
             mæglerDataGrid.RowHeadersWidth = 62;
             mæglerDataGrid.Size = new Size(286, 159);
             mæglerDataGrid.TabIndex = 4;
@@ -205,6 +206,7 @@
             købereDataGridView.Location = new Point(11, 70);
             købereDataGridView.Margin = new Padding(10, 0, 10, 10);
             købereDataGridView.Name = "købereDataGridView";
+            købereDataGridView.ReadOnly = true;
             købereDataGridView.RowHeadersWidth = 62;
             købereDataGridView.Size = new Size(286, 159);
             købereDataGridView.TabIndex = 4;
@@ -328,6 +330,7 @@
             sælgereDataGridView.Location = new Point(11, 70);
             sælgereDataGridView.Margin = new Padding(10, 0, 10, 10);
             sælgereDataGridView.Name = "sælgereDataGridView";
+            sælgereDataGridView.ReadOnly = true;
             sælgereDataGridView.RowHeadersWidth = 62;
             sælgereDataGridView.Size = new Size(286, 159);
             sælgereDataGridView.TabIndex = 1;

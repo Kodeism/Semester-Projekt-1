@@ -213,14 +213,20 @@ namespace Semester_Projekt_1
 
         private void mineFilterKnap_Click(object sender, EventArgs e)
         {
-            BoligFilterForm boligFilterForm = new BoligFilterForm(this, currentMode, true);
-            boligFilterForm.Show();
+            if (currentMode == Mode.Boliger)
+            {
+                BoligFilterForm boligFilterForm = new BoligFilterForm(this, currentMode, true);
+                boligFilterForm.Show();
+            }
         }
 
         private void alleFilterKnap_Click(object sender, EventArgs e)
         {
-            BoligFilterForm boligFilterForm = new BoligFilterForm(this, currentMode, false);
-            boligFilterForm.Show();
+            if (currentMode == Mode.Boliger)
+            {
+                BoligFilterForm boligFilterForm = new BoligFilterForm(this, currentMode, false);
+                boligFilterForm.Show();
+            }
         }
 
         private void mineRegistrerKnap_Click(object sender, EventArgs e)
@@ -271,25 +277,38 @@ namespace Semester_Projekt_1
             }
         }
 
+        private string mineLastSortedColumn = "";
+        private bool mineSortAscending = true;
         private void mineDataGridView_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            // Tjek om det er "Pris"-kolonnen
-            if (mineDataGridView.Columns[e.ColumnIndex].Name == "Pris")
+
+            if (mineBoligerCache != null && mineBoligerCache.Any())
             {
-                if (mineBoligerCache != null)
+                string columnName = mineDataGridView.Columns[e.ColumnIndex].Name;
+
+                // Find property på Bolig-objekter der matcher kolonnenavnet
+                var propInfo = typeof(Bolig).GetProperty(columnName);
+                if (propInfo != null)
                 {
                     List<Bolig> sortedList;
-                    if (sortAscendingPrisMineBoliger)
-                        sortedList = mineBoligerCache.OrderBy(b => b.Pris).ToList();
-                    else
-                        sortedList = mineBoligerCache.OrderByDescending(b => b.Pris).ToList();
 
-                    sortAscendingPrisMineBoliger = !sortAscendingPrisMineBoliger;
+                    // Skift sorteringsretning hvis det er samme kolonne som sidst
+                    if (mineLastSortedColumn == columnName)
+                        sortAscendingPrisMineBoliger = !sortAscendingPrisMineBoliger;
+                    else
+                        sortAscendingPrisMineBoliger = true;
+
+                    mineLastSortedColumn = columnName;
+
+                    if (sortAscendingPrisMineBoliger)
+                        sortedList = mineBoligerCache.OrderBy(b => propInfo.GetValue(b, null)).ToList();
+                    else
+                        sortedList = mineBoligerCache.OrderByDescending(b => propInfo.GetValue(b, null)).ToList();
 
                     mineDataGridView.DataSource = null;
                     mineDataGridView.DataSource = sortedList;
 
-                    // Skjul id som ikke burde blive vist men de bliver vist aligevel
+                    // Skjul ID-kolonner
                     if (mineDataGridView.Columns.Contains("EjendomsmæglerID"))
                         mineDataGridView.Columns["EjendomsmæglerID"].Visible = false;
 
@@ -299,25 +318,38 @@ namespace Semester_Projekt_1
             }
         }
 
+        private string alleLastSortedColumn = "";
+        private bool alleSortAscending = true;
         private void alleDataGridView_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            // Tjek om det er "Pris"-kolonnen
-            if (alleDataGridView.Columns[e.ColumnIndex].Name == "Pris")
+
+            if (alleBoligerCache != null && alleBoligerCache.Any())
             {
-                if (alleBoligerCache != null)
+                string columnName = alleDataGridView.Columns[e.ColumnIndex].Name;
+
+                // Find property på Bolig-objekter der matcher kolonnenavnet
+                var propInfo = typeof(Bolig).GetProperty(columnName);
+                if (propInfo != null)
                 {
                     List<Bolig> sortedList;
-                    if (sortAscendingPrisAlleBoliger)
-                        sortedList = alleBoligerCache.OrderBy(b => b.Pris).ToList();
-                    else
-                        sortedList = alleBoligerCache.OrderByDescending(b => b.Pris).ToList();
 
-                    sortAscendingPrisAlleBoliger = !sortAscendingPrisAlleBoliger;
+                    // Skift sorteringsretning hvis det er samme kolonne som sidst
+                    if (alleLastSortedColumn == columnName)
+                        sortAscendingPrisAlleBoliger = !sortAscendingPrisAlleBoliger;
+                    else
+                        sortAscendingPrisAlleBoliger = true;
+
+                    alleLastSortedColumn = columnName;
+
+                    if (sortAscendingPrisAlleBoliger)
+                        sortedList = alleBoligerCache.OrderBy(b => propInfo.GetValue(b, null)).ToList();
+                    else
+                        sortedList = alleBoligerCache.OrderByDescending(b => propInfo.GetValue(b, null)).ToList();
 
                     alleDataGridView.DataSource = null;
                     alleDataGridView.DataSource = sortedList;
 
-                    // Skjul id som ikke burde blive vist men de bliver vist aligevel
+                    // Skjul ID-kolonner
                     if (alleDataGridView.Columns.Contains("EjendomsmæglerID"))
                         alleDataGridView.Columns["EjendomsmæglerID"].Visible = false;
 
@@ -326,5 +358,77 @@ namespace Semester_Projekt_1
                 }
             }
         }
+
+        private void mineDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (currentMode == Mode.Sælgere)
+            {
+                if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
+                {
+                    DataGridView mineDataGridView = (DataGridView)sender;
+
+                    // Hent værdien af BoligID i den valgte række
+                    var sælgerIDValue = mineDataGridView.Rows[e.RowIndex].Cells["SælgerID"].Value;
+
+                    int sælgerID = Convert.ToInt32(sælgerIDValue);
+
+                    DeleteSælger deleteSælger = new DeleteSælger(sælgerID);
+                    deleteSælger.Show();
+                }
+            }
+            if (currentMode == Mode.Boliger)
+            {
+                if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
+                {
+                    DataGridView mineDataGridView = (DataGridView)sender;
+
+                    // Hent værdien af BoligID i den valgte række
+                    var boligIDValue = mineDataGridView.Rows[e.RowIndex].Cells["BoligID"].Value;
+
+                    int boligID = Convert.ToInt32(boligIDValue);
+
+                    DeleteBolig deleteBolig = new DeleteBolig(boligID);
+                    deleteBolig.Show();
+                }
+            }
+        }
+
+        private void alleDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // burde potentielt også blive udkommenteret, men det er fint indtil videre
+            // altså hvorfor kan jeg slette sælgere som ikke har med en specifik ejendomsmægler?
+            if (currentMode == Mode.Sælgere)
+            {
+                if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
+                {
+                    DataGridView alleDataGridView = (DataGridView)sender;
+
+                    // Hent værdien af BoligID i den valgte række
+                    var sælgerIDValue = alleDataGridView.Rows[e.RowIndex].Cells["SælgerID"].Value;
+
+                    // Konverter evt. til int hvis nødvendigt
+                    int sælgerID = Convert.ToInt32(sælgerIDValue);
+
+                    DeleteSælger deleteSælger = new DeleteSælger(sælgerID);
+                    deleteSælger.Show();
+                }
+            }
+            // udkommenteret eftersom det vil være underligt at kunne slette andres boliger
+            //if (currentMode == Mode.Boliger)
+            //{
+            //    if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
+            //    {
+            //        DataGridView alleDataGridView = (DataGridView)sender;
+
+            //        // Hent værdien af BoligID i den valgte række
+            //        var boligIDValue = alleDataGridView.Rows[e.RowIndex].Cells["BoligID"].Value;
+
+            //        int boligID = Convert.ToInt32(boligIDValue);
+
+            //        DeleteBolig deleteBolig = new DeleteBolig(boligID);
+            //        deleteBolig.Show();
+            //    }
+            //}
+}
     }
 }
