@@ -15,7 +15,7 @@ namespace TestData
             //DataRepository testDR = new DataRepository("Server = localhost; Database = Semester projekt gruppe 1; User ID = sa; Password = 1234; Trusted_Connection = True; TrustServerCertificate = True;");
 
 
-            Køber testKøber = new Køber("Fløde", "Bolle", 22222222, "test@example.com", 70000000, "Danmark", "Villa", "12345678-1234", "hejsaalee");
+            Køber testKøber = new Køber("Fløde", "Bolle", "22222222", "test@example.com", 70000000, "Danmark", "Villa", "12345678-1234", "hejsaalee");
             testDR.CreateKøber(testKøber);
 
 

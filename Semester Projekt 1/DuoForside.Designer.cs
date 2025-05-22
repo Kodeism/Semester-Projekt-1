@@ -167,6 +167,7 @@
             alleFilterKnap.TabIndex = 1;
             alleFilterKnap.Text = "Filtrer";
             alleFilterKnap.UseVisualStyleBackColor = false;
+            alleFilterKnap.Click += alleFilterKnap_Click;
             // 
             // alleLabel
             // 
@@ -278,6 +279,7 @@
             mineFilterKnap.TabIndex = 1;
             mineFilterKnap.Text = "Filtrer";
             mineFilterKnap.UseVisualStyleBackColor = false;
+            mineFilterKnap.Click += mineFilterKnap_Click;
             // 
             // mineSøgeFelt
             // 

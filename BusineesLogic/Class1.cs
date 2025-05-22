@@ -7,7 +7,7 @@ namespace BusineesLogic
 {
     public class SælgerFunktioner
     {
-        public void TilføjSælger(string navn, string efternavn, int tlfNummer, string email, string cprNr, string adresse)
+        public void TilføjSælger(string navn, string efternavn, string tlfNummer, string email, string cprNr, string adresse)
         {
             Sælger sælger = new Sælger(navn, efternavn, tlfNummer, email, cprNr, adresse);
 
@@ -18,7 +18,7 @@ namespace BusineesLogic
     }
     public class KøberFunktioner
     {
-        public void TilføjKøber(string navn, string efternavn, string adresse, int tlfNummer, string cprNr, string email, string søgeområde, int prisklasse, string boligtype, int? boligStørrelse, int? grundStørrelse, int? værelser, string køberinfo)
+        public void TilføjKøber(string navn, string efternavn, string adresse, string tlfNummer, string cprNr, string email, string søgeområde, int prisklasse, string boligtype, int? boligStørrelse, int? grundStørrelse, int? værelser, string køberinfo)
         {
             Køber køber = new Køber(navn, efternavn, tlfNummer, email, prisklasse, boligtype, søgeområde, cprNr, adresse, køberinfo, grundStørrelse, boligStørrelse, værelser);
 
@@ -38,7 +38,7 @@ namespace BusineesLogic
 
     public class SolgtFunktion
     {
-        public void ErklærSolgt(string køberCPR, string adresse, DateOnly dato, int beløb,string sælgerCPR)
+        public void ErklærSolgt(string køberCPR, string adresse, DateTime dato, int beløb,string sælgerCPR)
         {
             DataRepository testDR = new DataRepository();
             //Opretter ny solgt bolig i Solgt tabellen i databasen:
