@@ -52,13 +52,13 @@
             salgLayoutPanel.Controls.Add(salgDataGridView, 0, 2);
             salgLayoutPanel.Dock = DockStyle.Fill;
             salgLayoutPanel.Location = new Point(0, 0);
-            salgLayoutPanel.Margin = new Padding(7, 6, 7, 6);
+            salgLayoutPanel.Margin = new Padding(10, 10, 10, 10);
             salgLayoutPanel.Name = "salgLayoutPanel";
             salgLayoutPanel.RowCount = 3;
             salgLayoutPanel.RowStyles.Add(new RowStyle());
             salgLayoutPanel.RowStyles.Add(new RowStyle());
             salgLayoutPanel.RowStyles.Add(new RowStyle());
-            salgLayoutPanel.Size = new Size(482, 408);
+            salgLayoutPanel.Size = new Size(689, 666);
             salgLayoutPanel.TabIndex = 0;
             // 
             // salgMenuLayoutPanel
@@ -75,12 +75,12 @@
             salgMenuLayoutPanel.Controls.Add(salgRegistrerKnap, 2, 0);
             salgMenuLayoutPanel.Controls.Add(salgSøgeFelt, 0, 0);
             salgMenuLayoutPanel.Controls.Add(salgFilterKnap, 1, 0);
-            salgMenuLayoutPanel.Location = new Point(7, 37);
-            salgMenuLayoutPanel.Margin = new Padding(7, 0, 7, 0);
+            salgMenuLayoutPanel.Location = new Point(10, 54);
+            salgMenuLayoutPanel.Margin = new Padding(10, 0, 10, 0);
             salgMenuLayoutPanel.Name = "salgMenuLayoutPanel";
             salgMenuLayoutPanel.RowCount = 1;
             salgMenuLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            salgMenuLayoutPanel.Size = new Size(468, 25);
+            salgMenuLayoutPanel.Size = new Size(669, 35);
             salgMenuLayoutPanel.TabIndex = 3;
             // 
             // eksporterDataKnap
@@ -90,10 +90,10 @@
             eksporterDataKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             eksporterDataKnap.BackColor = Color.FromArgb(45, 199, 92);
             eksporterDataKnap.FlatStyle = FlatStyle.Popup;
-            eksporterDataKnap.Location = new Point(390, 0);
+            eksporterDataKnap.Location = new Point(559, 0);
             eksporterDataKnap.Margin = new Padding(0);
             eksporterDataKnap.Name = "eksporterDataKnap";
-            eksporterDataKnap.Size = new Size(78, 25);
+            eksporterDataKnap.Size = new Size(110, 35);
             eksporterDataKnap.TabIndex = 3;
             eksporterDataKnap.Text = "Eksporter";
             eksporterDataKnap.UseVisualStyleBackColor = false;
@@ -106,10 +106,10 @@
             salgRegistrerKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             salgRegistrerKnap.BackColor = Color.FromArgb(211, 222, 255);
             salgRegistrerKnap.FlatStyle = FlatStyle.Popup;
-            salgRegistrerKnap.Location = new Point(314, 0);
+            salgRegistrerKnap.Location = new Point(450, 0);
             salgRegistrerKnap.Margin = new Padding(0);
             salgRegistrerKnap.Name = "salgRegistrerKnap";
-            salgRegistrerKnap.Size = new Size(76, 25);
+            salgRegistrerKnap.Size = new Size(109, 35);
             salgRegistrerKnap.TabIndex = 2;
             salgRegistrerKnap.Text = "Registrer";
             salgRegistrerKnap.UseVisualStyleBackColor = false;
@@ -123,7 +123,7 @@
             salgSøgeFelt.Location = new Point(0, 0);
             salgSøgeFelt.Margin = new Padding(0);
             salgSøgeFelt.Name = "salgSøgeFelt";
-            salgSøgeFelt.Size = new Size(238, 25);
+            salgSøgeFelt.Size = new Size(341, 34);
             salgSøgeFelt.TabIndex = 0;
             // 
             // salgFilterKnap
@@ -133,10 +133,10 @@
             salgFilterKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             salgFilterKnap.BackColor = Color.FromArgb(255, 202, 202);
             salgFilterKnap.FlatStyle = FlatStyle.Popup;
-            salgFilterKnap.Location = new Point(238, 0);
+            salgFilterKnap.Location = new Point(341, 0);
             salgFilterKnap.Margin = new Padding(0);
             salgFilterKnap.Name = "salgFilterKnap";
-            salgFilterKnap.Size = new Size(76, 25);
+            salgFilterKnap.Size = new Size(109, 35);
             salgFilterKnap.TabIndex = 1;
             salgFilterKnap.Text = "Filtrer";
             salgFilterKnap.UseVisualStyleBackColor = false;
@@ -149,7 +149,7 @@
             salgLabel.Location = new Point(0, 0);
             salgLabel.Margin = new Padding(0);
             salgLabel.Name = "salgLabel";
-            salgLabel.Size = new Size(482, 37);
+            salgLabel.Size = new Size(689, 54);
             salgLabel.TabIndex = 1;
             salgLabel.Text = "Alle Salg";
             salgLabel.TextAlign = ContentAlignment.MiddleLeft;
@@ -159,25 +159,25 @@
             salgDataGridView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             salgDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             salgDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            salgDataGridView.Location = new Point(7, 62);
-            salgDataGridView.Margin = new Padding(7, 0, 7, 3);
+            salgDataGridView.Location = new Point(10, 89);
+            salgDataGridView.Margin = new Padding(10, 0, 10, 5);
             salgDataGridView.Name = "salgDataGridView";
+            salgDataGridView.ReadOnly = true;
             salgDataGridView.RowHeadersWidth = 62;
-            salgDataGridView.Size = new Size(468, 343);
+            salgDataGridView.Size = new Size(669, 572);
             salgDataGridView.TabIndex = 2;
             // 
             // salgSide
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(255, 246, 218);
             Controls.Add(salgLayoutPanel);
-            Margin = new Padding(2);
             Name = "salgSide";
-            Size = new Size(482, 408);
+            Size = new Size(689, 666);
             salgLayoutPanel.ResumeLayout(false);
             salgLayoutPanel.PerformLayout();
             salgMenuLayoutPanel.ResumeLayout(false);

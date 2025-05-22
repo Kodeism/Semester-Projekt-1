@@ -37,17 +37,19 @@
             // sælgerIDLabel
             // 
             sælgerIDLabel.AutoSize = true;
-            sælgerIDLabel.Location = new Point(12, 9);
+            sælgerIDLabel.Location = new Point(17, 15);
+            sælgerIDLabel.Margin = new Padding(4, 0, 4, 0);
             sælgerIDLabel.Name = "sælgerIDLabel";
-            sælgerIDLabel.Size = new Size(57, 15);
+            sælgerIDLabel.Size = new Size(30, 25);
             sælgerIDLabel.TabIndex = 0;
-            sælgerIDLabel.Text = "Indtast ID";
+            sælgerIDLabel.Text = "ID";
             // 
             // annullerButton
             // 
-            annullerButton.Location = new Point(12, 105);
+            annullerButton.Location = new Point(17, 175);
+            annullerButton.Margin = new Padding(4, 5, 4, 5);
             annullerButton.Name = "annullerButton";
-            annullerButton.Size = new Size(75, 23);
+            annullerButton.Size = new Size(107, 38);
             annullerButton.TabIndex = 1;
             annullerButton.Text = "Annuller";
             annullerButton.UseVisualStyleBackColor = true;
@@ -55,9 +57,10 @@
             // 
             // sletsælgerButton
             // 
-            sletsælgerButton.Location = new Point(156, 105);
+            sletsælgerButton.Location = new Point(223, 175);
+            sletsælgerButton.Margin = new Padding(4, 5, 4, 5);
             sletsælgerButton.Name = "sletsælgerButton";
-            sletsælgerButton.Size = new Size(75, 23);
+            sletsælgerButton.Size = new Size(107, 38);
             sletsælgerButton.TabIndex = 2;
             sletsælgerButton.Text = "Slet";
             sletsælgerButton.UseVisualStyleBackColor = true;
@@ -65,21 +68,24 @@
             // 
             // sælgerIDTextBox
             // 
-            sælgerIDTextBox.Location = new Point(12, 27);
+            sælgerIDTextBox.Location = new Point(17, 45);
+            sælgerIDTextBox.Margin = new Padding(4, 5, 4, 5);
             sælgerIDTextBox.Name = "sælgerIDTextBox";
-            sælgerIDTextBox.Size = new Size(100, 23);
+            sælgerIDTextBox.ReadOnly = true;
+            sælgerIDTextBox.Size = new Size(141, 31);
             sælgerIDTextBox.TabIndex = 3;
             // 
             // DeleteSælger
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 246, 182);
-            ClientSize = new Size(245, 153);
+            ClientSize = new Size(350, 255);
             Controls.Add(sælgerIDTextBox);
             Controls.Add(sletsælgerButton);
             Controls.Add(annullerButton);
             Controls.Add(sælgerIDLabel);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "DeleteSælger";
             Text = "DeleteSælger";
             ResumeLayout(false);
