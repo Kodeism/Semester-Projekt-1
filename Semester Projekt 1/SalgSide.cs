@@ -22,6 +22,7 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
             SetMode(mode);
+            salgSøgeFelt.PlaceholderText = "Søg Adresse...";
             salgDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
         private void SetMode(Mode _mode)
@@ -76,6 +77,12 @@ namespace Semester_Projekt_1
         {
             SaleRegistration saleRegistration = new SaleRegistration();
             saleRegistration.ShowDialog();
+        }
+
+        private void eksporterDataKnap_Click(object sender, EventArgs e)
+        {
+            Ekspoterdata ekspoterdata = new Ekspoterdata();
+            ekspoterdata.ShowDialog();
         }
     }
 }

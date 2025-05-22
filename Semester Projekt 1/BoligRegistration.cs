@@ -1,7 +1,8 @@
-﻿using Models;
-using BusineesLogic;
+﻿using BusineesLogic;
+using Models;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace Semester_Projekt_1
 {
@@ -18,8 +19,8 @@ namespace Semester_Projekt_1
         public BoligRegistration()
         {
             InitializeComponent();
-
             // Data bindings
+            byggeDatoDatePicker.MaxDate = DateTime.Now;
             sælgerBindings = new BindingList<Sælger>(boligLogic.GetSælgerList());
             regions = new BindingList<string>(boligLogic.Regions);
             statusList = new BindingList<string>(boligLogic.SaleStatusList);
@@ -119,6 +120,51 @@ namespace Semester_Projekt_1
                 {
                     field.BackColor = Color.White;
                 }
+            }
+        }
+        private bool checkEstimatFields()
+        {
+            bool allGood = true;
+            if (opretBoligGrundarealTextbox.Text == "")
+            {
+                opretBoligGrundarealTextbox.BackColor = Color.Red;
+                allGood = false;
+            }
+            if (opretBoligBoligarealTextbox.Text == "")
+            {
+                opretBoligBoligarealTextbox.BackColor = Color.Red;
+                allGood = false;
+            }
+            if (!byggeDatoDatePicker.Checked)
+            {
+                opretBoligAntalVærelserTextBox.BackColor = Color.Red;
+                allGood = false;
+            }
+            if(boligOprettelseBoligtypeComboBox.SelectedIndex == -1)
+            {
+                boligOprettelseBoligtypeComboBox.BackColor = Color.Red;
+                allGood = false;
+            }
+            return allGood;
+        }
+        private void estimatePriceKnap_Click(object sender, EventArgs e)
+        {
+         if(checkEstimatFields())
+            {
+                int grundAreal = Convert.ToInt32(opretBoligGrundarealTextbox.Text);
+                int boligAreal = int.Parse(opretBoligBoligarealTextbox.Text);
+                string boligType = boligOprettelseBoligtypeComboBox.SelectedItem.ToString();
+                int byggeDato = byggeDatoDatePicker.Value.Year;
+                int pris = boligLogic.PrisEsmator(boligAreal, grundAreal, boligType, byggeDato);
+                if (pris == 0)
+                {
+                    MessageBox.Show("Der er sket en fejl i beregningen af prisen, (evt. ikke nok eksempler at estimere ud fra) prøv igen", "Fejl", MessageBoxButtons.OK);
+                }
+                boligOprettelseBoligPrisTextbox.Text = pris.ToString();
+            }
+         else
+            {
+                MessageBox.Show("Husk at udfylde Grundareal, Boligareal, Boligtype og Byggedato for at estimere prisen", "Check inputs", MessageBoxButtons.OK);
             }
         }
     }

@@ -68,7 +68,7 @@
             bigLayoutPanel.RowCount = 2;
             bigLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             bigLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            bigLayoutPanel.Size = new Size(414, 554);
+            bigLayoutPanel.Size = new Size(698, 562);
             bigLayoutPanel.TabIndex = 0;
             // 
             // alleLayoutPanel
@@ -83,14 +83,14 @@
             alleLayoutPanel.Controls.Add(alleDataGridView, 0, 2);
             alleLayoutPanel.Controls.Add(alleMenuLayoutPanel, 0, 1);
             alleLayoutPanel.Controls.Add(alleLabel, 0, 0);
-            alleLayoutPanel.Location = new Point(3, 280);
-            alleLayoutPanel.Margin = new Padding(3, 3, 3, 2);
+            alleLayoutPanel.Location = new Point(2, 283);
+            alleLayoutPanel.Margin = new Padding(2, 2, 2, 1);
             alleLayoutPanel.Name = "alleLayoutPanel";
             alleLayoutPanel.RowCount = 3;
             alleLayoutPanel.RowStyles.Add(new RowStyle());
             alleLayoutPanel.RowStyles.Add(new RowStyle());
             alleLayoutPanel.RowStyles.Add(new RowStyle());
-            alleLayoutPanel.Size = new Size(408, 272);
+            alleLayoutPanel.Size = new Size(694, 278);
             alleLayoutPanel.TabIndex = 1;
             // 
             // alleDataGridView
@@ -98,12 +98,12 @@
             alleDataGridView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             alleDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             alleDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            alleDataGridView.Location = new Point(11, 92);
-            alleDataGridView.Margin = new Padding(10, 0, 10, 10);
+            alleDataGridView.Location = new Point(8, 65);
+            alleDataGridView.Margin = new Padding(7, 0, 7, 6);
             alleDataGridView.Name = "alleDataGridView";
             alleDataGridView.ReadOnly = true;
             alleDataGridView.RowHeadersWidth = 62;
-            alleDataGridView.Size = new Size(386, 222);
+            alleDataGridView.Size = new Size(678, 206);
             alleDataGridView.TabIndex = 4;
             alleDataGridView.CellDoubleClick += alleDataGridView_CellDoubleClick;
             alleDataGridView.ColumnHeaderMouseClick += alleDataGridView_ColumnHeaderMouseClick;
@@ -120,12 +120,12 @@
             alleMenuLayoutPanel.Controls.Add(alleRegistrerKnap, 2, 0);
             alleMenuLayoutPanel.Controls.Add(alleSøgeFelt, 0, 0);
             alleMenuLayoutPanel.Controls.Add(alleFilterKnap, 1, 0);
-            alleMenuLayoutPanel.Location = new Point(11, 56);
-            alleMenuLayoutPanel.Margin = new Padding(10, 0, 10, 0);
+            alleMenuLayoutPanel.Location = new Point(8, 39);
+            alleMenuLayoutPanel.Margin = new Padding(7, 0, 7, 0);
             alleMenuLayoutPanel.Name = "alleMenuLayoutPanel";
             alleMenuLayoutPanel.RowCount = 1;
             alleMenuLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            alleMenuLayoutPanel.Size = new Size(386, 35);
+            alleMenuLayoutPanel.Size = new Size(678, 25);
             alleMenuLayoutPanel.TabIndex = 3;
             // 
             // alleRegistrerKnap
@@ -135,10 +135,10 @@
             alleRegistrerKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             alleRegistrerKnap.BackColor = Color.FromArgb(211, 222, 255);
             alleRegistrerKnap.FlatStyle = FlatStyle.Popup;
-            alleRegistrerKnap.Location = new Point(327, 0);
+            alleRegistrerKnap.Location = new Point(575, 0);
             alleRegistrerKnap.Margin = new Padding(0);
             alleRegistrerKnap.Name = "alleRegistrerKnap";
-            alleRegistrerKnap.Size = new Size(59, 35);
+            alleRegistrerKnap.Size = new Size(103, 25);
             alleRegistrerKnap.TabIndex = 2;
             alleRegistrerKnap.Text = "Registrer";
             alleRegistrerKnap.UseVisualStyleBackColor = false;
@@ -152,7 +152,7 @@
             alleSøgeFelt.Location = new Point(0, 0);
             alleSøgeFelt.Margin = new Padding(0);
             alleSøgeFelt.Name = "alleSøgeFelt";
-            alleSøgeFelt.Size = new Size(270, 34);
+            alleSøgeFelt.Size = new Size(474, 25);
             alleSøgeFelt.TabIndex = 0;
             alleSøgeFelt.Text = "Søg Adresse...";
             // 
@@ -163,10 +163,10 @@
             alleFilterKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             alleFilterKnap.BackColor = Color.FromArgb(255, 202, 202);
             alleFilterKnap.FlatStyle = FlatStyle.Popup;
-            alleFilterKnap.Location = new Point(270, 0);
+            alleFilterKnap.Location = new Point(474, 0);
             alleFilterKnap.Margin = new Padding(0);
             alleFilterKnap.Name = "alleFilterKnap";
-            alleFilterKnap.Size = new Size(57, 35);
+            alleFilterKnap.Size = new Size(101, 25);
             alleFilterKnap.TabIndex = 1;
             alleFilterKnap.Text = "Filtrer";
             alleFilterKnap.UseVisualStyleBackColor = false;
@@ -180,7 +180,7 @@
             alleLabel.Location = new Point(1, 1);
             alleLabel.Margin = new Padding(0);
             alleLabel.Name = "alleLabel";
-            alleLabel.Size = new Size(406, 54);
+            alleLabel.Size = new Size(692, 37);
             alleLabel.TabIndex = 1;
             alleLabel.Text = "Alle Salg";
             alleLabel.TextAlign = ContentAlignment.BottomLeft;
@@ -197,14 +197,14 @@
             mineLayoutPanel.Controls.Add(mineLabel, 0, 0);
             mineLayoutPanel.Controls.Add(mineDataGridView, 0, 2);
             mineLayoutPanel.Controls.Add(mineMenuLayoutPanel, 0, 1);
-            mineLayoutPanel.Location = new Point(3, 3);
-            mineLayoutPanel.Margin = new Padding(3, 3, 3, 10);
+            mineLayoutPanel.Location = new Point(2, 2);
+            mineLayoutPanel.Margin = new Padding(2, 2, 2, 6);
             mineLayoutPanel.Name = "mineLayoutPanel";
             mineLayoutPanel.RowCount = 3;
             mineLayoutPanel.RowStyles.Add(new RowStyle());
             mineLayoutPanel.RowStyles.Add(new RowStyle());
             mineLayoutPanel.RowStyles.Add(new RowStyle());
-            mineLayoutPanel.Size = new Size(408, 264);
+            mineLayoutPanel.Size = new Size(694, 273);
             mineLayoutPanel.TabIndex = 0;
             // 
             // mineLabel
@@ -215,7 +215,7 @@
             mineLabel.Location = new Point(1, 1);
             mineLabel.Margin = new Padding(0);
             mineLabel.Name = "mineLabel";
-            mineLabel.Size = new Size(406, 54);
+            mineLabel.Size = new Size(692, 37);
             mineLabel.TabIndex = 0;
             mineLabel.Text = "Mine Salg";
             mineLabel.TextAlign = ContentAlignment.BottomLeft;
@@ -225,12 +225,12 @@
             mineDataGridView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             mineDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             mineDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            mineDataGridView.Location = new Point(11, 92);
-            mineDataGridView.Margin = new Padding(10, 0, 10, 10);
+            mineDataGridView.Location = new Point(8, 65);
+            mineDataGridView.Margin = new Padding(7, 0, 7, 6);
             mineDataGridView.Name = "mineDataGridView";
             mineDataGridView.ReadOnly = true;
             mineDataGridView.RowHeadersWidth = 62;
-            mineDataGridView.Size = new Size(386, 213);
+            mineDataGridView.Size = new Size(678, 201);
             mineDataGridView.TabIndex = 1;
             mineDataGridView.CellDoubleClick += mineDataGridView_CellDoubleClick;
             mineDataGridView.ColumnHeaderMouseClick += mineDataGridView_ColumnHeaderMouseClick;
@@ -247,12 +247,12 @@
             mineMenuLayoutPanel.Controls.Add(mineRegistrerKnap, 2, 0);
             mineMenuLayoutPanel.Controls.Add(mineFilterKnap, 1, 0);
             mineMenuLayoutPanel.Controls.Add(mineSøgeFelt, 0, 0);
-            mineMenuLayoutPanel.Location = new Point(11, 56);
-            mineMenuLayoutPanel.Margin = new Padding(10, 0, 10, 0);
+            mineMenuLayoutPanel.Location = new Point(8, 39);
+            mineMenuLayoutPanel.Margin = new Padding(7, 0, 7, 0);
             mineMenuLayoutPanel.Name = "mineMenuLayoutPanel";
             mineMenuLayoutPanel.RowCount = 1;
             mineMenuLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            mineMenuLayoutPanel.Size = new Size(386, 35);
+            mineMenuLayoutPanel.Size = new Size(678, 25);
             mineMenuLayoutPanel.TabIndex = 2;
             // 
             // mineRegistrerKnap
@@ -262,10 +262,10 @@
             mineRegistrerKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             mineRegistrerKnap.BackColor = Color.FromArgb(211, 222, 255);
             mineRegistrerKnap.FlatStyle = FlatStyle.Popup;
-            mineRegistrerKnap.Location = new Point(327, 0);
+            mineRegistrerKnap.Location = new Point(575, 0);
             mineRegistrerKnap.Margin = new Padding(0);
             mineRegistrerKnap.Name = "mineRegistrerKnap";
-            mineRegistrerKnap.Size = new Size(59, 35);
+            mineRegistrerKnap.Size = new Size(103, 25);
             mineRegistrerKnap.TabIndex = 2;
             mineRegistrerKnap.Text = "Registrer";
             mineRegistrerKnap.UseVisualStyleBackColor = false;
@@ -278,10 +278,10 @@
             mineFilterKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             mineFilterKnap.BackColor = Color.FromArgb(255, 202, 202);
             mineFilterKnap.FlatStyle = FlatStyle.Popup;
-            mineFilterKnap.Location = new Point(270, 0);
+            mineFilterKnap.Location = new Point(474, 0);
             mineFilterKnap.Margin = new Padding(0);
             mineFilterKnap.Name = "mineFilterKnap";
-            mineFilterKnap.Size = new Size(57, 35);
+            mineFilterKnap.Size = new Size(101, 25);
             mineFilterKnap.TabIndex = 1;
             mineFilterKnap.Text = "Filtrer";
             mineFilterKnap.UseVisualStyleBackColor = false;
@@ -295,21 +295,22 @@
             mineSøgeFelt.Location = new Point(0, 0);
             mineSøgeFelt.Margin = new Padding(0);
             mineSøgeFelt.Name = "mineSøgeFelt";
-            mineSøgeFelt.Size = new Size(270, 34);
+            mineSøgeFelt.Size = new Size(474, 25);
             mineSøgeFelt.TabIndex = 0;
             mineSøgeFelt.Text = "Søg Adresse...";
             // 
             // duoForside
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(255, 246, 182);
             Controls.Add(bigLayoutPanel);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "duoForside";
-            Size = new Size(207, 277);
+            Size = new Size(698, 562);
             bigLayoutPanel.ResumeLayout(false);
             bigLayoutPanel.PerformLayout();
             alleLayoutPanel.ResumeLayout(false);

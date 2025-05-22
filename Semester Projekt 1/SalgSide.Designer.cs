@@ -97,6 +97,7 @@
             eksporterDataKnap.TabIndex = 3;
             eksporterDataKnap.Text = "Eksporter";
             eksporterDataKnap.UseVisualStyleBackColor = false;
+            eksporterDataKnap.Click += eksporterDataKnap_Click;
             // 
             // salgRegistrerKnap
             // 
@@ -124,7 +125,6 @@
             salgSøgeFelt.Name = "salgSøgeFelt";
             salgSøgeFelt.Size = new Size(341, 34);
             salgSøgeFelt.TabIndex = 0;
-            salgSøgeFelt.Text = "Søg Adresse...";
             // 
             // salgFilterKnap
             // 

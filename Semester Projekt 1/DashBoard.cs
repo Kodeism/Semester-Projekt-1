@@ -7,8 +7,13 @@ namespace Semester_Projekt_1
         public DashBoard()
         {
             InitializeComponent();
+            this.FormClosed += Close_Program;
             openPage(new Forside());
             brugerNavnLabel.Text = SessionManager.FuldeNavn;
+        }
+        private void Close_Program(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
         internal void openPage(UserControl page)
         {
@@ -198,6 +203,12 @@ namespace Semester_Projekt_1
         {
             BoligRegistration boligRegistration = new BoligRegistration();
             boligRegistration.ShowDialog();
+        }
+
+        private void exportData_Click(object sender, EventArgs e)
+        {
+            Ekspoterdata eksport = new Ekspoterdata();
+            eksport.ShowDialog();
         }
     }
 }
