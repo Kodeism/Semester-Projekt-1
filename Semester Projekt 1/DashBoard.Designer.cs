@@ -78,10 +78,10 @@
             // 
             // startDBKnap
             // 
-            startDBKnap.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             startDBKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             startDBKnap.BackColor = Color.FromArgb(198, 220, 255);
             startDBKnap.BackgroundImageLayout = ImageLayout.Zoom;
+            startDBKnap.Dock = DockStyle.Left;
             startDBKnap.FlatStyle = FlatStyle.Flat;
             startDBKnap.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             startDBKnap.ForeColor = Color.Black;

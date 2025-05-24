@@ -56,40 +56,40 @@
             boligOprettelseSælgerLabel = new Label();
             boligOprettelseBoligPrisTextbox = new TextBox();
             tableLayoutPanel2 = new TableLayoutPanel();
-            tableLayoutPanel3 = new TableLayoutPanel();
-            tableLayoutPanel4 = new TableLayoutPanel();
-            tableLayoutPanel5 = new TableLayoutPanel();
-            tableLayoutPanel6 = new TableLayoutPanel();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            estimatePriceKnap = new Button();
+            opretBoligCancelButton = new Button();
+            opretBoligOpretButton = new Button();
+            tableLayoutPanel16 = new TableLayoutPanel();
+            tableLayoutPanel15 = new TableLayoutPanel();
+            tableLayoutPanel14 = new TableLayoutPanel();
+            tableLayoutPanel13 = new TableLayoutPanel();
+            tableLayoutPanel12 = new TableLayoutPanel();
+            tableLayoutPanel11 = new TableLayoutPanel();
+            tableLayoutPanel10 = new TableLayoutPanel();
+            tableLayoutPanel9 = new TableLayoutPanel();
             tableLayoutPanel7 = new TableLayoutPanel();
             tableLayoutPanel8 = new TableLayoutPanel();
-            tableLayoutPanel9 = new TableLayoutPanel();
-            tableLayoutPanel10 = new TableLayoutPanel();
-            tableLayoutPanel11 = new TableLayoutPanel();
-            tableLayoutPanel12 = new TableLayoutPanel();
-            tableLayoutPanel13 = new TableLayoutPanel();
-            tableLayoutPanel14 = new TableLayoutPanel();
-            tableLayoutPanel15 = new TableLayoutPanel();
-            tableLayoutPanel16 = new TableLayoutPanel();
-            opretBoligOpretButton = new Button();
-            opretBoligCancelButton = new Button();
-            estimatePriceKnap = new Button();
-            tableLayoutPanel1 = new TableLayoutPanel();
+            tableLayoutPanel5 = new TableLayoutPanel();
+            tableLayoutPanel6 = new TableLayoutPanel();
+            tableLayoutPanel4 = new TableLayoutPanel();
+            tableLayoutPanel3 = new TableLayoutPanel();
             tableLayoutPanel2.SuspendLayout();
-            tableLayoutPanel3.SuspendLayout();
-            tableLayoutPanel4.SuspendLayout();
-            tableLayoutPanel5.SuspendLayout();
-            tableLayoutPanel6.SuspendLayout();
+            tableLayoutPanel1.SuspendLayout();
+            tableLayoutPanel16.SuspendLayout();
+            tableLayoutPanel15.SuspendLayout();
+            tableLayoutPanel14.SuspendLayout();
+            tableLayoutPanel13.SuspendLayout();
+            tableLayoutPanel12.SuspendLayout();
+            tableLayoutPanel11.SuspendLayout();
+            tableLayoutPanel10.SuspendLayout();
+            tableLayoutPanel9.SuspendLayout();
             tableLayoutPanel7.SuspendLayout();
             tableLayoutPanel8.SuspendLayout();
-            tableLayoutPanel9.SuspendLayout();
-            tableLayoutPanel10.SuspendLayout();
-            tableLayoutPanel11.SuspendLayout();
-            tableLayoutPanel12.SuspendLayout();
-            tableLayoutPanel13.SuspendLayout();
-            tableLayoutPanel14.SuspendLayout();
-            tableLayoutPanel15.SuspendLayout();
-            tableLayoutPanel16.SuspendLayout();
-            tableLayoutPanel1.SuspendLayout();
+            tableLayoutPanel5.SuspendLayout();
+            tableLayoutPanel6.SuspendLayout();
+            tableLayoutPanel4.SuspendLayout();
+            tableLayoutPanel3.SuspendLayout();
             SuspendLayout();
             // 
             // byggeDatoDatePicker
@@ -415,75 +415,215 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle());
             tableLayoutPanel2.RowStyles.Add(new RowStyle());
             tableLayoutPanel2.RowStyles.Add(new RowStyle());
-            tableLayoutPanel2.Size = new Size(554, 627);
+            tableLayoutPanel2.Size = new Size(554, 624);
             tableLayoutPanel2.TabIndex = 1;
             // 
-            // tableLayoutPanel3
+            // tableLayoutPanel1
             // 
-            tableLayoutPanel3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanel3.ColumnCount = 2;
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel3.Controls.Add(boligOprettelsePrisLabel, 1, 0);
-            tableLayoutPanel3.Controls.Add(boligOprettelseSælgerLabel, 0, 0);
-            tableLayoutPanel3.Location = new Point(3, 48);
-            tableLayoutPanel3.Name = "tableLayoutPanel3";
-            tableLayoutPanel3.RowCount = 1;
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel3.Size = new Size(548, 37);
-            tableLayoutPanel3.TabIndex = 35;
+            tableLayoutPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel1.AutoSize = true;
+            tableLayoutPanel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            tableLayoutPanel1.ColumnCount = 3;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.54978F));
+            tableLayoutPanel1.Controls.Add(estimatePriceKnap, 1, 0);
+            tableLayoutPanel1.Controls.Add(opretBoligCancelButton, 0, 0);
+            tableLayoutPanel1.Controls.Add(opretBoligOpretButton, 2, 0);
+            tableLayoutPanel1.Location = new Point(0, 570);
+            tableLayoutPanel1.Margin = new Padding(0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Size = new Size(554, 54);
+            tableLayoutPanel1.TabIndex = 34;
             // 
-            // tableLayoutPanel4
+            // estimatePriceKnap
             // 
-            tableLayoutPanel4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanel4.AutoSize = true;
-            tableLayoutPanel4.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            tableLayoutPanel4.ColumnCount = 2;
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel4.Controls.Add(boligOprettelseBoligPrisTextbox, 1, 0);
-            tableLayoutPanel4.Controls.Add(boligOprettelseSælgerComboBox, 0, 0);
-            tableLayoutPanel4.Location = new Point(0, 88);
-            tableLayoutPanel4.Margin = new Padding(0, 0, 0, 0);
-            tableLayoutPanel4.Name = "tableLayoutPanel4";
-            tableLayoutPanel4.RowCount = 1;
-            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel4.Size = new Size(554, 55);
-            tableLayoutPanel4.TabIndex = 35;
+            estimatePriceKnap.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            estimatePriceKnap.AutoSize = true;
+            estimatePriceKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            estimatePriceKnap.BackColor = Color.Gold;
+            estimatePriceKnap.Location = new Point(187, 3);
+            estimatePriceKnap.Name = "estimatePriceKnap";
+            estimatePriceKnap.Size = new Size(178, 48);
+            estimatePriceKnap.TabIndex = 28;
+            estimatePriceKnap.Text = "Estimer Pris";
+            estimatePriceKnap.TextAlign = ContentAlignment.TopCenter;
+            estimatePriceKnap.UseVisualStyleBackColor = false;
+            estimatePriceKnap.Click += estimatePriceKnap_Click;
             // 
-            // tableLayoutPanel5
+            // opretBoligCancelButton
             // 
-            tableLayoutPanel5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanel5.AutoSize = true;
-            tableLayoutPanel5.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            tableLayoutPanel5.ColumnCount = 2;
-            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel5.Controls.Add(tableLayoutPanel6, 1, 0);
-            tableLayoutPanel5.Controls.Add(opretBoligAdresseLabel, 0, 0);
-            tableLayoutPanel5.Location = new Point(3, 146);
-            tableLayoutPanel5.Name = "tableLayoutPanel5";
-            tableLayoutPanel5.RowCount = 1;
-            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel5.Size = new Size(548, 32);
-            tableLayoutPanel5.TabIndex = 35;
+            opretBoligCancelButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            opretBoligCancelButton.AutoSize = true;
+            opretBoligCancelButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            opretBoligCancelButton.BackColor = Color.FromArgb(255, 100, 100);
+            opretBoligCancelButton.Location = new Point(3, 3);
+            opretBoligCancelButton.Name = "opretBoligCancelButton";
+            opretBoligCancelButton.Size = new Size(178, 48);
+            opretBoligCancelButton.TabIndex = 26;
+            opretBoligCancelButton.Text = "Annuller";
+            opretBoligCancelButton.UseVisualStyleBackColor = false;
+            opretBoligCancelButton.Click += opretBoligCancelButton_Click;
             // 
-            // tableLayoutPanel6
+            // opretBoligOpretButton
             // 
-            tableLayoutPanel6.AutoSize = true;
-            tableLayoutPanel6.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            tableLayoutPanel6.ColumnCount = 2;
-            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel6.Controls.Add(label2, 0, 0);
-            tableLayoutPanel6.Controls.Add(label3, 1, 0);
-            tableLayoutPanel6.Location = new Point(274, 0);
-            tableLayoutPanel6.Margin = new Padding(0, 0, 0, 0);
-            tableLayoutPanel6.Name = "tableLayoutPanel6";
-            tableLayoutPanel6.RowCount = 1;
-            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel6.Size = new Size(274, 32);
-            tableLayoutPanel6.TabIndex = 36;
+            opretBoligOpretButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            opretBoligOpretButton.AutoSize = true;
+            opretBoligOpretButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            opretBoligOpretButton.BackColor = Color.FromArgb(45, 199, 92);
+            opretBoligOpretButton.Location = new Point(371, 3);
+            opretBoligOpretButton.Name = "opretBoligOpretButton";
+            opretBoligOpretButton.Size = new Size(180, 48);
+            opretBoligOpretButton.TabIndex = 27;
+            opretBoligOpretButton.Text = "Opret";
+            opretBoligOpretButton.UseVisualStyleBackColor = false;
+            opretBoligOpretButton.Click += opretBoligOpretButton_Click;
+            // 
+            // tableLayoutPanel16
+            // 
+            tableLayoutPanel16.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel16.AutoSize = true;
+            tableLayoutPanel16.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            tableLayoutPanel16.ColumnCount = 2;
+            tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel16.Controls.Add(opretBoligEnergimærkeTextBox, 0, 0);
+            tableLayoutPanel16.Controls.Add(opretBoligStatusComboBox, 1, 0);
+            tableLayoutPanel16.Location = new Point(0, 519);
+            tableLayoutPanel16.Margin = new Padding(0);
+            tableLayoutPanel16.Name = "tableLayoutPanel16";
+            tableLayoutPanel16.RowCount = 1;
+            tableLayoutPanel16.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel16.Size = new Size(554, 51);
+            tableLayoutPanel16.TabIndex = 35;
+            // 
+            // tableLayoutPanel15
+            // 
+            tableLayoutPanel15.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel15.AutoSize = true;
+            tableLayoutPanel15.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            tableLayoutPanel15.ColumnCount = 2;
+            tableLayoutPanel15.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel15.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel15.Controls.Add(opretBoligEnergimærkeLabel, 0, 0);
+            tableLayoutPanel15.Controls.Add(opretBoligStatusLabel, 1, 0);
+            tableLayoutPanel15.Location = new Point(0, 487);
+            tableLayoutPanel15.Margin = new Padding(0);
+            tableLayoutPanel15.Name = "tableLayoutPanel15";
+            tableLayoutPanel15.RowCount = 1;
+            tableLayoutPanel15.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel15.Size = new Size(554, 32);
+            tableLayoutPanel15.TabIndex = 35;
+            // 
+            // tableLayoutPanel14
+            // 
+            tableLayoutPanel14.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel14.AutoSize = true;
+            tableLayoutPanel14.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            tableLayoutPanel14.ColumnCount = 2;
+            tableLayoutPanel14.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel14.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel14.Controls.Add(byggeDatoDatePicker, 1, 0);
+            tableLayoutPanel14.Controls.Add(opretBoligRegionComboBox, 0, 0);
+            tableLayoutPanel14.Location = new Point(0, 436);
+            tableLayoutPanel14.Margin = new Padding(0);
+            tableLayoutPanel14.Name = "tableLayoutPanel14";
+            tableLayoutPanel14.RowCount = 1;
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel14.Size = new Size(554, 51);
+            tableLayoutPanel14.TabIndex = 35;
+            // 
+            // tableLayoutPanel13
+            // 
+            tableLayoutPanel13.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel13.AutoSize = true;
+            tableLayoutPanel13.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            tableLayoutPanel13.ColumnCount = 2;
+            tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel13.Controls.Add(opretBoligRegionLabel, 0, 0);
+            tableLayoutPanel13.Controls.Add(opretBoligByggedatoLabel, 1, 0);
+            tableLayoutPanel13.Location = new Point(0, 404);
+            tableLayoutPanel13.Margin = new Padding(0);
+            tableLayoutPanel13.Name = "tableLayoutPanel13";
+            tableLayoutPanel13.RowCount = 1;
+            tableLayoutPanel13.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel13.Size = new Size(554, 32);
+            tableLayoutPanel13.TabIndex = 35;
+            // 
+            // tableLayoutPanel12
+            // 
+            tableLayoutPanel12.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel12.AutoSize = true;
+            tableLayoutPanel12.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            tableLayoutPanel12.ColumnCount = 2;
+            tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel12.Controls.Add(opretBoligPostnummerTextBox, 0, 0);
+            tableLayoutPanel12.Controls.Add(boligOprettelseBoligtypeComboBox, 1, 0);
+            tableLayoutPanel12.Location = new Point(0, 353);
+            tableLayoutPanel12.Margin = new Padding(0);
+            tableLayoutPanel12.Name = "tableLayoutPanel12";
+            tableLayoutPanel12.RowCount = 1;
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel12.Size = new Size(554, 51);
+            tableLayoutPanel12.TabIndex = 35;
+            // 
+            // tableLayoutPanel11
+            // 
+            tableLayoutPanel11.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel11.AutoSize = true;
+            tableLayoutPanel11.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            tableLayoutPanel11.ColumnCount = 2;
+            tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel11.Controls.Add(opretBoligPostnummerLabel, 0, 0);
+            tableLayoutPanel11.Controls.Add(opretBoligBoligtypeLabel, 1, 0);
+            tableLayoutPanel11.Location = new Point(0, 321);
+            tableLayoutPanel11.Margin = new Padding(0);
+            tableLayoutPanel11.Name = "tableLayoutPanel11";
+            tableLayoutPanel11.RowCount = 1;
+            tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel11.Size = new Size(554, 32);
+            tableLayoutPanel11.TabIndex = 35;
+            // 
+            // tableLayoutPanel10
+            // 
+            tableLayoutPanel10.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel10.AutoSize = true;
+            tableLayoutPanel10.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            tableLayoutPanel10.ColumnCount = 2;
+            tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel10.Controls.Add(opretBoligByTextbox, 0, 0);
+            tableLayoutPanel10.Controls.Add(opretBoligAntalVærelserTextBox, 1, 0);
+            tableLayoutPanel10.Location = new Point(0, 270);
+            tableLayoutPanel10.Margin = new Padding(0);
+            tableLayoutPanel10.Name = "tableLayoutPanel10";
+            tableLayoutPanel10.RowCount = 1;
+            tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel10.Size = new Size(554, 51);
+            tableLayoutPanel10.TabIndex = 35;
+            // 
+            // tableLayoutPanel9
+            // 
+            tableLayoutPanel9.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel9.AutoSize = true;
+            tableLayoutPanel9.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            tableLayoutPanel9.ColumnCount = 2;
+            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel9.Controls.Add(opretBoligAntalVærelserLabel, 1, 0);
+            tableLayoutPanel9.Controls.Add(opretBoligByLabel, 0, 0);
+            tableLayoutPanel9.Location = new Point(0, 238);
+            tableLayoutPanel9.Margin = new Padding(0);
+            tableLayoutPanel9.Name = "tableLayoutPanel9";
+            tableLayoutPanel9.RowCount = 1;
+            tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel9.Size = new Size(554, 32);
+            tableLayoutPanel9.TabIndex = 35;
             // 
             // tableLayoutPanel7
             // 
@@ -513,219 +653,79 @@
             tableLayoutPanel8.Controls.Add(opretBoligBoligarealTextbox, 0, 0);
             tableLayoutPanel8.Controls.Add(opretBoligGrundarealTextbox, 1, 0);
             tableLayoutPanel8.Location = new Point(274, 0);
-            tableLayoutPanel8.Margin = new Padding(0, 0, 0, 0);
+            tableLayoutPanel8.Margin = new Padding(0);
             tableLayoutPanel8.Name = "tableLayoutPanel8";
             tableLayoutPanel8.RowCount = 1;
             tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel8.Size = new Size(274, 51);
             tableLayoutPanel8.TabIndex = 36;
             // 
-            // tableLayoutPanel9
+            // tableLayoutPanel5
             // 
-            tableLayoutPanel9.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanel9.AutoSize = true;
-            tableLayoutPanel9.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            tableLayoutPanel9.ColumnCount = 2;
-            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel9.Controls.Add(opretBoligAntalVærelserLabel, 1, 0);
-            tableLayoutPanel9.Controls.Add(opretBoligByLabel, 0, 0);
-            tableLayoutPanel9.Location = new Point(0, 238);
-            tableLayoutPanel9.Margin = new Padding(0, 0, 0, 0);
-            tableLayoutPanel9.Name = "tableLayoutPanel9";
-            tableLayoutPanel9.RowCount = 1;
-            tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel9.Size = new Size(554, 32);
-            tableLayoutPanel9.TabIndex = 35;
+            tableLayoutPanel5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel5.AutoSize = true;
+            tableLayoutPanel5.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            tableLayoutPanel5.ColumnCount = 2;
+            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel5.Controls.Add(tableLayoutPanel6, 1, 0);
+            tableLayoutPanel5.Controls.Add(opretBoligAdresseLabel, 0, 0);
+            tableLayoutPanel5.Location = new Point(3, 146);
+            tableLayoutPanel5.Name = "tableLayoutPanel5";
+            tableLayoutPanel5.RowCount = 1;
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel5.Size = new Size(548, 32);
+            tableLayoutPanel5.TabIndex = 35;
             // 
-            // tableLayoutPanel10
+            // tableLayoutPanel6
             // 
-            tableLayoutPanel10.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanel10.AutoSize = true;
-            tableLayoutPanel10.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            tableLayoutPanel10.ColumnCount = 2;
-            tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel10.Controls.Add(opretBoligByTextbox, 0, 0);
-            tableLayoutPanel10.Controls.Add(opretBoligAntalVærelserTextBox, 1, 0);
-            tableLayoutPanel10.Location = new Point(0, 270);
-            tableLayoutPanel10.Margin = new Padding(0, 0, 0, 0);
-            tableLayoutPanel10.Name = "tableLayoutPanel10";
-            tableLayoutPanel10.RowCount = 1;
-            tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel10.Size = new Size(554, 51);
-            tableLayoutPanel10.TabIndex = 35;
+            tableLayoutPanel6.AutoSize = true;
+            tableLayoutPanel6.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            tableLayoutPanel6.ColumnCount = 2;
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel6.Controls.Add(label2, 0, 0);
+            tableLayoutPanel6.Controls.Add(label3, 1, 0);
+            tableLayoutPanel6.Location = new Point(274, 0);
+            tableLayoutPanel6.Margin = new Padding(0);
+            tableLayoutPanel6.Name = "tableLayoutPanel6";
+            tableLayoutPanel6.RowCount = 1;
+            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel6.Size = new Size(274, 32);
+            tableLayoutPanel6.TabIndex = 36;
             // 
-            // tableLayoutPanel11
+            // tableLayoutPanel4
             // 
-            tableLayoutPanel11.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanel11.AutoSize = true;
-            tableLayoutPanel11.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            tableLayoutPanel11.ColumnCount = 2;
-            tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel11.Controls.Add(opretBoligPostnummerLabel, 0, 0);
-            tableLayoutPanel11.Controls.Add(opretBoligBoligtypeLabel, 1, 0);
-            tableLayoutPanel11.Location = new Point(0, 321);
-            tableLayoutPanel11.Margin = new Padding(0, 0, 0, 0);
-            tableLayoutPanel11.Name = "tableLayoutPanel11";
-            tableLayoutPanel11.RowCount = 1;
-            tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel11.Size = new Size(554, 32);
-            tableLayoutPanel11.TabIndex = 35;
+            tableLayoutPanel4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel4.AutoSize = true;
+            tableLayoutPanel4.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            tableLayoutPanel4.ColumnCount = 2;
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel4.Controls.Add(boligOprettelseBoligPrisTextbox, 1, 0);
+            tableLayoutPanel4.Controls.Add(boligOprettelseSælgerComboBox, 0, 0);
+            tableLayoutPanel4.Location = new Point(0, 88);
+            tableLayoutPanel4.Margin = new Padding(0);
+            tableLayoutPanel4.Name = "tableLayoutPanel4";
+            tableLayoutPanel4.RowCount = 1;
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel4.Size = new Size(554, 55);
+            tableLayoutPanel4.TabIndex = 35;
             // 
-            // tableLayoutPanel12
+            // tableLayoutPanel3
             // 
-            tableLayoutPanel12.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanel12.AutoSize = true;
-            tableLayoutPanel12.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            tableLayoutPanel12.ColumnCount = 2;
-            tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel12.Controls.Add(opretBoligPostnummerTextBox, 0, 0);
-            tableLayoutPanel12.Controls.Add(boligOprettelseBoligtypeComboBox, 1, 0);
-            tableLayoutPanel12.Location = new Point(0, 353);
-            tableLayoutPanel12.Margin = new Padding(0, 0, 0, 0);
-            tableLayoutPanel12.Name = "tableLayoutPanel12";
-            tableLayoutPanel12.RowCount = 1;
-            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel12.Size = new Size(554, 52);
-            tableLayoutPanel12.TabIndex = 35;
-            // 
-            // tableLayoutPanel13
-            // 
-            tableLayoutPanel13.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanel13.AutoSize = true;
-            tableLayoutPanel13.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            tableLayoutPanel13.ColumnCount = 2;
-            tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel13.Controls.Add(opretBoligRegionLabel, 0, 0);
-            tableLayoutPanel13.Controls.Add(opretBoligByggedatoLabel, 1, 0);
-            tableLayoutPanel13.Location = new Point(0, 405);
-            tableLayoutPanel13.Margin = new Padding(0, 0, 0, 0);
-            tableLayoutPanel13.Name = "tableLayoutPanel13";
-            tableLayoutPanel13.RowCount = 1;
-            tableLayoutPanel13.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel13.Size = new Size(554, 32);
-            tableLayoutPanel13.TabIndex = 35;
-            // 
-            // tableLayoutPanel14
-            // 
-            tableLayoutPanel14.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanel14.AutoSize = true;
-            tableLayoutPanel14.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            tableLayoutPanel14.ColumnCount = 2;
-            tableLayoutPanel14.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel14.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel14.Controls.Add(byggeDatoDatePicker, 1, 0);
-            tableLayoutPanel14.Controls.Add(opretBoligRegionComboBox, 0, 0);
-            tableLayoutPanel14.Location = new Point(0, 437);
-            tableLayoutPanel14.Margin = new Padding(0, 0, 0, 0);
-            tableLayoutPanel14.Name = "tableLayoutPanel14";
-            tableLayoutPanel14.RowCount = 1;
-            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel14.Size = new Size(554, 52);
-            tableLayoutPanel14.TabIndex = 35;
-            // 
-            // tableLayoutPanel15
-            // 
-            tableLayoutPanel15.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanel15.AutoSize = true;
-            tableLayoutPanel15.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            tableLayoutPanel15.ColumnCount = 2;
-            tableLayoutPanel15.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel15.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel15.Controls.Add(opretBoligEnergimærkeLabel, 0, 0);
-            tableLayoutPanel15.Controls.Add(opretBoligStatusLabel, 1, 0);
-            tableLayoutPanel15.Location = new Point(0, 489);
-            tableLayoutPanel15.Margin = new Padding(0, 0, 0, 0);
-            tableLayoutPanel15.Name = "tableLayoutPanel15";
-            tableLayoutPanel15.RowCount = 1;
-            tableLayoutPanel15.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel15.Size = new Size(554, 32);
-            tableLayoutPanel15.TabIndex = 35;
-            // 
-            // tableLayoutPanel16
-            // 
-            tableLayoutPanel16.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanel16.AutoSize = true;
-            tableLayoutPanel16.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            tableLayoutPanel16.ColumnCount = 2;
-            tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel16.Controls.Add(opretBoligEnergimærkeTextBox, 0, 0);
-            tableLayoutPanel16.Controls.Add(opretBoligStatusComboBox, 1, 0);
-            tableLayoutPanel16.Location = new Point(0, 521);
-            tableLayoutPanel16.Margin = new Padding(0, 0, 0, 0);
-            tableLayoutPanel16.Name = "tableLayoutPanel16";
-            tableLayoutPanel16.RowCount = 1;
-            tableLayoutPanel16.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel16.Size = new Size(554, 52);
-            tableLayoutPanel16.TabIndex = 35;
-            // 
-            // opretBoligOpretButton
-            // 
-            opretBoligOpretButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            opretBoligOpretButton.AutoSize = true;
-            opretBoligOpretButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            opretBoligOpretButton.BackColor = Color.FromArgb(45, 199, 92);
-            opretBoligOpretButton.Location = new Point(371, 3);
-            opretBoligOpretButton.Name = "opretBoligOpretButton";
-            opretBoligOpretButton.Size = new Size(180, 48);
-            opretBoligOpretButton.TabIndex = 27;
-            opretBoligOpretButton.Text = "Opret";
-            opretBoligOpretButton.UseVisualStyleBackColor = false;
-            opretBoligOpretButton.Click += opretBoligOpretButton_Click;
-            // 
-            // opretBoligCancelButton
-            // 
-            opretBoligCancelButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            opretBoligCancelButton.AutoSize = true;
-            opretBoligCancelButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            opretBoligCancelButton.BackColor = Color.FromArgb(255, 100, 100);
-            opretBoligCancelButton.Location = new Point(3, 3);
-            opretBoligCancelButton.Name = "opretBoligCancelButton";
-            opretBoligCancelButton.Size = new Size(178, 48);
-            opretBoligCancelButton.TabIndex = 26;
-            opretBoligCancelButton.Text = "Annuller";
-            opretBoligCancelButton.UseVisualStyleBackColor = false;
-            opretBoligCancelButton.Click += opretBoligCancelButton_Click;
-            // 
-            // estimatePriceKnap
-            // 
-            estimatePriceKnap.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            estimatePriceKnap.AutoSize = true;
-            estimatePriceKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            estimatePriceKnap.BackColor = Color.Gold;
-            estimatePriceKnap.Location = new Point(187, 3);
-            estimatePriceKnap.Name = "estimatePriceKnap";
-            estimatePriceKnap.Size = new Size(178, 48);
-            estimatePriceKnap.TabIndex = 28;
-            estimatePriceKnap.Text = "Estimer Pris";
-            estimatePriceKnap.TextAlign = ContentAlignment.TopCenter;
-            estimatePriceKnap.UseVisualStyleBackColor = false;
-            estimatePriceKnap.Click += estimatePriceKnap_Click;
-            // 
-            // tableLayoutPanel1
-            // 
-            tableLayoutPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanel1.AutoSize = true;
-            tableLayoutPanel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            tableLayoutPanel1.ColumnCount = 3;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.54978F));
-            tableLayoutPanel1.Controls.Add(estimatePriceKnap, 1, 0);
-            tableLayoutPanel1.Controls.Add(opretBoligCancelButton, 0, 0);
-            tableLayoutPanel1.Controls.Add(opretBoligOpretButton, 2, 0);
-            tableLayoutPanel1.Location = new Point(0, 573);
-            tableLayoutPanel1.Margin = new Padding(0, 0, 0, 0);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 1;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(554, 54);
-            tableLayoutPanel1.TabIndex = 34;
+            tableLayoutPanel3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel3.ColumnCount = 2;
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel3.Controls.Add(boligOprettelsePrisLabel, 1, 0);
+            tableLayoutPanel3.Controls.Add(boligOprettelseSælgerLabel, 0, 0);
+            tableLayoutPanel3.Location = new Point(3, 48);
+            tableLayoutPanel3.Name = "tableLayoutPanel3";
+            tableLayoutPanel3.RowCount = 1;
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel3.Size = new Size(548, 37);
+            tableLayoutPanel3.TabIndex = 35;
             // 
             // BoligRegistration
             // 
@@ -741,35 +741,35 @@
             Text = "BoligRegistration";
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
-            tableLayoutPanel3.ResumeLayout(false);
-            tableLayoutPanel3.PerformLayout();
-            tableLayoutPanel4.ResumeLayout(false);
-            tableLayoutPanel4.PerformLayout();
-            tableLayoutPanel5.ResumeLayout(false);
-            tableLayoutPanel5.PerformLayout();
-            tableLayoutPanel6.ResumeLayout(false);
-            tableLayoutPanel6.PerformLayout();
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
+            tableLayoutPanel16.ResumeLayout(false);
+            tableLayoutPanel16.PerformLayout();
+            tableLayoutPanel15.ResumeLayout(false);
+            tableLayoutPanel15.PerformLayout();
+            tableLayoutPanel14.ResumeLayout(false);
+            tableLayoutPanel13.ResumeLayout(false);
+            tableLayoutPanel13.PerformLayout();
+            tableLayoutPanel12.ResumeLayout(false);
+            tableLayoutPanel12.PerformLayout();
+            tableLayoutPanel11.ResumeLayout(false);
+            tableLayoutPanel11.PerformLayout();
+            tableLayoutPanel10.ResumeLayout(false);
+            tableLayoutPanel10.PerformLayout();
+            tableLayoutPanel9.ResumeLayout(false);
+            tableLayoutPanel9.PerformLayout();
             tableLayoutPanel7.ResumeLayout(false);
             tableLayoutPanel7.PerformLayout();
             tableLayoutPanel8.ResumeLayout(false);
             tableLayoutPanel8.PerformLayout();
-            tableLayoutPanel9.ResumeLayout(false);
-            tableLayoutPanel9.PerformLayout();
-            tableLayoutPanel10.ResumeLayout(false);
-            tableLayoutPanel10.PerformLayout();
-            tableLayoutPanel11.ResumeLayout(false);
-            tableLayoutPanel11.PerformLayout();
-            tableLayoutPanel12.ResumeLayout(false);
-            tableLayoutPanel12.PerformLayout();
-            tableLayoutPanel13.ResumeLayout(false);
-            tableLayoutPanel13.PerformLayout();
-            tableLayoutPanel14.ResumeLayout(false);
-            tableLayoutPanel15.ResumeLayout(false);
-            tableLayoutPanel15.PerformLayout();
-            tableLayoutPanel16.ResumeLayout(false);
-            tableLayoutPanel16.PerformLayout();
-            tableLayoutPanel1.ResumeLayout(false);
-            tableLayoutPanel1.PerformLayout();
+            tableLayoutPanel5.ResumeLayout(false);
+            tableLayoutPanel5.PerformLayout();
+            tableLayoutPanel6.ResumeLayout(false);
+            tableLayoutPanel6.PerformLayout();
+            tableLayoutPanel4.ResumeLayout(false);
+            tableLayoutPanel4.PerformLayout();
+            tableLayoutPanel3.ResumeLayout(false);
+            tableLayoutPanel3.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
