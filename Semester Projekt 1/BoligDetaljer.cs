@@ -30,7 +30,7 @@ namespace Semester_Projekt_1
             editableTextBoxes = new List<TextBox>() { prisTextBox };
             editableComboBoxes = new List<ComboBox>() { };
             boligInfoLabel.Text = $"Bolig:[{bolig.Cells["BoligID"].Value.ToString()}] Info";
-            if(SessionManager.EjendomsmæglerId != Convert.ToInt32(bolig.Cells["EjendomsmæglerID"].Value))
+            if(SessionManager.EjendomsmæglerId != Convert.ToInt32(bolig.Cells["EjendomsmæglerID"].Value) && SessionManager.AdgangsNiveau != 2)
             {
                 redigerButton.Enabled = false;
                 gemÆndringerButton.Enabled = false;
@@ -72,7 +72,7 @@ namespace Semester_Projekt_1
             sælgerTextBox.Text = bolig.Rows[0]["SælgerID"].ToString();
             byggeDatoTextBox.Text = bolig.Rows[0]["ByggeDato"].ToString();
             boligInfoLabel.Text = $"Bolig:[{bolig.Rows[0]["BoligID"].ToString()}] Info";
-            if (SessionManager.EjendomsmæglerId != Convert.ToInt32(bolig.Rows[0]["EjendomsmæglerID"]))
+            if (SessionManager.EjendomsmæglerId != Convert.ToInt32(bolig.Rows[0]["EjendomsmæglerID"])&&SessionManager.AdgangsNiveau != 2)
             {
                 redigerButton.Enabled = false;
                 gemÆndringerButton.Enabled = false;
