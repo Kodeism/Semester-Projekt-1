@@ -411,7 +411,9 @@ namespace Semester_Projekt_1
                 if (e.RowIndex < 0)
                     return;
                 DataGridViewRow selectedRow = alleDataGridView.Rows[e.RowIndex];
-                BoligDetaljer bd = new BoligDetaljer(selectedRow);
+                BoligLogic boligLogic = new BoligLogic();
+                DataTable datas = boligLogic.GetBoligDetails(Convert.ToInt32(selectedRow.Cells["BoligID"].Value));
+                BoligDetaljer bd = new BoligDetaljer(datas);
                 bd.Show();
             }
         }

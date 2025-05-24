@@ -1,6 +1,7 @@
 ﻿using DataAccess.Repositories;
 using Models;
 using System.ComponentModel.DataAnnotations;
+using System.Data;
 
 namespace BusineesLogic
 {
@@ -71,6 +72,12 @@ namespace BusineesLogic
         {
             // Henter salgsinfo for en given boligID
             return repository.GetSaleInfo(boligID);
+        }
+
+        public DataTable GetBoligDetails(int boligID)
+        {
+            // Henter detaljer for en given boligID
+            return repository.getBoligDetail(boligID);
         }
 
         public int PrisEsmator(int boligAreal, int grundAreal, string boligType, int byggedato)

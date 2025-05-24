@@ -12,15 +12,15 @@ namespace Semester_Projekt_1
 {
     public partial class Delete_Sell : Form
     {
-        DataGridViewRow Row;
-        public Delete_Sell(DataGridViewRow row)
+        int BoligID;
+        public Delete_Sell(int boligID)
         {
             InitializeComponent();
-            Row = row;
+            BoligID = boligID;
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            SaleRegistration saleRegistration = new SaleRegistration(Convert.ToInt32(Row.Cells["BoligID"].Value));
+            SaleRegistration saleRegistration = new SaleRegistration(BoligID);
             saleRegistration.ShowDialog();
             this.Close();
         }
@@ -28,11 +28,8 @@ namespace Semester_Projekt_1
         private void button1_Click(object sender, EventArgs e)
         {
             // Hent værdien af BoligID i den valgte række
-            var boligIDValue = Row.Cells["BoligID"].Value;
 
-            int boligID = Convert.ToInt32(boligIDValue);
-
-            DeleteBolig deleteBolig = new DeleteBolig(boligID);
+            DeleteBolig deleteBolig = new DeleteBolig(BoligID);
             deleteBolig.Show();
         }
     }

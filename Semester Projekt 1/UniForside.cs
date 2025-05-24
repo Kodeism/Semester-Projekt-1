@@ -167,20 +167,23 @@ namespace Semester_Projekt_1
             }
             if (currentMode == Mode.MineB)
             {
-                if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
-                {
-                    DataGridView uniDataGridView = (DataGridView)sender;
-
-                    // Hent værdien af BoligID i den valgte række
-                    var boligIDValue = uniDataGridView.Rows[e.RowIndex].Cells["BoligID"].Value;
-
-                    // Konverter evt. til int hvis nødvendigt
-                    int boligID = Convert.ToInt32(boligIDValue);
-
-                    // Brug boligId som du vil
-                    DeleteBolig deleteBolig = new DeleteBolig(boligID);
-                    deleteBolig.Show();
-                }
+                if (e.RowIndex < 0)
+                    return;
+                DataGridViewRow selectedRow = uniDataGridView.Rows[e.RowIndex];
+                BoligLogic boligLogic = new BoligLogic();
+                DataTable datas = boligLogic.GetBoligDetails(Convert.ToInt32(selectedRow.Cells["BoligID"].Value));
+                BoligDetaljer bd = new BoligDetaljer(datas);
+                bd.Show();
+            }
+            if(currentMode == Mode.AlleB)
+            {
+                if (e.RowIndex < 0)
+                    return;
+                DataGridViewRow selectedRow = uniDataGridView.Rows[e.RowIndex];
+                BoligLogic boligLogic = new BoligLogic();
+                DataTable datas = boligLogic.GetBoligDetails(Convert.ToInt32(selectedRow.Cells["BoligID"].Value));
+                BoligDetaljer bd = new BoligDetaljer(datas);
+                bd.Show();
             }
         }
 

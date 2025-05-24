@@ -19,6 +19,7 @@ namespace Semester_Projekt_1
         private BoligLogic boligLogic;
         private Bolig boligDetaljer;
         private DataGridViewRow Bolig;
+        int BoligID;
 
         public BoligDetaljer(DataGridViewRow bolig)
         {
@@ -35,6 +36,49 @@ namespace Semester_Projekt_1
                 gemÆndringerButton.Enabled = false;
                 createSaleButton.Enabled = false;
             }
+            prisTextBox.Text = Bolig.Cells["Pris"].Value.ToString();
+            adresseTextBox.Text = Bolig.Cells["Adresse"].Value.ToString();
+            byTextBox.Text = Bolig.Cells["ByNavn"].Value.ToString();
+            typeTextBox.Text = Bolig.Cells["BoligType"].Value.ToString(); ;
+            regionTextBox.Text = "N/A";
+            postnrTextBox.Text = Bolig.Cells["Postnummer"].Value.ToString();
+            grundArealTextBox.Text = Bolig.Cells["GrundStørrelse"].Value.ToString();
+            boligarealTextBox.Text = Bolig.Cells["BoligAreal"].Value.ToString();
+            statusTextBox.Text = Bolig.Cells["Status"].Value.ToString();
+            energimærkeTextBox.Text = Bolig.Cells["EnergiMærke"].Value.ToString();
+            værelserTextBox.Text = Bolig.Cells["Værelser"].Value.ToString();
+            mæglerTextBox.Text = Bolig.Cells["EjendomsmæglerID"].Value.ToString();
+            sælgerTextBox.Text = Bolig.Cells["SælgerID"].Value.ToString();
+            byggeDatoTextBox.Text = Bolig.Cells["ByggeDato"].Value.ToString();
+            BoligID = Convert.ToInt32(bolig.Cells["BoligID"].Value);
+        }
+        public BoligDetaljer(DataTable bolig)
+        {
+            InitializeComponent();
+            boligLogic = new BoligLogic();
+            editableTextBoxes = new List<TextBox>() { prisTextBox };
+            prisTextBox.Text = bolig.Rows[0]["Pris"].ToString();
+            adresseTextBox.Text = bolig.Rows[0]["Adresse"].ToString();
+            byTextBox.Text = bolig.Rows[0]["ByNavn"].ToString();
+            typeTextBox.Text = bolig.Rows[0]["BoligType"].ToString(); ;
+            regionTextBox.Text = "N/A";
+            postnrTextBox.Text = bolig.Rows[0]["Postnummer"].ToString();
+            grundArealTextBox.Text = bolig.Rows[0]["GrundStørrelse"].ToString();
+            boligarealTextBox.Text = bolig.Rows[0]["BoligAreal"].ToString();
+            statusTextBox.Text = bolig.Rows[0]["Status"].ToString();
+            energimærkeTextBox.Text = bolig.Rows[0]["EnergiMærke"].ToString();
+            værelserTextBox.Text = bolig.Rows[0]["Værelser"].ToString();
+            mæglerTextBox.Text = bolig.Rows[0]["EjendomsmæglerID"].ToString();
+            sælgerTextBox.Text = bolig.Rows[0]["SælgerID"].ToString();
+            byggeDatoTextBox.Text = bolig.Rows[0]["ByggeDato"].ToString();
+            boligInfoLabel.Text = $"Bolig:[{bolig.Rows[0]["BoligID"].ToString()}] Info";
+            if (SessionManager.EjendomsmæglerId != Convert.ToInt32(bolig.Rows[0]["EjendomsmæglerID"]))
+            {
+                redigerButton.Enabled = false;
+                gemÆndringerButton.Enabled = false;
+                createSaleButton.Enabled = false;
+            }
+            BoligID = Convert.ToInt32(bolig.Rows[0]["BoligID"]);
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -44,7 +88,7 @@ namespace Semester_Projekt_1
 
         private void createSaleButton_Click(object sender, EventArgs e)
         {
-            Delete_Sell delete_Sell = new Delete_Sell(Bolig);
+            Delete_Sell delete_Sell = new Delete_Sell(BoligID);
             delete_Sell.ShowDialog();
         }
 
@@ -62,20 +106,6 @@ namespace Semester_Projekt_1
 
         private void BoligDetaljer_Load(object sender, EventArgs e)
         {
-            prisTextBox.Text = Bolig.Cells["Pris"].Value.ToString();
-            adresseTextBox.Text = Bolig.Cells["Adresse"].Value.ToString();
-            byTextBox.Text = Bolig.Cells["ByNavn"].Value.ToString();
-            typeTextBox.Text = Bolig.Cells["BoligType"].Value.ToString(); ;
-            regionTextBox.Text = "N/A";
-            postnrTextBox.Text = Bolig.Cells["Postnummer"].Value.ToString();
-            grundArealTextBox.Text = Bolig.Cells["GrundStørrelse"].Value.ToString();
-            boligarealTextBox.Text = Bolig.Cells["BoligAreal"].Value.ToString();
-            statusTextBox.Text = Bolig.Cells["Status"].Value.ToString();
-            energimærkeTextBox.Text = Bolig.Cells["EnergiMærke"].Value.ToString();
-            værelserTextBox.Text = Bolig.Cells["Værelser"].Value.ToString();
-            mæglerTextBox.Text = Bolig.Cells["EjendomsmæglerID"].Value.ToString();
-            sælgerTextBox.Text = Bolig.Cells["SælgerID"].Value.ToString();
-            byggeDatoTextBox.Text = Bolig.Cells["ByggeDato"].Value.ToString();
         }
 
         private void gemÆndringerButton_Click(object sender, EventArgs e)
@@ -90,7 +120,7 @@ namespace Semester_Projekt_1
                 MessageBox.Show("Pris skal inkluderes og kan kun skrives med tal", "Pris", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            boligLogic.UpdateBoligPris(Pris, Convert.ToInt32(Bolig.Cells["BoligID"].Value));
+            boligLogic.UpdateBoligPris(Pris, BoligID);
             prisTextBox.Enabled = false;
         }
 

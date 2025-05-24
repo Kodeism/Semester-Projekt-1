@@ -258,9 +258,9 @@ namespace DataAccess.Repositories
         {
             DataTable boligDetail = new DataTable();
             SqlCommand command = connection.CreateCommand();
-            var sql = """
+            var sql = $"""
                 SELECT * from Bolig
-                WHERE BoligID = @BoligID
+                WHERE BoligID = {boligID}
                 """;
             DataTable dataTable = new DataTable();
             using (SqlCommand cmd = new SqlCommand(sql, connection))
