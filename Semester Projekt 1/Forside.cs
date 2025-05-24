@@ -119,6 +119,15 @@ namespace Semester_Projekt_1
             antalSalgLabel.Text = Convert.ToInt64(Data["label"][6]).ToString("N0");
             sumPengeSalgLabel.Text = Convert.ToInt64(Data["label"][7]).ToString("N0") + " kr.";
             nyeBoliger.DataSource = Data["tabel"][0];
+            nyeBoliger.Columns["BoligID"].Visible = false;
+            nyeBoliger.Columns["Adresse"].Visible = false;
+            nyeBoliger.Columns["Postnummer"].Visible = false;
+            nyeBoliger.Columns["BoligAreal"].Visible = false;
+            nyeBoliger.Columns["GrundStørrelse"].Visible = false;
+            nyeBoliger.Columns["EnergiMærke"].Visible = false;
+            nyeBoliger.Columns["EjendomsmæglerID"].Visible = false;
+            nyeBoliger.Columns["SælgerID"].Visible = false;
+            nyeBoliger.Columns["Status"].Visible = false;
             nyeKøbere.DataSource = Data["tabel"][1];
             boligerBoligTypePlot.UserInputProcessor.IsEnabled = false;
             køberBoligTypePlot.UserInputProcessor.IsEnabled = false;
@@ -132,7 +141,16 @@ namespace Semester_Projekt_1
 
         private void boligerLayoutPanel_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void nyeBoliger_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+            DataGridViewRow selectedRow = nyeBoliger.Rows[e.RowIndex];
+            BoligDetaljer bd = new BoligDetaljer(selectedRow);
+            bd.Show();
         }
     }
 }

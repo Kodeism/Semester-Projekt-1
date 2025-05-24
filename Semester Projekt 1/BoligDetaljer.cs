@@ -18,15 +18,23 @@ namespace Semester_Projekt_1
         private List<ComboBox> editableComboBoxes;
         private BoligLogic boligLogic;
         private Bolig boligDetaljer;
+        private DataGridViewRow Bolig;
 
-        public BoligDetaljer(int boligID)
+        public BoligDetaljer(DataGridViewRow bolig)
         {
             InitializeComponent();
 
+            Bolig = bolig;
             boligLogic = new BoligLogic();
-            boligDetaljer = boligLogic.GetBolig(boligID);
             editableTextBoxes = new List<TextBox>() { prisTextBox };
             editableComboBoxes = new List<ComboBox>() { };
+            boligInfoLabel.Text = $"Bolig:[{bolig.Cells["BoligID"].Value.ToString()}] Info";
+            if(SessionManager.EjendomsmæglerId != Convert.ToInt32(bolig.Cells["EjendomsmæglerID"].Value))
+            {
+                redigerButton.Enabled = false;
+                gemÆndringerButton.Enabled = false;
+                createSaleButton.Enabled = false;
+            }
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -36,7 +44,8 @@ namespace Semester_Projekt_1
 
         private void createSaleButton_Click(object sender, EventArgs e)
         {
-            //opret salg med valgte bolig
+            Delete_Sell delete_Sell = new Delete_Sell(Bolig);
+            delete_Sell.ShowDialog();
         }
 
         private void redigerButton_Click(object sender, EventArgs e)
@@ -53,27 +62,41 @@ namespace Semester_Projekt_1
 
         private void BoligDetaljer_Load(object sender, EventArgs e)
         {
-            prisTextBox.Text = boligDetaljer.Pris.ToString();
-            adresseTextBox.Text = boligDetaljer.Adresse;
-            byTextBox.Text = boligDetaljer.ByNavn;
-            typeComboBox.Text = boligDetaljer.Type;
-            regionComboBox.Text = "";
-            postnrTextBox.Text = boligDetaljer.PostNummer.ToString();
-            grundArealTextBox.Text = boligDetaljer.GrundStørrelse.ToString();
-            boligarealTextBox.Text = boligDetaljer.BoligAreal.ToString();
-            statusComboBox.Text = boligDetaljer.Status;
-            energimærkeTextBox.Text = boligDetaljer.EnergiMærke;
-            værelserTextBox.Text = boligDetaljer.Værelser.ToString();
-            mæglerComboBox.Text = boligDetaljer.EjendomsmæglerNavn;
-            sælgerTextBox.Text = boligDetaljer.SælgerNavn;
-
+            prisTextBox.Text = Bolig.Cells["Pris"].Value.ToString();
+            adresseTextBox.Text = Bolig.Cells["Adresse"].Value.ToString();
+            byTextBox.Text = Bolig.Cells["ByNavn"].Value.ToString();
+            typeTextBox.Text = Bolig.Cells["BoligType"].Value.ToString(); ;
+            regionTextBox.Text = "N/A";
+            postnrTextBox.Text = Bolig.Cells["Postnummer"].Value.ToString();
+            grundArealTextBox.Text = Bolig.Cells["GrundStørrelse"].Value.ToString();
+            boligarealTextBox.Text = Bolig.Cells["BoligAreal"].Value.ToString();
+            statusTextBox.Text = Bolig.Cells["Status"].Value.ToString();
+            energimærkeTextBox.Text = Bolig.Cells["EnergiMærke"].Value.ToString();
+            værelserTextBox.Text = Bolig.Cells["Værelser"].Value.ToString();
+            mæglerTextBox.Text = Bolig.Cells["EjendomsmæglerID"].Value.ToString();
+            sælgerTextBox.Text = Bolig.Cells["SælgerID"].Value.ToString();
+            byggeDatoTextBox.Text = Bolig.Cells["ByggeDato"].Value.ToString();
         }
 
         private void gemÆndringerButton_Click(object sender, EventArgs e)
         {
-            boligDetaljer.Pris = int.Parse(prisTextBox.Text);
-            boligLogic.UpdateBoligPris(boligDetaljer);
-            this.Close();
+            int Pris;
+            try
+            {
+                Pris = Convert.ToInt32(prisTextBox.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Pris skal inkluderes og kan kun skrives med tal", "Pris", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            boligLogic.UpdateBoligPris(Pris, Convert.ToInt32(Bolig.Cells["BoligID"].Value));
+            prisTextBox.Enabled = false;
+        }
+
+        private void statusLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

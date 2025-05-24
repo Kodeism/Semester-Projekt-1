@@ -57,14 +57,15 @@
             tableLayoutPanel1.Controls.Add(dataFlowPanel, 0, 0);
             tableLayoutPanel1.Controls.Add(eksporterDataKnap, 0, 3);
             tableLayoutPanel1.Controls.Add(sortByComboBox, 0, 2);
-            tableLayoutPanel1.Location = new Point(12, 12);
+            tableLayoutPanel1.Location = new Point(17, 20);
+            tableLayoutPanel1.Margin = new Padding(4, 5, 4, 5);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 4;
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
-            tableLayoutPanel1.Size = new Size(148, 144);
+            tableLayoutPanel1.Size = new Size(211, 365);
             tableLayoutPanel1.TabIndex = 2;
             // 
             // label3
@@ -72,9 +73,10 @@
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F);
-            label3.Location = new Point(3, 61);
+            label3.Location = new Point(4, 243);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(142, 21);
+            label3.Size = new Size(203, 32);
             label3.TabIndex = 4;
             label3.Text = "Sorter Efter:";
             // 
@@ -82,9 +84,10 @@
             // 
             dataFlowPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             dataFlowPanel.Controls.Add(tableLayoutPanel2);
-            dataFlowPanel.Location = new Point(3, 3);
+            dataFlowPanel.Location = new Point(4, 5);
+            dataFlowPanel.Margin = new Padding(4, 5, 4, 5);
             dataFlowPanel.Name = "dataFlowPanel";
-            dataFlowPanel.Size = new Size(142, 55);
+            dataFlowPanel.Size = new Size(203, 233);
             dataFlowPanel.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -99,7 +102,8 @@
             tableLayoutPanel2.Controls.Add(selectDataComboBox, 0, 1);
             tableLayoutPanel2.Controls.Add(boligByNavn, 0, 5);
             tableLayoutPanel2.Controls.Add(label4, 0, 4);
-            tableLayoutPanel2.Location = new Point(3, 3);
+            tableLayoutPanel2.Location = new Point(4, 5);
+            tableLayoutPanel2.Margin = new Padding(4, 5, 4, 5);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 6;
             tableLayoutPanel2.RowStyles.Add(new RowStyle());
@@ -108,7 +112,7 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle());
             tableLayoutPanel2.RowStyles.Add(new RowStyle());
             tableLayoutPanel2.RowStyles.Add(new RowStyle());
-            tableLayoutPanel2.Size = new Size(136, 150);
+            tableLayoutPanel2.Size = new Size(192, 223);
             tableLayoutPanel2.TabIndex = 0;
             // 
             // label1
@@ -116,9 +120,10 @@
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F);
-            label1.Location = new Point(3, 0);
+            label1.Location = new Point(4, 0);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(130, 21);
+            label1.Size = new Size(184, 32);
             label1.TabIndex = 3;
             label1.Text = "Data:";
             label1.TextAlign = ContentAlignment.MiddleLeft;
@@ -126,9 +131,10 @@
             // boligStatus
             // 
             boligStatus.FormattingEnabled = true;
-            boligStatus.Location = new Point(3, 74);
+            boligStatus.Location = new Point(4, 112);
+            boligStatus.Margin = new Padding(4, 5, 4, 5);
             boligStatus.Name = "boligStatus";
-            boligStatus.Size = new Size(130, 23);
+            boligStatus.Size = new Size(184, 33);
             boligStatus.TabIndex = 2;
             // 
             // label2
@@ -136,9 +142,10 @@
             label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F);
-            label2.Location = new Point(3, 50);
+            label2.Location = new Point(4, 75);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(130, 21);
+            label2.Size = new Size(184, 32);
             label2.TabIndex = 4;
             label2.Text = "Bolig Status:";
             label2.TextAlign = ContentAlignment.MiddleLeft;
@@ -147,17 +154,19 @@
             // 
             selectDataComboBox.FormattingEnabled = true;
             selectDataComboBox.Items.AddRange(new object[] { "Køber", "Sælger", "Salg", "Boliger", "Ejendomsmæglere" });
-            selectDataComboBox.Location = new Point(3, 24);
+            selectDataComboBox.Location = new Point(4, 37);
+            selectDataComboBox.Margin = new Padding(4, 5, 4, 5);
             selectDataComboBox.Name = "selectDataComboBox";
-            selectDataComboBox.Size = new Size(130, 23);
+            selectDataComboBox.Size = new Size(184, 33);
             selectDataComboBox.TabIndex = 1;
             selectDataComboBox.SelectedValueChanged += selectDataComboBox_SelectedValueChanged;
             // 
             // boligByNavn
             // 
-            boligByNavn.Location = new Point(3, 124);
+            boligByNavn.Location = new Point(4, 187);
+            boligByNavn.Margin = new Padding(4, 5, 4, 5);
             boligByNavn.Name = "boligByNavn";
-            boligByNavn.Size = new Size(130, 23);
+            boligByNavn.Size = new Size(184, 31);
             boligByNavn.TabIndex = 5;
             // 
             // label4
@@ -165,9 +174,10 @@
             label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F);
-            label4.Location = new Point(3, 100);
+            label4.Location = new Point(4, 150);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(130, 21);
+            label4.Size = new Size(184, 32);
             label4.TabIndex = 6;
             label4.Text = "By Navn:";
             label4.TextAlign = ContentAlignment.MiddleLeft;
@@ -179,9 +189,10 @@
             eksporterDataKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             eksporterDataKnap.BackColor = Color.FromArgb(45, 199, 92);
             eksporterDataKnap.FlatStyle = FlatStyle.Flat;
-            eksporterDataKnap.Location = new Point(3, 114);
+            eksporterDataKnap.Location = new Point(4, 323);
+            eksporterDataKnap.Margin = new Padding(4, 5, 4, 5);
             eksporterDataKnap.Name = "eksporterDataKnap";
-            eksporterDataKnap.Size = new Size(142, 27);
+            eksporterDataKnap.Size = new Size(203, 37);
             eksporterDataKnap.TabIndex = 2;
             eksporterDataKnap.Text = "Eksporter Data";
             eksporterDataKnap.UseVisualStyleBackColor = false;
@@ -191,22 +202,24 @@
             // 
             sortByComboBox.Enabled = false;
             sortByComboBox.FormattingEnabled = true;
-            sortByComboBox.Location = new Point(3, 85);
+            sortByComboBox.Location = new Point(4, 280);
+            sortByComboBox.Margin = new Padding(4, 5, 4, 5);
             sortByComboBox.Name = "sortByComboBox";
-            sortByComboBox.Size = new Size(142, 23);
+            sortByComboBox.Size = new Size(201, 33);
             sortByComboBox.TabIndex = 1;
             // 
             // Ekspoterdata
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(255, 246, 182);
-            ClientSize = new Size(173, 304);
+            ClientSize = new Size(247, 507);
             Controls.Add(tableLayoutPanel1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Ekspoterdata";
             Text = "Ekspoterdata";
             Load += Ekspoterdata_Load;

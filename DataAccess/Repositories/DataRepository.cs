@@ -230,6 +230,50 @@ namespace DataAccess.Repositories
             connection.Close();
         }
 
+        public Dictionary<string,object> GetSaleInfo(int boligId)
+        {
+            Dictionary<string, object> saleInfo = new Dictionary<string, object>();
+            SqlCommand command = connection.CreateCommand();
+            var sql = """
+                SELECT S.CprNummer,B.Adresse
+                FROM Bolig B
+                left join Sælger S on B.SælgerID = S.SælgerID
+                WHERE BoligID = @BoligID;
+                """;
+            command.CommandText = sql;
+            command.Parameters.AddWithValue("@BoligID", boligId);
+            connection.Open();
+            using (SqlDataReader reader = command.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    saleInfo["Adresse"] = reader["Adresse"];
+                    saleInfo["SælgerCpr"] = reader["CprNummer"];
+                }
+            }
+            connection.Close();
+            return saleInfo;
+        }
+        public DataTable getBoligDetail(int boligID)
+        {
+            DataTable boligDetail = new DataTable();
+            SqlCommand command = connection.CreateCommand();
+            var sql = """
+                SELECT * from Bolig
+                WHERE BoligID = @BoligID
+                """;
+            DataTable dataTable = new DataTable();
+            using (SqlCommand cmd = new SqlCommand(sql, connection))
+            {
+                using (SqlDataAdapter dad = new SqlDataAdapter(cmd))
+                {
+                    connection.Open();
+                    dad.Fill(dataTable);
+                    connection.Close();
+                }
+            }
+            return dataTable;
+        }
         public void TilføjSælger(Sælger sælger)
         {
 
@@ -934,7 +978,7 @@ namespace DataAccess.Repositories
             };
             List<object> tabeldata = new List<object>()
             {
-                {GetTable("select top 20 ByNavn, BoligType, Værelser, ByggeDato, Pris from Bolig where Status = 'Til Salg' order by BoligID desc")},
+                {GetTable("select top 20 * from Bolig where Status = 'Til Salg' order by BoligID desc")},
                 {GetTable("select top 20 (Fornavn+' '+EfterNavn) as Navn, SøgeOmråde, BoligType, PrisKlasse from Køber order by KøberID desc")}
             };
             Dictionary<string, List<object>> data = new(){

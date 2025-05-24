@@ -62,9 +62,15 @@ namespace BusineesLogic
             return bolig;
         }
 
-        public void UpdateBoligPris(Bolig bolig)
+        public void UpdateBoligPris(int Pris, int ID)
         {
-            repository.UpdatePris(bolig.BoligID, bolig.Pris);
+            repository.UpdatePris(ID, Pris);
+        }
+
+        public Dictionary<string,object> getSaleInfo(int boligID)
+        {
+            // Henter salgsinfo for en given boligID
+            return repository.GetSaleInfo(boligID);
         }
 
         public int PrisEsmator(int boligAreal, int grundAreal, string boligType, int byggedato)

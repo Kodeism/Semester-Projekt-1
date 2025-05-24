@@ -27,7 +27,6 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
             SetMode(mode);
-
         }
         public void SetMode(Mode mode)
         {
@@ -378,18 +377,11 @@ namespace Semester_Projekt_1
             }
             if (currentMode == Mode.Boliger)
             {
-                if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
-                {
-                    DataGridView mineDataGridView = (DataGridView)sender;
-
-                    // Hent værdien af BoligID i den valgte række
-                    var boligIDValue = mineDataGridView.Rows[e.RowIndex].Cells["BoligID"].Value;
-
-                    int boligID = Convert.ToInt32(boligIDValue);
-
-                    DeleteBolig deleteBolig = new DeleteBolig(boligID);
-                    deleteBolig.Show();
-                }
+                if (e.RowIndex < 0)
+                    return;
+                DataGridViewRow selectedRow = mineDataGridView.Rows[e.RowIndex];
+                BoligDetaljer bd = new BoligDetaljer(selectedRow);
+                bd.Show();
             }
         }
 
@@ -414,21 +406,14 @@ namespace Semester_Projekt_1
                 }
             }
             // udkommenteret eftersom det vil være underligt at kunne slette andres boliger
-            //if (currentMode == Mode.Boliger)
-            //{
-            //    if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
-            //    {
-            //        DataGridView alleDataGridView = (DataGridView)sender;
-
-            //        // Hent værdien af BoligID i den valgte række
-            //        var boligIDValue = alleDataGridView.Rows[e.RowIndex].Cells["BoligID"].Value;
-
-            //        int boligID = Convert.ToInt32(boligIDValue);
-
-            //        DeleteBolig deleteBolig = new DeleteBolig(boligID);
-            //        deleteBolig.Show();
-            //    }
-            //}
-}
+            if (currentMode == Mode.Boliger)
+            {
+                if (e.RowIndex < 0)
+                    return;
+                DataGridViewRow selectedRow = alleDataGridView.Rows[e.RowIndex];
+                BoligDetaljer bd = new BoligDetaljer(selectedRow);
+                bd.Show();
+            }
+        }
     }
 }
