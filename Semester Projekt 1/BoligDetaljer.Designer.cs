@@ -32,7 +32,6 @@
             redigerButton = new Button();
             createSaleButton = new Button();
             closeButton = new Button();
-            sælgerTextBox = new TextBox();
             energimærkeTextBox = new TextBox();
             grundArealTextBox = new TextBox();
             boligarealTextBox = new TextBox();
@@ -60,6 +59,7 @@
             tableLayoutPanel1 = new TableLayoutPanel();
             tableLayoutPanel2 = new TableLayoutPanel();
             tableLayoutPanel10 = new TableLayoutPanel();
+            sælgerTextBox = new TextBox();
             typeTextBox = new TextBox();
             statusTextBox = new TextBox();
             mæglerTextBox = new TextBox();
@@ -143,15 +143,6 @@
             closeButton.UseVisualStyleBackColor = false;
             closeButton.Click += closeButton_Click;
             // 
-            // sælgerTextBox
-            // 
-            sælgerTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            sælgerTextBox.Enabled = false;
-            sælgerTextBox.Location = new Point(3, 324);
-            sælgerTextBox.Name = "sælgerTextBox";
-            sælgerTextBox.Size = new Size(239, 33);
-            sælgerTextBox.TabIndex = 30;
-            // 
             // energimærkeTextBox
             // 
             energimærkeTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -224,7 +215,7 @@
             sælgerLabel.Name = "sælgerLabel";
             sælgerLabel.Size = new Size(239, 21);
             sælgerLabel.TabIndex = 16;
-            sælgerLabel.Text = "SælgerID";
+            sælgerLabel.Text = "Sælger";
             sælgerLabel.TextAlign = ContentAlignment.BottomLeft;
             // 
             // mæglerLabel
@@ -236,7 +227,7 @@
             mæglerLabel.Name = "mæglerLabel";
             mæglerLabel.Size = new Size(239, 21);
             mæglerLabel.TabIndex = 15;
-            mæglerLabel.Text = "MæglerID";
+            mæglerLabel.Text = "Mægler";
             mæglerLabel.TextAlign = ContentAlignment.BottomLeft;
             // 
             // statusLabel
@@ -498,6 +489,17 @@
             tableLayoutPanel10.Size = new Size(245, 392);
             tableLayoutPanel10.TabIndex = 1;
             // 
+            // sælgerTextBox
+            // 
+            sælgerTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            sælgerTextBox.Location = new Point(3, 324);
+            sælgerTextBox.Name = "sælgerTextBox";
+            sælgerTextBox.ReadOnly = true;
+            sælgerTextBox.Size = new Size(239, 33);
+            sælgerTextBox.TabIndex = 30;
+            sælgerTextBox.TabStop = false;
+            sælgerTextBox.MouseDoubleClick += sælgerTextBox_MouseDoubleClick;
+            // 
             // typeTextBox
             // 
             typeTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -519,11 +521,13 @@
             // mæglerTextBox
             // 
             mæglerTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            mæglerTextBox.Enabled = false;
             mæglerTextBox.Location = new Point(3, 264);
             mæglerTextBox.Name = "mæglerTextBox";
+            mæglerTextBox.ReadOnly = true;
             mæglerTextBox.Size = new Size(239, 33);
             mæglerTextBox.TabIndex = 33;
+            mæglerTextBox.TabStop = false;
+            mæglerTextBox.DoubleClick += mæglerTextBox_DoubleClick;
             // 
             // tableLayoutPanel3
             // 
@@ -575,6 +579,7 @@
             byggeDatoTextBox.Enabled = false;
             byggeDatoTextBox.Location = new Point(3, 24);
             byggeDatoTextBox.Name = "byggeDatoTextBox";
+            byggeDatoTextBox.ReadOnly = true;
             byggeDatoTextBox.Size = new Size(219, 33);
             byggeDatoTextBox.TabIndex = 13;
             // 
@@ -763,7 +768,6 @@
         private TextBox byTextBox;
         private TextBox adresseTextBox;
         private TextBox energimærkeTextBox;
-        private TextBox sælgerTextBox;
         private Button redigerPrisButton;
         private Button gemÆndringerButton;
         private Button redigerButton;
@@ -785,5 +789,6 @@
         private TextBox statusTextBox;
         private TextBox mæglerTextBox;
         private TextBox byggeDatoTextBox;
+        private TextBox sælgerTextBox;
     }
 }

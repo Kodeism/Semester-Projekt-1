@@ -27,7 +27,6 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
             SetMode(mode);
-
             mode_ = mode;
         }
         public void SetMode(Mode mode)
@@ -165,25 +164,25 @@ namespace Semester_Projekt_1
                     deleteSælger.Show();
                 }
             }
-            if (currentMode == Mode.MineB)
+            else if (currentMode == Mode.MineB || currentMode==Mode.AlleB)
             {
                 if (e.RowIndex < 0)
                     return;
                 DataGridViewRow selectedRow = uniDataGridView.Rows[e.RowIndex];
                 BoligLogic boligLogic = new BoligLogic();
-                DataTable datas = boligLogic.GetBoligDetails(Convert.ToInt32(selectedRow.Cells["BoligID"].Value));
+                DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["BoligID"].Value), "Bolig");
                 BoligDetaljer bd = new BoligDetaljer(datas);
                 bd.Show();
             }
-            if(currentMode == Mode.AlleB)
+            else if(currentMode == Mode.AlleK||currentMode == Mode.MineK)
             {
                 if (e.RowIndex < 0)
                     return;
                 DataGridViewRow selectedRow = uniDataGridView.Rows[e.RowIndex];
                 BoligLogic boligLogic = new BoligLogic();
-                DataTable datas = boligLogic.GetBoligDetails(Convert.ToInt32(selectedRow.Cells["BoligID"].Value));
-                BoligDetaljer bd = new BoligDetaljer(datas);
-                bd.Show();
+                DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["KøberID"].Value), "Køber");
+                KøberDetails kd = new KøberDetails(datas);
+                kd.Show();
             }
         }
 

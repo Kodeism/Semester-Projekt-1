@@ -74,10 +74,10 @@ namespace BusineesLogic
             return repository.GetSaleInfo(boligID);
         }
 
-        public DataTable GetBoligDetails(int boligID)
+        public DataTable GetDetails(int ID,string tabel)
         {
-            // Henter detaljer for en given boligID
-            return repository.getBoligDetail(boligID);
+            // Henter detaljer for en given ID og tabel
+            return repository.getDetails(ID, tabel);
         }
 
         public int PrisEsmator(int boligAreal, int grundAreal, string boligType, int byggedato)

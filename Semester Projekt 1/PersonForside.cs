@@ -105,5 +105,38 @@ namespace Semester_Projekt_1
             TilføjKøber tilKøber = new TilføjKøber();
             tilKøber.ShowDialog();
         }
+
+        private void købereDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+            DataGridViewRow selectedRow = købereDataGridView.Rows[e.RowIndex];
+            BoligLogic boligLogic = new BoligLogic();
+            DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["KøberID"].Value), "Køber");
+            KøberDetails kd = new KøberDetails(datas);
+            kd.Show();
+        }
+
+        private void sælgereDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+            DataGridViewRow selectedRow = sælgereDataGridView.Rows[e.RowIndex];
+            BoligLogic boligLogic = new BoligLogic();
+            DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["SælgerID"].Value), "Sælger");
+            SælgerDetails sd = new SælgerDetails(datas);
+            sd.Show();
+        }
+
+        private void mæglerDataGrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+            DataGridViewRow selectedRow = mæglerDataGrid.Rows[e.RowIndex];
+            BoligLogic boligLogic = new BoligLogic();
+            DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["MæglerID"].Value), "Ejendomsmægler");
+            MæglerDetails ed = new MæglerDetails(datas);
+            ed.Show();
+        }
     }
 }

@@ -44,5 +44,16 @@ namespace Semester_Projekt_1
                 mæglerDataGridView.Columns["SælgerID"].Visible = false;
             mæglerDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
+
+        private void mæglerDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+            DataGridViewRow selectedRow = mæglerDataGridView.Rows[e.RowIndex];
+            BoligLogic boligLogic = new BoligLogic();
+            DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["EjendomsmæglerID"].Value), "Ejendomsmægler");
+            MæglerDetails ed = new MæglerDetails(datas);
+            ed.Show();
+        }
     }
 }

@@ -27,7 +27,7 @@ namespace Semester_Projekt_1
             boligLogic = new BoligLogic();
             editableTextBoxes = new List<TextBox>() { prisTextBox };
             editableComboBoxes = new List<ComboBox>() { };
-            if (SessionManager.EjendomsmæglerId != Convert.ToInt32(bolig.Rows[0]["EjendomsmæglerID"])&&SessionManager.AdgangsNiveau != 2)
+            if (SessionManager.EjendomsmæglerId != Convert.ToInt32(bolig.Rows[0]["EjendomsmæglerID"]) && SessionManager.AdgangsNiveau != 2)
             {
                 redigerButton.Enabled = false;
                 gemÆndringerButton.Enabled = false;
@@ -72,10 +72,12 @@ namespace Semester_Projekt_1
             statusTextBox.Text = bolig.Rows[0]["Status"].ToString();
             energimærkeTextBox.Text = bolig.Rows[0]["EnergiMærke"].ToString();
             værelserTextBox.Text = bolig.Rows[0]["Værelser"].ToString();
-            mæglerTextBox.Text = bolig.Rows[0]["EjendomsmæglerID"].ToString();
-            sælgerTextBox.Text = bolig.Rows[0]["SælgerID"].ToString();
+            mæglerTextBox.Text = bolig.Rows[0]["Ejendomsmægler"].ToString();
+            sælgerTextBox.Text = bolig.Rows[0]["Sælger"].ToString();
             byggeDatoTextBox.Text = bolig.Rows[0]["ByggeDato"].ToString();
             boligInfoLabel.Text = $"Bolig:[{BoligID}] Info";
+            sælgerTextBox.Cursor = Cursors.Hand;
+            mæglerTextBox.Cursor = Cursors.Hand;
         }
 
         private void gemÆndringerButton_Click(object sender, EventArgs e)
@@ -96,6 +98,23 @@ namespace Semester_Projekt_1
 
         private void statusLabel_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void sælgerTextBox_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            BoligLogic boligLogic = new BoligLogic();
+            DataTable datas = boligLogic.GetDetails(Convert.ToInt32(bolig.Rows[0]["SælgerID"]), "Sælger");
+            SælgerDetails sd = new SælgerDetails(datas);
+            sd.Show();
+        }
+
+        private void mæglerTextBox_DoubleClick(object sender, EventArgs e)
+        {
+            BoligLogic boligLogic = new BoligLogic();
+            DataTable datas = boligLogic.GetDetails(Convert.ToInt32(bolig.Rows[0]["EjendomsmæglerID"]), "Ejendomsmægler");
+            MæglerDetails md = new MæglerDetails(datas);
+            md.Show();
 
         }
     }

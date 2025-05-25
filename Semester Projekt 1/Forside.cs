@@ -131,6 +131,7 @@ namespace Semester_Projekt_1
             nyeKøbere.DataSource = Data["tabel"][1];
             boligerBoligTypePlot.UserInputProcessor.IsEnabled = false;
             køberBoligTypePlot.UserInputProcessor.IsEnabled = false;
+            nyeKøbere.Columns["KøberID"].Visible = false;
         }
 
         private void Forside_Resize(object sender, EventArgs e)
@@ -150,9 +151,20 @@ namespace Semester_Projekt_1
                 return;
             DataGridViewRow selectedRow = nyeBoliger.Rows[e.RowIndex];
             BoligLogic boligLogic = new BoligLogic();
-            DataTable datas = boligLogic.GetBoligDetails(Convert.ToInt32(selectedRow.Cells["BoligID"].Value));
+            DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["BoligID"].Value), "Bolig");
             BoligDetaljer bd = new BoligDetaljer(datas);
             bd.Show();
+        }
+
+        private void nyeKøbere_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex < 0)
+                return;
+            DataGridViewRow selectedRow = nyeKøbere.Rows[e.RowIndex];
+            BoligLogic boligLogic = new BoligLogic();
+            DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["KøberID"].Value), "Køber");
+            KøberDetails kd = new KøberDetails(datas);
+            kd.Show();
         }
     }
 }

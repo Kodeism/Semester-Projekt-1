@@ -360,6 +360,16 @@ namespace Semester_Projekt_1
 
         private void mineDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if(currentMode == Mode.Købere)
+            {
+                if (e.RowIndex < 0)
+                    return;
+                DataGridViewRow selectedRow = mineDataGridView.Rows[e.RowIndex];
+                BoligLogic boligLogic = new BoligLogic();
+                DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["KøberID"].Value), "Køber");
+                KøberDetails kd = new KøberDetails(datas);
+                kd.Show();
+            }
             if (currentMode == Mode.Sælgere)
             {
                 if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
@@ -381,7 +391,7 @@ namespace Semester_Projekt_1
                     return;
                 DataGridViewRow selectedRow = mineDataGridView.Rows[e.RowIndex];
                 BoligLogic boligLogic = new BoligLogic();
-                DataTable datas = boligLogic.GetBoligDetails(Convert.ToInt32(selectedRow.Cells["BoligID"].Value));
+                DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["BoligID"].Value),"Bolig");
                 BoligDetaljer bd = new BoligDetaljer(datas);
                 bd.Show();
             }
@@ -407,6 +417,16 @@ namespace Semester_Projekt_1
                     deleteSælger.Show();
                 }
             }
+            if(currentMode== Mode.Købere)
+            {
+                if (e.RowIndex < 0)
+                    return;
+                DataGridViewRow selectedRow = alleDataGridView.Rows[e.RowIndex];
+                BoligLogic boligLogic = new BoligLogic();
+                DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["KøberID"].Value), "Køber");
+                KøberDetails kd = new KøberDetails(datas);
+                kd.Show();
+            }
             // udkommenteret eftersom det vil være underligt at kunne slette andres boliger
             if (currentMode == Mode.Boliger)
             {
@@ -414,7 +434,7 @@ namespace Semester_Projekt_1
                     return;
                 DataGridViewRow selectedRow = alleDataGridView.Rows[e.RowIndex];
                 BoligLogic boligLogic = new BoligLogic();
-                DataTable datas = boligLogic.GetBoligDetails(Convert.ToInt32(selectedRow.Cells["BoligID"].Value));
+                DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["BoligID"].Value), "Bolig");
                 BoligDetaljer bd = new BoligDetaljer(datas);
                 bd.Show();
             }

@@ -1,4 +1,6 @@
+using BusineesLogic;
 using Models;
+using System.Data;
 
 namespace Semester_Projekt_1
 {
@@ -224,6 +226,14 @@ namespace Semester_Projekt_1
         private void DashBoard_Load(object sender, EventArgs e)
         {
             startDBKnap.Width = lDBLayoutPanel.Width;
+        }
+
+        private void brugerDBKnap_Click(object sender, EventArgs e)
+        {
+            BoligLogic boligLogic = new BoligLogic();
+            DataTable datas = boligLogic.GetDetails(Convert.ToInt32(SessionManager.EjendomsmæglerId), "Ejendomsmægler");
+            MæglerDetails ed = new MæglerDetails(datas);
+            ed.Show();
         }
     }
 }
