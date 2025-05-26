@@ -417,7 +417,7 @@
             graphsLayoutPanel.Name = "graphsLayoutPanel";
             graphsLayoutPanel.RowCount = 1;
             graphsLayoutPanel.RowStyles.Add(new RowStyle());
-            graphsLayoutPanel.Size = new Size(1766, 1696);
+            graphsLayoutPanel.Size = new Size(1766, 553);
             graphsLayoutPanel.TabIndex = 55;
             // 
             // boligerBoligTypePlot
@@ -430,7 +430,7 @@
             boligerBoligTypePlot.Location = new Point(801, 3);
             boligerBoligTypePlot.Margin = new Padding(1, 2, 1, 2);
             boligerBoligTypePlot.Name = "boligerBoligTypePlot";
-            boligerBoligTypePlot.Size = new Size(963, 1690);
+            boligerBoligTypePlot.Size = new Size(963, 547);
             boligerBoligTypePlot.TabIndex = 154;
             // 
             // køberBoligTypePlot
@@ -443,7 +443,7 @@
             køberBoligTypePlot.Location = new Point(2, 3);
             køberBoligTypePlot.Margin = new Padding(1, 2, 1, 2);
             køberBoligTypePlot.Name = "køberBoligTypePlot";
-            køberBoligTypePlot.Size = new Size(796, 1690);
+            køberBoligTypePlot.Size = new Size(796, 547);
             køberBoligTypePlot.TabIndex = 345;
             // 
             // nyeKøbere

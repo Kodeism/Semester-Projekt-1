@@ -26,61 +26,66 @@ namespace DataAccess.Repositories
         }
         public Bolig CreateBolig(Bolig bolig)
         {
-            SqlCommand command = connection.CreateCommand();
-            var sql = """
-                    INSERT INTO Bolig (
-                	    Pris,
-                        Adresse,
-                        Postnummer,
-                        ByNavn,
-                        BoligType,
-                        BoligAreal,
-                        Værelser,
-                        ByggeDato,
-                        GrundStørrelse,
-                        EnergiMærke,
-                        EjendomsmæglerID,
-                        SælgerID,
-                        Status
-                    )
-                    VALUES (
-                	    @Pris,
-                        @Adresse,
-                        @Postnummer,
-                        @ByNavn,
-                        @BoligType,
-                        @BoligAreal,
-                        @Værelser,
-                        @ByggeDato,
-                        @GrundStørrelse,
-                        @EnergiMærke,
-                        @EjendomsmæglerID,
-                        @SælgerID,
-                        @Status
-                    );
-                """;
+            string checkQuery = @"
+                select 1 from Bolig 
+                where Adresse = @Adresse AND 
+                ByNavn = @ByNavn AND 
+                Postnummer = @Postnummer AND 
+                EjendomsmæglerID = @EjendomsmæglerID AND 
+                SælgerID = @SælgerID";
 
-            command.CommandText = sql;
-            command.Parameters.AddWithValue("@Pris", bolig.Pris);
-            command.Parameters.AddWithValue("@Adresse", bolig.Adresse);
-            command.Parameters.AddWithValue("@Postnummer", bolig.PostNummer);
-            command.Parameters.AddWithValue("@ByNavn", bolig.ByNavn);
-            command.Parameters.AddWithValue("@BoligType", bolig.Type);
-            command.Parameters.AddWithValue("@BoligAreal", bolig.BoligAreal);
-            command.Parameters.AddWithValue("@Værelser", bolig.Værelser);
-            command.Parameters.AddWithValue("@ByggeDato", bolig.ByggeDato);
-            command.Parameters.AddWithValue("@GrundStørrelse", bolig.GrundStørrelse);
-            command.Parameters.AddWithValue("@EnergiMærke", bolig.EnergiMærke);
-            command.Parameters.AddWithValue("@EjendomsmæglerID", bolig.EjendomsmæglerID);
-            command.Parameters.AddWithValue("@SælgerID", bolig.SælgerID);
-            command.Parameters.AddWithValue("@Status", bolig.Status);
+            using (SqlCommand checkCmd = new SqlCommand(checkQuery, connection))
+            {
+                checkCmd.Parameters.AddWithValue("@Adresse", bolig.Adresse);
+                checkCmd.Parameters.AddWithValue("@ByNavn", bolig.ByNavn);
+                checkCmd.Parameters.AddWithValue("@Postnummer", bolig.PostNummer);
+                checkCmd.Parameters.AddWithValue("@EjendomsmæglerID", bolig.EjendomsmæglerID);
+                checkCmd.Parameters.AddWithValue("@SælgerID", bolig.SælgerID);
 
+                connection.Open();
+                object exists = checkCmd.ExecuteScalar();
+                connection.Close();
 
-            connection.Open();
-            command.ExecuteNonQuery();
-            connection.Close();
+                if (exists != null)
+                {
+                    return null;
+                }
+            }
 
-            return bolig;
+            // Insert the bolig
+            string insertQuery = @"
+        INSERT INTO Bolig (
+            Pris, Adresse, Postnummer, ByNavn, BoligType,
+            BoligAreal, Værelser, ByggeDato, GrundStørrelse,
+            EnergiMærke, EjendomsmæglerID, SælgerID, Status
+        ) VALUES (
+            @Pris, @Adresse, @Postnummer, @ByNavn, @BoligType,
+            @BoligAreal, @Værelser, @ByggeDato, @GrundStørrelse,
+            @EnergiMærke, @EjendomsmæglerID, @SælgerID, @Status
+        )";
+
+            using (SqlCommand insertCmd = new SqlCommand(insertQuery, connection))
+            {
+                insertCmd.Parameters.AddWithValue("@Pris", bolig.Pris);
+                insertCmd.Parameters.AddWithValue("@Adresse", bolig.Adresse);
+                insertCmd.Parameters.AddWithValue("@Postnummer", bolig.PostNummer);
+                insertCmd.Parameters.AddWithValue("@ByNavn", bolig.ByNavn);
+                insertCmd.Parameters.AddWithValue("@BoligType", bolig.Type);
+                insertCmd.Parameters.AddWithValue("@BoligAreal", bolig.BoligAreal);
+                insertCmd.Parameters.AddWithValue("@Værelser", bolig.Værelser);
+                insertCmd.Parameters.AddWithValue("@ByggeDato", bolig.ByggeDato);
+                insertCmd.Parameters.AddWithValue("@GrundStørrelse", bolig.GrundStørrelse);
+                insertCmd.Parameters.AddWithValue("@EnergiMærke", bolig.EnergiMærke);
+                insertCmd.Parameters.AddWithValue("@EjendomsmæglerID", bolig.EjendomsmæglerID);
+                insertCmd.Parameters.AddWithValue("@SælgerID", bolig.SælgerID);
+                insertCmd.Parameters.AddWithValue("@Status", bolig.Status);
+
+                connection.Open();
+                insertCmd.ExecuteNonQuery();
+                connection.Close();
+
+                return bolig;
+            }
         }
 
         public Bolig GetSingleBolig(int boligID)

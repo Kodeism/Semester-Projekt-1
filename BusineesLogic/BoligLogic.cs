@@ -43,7 +43,7 @@ namespace BusineesLogic
             };
         }
 
-        public void CreateBolig(
+        public object CreateBolig(
             int pris, string adresse, int postnr, string by, string boligType, int boligAreal, int værelser,
             DateTime byggeDato, int grundAreal, int mæglerId, int sæglerID, string energiMærke, string status
             )
@@ -52,7 +52,8 @@ namespace BusineesLogic
                 pris, adresse, postnr, by, boligType, boligAreal, værelser,
                 byggeDato, grundAreal, mæglerId, sæglerID, energiMærke, status
             );
-            repository.CreateBolig(tempBolig);
+            var check = repository.CreateBolig(tempBolig);
+            return check;
         }
 
         public Bolig GetBolig(int boligID)
