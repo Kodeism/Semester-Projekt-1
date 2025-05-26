@@ -67,7 +67,7 @@ namespace Semester_Projekt_1
                 int værelser = int.Parse(opretBoligAntalVærelserTextBox.Text);
                 DateTime byggeDato = byggeDatoDatePicker.Value;
                 int grundAreal = int.Parse(opretBoligGrundarealTextbox.Text);
-                int mæglerID = (int)boligOprettelseSælgerComboBox.SelectedValue;
+                int mæglerID = SessionManager.EjendomsmæglerId;
                 int sælgerID = 2;
                 string energimærke = opretBoligEnergimærkeTextBox.Text;
                 string status = (string)opretBoligStatusComboBox.SelectedValue;
