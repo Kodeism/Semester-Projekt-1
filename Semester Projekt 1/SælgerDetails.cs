@@ -91,5 +91,11 @@ namespace Semester_Projekt_1
             KøberDetails kd = new KøberDetails(datas);
             kd.Show();
         }
+
+        private void createSaleButton_Click(object sender, EventArgs e)
+        {
+            DeleteSælger ds = new DeleteSælger(Convert.ToInt32(Sælger.Rows[0]["SælgerID"]));
+            ds.Show();
+        }
     }
 }

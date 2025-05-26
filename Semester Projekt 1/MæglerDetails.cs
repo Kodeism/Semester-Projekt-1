@@ -103,5 +103,10 @@ namespace Semester_Projekt_1
             BoligDetaljer bd = new BoligDetaljer(boligLogic.GetDetails(boligIDListe[index], "Bolig"));
             bd.Show();
         }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

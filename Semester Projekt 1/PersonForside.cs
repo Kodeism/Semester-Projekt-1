@@ -134,7 +134,7 @@ namespace Semester_Projekt_1
                 return;
             DataGridViewRow selectedRow = mæglerDataGrid.Rows[e.RowIndex];
             BoligLogic boligLogic = new BoligLogic();
-            DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["MæglerID"].Value), "Ejendomsmægler");
+            DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["EjendomsmæglerID"].Value), "Ejendomsmægler");
             MæglerDetails ed = new MæglerDetails(datas);
             ed.Show();
         }

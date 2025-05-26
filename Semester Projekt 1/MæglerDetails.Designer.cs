@@ -76,7 +76,7 @@
             tableLayoutPanel1.Controls.Add(tableLayoutPanel4, 0, 3);
             tableLayoutPanel1.Controls.Add(pictureBox, 0, 0);
             tableLayoutPanel1.Controls.Add(mæglerInfoLabel, 0, 1);
-            tableLayoutPanel1.Location = new Point(15, 20);
+            tableLayoutPanel1.Location = new Point(21, 33);
             tableLayoutPanel1.Margin = new Padding(0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 4;
@@ -84,8 +84,8 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 61.3793144F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel1.Size = new Size(460, 708);
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 33F));
+            tableLayoutPanel1.Size = new Size(657, 985);
             tableLayoutPanel1.TabIndex = 4;
             // 
             // tableLayoutPanel2
@@ -99,12 +99,12 @@
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 48.67617F));
             tableLayoutPanel2.Controls.Add(tableLayoutPanel3, 0, 0);
             tableLayoutPanel2.Controls.Add(tableLayoutPanel5, 1, 0);
-            tableLayoutPanel2.Location = new Point(1, 277);
+            tableLayoutPanel2.Location = new Point(1, 385);
             tableLayoutPanel2.Margin = new Padding(0);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle());
-            tableLayoutPanel2.Size = new Size(458, 387);
+            tableLayoutPanel2.Size = new Size(655, 537);
             tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -124,7 +124,8 @@
             tableLayoutPanel3.Controls.Add(label1, 0, 2);
             tableLayoutPanel3.Controls.Add(tlfNummerTextBox, 0, 7);
             tableLayoutPanel3.Controls.Add(efterNavnTextBox, 0, 3);
-            tableLayoutPanel3.Location = new Point(4, 4);
+            tableLayoutPanel3.Location = new Point(5, 6);
+            tableLayoutPanel3.Margin = new Padding(4, 5, 4, 5);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 10;
             tableLayoutPanel3.RowStyles.Add(new RowStyle());
@@ -137,7 +138,7 @@
             tableLayoutPanel3.RowStyles.Add(new RowStyle());
             tableLayoutPanel3.RowStyles.Add(new RowStyle());
             tableLayoutPanel3.RowStyles.Add(new RowStyle());
-            tableLayoutPanel3.Size = new Size(227, 379);
+            tableLayoutPanel3.Size = new Size(326, 777);
             tableLayoutPanel3.TabIndex = 3;
             // 
             // boligerLabel
@@ -145,9 +146,10 @@
             boligerLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             boligerLabel.AutoSize = true;
             boligerLabel.Font = new Font("Segoe UI", 12F);
-            boligerLabel.Location = new Point(3, 200);
+            boligerLabel.Location = new Point(4, 292);
+            boligerLabel.Margin = new Padding(4, 0, 4, 0);
             boligerLabel.Name = "boligerLabel";
-            boligerLabel.Size = new Size(221, 21);
+            boligerLabel.Size = new Size(318, 32);
             boligerLabel.TabIndex = 23;
             boligerLabel.Text = "Boliger";
             boligerLabel.TextAlign = ContentAlignment.BottomLeft;
@@ -156,10 +158,11 @@
             // 
             forNavnTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             forNavnTextBox.Enabled = false;
-            forNavnTextBox.Location = new Point(3, 24);
+            forNavnTextBox.Location = new Point(4, 37);
+            forNavnTextBox.Margin = new Padding(4, 5, 4, 5);
             forNavnTextBox.Name = "forNavnTextBox";
             forNavnTextBox.ReadOnly = true;
-            forNavnTextBox.Size = new Size(221, 23);
+            forNavnTextBox.Size = new Size(318, 31);
             forNavnTextBox.TabIndex = 18;
             // 
             // adresseLabel
@@ -167,9 +170,10 @@
             adresseLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             adresseLabel.AutoSize = true;
             adresseLabel.Font = new Font("Segoe UI", 12F);
-            adresseLabel.Location = new Point(3, 0);
+            adresseLabel.Location = new Point(4, 0);
+            adresseLabel.Margin = new Padding(4, 0, 4, 0);
             adresseLabel.Name = "adresseLabel";
-            adresseLabel.Size = new Size(221, 21);
+            adresseLabel.Size = new Size(318, 32);
             adresseLabel.TabIndex = 8;
             adresseLabel.Text = "Fornavn";
             adresseLabel.TextAlign = ContentAlignment.BottomLeft;
@@ -178,10 +182,11 @@
             // 
             emailTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             emailTextBox.Enabled = false;
-            emailTextBox.Location = new Point(3, 124);
+            emailTextBox.Location = new Point(4, 183);
+            emailTextBox.Margin = new Padding(4, 5, 4, 5);
             emailTextBox.Name = "emailTextBox";
             emailTextBox.ReadOnly = true;
-            emailTextBox.Size = new Size(221, 23);
+            emailTextBox.Size = new Size(318, 31);
             emailTextBox.TabIndex = 22;
             // 
             // label4
@@ -189,9 +194,10 @@
             label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F);
-            label4.Location = new Point(3, 100);
+            label4.Location = new Point(4, 146);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(221, 21);
+            label4.Size = new Size(318, 32);
             label4.TabIndex = 12;
             label4.Text = "E-mail";
             label4.TextAlign = ContentAlignment.BottomLeft;
@@ -204,10 +210,12 @@
             boligerDataGridView.BackgroundColor = SystemColors.Control;
             boligerDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             boligerDataGridView.Dock = DockStyle.Fill;
-            boligerDataGridView.Location = new Point(3, 224);
+            boligerDataGridView.Location = new Point(4, 329);
+            boligerDataGridView.Margin = new Padding(4, 5, 4, 5);
             boligerDataGridView.Name = "boligerDataGridView";
             boligerDataGridView.ReadOnly = true;
-            boligerDataGridView.Size = new Size(221, 152);
+            boligerDataGridView.RowHeadersWidth = 62;
+            boligerDataGridView.Size = new Size(318, 443);
             boligerDataGridView.TabIndex = 24;
             boligerDataGridView.CellDoubleClick += boligerDataGridView_CellDoubleClick;
             // 
@@ -216,9 +224,10 @@
             label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F);
-            label2.Location = new Point(3, 150);
+            label2.Location = new Point(4, 219);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(221, 21);
+            label2.Size = new Size(318, 32);
             label2.TabIndex = 10;
             label2.Text = "Telefonnummer";
             label2.TextAlign = ContentAlignment.BottomLeft;
@@ -228,9 +237,10 @@
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F);
-            label1.Location = new Point(3, 50);
+            label1.Location = new Point(4, 73);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(221, 21);
+            label1.Size = new Size(318, 32);
             label1.TabIndex = 9;
             label1.Text = "Efternavn";
             label1.TextAlign = ContentAlignment.BottomLeft;
@@ -239,20 +249,22 @@
             // 
             tlfNummerTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             tlfNummerTextBox.Enabled = false;
-            tlfNummerTextBox.Location = new Point(3, 174);
+            tlfNummerTextBox.Location = new Point(4, 256);
+            tlfNummerTextBox.Margin = new Padding(4, 5, 4, 5);
             tlfNummerTextBox.Name = "tlfNummerTextBox";
             tlfNummerTextBox.ReadOnly = true;
-            tlfNummerTextBox.Size = new Size(221, 23);
+            tlfNummerTextBox.Size = new Size(318, 31);
             tlfNummerTextBox.TabIndex = 20;
             // 
             // efterNavnTextBox
             // 
             efterNavnTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             efterNavnTextBox.Enabled = false;
-            efterNavnTextBox.Location = new Point(3, 74);
+            efterNavnTextBox.Location = new Point(4, 110);
+            efterNavnTextBox.Margin = new Padding(4, 5, 4, 5);
             efterNavnTextBox.Name = "efterNavnTextBox";
             efterNavnTextBox.ReadOnly = true;
-            efterNavnTextBox.Size = new Size(221, 23);
+            efterNavnTextBox.Size = new Size(318, 31);
             efterNavnTextBox.TabIndex = 19;
             // 
             // tableLayoutPanel5
@@ -265,14 +277,15 @@
             tableLayoutPanel5.Controls.Add(sælgerLabel, 0, 0);
             tableLayoutPanel5.Controls.Add(købereDataGridView, 0, 3);
             tableLayoutPanel5.Controls.Add(købereLabel, 0, 2);
-            tableLayoutPanel5.Location = new Point(238, 4);
+            tableLayoutPanel5.Location = new Point(340, 6);
+            tableLayoutPanel5.Margin = new Padding(4, 5, 4, 5);
             tableLayoutPanel5.Name = "tableLayoutPanel5";
             tableLayoutPanel5.RowCount = 4;
             tableLayoutPanel5.RowStyles.Add(new RowStyle());
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel5.RowStyles.Add(new RowStyle());
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel5.Size = new Size(216, 379);
+            tableLayoutPanel5.Size = new Size(310, 777);
             tableLayoutPanel5.TabIndex = 4;
             // 
             // sælgereDataGridView
@@ -284,10 +297,12 @@
             sælgereDataGridView.BackgroundColor = SystemColors.Control;
             sælgereDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             sælgereDataGridView.Dock = DockStyle.Fill;
-            sælgereDataGridView.Location = new Point(3, 24);
+            sælgereDataGridView.Location = new Point(4, 37);
+            sælgereDataGridView.Margin = new Padding(4, 5, 4, 5);
             sælgereDataGridView.Name = "sælgereDataGridView";
             sælgereDataGridView.ReadOnly = true;
-            sælgereDataGridView.Size = new Size(210, 162);
+            sælgereDataGridView.RowHeadersWidth = 62;
+            sælgereDataGridView.Size = new Size(302, 346);
             sælgereDataGridView.TabIndex = 27;
             sælgereDataGridView.CellDoubleClick += sælgereDataGridView_CellDoubleClick;
             // 
@@ -296,9 +311,10 @@
             sælgerLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             sælgerLabel.AutoSize = true;
             sælgerLabel.Font = new Font("Segoe UI", 12F);
-            sælgerLabel.Location = new Point(3, 0);
+            sælgerLabel.Location = new Point(4, 0);
+            sælgerLabel.Margin = new Padding(4, 0, 4, 0);
             sælgerLabel.Name = "sælgerLabel";
-            sælgerLabel.Size = new Size(210, 21);
+            sælgerLabel.Size = new Size(302, 32);
             sælgerLabel.TabIndex = 26;
             sælgerLabel.Text = "Sælgere";
             sælgerLabel.TextAlign = ContentAlignment.BottomLeft;
@@ -311,10 +327,12 @@
             købereDataGridView.BackgroundColor = SystemColors.Control;
             købereDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             købereDataGridView.Dock = DockStyle.Fill;
-            købereDataGridView.Location = new Point(3, 213);
+            købereDataGridView.Location = new Point(4, 425);
+            købereDataGridView.Margin = new Padding(4, 5, 4, 5);
             købereDataGridView.Name = "købereDataGridView";
             købereDataGridView.ReadOnly = true;
-            købereDataGridView.Size = new Size(210, 163);
+            købereDataGridView.RowHeadersWidth = 62;
+            købereDataGridView.Size = new Size(302, 347);
             købereDataGridView.TabIndex = 25;
             købereDataGridView.CellDoubleClick += købereDataGridView_CellDoubleClick;
             // 
@@ -323,9 +341,10 @@
             købereLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             købereLabel.AutoSize = true;
             købereLabel.Font = new Font("Segoe UI", 12F);
-            købereLabel.Location = new Point(3, 189);
+            købereLabel.Location = new Point(4, 388);
+            købereLabel.Margin = new Padding(4, 0, 4, 0);
             købereLabel.Name = "købereLabel";
-            købereLabel.Size = new Size(210, 21);
+            købereLabel.Size = new Size(302, 32);
             købereLabel.TabIndex = 22;
             købereLabel.Text = "Købere";
             købereLabel.TextAlign = ContentAlignment.BottomLeft;
@@ -344,12 +363,12 @@
             tableLayoutPanel4.Controls.Add(redigerButton, 2, 0);
             tableLayoutPanel4.Controls.Add(gemÆndringerButton, 3, 0);
             tableLayoutPanel4.Controls.Add(createSaleButton, 1, 0);
-            tableLayoutPanel4.Location = new Point(1, 665);
+            tableLayoutPanel4.Location = new Point(1, 923);
             tableLayoutPanel4.Margin = new Padding(0);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             tableLayoutPanel4.RowCount = 1;
             tableLayoutPanel4.RowStyles.Add(new RowStyle());
-            tableLayoutPanel4.Size = new Size(458, 42);
+            tableLayoutPanel4.Size = new Size(655, 61);
             tableLayoutPanel4.TabIndex = 1;
             // 
             // closeButton
@@ -359,12 +378,14 @@
             closeButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             closeButton.BackColor = Color.FromArgb(255, 100, 100);
             closeButton.Font = new Font("Segoe UI", 14.25F);
-            closeButton.Location = new Point(3, 3);
+            closeButton.Location = new Point(4, 5);
+            closeButton.Margin = new Padding(4, 5, 4, 5);
             closeButton.Name = "closeButton";
-            closeButton.Size = new Size(108, 36);
+            closeButton.Size = new Size(155, 51);
             closeButton.TabIndex = 32;
             closeButton.Text = "Luk";
             closeButton.UseVisualStyleBackColor = false;
+            closeButton.Click += closeButton_Click;
             // 
             // redigerButton
             // 
@@ -373,9 +394,10 @@
             redigerButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             redigerButton.BackColor = SystemColors.ActiveCaption;
             redigerButton.Font = new Font("Segoe UI", 14.25F);
-            redigerButton.Location = new Point(241, 3);
+            redigerButton.Location = new Point(345, 5);
+            redigerButton.Margin = new Padding(4, 5, 4, 5);
             redigerButton.Name = "redigerButton";
-            redigerButton.Size = new Size(109, 36);
+            redigerButton.Size = new Size(157, 51);
             redigerButton.TabIndex = 34;
             redigerButton.Text = "Rediger";
             redigerButton.UseVisualStyleBackColor = false;
@@ -387,9 +409,10 @@
             gemÆndringerButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             gemÆndringerButton.BackColor = Color.FromArgb(45, 199, 92);
             gemÆndringerButton.Font = new Font("Segoe UI", 14.25F);
-            gemÆndringerButton.Location = new Point(356, 3);
+            gemÆndringerButton.Location = new Point(510, 5);
+            gemÆndringerButton.Margin = new Padding(4, 5, 4, 5);
             gemÆndringerButton.Name = "gemÆndringerButton";
-            gemÆndringerButton.Size = new Size(99, 36);
+            gemÆndringerButton.Size = new Size(141, 51);
             gemÆndringerButton.TabIndex = 35;
             gemÆndringerButton.Text = "Gem";
             gemÆndringerButton.UseVisualStyleBackColor = false;
@@ -401,9 +424,10 @@
             createSaleButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             createSaleButton.BackColor = Color.Yellow;
             createSaleButton.Font = new Font("Segoe UI", 14.25F);
-            createSaleButton.Location = new Point(117, 3);
+            createSaleButton.Location = new Point(167, 5);
+            createSaleButton.Margin = new Padding(4, 5, 4, 5);
             createSaleButton.Name = "createSaleButton";
-            createSaleButton.Size = new Size(118, 36);
+            createSaleButton.Size = new Size(170, 51);
             createSaleButton.TabIndex = 33;
             createSaleButton.Text = "Administrer";
             createSaleButton.UseVisualStyleBackColor = false;
@@ -413,10 +437,10 @@
             pictureBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox.BackgroundImage = Properties.Resources.user_profile_icon__4___1_;
             pictureBox.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox.Location = new Point(6, 6);
-            pictureBox.Margin = new Padding(5);
+            pictureBox.Location = new Point(8, 9);
+            pictureBox.Margin = new Padding(7, 8, 7, 8);
             pictureBox.Name = "pictureBox";
-            pictureBox.Size = new Size(448, 234);
+            pictureBox.Size = new Size(641, 321);
             pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox.TabIndex = 0;
             pictureBox.TabStop = false;
@@ -426,20 +450,21 @@
             mæglerInfoLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             mæglerInfoLabel.AutoSize = true;
             mæglerInfoLabel.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            mæglerInfoLabel.Location = new Point(6, 246);
-            mæglerInfoLabel.Margin = new Padding(5, 0, 5, 0);
+            mæglerInfoLabel.Location = new Point(8, 339);
+            mæglerInfoLabel.Margin = new Padding(7, 0, 7, 0);
             mæglerInfoLabel.Name = "mæglerInfoLabel";
-            mæglerInfoLabel.Size = new Size(448, 30);
+            mæglerInfoLabel.Size = new Size(641, 45);
             mæglerInfoLabel.TabIndex = 1;
             mæglerInfoLabel.Text = "Mægler:[ID] Info";
             // 
             // MæglerDetails
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 246, 182);
-            ClientSize = new Size(491, 747);
+            ClientSize = new Size(701, 1050);
             Controls.Add(tableLayoutPanel1);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "MæglerDetails";
             Text = "MæglerDetails";
             Load += MæglerDetails_Load;
