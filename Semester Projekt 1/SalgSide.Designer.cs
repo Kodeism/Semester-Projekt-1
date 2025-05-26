@@ -52,7 +52,7 @@
             salgLayoutPanel.Controls.Add(salgDataGridView, 0, 2);
             salgLayoutPanel.Dock = DockStyle.Fill;
             salgLayoutPanel.Location = new Point(0, 0);
-            salgLayoutPanel.Margin = new Padding(10, 10, 10, 10);
+            salgLayoutPanel.Margin = new Padding(10);
             salgLayoutPanel.Name = "salgLayoutPanel";
             salgLayoutPanel.RowCount = 3;
             salgLayoutPanel.RowStyles.Add(new RowStyle());

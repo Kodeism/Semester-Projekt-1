@@ -117,9 +117,9 @@ namespace Semester_Projekt_1
             using (SqlConnection conn = new SqlConnection(BoligLogic.GetConnectionString()))
             {
                 var result = DataRepository.HentSalg(conn);
-                OpdaterMineSalgDataGrid(result);
-                result = DataRepository.HentSalg(conn, mæglerID);
                 OpdaterAlleSalgDataGrid(result);
+                result = DataRepository.HentSalg(conn, mæglerID);
+                OpdaterMineSalgDataGrid(result);
             }
         }
         private void HentSælgerLoad(int? mæglerID = 0)
