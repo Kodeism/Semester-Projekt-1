@@ -99,7 +99,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 43.98682F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 28.3088226F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
-            tableLayoutPanel1.Size = new Size(494, 662);
+            tableLayoutPanel1.Size = new Size(514, 674);
             tableLayoutPanel1.TabIndex = 2;
             // 
             // tableLayoutPanel8
@@ -111,12 +111,12 @@
             tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel8.Controls.Add(noterTextBox, 0, 1);
             tableLayoutPanel8.Controls.Add(label11, 0, 0);
-            tableLayoutPanel8.Location = new Point(4, 455);
+            tableLayoutPanel8.Location = new Point(4, 464);
             tableLayoutPanel8.Name = "tableLayoutPanel8";
             tableLayoutPanel8.RowCount = 2;
             tableLayoutPanel8.RowStyles.Add(new RowStyle());
-            tableLayoutPanel8.RowStyles.Add(new RowStyle());
-            tableLayoutPanel8.Size = new Size(486, 159);
+            tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel8.Size = new Size(506, 163);
             tableLayoutPanel8.TabIndex = 3;
             // 
             // noterTextBox
@@ -126,7 +126,7 @@
             noterTextBox.Multiline = true;
             noterTextBox.Name = "noterTextBox";
             noterTextBox.ReadOnly = true;
-            noterTextBox.Size = new Size(480, 132);
+            noterTextBox.Size = new Size(500, 136);
             noterTextBox.TabIndex = 14;
             // 
             // label11
@@ -136,7 +136,7 @@
             label11.Font = new Font("Segoe UI", 12F);
             label11.Location = new Point(3, 0);
             label11.Name = "label11";
-            label11.Size = new Size(480, 21);
+            label11.Size = new Size(500, 21);
             label11.TabIndex = 12;
             label11.Text = "Noter";
             label11.TextAlign = ContentAlignment.BottomLeft;
@@ -152,12 +152,12 @@
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60.160965F));
             tableLayoutPanel2.Controls.Add(tableLayoutPanel5, 1, 0);
             tableLayoutPanel2.Controls.Add(tableLayoutPanel3, 0, 0);
-            tableLayoutPanel2.Location = new Point(1, 194);
+            tableLayoutPanel2.Location = new Point(1, 198);
             tableLayoutPanel2.Margin = new Padding(0);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
-            tableLayoutPanel2.RowStyles.Add(new RowStyle());
-            tableLayoutPanel2.Size = new Size(492, 257);
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel2.Size = new Size(512, 262);
             tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel5
@@ -177,7 +177,7 @@
             tableLayoutPanel5.Controls.Add(label7, 0, 4);
             tableLayoutPanel5.Controls.Add(label8, 0, 2);
             tableLayoutPanel5.Controls.Add(label9, 0, 0);
-            tableLayoutPanel5.Location = new Point(199, 4);
+            tableLayoutPanel5.Location = new Point(207, 4);
             tableLayoutPanel5.Name = "tableLayoutPanel5";
             tableLayoutPanel5.RowCount = 10;
             tableLayoutPanel5.RowStyles.Add(new RowStyle());
@@ -190,7 +190,7 @@
             tableLayoutPanel5.RowStyles.Add(new RowStyle());
             tableLayoutPanel5.RowStyles.Add(new RowStyle());
             tableLayoutPanel5.RowStyles.Add(new RowStyle());
-            tableLayoutPanel5.Size = new Size(289, 250);
+            tableLayoutPanel5.Size = new Size(301, 254);
             tableLayoutPanel5.TabIndex = 4;
             // 
             // tableLayoutPanel7
@@ -208,7 +208,7 @@
             tableLayoutPanel7.Name = "tableLayoutPanel7";
             tableLayoutPanel7.RowCount = 1;
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel7.Size = new Size(289, 29);
+            tableLayoutPanel7.Size = new Size(301, 33);
             tableLayoutPanel7.TabIndex = 25;
             // 
             // ønsketVærelserTextBox
@@ -218,17 +218,17 @@
             ønsketVærelserTextBox.Location = new Point(3, 3);
             ønsketVærelserTextBox.Name = "ønsketVærelserTextBox";
             ønsketVærelserTextBox.ReadOnly = true;
-            ønsketVærelserTextBox.Size = new Size(121, 23);
+            ønsketVærelserTextBox.Size = new Size(126, 23);
             ønsketVærelserTextBox.TabIndex = 22;
             // 
             // ønsketBoligStørrelseTextBox
             // 
             ønsketBoligStørrelseTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             ønsketBoligStørrelseTextBox.Enabled = false;
-            ønsketBoligStørrelseTextBox.Location = new Point(130, 3);
+            ønsketBoligStørrelseTextBox.Location = new Point(135, 3);
             ønsketBoligStørrelseTextBox.Name = "ønsketBoligStørrelseTextBox";
             ønsketBoligStørrelseTextBox.ReadOnly = true;
-            ønsketBoligStørrelseTextBox.Size = new Size(156, 23);
+            ønsketBoligStørrelseTextBox.Size = new Size(163, 23);
             ønsketBoligStørrelseTextBox.TabIndex = 24;
             // 
             // ønsketGrundStørrelseTextBox
@@ -238,7 +238,7 @@
             ønsketGrundStørrelseTextBox.Location = new Point(3, 174);
             ønsketGrundStørrelseTextBox.Name = "ønsketGrundStørrelseTextBox";
             ønsketGrundStørrelseTextBox.ReadOnly = true;
-            ønsketGrundStørrelseTextBox.Size = new Size(283, 23);
+            ønsketGrundStørrelseTextBox.Size = new Size(295, 23);
             ønsketGrundStørrelseTextBox.TabIndex = 21;
             // 
             // tableLayoutPanel6
@@ -256,7 +256,7 @@
             tableLayoutPanel6.Name = "tableLayoutPanel6";
             tableLayoutPanel6.RowCount = 1;
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel6.Size = new Size(289, 21);
+            tableLayoutPanel6.Size = new Size(301, 21);
             tableLayoutPanel6.TabIndex = 5;
             // 
             // label5
@@ -264,9 +264,9 @@
             label5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F);
-            label5.Location = new Point(130, 0);
+            label5.Location = new Point(135, 0);
             label5.Name = "label5";
-            label5.Size = new Size(156, 21);
+            label5.Size = new Size(163, 21);
             label5.TabIndex = 12;
             label5.Text = "ØnsketBoligStørrelse";
             label5.TextAlign = ContentAlignment.BottomLeft;
@@ -278,7 +278,7 @@
             label10.Font = new Font("Segoe UI", 12F);
             label10.Location = new Point(3, 0);
             label10.Name = "label10";
-            label10.Size = new Size(121, 21);
+            label10.Size = new Size(126, 21);
             label10.TabIndex = 23;
             label10.Text = "ØnsketVærelser";
             label10.TextAlign = ContentAlignment.BottomLeft;
@@ -290,7 +290,7 @@
             boligTypeTextBox.Location = new Point(3, 124);
             boligTypeTextBox.Name = "boligTypeTextBox";
             boligTypeTextBox.ReadOnly = true;
-            boligTypeTextBox.Size = new Size(283, 23);
+            boligTypeTextBox.Size = new Size(295, 23);
             boligTypeTextBox.TabIndex = 20;
             // 
             // søgeOmrådeTextBox
@@ -300,7 +300,7 @@
             søgeOmrådeTextBox.Location = new Point(3, 74);
             søgeOmrådeTextBox.Name = "søgeOmrådeTextBox";
             søgeOmrådeTextBox.ReadOnly = true;
-            søgeOmrådeTextBox.Size = new Size(283, 23);
+            søgeOmrådeTextBox.Size = new Size(295, 23);
             søgeOmrådeTextBox.TabIndex = 19;
             // 
             // prisKlasseTextBox
@@ -310,7 +310,7 @@
             prisKlasseTextBox.Location = new Point(3, 24);
             prisKlasseTextBox.Name = "prisKlasseTextBox";
             prisKlasseTextBox.ReadOnly = true;
-            prisKlasseTextBox.Size = new Size(283, 23);
+            prisKlasseTextBox.Size = new Size(295, 23);
             prisKlasseTextBox.TabIndex = 18;
             // 
             // label6
@@ -320,7 +320,7 @@
             label6.Font = new Font("Segoe UI", 12F);
             label6.Location = new Point(3, 150);
             label6.Name = "label6";
-            label6.Size = new Size(283, 21);
+            label6.Size = new Size(295, 21);
             label6.TabIndex = 11;
             label6.Text = "ØnsketGrundStørrelse";
             label6.TextAlign = ContentAlignment.BottomLeft;
@@ -332,7 +332,7 @@
             label7.Font = new Font("Segoe UI", 12F);
             label7.Location = new Point(3, 100);
             label7.Name = "label7";
-            label7.Size = new Size(283, 21);
+            label7.Size = new Size(295, 21);
             label7.TabIndex = 10;
             label7.Text = "BoligType";
             label7.TextAlign = ContentAlignment.BottomLeft;
@@ -344,7 +344,7 @@
             label8.Font = new Font("Segoe UI", 12F);
             label8.Location = new Point(3, 50);
             label8.Name = "label8";
-            label8.Size = new Size(283, 21);
+            label8.Size = new Size(295, 21);
             label8.TabIndex = 9;
             label8.Text = "SøgeOmråde";
             label8.TextAlign = ContentAlignment.BottomLeft;
@@ -356,7 +356,7 @@
             label9.Font = new Font("Segoe UI", 12F);
             label9.Location = new Point(3, 0);
             label9.Name = "label9";
-            label9.Size = new Size(283, 21);
+            label9.Size = new Size(295, 21);
             label9.TabIndex = 8;
             label9.Text = "PrisKlasse";
             label9.TextAlign = ContentAlignment.BottomLeft;
@@ -391,7 +391,7 @@
             tableLayoutPanel3.RowStyles.Add(new RowStyle());
             tableLayoutPanel3.RowStyles.Add(new RowStyle());
             tableLayoutPanel3.RowStyles.Add(new RowStyle());
-            tableLayoutPanel3.Size = new Size(188, 250);
+            tableLayoutPanel3.Size = new Size(196, 254);
             tableLayoutPanel3.TabIndex = 3;
             // 
             // emailTextBox
@@ -401,7 +401,7 @@
             emailTextBox.Location = new Point(3, 224);
             emailTextBox.Name = "emailTextBox";
             emailTextBox.ReadOnly = true;
-            emailTextBox.Size = new Size(182, 23);
+            emailTextBox.Size = new Size(190, 23);
             emailTextBox.TabIndex = 22;
             // 
             // adresseTextBox
@@ -411,7 +411,7 @@
             adresseTextBox.Location = new Point(3, 174);
             adresseTextBox.Name = "adresseTextBox";
             adresseTextBox.ReadOnly = true;
-            adresseTextBox.Size = new Size(182, 23);
+            adresseTextBox.Size = new Size(190, 23);
             adresseTextBox.TabIndex = 21;
             // 
             // tlfNummerTextBox
@@ -421,7 +421,7 @@
             tlfNummerTextBox.Location = new Point(3, 124);
             tlfNummerTextBox.Name = "tlfNummerTextBox";
             tlfNummerTextBox.ReadOnly = true;
-            tlfNummerTextBox.Size = new Size(182, 23);
+            tlfNummerTextBox.Size = new Size(190, 23);
             tlfNummerTextBox.TabIndex = 20;
             // 
             // efterNavnTextBox
@@ -431,7 +431,7 @@
             efterNavnTextBox.Location = new Point(3, 74);
             efterNavnTextBox.Name = "efterNavnTextBox";
             efterNavnTextBox.ReadOnly = true;
-            efterNavnTextBox.Size = new Size(182, 23);
+            efterNavnTextBox.Size = new Size(190, 23);
             efterNavnTextBox.TabIndex = 19;
             // 
             // forNavnTextBox
@@ -441,7 +441,7 @@
             forNavnTextBox.Location = new Point(3, 24);
             forNavnTextBox.Name = "forNavnTextBox";
             forNavnTextBox.ReadOnly = true;
-            forNavnTextBox.Size = new Size(182, 23);
+            forNavnTextBox.Size = new Size(190, 23);
             forNavnTextBox.TabIndex = 18;
             // 
             // label4
@@ -451,7 +451,7 @@
             label4.Font = new Font("Segoe UI", 12F);
             label4.Location = new Point(3, 200);
             label4.Name = "label4";
-            label4.Size = new Size(182, 21);
+            label4.Size = new Size(190, 21);
             label4.TabIndex = 12;
             label4.Text = "E-mail";
             label4.TextAlign = ContentAlignment.BottomLeft;
@@ -463,7 +463,7 @@
             label3.Font = new Font("Segoe UI", 12F);
             label3.Location = new Point(3, 150);
             label3.Name = "label3";
-            label3.Size = new Size(182, 21);
+            label3.Size = new Size(190, 21);
             label3.TabIndex = 11;
             label3.Text = "Adresse";
             label3.TextAlign = ContentAlignment.BottomLeft;
@@ -475,7 +475,7 @@
             label2.Font = new Font("Segoe UI", 12F);
             label2.Location = new Point(3, 100);
             label2.Name = "label2";
-            label2.Size = new Size(182, 21);
+            label2.Size = new Size(190, 21);
             label2.TabIndex = 10;
             label2.Text = "Telefonnummer";
             label2.TextAlign = ContentAlignment.BottomLeft;
@@ -487,7 +487,7 @@
             label1.Font = new Font("Segoe UI", 12F);
             label1.Location = new Point(3, 50);
             label1.Name = "label1";
-            label1.Size = new Size(182, 21);
+            label1.Size = new Size(190, 21);
             label1.TabIndex = 9;
             label1.Text = "Efternavn";
             label1.TextAlign = ContentAlignment.BottomLeft;
@@ -499,7 +499,7 @@
             adresseLabel.Font = new Font("Segoe UI", 12F);
             adresseLabel.Location = new Point(3, 0);
             adresseLabel.Name = "adresseLabel";
-            adresseLabel.Size = new Size(182, 21);
+            adresseLabel.Size = new Size(190, 21);
             adresseLabel.TabIndex = 8;
             adresseLabel.Text = "Fornavn";
             adresseLabel.TextAlign = ContentAlignment.BottomLeft;
@@ -518,12 +518,12 @@
             tableLayoutPanel4.Controls.Add(redigerButton, 2, 0);
             tableLayoutPanel4.Controls.Add(gemÆndringerButton, 3, 0);
             tableLayoutPanel4.Controls.Add(createSaleButton, 1, 0);
-            tableLayoutPanel4.Location = new Point(1, 618);
+            tableLayoutPanel4.Location = new Point(1, 631);
             tableLayoutPanel4.Margin = new Padding(0);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             tableLayoutPanel4.RowCount = 1;
             tableLayoutPanel4.RowStyles.Add(new RowStyle());
-            tableLayoutPanel4.Size = new Size(492, 43);
+            tableLayoutPanel4.Size = new Size(512, 42);
             tableLayoutPanel4.TabIndex = 1;
             // 
             // closeButton
@@ -535,7 +535,7 @@
             closeButton.Font = new Font("Segoe UI", 14.25F);
             closeButton.Location = new Point(3, 3);
             closeButton.Name = "closeButton";
-            closeButton.Size = new Size(116, 37);
+            closeButton.Size = new Size(121, 36);
             closeButton.TabIndex = 32;
             closeButton.Text = "Luk";
             closeButton.UseVisualStyleBackColor = false;
@@ -548,9 +548,9 @@
             redigerButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             redigerButton.BackColor = SystemColors.ActiveCaption;
             redigerButton.Font = new Font("Segoe UI", 14.25F);
-            redigerButton.Location = new Point(258, 3);
+            redigerButton.Location = new Point(269, 3);
             redigerButton.Name = "redigerButton";
-            redigerButton.Size = new Size(118, 37);
+            redigerButton.Size = new Size(123, 36);
             redigerButton.TabIndex = 34;
             redigerButton.Text = "Rediger";
             redigerButton.UseVisualStyleBackColor = false;
@@ -562,9 +562,9 @@
             gemÆndringerButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             gemÆndringerButton.BackColor = Color.FromArgb(45, 199, 92);
             gemÆndringerButton.Font = new Font("Segoe UI", 14.25F);
-            gemÆndringerButton.Location = new Point(382, 3);
+            gemÆndringerButton.Location = new Point(398, 3);
             gemÆndringerButton.Name = "gemÆndringerButton";
-            gemÆndringerButton.Size = new Size(107, 37);
+            gemÆndringerButton.Size = new Size(111, 36);
             gemÆndringerButton.TabIndex = 35;
             gemÆndringerButton.Text = "Gem";
             gemÆndringerButton.UseVisualStyleBackColor = false;
@@ -576,9 +576,9 @@
             createSaleButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             createSaleButton.BackColor = Color.Yellow;
             createSaleButton.Font = new Font("Segoe UI", 14.25F);
-            createSaleButton.Location = new Point(125, 3);
+            createSaleButton.Location = new Point(130, 3);
             createSaleButton.Name = "createSaleButton";
-            createSaleButton.Size = new Size(127, 37);
+            createSaleButton.Size = new Size(133, 36);
             createSaleButton.TabIndex = 33;
             createSaleButton.Text = "Administrer";
             createSaleButton.UseVisualStyleBackColor = false;
@@ -591,7 +591,7 @@
             pictureBox.Location = new Point(6, 6);
             pictureBox.Margin = new Padding(5);
             pictureBox.Name = "pictureBox";
-            pictureBox.Size = new Size(482, 151);
+            pictureBox.Size = new Size(502, 155);
             pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox.TabIndex = 0;
             pictureBox.TabStop = false;
@@ -601,10 +601,10 @@
             køberInfoLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             køberInfoLabel.AutoSize = true;
             køberInfoLabel.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            køberInfoLabel.Location = new Point(6, 163);
+            køberInfoLabel.Location = new Point(6, 167);
             køberInfoLabel.Margin = new Padding(5, 0, 5, 0);
             køberInfoLabel.Name = "køberInfoLabel";
-            køberInfoLabel.Size = new Size(482, 30);
+            køberInfoLabel.Size = new Size(502, 30);
             køberInfoLabel.TabIndex = 1;
             køberInfoLabel.Text = "Køber:[ID] Info";
             // 
@@ -612,8 +612,10 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(255, 246, 182);
-            ClientSize = new Size(512, 680);
+            ClientSize = new Size(532, 692);
             Controls.Add(tableLayoutPanel1);
             Name = "KøberDetails";
             Text = "KøberDetails";
