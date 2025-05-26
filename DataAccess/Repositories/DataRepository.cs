@@ -1189,7 +1189,7 @@ namespace DataAccess.Repositories
                 Status = "";
             if(Status=="Ikke Solgt"&& ByNavn != "")
             {
-                sql += " where B.ByNavn = " + "'" + ByNavn + "'" + " and B.Status != " + "'Solgt'";
+                sql += " where B.ByNavn LIKE " + "'" + '%' + ByNavn + '%' + "'" + " and B.Status != " + "'Solgt'";
             }
             else if (Status == "Ikke Solgt" && ByNavn == "")
             {
@@ -1197,11 +1197,11 @@ namespace DataAccess.Repositories
             }
             else if(ByNavn != "" && Status != "")
             {
-                sql += " where B.ByNavn = " + "'" + ByNavn + "'" + " and B.Status = " + "'" + Status + "'";
+                sql += " where B.ByNavn LIKE " + "'" + '%' + ByNavn + '%' + "'" + " and B.Status = " + "'" + Status + "'";
             }
             else if (ByNavn != "" && Status == "")
             {
-                sql += " where B.ByNavn = " + "'" + ByNavn + "'";
+                sql += " where B.ByNavn LIKE " + "'" + '%' + ByNavn + '%' + "'";
             }
             else if (ByNavn == "" && Status != "")
             {

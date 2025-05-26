@@ -119,6 +119,7 @@ namespace Semester_Projekt_1
             antalSalgLabel.Text = Convert.ToInt64(Data["label"][6]).ToString("N0");
             sumPengeSalgLabel.Text = Convert.ToInt64(Data["label"][7]).ToString("N0") + " kr.";
             nyeBoliger.DataSource = Data["tabel"][0];
+            nyeKøbere.DataSource = Data["tabel"][1];
             nyeBoliger.Columns["BoligID"].Visible = false;
             nyeBoliger.Columns["Adresse"].Visible = false;
             nyeBoliger.Columns["Postnummer"].Visible = false;
@@ -128,7 +129,6 @@ namespace Semester_Projekt_1
             nyeBoliger.Columns["EjendomsmæglerID"].Visible = false;
             nyeBoliger.Columns["SælgerID"].Visible = false;
             nyeBoliger.Columns["Status"].Visible = false;
-            nyeKøbere.DataSource = Data["tabel"][1];
             boligerBoligTypePlot.UserInputProcessor.IsEnabled = false;
             køberBoligTypePlot.UserInputProcessor.IsEnabled = false;
             nyeKøbere.Columns["KøberID"].Visible = false;
