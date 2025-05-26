@@ -12,6 +12,7 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
             this.FormClosed += Close_Program;
+            this.AcceptButton = LoginButton;
         }
         private void Close_Program(object sender, FormClosedEventArgs e)
         {

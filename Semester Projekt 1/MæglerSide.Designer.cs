@@ -41,6 +41,7 @@
             // 
             // mæglerLayoutPanel
             // 
+            mæglerLayoutPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             mæglerLayoutPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             mæglerLayoutPanel.BackColor = Color.FromArgb(255, 246, 218);
             mæglerLayoutPanel.ColumnCount = 1;
@@ -48,7 +49,6 @@
             mæglerLayoutPanel.Controls.Add(mæglerMenuLayoutPanel, 0, 1);
             mæglerLayoutPanel.Controls.Add(mæglerLabel, 0, 0);
             mæglerLayoutPanel.Controls.Add(mæglerDataGridView, 0, 2);
-            mæglerLayoutPanel.Dock = DockStyle.Fill;
             mæglerLayoutPanel.Location = new Point(0, 0);
             mæglerLayoutPanel.Margin = new Padding(0);
             mæglerLayoutPanel.Name = "mæglerLayoutPanel";
@@ -56,7 +56,7 @@
             mæglerLayoutPanel.RowStyles.Add(new RowStyle());
             mæglerLayoutPanel.RowStyles.Add(new RowStyle());
             mæglerLayoutPanel.RowStyles.Add(new RowStyle());
-            mæglerLayoutPanel.Size = new Size(689, 663);
+            mæglerLayoutPanel.Size = new Size(482, 398);
             mæglerLayoutPanel.TabIndex = 1;
             // 
             // mæglerMenuLayoutPanel
@@ -69,12 +69,12 @@
             mæglerMenuLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             mæglerMenuLayoutPanel.Controls.Add(mæglerSøgeFelt, 0, 0);
             mæglerMenuLayoutPanel.Controls.Add(mæglerFilterKnap, 1, 0);
-            mæglerMenuLayoutPanel.Location = new Point(10, 54);
-            mæglerMenuLayoutPanel.Margin = new Padding(10, 0, 10, 0);
+            mæglerMenuLayoutPanel.Location = new Point(7, 37);
+            mæglerMenuLayoutPanel.Margin = new Padding(7, 0, 7, 0);
             mæglerMenuLayoutPanel.Name = "mæglerMenuLayoutPanel";
             mæglerMenuLayoutPanel.RowCount = 1;
             mæglerMenuLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            mæglerMenuLayoutPanel.Size = new Size(669, 35);
+            mæglerMenuLayoutPanel.Size = new Size(468, 25);
             mæglerMenuLayoutPanel.TabIndex = 3;
             // 
             // mæglerSøgeFelt
@@ -85,7 +85,7 @@
             mæglerSøgeFelt.Location = new Point(0, 0);
             mæglerSøgeFelt.Margin = new Padding(0);
             mæglerSøgeFelt.Name = "mæglerSøgeFelt";
-            mæglerSøgeFelt.Size = new Size(501, 34);
+            mæglerSøgeFelt.Size = new Size(351, 25);
             mæglerSøgeFelt.TabIndex = 0;
             // 
             // mæglerFilterKnap
@@ -95,10 +95,10 @@
             mæglerFilterKnap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             mæglerFilterKnap.BackColor = Color.FromArgb(255, 202, 202);
             mæglerFilterKnap.FlatStyle = FlatStyle.Popup;
-            mæglerFilterKnap.Location = new Point(501, 0);
+            mæglerFilterKnap.Location = new Point(351, 0);
             mæglerFilterKnap.Margin = new Padding(0);
             mæglerFilterKnap.Name = "mæglerFilterKnap";
-            mæglerFilterKnap.Size = new Size(168, 35);
+            mæglerFilterKnap.Size = new Size(117, 25);
             mæglerFilterKnap.TabIndex = 1;
             mæglerFilterKnap.Text = "Filtrer";
             mæglerFilterKnap.UseVisualStyleBackColor = false;
@@ -111,32 +111,34 @@
             mæglerLabel.Location = new Point(0, 0);
             mæglerLabel.Margin = new Padding(0);
             mæglerLabel.Name = "mæglerLabel";
-            mæglerLabel.Size = new Size(689, 54);
+            mæglerLabel.Size = new Size(482, 37);
             mæglerLabel.TabIndex = 1;
             mæglerLabel.Text = "Mæglere";
             mæglerLabel.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // mæglerDataGridView
             // 
-            mæglerDataGridView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             mæglerDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             mæglerDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            mæglerDataGridView.Location = new Point(10, 89);
-            mæglerDataGridView.Margin = new Padding(10, 0, 10, 5);
+            mæglerDataGridView.Dock = DockStyle.Fill;
+            mæglerDataGridView.Location = new Point(7, 62);
+            mæglerDataGridView.Margin = new Padding(7, 0, 7, 3);
             mæglerDataGridView.Name = "mæglerDataGridView";
             mæglerDataGridView.ReadOnly = true;
             mæglerDataGridView.RowHeadersWidth = 62;
-            mæglerDataGridView.Size = new Size(669, 572);
+            mæglerDataGridView.Size = new Size(468, 333);
             mæglerDataGridView.TabIndex = 2;
+            mæglerDataGridView.CellDoubleClick += mæglerDataGridView_CellDoubleClick;
             // 
             // MæglerSide
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             Controls.Add(mæglerLayoutPanel);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "MæglerSide";
-            Size = new Size(689, 663);
+            Size = new Size(482, 398);
             mæglerLayoutPanel.ResumeLayout(false);
             mæglerLayoutPanel.PerformLayout();
             mæglerMenuLayoutPanel.ResumeLayout(false);

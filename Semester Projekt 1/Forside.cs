@@ -120,8 +120,18 @@ namespace Semester_Projekt_1
             sumPengeSalgLabel.Text = Convert.ToInt64(Data["label"][7]).ToString("N0") + " kr.";
             nyeBoliger.DataSource = Data["tabel"][0];
             nyeKøbere.DataSource = Data["tabel"][1];
+            nyeBoliger.Columns["BoligID"].Visible = false;
+            nyeBoliger.Columns["Adresse"].Visible = false;
+            nyeBoliger.Columns["Postnummer"].Visible = false;
+            nyeBoliger.Columns["BoligAreal"].Visible = false;
+            nyeBoliger.Columns["GrundStørrelse"].Visible = false;
+            nyeBoliger.Columns["EnergiMærke"].Visible = false;
+            nyeBoliger.Columns["EjendomsmæglerID"].Visible = false;
+            nyeBoliger.Columns["SælgerID"].Visible = false;
+            nyeBoliger.Columns["Status"].Visible = false;
             boligerBoligTypePlot.UserInputProcessor.IsEnabled = false;
             køberBoligTypePlot.UserInputProcessor.IsEnabled = false;
+            nyeKøbere.Columns["KøberID"].Visible = false;
         }
 
         private void Forside_Resize(object sender, EventArgs e)
@@ -132,7 +142,29 @@ namespace Semester_Projekt_1
 
         private void boligerLayoutPanel_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void nyeBoliger_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+            DataGridViewRow selectedRow = nyeBoliger.Rows[e.RowIndex];
+            BoligLogic boligLogic = new BoligLogic();
+            DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["BoligID"].Value), "Bolig");
+            BoligDetaljer bd = new BoligDetaljer(datas);
+            bd.Show();
+        }
+
+        private void nyeKøbere_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex < 0)
+                return;
+            DataGridViewRow selectedRow = nyeKøbere.Rows[e.RowIndex];
+            BoligLogic boligLogic = new BoligLogic();
+            DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["KøberID"].Value), "Køber");
+            KøberDetails kd = new KøberDetails(datas);
+            kd.Show();
         }
     }
 }

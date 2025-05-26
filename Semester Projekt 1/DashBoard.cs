@@ -1,4 +1,6 @@
+using BusineesLogic;
 using Models;
+using System.Data;
 
 namespace Semester_Projekt_1
 {
@@ -9,7 +11,21 @@ namespace Semester_Projekt_1
             InitializeComponent();
             this.FormClosed += Close_Program;
             openPage(new Forside());
+            InitializeElements();
+        }
+        private void InitializeElements()
+        {
             brugerNavnLabel.Text = SessionManager.FuldeNavn;
+            startDBKnap.Width = lDBLayoutPanel.Width;
+            sælgerDBPanel.Height = sælgereDBKnap.Height;
+            køberDBPanel.Height = køberDBKnap.Height;
+            personDBPanel.Height = personDBKnap.Height;
+            køberDBPanel.Width = personDBKnap.Width;
+            sælgerDBPanel.Width = personDBKnap.Width;
+            salgDBPanel.Height = salgDBKnap.Height;
+            salgDBPanel.Width = salgDBKnap.Width;
+            boligDBPanel.Width = boligDBKnap.Width;
+            boligDBPanel.Height = boligDBKnap.Height;
         }
         private void Close_Program(object sender, FormClosedEventArgs e)
         {
@@ -52,11 +68,7 @@ namespace Semester_Projekt_1
             {
                 personDBPanel.Height = maxunder;
             }
-            else if (personDBPanel.Height <= maxunder)
-            {
-                personDBPanel.Height = min;
-            }
-            else if (personDBPanel.Height > maxunder)
+            else if (personDBPanel.Height >= maxunder)
             {
                 personDBPanel.Height = min;
                 sælgerDBPanel.Height = sælgereDBKnap.Height;
@@ -209,6 +221,19 @@ namespace Semester_Projekt_1
         {
             Ekspoterdata eksport = new Ekspoterdata();
             eksport.ShowDialog();
+        }
+
+        private void DashBoard_Load(object sender, EventArgs e)
+        {
+            startDBKnap.Width = lDBLayoutPanel.Width;
+        }
+
+        private void brugerDBKnap_Click(object sender, EventArgs e)
+        {
+            BoligLogic boligLogic = new BoligLogic();
+            DataTable datas = boligLogic.GetDetails(Convert.ToInt32(SessionManager.EjendomsmæglerId), "Ejendomsmægler");
+            MæglerDetails ed = new MæglerDetails(datas);
+            ed.Show();
         }
     }
 }

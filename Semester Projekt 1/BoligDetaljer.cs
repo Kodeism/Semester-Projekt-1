@@ -18,15 +18,22 @@ namespace Semester_Projekt_1
         private List<ComboBox> editableComboBoxes;
         private BoligLogic boligLogic;
         private Bolig boligDetaljer;
-
-        public BoligDetaljer(int boligID)
+        private DataTable bolig;
+        private int BoligID;
+        public BoligDetaljer(DataTable Bolig)
         {
             InitializeComponent();
-
+            bolig = Bolig;
             boligLogic = new BoligLogic();
-            boligDetaljer = boligLogic.GetBolig(boligID);
             editableTextBoxes = new List<TextBox>() { prisTextBox };
             editableComboBoxes = new List<ComboBox>() { };
+            if (SessionManager.EjendomsmæglerId != Convert.ToInt32(bolig.Rows[0]["EjendomsmæglerID"]) && SessionManager.AdgangsNiveau != 2)
+            {
+                redigerButton.Enabled = false;
+                gemÆndringerButton.Enabled = false;
+                createSaleButton.Enabled = false;
+            }
+            BoligID = Convert.ToInt32(bolig.Rows[0]["BoligID"]);
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -36,7 +43,8 @@ namespace Semester_Projekt_1
 
         private void createSaleButton_Click(object sender, EventArgs e)
         {
-            //opret salg med valgte bolig
+            Delete_Sell delete_Sell = new Delete_Sell(BoligID);
+            delete_Sell.ShowDialog();
         }
 
         private void redigerButton_Click(object sender, EventArgs e)
@@ -53,27 +61,61 @@ namespace Semester_Projekt_1
 
         private void BoligDetaljer_Load(object sender, EventArgs e)
         {
-            prisTextBox.Text = boligDetaljer.Pris.ToString();
-            adresseTextBox.Text = boligDetaljer.Adresse;
-            byTextBox.Text = boligDetaljer.ByNavn;
-            typeComboBox.Text = boligDetaljer.Type;
-            regionComboBox.Text = "";
-            postnrTextBox.Text = boligDetaljer.PostNummer.ToString();
-            grundArealTextBox.Text = boligDetaljer.GrundStørrelse.ToString();
-            boligarealTextBox.Text = boligDetaljer.BoligAreal.ToString();
-            statusComboBox.Text = boligDetaljer.Status;
-            energimærkeTextBox.Text = boligDetaljer.EnergiMærke;
-            værelserTextBox.Text = boligDetaljer.Værelser.ToString();
-            mæglerComboBox.Text = boligDetaljer.EjendomsmæglerNavn;
-            sælgerTextBox.Text = boligDetaljer.SælgerNavn;
-
+            prisTextBox.Text = bolig.Rows[0]["Pris"].ToString();
+            adresseTextBox.Text = bolig.Rows[0]["Adresse"].ToString();
+            byTextBox.Text = bolig.Rows[0]["ByNavn"].ToString();
+            typeTextBox.Text = bolig.Rows[0]["BoligType"].ToString(); ;
+            regionTextBox.Text = "N/A";
+            postnrTextBox.Text = bolig.Rows[0]["Postnummer"].ToString();
+            grundArealTextBox.Text = bolig.Rows[0]["GrundStørrelse"].ToString();
+            boligarealTextBox.Text = bolig.Rows[0]["BoligAreal"].ToString();
+            statusTextBox.Text = bolig.Rows[0]["Status"].ToString();
+            energimærkeTextBox.Text = bolig.Rows[0]["EnergiMærke"].ToString();
+            værelserTextBox.Text = bolig.Rows[0]["Værelser"].ToString();
+            mæglerTextBox.Text = bolig.Rows[0]["Ejendomsmægler"].ToString();
+            sælgerTextBox.Text = bolig.Rows[0]["Sælger"].ToString();
+            byggeDatoTextBox.Text = bolig.Rows[0]["ByggeDato"].ToString();
+            boligInfoLabel.Text = $"Bolig:[{BoligID}] Info";
+            sælgerTextBox.Cursor = Cursors.Hand;
+            mæglerTextBox.Cursor = Cursors.Hand;
         }
 
         private void gemÆndringerButton_Click(object sender, EventArgs e)
         {
-            boligDetaljer.Pris = int.Parse(prisTextBox.Text);
-            boligLogic.UpdateBoligPris(boligDetaljer);
-            this.Close();
+            int Pris;
+            try
+            {
+                Pris = Convert.ToInt32(prisTextBox.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Pris skal inkluderes og kan kun skrives med tal", "Pris", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            boligLogic.UpdateBoligPris(Pris, BoligID);
+            prisTextBox.Enabled = false;
+        }
+
+        private void statusLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sælgerTextBox_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            BoligLogic boligLogic = new BoligLogic();
+            DataTable datas = boligLogic.GetDetails(Convert.ToInt32(bolig.Rows[0]["SælgerID"]), "Sælger");
+            SælgerDetails sd = new SælgerDetails(datas);
+            sd.Show();
+        }
+
+        private void mæglerTextBox_DoubleClick(object sender, EventArgs e)
+        {
+            BoligLogic boligLogic = new BoligLogic();
+            DataTable datas = boligLogic.GetDetails(Convert.ToInt32(bolig.Rows[0]["EjendomsmæglerID"]), "Ejendomsmægler");
+            MæglerDetails md = new MæglerDetails(datas);
+            md.Show();
+
         }
     }
 }

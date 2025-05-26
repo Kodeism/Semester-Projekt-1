@@ -27,7 +27,6 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
             SetMode(mode);
-
         }
         public void SetMode(Mode mode)
         {
@@ -118,9 +117,9 @@ namespace Semester_Projekt_1
             using (SqlConnection conn = new SqlConnection(BoligLogic.GetConnectionString()))
             {
                 var result = DataRepository.HentSalg(conn);
-                OpdaterMineSalgDataGrid(result);
-                result = DataRepository.HentSalg(conn, mæglerID);
                 OpdaterAlleSalgDataGrid(result);
+                result = DataRepository.HentSalg(conn, mæglerID);
+                OpdaterMineSalgDataGrid(result);
             }
         }
         private void HentSælgerLoad(int? mæglerID = 0)
@@ -361,6 +360,16 @@ namespace Semester_Projekt_1
 
         private void mineDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if(currentMode == Mode.Købere)
+            {
+                if (e.RowIndex < 0)
+                    return;
+                DataGridViewRow selectedRow = mineDataGridView.Rows[e.RowIndex];
+                BoligLogic boligLogic = new BoligLogic();
+                DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["KøberID"].Value), "Køber");
+                KøberDetails kd = new KøberDetails(datas);
+                kd.Show();
+            }
             if (currentMode == Mode.Sælgere)
             {
                 if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
@@ -378,18 +387,13 @@ namespace Semester_Projekt_1
             }
             if (currentMode == Mode.Boliger)
             {
-                if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
-                {
-                    DataGridView mineDataGridView = (DataGridView)sender;
-
-                    // Hent værdien af BoligID i den valgte række
-                    var boligIDValue = mineDataGridView.Rows[e.RowIndex].Cells["BoligID"].Value;
-
-                    int boligID = Convert.ToInt32(boligIDValue);
-
-                    DeleteBolig deleteBolig = new DeleteBolig(boligID);
-                    deleteBolig.Show();
-                }
+                if (e.RowIndex < 0)
+                    return;
+                DataGridViewRow selectedRow = mineDataGridView.Rows[e.RowIndex];
+                BoligLogic boligLogic = new BoligLogic();
+                DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["BoligID"].Value),"Bolig");
+                BoligDetaljer bd = new BoligDetaljer(datas);
+                bd.Show();
             }
         }
 
@@ -413,22 +417,27 @@ namespace Semester_Projekt_1
                     deleteSælger.Show();
                 }
             }
+            if(currentMode== Mode.Købere)
+            {
+                if (e.RowIndex < 0)
+                    return;
+                DataGridViewRow selectedRow = alleDataGridView.Rows[e.RowIndex];
+                BoligLogic boligLogic = new BoligLogic();
+                DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["KøberID"].Value), "Køber");
+                KøberDetails kd = new KøberDetails(datas);
+                kd.Show();
+            }
             // udkommenteret eftersom det vil være underligt at kunne slette andres boliger
-            //if (currentMode == Mode.Boliger)
-            //{
-            //    if (e.RowIndex >= 0) // Sørger for at det ikke er header-rækken
-            //    {
-            //        DataGridView alleDataGridView = (DataGridView)sender;
-
-            //        // Hent værdien af BoligID i den valgte række
-            //        var boligIDValue = alleDataGridView.Rows[e.RowIndex].Cells["BoligID"].Value;
-
-            //        int boligID = Convert.ToInt32(boligIDValue);
-
-            //        DeleteBolig deleteBolig = new DeleteBolig(boligID);
-            //        deleteBolig.Show();
-            //    }
-            //}
-}
+            if (currentMode == Mode.Boliger)
+            {
+                if (e.RowIndex < 0)
+                    return;
+                DataGridViewRow selectedRow = alleDataGridView.Rows[e.RowIndex];
+                BoligLogic boligLogic = new BoligLogic();
+                DataTable datas = boligLogic.GetDetails(Convert.ToInt32(selectedRow.Cells["BoligID"].Value), "Bolig");
+                BoligDetaljer bd = new BoligDetaljer(datas);
+                bd.Show();
+            }
+        }
     }
 }

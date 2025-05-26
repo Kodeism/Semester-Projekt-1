@@ -67,15 +67,19 @@ namespace Semester_Projekt_1
                 int værelser = int.Parse(opretBoligAntalVærelserTextBox.Text);
                 DateTime byggeDato = byggeDatoDatePicker.Value;
                 int grundAreal = int.Parse(opretBoligGrundarealTextbox.Text);
-                int mæglerID = (int)boligOprettelseSælgerComboBox.SelectedValue;
+                int mæglerID = SessionManager.EjendomsmæglerId;
                 int sælgerID = 2;
                 string energimærke = opretBoligEnergimærkeTextBox.Text;
                 string status = (string)opretBoligStatusComboBox.SelectedValue;
 
-                boligLogic.CreateBolig(
+                object check = boligLogic.CreateBolig(
                         pris, adresse, postnr, by, type, boligAreal, værelser,
                         byggeDato, grundAreal, mæglerID, sælgerID, energimærke, status
                     );
+                if ( check != null )
+                    MessageBox.Show("Boligen er oprettet", "Oprettelse succes", MessageBoxButtons.OK);
+                else
+                    MessageBox.Show("Denne bolig eksiterer allerede i systemet. Prøv at ændre den eksistrende registrering eller indtast en ny sælger", "Oprettelse fejlet", MessageBoxButtons.OK);
             }
             catch (Exception)
             {

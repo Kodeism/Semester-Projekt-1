@@ -26,61 +26,66 @@ namespace DataAccess.Repositories
         }
         public Bolig CreateBolig(Bolig bolig)
         {
-            SqlCommand command = connection.CreateCommand();
-            var sql = """
-                    INSERT INTO Bolig (
-                	    Pris,
-                        Adresse,
-                        Postnummer,
-                        ByNavn,
-                        BoligType,
-                        BoligAreal,
-                        Værelser,
-                        ByggeDato,
-                        GrundStørrelse,
-                        EnergiMærke,
-                        EjendomsmæglerID,
-                        SælgerID,
-                        Status
-                    )
-                    VALUES (
-                	    @Pris,
-                        @Adresse,
-                        @Postnummer,
-                        @ByNavn,
-                        @BoligType,
-                        @BoligAreal,
-                        @Værelser,
-                        @ByggeDato,
-                        @GrundStørrelse,
-                        @EnergiMærke,
-                        @EjendomsmæglerID,
-                        @SælgerID,
-                        @Status
-                    );
-                """;
+            string checkQuery = @"
+                select 1 from Bolig 
+                where Adresse = @Adresse AND 
+                ByNavn = @ByNavn AND 
+                Postnummer = @Postnummer AND 
+                EjendomsmæglerID = @EjendomsmæglerID AND 
+                SælgerID = @SælgerID";
 
-            command.CommandText = sql;
-            command.Parameters.AddWithValue("@Pris", bolig.Pris);
-            command.Parameters.AddWithValue("@Adresse", bolig.Adresse);
-            command.Parameters.AddWithValue("@Postnummer", bolig.PostNummer);
-            command.Parameters.AddWithValue("@ByNavn", bolig.ByNavn);
-            command.Parameters.AddWithValue("@BoligType", bolig.Type);
-            command.Parameters.AddWithValue("@BoligAreal", bolig.BoligAreal);
-            command.Parameters.AddWithValue("@Værelser", bolig.Værelser);
-            command.Parameters.AddWithValue("@ByggeDato", bolig.ByggeDato);
-            command.Parameters.AddWithValue("@GrundStørrelse", bolig.GrundStørrelse);
-            command.Parameters.AddWithValue("@EnergiMærke", bolig.EnergiMærke);
-            command.Parameters.AddWithValue("@EjendomsmæglerID", bolig.EjendomsmæglerID);
-            command.Parameters.AddWithValue("@SælgerID", bolig.SælgerID);
-            command.Parameters.AddWithValue("@Status", bolig.Status);
+            using (SqlCommand checkCmd = new SqlCommand(checkQuery, connection))
+            {
+                checkCmd.Parameters.AddWithValue("@Adresse", bolig.Adresse);
+                checkCmd.Parameters.AddWithValue("@ByNavn", bolig.ByNavn);
+                checkCmd.Parameters.AddWithValue("@Postnummer", bolig.PostNummer);
+                checkCmd.Parameters.AddWithValue("@EjendomsmæglerID", bolig.EjendomsmæglerID);
+                checkCmd.Parameters.AddWithValue("@SælgerID", bolig.SælgerID);
 
+                connection.Open();
+                object exists = checkCmd.ExecuteScalar();
+                connection.Close();
 
-            connection.Open();
-            command.ExecuteNonQuery();
-            connection.Close();
+                if (exists != null)
+                {
+                    return null;
+                }
+            }
 
-            return bolig;
+            // Insert the bolig
+            string insertQuery = @"
+        INSERT INTO Bolig (
+            Pris, Adresse, Postnummer, ByNavn, BoligType,
+            BoligAreal, Værelser, ByggeDato, GrundStørrelse,
+            EnergiMærke, EjendomsmæglerID, SælgerID, Status
+        ) VALUES (
+            @Pris, @Adresse, @Postnummer, @ByNavn, @BoligType,
+            @BoligAreal, @Værelser, @ByggeDato, @GrundStørrelse,
+            @EnergiMærke, @EjendomsmæglerID, @SælgerID, @Status
+        )";
+
+            using (SqlCommand insertCmd = new SqlCommand(insertQuery, connection))
+            {
+                insertCmd.Parameters.AddWithValue("@Pris", bolig.Pris);
+                insertCmd.Parameters.AddWithValue("@Adresse", bolig.Adresse);
+                insertCmd.Parameters.AddWithValue("@Postnummer", bolig.PostNummer);
+                insertCmd.Parameters.AddWithValue("@ByNavn", bolig.ByNavn);
+                insertCmd.Parameters.AddWithValue("@BoligType", bolig.Type);
+                insertCmd.Parameters.AddWithValue("@BoligAreal", bolig.BoligAreal);
+                insertCmd.Parameters.AddWithValue("@Værelser", bolig.Værelser);
+                insertCmd.Parameters.AddWithValue("@ByggeDato", bolig.ByggeDato);
+                insertCmd.Parameters.AddWithValue("@GrundStørrelse", bolig.GrundStørrelse);
+                insertCmd.Parameters.AddWithValue("@EnergiMærke", bolig.EnergiMærke);
+                insertCmd.Parameters.AddWithValue("@EjendomsmæglerID", bolig.EjendomsmæglerID);
+                insertCmd.Parameters.AddWithValue("@SælgerID", bolig.SælgerID);
+                insertCmd.Parameters.AddWithValue("@Status", bolig.Status);
+
+                connection.Open();
+                insertCmd.ExecuteNonQuery();
+                connection.Close();
+
+                return bolig;
+            }
         }
 
         public Bolig GetSingleBolig(int boligID)
@@ -230,6 +235,98 @@ namespace DataAccess.Repositories
             connection.Close();
         }
 
+        public Dictionary<string,object> GetSaleInfo(int boligId)
+        {
+            Dictionary<string, object> saleInfo = new Dictionary<string, object>();
+            SqlCommand command = connection.CreateCommand();
+            var sql = """
+                SELECT S.CprNummer,B.Adresse
+                FROM Bolig B
+                left join Sælger S on B.SælgerID = S.SælgerID
+                WHERE BoligID = @BoligID;
+                """;
+            command.CommandText = sql;
+            command.Parameters.AddWithValue("@BoligID", boligId);
+            connection.Open();
+            using (SqlDataReader reader = command.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    saleInfo["Adresse"] = reader["Adresse"];
+                    saleInfo["SælgerCpr"] = reader["CprNummer"];
+                }
+            }
+            connection.Close();
+            return saleInfo;
+        }
+        public DataTable getDetails(int ID, string tabel)
+        {
+            Dictionary<string, string> detailsDict = new Dictionary<string, string>
+            {
+                {"Køber", $"""
+                    SELECT [Fornavn],[EfterNavn],[Email],
+                    [TlfNummer],[Adresse],[KøberID],
+                    [PrisKlasse],[SøgeOmråde],[BoligType],
+                    [Noter],[ØnsketGrundStørrelse],
+                    [ØnsketBoligStørrelse],[ØnsketVærelser]   
+                    FROM [Køber]
+                    where KøberID = {ID}
+                    """ },
+                {"Bolig", $"""
+                    SELECT B.BoligID,B.Pris
+                    ,B.Adresse,B.Postnummer,B.ByNavn
+                    ,B.BoligType,B.BoligAreal,B.Værelser
+                    ,B.ByggeDato,B.GrundStørrelse,B.EnergiMærke
+                    ,B.SælgerID,B.Status,B.EjendomsmæglerID
+                    ,(ISNULL(E.Fornavn,'') + ' ' + ISNULL(E.EfterNavn,'')) AS Ejendomsmægler
+                    ,(ISNULL(S.Fornavn,'') + ' ' + ISNULL(S.EfterNavn,'')) AS Sælger
+                    from Bolig B
+                    left join Ejendomsmægler E on B.EjendomsmæglerID = E.EjendomsmæglerID
+                    left join Sælger S on B.SælgerID = S.SælgerID
+                    WHERE B.BoligID = {ID}
+                    """ },
+                {"Sælger", $"""
+                    SELECT S.Fornavn,S.EfterNavn,S.Email,
+                    S.TlfNummer,S.Adresse,S.SælgerID,
+                    STRING_AGG(ISNULL(CAST(B.BoligID AS VARCHAR),'')+'.'+ISNULL(B.Adresse,''), ',') AS Boliger,
+                    STRING_AGG(ISNULL(Cast(Sa.KøberID as varchar),'')+'.'+ISNULL(K.Fornavn,'')+' '+ISNULL(K.Efternavn,''), ',') AS Købere
+                    FROM [Sælger] S
+                    left join Bolig B on S.SælgerID = B.SælgerID
+                    left join Salg Sa on S.SælgerID = Sa.SælgerID
+                    left join Køber K on Sa.KøberID = K.KøberID
+                    where S.SælgerID = {ID}
+                    group by S.SælgerID, S.Fornavn, S.EfterNavn, S.Email,S.TlfNummer,S.Adresse
+                    """ },
+                {"Ejendomsmægler", $"""
+                    SELECT E.[Fornavn],E.[EfterNavn],E.[Email],
+                    E.[TlfNummer],E.EjendomsmæglerID,
+                    STRING_AGG(ISNULL(CAST(S.SælgerID AS VARCHAR),'')+'.'+(ISNULL(S.Fornavn,'') + ' ' + ISNULL(S.EfterNavn,'')),',') AS Sælger,
+                    STRING_AGG(ISNULL(CAST(B.BoligID AS VARCHAR),'')+'.'+ISNULL(B.Adresse,''), ',') AS Boliger,
+                    STRING_AGG(ISNULL(Cast(Sa.KøberID as varchar),'')+'.'+ISNULL(K.Fornavn,'')+' '+ISNULL(K.Efternavn,''), ',') AS Køber
+                    FROM Ejendomsmægler E
+                    LEFT JOIN Bolig B ON E.EjendomsmæglerID = B.EjendomsmæglerID
+                    LEFT JOIN Salg Sa ON B.BoligAreal = Sa.BoligID
+                    LEFT JOIN Sælger S ON S.SælgerID = B.SælgerID
+                    LEFT JOIN Køber K on K.KøberID = Sa.KøberID
+                    where E.EjendomsmæglerID = {ID}
+                    GROUP BY E.EjendomsmæglerID, E.Fornavn, E.EfterNavn, E.Email, E.TlfNummer
+                    """ }
+            };
+            DataTable boligDetail = new DataTable();
+            SqlCommand command = connection.CreateCommand();
+            var sql = detailsDict[tabel];
+            DataTable dataTable = new DataTable();
+            using (SqlCommand cmd = new SqlCommand(sql, connection))
+            {
+                using (SqlDataAdapter dad = new SqlDataAdapter(cmd))
+                {
+                    connection.Open();
+                    dad.Fill(dataTable);
+                    connection.Close();
+                }
+            }
+            return dataTable;
+        }
         public void TilføjSælger(Sælger sælger)
         {
 
@@ -934,8 +1031,8 @@ namespace DataAccess.Repositories
             };
             List<object> tabeldata = new List<object>()
             {
-                {GetTable("select top 20 ByNavn, BoligType, Værelser, ByggeDato, Pris from Bolig where Status = 'Til Salg' order by BoligID desc")},
-                {GetTable("select top 20 (Fornavn+' '+EfterNavn) as Navn, SøgeOmråde, BoligType, PrisKlasse from Køber order by KøberID desc")}
+                {GetTable("select top 20 * from Bolig where Status = 'Til Salg' order by BoligID desc")},
+                {GetTable("select top 20 (Fornavn+' '+EfterNavn) as Navn, SøgeOmråde, BoligType, PrisKlasse,KøberID from Køber order by KøberID desc")}
             };
             Dictionary<string, List<object>> data = new(){
                 {"pie",piedata},
@@ -1097,7 +1194,7 @@ namespace DataAccess.Repositories
                 Status = "";
             if(Status=="Ikke Solgt"&& ByNavn != "")
             {
-                sql += " where B.ByNavn = " + "'" + ByNavn + "'" + " and B.Status != " + "'Solgt'";
+                sql += " where B.ByNavn LIKE " + "'" + '%' + ByNavn + '%' + "'" + " and B.Status != " + "'Solgt'";
             }
             else if (Status == "Ikke Solgt" && ByNavn == "")
             {
@@ -1105,11 +1202,11 @@ namespace DataAccess.Repositories
             }
             else if(ByNavn != "" && Status != "")
             {
-                sql += " where B.ByNavn = " + "'" + ByNavn + "'" + " and B.Status = " + "'" + Status + "'";
+                sql += " where B.ByNavn LIKE " + "'" + '%' + ByNavn + '%' + "'" + " and B.Status = " + "'" + Status + "'";
             }
             else if (ByNavn != "" && Status == "")
             {
-                sql += " where B.ByNavn = " + "'" + ByNavn + "'";
+                sql += " where B.ByNavn LIKE " + "'" + '%' + ByNavn + '%' + "'";
             }
             else if (ByNavn == "" && Status != "")
             {

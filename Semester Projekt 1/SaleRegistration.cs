@@ -12,12 +12,22 @@ namespace Semester_Projekt_1
 {
     public partial class SaleRegistration : Form
     {
-        public SaleRegistration()
+        public SaleRegistration(int boligID = 0)
         {
             InitializeComponent();
-            SaleSellerCprTextbox.PlaceholderText = "DDMMÅÅ-****";
-            SaleBuyerCPRTextBox.PlaceholderText = "DDMMÅÅ-****";
-            SalePriceTextBox.PlaceholderText = "Indtast aftalte salgspris";
+            if (boligID != 0)
+            {
+                BoligLogic boligLogic = new BoligLogic();
+                var info = boligLogic.getSaleInfo(boligID);
+                SaleSellerCprTextbox.Text = info["SælgerCpr"].ToString();
+                SaleAdresseCombobox.Text = info["Adresse"].ToString();
+            }
+            else
+            {            
+                SaleSellerCprTextbox.PlaceholderText = "DDMMÅÅ-****";
+                SaleBuyerCPRTextBox.PlaceholderText = "DDMMÅÅ-****";
+                SalePriceTextBox.PlaceholderText = "Indtast aftalte salgspris";
+            }
         }
 
         private void SaleRegistrationForm_Paint(object sender, PaintEventArgs e)

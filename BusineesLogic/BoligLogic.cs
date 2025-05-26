@@ -1,6 +1,7 @@
 ﻿using DataAccess.Repositories;
 using Models;
 using System.ComponentModel.DataAnnotations;
+using System.Data;
 
 namespace BusineesLogic
 {
@@ -42,7 +43,7 @@ namespace BusineesLogic
             };
         }
 
-        public void CreateBolig(
+        public object CreateBolig(
             int pris, string adresse, int postnr, string by, string boligType, int boligAreal, int værelser,
             DateTime byggeDato, int grundAreal, int mæglerId, int sæglerID, string energiMærke, string status
             )
@@ -51,7 +52,8 @@ namespace BusineesLogic
                 pris, adresse, postnr, by, boligType, boligAreal, værelser,
                 byggeDato, grundAreal, mæglerId, sæglerID, energiMærke, status
             );
-            repository.CreateBolig(tempBolig);
+            var check = repository.CreateBolig(tempBolig);
+            return check;
         }
 
         public Bolig GetBolig(int boligID)
@@ -62,9 +64,21 @@ namespace BusineesLogic
             return bolig;
         }
 
-        public void UpdateBoligPris(Bolig bolig)
+        public void UpdateBoligPris(int Pris, int ID)
         {
-            repository.UpdatePris(bolig.BoligID, bolig.Pris);
+            repository.UpdatePris(ID, Pris);
+        }
+
+        public Dictionary<string,object> getSaleInfo(int boligID)
+        {
+            // Henter salgsinfo for en given boligID
+            return repository.GetSaleInfo(boligID);
+        }
+
+        public DataTable GetDetails(int ID,string tabel)
+        {
+            // Henter detaljer for en given ID og tabel
+            return repository.getDetails(ID, tabel);
         }
 
         public int PrisEsmator(int boligAreal, int grundAreal, string boligType, int byggedato)

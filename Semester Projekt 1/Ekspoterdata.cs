@@ -17,6 +17,12 @@ namespace Semester_Projekt_1
         {
             InitializeComponent();
             boligStatus.DataSource = new List<string>() { "Solgt", "Ikke Solgt", "Alle" };
+            InitializeElements();
+        }
+        private void InitializeElements()
+        {
+            int[] rowHeight = tableLayoutPanel2.GetRowHeights();
+            dataFlowPanel.Height = rowHeight[0] + rowHeight[1];
         }
         private void selectDataComboBox_SelectedValueChanged(object sender, EventArgs e)
         {
@@ -46,7 +52,7 @@ namespace Semester_Projekt_1
             }
             else if (selectDataComboBox.Text == "Boliger")
             {
-                dataFlowPanel.Height = boligStatus.Height + label1.Height + label2.Height + selectDataComboBox.Height + boligByNavn.Height + label4.Height + 20;
+                dataFlowPanel.Height = tableLayoutPanel2.Height;
                 sortByComboBox.Enabled = true;
                 sortByComboBox.DataSource = new List<string>() { "BoligID", "Pris", "Adresse", "Postnummer", "ByNavn", "BoligType", "BoligAreal", "Værelser", "ByggeDato", "GrundStørrelse", "EnergiMærke", "EjendomsmæglerID", "SælgerID", "Status" };
             }
